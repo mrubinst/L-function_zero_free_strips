@@ -13,4 +13,4 @@
   As it states, these are working notes whose details have yet to be checked carefully; the 7/8 part
   is an outline of a proof that is conditional on statements listed in its Section 16.
 
-The two ζ notes are also posted at <https://www.math.uwaterloo.ca/~mrubinst/quasi_rh_notes/>.
+All three notes are also posted at <https://www.math.uwaterloo.ca/~mrubinst/quasi_rh_notes/>.
