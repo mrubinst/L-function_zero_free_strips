@@ -1,0 +1,1789 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,booktabs,microtype,array}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\hypersetup{pdftitle={A zero-free strip for the L-functions of the elliptic curves y\textasciicircum 2=x\textasciicircum 3+d: the 11/12 method and its extension to 7/8},pdfauthor={OpenAI Astra-6 and Claude Opus 5.5, at the behest of Mateo Restrepo Borrero and Michael O. Rubinstein},pdfsubject={L(E\textunderscore d,s) is nonzero for Re s > 17/12 (Part I) and Re s > 11/8 (Part II), where E\textunderscore d: y\textasciicircum 2=x\textasciicircum 3+d}}
+\allowdisplaybreaks[2]
+\setlength{\emergencystretch}{2em}
+\numberwithin{equation}{section}
+\newcommand{\OO}{\mathbb Z[\omega]}
+\newcommand{\N}{\mathrm N}
+\newcommand{\muk}{\mu_K}
+\newcommand{\ind}{\mathbf1}
+\newcommand{\E}{\mathcal E}
+\newcommand{\ce}{\check e}
+\newcommand{\ssum}{\sideset{}{^*}\sum}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newtheorem{proposition}{Proposition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\title{A zero-free strip for the $L$-functions\\of the elliptic curves $y^2=x^3+d$\\[1ex]
+{\large the $11/12$ method and its extension to $7/8$}}
+\author{OpenAI Astra-6 \quad and \quad Claude Opus 5.5\\[1ex]
+{\normalsize at the behest of Mateo Restrepo Borrero and Michael O.\ Rubinstein}}
+\date{}
+\begin{document}
+\maketitle
+\begin{center}\setlength{\fboxsep}{6pt}
+\fbox{\parbox{0.9\linewidth}{\small\textbf{Working notes.} These are working notes. They describe an argument
+that is still being developed, and the details have yet to be checked carefully.}}
+\end{center}
+
+\begin{abstract}
+For a nonzero integer $d$ let $E_d$ be the elliptic curve
+$y^2=x^3+d$ over $\mathbb Q$. These are exactly the curves with
+$j$-invariant $0$, and each has complex multiplication by $\OO$.
+Part~I of these notes explains how OpenAI's $11/12$ argument adapts to
+give the following statement: for every $d\ne0$,
+\[
+ L(E_d,s)\ne0\qquad\text{for }\Re s>17/12 .
+\]
+The critical strip of $L(E_d,s)$ is $1/2<\Re s<3/2$, so this is a
+zero-free strip $17/12<\Re s<3/2$ along its right edge. In the analytic
+normalization, with critical strip $0<\Re s<1$, it says that
+$L(E_d,s+\frac12)\ne0$ for $\Re s>11/12$, the same boundary as OpenAI's
+$11/12$ theorem for $\zeta(s)$. Since $L(E_d,s)$ is the $L$-function of a
+Hecke character of $\mathbb Q(\sqrt{-3})$ of infinite order, the statement
+is not covered by OpenAI's $7/8$ theorem, which concerns
+finite-order Hecke $L$-functions over $\mathbb Q(\sqrt{-3})$. We begin with
+ordinary integer coefficients obtained by counting points modulo primes,
+write out the mean squares, and isolate the sixth-power rows that pick
+out the chosen curve.
+
+Part~II (Sections~\ref{sec:78}--\ref{sec:78status}) adapts OpenAI's $7/8$
+argument to the same curves. It outlines a proof, conditional on restatements
+listed in Section~\ref{sec:78status}, that $L(E_d,s)\ne0$ for $\Re s>11/8$,
+that is, of a zero-free strip $11/8<\Re s<3/2$. More generally, it outlines a
+proof that $L(s,\overline\alpha\eta)\ne0$ for $\Re s>7/8$ for every finite-order Hecke
+character $\eta$ of $\mathbb Q(\sqrt{-3})$, where $\alpha(n)=n/|n|$. The
+adaptation changes three things: the weight of the target, the
+bookkeeping of the characters attached to rows, and an angular factor
+in the moment estimates. We list the statements of OpenAI's paper that
+must still be written out in this form. Section~\ref{sec:higherweight}
+explains why the same method should extend to CM newforms of every weight
+with complex multiplication by $\mathbb Q(\sqrt{-3})$, such as $\eta(3z)^8$ and
+$\eta(2z)^3\eta(6z)^3$: weight $k+1$ needs $k+1$ derivatives of the cubic theta
+function and, as far as we can see, nothing else new. This would also give the zero-free half-plane
+for every symmetric power $L$-function of $E_d$.
+\end{abstract}
+
+\paragraph{The method in six sentences.}
+\begin{enumerate}
+\item \emph{The sum to bound.} Up to finitely many Euler factors,
+ $1/L(E_d,s+\frac12)=\sum_mq_d(m)m^{-s}$, where $q_d$ is the multiplicative function with
+ $q_d(p)=-a_p(d)/\sqrt p$, $q_d(p^2)=1$ and $q_d(p^j)=0$ for $j\ge3$ ($p\nmid6d$). So a bound
+ $S_d(D)=\sum_mq_d(m)W(m/D)\ll D^{11/12+\varepsilon}$ for smooth $W$ gives $L(E_d,s)\ne0$ for
+ $\Re s>17/12$, exactly as the same bound for the coefficients $c(m)$ of
+ $1/(\zeta(s)L(s,\chi_{-3}))$ gives $\zeta(s)\ne0$ for $\Re s>11/12$.
+\item \emph{The same sum over Eisenstein integers.} Grouping by norms,
+ \[
+  S_d(D)=\sum_n\muk(n)\,\frac n{|n|}\,\chi_n\bigl((4d)^5\bigr)W(\N(n)/D)
+ \]
+ over primary $n\in\OO$ coprime to $6$, while the zeta sum is $\sum_n\muk(n)W(\N(n)/D)$. The curve enters only through the unimodular
+ factor $n/|n|$ and the sextic residue symbol of the fixed number $(4d)^5$; together these encode the
+ point counts through $a_p(d)=\Tr\bigl(\pi\overline{\chi_\pi(4d)}\bigr)$.
+\item \emph{What is averaged.} Replacing $(4d)^5$ by an arbitrary Eisenstein integer $u$ gives the
+ family $A_u(D)=\sum_n\muk(n)\frac n{|n|}\chi_n(u)W(\N(n)/D)$, and the quantity bounded is the mean square
+ $\sum_{0<\N(u)\le H}|A_u(D)|^2$ over all $u$ with $\N(u)\le H=D^{1+\vartheta}$. That is about $H$ rows
+ of length about $D$, and the method shows the mean square is $\ll D^{2+\vartheta+\varepsilon}=D^{1+\varepsilon}H$, the
+ size given by square-root cancellation in each row. The zeta argument averages exactly the same rows
+ without the factor $n/|n|$.
+\item \emph{Isolating the curve.} Since $\chi_n(u\pi^6)=\chi_n(u)$ whenever $\pi\nmid n$, the roughly
+ $H^{1/6}/\log H$ rows $u=(4d)^5\pi^6$, with $\pi$ prime and $\N(\pi)\asymp H^{1/6}$, all equal $S_d(D)$ up to
+ $O(D/\N(\pi))$. Positivity of the mean square then gives $H^{1/6}|S_d(D)|^2\lesssim DH$, i.e.\
+ $S_d(D)\lesssim D^{11/12}$ when $H\approx D$. For zeta the rows $\pi^6$ play the same role for
+ $\sum_n\muk(n)W(\N(n)/D)$.
+\item \emph{Poisson summation and the theta function.} Expanding the square and applying Poisson
+ summation in $u$ turns the paired Möbius coefficients into normalized cubic Gauss sums times
+ $(\bar n/|n|)^2$ (for zeta, times $\bar n/|n|$). Sums of these come from Kubota's cubic theta function
+ differentiated twice in $\bar z$ (for zeta, once), and its symmetry turns the sextic twists into
+ quadratic residue symbols, which the quadratic large sieve controls.
+\item \emph{Closing the argument.} The theta function also brings in terms at cube indices $nb^3$.
+ Möbius inversion over cubes and two further Poisson summations reduce the number of rows by a fixed
+ power of $D$ at each step. This induction, identical to the zeta case once the powers of $n/|n|$ are
+ tracked, proves the mean-square bound, hence the exponent $11/12$ and the arithmetic boundary $17/12$.
+\end{enumerate}
+
+\paragraph{What is proved here, and what is quoted.}
+These notes follow the organization of the zeta guide~\cite{ZG}, adapting
+the method of~\cite{OAI1112}. The elementary deduction from the CM mean-square
+estimate is given in full. We state the harder analytic estimates precisely
+and explain their mechanism and how the arguments of~\cite{OAI1112} adapt;
+we do not reproduce complete proofs of the theta transformation or the
+descent estimates. Here ``CM curves'' means the $j=0$ curves over $\mathbb Q$.
+Other CM fields would require their own arithmetic and analytic
+inputs. Throughout, the curve parameter $d$ is fixed; constants may depend
+on it. Part~II adapts~\cite{OAI78};
+Section~\ref{sec:78status} says what is proved there and what is carried
+over from~\cite{OAI78} by inspection.
+
+\paragraph{Higher weight.} The angular factor $\alpha$ enters the theta step
+only through the number of derivatives, and elsewhere only through Gamma
+factors with the same growth. A CM newform of weight
+$k+1$ with complex multiplication by $\mathbb Q(\sqrt{-3})$ corresponds to the
+character $\overline\alpha^{\,k}\eta$ and needs $k+1$ derivatives. For each fixed $k$,
+the formulas have the same structure and give the same length exponents; constants may depend on $k$.
+Section~\ref{sec:higherweight}
+explains why both the $11/12$ and the $7/8$ boundaries should therefore extend
+to these forms, for example to $\eta(3z)^8$ (weight $4$) and $\eta(2z)^3\eta(6z)^3$
+(weight $3$), and hence, by factoring, to the symmetric power $L$-functions of
+$E_d$. This is an expectation, not a claim.
+
+\section{Why start with \texorpdfstring{$11/12$}{11/12} rather than \texorpdfstring{$7/8$}{7/8}?}
+
+For this family, the $11/12$ method is substantially simpler to present.
+Its main analytic task is one positive mean square, and the passage from
+that bound to the zero-free region takes only a few inequalities and a
+Mellin integral. Relative to the zeta argument, the main new ingredient is
+the angular factor $\alpha(n)=n/|n|$: one theta derivative becomes two.
+
+The $7/8$ argument~\cite{OAI78,G78} has additional layers: a supremum of
+zero locations over a whole family, an average evaluated in two ways,
+short prime sums arranged to cancel an unwanted term, and two different
+moment estimates to count exceptional rows. These are substantial additions
+to the machinery used below.
+
+There is also a scope issue. The stated $7/8$ theorem in~\cite{OAI78}
+concerns \emph{finite-order} Hecke characters over $\mathbb Q(\sqrt{-3})$.
+The characters for our curves include $n/|n|$ and are not of finite order.
+Thus $7/8+1/2=11/8$ is the corresponding arithmetic boundary only
+after the required CM adaptation; it is not a consequence of
+shifting the stated finite-order theorem. Part~I (Sections~\ref{sec:integer}--\ref{sec:descent})
+explains the CM $11/12$ argument. Part~II
+(Sections~\ref{sec:78}--\ref{sec:78status}) carries out the $7/8$
+adaptation.
+
+\section{Start with ordinary integers and point counts}\label{sec:integer}
+
+At a prime $p\nmid6d$, put
+\[
+ a_p(d)=p+1-\#E_d(\mathbb F_p)
+       =-\sum_{x=0}^{p-1}\left(\frac{x^3+d}{p}\right),
+ \qquad \lambda_d(p)=\frac{a_p(d)}{\sqrt p}.
+\]
+The symbol on the right is the ordinary Legendre symbol, with value zero
+on multiples of $p$. Indeed, the number of solutions in $y$ to
+$y^2=x^3+d$ is $1+((x^3+d)/p)$, and there is one point at infinity.
+The good Euler factor is
+\[
+ L_p(E_d,s+\tfrac12)^{-1}
+ =1-\lambda_d(p)p^{-s}+p^{-2s}.
+\]
+The shift is chosen so that $L(E_d,s+1/2)$ has critical line
+$\Re s=1/2$; the arithmetic function $L(E_d,s)$ has critical line
+$\Re s=1$.
+Consequently the reciprocal coefficients away from $6d$ are the
+multiplicative function $q_d$ specified by
+\begin{equation}\label{eq:qd}
+ q_d(1)=1,\qquad q_d(p)=-\lambda_d(p),\qquad
+ q_d(p^2)=1,\qquad q_d(p^j)=0\quad(j\ge3).
+\end{equation}
+Set $q_d(m)=0$ when $(m,6d)>1$. Thus all these coefficients can be
+computed using ordinary prime factorization and finite sums of Legendre
+symbols. In particular, $q_d$ is not the ordinary M\"obius function.
+
+Here is an explicit formula involving that function. Define
+$\Lambda_d(r)=\prod_{p\mid r}\lambda_d(p)$ for squarefree $r$ coprime
+to $6d$, with $\Lambda_d(1)=1$. For $(m,6d)=1$,
+\begin{equation}\label{eq:integer-convolution}
+ \boxed{\quad
+ q_d(m)=\sum_{\substack{rt^2=m\\r\ \mathrm{squarefree}\\(r,t)=1}}
+       \mu(r)\mu(t)^2\Lambda_d(r).
+ \quad}
+\end{equation}
+At each prime, one chooses the constant, linear, or quadratic term of
+the Euler polynomial. The restrictions in this formula make those choices
+mutually exclusive.
+
+Write $L(E_d,s)$ using the local factors of a minimal model, including at
+primes dividing $6d$, and put
+\[
+ B_d(s)=\prod_{p\mid6d}L_p(E_d,s+\tfrac12).
+\]
+Then, for $\Re s>1$,
+\begin{equation}\label{eq:reciprocal}
+ \sum_{m\ge1}\frac{q_d(m)}{m^s}
+ =\prod_{p\nmid6d}(1-\lambda_d(p)p^{-s}+p^{-2s})
+ =\frac{B_d(s)}{L(E_d,s+\tfrac12)}.
+\end{equation}
+The finite factor $B_d(s)$ is holomorphic and nonzero for $\Re s>0$.
+Deleting these primes therefore does not affect the zeros in question.
+This remains true when the displayed equation for $E_d$ is not minimal.
+
+Choose a complex-valued $W\in C_c^\infty((0,\infty))$, supported in a fixed
+interval $[a,b]$ with $0<a<b$. The target sum is
+\begin{equation}\label{eq:target}
+ S_d(D)=\sum_{m\ge1}q_d(m)W(m/D).
+\end{equation}
+The weight restricts $m$ to size $D$. We want, for every $\varepsilon>0$,
+$S_d(D)\ll_{d,W,\varepsilon}D^{11/12+\varepsilon}$.
+Here $\ll$ allows a constant independent of $D$.
+
+\subsection{The comparison with the zeta coefficients}
+For zeta, the classical coefficients in the companion guide are
+\[
+ c(m)=\sum_{rt=m}\mu(r)\mu(t)\chi_{-3}(t),\qquad
+ \chi_{-3}(t)=
+ \begin{cases}0&3\mid t,\\1&t\equiv1\pmod3,\\-1&t\equiv2\pmod3.
+ \end{cases}
+\]
+For $p\nmid6d$, the comparison is
+\[
+\begin{array}{c|cc|cc}
+ &c(p)&c(p^2)&q_d(p)&q_d(p^2)\\\hline
+ p\equiv1\pmod3&-2&1&-a_p(d)/\sqrt p&1\\
+ p\equiv2\pmod3&0&-1&0&1
+\end{array}
+\]
+The inert-prime sign really changes. For instance, for $d=1$,
+$a_5(1)=0$, $a_7(1)=-4$, so
+$q_1(5)=0$, $q_1(25)=1$, and $q_1(7)=4/\sqrt7$.
+The character $\chi_{-3}$ records whether a prime splits; it does not
+encode the point count of a particular elliptic curve.
+
+\section{The triangular lattice and the curve's row}\label{sec:lattice}
+
+Put $\omega=e^{2\pi i/3}$. An Eisenstein integer is an ordinary pair of
+integers written as $n=A+B\omega$, with
+\[
+ \N(n)=|n|^2=A^2-AB+B^2,\qquad
+ \alpha(n)=\frac{A+B\omega}{\sqrt{A^2-AB+B^2}}.
+\]
+The ring $\OO$ has unique factorization and six units
+$\pm1,\pm\omega,\pm\omega^2$. Choose the unique \emph{primary} associate
+of each element coprime to $3$:
+\[
+ n\equiv1\pmod3,\qquad\text{that is, }A\equiv1\pmod3,
+ \quad B\equiv0\pmod3.
+\]
+Unless otherwise stated, column variables and their divisors are primary
+and coprime to $6$; row variables run over all of $\OO$. Coprimality to
+$2$ means that $A,B$ are not both even. A star on a column sum means
+squarefree in $\OO$.
+
+Define $\muk(n)$ by the usual factorization rule: it is zero if a prime
+square divides $n$, and otherwise is $(-1)^r$ for a product of $r$ distinct
+primary primes. For example,
+\[
+ \muk(-5)=-1\quad(\N(-5)=25),\qquad
+ \muk(7)=1\quad(7=(1+3\omega)(-2-3\omega)).
+\]
+Thus $\muk(n)$ need not equal $\mu(\N(n))$.
+
+For a prime $\pi\nmid6$, define $\chi_\pi(u)=(u/\pi)_6$ to be the sixth
+root of unity congruent to $u^{(\N(\pi)-1)/6}$ modulo $\pi$, or zero if
+$\pi\mid u$. Extend multiplicatively in the denominator, and write
+$\chi_n(u)=(u/n)_6$. It is also multiplicative in $u$.
+Powers of these characters retain their zero values, even when the
+exponent is reduced to zero modulo $6$; $\chi_1(u)=1$ for all $u$.
+
+Define the family
+\begin{equation}\label{eq:Au}
+ A_u(D)=\sum_n\muk(n)\alpha(n)\chi_n(u)W(\N(n)/D).
+\end{equation}
+It is the zeta family with one extra, explicitly given factor $n/|n|$.
+For the desired curve, choose
+\begin{equation}\label{eq:ud}
+ u_d=(4d)^5,\qquad
+ \psi_d(n)=\alpha(n)\chi_n(u_d)
+          =\alpha(n)\overline{\chi_n(4d)}.
+\end{equation}
+We claim that $A_{u_d}(D)=S_d(D)$.
+
+\paragraph{Where $u_d$ comes from.} At a split prime $p=\pi\bar\pi$, the point count
+\eqref{eq:point-identity} says that $E_d$ contributes $\pi$ times the sixth root of unity
+$\overline{\chi_\pi(4d)}$. In its Jacobi-sum proof the factor $d$ enters when the summation variable is
+rescaled by $d$, and the factor $4$ enters through the discriminant $1-4a$ of $t^2-t+a$, which gives
+$J(\kappa,\rho)=\kappa(4)J(\kappa,\kappa)$ for the cubic and quadratic characters $\kappa,\rho$ modulo $\pi$. The
+family, however, twists by $\chi_n(u)$, with the row $u$ in the \emph{top} of the residue symbol. So we
+need an Eisenstein integer $u$ with $\chi_n(u)=\overline{\chi_n(4d)}$ for every column $n$. Since
+$\chi_n$ takes sixth roots of unity,
+\[
+ \overline{\chi_n(4d)}=\chi_n(4d)^5=\chi_n\bigl((4d)^5\bigr),
+\]
+and this is the choice $u_d=(4d)^5$. Multiplying a row by a sixth power changes it only at the
+columns that share a prime with that sixth power: $\chi_n(uv^6)=\chi_n(u)\,\ind_{(n,v)=1}$. Such a change
+alters finitely many Euler factors, so it does not move any zeros in $\Re s>0$. When $v$ is supported on
+primes above $2$ and $3$, nothing changes at all, because the columns are coprime to $6$. For instance
+$u=16d^5$ gives exactly the same row, since $(4d)^5=16d^5\cdot2^6$.
+For $d=16$ this is $2^{24}=(2^4)^6$, a sixth power. So the curve $y^2=x^3+16$ (conductor $27$) is the row
+$u=1$ itself, namely the plain sum $\sum_n\muk(n)\frac n{|n|}W(\N(n)/D)$, and $y^2=x^3+1$ is the row $u=16$.
+More generally, every nonzero rational row $u$ is the row of a $j=0$ curve over $\mathbb Q$: since
+$(4d)^5\equiv(4d)^{-1}$ modulo sixth powers, $u$ belongs to $E_d$ with $d=4^5u^5$. For rows that are not a
+rational number times a sixth power, the coefficients $q_u(m)$ of~\eqref{eq:allrows} are in general not real.
+Such a row is the $L$-function of a Hecke character of $\mathbb Q(\sqrt{-3})$, not of an elliptic curve over
+$\mathbb Q$.
+
+\subsection{Checking the claim prime by prime}
+If $p\equiv1\pmod3$, then $p=\pi\bar\pi$, with both generators primary
+and $\N(\pi)=p$. The classical CM point-count identity is
+\begin{equation}\label{eq:point-identity}
+ a_p(d)=\pi\overline{\chi_\pi(4d)}
+       +\bar\pi\chi_\pi(4d)\qquad(p\nmid6d).
+\end{equation}
+This classical finite-field identity is proved with Jacobi sums; see
+\cite[Chapter~18]{IR}, where primary means $\equiv2\pmod3$, which changes the sign of $\pi$.
+We also checked it numerically for $480$ pairs $(d,p)$ (Section~\ref{sec:78}). Since
+$\chi_{\bar\pi}(4d)=\overline{\chi_\pi(4d)}$, the two reciprocal
+factors multiply to
+\[
+ (1-\psi_d(\pi)p^{-s})(1-\psi_d(\bar\pi)p^{-s})
+ =1-\lambda_d(p)p^{-s}+p^{-2s}.
+\]
+If $p\equiv2\pmod3$, the primary prime is $-p$, of norm $p^2$.
+For rational $x$ prime to $p$, $\chi_{-p}(x)=1$, because
+$(p^2-1)/6=(p-1)(p+1)/6$. Since $\alpha(-p)=-1$, its factor is
+$1+p^{-2s}$, as required by $a_p(d)=0$. If $p\mid d$, the symbols
+vanish at primes above $p$, so their factors are deleted.
+
+We have therefore checked the exact identities
+\begin{equation}\label{eq:normgroup}
+ q_d(m)=\sum_{\N(n)=m}\muk(n)\alpha(n)\chi_n(u_d),
+ \qquad S_d(D)=A_{u_d}(D).
+\end{equation}
+The columns still run over primary $n$ coprime to $6$; the sum is empty
+when $(m,6)>1$. The angular factor and sextic symbol are what distinguish
+this identity from the zeta identity involving $\mu$ and $\chi_{-3}$.
+
+\paragraph{The curve's coefficients are sextic residue symbols.} The identity~\eqref{eq:normgroup} for
+the reciprocal has a companion for $L$ itself. Up to the finitely many Euler factors at $p\mid6d$,
+$L(E_d,s+\frac12)=\prod_{\mathfrak p\nmid6}(1-\psi_d(\mathfrak p)\N(\mathfrak p)^{-s})^{-1}=\sum_n\psi_d(n)\N(n)^{-s}$,
+so for $m$ coprime to $6d$,
+\[
+ \frac{a_m(E_d)}{\sqrt m}=\sum_{\N(n)=m}\alpha(n)\Bigl(\frac{u_d}n\Bigr)_6,\qquad
+ q_d(m)=\sum_{\N(n)=m}\muk(n)\,\alpha(n)\Bigl(\frac{u_d}n\Bigr)_6 ,
+\]
+with $n$ primary and coprime to $6$. Here $a_m(E_d)$ are the Dirichlet coefficients of $L(E_d,s)$. The only
+difference between the two is the M\"obius factor. At a prime the first identity is
+$a_p(d)=\Tr\bigl(\pi\,(u_d/\pi)_6\bigr)$: the Frobenius eigenvalues are $\pi(u_d/\pi)_6$ and its conjugate, so the
+sextic symbol selects which of the six rotations $\zeta\pi$ ($\zeta^6=1$) occurs. We checked the first identity
+against the coefficients computed by PARI/GP for $d\in\{1,2,-3,7\}$ and all $m\le400$ coprime to $6d$.
+
+Thus the coefficients of $L(E_d,s+\frac12)$ are exactly the sextic residue symbols of the zeta argument,
+evaluated at the fixed row $u_d$ and rotated by the angle $n/|n|$. In the zeta argument the row $u$ is the
+M\"obius sum $\sum_n\muk(n)(u/n)_6W(\N(n)/D)$ of the finite-order Hecke $L$-function attached to
+$n\mapsto(u/n)_6$. This is the Artin $L$-function of a character of the Kummer extension
+$\mathbb Q(\sqrt{-3},u^{1/6})/\mathbb Q(\sqrt{-3})$, one factor of the Dedekind zeta function of that
+extension. The CM argument averages the same rows with every
+coefficient multiplied by $n/|n|$, and its row $u_d$ is $L(s,\alpha\cdot(u_d/\cdot)_6)=L(E_d,s+\frac12)$, up to
+finitely many Euler factors.
+
+
+\section{The average, in coordinates and as a double sum}\label{sec:average}
+
+The central average is
+\begin{equation}\label{eq:M}
+ M(D,H)=\sum_{0<\N(u)\le H}|A_u(D)|^2.
+\end{equation}
+There are about $H$ rows and about $D$ columns in each row.
+Writing $Q(A,B)=A^2-AB+B^2$, this means exactly
+\begin{equation}\label{eq:coordinates}
+\begin{split}
+ M(D,H)=\sum_{\substack{x,y\in\mathbb Z\\0<Q(x,y)\le H}}
+ \Bigg|\sum_{\substack{A\equiv1\ (3),\ B\equiv0\ (3)\\
+                          A,B\ \text{not both even}}}
+ &\muk(A+B\omega)\frac{A+B\omega}{\sqrt{Q(A,B)}}\\[-1ex]
+ &\times\left(\frac{x+y\omega}{A+B\omega}\right)_6
+ W\left(\frac{Q(A,B)}D\right)\Bigg|^2.
+\end{split}
+\end{equation}
+Thus it is a sum over four ordinary integer coordinates, using
+factorization and exponentiation in finite fields.
+
+Expanding the square, with the first column conjugated, gives
+\begin{equation}\label{eq:double}
+\begin{split}
+ M(D,H)=\sum_{n_1,n_2}&\muk(n_1)\muk(n_2)
+ \overline{\alpha(n_1)}\alpha(n_2)
+ \overline{W(\N(n_1)/D)}W(\N(n_2)/D)\,S_H(n_1,n_2),\\
+ S_H(n_1,n_2)&=\sum_{0<\N(u)\le H}
+                 \overline{\chi_{n_1}(u)}\chi_{n_2}(u).
+\end{split}
+\end{equation}
+The elliptic-curve factor in this double sum is simply
+$\overline{n_1}n_2/(|n_1||n_2|)$. No abstract character notation is
+needed to calculate it.
+
+\subsection{An ordinary-integer description of every row}
+If desired, put
+\[
+ q_u(m)=\sum_{\N(n)=m}\muk(n)\alpha(n)\chi_n(u),\qquad
+ A_u(D)=\sum_{m\ge1}q_u(m)W(m/D).
+\]
+For fixed $u\ne0$, $q_u$ is multiplicative, vanishes on integers divisible
+by $2$ or $3$, and for $p\ge5$ has the following local values:
+\begin{equation}\label{eq:allrows}
+\begin{array}{c|cc}
+ &q_u(p)&q_u(p^2)\\\hline
+ p=\pi\bar\pi\equiv1\pmod3
+ &-\dfrac{\pi\chi_\pi(u)+\bar\pi\chi_{\bar\pi}(u)}{\sqrt p}
+ &\chi_\pi(u)\chi_{\bar\pi}(u)\\[2ex]
+ p\equiv2\pmod3&0&\chi_{-p}(u)
+\end{array}
+\end{equation}
+All $q_u(p^j)$ with $j\ge3$ vanish. These formulas include the case
+when a symbol is zero. At $u=u_d$ they reduce to~\eqref{eq:qd}.
+For a general row, the symbols distinguish $\pi$ from $\bar\pi$;
+ordinary $\mu$ and $\chi_{-3}$ alone do not determine them.
+
+\subsection{The estimate to be supplied by analysis}
+The analytic input is the following mean-square estimate: for every fixed
+$0<\vartheta\le1/10$ and every $\varepsilon>0$,
+\begin{equation}\label{eq:MS}
+ \boxed{\quad M(D,D^{1+\vartheta})
+       \ll_{W,\vartheta,\varepsilon}D^{2+\vartheta+\varepsilon}.
+       \quad}
+\end{equation}
+The constant is controlled by finitely many derivatives of $W$.
+The curve parameter does not occur in this estimate: all the curves are
+selected by different rows of the same family.
+
+The diagonal $n_1=n_2=n$ in~\eqref{eq:double} has
+\[
+ S_H(n,n)=\#\{u:0<\N(u)\le H,\ (u,n)=1\}\ll H.
+\]
+More precisely, elementary lattice counting gives
+\[
+ S_H(n,n)=\frac{2\pi}{\sqrt3}H
+       \prod_{\pi\mid n}(1-\N(\pi)^{-1})
+       +O\bigl(\tau(n)(\sqrt H+1)\bigr).
+\]
+Here $\tau(n)$ counts primary divisors. The factor $2\pi/\sqrt3$ is the
+area of the disc divided by the lattice covolume. The diagonal is
+$O_W(HD)$. Thus~\eqref{eq:MS} bounds the whole average on the diagonal
+scale, up to a small power loss. It bounds the total off-diagonal
+contribution, not the sum of its termwise absolute values.
+
+\section{Sixth powers isolate the chosen elliptic curve}\label{sec:sixth}
+
+Fix $u_0=u_d$ and $N_0=\N(u_0)=|4d|^{10}$. For any $v\ne0$,
+\[
+ \chi_n(u_0v^6)=\chi_n(u_0)\ind_{(n,v)=1}.
+\]
+Consequently the rows we need are \emph{the fixed row $u_0$ times sixth
+powers}; they need not themselves be sixth powers.
+
+Take $H=D^{1+\vartheta}$, put $Y=(H/N_0)^{1/6}$, and let
+\[
+ \mathcal P_Y=\{\pi\text{ primary prime}:\ \pi\nmid6d,
+                                      \ Y/2<\N(\pi)\le Y\},
+ \qquad J=|\mathcal P_Y|.
+\]
+For large $D$, the prime number theorem for $p\equiv1\pmod3$ gives
+$J\asymp_d Y/\log Y$. The rows $u_0\pi^6$ are distinct and have norm
+at most $H$. Their difference from the target is exactly
+\[
+ A_{u_0}(D)-A_{u_0\pi^6}(D)
+ =\sum_{\pi\mid n}\muk(n)\alpha(n)\chi_n(u_0)W(\N(n)/D).
+\]
+There are $O_W(D/\N(\pi))$ possible multiples of $\pi$ in this sum,
+because dividing by $\pi$ reduces the norm bound by $\N(\pi)$.
+Every coefficient has absolute value at most one. Therefore
+\begin{equation}\label{eq:approx}
+ |A_{u_0}(D)-A_{u_0\pi^6}(D)|\ll_W D/Y.
+\end{equation}
+Using $|z|^2\le2|w|^2+2|z-w|^2$ for each selected row and the
+nonnegativity of the mean square gives
+\begin{equation}\label{eq:extraction}
+ \boxed{\quad J|S_d(D)|^2
+ \le2M(D,H)+O_W(JD^2/Y^2).\quad}
+\end{equation}
+There is no assumption that different rows cancel against each other.
+Positivity is precisely what lets us extract the special rows.
+
+Inserting~\eqref{eq:MS}, absorbing logarithms into $D^\varepsilon$, and
+allowing constants depending on $d$, we get
+\begin{align}
+ |S_d(D)|^2
+ &\ll_{d,W,\vartheta,\varepsilon}
+          DH^{5/6}D^\varepsilon+D^2H^{-1/3}\notag\\
+ &=D^{11/6+5\vartheta/6+\varepsilon}
+                  +D^{5/3-\vartheta/3}.\label{eq:exponents}
+\end{align}
+Take square roots, then choose $\vartheta>0$ and the power loss small
+enough. For every $\eta>0$ this proves
+\begin{equation}\label{eq:Sbound}
+ S_d(D)\ll_{d,W,\eta}D^{11/12+\eta}.
+\end{equation}
+\paragraph{Dependence on $d$.} The mean-square estimate~\eqref{eq:MS} does not involve $d$; the curve
+enters only through the position of its row. Keeping track of $N_0=\N(u_0)$ in the steps above gives
+\[
+ S_d(D)\ll_{W,\vartheta,\varepsilon}N_0^{1/12}D^{11/12+5\vartheta/12+\varepsilon}+N_0^{1/6}D^{5/6-\vartheta/6},
+ \qquad N_0^{1/12}=|4d|^{5/6},
+\]
+valid once $D^{1+\vartheta}\ge2^6N_0$, so that $Y\ge2$. This is nontrivial only for $D$ larger than about
+$|d|^{10}$. That is a dependence on the chosen parameter $d$, not on the curve: $E_{dt^6}$ is isomorphic
+to $E_d$ over $\mathbb Q$, so $|d|$ can be made arbitrarily large while the conductor stays fixed. If $d$ is
+first replaced by its sixth-power-free part, then every prime $p\ge5$ dividing $d$ divides the
+conductor $N(E_d)$ exactly twice, so $|d|\ll N(E_d)^{5/2}$, and $|d|^{10}$ is at most a fixed power of the
+conductor. For the zero-free half-plane this dependence is harmless, because each $d$ is treated
+separately.
+
+The exponent is easy to remember: the average has size about $D^2$,
+and about $D^{1/6}$ useful copies of the target occur in it, so the
+target squared has size about $D^{2-1/6}=D^{11/6}$.
+
+\subsection{Other perfect powers and the rational slice}
+The exact identities
+\[
+ \chi_n(v^3)=(v/n)_2,\qquad \chi_n(v^2)=(v/n)_3
+\]
+identify cube and square rows as quadratic and cubic twists.
+If $v$ is a nonzero rational integer, then
+$(v/n)_2=(v/\N(n))$, an ordinary Jacobi symbol. Hence
+\begin{equation}\label{eq:quadratic-twists}
+ A_{u_dv^3}(D)=\sum_{m\ge1}q_d(m)
+                       \left(\frac vm\right)W(m/D).
+\end{equation}
+The finite-field reason at an inert prime is that every nonzero element
+of $\mathbb F_p$ is a square in $\mathbb F_{p^2}$; at a split prime it
+is ordinary Euler's criterion.
+
+The entire rational slice $u\in\mathbb Z$ has only $\asymp H^{1/2}$ rows,
+since $\N(u)=u^2$, whereas the lattice family has $\asymp H$ rows.
+Sixth powers of lattice elements number $\asymp H^{1/6}$; sixth powers
+of rational integers number $\asymp H^{1/12}$. The primes used in
+\eqref{eq:extraction} are lattice primes, not merely rational prime bases.
+General rational numerators still require sextic residue symbols when
+computing their coefficients at split primes.
+
+\section{Why the bound excludes zeros}\label{sec:zeros}
+
+\begin{proposition}
+If~\eqref{eq:MS} holds for every smooth compactly supported complex
+weight and every fixed $0<\vartheta\le1/10$, then
+$L(E_d,s)\ne0$ for $\Re s>17/12$.
+\end{proposition}
+\begin{proof}
+We have proved~\eqref{eq:Sbound}. Let
+\[
+ \widehat W(s)=\int_0^\infty W(y)y^s\,\frac{dy}{y},\qquad
+ F_W(s)=\int_0^\infty S_d(D)D^{-s}\,\frac{dD}{D}.
+\]
+The second integral is holomorphic for $\Re s>11/12$. At the lower
+endpoint there is no convergence problem: $S_d(D)=0$ for $D<1/b$.
+For $\Re s>1$, absolute convergence and~\eqref{eq:reciprocal} give
+\begin{equation}\label{eq:mellin-zero}
+ L(E_d,s+\tfrac12)F_W(s)=\widehat W(s)B_d(s).
+\end{equation}
+Since $L(E_d,s)$ is entire, the identity theorem extends this equality
+to $\Re s>11/12$.
+
+Suppose $L(E_d,\rho)=0$ with $\Re\rho>17/12$, and put
+$s_0=\rho-1/2$. Choose a nonzero nonnegative smooth function $\phi$
+supported in $(1,2)$, and use $W(y)=y^{-s_0}\phi(y)$. Then
+\[
+ \widehat W(s_0)=\int_1^2\phi(y)\,\frac{dy}{y}>0.
+\]
+At $s=s_0$ the left side of~\eqref{eq:mellin-zero} is zero, while the
+right side is nonzero. This contradiction proves the assertion.
+\end{proof}
+This explains both the allowance of complex weights and the shift by
+$1/2$. The zero-free boundary asserted is strict; no conclusion at
+$\Re s=17/12$ is being drawn.
+
+\section{Poisson summation reveals the cubic Gauss sums}\label{sec:poisson}
+
+We now explain the analytic work behind~\eqref{eq:MS}.
+Choose a fixed smooth radial majorant $\Phi(\N(u)/H)$, nonnegative and
+at least one on $\N(u)\le H$, rapidly decreasing at infinity, with
+compactly supported planar Fourier transform. Put
+\[
+ e(z)=\exp(4\pi i\operatorname{Im}z/\sqrt3),\qquad
+ \widehat\Phi(\N(w))=\frac2{\sqrt3}\int_{\mathbb C}
+                         \Phi(|z|^2)e(-zw)\,dx\,dy.
+\]
+The smooth mean square over all $u\in\OO$, including zero, is an upper
+bound for~\eqref{eq:M}.
+
+Only squarefree columns occur. Write $n_i=gz_i$, where $g$ is their
+primary greatest common divisor. Then $(z_1,z_2)=(g,z_1z_2)=1$, and
+\[
+ \overline{\chi_{n_1}(u)}\chi_{n_2}(u)
+ =\ind_{(u,g)=1}\psi(u),\qquad
+ \psi=\overline{\chi_{z_1}}\chi_{z_2}.
+\]
+This is a primitive character modulo $z_1z_2$. For a primitive character
+modulo $q$, define the normalized finite Gauss sum
+\[
+ \gamma(\psi)=\frac1{\sqrt{\N(q)}}\sum_{x\bmod q}\psi(x)e(x/q).
+\]
+Inclusion--exclusion for $(u,g)=1$, followed by planar Poisson summation,
+gives the exact formula
+\begin{equation}\label{eq:poisson-exact}
+\begin{split}
+ &\sum_{u\in\OO}\Phi(\N(u)/H)\ind_{(u,g)=1}\psi(u)\\
+ &\quad=\frac{H\gamma(\psi)}{\sqrt{\N(z_1z_2)}}
+ \sum_{e_0\mid g}\frac{\muk(e_0)\psi(e_0)}{\N(e_0)}
+ \sum_{h\in\OO}\overline{\psi(h)}
+ \widehat\Phi\left(\frac{H\N(h)}{\N(e_0)\N(z_1z_2)}\right).
+\end{split}
+\end{equation}
+The divisor $e_0$ must be kept. The zero frequency contributes only when
+$z_1=z_2=1$; it gives the diagonal main term. There can also be nonzero
+frequencies from these diagonal pairs, and they remain in the estimate.
+The other frequencies satisfy
+\[
+ \N(h)\ll\frac{\N(e_0)\N(z_1z_2)}H
+          \ll\frac{D^2}{H\N(g)}.
+\]
+This is the first shortening: $H>D$ produces frequencies of norm less
+than about $D$.
+
+\subsection{The arithmetic identity and the extra angular factor}
+For squarefree $n$ define
+\[
+ \gamma_j(n)=\frac1{\sqrt{\N(n)}}
+                 \sum_{x\bmod n}\chi_n(x)^j e(x/n),\qquad
+ G(n)=\overline{\chi_n(4)}\gamma_3(n).
+\]
+In particular, $\gamma_2$ is a cubic Gauss sum. The finite-sum identity
+used in both arguments is
+\begin{equation}\label{eq:gauss}
+ \muk(n)\gamma_{-1}(n)
+ =\chi_n(-1)G(n)^{-1}\overline{\alpha(n)}\gamma_2(n).
+\end{equation}
+It combines the Jacobi-sum identity for a cubic Gauss sum with sextic
+reciprocity. The M\"obius sign is essential here. The function $G$ has
+absolute value one and depends only on the primary invertible residue
+class modulo $72$.
+
+Let $\mathfrak G$ be that finite group of classes. Define, quite
+explicitly,
+\[
+ c_\xi=\frac1{|\mathfrak G|}\sum_{t\in\mathfrak G}
+                         G(t^{-1})\overline{\xi(t)},\qquad
+ a_\xi(n)=\overline{\alpha(n)}^{\,2}\gamma_2(n)\xi(n),
+\]
+where $\xi$ ranges over the characters of this fixed finite group.
+For coprime squarefree $z_1,z_2$, the useful paired identity is
+\begin{equation}\label{eq:paired}
+\begin{split}
+ &\muk(z_1)\muk(z_2)\overline{\alpha(z_1)}\alpha(z_2)
+       \gamma(\overline{\chi_{z_1}}\chi_{z_2})\\
+ &\hspace{3em}=\sum_\xi c_\xi a_\xi(z_1)\overline{a_\xi(z_2)}.
+\end{split}
+\end{equation}
+This preserves the structure of a squared sum. The zeta version produces
+$\overline\alpha\gamma_2$; the present version produces
+$\overline\alpha^{\,2}\gamma_2$. The second factor of
+$\overline\alpha$ comes from conjugating the first column of~\eqref{eq:Au}.
+
+\subsection{The next average, with every variable displayed}
+After resolving greatest common divisors, the averages have the form
+\begin{equation}\label{eq:energy}
+ \E(\mathcal H,X,F)=\frac1{XF}
+ \ssum_{F\le\N(f)<2F}\ \sum_{0<\N(k)\le\mathcal H}
+ \left|\ssum_n a_\xi(n)\chi_n(k)\chi_n(f)^4
+                       W(\N(n)/X)\right|^2.
+\end{equation}
+Both $f,n$ are primary, squarefree, and coprime to $6$; $k$ runs over
+all lattice points. The weight and the finite character $\xi$ have been
+suppressed on the left. Put $\Sigma=XF$.
+
+There are two sources of the fourth power. The divisor $e_0$ in
+Poisson contributes $\chi_n(he_0^5)$. A second exclusion divisor $v_0$
+uses the twisted multiplicativity
+\[
+ a_\xi(v_0n)=a_\xi(v_0)a_\xi(n)\chi_n(v_0)^4
+ \qquad((v_0,n)=1).
+\]
+With $f=e_0v_0$ and $k=e_0h$, these combine as
+$he_0^5v_0^4=kf^4$. Neither source can be omitted.
+
+The initial scales are, for a further divisor-size parameter $B\ge1$,
+\begin{equation}\label{eq:initial}
+ X=\frac D{BF},\qquad \Sigma=\frac DB,\qquad
+ \mathcal H\ll\frac{D^2}{HB^2}.
+\end{equation}
+The first Poisson reduction shows that the
+estimate $\E\ll D^\varepsilon\Sigma$ in these ranges implies
+\eqref{eq:MS}. Smooth kernels in two column variables are separated
+using Fourier or Mellin integrals, with a controlled finite number of
+derivatives; they are not simply discarded.
+
+\section{The completed sums and the second theta derivative}\label{sec:theta}
+
+For fixed $k,f$, put $\Psi(n)=\xi(n)\chi_n(k)\chi_n(f)^4$.
+The completed sum is the following explicit double sum:
+\begin{equation}\label{eq:T}
+\begin{split}
+ T(X;k,f)=\frac1{\sqrt X}\ssum_n\sum_b
+ &\overline{\alpha(n)}^{\,2}\gamma_2(n)\Psi(n)
+ \overline{\alpha(b)}^{\,6}\Psi(b)^3\N(b)^{1/2}\\
+ &\hspace{3em}\times W\left(\frac{\N(n)\N(b)^3}X\right).
+\end{split}
+\end{equation}
+Here $b$ is primary and coprime to $6$ but need not be squarefree.
+All sums are finite. The term $b=1$ is exactly $X^{-1/2}$ times the
+column sum in~\eqref{eq:energy}. The other terms are added because they
+occur naturally in the theta expansion.
+
+\subsection{Where those coefficients come from}
+Put $\lambda=1+2\omega=i\sqrt3$ and
+$\ce(z)=\exp(2\pi i(z+\bar z))$. Kubota's cubic theta function is a
+Fourier series in a planar variable $z$ and a positive height $v$,
+with terms $d_0(\ell)vK_{1/3}(4\pi|\ell|v)\ce(\ell z)$ in its
+conjugate. Here $K_{1/3}$ is the usual modified Bessel function.
+Patterson's coefficient formula gives
+\begin{equation}\label{eq:theta-coeff}
+ d_0(\lambda^{-3}nb^3)
+  =3^{5/2}|b|\,\overline{(\lambda/n)_3}\,\gamma_2(n).
+\end{equation}
+Restricting $\lambda^3\ell$ to be primary and coprime to $6$ selects
+exactly these indices. Other units and powers of $\lambda$ are excluded
+from the twisted series by this restriction. In the reflected series, at
+the three cusps, the indices lie in the larger set of
+$\ell=u\lambda^mnb^3$ with $u$ a unit and $m\ge-4$. The coefficient tables of
+Appendix~\ref{app:reflection} restrict them further; for example
+$d_0(\lambda^{-4})=0$. The factor $(\lambda/n)_3$ depends only
+on $n\bmod9$ and is canceled by inserting $(\lambda/\lambda^3\ell)_3$
+in the twist. It is finite residue-class data, not a missing Gauss factor.
+
+Differentiating $\ce(\ell z)$ twice with respect to $\bar z$ multiplies
+it by $(2\pi i\bar\ell)^2$. Removing the resulting radial power by
+a Mellin integral leaves $\overline{\alpha(\ell)}^{\,2}$.
+Since $\ell=\lambda^{-3}nb^3$, its factors in $n,b$ are exactly
+$\overline{\alpha(n)}^{\,2}\overline{\alpha(b)}^{\,6}$, up to the
+fixed factor $\overline{\alpha(\lambda^{-3})}^{\,2}=-1$.
+This explains every angular power in~\eqref{eq:T}.
+
+\subsection{Why differentiating twice is legitimate}
+The theta symmetry relates a rational translate $a/c+z$ to coordinates
+\[
+ z'=-\frac\delta c-\frac{\bar z}{c^2(v^2+z\bar z)},\qquad
+ v'=\frac v{\N(c)(v^2+z\bar z)}.
+\]
+At $z=\bar z=0$, pure $\bar z$ derivatives of $\bar z'$ and $v'$
+vanish, as do derivatives of $z'$ of order at least two, while
+$\partial_{\bar z}z'=-(cv)^{-2}$. Therefore the ordinary chain rule gives
+\begin{equation}\label{eq:chain}
+ \left.\partial_{\bar z}^{\,2}F(z',\bar z',v')\right|_{z=\bar z=0}
+   =(cv)^{-4}(\partial_{z'}^{\,2}F)
+                  \left(-\delta/c,1/(\N(c)v)\right).
+\end{equation}
+No unwanted lower derivative survives. The derivative also kills any
+constant Fourier term. Of the three expansions used, only the one at the
+identity cusp has a nonzero constant term, and the derivative removes it.
+This permits Mellin reflection without constant-term contributions.
+
+For $V(y)=\sqrt y\,W(y)$ the reflected weight is
+\begin{equation}\label{eq:weight}
+ V^\sharp(x)=\frac1{2\pi i}\int_{\Re t=0}\widehat V(-t)
+ \frac{\Gamma(4/3+t)\Gamma(5/3+t)}{\Gamma(4/3-t)\Gamma(5/3-t)}
+ \left(\frac{(2\pi)^4x}{27}\right)^{-t}dt.
+\end{equation}
+This is the CM version of the gamma quotient in the zeta argument.
+The reflected coefficients have angular factor $\alpha(\ell)^2$;
+the fixed cusp prefactor is $-\overline{\alpha(c)}^{\,4}/81$, before
+the finite Fourier coefficients and local phases are included.
+The full reflected series and its coefficient tables are recorded in
+Appendix~\ref{app:reflection}, so the main discussion can focus on the
+lengths and the averaging.
+
+\subsection{The local step from sextic to quadratic}
+By reciprocity and finite congruence-class splitting, $\Psi$ is of the
+form $\xi_0(n)\prod_{\pi\in\mathcal P}\chi_\pi(n)^{j_\pi}$.
+The local reflected factors, apart from constant phases, are
+\begin{equation}\label{eq:local}
+ B_{\pi,j}(x)=
+ \begin{cases}
+  \chi_\pi(x)^{-j-2},&j\notin\{0,4\},\\
+  \N(\pi)^{-1/2}\chi_\pi(x)^{-2},&j=0,\\
+  \N(\pi)^{-1/2}(-1+\N(\pi)\ind_{\pi\mid x}),&j=4.
+ \end{cases}
+\end{equation}
+In particular,
+\[
+ B_{\pi,1}(x)=\chi_\pi(x)^3=(x/\pi)_2.
+\]
+Away from the fixed factors of $6f$, squarefree row primes have exponent
+$j=1$. These are the varying primes that become quadratic. The other
+local factors are still present and have to be estimated.
+
+If $Q=\N(c)$ is the norm of the reduced cusp denominator, the weight
+in the reflected sum is $V^\sharp(\N(\ell)X/Q^2)$. Its effective norm
+range is about $Q^2/X$, shorter than $X$ when $Q<X$.
+Rapid decay gives a negligible tail when $X/Q^2$ is sufficiently large;
+the inequality $Q^2<X$ alone does not specify a quantitative saving.
+
+\section{The quadratic average and the completed bound}\label{sec:sieve}
+
+The quadratic large sieve used here is
+\begin{equation}\label{eq:qls}
+ \ssum_{\substack{\N(k)\le K\\(k,6)=1}}
+ \left|\ssum_{\N(n)\le U}\beta(n)\left(\frac nk\right)_2\right|^2
+ \ll_\varepsilon(KU)^\varepsilon(K+U)\ssum_n|\beta(n)|^2.
+\end{equation}
+Both $k,n$ are primary and squarefree, the coefficients $\beta(n)$ are
+arbitrary, and the column $n$ may be even. The squarefree restrictions
+matter: square columns would give repeated values $1$ rather than
+cancellation. This is the number-field quadratic large sieve of
+\cite{GL}, in the form needed here.
+
+Applying~\eqref{eq:qls} to the reflected sums, and retaining the factors
+in~\eqref{eq:local}, gives the completed mean-square estimate
+\begin{equation}\label{eq:completed}
+ \boxed{\quad
+ \sum_{0<\N(k)\le\mathcal H}|T(X;k,f)|^2
+ \ll D^\varepsilon\left(\mathcal H+
+                   \frac{\mathcal H^2\N(f)}X\right).
+ \quad}
+\end{equation}
+All parameters are at least one and bounded by a fixed power of $D$;
+a fixed finite smoothness norm of $W$ is understood. This is the CM form of the completed
+mean-square estimate of~\cite{OAI1112}.
+
+For clarity, passing from squarefree rows to all rows uses
+$k=u s v_0^2$, with $u$ a unit and $s$ squarefree. The identity
+\[
+ \chi_n(v_0^2)\chi_n(f)^4=\chi_n(fv_0^2)^4
+\]
+absorbs the square into the auxiliary twist. The squarefree-row bound
+allows that auxiliary argument to be nonsquarefree. Its contributions
+are summed using $\sum_{v_0}\N(v_0)^{-2}<\infty$.
+
+This is the main benefit of the theta transformation: the hard sextic
+average has been reduced to an average of quadratic symbols. However,
+\eqref{eq:completed} bounds the completed sum, whose cube terms still
+have to be removed.
+
+\section{Remove the cubes, then reduce the number of rows}\label{sec:descent}
+
+One cannot discard the $b\ne1$ terms inside~\eqref{eq:T}: they could
+cancel the term we want. Instead use the exact inversion
+\begin{equation}\label{eq:inversion}
+ \frac1{\sqrt X}\ssum_n a_\xi(n)\chi_n(k)\chi_n(f)^4W(\N(n)/X)
+ =\sum_h\frac{\muk(h)\overline{\alpha(h)}^{\,6}\Psi(h)^3}{\N(h)}
+                  T(X/\N(h)^3;k,f).
+\end{equation}
+Here $h$ is primary and coprime to $6$. To check the formula, substitute
+\eqref{eq:T}, collect the total cube index $hb$, and use
+$\sum_{h\mid b'}\muk(h)=\ind_{b'=1}$. The angular and character
+factors are completely multiplicative, so this cancellation is exact.
+
+Put
+\[
+ H_c^3=\min\left(X,\frac{X^2}{\mathcal H^2}\right),\qquad
+ L_b=\frac X{\N(b)^3},\qquad\Sigma=XF.
+\]
+Assume $\mathcal H\le\Sigma$. For $\N(h)\le H_c$, the completed
+bound at scale $X/\N(h)^3$ is at most
+\[
+ D^\varepsilon\left(\mathcal H+
+              \frac{\mathcal H^2F\N(h)^3}X\right)
+ \ll D^\varepsilon\Sigma.
+\]
+Cauchy--Schwarz and divisor sums absorb the sum over these small $h$.
+Expanding the remaining terms gives the cube-removal inequality
+\begin{equation}\label{eq:remove}
+ \E(\mathcal H,X,F)\ll D^\varepsilon
+ \left(\Sigma+
+  \sup_{\substack{\N(b)>H_c\\L_b>1}}\E(\mathcal H,L_b,F)\right).
+\end{equation}
+An empty supremum is zero. Scales $L_b\le1$ are handled by counting;
+if $\mathcal H^2\le X$, the supremum is empty.
+
+\subsection{What two more Poisson summations do}
+For a remaining scale $L=L_b$, smooth the row sum in the explicit average
+\[
+ \frac1{LF}\ssum_{F\le\N(f)<2F}\sum_{k\in\OO}
+ \Phi(\N(k)/\mathcal H)
+ \left|\ssum_n a_\xi(n)\chi_n(k)\chi_n(f)^4W(\N(n)/L)\right|^2.
+\]
+The reverse paired Gauss identity converts its coefficients back to
+M\"obius coefficients $\muk(n)\overline{\alpha(n)}\xi_1(n)$.
+For precision, the intermediate column sums, with their exclusions, are
+\begin{equation}\label{eq:P}
+ P_{C,e_0,t}(y;U)=\ssum_n\muk(n)\overline{\alpha(n)}\xi_1(n)
+ \ind_{(n,t)=1}\overline{\chi_n(y)}\chi_n(C)^4\chi_n(e_0)
+ U(\N(n)/\ell),\quad \ell=\frac L{\N(C)\N(t)}.
+\end{equation}
+Here $C,t$ are coprime squarefree primary elements and $e_0\mid C$.
+After separation of smooth weights, the nonnegative average used is
+\begin{equation}\label{eq:Q}
+ \sum_{\substack{C,t\ \mathrm{squarefree}\\(C,t)=1}}
+ \sum_{e_0\mid C}\frac{\mathcal H\N(C)}{\N(e_0)L^2F}
+ \sum_{y\in\OO}\Phi(\N(y)/Y_{C,e_0})
+                       |P_{C,e_0,t}(y;U)|^2,
+\end{equation}
+where the outer sum is restricted to $\N(Ct)\ll_W L$ and
+\[
+ Y_{C,e_0}=c_*\frac{\Sigma LF\N(e_0)}{\mathcal H\N(C)^2}.
+\]
+The constant $c_*$ is fixed and chosen to cover the support of the weights.
+
+Here is the crucial enlargement. The first Poisson frequency $h$ has
+size about $L^2/\mathcal H$, and combining it with $f$ as $y=hf^2$
+gives a natural range about $L^2F^2/\mathcal H$. Suppressing the common
+divisor factor $\N(e_0)/\N(C)^2$ and fixed constants, positivity permits
+\begin{equation}\label{eq:enlarge}
+ Y_{\rm natural}=\frac{L^2F^2}{\mathcal H}
+ \quad\longrightarrow\quad
+ Y_{\rm enlarged}=\frac{\Sigma LF}{\mathcal H},
+ \qquad \frac{Y_{\rm enlarged}}{Y_{\rm natural}}=\frac{\Sigma}{LF}\ge1.
+\end{equation}
+A larger row range at this stage means a smaller frequency range after
+the second Poisson summation. Without this enlargement, the two
+summations need not give a strict reduction.
+
+The second Poisson summation uses~\eqref{eq:paired} and returns to cubic
+coefficients. Regrouping signed divisor contributions before taking
+absolute values forces $f'\mid k'$. Locally the cancellation is
+\[
+ (1+\ind_{\pi\mid k'})-\ind_{\pi\mid k'}-\ind_{\pi\nmid k'}
+ =\ind_{\pi\mid k'}.
+\]
+Thus the next row range is at least the size of its auxiliary divisor,
+$\mathcal H'\ge F'\ge1$, and the column scales arising from removal of
+exclusions also remain at least one. This keeps the next average in the
+range to which the argument applies.
+
+Precisely, the transfer estimate bounds the
+average at $(\mathcal H,L,F)$ by $D^\varepsilon\Sigma$ times one plus
+the supremum of normalized averages $\E(\mathcal H',X',F')/\Sigma'$,
+where $\Sigma'=X'F'$ and
+\begin{equation}\label{eq:transfer}
+ \mathcal H'\le\frac{\mathcal HL}{\Sigma F},\qquad
+ \frac{\mathcal H'}{\Sigma'}\le\frac{\mathcal H}{\Sigma},\qquad
+ \Sigma'\le L.
+\end{equation}
+The finite character and the smooth weight may change, with controlled
+derivatives. All three new parameters are at least one.
+
+\subsection{Why this process terminates}
+Suppose $\mathcal H\le\Sigma D^{-\kappa}$ for a fixed $\kappa>0$.
+In a nonempty supremum in~\eqref{eq:remove},
+$\N(b)^3>X^2/\mathcal H^2$. With $L=X/\N(b)^3$,
+\begin{equation}\label{eq:contract}
+ \mathcal H'\le\frac{\mathcal H}{\N(b)^3F^2}
+ <\mathcal H\left(\frac{\mathcal H}{XF}\right)^2
+ \le\mathcal H D^{-2\kappa}.
+\end{equation}
+The number of rows falls by a fixed power of $D$, while the ratio
+$\mathcal H'/\Sigma'\le D^{-\kappa}$ is preserved.
+Since the parameters start below a fixed power of $D$, finitely many
+steps reach $\mathcal H\le1$. There are then at most six rows, and
+counting gives $\E\ll X\le\Sigma$.
+Distributing the allowed power loss among this bounded number of steps
+proves
+\[
+ \E(\mathcal H,X,F)\ll D^\varepsilon\Sigma
+ \qquad(\mathcal H\le\Sigma D^{-\kappa}).
+\]
+Finally, the initial ranges~\eqref{eq:initial} have
+$\mathcal H/\Sigma\ll D^{-\vartheta}/B$.
+For sufficiently large $D$, take $\kappa=\vartheta/2$.
+This proves the required auxiliary estimate, hence the original mean
+square~\eqref{eq:MS}, and hence the deduction in Section~\ref{sec:zeros}.
+
+\paragraph{What changes from the zeta guide.}
+The architecture is the same, but its angular factors change coherently:
+\[
+\begin{array}{c|cc}
+ &\text{zeta guide}&\text{present CM guide}\\\hline
+ \text{original coefficients}&\muk(n)&\muk(n)\alpha(n)\\
+ \text{cubic coefficients}&\overline\alpha\gamma_2&\overline\alpha^{\,2}\gamma_2\\
+ \text{theta derivative}&\partial_{\bar z}&\partial_{\bar z}^{\,2}\\
+ \text{angular factor on cubes}&\overline{\alpha(b)}^3&\overline{\alpha(b)}^6\\
+ \text{dual angular factor}&\alpha(\ell)&\alpha(\ell)^2
+\end{array}
+\]
+These are genuine identities to check, not consequences of the factors
+having absolute value one. Once checked, the same large-sieve and descent
+estimates apply.
+
+%======================== PART II: THE 7/8 BOUNDARY ========================
+\clearpage
+\section{Part II: the \texorpdfstring{$7/8$}{7/8} boundary for the same curves}\label{sec:78}
+
+The remaining sections adapt OpenAI's $7/8$ argument~\cite{OAI78}, explained
+for $\zeta$ in~\cite{G78}, to the curves $E_d$. The result is a wider
+zero-free strip. Equation and line references to~\cite{OAI78} are to its
+\TeX\ source. Throughout Part~II, $\mu=\muk$ is the M\"obius function on primary
+elements, and $\chi_\bullet(u)$ denotes the character $n\mapsto\chi_n(u)$.
+
+\begin{theorem}[claimed; see Section~\ref{sec:78status}]\label{thm:78}
+Let $\eta$ be a finite-order Hecke character of $K=\mathbb Q(\sqrt{-3})$, and put
+$\psi=\overline\alpha\,\eta$, that is, $\psi(n)=\overline{\alpha(n)}\,\eta(n)$ on
+primary $n$ prime to the conductor of $\eta$. Then
+\[
+ L(s,\psi)\ne0\qquad(\Re s>7/8).
+\]
+In particular, for every nonzero integer $d$,
+\[
+ L(E_d,s)\ne0\qquad(\Re s>11/8),
+\]
+a zero-free strip $11/8<\Re s<3/2$ along the right edge of the critical strip.
+\end{theorem}
+
+\paragraph{How the curves enter.} Put $\psi_d^*(n)=\overline{\alpha(n)}\chi_n(4d)$.
+If $p\nmid6d$ splits as $p=\pi\bar\pi$ with $\pi$ primary, then
+$\sqrt p\,\bigl(\psi_d^*(\pi)+\psi_d^*(\bar\pi)\bigr)=a_p(d)$; if $p\equiv2\pmod3$,
+then $\psi_d^*(-p)=-1$, matching $a_p(d)=0$. So $L(E_d,s+\frac12)=L(s,\psi_d^*)$
+up to finitely many Euler factors, which do not vanish in $\Re s>0$.
+(We checked both statements for $480$ split pairs $(d,p)$, testing both primes above each $p$, and
+$112$ inert pairs.)
+The character $\psi_d^*$ is the complex conjugate of the character
+$\psi_d=\alpha\,\overline{\chi_\bullet(4d)}=\alpha\,\chi_\bullet\bigl((4d)^5\bigr)$ used in
+Sections~\ref{sec:lattice}--\ref{sec:descent}. The two have the same
+$L$-function: since $4d$ is rational, $\psi_d^*(\bar\pi)=\overline{\psi_d^*(\pi)}$, so both
+characters give the same Euler factor at each split prime, and $\psi_d^*(-p)=-1$ is real.
+More generally, every unitary Hecke character of $K$ whose infinity type is
+$(\bar z/|z|)^{\pm1}$ is of the form $\overline\alpha\eta$ or its conjugate
+$\alpha\bar\eta$. So the theorem covers every weight-two newform with complex
+multiplication by $K$. In particular it covers every elliptic curve over
+$\mathbb Q$ with complex multiplication by an order of $K$ (the $j$-invariants
+$0$, $54000$ and $-12288000$).
+
+\paragraph{What ``proof'' means in Part II.} We do not rewrite the
+$16{,}700$ lines of~\cite{OAI78}. Instead we do three things:
+\begin{enumerate}
+\item we prove the identities in which the angular factor changes a
+ computation, and test them numerically;
+\item we state each ingredient of~\cite{OAI78} in the form it takes for a CM
+ target;
+\item we checked, section by section, that each proof in~\cite{OAI78} uses only
+ properties that CM characters share with finite-order characters, or we record
+ the change.
+\end{enumerate}
+No step was found that needs a new idea. Section~\ref{sec:78status} lists the
+statements that still have to be written out in full, at the generality
+of~\cite{OAI78}.
+
+\subsection{The family and the number \texorpdfstring{$\beta_*$}{beta*}}
+Let $\mathcal F_0$ be the set of primitive finite-order Hecke characters of $K$, and
+let $\mathcal F_{\rm CM}$ be the set of primitive Hecke characters of $K$ with infinity type
+$\bar z/|z|$, that is, the primitive characters inducing $\overline\alpha\eta$ with $\eta$ of finite
+order. Put
+\[
+ \beta_*=\sup\bigl(\{1/2\}\cup\{\Re\rho:\ L(\rho,\psi)=0,\ 1/2\le\Re\rho\le1,\
+ \psi\in\mathcal F_{\rm CM}\}\bigr).
+\]
+Three properties make this family suitable.
+\begin{itemize}
+\item \emph{Closure under finite-order twists.} If $\psi\in\mathcal F_{\rm CM}$ and $\theta$
+ has finite order, then the primitive character inducing $\psi\theta$ lies in
+ $\mathcal F_{\rm CM}$. Every denominator row below is such a twist.
+\item \emph{Conjugation.} $\overline\psi=\alpha\bar\eta$ and
+ $L(s,\overline\psi)=\overline{L(\bar s,\psi)}$, so conjugates contribute no new real parts
+ of zeros.
+\item \emph{No poles.} Every $L(s,\psi)$ with $\psi\in\mathcal F_{\rm CM}$ is entire. No
+ member is principal, so the principal-character clauses of~\cite{OAI78} disappear.
+\end{itemize}
+The rows of the argument also contain finite-order $L$-functions. For them we do
+not use $\beta_*$. Instead we use OpenAI's theorem~\cite[Theorem~thm:main]{OAI78}:
+they have no zeros in $\Re s>7/8$. So, under the contradiction hypothesis
+$\beta_*>7/8$, every $L$-function that occurs has its zeros in $\Re s\le\beta_*$.
+In~\cite{OAI78} this was automatic from the definition of $\beta_*$. Here it is one of two
+places where the finite-order theorem is an input; the other is the zero-free hypothesis for the
+slot characters in the plain moment (Section~\ref{sec:78moments}).
+
+The continuation criterion~\cite[Prop.~lem:continuation-criterion]{OAI78}
+(see~\cite[Proposition~1]{G78}) holds verbatim with $\eta$ replaced by $\psi$. Its proof uses
+only three things:
+\begin{itemize}
+\item the definition of $\beta_*$;
+\item the bound $|1/L^S(s,\psi)|\le\zeta_K(2)$ on $\Re s\ge2$;
+\item the nonvanishing of finitely many Euler factors in $\Re s>0$.
+\end{itemize}
+It therefore suffices, for each $\psi\in\mathcal F_{\rm CM}$, to construct a function
+$J_\psi(Z)$ with the low and high estimates of the criterion, for $\sigma_0=7/8$ and
+$C(s)=s-11/16$, with margins independent of $\psi$.
+
+The construction is that of~\cite{OAI78}, with three changes:
+\begin{itemize}
+\item the weight of the target (Section~\ref{sec:78probe});
+\item the bookkeeping of the characters attached to rows
+ (Section~\ref{sec:78rows});
+\item an angular factor in the moment estimates
+ (Section~\ref{sec:78moments}).
+\end{itemize}
+Section~\ref{sec:78final} checks that the final inequality is unchanged.
+
+\section{The probe for a CM target}\label{sec:78probe}
+
+\subsection{The weight}
+In~\cite{OAI78} the target $\eta$ enters the probe~\cite[eq.~general-probe]{OAI78},
+\cite[\S3.1]{G78}, only through the weight on the completed index $A=cn^3$:
+$\gamma_2(c)\overline{\alpha(A)}\eta(A)$. For the target $\psi=\overline\alpha\eta$ the weight is
+therefore
+\begin{equation}\label{eq:cm-weight}
+ \gamma_2(c)\overline{\alpha(cn^3)}\,\psi(cn^3)
+ =\gamma_2(c)\overline{\alpha(c)}^{\,2}\,\overline{\alpha(n)}^{\,6}\,\eta(c)\eta(n)^3 .
+\end{equation}
+Everything else in the probe is unchanged:
+\begin{itemize}
+\item the additive polynomial with its sextic Gauss sums;
+\item the averaging variable $m$;
+\item the fixed phases;
+\item the scales $X,Y,Z$.
+\end{itemize}
+
+\paragraph{Why $\overline\alpha\eta$ and not $\alpha\bar\eta$.} The two targets have conjugate
+zeros, so either could be used. With $\alpha\bar\eta$ the weight would be
+$\gamma_2(c)\bar\eta(cn^3)$, with no angular factor. The completed sums would then be
+sums of coefficients of the cubic theta function itself. Its expansion at the identity cusp has a
+nonzero constant term; the expansions at the other two cusps have none. In~\cite{OAI78} a
+$\bar z$-derivative removes that term (L2331). Without a derivative it enters the reflection of every
+translate attached to the identity cusp, and produces a main term that nothing in~\cite{OAI78} controls.
+With the target $\overline\alpha\eta$ the weight carries $\overline\alpha^{\,2}$. The completed sums are then those of
+$\partial_{\bar z}^{\,2}\theta$, which is the input of Section~\ref{sec:theta}, and the constant term is
+removed.
+
+\subsection{Second evaluation: the rows}
+\begin{proposition}\label{prop:cm-rows}
+With the weight~\eqref{eq:cm-weight}, Poisson summation in $m$ gives the
+representation~\cite[eq.~probe-poisson-identity]{OAI78} of the probe, with row $u$
+equal to
+\[
+ \frac{\zeta_K^S(6z)\,L^S\bigl(w,\chi_\bullet(u)\bigr)}
+      {L^S\bigl(x,\psi\overline{\chi_\bullet(u)}\bigr)}\,\mathcal H_{\psi,u}(x,w,z),
+\]
+where $\mathcal H_{\psi,u}$ is the Euler product of~\cite[Lemma~lem:local-euler]{OAI78}
+with $\eta(p)$ replaced by $\psi(p)$. It has the following properties:
+\begin{itemize}
+\item it converges in the same regions;
+\item it satisfies $\mathcal H_{\psi,u}\ll\N(u)^\varepsilon$ there;
+\item $\mathcal H_{\psi,1}=1+O(P_0^{-4/5})$ in the second region of~\cite{OAI78} (L4056).
+\end{itemize}
+\end{proposition}
+\begin{proof}
+\cite{OAI78} evaluates the coefficient prime by prime. The target enters only through
+the unimodular numbers $\eta(p)$ and complete multiplicativity, and no ray-class
+condition on $p$ is used (L3871).
+
+The angular factor of the weight is absorbed by the Gauss-sum identity
+\begin{equation}\label{eq:signal-cm}
+ \overline{\alpha(c)}\,\gamma_2(c)\,\gamma_1(c)=\mu(c)\,G(c),
+\end{equation}
+a rearrangement of the second identity $\gamma_1\gamma_2=\mu\alpha G$ in~\cite[eq.~signal]{OAI78}.
+Here $\gamma_1$ is the normalized sextic Gauss sum and $G$ a fixed finite phase. For the
+weight~\eqref{eq:cm-weight}, $\overline{\alpha(c)}^{\,2}\gamma_2(c)\eta(c)\gamma_1(c)=\mu(c)G(c)\psi(c)$.
+So every entry of the local table of~\cite{OAI78} holds with $\eta(p)$ replaced by
+$\psi(p)$:
+\begin{itemize}
+\item The squarefree part gives $-\psi(p)\overline{\chi_p(u)}\N(p)^{-x}$, which is the
+ Euler factor of $1/L(x,\psi\overline{\chi_\bullet(u)})$.
+\item The cube part gives the phases $a_p=\overline{\alpha(p)}^{\,3}\psi(p)^3$ and
+ $b_p=\overline{\alpha(p)}^{\,2}\psi(p)^2\overline{\chi_p(4)}$.
+\item The relation $b_p^3=a_p^2$ used there still holds, since $\chi_p(4)^3=(4/p)_2=1$.
+\end{itemize}
+The convergence regions and the bounds for $\mathcal H$ use only $|\psi(p)|=1$.
+\end{proof}
+We checked~\eqref{eq:signal-cm} numerically at $60$ primes (error below
+$4\cdot10^{-15}$). The proposition gives the following.
+\begin{itemize}
+\item The numerators $L(w,\chi_\bullet(u))$ have finite order. They are the same as for
+ $\zeta$.
+\item The denominators $L(x,\psi\overline{\chi_\bullet(u)})$ belong to $\mathcal F_{\rm CM}$ and
+ are never principal.
+\item The principal row $u=1$ is $\zeta_K^S(w)\zeta_K^S(6z)/L^S(x,\psi)$. Its residues at
+ $w=1$ and $z=1/6$ give the signal with $H_\psi(x)/L^S(x,\psi)$, and with the same
+ positive constant $c_S$. The positivity $M(1/6)>0$ is a property of the averaging
+ weight alone.
+\end{itemize}
+
+\subsection{First evaluation: completed rows with two derivatives}
+Cauchy--Schwarz splits the probe \cite[\S3.2]{G78} into two mean squares. The first is
+the additive one, which does not involve the target. The second is the mean square of
+the completed rows
+\[
+ B_m=\sum_{\substack{c\ {\rm sf}\\n}}
+ \frac{\gamma_2(c)\,\overline{\alpha(cn^3)}^{\,2}\,\nu(cn^3)\,\chi_{cn^3}(m)}{\sqrt{\N(c)}\,\N(n)}
+ \,V\Bigl(\frac{\N(c)\N(n)^3}Z\Bigr).
+\]
+Here $\nu$ is a finite-order character whose conductor is supported on the fixed set
+$S$; it is the finite part $\eta$ times the fixed phases. The angular factor must stay in
+the weight, not in $\nu$: the theta step of~\cite{OAI78} expands $\nu$ over residue
+classes, which is impossible for $\overline\alpha$.
+
+\begin{proposition}\label{prop:cm-completed}
+$\sum_{\N(m)\le Q}|B_m|^2\ll Z^{\varepsilon}(Q+Q^2/Z)$, exactly as
+in~\cite[Lemma~lem:unmarked-completed-moment]{OAI78}.
+\end{proposition}
+The compensated probe needs more than this. Its marked rows involve sums over tuples of slot primes,
+divisibility conditions on the completed index, and a scale that depends on the tuple. In~\cite{OAI78}
+their bound comes from separate lemmas: lem:hybrid-energy, lem:reflected-energy and
+lem:probe-row-norm, through Cor.~cor:marked-reflection. Their CM versions, uniform in the tuples, the
+masks and the smooth weights, are item~1 of Section~\ref{sec:78status}. They have not been written out
+here.
+
+
+\cite{OAI78} proves this through its completed reflection
+\cite[Prop.~prop:completed-reflection]{OAI78}, which is the transformation formula for
+$\partial_{\bar z}\theta$. For~\eqref{eq:cm-weight} one uses instead $\partial_{\bar z}^{\,2}\theta$,
+as in Section~\ref{sec:theta} and Appendix~\ref{app:reflection}. The changes are:
+
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+ & $\zeta$ and finite order~\cite{OAI78} & CM target\\\midrule
+derivative & $\partial_{\bar z}\theta$ & $\partial_{\bar z}^{\,2}\theta$\\
+direct Mellin factor & $\Gamma(s+\frac13)\Gamma(s+\frac23)$ & $\Gamma(s+\frac56)\Gamma(s+\frac76)$\\
+reflected kernel & $\prod_\pm\frac{\Gamma(1+t\pm1/6)}{\Gamma(1-t\pm1/6)}$
+ & $\frac{\Gamma(4/3+t)\Gamma(5/3+t)}{\Gamma(4/3-t)\Gamma(5/3-t)}$\\
+cusp scalar & $-\frac{i}{81}\overline{\alpha(c)}^{\,2}$ & $-\frac1{81}\overline{\alpha(c)}^{\,4}$\\
+angular factor, original side & $\overline{\alpha(n)}\,\overline{\alpha(b)}^{\,3}$ & $\overline{\alpha(n)}^{\,2}\overline{\alpha(b)}^{\,6}$\\
+angular factor, dual side & $\alpha(\mu)$ & $\alpha(\mu)^2$\\\bottomrule
+\end{tabular}
+\end{center}
+
+Both kernels satisfy $|R(\sigma+iu)|\ll_A(1+|u|)^{4\sigma}$ on $-1/4\le\sigma\le A$. The CM kernel is
+holomorphic for $\Re t>-4/3$; OAI78's is holomorphic for $\Re t>-5/6$. So the reflected weight obeys
+the same bound $\ll\min(x^{1/4},x^{-A})$, with the same seminorms. The other ingredients
+carry over as follows.
+\begin{itemize}
+\item \emph{Dual lengths.} They are unchanged.
+\item \emph{Quadratic large sieve.} The dual angular factor $\alpha(\mu)^2$ is a unimodular
+ coefficient of the dual index, so it is absorbed into the arbitrary coefficients of the
+ sieve.
+\item \emph{Marks.} Slot primes in the completed index are handled in~\cite{OAI78} through
+ $\ind_{q\mid A}=1-\chi_q(A)^0$, which never requires splitting $\overline\alpha$.
+\item \emph{Phases.} The extra $\overline{\alpha(c)}^{\,4}$ is multiplicative over primes, so the
+ row and tuple phases still separate.
+\end{itemize}
+The balanced low estimate $|I_\psi(Z^{1/2},Z^{1/2},Z)|\ll Z^{1/4+\varepsilon}$ follows from the
+proposition as in~\cite{OAI78}. The compensated low estimate $|I_{\rm mod}(Z)|\ll Z^{3/16+\varepsilon}$
+follows in the same way once the marked lemmas above are established in CM form.
+We checked numerically:
+\begin{itemize}
+\item the Bessel--Mellin identities for one and two derivatives (relative error
+ $3\cdot10^{-26}$);
+\item the two reflection constants;
+\item the Stirling exponents of the kernels.
+\end{itemize}
+
+\section{Rows, zeros and prime slots}\label{sec:78rows}
+
+\subsection{Growth of the CM \texorpdfstring{$L$}{L}-functions}
+\begin{lemma}\label{lem:cm-growth}
+Let $\psi\in\mathcal F_{\rm CM}$ have conductor $\mathfrak f$, and put $Q=\N\mathfrak f$. Then
+\[
+ \Lambda(s,\psi)=(3Q)^{s/2}(2\pi)^{-s}\,\Gamma(s+\tfrac12)\,L(s,\psi)
+\]
+is entire and $\Lambda(s,\psi)=\epsilon(\psi)\Lambda(1-s,\overline\psi)$ with $|\epsilon(\psi)|=1$. Moreover
+$|L(\sigma+it,\psi)|\ll Q^{3/5}(3+|t|)^2$ for $-1/10\le\sigma\le11/10$, which is the bound
+of~\cite[Lemma~lem:hecke-strip-growth]{OAI78} for finite-order characters.
+\end{lemma}
+\begin{proof}[Sketch]
+The functional equation is Hecke's, for characters of infinity type
+$\bar z/|z|$~\cite[Ch.~VII, \S8]{Neukirch}.
+
+\emph{Entire.} $L(s,\psi)$ is the Mellin transform of a theta series
+$\sum_{a\in\OO}\phi(a)\,\bar a\,e^{-cv\N(a)}$, where $c>0$ and $\phi$ is the finite part, extended
+to elements so that $\phi(\zeta a)\bar\zeta=\phi(a)$ for units $\zeta$. Poisson summation takes
+$\bar z\,e^{-cv|z|^2}$ to a constant multiple of $\bar\xi\,e^{-c'|\xi|^2/v}v^{-2}$, which vanishes
+at $\xi=0$. So there is no constant term, and hence no pole.
+
+\emph{Growth.} On $\Re s=-1/10$ the gamma quotient satisfies
+$|\Gamma(3/2-s)/\Gamma(1/2+s)|\asymp(3+|t|)^{6/5}$. That is the exponent of $|\Gamma(1-s)/\Gamma(s)|$ for
+finite-order characters, so the functional equation gives
+$|L(-1/10+it,\psi)|\ll Q^{3/5}(3+|t|)^{6/5}$, as in~\cite{OAI78}. On $\Re s=11/10$ the Euler product is
+bounded. The damped Phragm\'en--Lindel\"of argument of~\cite{OAI78}, applied to
+$Q^{-3/5}L(s,\psi)/(s+2)^2$, then gives the strip bound.
+\end{proof}
+Consequently the logarithmic control of~\cite[Lemma~lem:logarithmic-control]{OAI78}
+holds for $\mathcal F_{\rm CM}$, with the same conductor exponents and without its
+principal clauses. Only fixed polynomial orders in the height change, and these may
+depend on the target.
+
+\subsection{The characters attached to a row}
+In~\cite{OAI78} each row $u$ carries a finite set of characters: the twists
+$\theta\chi_\bullet(u)^{\pm1}$ by members $\theta$ of the finite group
+$\Theta_0=\langle\eta,\widehat T\rangle$, where $\widehat T$ consists of fixed characters
+supported over $2$ and $3$. A row is \emph{bad} if one of these has a zero of bounded
+height well to the right of $1/2$. For a CM target the group generated by $\psi$ is
+infinite. We use instead the finite set
+\[
+ \mathcal X_u=\bigl\{\theta\chi_\bullet(u)^{\pm1}\bigr\}\cup
+ \bigl\{\overline\alpha\,\theta\,\overline{\chi_\bullet(u)},\ \alpha\,\theta\,\chi_\bullet(u)\bigr\},
+ \qquad\theta\in\Theta_0=\langle\eta,\widehat T\rangle .
+\]
+It has three properties.
+\begin{itemize}
+\item It contains the numerator, the denominator $\psi\overline{\chi_\bullet(u)}$, and their
+ conjugates.
+\item It is finite and closed under conjugation. Together with Lemma~\ref{lem:cm-growth}, the
+ conductor bound $Q_\psi\ll\N(u)$, and the fact that no CM member is principal, these are all
+ that the detector of~\cite[Section~sec:detector]{OAI78} uses.
+\item Its finite-order members have no zeros in $\Re s>7/8$, and its CM members none in
+ $\Re s>\beta_*$. This gives the bin ceiling $a\le\beta_*$ of \cite[\S3.3]{G78}.
+\end{itemize}
+A zero of a CM member produces the two witnesses of \cite[\S3.3]{G78}, now with the
+angular factor:
+\[
+ M_r=U^{-r/2}\sum_n\mu(n)\overline{\alpha(n)}\theta(n)\overline{\chi_n(u)}\,W\Bigl(\frac{\N(n)}{U^r}\Bigr),
+ \qquad
+ S_m=U^{-m/2}\sum_l\overline{\alpha(l)}\theta(l)\overline{\chi_l(u)}\,W'\Bigl(\frac{\N(l)}{U^m}\Bigr),
+\]
+or their conjugates. In each, $\overline\alpha$ appears together with $\overline\chi$, or $\alpha$ together
+with $\chi$. We call such sums \emph{co-oriented}; this matters in
+Section~\ref{sec:78moments}.
+
+\subsection{The compensated probe and the slots}
+The compensated probe \cite[\S4.2]{G78} is formed with $\overline{\psi(p_{J^c})}$ in place of
+$\overline{\eta(p_{J^c})}$. In row $u$ a slot prime $p\nmid u$ contributes the local factor
+$\psi(p)\overline{\chi_p(u)}\N(p)^{-x}$ of the denominator, and $\overline{\psi(p)}\psi(p)=1$. So the
+marked-minus-rescaled difference is $-\overline{\chi_p(u)}$ plus small terms, exactly as
+for~$\zeta$. The slot amplitudes
+\[
+ Q_i(u)=P_i^{-1/2}\sum_{p\in\text{slot }i}\Omega_i\Bigl(\frac{\N(p)}{P_i}\Bigr)
+ \Bigl(\frac{\N(p)}{P_i}\Bigr)^{z-1}\overline{\Bigl(\frac up\Bigr)_6}
+\]
+are the same finite-order prime polynomials as in \cite[\S4.4]{G78}. Two consequences
+follow.
+\begin{enumerate}
+\item The principal normalizer $A_T(Z)$ is unchanged.
+\item The pointwise bound $|Q_i(u)|\ll P_i^{\delta/2+o(1)}$ of~\cite[Lemma~lem:bin-prime-bound]{OAI78}
+ is unchanged, since the slot characters $\theta\overline{\chi_\bullet(u)}$ lie in $\mathcal X_u$.
+ Separately, the uniform slot bound inside the plain moment (\cite[eq.~old-eq:3.5]{OAI78}) needs a
+ zero-free region only for finite-order characters. OpenAI's theorem supplies it at $7/8$, so
+ $\kappa=3/4$ may be used there and in the plain capacity, in place of $\kappa=2\beta_*-1$.
+\end{enumerate}
+
+\section{Counting bad rows with an angular factor}\label{sec:78moments}
+\cite{OAI78} counts bad rows with the sextic large sieve of \cite[\S3.3]{G78} and the three averages of \cite[\S5.1]{G78}. For rows whose zero comes from a
+finite-order member they apply unchanged. For CM members they are needed with the angular
+factor on the summation variable, but not on the slot primes.
+
+\paragraph{1. The sextic large sieve}~\cite[Lemma~lem:sextic-large-sieve]{OAI78}.
+It allows arbitrary coefficients, so it is unchanged. This is the only row count used in the $11/12$ stage of~\cite{OAI78} (its Part~I).
+
+\paragraph{2. The inverse moment with prime factors.} For either sign $\epsilon=\pm1$, and under the
+conditions $r+2z\le m-c_1$, $2r+8z\le3m-c_2$ of~\cite[Lemma~lem:marked]{OAI78}, put
+\begin{align*}
+ M_u&=Z^{-r/2}\sum_n\mu(n)\,\alpha(n)^{\epsilon}\nu(n)\chi_n(u)^{\epsilon}
+ W\Bigl(\frac{\N(n)}{Z^r}\Bigr),\\
+ Q_u&=\prod_{i}Z^{-z_i/2}\sum_{p}a_i(p)\nu(p)\chi_p(u)^{\epsilon}W_i\Bigl(\frac{\N(p)}{Z^{z_i}}\Bigr),
+\end{align*}
+where $z=\sum_iz_i$, the slot sets $\mathcal P_i$ are disjoint and avoid $S$, $\N(p)\asymp Z^{z_i}$ for
+$p\in\mathcal P_i$, and the coefficients $a_i(p)$ are independent of $u$ with $|a_i(p)|\le1$. Then
+\begin{equation}\label{eq:cm-inverse}
+ \sum_{0<\N(u)\ll Z^m}|M_uQ_u|^2\ll Z^{m+\varepsilon}.
+\end{equation}
+\emph{Why.} The proof in~\cite{OAI78} alternates between two coefficient classes: Möbius coefficients
+$\mu\nu$, and cubic coefficients $\overline\alpha\gamma_2\nu$ attached to the theta function. Each
+switch uses~\eqref{eq:signal-cm} or its companion
+\[
+ \mu(n)\gamma_{-1}(n)=\chi_n(-1)G(n)^{-1}\,\overline{\alpha(n)}\,\gamma_2(n),
+\]
+which we checked at $60$ primes. \cite{OAI78} runs the orientation $\mu\nu$ with $\overline\chi$. With the
+co-oriented factor $\overline\alpha$ on the Möbius variable ($\epsilon=-1$) the classes become
+$\mu\overline\alpha\leftrightarrow\overline\alpha^{\,2}\gamma_2$; for $\epsilon=+1$ they are the complex conjugates. These are the dual coefficient and the cube
+factor $\overline\alpha^{\,6}$ of Sections~\ref{sec:poisson}--\ref{sec:descent}, and the theta steps use
+$\partial_{\bar z}^{\,2}\theta$ as in Proposition~\ref{prop:cm-completed}.
+
+A slot prime that is merged with the Möbius variable multiplies its coefficient by a sign and the
+unimodular factor $\overline{\alpha(p)^{\epsilon}}$. That coefficient is still bounded, independent
+of $u$, and of product form, which is all~\cite{OAI78} uses. The descent, its masks and punctures,
+and the propagation of seminorms never see $\alpha$.
+
+\emph{Orientation.} The anti-oriented sum, with $\alpha$ paired with $\overline\chi$, would turn into
+plain $\gamma_2$, since $\alpha\cdot\overline\alpha\gamma_2=\gamma_2$. That is the theta function without a
+derivative, with its constant terms. So the clause ``for either sign'' of~\cite{OAI78} does not extend
+to that case. It is never needed, because all CM witnesses are co-oriented.
+
+\paragraph{3. Sixth-power amplification}~\cite[Lemma~lem:inverse-amplification]{OAI78}.
+This is unchanged. The identity $\chi_n(ua^6)=\chi_n(u)$ for $(a,n)=1$ does not involve $\alpha$. Its
+input is~\eqref{eq:cm-inverse} without slots; for $\epsilon=1$ and trivial $\nu$, the mean square~\eqref{eq:MS} of Part~I of these notes is the
+special case of row range at most $D^{11/10}$.
+
+\paragraph{4. The plain fourth moment with prime factors}~\cite[Lemma~lem:plain]{OAI78}.
+The CM statement needed is the following. Fix $e=\pm1$ and $3/4\le\kappa\le1$. For rows $k$ with
+$0<\N(k)\ll Z^m$, write $\psi_k=\tau\chi_\bullet(k)$ for the finite-order row character, and put
+\[
+ S_k(n_j)=Z^{-n_j/2}\sum_l\alpha(l)^e\psi_k(l)W_j\Bigl(\frac{\N(l)}{Z^{n_j}}\Bigr)\qquad(j=1,2).
+\]
+Let $Q$ be a product of slot polynomials in $\psi_k$ with no angular factor, of total length $z$, whose
+coefficients are fixed combinations of characters in $\Theta_0$. Let $\mathcal R_z$ be the rows of
+\cite{OAI78}, defined through the finite-order part $\psi_k$. Then
+\[
+ \sum_{k\in\mathcal R_z}|S_k(n_1)S_k(n_2)Q|^2\ll Z^{M+\varepsilon},\qquad M=m+q,
+\]
+with the same hypotheses and uniformity as in~\cite{OAI78}: no restriction when $z=0$;
+$n_1+n_2+6\kappa z\le M$ and slots of length at most the mesh when $z>0$; uniformity over moving moduli,
+masks and frozen labels. Here $q$ is OpenAI's bound for the moving conductor support. The zero-free
+hypothesis is needed only for the finite-order slot characters, so $\kappa=3/4$ is allowed.
+The changes to the proof that we can identify are four.
+\begin{itemize}
+\item[(a)] \emph{Hecke reflection.} This uses Lemma~\ref{lem:cm-growth}. The dual profile is
+ $\mathcal MW^\sharp(s)=\mathcal MW(1-s)\,\Gamma(s+\frac12)/\Gamma(\frac32-s)$, in place of
+ $\mathcal MW(1-s)\Gamma(s)/\Gamma(1-s)$. Both quotients grow like $|t|^{2\sigma-1}$ on vertical lines,
+ and the conductor scale changes only at the prime above $3$. So the reflected lengths and
+ seminorm bounds are unchanged.
+\item[(b)] \emph{Poisson summation in the row.} The two finite Poisson transforms act on the row
+ variable $k$ with radial weights, so $\alpha(l)$ is an inert coefficient.
+\item[(c)] \emph{Main terms.} The induction of~\cite{OAI78} meets volume-sized main terms on rows whose
+ character lies in $\Theta_0$, and cancels them with an equal-scale centered difference. In the CM case
+ the corresponding lattice sums are $\sum_z\alpha(z)^ef(\N z)$ over a fixed lattice. By Poisson
+ summation their main term is $\int_{\mathbb C}\alpha(z)^ef(|z|^2)\,dz=0$. This removes the volume main
+ term. It does not by itself give the uniform error bounds or the induction.
+\item[(d)] \emph{The zero-free hypothesis.} The slot amplitudes have finite order, so the hypothesis
+ is OpenAI's theorem, with $\kappa=3/4$.
+\end{itemize}
+These changes are what we expect. They are not a proof of the CM statement. That requires redoing the
+induction of~\cite{OAI78} with the coefficient $\alpha(l_1l_2)^e\,\tau_1\bigl(\prod l_1l_2\bigr)$ carried through
+every transform, and with the angular factor kept off the slot primes. This is item~5 of
+Section~\ref{sec:78status}.
+
+\section{The final inequality}\label{sec:78final}
+A bin of rows of norm $U=Z^d$ contributes at most $Z^{C(7/8)+E(d)+o(1)}$, with the exponent
+$E(d)$ of~\cite[eq.~common-high-exponent]{OAI78} \cite[\S6]{G78}. Its terms come from four sources:
+\begin{itemize}
+\item the scales and the Mellin weight on the central contour;
+\item the number of bad rows, given by the moments above with the same exponents;
+\item the prime amplitudes, which have finite order;
+\item the size $U^{\delta/2}$ of the finite-order numerator on the reflected line.
+\end{itemize}
+None of these involves the gamma factor of a CM $L$-function. That factor affects only fixed powers
+of the height.
+
+So the endpoint certificate of~\cite[Lemma~lem:balanced-endpoint]{OAI78},
+\[
+ -E(h)\ge\frac{49}{440640}\qquad(0\le\delta\le5/6,\ 0\le x\le1/2),
+\]
+with $q=x\delta$ and $R=R_*(\delta,x)$,
+applies verbatim. \cite{OAI78} compares it with $\Delta=\beta_*-7/8$ in
+\cite[eq.~adaptive-endpoint]{OAI78}:
+\[
+ E_{\rm actual}(h)-\Delta\le-\frac{49}{440640}-\Bigl(1-\frac h4\Bigr)\Delta+\epsilon_{\rm total}<0 .
+\]
+The term $h\Delta/4$ is a capacity loss caused by the choice $\kappa=2\beta_*-1$. With $\kappa=3/4$ it
+disappears, which only helps.
+The bin ceiling $\delta\le5/6$ comes from the $11/12$ stage. The balanced probe of
+Section~\ref{sec:78probe}, at $X=Y=Z^{1/2}$ and with the sextic row count, gives
+$\beta_*\le11/12$ for $\mathcal F_{\rm CM}$. This is Part~I of~\cite{OAI78} with the changes above;
+it uses neither prime slots nor the plain moment. It is a statement about the whole family,
+so it is not supplied by Part~I of these notes, which treats one curve at a time. Every margin is chosen before the target, as
+in~\cite{OAI78}, so all margins are uniform in $\psi$. The continuation criterion then gives the
+contradiction. Hence $\beta_*\le7/8$, which is Theorem~\ref{thm:78}.
+
+\section{What has been checked, and what remains}\label{sec:78status}
+We read~\cite{OAI78} in eight consecutive parts. For each part we listed every use of a property of
+the target or of a row character, and classified it as unchanged, routine, or needing a new argument.
+None needed a new argument. The table summarizes.
+\begin{center}
+\small
+\begin{tabular}{p{2.7cm}p{4.6cm}p{7.2cm}}
+\toprule
+\cite{OAI78} lines & content & CM change\\\midrule
+1--1648 & criterion, Gauss sums, growth lemmas & growth with $\Gamma(s+\frac12)$ (Lemma~\ref{lem:cm-growth});
+ OpenAI's theorem for finite-order rows\\
+1648--3313 & completed reflection, row energy & $\partial_{\bar z}^{\,2}\theta$; table in Section~\ref{sec:78probe}\\
+3313--4687 & probe, Poisson rows, detector & weight~\eqref{eq:cm-weight}; local identity formal in $\psi(p)$;
+ label set $\mathcal X_u$\\
+4687--6807 & sextic count, high side, $11/12$ & none beyond the above; principal-denominator cases disappear\\
+6807--9209 & compensated probe, low side & normalization $\overline{\psi(p)}$; slots unchanged\\
+9209--12477 & inverse moment & co-oriented classes $\mu\overline\alpha\leftrightarrow\overline\alpha^{\,2}\gamma_2$ (and conjugates)\\
+12477--14985 & plain fourth moment & reflection with $\Gamma(s+\frac12)$; lattice main terms vanish\\
+14985--16677 & row counts, endpoint & none; $\kappa=3/4$\\\bottomrule
+\end{tabular}
+\end{center}
+
+Six statements must still be written out in full, at the generality of~\cite{OAI78}:
+\begin{enumerate}
+\item the twisted transformation formula for $\partial_{\bar z}^{\,2}\theta$ (Appendix~\ref{app:reflection}),
+ for a general modulus supported on $S$, general log-Schwartz tests, and the cross-prime phase
+ bookkeeping of~\cite[L2003--2279]{OAI78}; together with its marked form
+ (\cite[Cor.~cor:marked-reflection]{OAI78}) and the lemmas of~\cite{OAI78} built on it for the
+ weight $\overline\alpha^{\,2}$: lem:hybrid-energy, lem:reflected-energy and lem:probe-row-norm;
+\item Lemma~\ref{lem:cm-growth} together with the CM form of the logarithmic control;
+\item the detector with the label set $\mathcal X_u$;
+\item the inverse moment~\eqref{eq:cm-inverse} for co-oriented coefficients;
+\item the plain fourth moment with $\alpha^e$ on the plain variables;
+\item the $11/12$ stage of~\cite{OAI78} (its Part~I) for $\mathcal F_{\rm CM}$, giving $\beta_*\le11/12$.
+\end{enumerate}
+Each is obtained from the corresponding statement of~\cite{OAI78} by the changes recorded above. We
+checked the new identities numerically:
+\begin{itemize}
+\item the point counts against $\psi_d^*$;
+\item \eqref{eq:signal-cm} and its companion;
+\item the vanishing of $\int\alpha^ef$;
+\item the Bessel--Mellin formulas;
+\item the reflection constants;
+\item the Stirling exponents of all the gamma quotients.
+\end{itemize}
+Until the six statements are written out and refereed, Theorem~\ref{thm:78} should be read as a
+detailed plan of proof, not as an established result.
+
+\section{CM newforms of higher weight: why the method should extend}\label{sec:higherweight}
+
+Write $\psi_k=\overline\alpha^{\,k}\eta$ with $k\ge1$ and $\eta$ of finite order. These are the unitary Hecke
+characters of $K$ with infinity type $(\bar z/|z|)^k$. Up to finitely many Euler factors, their
+$L$-functions are those of the CM newforms of weight $k+1$ with complex multiplication by $K$, shifted
+to the center $1/2$: if $f$ is such a form, then $L(f,s+\frac k2)=L(s,\psi)$ for $\psi=\psi_k$ or its
+conjugate. This section explains why we expect the following.
+
+\paragraph{Expected statement.} For every $k\ge1$ and every finite-order $\eta$, $L(s,\overline\alpha^{\,k}\eta)\ne0$ for
+$\Re s>7/8$. Equivalently, every CM newform $f$ of weight $k+1$ with CM by $K$ satisfies
+\[
+ L(f,s)\ne0\qquad\Bigl(\Re s>\frac k2+\frac78\Bigr),
+\]
+a zero-free strip along the right edge of the critical strip $\frac k2<\Re s<\frac k2+1$. The $11/12$
+method of Part~I should give the weaker boundary $\frac k2+\frac{11}{12}$ in the same way.
+
+We do not claim this as a theorem. The rest of this section records the changes in the number
+$j=k+1$ of theta derivatives and in the Hecke Gamma factor. For each fixed $j$, the formulas have
+the same structure and give the same length exponents; constants may depend on $j$.
+The uniform analytic estimates listed at the end still have to be proved for each fixed weight.
+
+\subsection{Two examples}
+We computed the $q$-expansions of two eta products to $q^{3000}$ and compared them with Hecke characters.
+In the exact $L$-function identities below, a product of Hecke characters means its primitive
+inducing character, with all its Euler factors restored. Write $L^{(6)}$ when the Euler factors
+at primes above $2$ and $3$ are deleted, as in the earlier sums.
+\begin{itemize}
+\item $f=\eta(3z)^8$, of weight $4$ and level $9$ ($k=3$). For all $207$ split rational primes
+ $p=\pi\bar\pi<3000$, with both primary generators $\pi,\bar\pi$ tested ($414$ checks),
+ $a_p=2\Re(\pi^3)$. For $p\equiv2\pmod3$, $a_p=0$ and $a_{p^2}=-p^3$. Thus
+ $L(f,s+\frac32)=L(s,\alpha^3)$, and the target is the conjugate $\overline\alpha^{\,3}$, with
+ $\eta$ trivial. This is the CM analogue of the case $u=1$ of the zeta argument. The expected strip
+ is $19/8<\Re s<5/2$ (center $2$).
+\item $f=\eta(2z)^3\eta(6z)^3$, of weight $3$ and level $12$ ($k=2$). For all $207$ split rational primes below
+ $3000$, again testing both primary generators ($414$ checks),
+ $a_p=2\Re\bigl(\pi^2(2/\pi)_3\bigr)=2\Re\bigl(\pi^2\chi_\pi(4)\bigr)$. For $p\nmid12$ with $p\equiv2\pmod3$,
+ $a_p=0$ and $a_{p^2}=p^2$, as required by the nebentypus $\chi_{-3}$. The exclusion matters:
+ $a_4=0$, not $4$. We have $L(f,s+1)=L(s,\alpha^2\chi_\bullet(4))$, and
+ the target is $\overline\alpha^{\,2}\,\overline{\chi_\bullet(4)}$. The expected strip is $15/8<\Re s<2$ (center $3/2$).
+ Since $a_3=-3$, the normalized Euler factor at $3$ is $(1+3^{-s})^{-1}$; the factor at $2$ is $1$.
+ Thus, in the convention of the earlier sums,
+ \[
+  L(f,s+1)=(1+3^{-s})^{-1}L^{(6)}(s,\alpha^2\chi_\bullet(4)).
+ \]
+\end{itemize}
+
+\subsection{What changes with \texorpdfstring{$k$}{k}}
+\paragraph{1. The weight and the rows.} With target $\psi=\overline\alpha^{\,k}\eta$ the weight~\eqref{eq:cm-weight} becomes
+\[
+ \gamma_2(c)\overline{\alpha(cn^3)}\,\psi(cn^3)=\gamma_2(c)\,\overline{\alpha(cn^3)}^{\,k+1}\eta(cn^3).
+\]
+Proposition~\ref{prop:cm-rows} is formal in $\psi(p)$, so the rows are again
+$\zeta_K^S(6z)L^S(w,\chi_\bullet(u))/L^S(x,\psi\overline{\chi_\bullet(u)})$. The numerators still have finite order,
+the denominators have infinity type $(\bar z/|z|)^k$, and the slot amplitudes are unchanged.
+
+\paragraph{2. The theta step with $j=k+1$ derivatives.} Every formula of Section~\ref{sec:theta} and of the
+table in Section~\ref{sec:78probe} has a version for all $j\ge1$, as follows.
+\begin{itemize}
+\item \emph{Chain rule.} At $z=0$ the coordinate $z'$ is affine in $\bar z$, while $\bar z'$ and $v'$ do not
+ depend on $\bar z$. Hence, exactly,
+ \[
+  \left.\partial_{\bar z}^{\,j}F(z',\bar z',v')\right|_{z=\bar z=0}
+  =\bigl(-(cv)^{-2}\bigr)^{j}\,(\partial_{z'}^{\,j}F)\bigl(-\delta/c,\,1/(\N(c)v)\bigr).
+ \]
+ Every derivative of order $j\ge1$ kills the constant term at the identity cusp. We checked this
+ identity symbolically for $j\le4$.
+\item \emph{Direct Mellin transform.} For a nonzero Fourier mode and $\Re s>\frac16-\frac j2$,
+ \[
+  \int_0^\infty(2\pi i\bar\ell)^j\,vK_{1/3}(4\pi|\ell|v)\,v^{2s+j-2}\,dv
+  =\frac{i^j}4(2\pi)^{-2s}\,\Gamma\Bigl(s+\frac j2-\frac16\Bigr)\Gamma\Bigl(s+\frac j2+\frac16\Bigr)
+   \overline{\alpha(\ell)}^{\,j}\N(\ell)^{-s}.
+ \]
+ The integral converges absolutely in this half-plane; elsewhere the right side gives its
+ meromorphic continuation. For $j=1,2$ this gives the two entries of the table. We checked it numerically for $j\le5$ (relative
+ error below $10^{-25}$).
+\item \emph{Reflected side.} The same substitution gives $\prod_\pm\Gamma(\frac{j+2}2-s\pm\frac16)$, the cusp
+ factor $\overline{\alpha(c)}^{\,2j}$, and the dual angular factor $\alpha(\mu)^j$.
+\item \emph{Kernel.} Write
+ \[
+  R_j(t)=\prod_\pm\frac{\Gamma(\frac{j+1}2+t\pm\frac16)}{\Gamma(\frac{j+1}2-t\pm\frac16)} .
+ \]
+ Then $R_1$ and $R_2$ are the two kernels of the table. $R_j$ is holomorphic for
+ $\Re t>\frac16-\frac{j+1}2$, which is to the left of $-1/4$ for every $j\ge1$, and
+ $|R_j(\sigma+iu)|\ll_{j,A}(1+|u|)^{4\sigma}$ on $-1/4\le\sigma\le A$ (checked numerically for $j\le5$). So the
+ reflected weight obeys the same bound $\ll\min(x^{1/4},x^{-A})$, with constants depending on $j$.
+ There is no uniform bound as $j$ grows: for example,
+ \[
+  R_j(1)=\frac{(3j-4)(3j-2)(3j+2)(3j+4)}{1296}\sim\frac{j^4}{16}.
+ \]
+\end{itemize}
+The dual lengths are unchanged, because the reflected argument $\N(\mu)X/\N(c)^2$ does not depend on
+$j$. In the quadratic large sieve, $\alpha(\mu)^j$ is a unimodular coefficient of the dual index. Hence
+Proposition~\ref{prop:cm-completed} and the low estimates $Z^{1/4+\varepsilon}$ and $Z^{3/16+\varepsilon}$ should hold
+for every $k$.
+
+\paragraph{3. Growth.} The functional equation has $\Gamma(s+\frac k2)$ in place of $\Gamma(s+\frac12)$. The
+exponent of $|\Gamma(1-s+\frac k2)/\Gamma(s+\frac k2)|$ on $\Re s=\sigma$ is $1-2\sigma$, independent of $k$, so
+Lemma~\ref{lem:cm-growth} keeps its exponents. The theta series now has the harmonic polynomial
+$\bar a^{\,k}$. Its Poisson transform is a multiple of $\bar\xi^{\,k}e^{-c'|\xi|^2/v}v^{-1-k}$, which vanishes at $\xi=0$,
+so $L(s,\psi)$ is entire.
+
+\paragraph{4. Moments.} In the inverse moment the co-oriented classes become
+$\mu\overline\alpha^{\,k}\leftrightarrow\overline\alpha^{\,k+1}\gamma_2$. This follows from the same identity
+$\mu\gamma_{-1}=\chi(-1)G^{-1}\overline\alpha\gamma_2$, and the cube factor becomes $\overline\alpha^{\,3(k+1)}$. The theta steps
+use $\partial_{\bar z}^{\,k+1}\theta$. In the plain moment, Hecke reflection uses
+$\Gamma(s+\frac k2)/\Gamma(1-s+\frac k2)$, a Hankel kernel of order $k$ with the same vertical growth. The
+lattice main terms vanish because $\int\alpha(z)^{\pm k}f(|z|^2)\,dz=0$.
+
+\paragraph{5. Unchanged.} The following carry over verbatim:
+\begin{itemize}
+\item the label sets, with $\overline\alpha^{\,k}\Theta_0\overline{\chi_\bullet(u)}$ and $\alpha^k\Theta_0\chi_\bullet(u)$;
+\item the slot normalization $\overline{\psi(p)}$;
+\item $\kappa=3/4$ from OpenAI's theorem;
+\item every exponent in the final inequality, and hence the endpoint certificate.
+\end{itemize}
+For Part~I the targets are rows of the same kind. In the orientation $\muk(n)\alpha(n)^k\chi_n(u_0)$ of
+Part~I, the row is $u_0=1$ for $\eta(3z)^8$ and $u_0=4$ for $\eta(2z)^3\eta(6z)^3$.
+
+\subsection{Remarks}
+\begin{itemize}
+\item \emph{$k=0$ is OpenAI's case.} There $j=1$ and the weight is $\gamma_2\overline\alpha\eta$. The recipe ``target
+ $\overline\alpha^{\,k}\eta$, $k+1$ theta derivatives'' therefore covers unitary Hecke characters of $K$ with
+ purely angular infinity type; negative $k$ reduces to positive $k$ by conjugation. A general unitary
+ Hecke character may also have a continuous norm factor $\N^{it}$, with $t\in\mathbb R$. Since
+ \[
+  L(s,\psi\N^{it})=L(s-it,\psi),
+ \]
+ these vertical shifts leave the proposed zero-free half-plane unchanged.
+\item \emph{Orientation.} The conjugate target $\alpha^k\bar\eta$ would leave $\alpha^{k-1}$ in the weight. For $k=1$
+ that is no angular factor at all: the theta function without a derivative, whose constant terms are
+ not controlled. That is why Part~II uses $\overline\alpha\eta$. For $k\ge2$ the factor $\alpha^{k-1}$ is produced by
+ $\partial_z^{\,k-1}$. The chain rule is symmetric: at $z=\bar z=0$, $\partial_z^{\,j}$ becomes
+ $(-(\bar cv)^{-2})^j\partial_{\bar z'}^{\,j}$, exactly; we checked this symbolically for $j\le3$. So for $k\ge2$
+ either orientation should work; we use $\overline\alpha^{\,k}\eta$ for uniformity.
+\item \emph{Symmetric powers.} For a CM curve $E_d$ and $m\ge1$, put
+ $L_{\rm an}(\mathrm{Sym}^mE_d,s)=L(\mathrm{Sym}^mE_d,s+m/2)$.
+ Up to finitely many Euler factors, the factorization is
+ \[
+  L_{\rm an}(\mathrm{Sym}^mE_d,s)
+  =\prod_{0\le i<m/2}L(s,(\psi_d^*)^{m-2i})
+   \begin{cases}
+    1,&m\text{ odd},\\
+    L(s,\chi_{-3}^{\,m/2}),&m\text{ even}.
+   \end{cases}
+ \]
+ The last factor is $\zeta(s)$ when $m\equiv0\pmod4$ and $L(s,\chi_{-3})$ when
+ $m\equiv2\pmod4$, with the trivial character interpreted primitively. This is the CM
+ factorization of~\cite[\S3.5]{MW}. The positive-power factors are of the type above; the remaining
+ factor is covered by OpenAI's finite-order result. Together these would give a zero-free
+ half-plane $\Re s>7/8$ in analytic normalization. When $4\mid m$, the function has a pole at $s=1$:
+ ``zero-free'' here is a statement about a meromorphic function, not a claim of holomorphy throughout
+ the half-plane. These $L$-functions are not primitive for $m\ge2$.
+\item \emph{What would still have to be written.} The six restatements of Section~\ref{sec:78status} are
+ needed for each $k$, with $\partial_{\bar z}^{\,k+1}$ in place of $\partial_{\bar z}^{\,2}$. We see no step where $k$
+ enters other than through $j=k+1$ and the Gamma factors. The constants depend on $k$, but $k$ is fixed.
+\end{itemize}
+The numerical checks of this section were made with short Python scripts.
+
+\appendix
+\section{The reflected series and explicit theta coefficients}\label{app:reflection}
+
+This appendix supplies the coefficient data for readers who want every
+series in the theta step in finite-sum terms. It can be skipped on a
+first reading. The imported theta symmetry and coefficient tables are
+those of Kubota and Patterson recorded in~\cite[Section 5.1 and
+Appendix]{DR}, in the conventions of~\cite{OAI78}.
+Only these theta facts are used from~\cite{DR}; its GRH-conditional
+prime Gauss-sum asymptotic is not an input here.
+
+For $\Psi(n)=\xi_0(n)\prod_{\pi\in\mathcal P}\chi_\pi(n)^{j_\pi}$,
+the transformation expresses $T(X;\Psi)$ as a finite sum of terms
+\begin{equation}\label{eq:reflection}
+ C\sum_{0\ne\ell\in\lambda^{-4}\OO}
+ \frac{d_\sigma(\ell)\alpha(\ell)^2}{\sqrt{\N(\ell)}}
+ \psi(\lambda^4\ell)\prod_{\pi\in\mathcal A}B_{\pi,j_\pi}(\lambda^4\ell)
+ V^\sharp\left(\frac{\N(\ell)X}{\N(c)^2}\right).
+\end{equation}
+Here $\sigma\in\{0,+,-\}$,
+$\{\pi:j_\pi\ne0\}\subseteq\mathcal A\subseteq\mathcal P$,
+$c=c_0\prod_{\pi\in\mathcal A}\pi$,
+$c_0\mid8\lambda^2$ up to a unit, and
+$\psi(x)=e(\beta x/(\lambda^3c_0))$ for an Eisenstein integer $\beta$.
+There are at most $5184\cdot2^{|\mathcal P|}$ terms, each with
+$|C|\le1/81$. The constants are obtained by finite additive Fourier
+expansion of $\Psi$ and the theta transformation, as in the completed reflection
+of~\cite[Prop.~prop:completed-reflection]{OAI78} with two derivatives in place of one.
+The expression is an absolutely convergent series. The weights
+$V^\sharp$ and the local factors $B_{\pi,j}$ were explicitly defined
+in~\eqref{eq:weight} and~\eqref{eq:local}.
+
+For the remaining coefficients, define the finite cubic Gauss sum
+\[
+ g(r,c)=\sum_{x\bmod c}\left(\frac xc\right)_3\ce(rx/c).
+\]
+In this appendix, $c,b$ are primary, $c$ is squarefree, and they may be
+even. The cubic symbol at the even primary prime $-2$ is defined by
+$(x/(-2))_3\equiv x\pmod2$ for $x$ prime to $2$, and zero otherwise;
+at other primary primes use the exponent $(\N(\pi)-1)/3$.
+Put $\zeta_9=e^{2\pi i/9}$. Define $\tau(\ell)$ by the following table
+and set it equal to zero at every other index:
+\[
+\begin{array}{c|c}
+ \ell&\tau(\ell)\\\hline
+ \pm\lambda^{3\nu-4}cb^3,\ \nu\ge1
+ &3^{\nu/2+2}\overline{g(\lambda^2,c)}\,|b/c|\\
+ \pm\omega\lambda^{3\nu-4}cb^3,\ \nu\ge1
+ &3^{\nu/2+2}\zeta_9^{-1}\overline{g(\omega\lambda^2,c)}\,|b/c|\\
+ \pm\omega^2\lambda^{3\nu-4}cb^3,\ \nu\ge1
+ &3^{\nu/2+2}\zeta_9\overline{g(\omega^2\lambda^2,c)}\,|b/c|\\
+ \pm\lambda^{3\nu-3}cb^3,\ \nu\ge0
+ &3^{\nu/2+5/2}\overline{g(1,c)}\,|b/c|
+\end{array}
+\]
+For the two other cusps, define $\tau_1,\tau_2$ by
+\[
+\begin{array}{c|c|c}
+ j&\tau_1(\omega^j\lambda^{-4}cb^3)
+   &\tau_2(-\omega^j\lambda^{-4}cb^3)\\\hline
+0&9\omega\overline{g(\lambda^2,c)}|b/c|
+ &9\omega^2\overline{g(\lambda^2,c)}|b/c|\\
+1&9\zeta_9^{-1}\omega^2\overline{g(\omega\lambda^2,c)}|b/c|
+ &9\zeta_9^{-1}\overline{g(\omega\lambda^2,c)}|b/c|\\
+2&9\zeta_9\overline{g(\omega^2\lambda^2,c)}|b/c|
+ &9\omega\zeta_9\overline{g(\omega^2\lambda^2,c)}|b/c|
+\end{array}
+\]
+and zero elsewhere. Finally set
+\[
+ t_0(\ell)=\tau(\ell),\qquad
+ t_+(\ell)=\omega\tau_2(\omega\ell)\ce(\ell),\qquad
+ t_-(\ell)=\omega^2\tau_1(\omega^2\ell)\ce(\ell),\qquad
+ d_\sigma(\ell)=\overline{t_\sigma(-\ell)}.
+\]
+These are precisely the coefficients of the conjugated theta functions
+at the three cusps. Their support is contained in the set of indices
+$\ell=u\lambda^mnb^3$, with $u$ a unit, $m\ge-4$, $n$ squarefree,
+and $n,b$ primary (the tables above impose further restrictions), and
+\[
+ |d_\sigma(u\lambda^mnb^3)|\le27\cdot3^{m/6}|b|.
+\]
+In the varying quadratic symbol in~\eqref{eq:reflection}, the factor
+$b^3$ contributes $(b/k)_2$, since $(b^3/k)_2=(b/k)_2$.
+Fixing $u,m,b$ leaves squarefree columns $n$, exactly as required for
+\eqref{eq:qls}. This is why the explicit support of the theta
+coefficients matters to the averaging argument.
+
+
+\begin{thebibliography}{9}
+\bibitem{ZG} \emph{Sixth powers in a mean square: an accessible guide to
+ the $11/12$ argument for $\zeta(s)$}, companion notes,
+ \url{https://www.math.uwaterloo.ca/~mrubinst/quasi_rh_notes/zeta_11_12_guide.pdf}.
+\bibitem{OAI1112} OpenAI, \emph{The Quasi-Riemann Hypothesis}, manuscript
+ dated October 5, 2026.
+ \href{https://github.com/openai/math/tree/main/preprints/The-Quasi-Riemann-Hypothesis-October-5-2026}{Manuscript and source on GitHub}.
+\bibitem{OAI78} OpenAI, \emph{The Quasi-Riemann Hypothesis: A Zero-Free
+ Half-Plane $\Re s>7/8$}, manuscript dated September 30, 2026,
+ especially the main theorem and the definition of $\beta_*$.
+ Labels and line numbers refer to its source file \texttt{build/paper.tex}.
+ \href{https://github.com/openai/math/tree/main/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026}{Manuscript and source on GitHub}.
+\bibitem{Neukirch} J. Neukirch, \emph{Algebraic Number Theory},
+ Grundlehren der mathematischen Wissenschaften 322, Springer, 1999.
+\bibitem{G78} \emph{Zeros of a whole family: an accessible guide to the
+ $7/8$ argument for $\zeta(s)$}, companion notes,
+ \url{https://www.math.uwaterloo.ca/~mrubinst/quasi_rh_notes/zeta_7_8_guide.pdf}.
+\bibitem{IR} K. Ireland and M. Rosen, \emph{A Classical Introduction to Modern Number Theory},
+ 2nd ed., Graduate Texts in Mathematics 84, Springer, 1990.
+\bibitem{MW} P. Martin and M. Watkins, \emph{Symmetric powers of elliptic curve $L$-functions},
+ 2006, \S3.5.
+ \url{https://arxiv.org/abs/math/0604095}.
+\bibitem{DR} A. Dunn and M. Radziwi\l\l,
+ \emph{Bias in cubic Gauss sums: Patterson's conjecture},
+ Annals of Mathematics (2) \textbf{200} (2024), 967--1057.
+ \url{https://arxiv.org/abs/2109.07463}.
+\bibitem{GL} L. Goldmakher and B. Louvel,
+ \emph{A quadratic large sieve inequality over number fields},
+ Mathematical Proceedings of the Cambridge Philosophical Society
+ \textbf{154} (2013), 193--212.
+ \url{https://arxiv.org/abs/1112.1642}.
+\end{thebibliography}
+\end{document}
