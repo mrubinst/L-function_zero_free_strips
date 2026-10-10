@@ -37,7 +37,7 @@ python3 test_sec6.py          # any single script can also be run on its own
 ```
 
 `run_all.py` prints one summary line per script and exits with status 1 if any check fails or any script crashes.
-The outputs of the last run are in [`outputs/`](outputs/), where all 71 checks passed.
+The outputs of the last run are in [`outputs/`](outputs/), where all 74 checks passed.
 
 ## Reading the output
 
@@ -183,7 +183,7 @@ Here μ_K is computed from N(n), independently of c, so the two sides of (2.3) a
 | 6.8 | before (6.10) | a_ξ(vm) = a_ξ(v)a_ξ(m)χ_m(v)⁴ (22 pairs) | 4e−15 |
 | 6.9 | (6.10) | the character identity behind he⁵v⁴ = kf⁴ | 6e−15 |
 
-### Section 7: theta and the large sieve (`test_sec7_8.py`, `test_sec4_8_extra.py`, `test_sec7_reflection_j1.py`, `test_sec7_completed_sanity.py`)
+### Section 7: theta and the large sieve (`test_sec7_8.py`, `test_sec4_8_extra.py`, `test_sec7_reflection_j1.py`, `test_sec7_completed_sanity.py`, `test_sec6.py`)
 
 | Test | Guide | What is checked | Result |
 |---|---|---|---|
@@ -202,6 +202,9 @@ Here μ_K is computed from N(n), independently of c, so the two sides of (2.3) a
 | 7.8 | (7.7) | sanity: K = U = 400 (109 squarefree rows, 138 squarefree columns, even columns included); LHS/((K + U)Σ\|β\|²) ≤ 0.254 for six coefficient choices | bounded |
 | — | (7.8) | sanity (`test_sec7_completed_sanity.py`): Σ_k \|T(X; k, f)\|² ≈ (0.2–0.35)ℋ for X = 1500, ℋ ≤ 1000, f ∈ {1, 7 + 9ω} | bounded |
 | 7.10 | after (7.8) | χ_n(v²)χ_n(f)⁴ = χ_n(fv²)⁴ | 4e−15 |
+| 6.14 | §7.3, quadratic twists | γ₃(n) depends only on n mod 4 (90 squarefree n, 12 classes), and χ_n(4) only on n mod 2 | exact |
+| 6.12 | (7.10) | cubic twists: μ_K(n)γ₂(n) = χ_n(−1)G(n)α(n)γ₋₁(n) for 70 squarefree n, including composite n | 4e−15 |
+| 6.13 | (7.11) | γ₁(n) = conj(χ_n(4))γ₂(n)²γ₃(n) and γ₂(n)³ = μ_K(n)α(n) for 70 squarefree n | 6e−15 |
 
 ### Section 8: cube removal and the descent (`test_sec7_8.py`)
 

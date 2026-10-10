@@ -9,4 +9,7 @@
 [PASS] 6.8 [guide text before (6.10)] a(vm)=a(v)a(m)chi_m(v)^4: max error 3.92e-15 (tol 1e-11) (22 pairs)
 [PASS] 6.9 [guide (6.10)] h e^5 v^4 = k f^4 at the level of characters: max error 6.08e-15 (tol 1e-12) 
 [PASS] 6.10 [guide (3.5) + (6.4)] smoothed mean square: direct vs. dual (Poisson) evaluation: max error 2.11e-15 (tol 1e-09) (D=40, H=60, 11 columns, M=0.065789)
+[PASS] 6.12 [guide (7.10)] cubic-twist dual coefficient mu gamma_2 = chi_n(-1) G alpha gamma_-1, 70 squarefree n: max error 4.49e-15 (tol 1e-12) 
+[PASS] 6.13 [guide (7.11)] gamma_1 = conj chi_n(4) gamma_2^2 gamma_3 and gamma_2^3 = mu alpha, 70 squarefree n: max error 6.01e-15 (tol 1e-12) 
+[PASS] 6.14 [guide Sec. 7.3, quadratic twists] gamma_3(n) depends only on n mod 4, chi_n(4) only on n mod 2: max error 0 (tol 0) (12 and 3 classes)
 ALL PASS

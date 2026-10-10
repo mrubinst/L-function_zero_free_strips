@@ -1,7 +1,7 @@
 primes: 7828 time 0.0
-prime Gauss sums done 17.9
-squarefree c: 28237 time 19.3
-tables ready 19.3
+prime Gauss sums done 16.8
+squarefree c: 28237 time 18.2
+tables ready 18.2
 a=(1, 0) C=(-3, 0) v_lam=2 sigma=0 delta'=(1, 0) kappa=1.000+0.000j X=28.4 #L=19804 #R=19748  LHS=0.0000000000+14.2427455069j  RHS=0.0000000000+14.2427455169j  rel.err=7.0e-10
 a=(4, 0) C=(-3, 0) v_lam=2 sigma=0 delta'=(-2, 0) kappa=1.000+0.000j X=28.4 #L=19804 #R=19748  LHS=0.0000000000+14.2427455070j  RHS=-0.0000000000+14.2427455169j  rel.err=7.0e-10
 a=(1, 0) C=(-3, -6) v_lam=3 sigma=0 delta'=(1, 0) kappa=1.000+0.000j X=85.3 #L=59382 #R=59186  LHS=-1.6276566167-0.0000000000j  RHS=-1.6276566078+0.0000000000j  rel.err=5.5e-09
@@ -44,5 +44,5 @@ a=(0, 2) C=(-2, -3) v_lam=0 sigma=+ delta'=(3, 3) kappa=-0.500-0.866j X=38.2 #L=
 a=(0, 2) C=(-2, -3) v_lam=0 sigma=+ delta'=(-3, -6) kappa=1.000+0.000j X=38.2 #L=26654 #R=28875  LHS=10.9873684075+40.0109805500j  RHS=10.9873684127+40.0109805565j  rel.err=2.0e-10
 a=(0, 2) C=(-2, -3) v_lam=0 sigma=+ delta'=(-6, 0) kappa=-0.500+0.866j X=38.2 #L=26654 #R=28875  LHS=10.9873684075+40.0109805500j  RHS=10.9873684127+40.0109805565j  rel.err=2.0e-10
 worst rel. error (nondegenerate cusps) 5.509687235834421e-09 ; degenerate cusps max |RHS| 1.0183281275217196e-13
-controls (largest error over cusps): sign flipped 2.000, two-derivative kernel 5.307, conj(alpha(C))^4 2.000 time 76.0
+controls (largest error over cusps): sign flipped 2.000, two-derivative kernel 5.307, conj(alpha(C))^4 2.000 time 75.0
 [PASS] 7.6 [guide Sec. 7, theta transformation] single-cusp reflection with one zbar-derivative (zeta case)

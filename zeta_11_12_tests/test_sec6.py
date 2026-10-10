@@ -15,6 +15,11 @@ Tests (guide displays in brackets):
   6.9   [(6.10)]          the character identity behind h e^5 v^4 = k f^4.
   6.10  [(3.5) + (6.4)]   end to end: the whole smoothed mean square computed directly equals its Poisson-dual
                           form (D = 40, H = 60).
+  6.12  [(7.10)]          cubic twists: mu_K(n) gamma_2(n) = chi_n(-1) G(n) alpha(n) gamma_{-1}(n), 70 squarefree n.
+  6.13  [(7.11)]          gamma_1(n) = conj(chi_n(4)) gamma_2(n)^2 gamma_3(n) and gamma_2(n)^3 = mu_K(n) alpha(n),
+                          70 squarefree n.
+  6.14  [Sec. 7.3, quadratic twists]  gamma_3(n) depends only on n mod 4 (hence mod 72), and chi_n(4) = (2/n)_3
+                          depends only on n mod 2.
 
 Run time: about 6 seconds.
 """
@@ -184,4 +189,28 @@ for n1 in cols:
         dual+=mu(n1)*mu(n2)*Wb(N(n1)/D)*Wb(N(n2)/D)*H*gcache[key]/math.sqrt(Nq)*tot
 err=abs(direct-dual)/abs(direct)
 allok&=report("6.10 smoothed mean square: direct vs. dual (Poisson) evaluation",err,1e-9,f"(D={D}, H={H:.0f}, {len(cols)} columns, M={direct:.6f})")
+
+# ---- 6.12 cubic twists: mu gamma_2 = chi_n(-1) G alpha gamma_{-1}
+err=0
+for n in sq[:70]:
+    err=max(err,abs(mu(n)*gamma_j(2,n)-chi(n,(-1,0))*G(n)*alpha(n)*gamma_j(-1,n)))
+allok&=report("6.12 cubic-twist dual coefficient mu gamma_2 = chi_n(-1) G alpha gamma_-1, 70 squarefree n",err,1e-12)
+
+# ---- 6.13 Hasse-Davenport factorization gamma_1 = conj chi_n(4) gamma_2^2 gamma_3, and gamma_2^3 = mu alpha
+err=0
+for n in sq[:70]:
+    g1,g2,g3=gamma_j(1,n),gamma_j(2,n),gamma_j(3,n)
+    err=max(err,abs(g1-chi(n,(4,0)).conjugate()*g2*g2*g3),abs(g2**3-mu(n)*alpha(n)))
+allok&=report("6.13 gamma_1 = conj chi_n(4) gamma_2^2 gamma_3 and gamma_2^3 = mu alpha, 70 squarefree n",err,1e-12)
+
+# ---- 6.14 gamma_3(n) depends only on n mod 4; chi_n(4) depends only on n mod 2
+t3={}; t4={}; bad=0
+for n in sq[:90]:
+    k=canon_mod(n,(4,0)); v=gamma_j(3,n)
+    if k in t3 and abs(t3[k]-v)>1e-9: bad+=1
+    t3.setdefault(k,v)
+    k2=canon_mod(n,(2,0)); c=chi(n,(4,0))
+    if k2 in t4 and abs(t4[k2]-c)>1e-9: bad+=1
+    t4.setdefault(k2,c)
+allok&=report("6.14 gamma_3(n) depends only on n mod 4, chi_n(4) only on n mod 2",bad,0,f"({len(t3)} and {len(t4)} classes)")
 print("ALL PASS" if allok else "SOME FAILURES")
