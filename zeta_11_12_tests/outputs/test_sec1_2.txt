@@ -1,0 +1,23 @@
+[PASS] 1.1 [guide (1.1)] chi_{-3}(m) as defined = Kronecker (-3/m); completely multiplicative: max error 0 (tol 0) 
+[PASS] 1.2a [guide (1.2)] coefficientwise: c * (1*chi_{-3}) = delta, i.e. 1/(zeta L) has coefficients c: max error 0 (tol 0) (all m <= 100000)
+[PASS] 1.2b [guide (1.2)] sum_{m<=1e5} c(m) m^-s against 1/(zeta(s)L(s,chi_-3)) at s=3, 3+4i, 4: max error 1.44e-13 (tol 1e-09) (truncation error only)
+[PASS] 1.3a [guide (1.3)] local table of c(p^j) for all primes p != 3 (and p = 3: c(3)=-1, c(3^j)=0, j>=2): max error 0 (tol 0) (9690 prime powers <= 100000)
+[PASS] 1.3b [guide text after (1.3)] c is multiplicative: c(m) = prod c(p^e) for all m <= 1e5: max error 0 (tol 0) 
+[PASS] 1.3c [guide text after (1.3)] examples c(7)=-2, c(49)=1, c(25)=-1 (and c != mu): max error 0 (tol 0) 
+[PASS] 1.5a [guide (1.5)] coefficientwise: (sum_{(m,6)=1} c m^-s)(1-3^-s)(1-4^-s) = sum c m^-s: max error 0 (tol 0) (all m <= 100000)
+[PASS] 1.5b [guide text after (1.5)] local factors: sum_j c(2^j)2^-js = 1-4^-s, sum_j c(3^j)3^-js = 1-3^-s: max error 0 (tol 0) 
+[PASS] 1.5c [guide (1.5)] numerically at s=3+2i: max error 7.28e-14 (tol 1e-09) (truncation error only)
+[PASS] 2.0 [guide Sec. 2, omega] omega^2+omega+1=0: max error 3.33e-16 (tol 1e-15) 
+[PASS] 2.1 [guide (2.1)] N(a+b omega) = |a+b omega|^2 = a^2-ab+b^2: max error 1.82e-12 (tol 1e-10) (|a|,|b|<=40)
+[PASS] 2.1b [guide text after (2.1)] exactly six units, namely +-1, +-omega, +-omega^2: max error 0 (tol 0) 
+[PASS] 2.2 [guide (2.2) and text after] n = 1 mod 3 iff a=1, b=0 mod 3; each n coprime to 3 has exactly one primary associate: max error 0 (tol 0) (14640 elements)
+[PASS] 2.3a [guide text before (2.3)] p=1 mod 3 splits into two conjugate primary primes of norm p; p=2 mod 3 has no element of norm p (so stays prime, norm p^2); 3 = -lambda^2: max error 0 (tol 0) (207 split, 222 inert)
+[PASS] 2.3b [guide helper for (2.3)] mu_K from N(n) agrees with mu_K from Eisenstein factorization: max error 0 (tol 0) (400 random n)
+[PASS] 2.3c [guide text before (2.3)] #{n primary: N(n)=m} = sum_{d|m} chi_{-3}(d) for all m <= 1e5, 3 nmid m: max error 0 (tol 0) 
+[PASS] 2.3 [guide (2.3)] (2.3) sum_{N(n)=m} mu_K(n) = c(m) for all (m,6)=1, m <= 1e5: max error 0 (tol 0) (33333 values of m)
+[PASS] 2.3d [guide text after (2.3)] local factors: (1-p^-s)^2 for split p, 1-p^-2s for inert p (p < 400): max error 0 (tol 0) 
+      D=300: A_1 = -2.086728604-2.326891739j
+      D=3000: A_1 = -3.201729482-3.657533446j
+      D=40000: A_1 = -3.135028427-0.3850034601j
+[PASS] 2.4 [guide (1.4) = (2.4)] (2.4) A_1(D) via integers (1.4) = sum over Eisenstein integers: max error 1.04e-14 (tol 1e-12) (D=300, 3000, 40000)
+ALL PASS

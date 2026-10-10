@@ -1,0 +1,7 @@
+[PASS] 4.10 [guide (4.6)] extraction inequality J|A_1|^2 <= 2 sum|A_pi6|^2 + 2 sum|A_pi6-A_1|^2: max error 0 (tol 0) (J=21; error term / (J D^2/Y^2) = 3.58e-02, bounded)
+[PASS] 4.11 [guide (4.3)] A_{v^6}(D)=sum_{(n,v)=1} mu W for composite v: max error 1.15e-14 (tol 1e-12) 
+[PASS] 6.11 [guide (6.5)] frequency-range algebra N(d)N(z1z2)/H << D^2/(H N(g)): max error 0 (tol 0) 
+[PASS] 7.11 [guide (7.6)] B_{pi,1}(x)=chi_pi(x)^{-3}=chi_pi(x)^3=(x/pi)_2: max error 3.1e-15 (tol 1e-12) 
+[PASS] 7.12a [guide (7.4)] j=0: constant (inactive) term 1-1/N(pi) in the expansion of 1_{pi nmid x}: max error 8.89e-16 (tol 1e-12) 
+[PASS] 7.12b [guide (7.5)] j=0 active branch, summed directly: -(1/N) sum_h chi(h)^-2 e(eps h^-1 x/pi) = -gamma_2(pi) chi(eps)^-2 N^-1/2 chi(x)^-2; modulus N^-1/2 if pi nmid x, 0 if pi | x: max error 4.95e-15 (tol 1e-12) (643 (prime, eps, x) triples, 37 with pi | x)
+ALL PASS

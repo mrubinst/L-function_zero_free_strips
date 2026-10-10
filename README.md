@@ -13,3 +13,11 @@
   is an outline of a proof that is conditional on statements listed in its Section 16.
 
 All three notes are also posted at <https://www.math.uwaterloo.ca/~mrubinst/quasi_rh_notes/>.
+
+## Numerical checks of the 11/12 guide
+
+[`zeta_11_12_tests/`](zeta_11_12_tests/) contains the Python scripts behind Section 9 of the 11/12 guide. They test the
+identities and parameter inequalities of its Sections 1–8 on finite samples; the analytic bounds get sanity checks
+of their size only. Run `python3 zeta_11_12_tests/run_all.py`; this takes about 2 minutes and needs numpy, scipy,
+sympy and mpmath. The [README there](zeta_11_12_tests/README.md) explains each check and maps it to the guide's
+equation numbers.

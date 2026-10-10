@@ -1,0 +1,18 @@
+[PASS] 7.1 [guide (7.1)] theta coefficient d_0(lam^-3 n b^3): max error 3.97e-15 (tol 1e-12) (104 indices)
+[PASS] 7.2 [guide text after (7.1)] (lam/n)_3 depends only on n mod 9: max error 0 (tol 0) (9 classes, all primary n with N(n)<=1500)
+[PASS] 7.3 [guide text before (7.1)] nonzero coefficients with lam^3 l primary are exactly l=lam^-3 n b^3: max error 0 (tol 0) (908 indices)
+[PASS] 7.4a [guide (7.3), (7.4)] Fourier expansions of chi_pi^j (j=1..5) and of 1_{pi nmid x}: max error 7.02e-15 (tol 1e-11) 
+[PASS] 7.4b [guide (7.3), (7.5)] reflected local sums S_j(x) = chi(eps x)^{-j-2} g(chi^{j+2}) (j!=4), Ramanujan sum (j=4); |g|=sqrt N: max error 3.07e-14 (tol 1e-10) 
+[PASS] 7.5 [guide theta automorphy (input)] theta(gamma w)=theta(w) for z->z+1 and the inversion: max error 1.83e-16 (tol 1e-08) 
+[PASS] 7.9 [guide text after (7.6)] min N(l) over 0 != l in lambda^-4 O (|a|,|b|<=30) equals 1/81, attained exactly at l = unit/9: max error 3.47e-18 (tol 1e-15) (min = 0.0123456790123457; 1/81 = 0.0123456790123457)
+[PASS] 7.10 [guide text after (7.8)] chi_n(v^2)chi_n(f)^4=chi_n(fv^2)^4: max error 3.56e-15 (tol 1e-12) 
+      7.8 [guide (7.7), sanity] large sieve (K=U=400, 109 rows, 138 columns): LHS/((K+U) sum|beta|^2) <= 0.254; LHS/((#rows+#cols) sum|beta|^2) <= 0.822 over 6 coefficient choices
+[PASS] 8.0 [guide (7.1), helper] gamma_2(n)=(lam/n)_3 g(n)/sqrt N(n) via fast cubic Gauss sums (helper check): max error 2.81e-15 (tol 1e-10) 
+[PASS] 8.1 [guide (8.1)] cube inversion (8.1), k=(5, 3), f=(7, 9): max error 2.17e-16 (tol 1e-12) (LHS=0.0059406+0.000778464j; 6 nontrivial cubes b)
+[PASS] 8.1 [guide (8.1)] cube inversion (8.1), k=(2, 0), f=(1, 0): max error 7.9e-16 (tol 1e-12) (LHS=0.00439348-5.02847e-18j; 6 nontrivial cubes b)
+[PASS] 8.1 [guide (8.1)] cube inversion (8.1), k=(-1, 0), f=(-20, 3): max error 1.76e-15 (tol 1e-12) (LHS=0.000127729-0.000490688j; 6 nontrivial cubes b)
+[PASS] 8.2 [guide (8.2)-(8.11)] descent inequalities: 200000 random admissible parameter sets, plus 200000 with a retained r: max error 0 (tol 0) 
+      8.2 [guide (8.8)-(8.9)] control: dropping the retained-support condition, X'/N(j) < Sigma F/H in 9049 sets (so that condition is needed)
+[PASS] 8.3 [guide (6.11), (8.13)] initial scales: (D^2/(H B^2))/(D/B) = D^-theta/B: max error 0 (tol 0) 
+[PASS] 8.4 [guide (8.7)] local cancellation identity: max error 0 (tol 0) 
+ALL PASS

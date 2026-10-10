@@ -1,0 +1,12 @@
+[PASS] 3.0a [guide text before (3.1)] 6 | N(pi)-1 for primary primes pi coprime to 6 (first 3000): max error 0 (tol 0) 
+[PASS] 3.0b [guide text after (3.1)] chi_n is multiplicative in the numerator: max error 1.74e-15 (tol 1e-12) 
+[PASS] 3.0c [guide text after (3.1)] chi_n is multiplicative in the denominator: max error 2.29e-16 (tol 1e-12) 
+[PASS] 3.1 [guide (3.4) and text after] primary & coprime to 6 <=> a=1 mod 3, b=0 mod 3, (a,b) not both even: max error 0 (tol 0) 
+[PASS] 3.2a [guide (3.4)] integer-coordinate sum = M(D,H): max error 0 (tol 1e-12) (M=1793.9469)
+[PASS] 3.2b [guide (3.5), (3.6)] (3.5) with S_H of (3.6): max error 5.07e-16 (tol 1e-12) 
+[PASS] 3.2c [guide (3.7)] A_u(D)=sum_{(m,6)=1} c_u(m)W(m/D): max error 9.49e-16 (tol 1e-12) 
+      3.2d [guide text after (3.7)] c_u(67) for u=2: -1.000+0.000j;  for u=5+omega: 0.500-0.866j  (depend on the residue symbols)
+      3.3 [guide (3.8), sanity] D=100, H=D^1.1=158: M/(D H) = 0.346  ((3.8) predicts at most D^eps)
+      3.3 [guide (3.8), sanity] D=200, H=D^1.1=339: M/(D H) = 0.323  ((3.8) predicts at most D^eps)
+      3.3 [guide (3.8), sanity] D=400, H=D^1.1=728: M/(D H) = 0.307  ((3.8) predicts at most D^eps)
+ALL PASS
