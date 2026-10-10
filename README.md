@@ -11,8 +11,11 @@
   This note adapts the two methods to the CM curves y² = x³ + d rather than explaining OpenAI's papers.
   As it states, these are working notes whose details have yet to be checked carefully; the 7/8 part
   is an outline of a proof that is conditional on statements listed in its Section 16.
+- [Quadratic number fields, with Q(√−3) worked out in detail](quadratic_fields_notes.pdf) (PDF, 32 pages;
+  [source and scripts](quadratic_fields_notes/)). Background notes on the arithmetic of ℤ[ω], residue symbols,
+  Poisson summation over ℤ[ω], and the cubic theta function of Kubota and Patterson, as used in the 11/12 argument.
 
-All three notes are also posted at <https://www.math.uwaterloo.ca/~mrubinst/quasi_rh_notes/>.
+All four notes are also posted at <https://www.math.uwaterloo.ca/~mrubinst/quasi_rh_notes/>.
 
 ## Numerical checks of the 11/12 guide
 
