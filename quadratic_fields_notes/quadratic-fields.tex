@@ -1091,7 +1091,7 @@ Example~\ref{ex:gaussian} as $\Phi$, for $\psi=\overline{\chi_{1+3\omega}}\chi_{
 $H=40,300$; the two sides agree to $10^{-14}$.
 
 \subsection{How the \texorpdfstring{$11/12$}{11/12} paper uses Poisson summation}\label{sec:poissonuse}
-Let $W$ be a fixed nonzero, nonnegative smooth bump on $(0,\infty)$. For $u\in\OO$ consider the sums
+Let $W\in C_c^\infty((0,\infty);\mathbb C)$ be fixed and nonzero. For $u\in\OO$ consider the sums
 \begin{equation}\label{eq:Au}
  A_u(D)=\sum_n\mu(n)\chi_n(u)W\Bigl(\frac{\N n}D\Bigr),
 \end{equation}
@@ -1099,7 +1099,7 @@ over squarefree primary $n$ prime to $6$. The paper needs a bound for their mean
 row range $H=D^{1+\vartheta}$ slightly longer than the column range $D$. Smoothing the rows and expanding the square
 gives
 \begin{equation}\label{eq:expandsquare}
- \sum_u\Phi\Bigl(\frac{\N u}H\Bigr)|A_u(D)|^2=\sum_{n_1,n_2}\mu(n_1)\mu(n_2)W\Bigl(\frac{\N n_1}D\Bigr)W\Bigl(\frac{\N n_2}D\Bigr)
+ \sum_u\Phi\Bigl(\frac{\N u}H\Bigr)|A_u(D)|^2=\sum_{n_1,n_2}\mu(n_1)\mu(n_2)\overline{W\Bigl(\frac{\N n_1}D\Bigr)}W\Bigl(\frac{\N n_2}D\Bigr)
  \sum_u\Phi\Bigl(\frac{\N u}H\Bigr)\overline{\chi_{n_1}(u)}\chi_{n_2}(u).
 \end{equation}
 Write $g=\gcd(n_1,n_2)$ and $n_i=gz_i$. Then $\overline{\chi_{n_1}(u)}\chi_{n_2}(u)=\mathbf 1_{(u,g)=1}\psi(u)$ with
@@ -1108,7 +1108,7 @@ prime is $\chi_p^{\pm1}\ne1$. Lemma~\ref{lem:poissonchar}, with $r=g$ and $m=z_1
 Three things happen.
 \begin{enumerate}
 \item \emph{The diagonal.} The zero frequency occurs only when $z_1=z_2=1$, that is, $n_1=n_2$. These terms
-contribute about $H\sum_nW(\N n/D)^2\asymp HD$.
+contribute about $H\sum_n|W(\N n/D)|^2\asymp HD$.
 \item \emph{Shorter sums.} Since $\widehat\Phi$ is compactly supported, the frequencies satisfy
 \begin{equation}\label{eq:dualrange}
  \N h\ll\frac{\N d\,\N(z_1z_2)}H\ll\frac{D^2}{H\,\N g},
@@ -1265,7 +1265,7 @@ $\theta\circ\gamma_+$ and $\theta\circ\gamma_-$ \cite[App.~A.2]{QRH}. Three feat
 \item The coefficients are supported on indices $cd^3$ with cube factors $d^3$, which enter with weight
 $|d|$. So the theta function sees the sums over squarefree $n$ in \eqref{eq:dualms} only together with their
 ``cube completions''. Removing the added cubes is a separate step of the argument (the descent).
-\item $\tau$ is even, and there is a constant term only at $\infty$.
+\item $\tau$ is even, and among these three expansions only the one at $\infty$ has a constant term.
 \end{itemize}
 
 \subsection{The cubic Gauss sums and the theta coefficients}\label{sec:thetacoef}
@@ -1393,7 +1393,10 @@ result is the Dirichlet series of $T$ times $\Gamma(s+\frac13)\Gamma(s+\frac23)$
 $v^{-2}v^{2s-1}\,dv$ into $(\N c)^{2-2s}(v')^{2(1-s)-1}\,dv'$ after reversing the limits.
 Thus the Mellin transform at $s$ equals a finite combination of the corresponding transforms at $1-s$
 of the expansions at the three cusps, with additive twists
-$\breve e(-\delta\ell/c)$. Moving the contour and inverting the Mellin transform gives \cite[Proposition~6.2]{QRH}
+$\breve e(-\delta\ell/c)$. After differentiation, the cusp expansions give exponential decay at both
+ends of the height integral, so its Mellin transform is entire. Together with the vertical bounds
+established in the source paper, this permits the contour shift; no zero-free region for $\zeta$ is used.
+Inverting the Mellin transform gives \cite[Proposition~6.2]{QRH}
 \begin{equation}\label{eq:reflection}
  T(X;\Psi)=\sum C\sum_{0\ne\ell\in(\sqrt{-3})^{-4}\OO}\frac{d_\sigma(\ell)\alpha(\ell)}{\sqrt{\N\ell}}\,
  \psi\bigl((\sqrt{-3})^4\ell\bigr)\prod_{p}B_{p,j_p}\bigl((\sqrt{-3})^4\ell\bigr)\,
@@ -1420,16 +1423,36 @@ Summing over $h\not\equiv0$, and substituting $y=h^{-1}$, gives a Gauss sum:
  \sum_{y\not\equiv0}\chi_p(y)^{j+2}e\Bigl(\frac{\epsilon yx}p\Bigr)=\overline{\chi_p(\epsilon x)}^{\,j+2}\sqrt{\N p}\;\gamma_{j+2}(p)
  \qquad(j\ne4).
 \end{equation}
-So $B_{p,j}(x)$ is a constant multiple of $\chi_p(x)^{-j-2}$. For $j=1$ this is $\chi_p(x)^{-3}=\chi_p(x)^3=(x/p)_2$: \emph{the sextic twist
-becomes quadratic}. For $j=4$ the sum is instead a Ramanujan sum. For $j=0$ the expansion of
-$\chi_p^0=\mathbf 1_{p\nmid x}$ also has a constant term, which leaves $p$ out of $c$ (the inactive branch); see
-\cite[(6.5)]{QRH}. We checked the resulting formula for $B_{p,j}$, for all $j$ and all primes of norm $\le200$.
+Including the finite Fourier coefficient, the local factors are
+\begin{equation}\label{eq:Blocal}
+ B_{p,j}(x)=\begin{cases}
+ \chi_p(x)^{-j-2},&j\notin\{0,4\},\\
+ (\N p)^{-1/2}\chi_p(x)^{-2},&j=0\quad\text{(active)},\\
+ (\N p)^{-1/2}\bigl(-1+\N p\,\mathbf 1_{p\mid x}\bigr),&j=4.
+ \end{cases}
+\end{equation}
+The omitted factors have absolute value one, are independent of $x$, and are included in $C$ in
+\eqref{eq:reflection}. For $j=1$ the factor is $\chi_p(x)^{-3}=\chi_p(x)^3=(x/p)_2$:
+\emph{the sextic twist becomes quadratic}. For $j=4$ the sum is instead a Ramanujan sum.
+For $j=0$ there are two branches, because
+\begin{equation}\label{eq:inactive}
+ \mathbf 1_{p\nmid x}=1-\frac1{\N p}
+ -\frac1{\N p}\sum_{h\not\equiv0\ (p)}e\Bigl(\frac{hx}p\Bigr).
+\end{equation}
+The nonzero frequencies give the active factor in \eqref{eq:Blocal}. The zero frequency leaves $p$
+out of $c$ and contributes the scalar $1-(\N p)^{-1}$ (the inactive branch). Both branches occur in
+the outer sum of \eqref{eq:reflection}. Their number is bounded by a divisor function of the twist
+modulus, and their scalars have absolute value at most one; see \cite[\S6.2, App.~A.2]{QRH}.
+We checked the local transform for all $j$ and all primes of norm $\le200$.
 \end{enumerate}
-After this transformation, the twists by $\chi_n(k)$ in \eqref{eq:dualms} have become quadratic characters
-$(x/k)_2$. Heath-Brown's quadratic large sieve \cite{HB95}, in the form for number fields of Goldmakher and
-Louvel \cite{GL}, then bounds the mean square over $k$.
+For squarefree rows $k$ prime to the auxiliary twist moduli, the factors with $j=1$ give the quadratic
+character $(x/k)_2$. Repeated prime factors in the rows and the other local factors are handled
+separately in the source paper. Heath-Brown's quadratic large sieve \cite{HB95}, in the number-field
+form of Goldmakher and Louvel \cite{GL}, is applied with squarefree rows and squarefree columns.
+It bounds the completed mean square; removing the added cubes still requires the descent.
 
 %======================================================================
+\clearpage
 \section{Tables}\label{sec:tables}
 
 \begin{table}[ht]
