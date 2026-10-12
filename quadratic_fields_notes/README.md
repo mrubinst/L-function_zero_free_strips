@@ -27,7 +27,7 @@ Sections 4 and 5 write √−3 explicitly.
 | `scripts/zomega.py` | Generates the tables of Sections 3 and 6 and checks the numerical claims of Sections 2–3. |
 | `scripts/ideal_figures.py` | Generates Figures 2–4 and checks the claims of the subsection on ideals. |
 | `scripts/poisson_theta_checks.py` | Numerical checks for Sections 4 and 5 (about 100 seconds). |
-| `scripts/revision_checks.py` | Checks the cusp construction of Section 5 exactly, and the derivative and Mellin substitution formulas symbolically; needs sympy. |
+| `scripts/revision_checks.py` | Checks the cusp construction of Section 5 and the index of Γ₂ exactly, and the derivative and Mellin substitution formulas symbolically; needs sympy. |
 
 ## Building and checking
 
@@ -36,7 +36,7 @@ latexmk -pdf quadratic-fields.tex             # build the PDF
 python3 scripts/zomega.py tables              # regenerate the tables and run their checks
 python3 scripts/ideal_figures.py tables       # regenerate Figures 2-4 and run their checks
 python3 scripts/poisson_theta_checks.py       # checks for Sections 4-5; needs mpmath
-python3 scripts/revision_checks.py            # cusp construction and Mellin substitution; needs sympy
+python3 scripts/revision_checks.py            # cusp construction, index of Gamma_2, Mellin substitution; needs sympy
 ```
 
 Each script stops with an `AssertionError` if a check fails. `poisson_theta_checks.py` and `revision_checks.py` print one
