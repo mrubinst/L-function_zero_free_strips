@@ -7,7 +7,7 @@
 > y² = x³ + d.
 > — [Michael Rubinstein](https://www.math.uwaterloo.ca/~mrubinst/)
 
-- [Sixth powers in a mean square: an accessible guide to the 11/12 argument for ζ(s)](zeta_11_12_guide.pdf) (PDF, 16 pages)
+- [Sixth powers in a mean square: an accessible guide to the 11/12 argument for ζ(s)](zeta_11_12_guide.pdf) (PDF, 18 pages)
 - [Zeros of a whole family: an accessible guide to the 7/8 argument for ζ(s)](zeta_7_8_guide.pdf) (PDF, 12 pages)
 - [A zero-free strip for the L-functions of the elliptic curves y² = x³ + d: the 11/12 method and its extension to 7/8](cm_zero_free_strip.pdf) (PDF, 29 pages; [TeX source](cm_zero_free_strip.tex)).
   This note adapts the two methods to the CM curves y² = x³ + d rather than explaining OpenAI's papers.
