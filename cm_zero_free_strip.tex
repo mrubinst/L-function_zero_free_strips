@@ -100,19 +100,7 @@ Part~II additionally uses OpenAI's finite-order $7/8$ theorem~\cite{OAI78}.
 Section~\ref{sec:78status} records its proof dependencies, and
 Section~\ref{sec:numerics} distinguishes identity checks from analytic estimates.
 
-\paragraph{Lean formalization.} The last step of Part~I is also checked in Lean~4. The formalization works
-with the partial $L$-function $L^{(6d)}(E_d,s)=\prod_{p\nmid6d}(1-a_p(d)p^{-s}+p^{1-2s})^{-1}$. For the
-purpose of the formalization only, two statements are taken as hypotheses; both are proved in these notes.
-They are the mean-square estimate~\eqref{eq:MS}, with its constant controlled by a $C^k$ norm of the weight
-(proved in Sections~\ref{sec:poisson}--\ref{sec:descent} and Appendix~\ref{app:reflection}), and the identity
-expressing the coefficients of $1/L^{(6d)}(E_d,s)$ as Hecke-character sums over $\OO$ (Deuring's identity, which
-follows from Proposition~\ref{prop:b1-points} and Lemma~\ref{lem:b1-euler}). From these two hypotheses Lean
-verifies, with no unproved step beyond its standard axioms, that $1/L^{(6d)}(E_d,s)$ continues holomorphically
-to $\Re s>17/12$, and that every holomorphic continuation of $L^{(6d)}(E_d,s)$ is nonzero there. Along the way
-it proves the expression~\eqref{eq:b1-count}--\eqref{eq:d015} of $a_p(d)$ by Jacobi sums, the Hasse bound
-$|a_p(d)|\le2\sqrt p$, the sixth-power copy identity and the extraction. By Lemma~\ref{lem:b1-euler}(c),
-$L^{(6d)}(E_d,s)$ and $L(E_d,s)$ have the same zeros in $\Re s>1/2$; this comparison is not yet formalized. We
-are working toward a complete Lean certification of both results for these
+\paragraph{Lean formalization.} We are working toward a complete Lean certification of both results for these
 elliptic-curve $L$-functions: the boundary $17/12$ of Part~I (the $11/12$ method) and the boundary $11/8$ of
 Part~II (the $7/8$ method). OpenAI's $7/8$ theorem for finite-order characters is already formalized
 in Lean~\cite{OAIlean}.
@@ -2889,7 +2877,7 @@ of~\cite{OAI78} cited as identical (each checked against the source), OpenAI's t
 characters~\cite[Theorem~thm:main]{OAI78}, the theorem of Kubota and Patterson~\cite{Kub69,Pat77} in the form~\cite[Theorem~23]{QF}, the
 quadratic large sieve~\cite{HB95,GL}, and the prime number theorem for prime ideals in ray classes~\cite{Hec17,Hec20}. OpenAI's
 $7/8$ theorem is formalized in Lean~\cite{OAIlean}. Of the CM argument, only the last step of Part~I is
-formalized so far (see ``Lean formalization'' in the introduction); a complete certification of Parts~I and~II
+formalized so far; a complete certification of Parts~I and~II
 is in progress.
 
 \paragraph{Numerical checks.} We checked the new identities numerically:

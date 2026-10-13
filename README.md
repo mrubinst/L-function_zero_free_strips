@@ -10,7 +10,7 @@
 
 - [Sixth powers in a mean square: an accessible guide to the 11/12 argument for ζ(s)](zeta_11_12_guide.pdf) (PDF, 18 pages)
 - [Zeros of a whole family: an accessible guide to the 7/8 argument for ζ(s)](zeta_7_8_guide.pdf) (PDF, 12 pages)
-- [A zero-free strip for the L-functions of the elliptic curves y² = x³ + d: the 11/12 method and its extension to 7/8](cm_zero_free_strip.pdf) (PDF, 125 pages; [TeX source](cm_zero_free_strip.tex)).
+- [A zero-free strip for the L-functions of the elliptic curves y² = x³ + d: the 11/12 method and its extension to 7/8](cm_zero_free_strip.pdf) (PDF, 124 pages; [TeX source](cm_zero_free_strip.tex)).
   This note adapts the two methods to the CM curves y² = x³ + d.
 - [Quadratic number fields, with Q(√−3) worked out in detail](quadratic_fields_notes.pdf) (PDF, 33 pages;
   [source and scripts](quadratic_fields_notes/)). Background notes on the arithmetic of ℤ[ω], residue symbols,
