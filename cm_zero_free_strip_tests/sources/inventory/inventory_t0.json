@@ -27,7 +27,7 @@
   "subsection": "Introduction",
   "source": "\\begin{equation}\\label{eq:intro-cm-map}\n (x,y)\\longmapsto(\\omega x,y)\n\\end{equation}",
   "before": "we average over will be a family of character twists.\n\n\\paragraph{Complex multiplication.}\nEvery elliptic curve has the multiplication maps $P\\mapsto mP$ for integers $m$.\nThese curves have an additional endomorphism. Put\n$\\omega=e^{2\\pi i/3}$ and $K=\\mathbb Q(\\omega)=\\mathbb Q(\\sqrt{-3})$. The map\n",
-  "after": "\npreserves the equation and fixes the point at infinity. The full ring of endomorphisms over\n$\\overline{\\mathbb Q}$ is $\\OO$, the ring of Eisenstein integers, rather than just $\\mathbb Z$.\nThis is what \\emph{complex multiplication}, or CM, means here~\\cite{SilATAEC,Deuring}; the additional maps\nare "
+  "after": "\npreserves the equation and fixes the point at infinity. The full ring of endomorphisms over\n$\\overline{\\mathbb Q}$ is $\\OO$, the ring of Eisenstein integers.\nThis is what \\emph{complex multiplication}, or CM, means here~\\cite{SilATAEC,Deuring}; the additional maps\nare "
  },
  {
   "labels": [
