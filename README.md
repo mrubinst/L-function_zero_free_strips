@@ -5,6 +5,7 @@
 > ([github.com/openai/math](https://github.com/openai/math/tree/main/preprints)).
 > We also prove analogous zero-free strips for the L-functions of the elliptic curves y² = x³ + d:
 > L(E_d, s) ≠ 0 for Re s > 17/12 by the 11/12 method, and for Re s > 11/8 by the 7/8 method.
+> In the analytic normalization, with critical line Re s = 1/2, these are Re s > 11/12 and Re s > 7/8.
 > — [Michael Rubinstein](https://www.math.uwaterloo.ca/~mrubinst/)
 
 - [Sixth powers in a mean square: an accessible guide to the 11/12 argument for ζ(s)](zeta_11_12_guide.pdf) (PDF, 18 pages)
