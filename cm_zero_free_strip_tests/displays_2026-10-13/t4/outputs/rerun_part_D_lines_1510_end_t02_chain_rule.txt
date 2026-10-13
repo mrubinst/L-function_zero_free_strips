@@ -1,0 +1,13 @@
+   j=1: zbar-rule True, z-rule True, sign falsifier fails: True, z!=0 falsifier fails: True
+   j=2: zbar-rule True, z-rule True, sign falsifier fails: n/a, z!=0 falsifier fails: True
+   j=3: zbar-rule True, z-rule True, sign falsifier fails: True, z!=0 falsifier fails: True
+   j=4: zbar-rule True, z-rule True, sign falsifier fails: n/a, z!=0 falsifier fails: True
+   j=5: zbar-rule True, z-rule True, sign falsifier fails: True, z!=0 falsifier fails: True
+   j=6: zbar-rule True, z-rule True, sign falsifier fails: n/a, z!=0 falsifier fails: True
+[PASS] D02.1 L1571 chain rule d_zbar^j: exact for every monomial of degree <= j, j = 1..6 (paper: j <= 4) | falsifiers: unsigned coefficient fails for odd j; z=1/5 fails for all j
+[PASS] D02.2 L1641 chain rule d_z^j: (-(cbar v)^-2)^j d_zbar'^j, exact for j = 1..6 (paper: j <= 3) | same monomial basis
+[PASS] D02.3 L1574 constant term: d_zbar^j h(v') = 0 at z = zbar = 0 for j = 1..6 | falsifiers: j=0 gives h(1/(N(c)v)) != 0; at z=1/5 the first derivative is nonzero
+[PASS] D02.4 L1568 coordinates: at z=0: z' affine in zbar with slope -(cv)^-2; zbar', v' independent of zbar; v' = 1/(N(c) v) | falsifier: at z=1/5, d^2 z'/dzbar^2 != 0
+[PASS] D02.5 L1640 d_z on ce(lz): d_z^n ce(lz) = (2 pi i l)^n ce(lz) and d_zbar^n ce(lz) = (2 pi i lbar)^n ce(lz), n=1..6 | falsifier: d_z giving lbar fails
+
+--- exit 0, 32.4 s

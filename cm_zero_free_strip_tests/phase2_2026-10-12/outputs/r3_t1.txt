@@ -1,0 +1,11 @@
+[PASS] G1 eq:signal (OAI78 L965) on 75 squarefree c  :: max err 1.2e-13, 1.3e-13
+[PASS] G2 eq:signal-cm  :: err 1.3e-13; falsifier alpha: 2.00
+[PASS] G3 companion mu gamma_{-1} = chi(-1) G^{-1} conj(alpha) gamma_2  :: err 9.1e-14; falsifier alpha: 2.00
+[PASS] G4 CM weight conj(alpha)^2 gamma_2 eta gamma_1 = mu G psi  :: err 1.3e-13
+[PASS] G5 chi_p(4)^3 = 1 at 77 good primes  :: falsifier chi_p(2)^3 = 1 fails at 42 primes
+[PASS] C1 split traces, 2756 pairs (d,pi), both primes above p  :: max err 1.4e-14; falsifier alpha*chi(4d) max err 126.0
+[PASS] C2 psi*(-p) = -1 and a_p = 0, 1461 inert pairs  :: max err 0.0e+00; falsifier (no angular factor) equals -1 in 0 cases
+[PASS] C3 psi*(pibar) = conj psi*(pi)  :: max err 0.0e+00
+[PASS] C4 chi_n(4d) periodic mod 144|d| (569 tests)  :: violations 0; falsifier (shift by 9, not a multiple of the modulus) differs in 274 cases
+   conductors N(E_d): {1: 36, 2: 1728, 3: 3888, -3: 972, 5: 2700, 7: 21168, -11: 13068, 16: 27, -432: 27, 30: 388800, -6: 15552, 13: 18252}
+ALL PASS

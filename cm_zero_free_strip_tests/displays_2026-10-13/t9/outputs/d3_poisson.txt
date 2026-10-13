@@ -1,0 +1,52 @@
+alpha: e=1, f=(3, 0), N(f)=9
+conj alpha: e=-1, f=(3, 0), N(f)=9
+alpha chi_p7^5: e=1, f=(-1, -3), N(f)=7
+alpha^-1 chi_p13^2: e=-1, f=(2, -5), N(f)=39
+conj alpha (a/2)_3: e=-1, f=(-2, -4), N(f)=12
+alpha chi_p7 chi_p19^3: e=1, f=(12, -27), N(f)=1197
+RESULT|F12|PASS|err=4.23e-15 tol=1e-12; Jacobi-Anger: both equalities of (F.12), 60 random (r, rho, beta), e = +-1
+      falsifier for F12 [2 pi J_1 (conj w/|w|)^e without the factor e]: err=7.03 -> fails as required
+      falsifier for F12 [angle e^{+i e beta}]: err=5.8 -> fails as required
+RESULT|F13-bump[1,2]-e+1|PASS|err=3.6e-14 tol=1e-10; ghat_X(w) = pi e X (conj w/|w|)^e int W J_1(4 pi |w| sqrt(Xx/3)) dx, X = 0.37, 1, 4.2
+RESULT|F13-bump[1,2]-e+1-zero|PASS|err=1.23e-16 tol=1e-12; ghat_X(0) = 0
+      falsifier for F13-bump[1,2]-e+1 [prefactor without X]: err=0.911 -> fails as required
+      falsifier for F13-bump[1,2]-e+1 [J_1 argument without sqrt X]: err=2.06 -> fails as required
+RESULT|F13-bump[1,2]-e-1|PASS|err=3.62e-14 tol=1e-10; ghat_X(w) = pi e X (conj w/|w|)^e int W J_1(4 pi |w| sqrt(Xx/3)) dx, X = 0.37, 1, 4.2
+RESULT|F13-bump[1,2]-e-1-zero|PASS|err=1.23e-16 tol=1e-12; ghat_X(0) = 0
+      falsifier for F13-bump[1,2]-e-1 [prefactor without X]: err=0.911 -> fails as required
+      falsifier for F13-bump[1,2]-e-1 [J_1 argument without sqrt X]: err=2.06 -> fails as required
+RESULT|F13-x^1/2 e^-x-e+1|PASS|err=4.57e-13 tol=1e-10; ghat_X(w) = pi e X (conj w/|w|)^e int W J_1(4 pi |w| sqrt(Xx/3)) dx, X = 0.37, 1, 4.2
+RESULT|F13-x^1/2 e^-x-e+1-zero|PASS|err=4.59e-16 tol=1e-12; ghat_X(0) = 0
+      falsifier for F13-x^1/2 e^-x-e+1 [prefactor without X]: err=3.25 -> fails as required
+      falsifier for F13-x^1/2 e^-x-e+1 [J_1 argument without sqrt X]: err=3.94 -> fails as required
+RESULT|F13-x^1/2 e^-x-e-1|PASS|err=4.57e-13 tol=1e-10; ghat_X(w) = pi e X (conj w/|w|)^e int W J_1(4 pi |w| sqrt(Xx/3)) dx, X = 0.37, 1, 4.2
+RESULT|F13-x^1/2 e^-x-e-1-zero|PASS|err=4.59e-16 tol=1e-12; ghat_X(0) = 0
+      falsifier for F13-x^1/2 e^-x-e-1 [prefactor without X]: err=3.25 -> fails as required
+      falsifier for F13-x^1/2 e^-x-e-1 [J_1 argument without sqrt X]: err=3.94 -> fails as required
+RESULT|F13-lognormal-e+1|PASS|err=3.07e-13 tol=1e-10; ghat_X(w) = pi e X (conj w/|w|)^e int W J_1(4 pi |w| sqrt(Xx/3)) dx, X = 0.37, 1, 4.2
+RESULT|F13-lognormal-e+1-zero|PASS|err=1.06e-15 tol=1e-12; ghat_X(0) = 0
+      falsifier for F13-lognormal-e+1 [prefactor without X]: err=7.31 -> fails as required
+      falsifier for F13-lognormal-e+1 [J_1 argument without sqrt X]: err=10.5 -> fails as required
+RESULT|F13-lognormal-e-1|PASS|err=3.07e-13 tol=1e-10; ghat_X(w) = pi e X (conj w/|w|)^e int W J_1(4 pi |w| sqrt(Xx/3)) dx, X = 0.37, 1, 4.2
+RESULT|F13-lognormal-e-1-zero|PASS|err=1.06e-15 tol=1e-12; ghat_X(0) = 0
+      falsifier for F13-lognormal-e-1 [prefactor without X]: err=7.31 -> fails as required
+      falsifier for F13-lognormal-e-1 [J_1 argument without sqrt X]: err=10.5 -> fails as required
+RESULT|F9|PASS|err=1.15e-15 tol=1e-12; ideal sum (one generator per ideal) = (1/6) element sum, 6 characters, X = 0.8, 5 (x^1/2 e^-x), 30 (bump)
+RESULT|F9-units|PASS|err=3.46e-15 tol=1e-12; c(ua) = c(a) for the six units
+      falsifier for F9 [element sum of phi(a) W without the angular factor]: err=0.981 -> fails as required
+RESULT|F10|PASS|err=6.63e-15 tol=1e-12; Poisson in the class t + fO for every t mod f, X = 0.6, 1.5, 4, five characters with N(f) <= 39
+      falsifier for F10 [e(-tw/f)]: err=0.838 -> fails as required
+      falsifier for F10 [1 in place of 2/sqrt3]: err=0.0562 -> fails as required
+RESULT|F11|PASS|err=5.36e-14 tol=1e-12; sum_a phi(a) g_X(a) = (2/sqrt3) gamma N(f)^{-1/2} sum_w conj(phi(w)) ghat_X(w/f)
+      falsifier for F11 [phi(w) unconjugated]: err=4.28 -> fails as required
+RESULT|F11-QF-Lemma17|PASS|err=5.13e-13 tol=1e-11; sum_t phi(t) e(tw/f) = conj(phi(w)) sqrt(N f) gamma(phi) for every w mod f
+      falsifier for F11-QF-Lemma17 [imprimitive character (alpha induced to modulus 3 p7)]: err=18 -> fails as required
+RESULT|F15|PASS|err=7.94e-15 tol=1e-11; (F.15) for 6 characters (N(f) up to 1197), x^{1/2}e^{-x} and x^{3/2}e^{-x}, X = 0.6..11
+      falsifier for F15 [without (f/|f|)^e]: err=3.44 -> fails as required
+      falsifier for F15 [without the factor e]: err=8.55 -> fails as required
+RESULT|F14-first|PASS|err=0 tol=0; sympy: (conj(w/f)/|w/f|)^e = (conj w/|w|)^e (f/|f|)^e, e = +-1, w, f in polar form
+RESULT|F14-third|PASS|err=0 tol=0; sympy: 4 pi |w/f| sqrt(Xx/3) = 2 sqrt(x N(w)/Y) with Y = 3N(f)/(4 pi^2 X)
+RESULT|F14-second|PASS|err=0 tol=1e-14; conj(phi(w)) (conj w/|w|)^e = conj(c(w)) on 6 characters, N(w) <= 400
+      falsifier for F14-first [(f/|f|)^{-e}]: err=1 -> fails as required
+      falsifier for F14-third [Y = C_Xi X instead of C_Xi / X]: err=1 -> fails as required
+SUMMARY: 45 checks, 0 failures

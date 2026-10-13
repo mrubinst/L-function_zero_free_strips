@@ -1,0 +1,30 @@
+   theta tables: 5136 primes, 17650 squarefree c, B = 50000, 8.5s
+[PASS] t5b.A15 (eq:d105 theta(HP)=theta(gamma_sigma P)) 12 matrices H of [QF (5.18)] (I, (1 0; +-lambda 1), (u -1; 1 0) for the 9 u mod 3): H gamma_sigma^-1 = S U with S in SL_2(Z), U in Gamma(3), kappa(U) = 1 (exact): True; theta(HP) vs theta(gamma_sigma P) at 2 points, max rel err 3.6e-15
+      falsifier for t5b.A15 [label sigma swapped (0->+, +->-, -->+)]: err=0.79 -> fails as required
+   61 cusps a/c; (sigma, v_lambda(c), N(c)) types: [('+', 0, 7), ('+', 0, 19), ('+', 1, 3), ('+', 1, 12), ('-', 0, 1), ('-', 0, 4), ('-', 0, 7), ('-', 0, 13), ('-', 0, 25), ('-', 1, 3), ('-', 1, 12), ('0', 0, 1), ('0', 0, 4), ('0', 0, 7), ('0', 0, 13), ('0', 0, 19), ('0', 0, 25), ('0', 2, 9), ('0', 2, 36)]; kappa values [-2.094, 0.0, 2.094]; (c1/a1)_3 = (b1/d1)_3: True
+[PASS] t5b.A25 (eq:d109 g^{-1}(a/c+z,v)) 61 cusps x 4 points: formula vs the action [QF (5.1)] of g^{-1}, max abs err 2.9e-15
+[PASS] t5b.A16 (eq:b3-automorphy (with eq:d112)) 61 cusps, 2 points each (v = N(c)^-1/2): max rel err 3.8e-14; F_sigma from (A.29) with d_sigma of (A.4)
+      falsifier for t5b.A16 [kappa instead of conj(kappa)]: err=1.73 -> fails as required
+      falsifier for t5b.A16 [wrong cusp label]: err=18.7 -> fails as required
+[PASS] t5b.A28 (eq:b3-cusp, eq:b3-G) 61 cusps: second zbar-derivative of conj(theta) at a/c from the expansion at infinity vs conj(kappa)(cv)^-4 G(1/(N(c)v)), G by (A.30): max rel err 2.1e-14
+      falsifier for t5b.A28 [(conj(c) v)^-4]: err=1.73 -> fails as required
+      falsifier for t5b.A28 [conj(alpha(l))^2 in G]: err=3.18 -> fails as required
+      falsifier for t5b.A28 [kappa unconjugated]: err=1.73 -> fails as required
+   T1 phi=1: 36 translates, cusp types (sigma, N(c)) [('+', 1), ('+', 4), ('-', 1), ('-', 4), ('0', 1), ('0', 4)]; |sum c_F| = 2.7e-16; (A.31) at v0=0.500: rel err 2.8e-15; (A.35) J(-3+0.5i) quad -1.366805e+09+3.212370e+08j vs fe -1.366805e+09+3.212370e+08j rel err 1.1e-10  [3.1s]
+   T2 phi=(lambda/x)_3: 36 translates, cusp types (sigma, N(c)) [('0', 9), ('0', 36)]; |sum c_F| = 4.9e-17; (A.31) at v0=0.167: rel err 1.7e-14; (A.35) J(-3+0.5i) quad 3.719898e+11-3.564107e+11j vs fe 3.719898e+11-3.564107e+11j rel err 1.6e-10  [2.0s]
+   T3 phi=(omega/x)_3: 36 translates, cusp types (sigma, N(c)) [('-', 3), ('-', 12)]; |sum c_F| = 4.2e-17; (A.31) at v0=0.289: rel err 8.9e-16; (A.35) J(-3+0.5i) quad -8.144652e+12+3.113840e+13j vs fe -8.144652e+12+3.113840e+13j rel err 1.1e-10  [3.6s]
+   T4 phi=psi4: 108 translates, cusp types (sigma, N(c)) [('+', 16), ('-', 16), ('0', 16)]; |sum c_F| = 4.2e-17; (A.31) at v0=0.250: rel err 1.2e-15; (A.35) J(-3+0.5i) quad -4.439307e+14+8.284431e+14j vs fe -4.439307e+14+8.284431e+14j rel err 1.4e-10  [3.7s]
+   T5 phi=1, P={pi7}, j=0: 252 translates, cusp types (sigma, N(c)) [('+', 1), ('+', 4), ('+', 7), ('+', 28), ('-', 1), ('-', 4), ('-', 7), ('-', 28), ('0', 1), ('0', 4), ('0', 7), ('0', 28)]; |sum c_F| = 2.4e-17; (A.31) at v0=0.189: rel err 5.3e-14; (A.35) J(-3+0.5i) quad -2.754629e+15+3.934130e+15j vs fe -2.754629e+15+3.934130e+15j rel err 1.4e-10  [5.0s]
+   T5 phi=1, P={pi7}, j=1: 216 translates, cusp types (sigma, N(c)) [('+', 7), ('+', 28), ('-', 7), ('-', 28), ('0', 7), ('0', 28)]; |sum c_F| = 4.5e-17; (A.31) at v0=0.189: rel err 3.8e-15; (A.35) J(-3+0.5i) quad 7.696229e+15-1.211745e+16j vs fe 7.696229e+15-1.211745e+16j rel err 1.4e-10  [5.1s]
+   T5 phi=1, P={pi7}, j=2: 216 translates, cusp types (sigma, N(c)) [('+', 7), ('+', 28), ('-', 7), ('-', 28), ('0', 7), ('0', 28)]; |sum c_F| = 7.2e-18; (A.31) at v0=0.189: rel err 2.4e-15; (A.35) J(-3+0.5i) quad 4.094468e+15-2.330833e+16j vs fe 4.094468e+15-2.330833e+16j rel err 1.4e-10  [4.8s]
+   T5 phi=1, P={pi7}, j=4: 216 translates, cusp types (sigma, N(c)) [('+', 7), ('+', 28), ('-', 7), ('-', 28), ('0', 7), ('0', 28)]; |sum c_F| = 3.9e-17; (A.31) at v0=0.189: rel err 2.4e-15; (A.35) J(-3+0.5i) quad -9.242220e+14-2.913556e+15j vs fe -9.242220e+14-2.913556e+15j rel err 1.4e-10  [5.8s]
+[PASS] t5b.A14 (eq:b3-translates) 8 twists (L = 72, phihat over all 5184 h0; P = {pi7} with j = 0,1,2,4): coefficient identity at all x, N(x) <= 1500: max abs err 8.6e-14; Theta_Psi(z,v) = sum_h c_F conj(theta(z+z_h,v)) at 2 points: max rel err 3.3e-15; |sum_h c_F(h)| <= 2.7e-16 (constant terms cancel)
+      falsifier for t5b.A14 [z - z_h in place of z + z_h]: err=1.5 -> fails as required
+[PASS] t5b.A31 (eq:d113) f(v) = d_zbar^2 Theta_Psi at z = 0 from the twisted series vs the sum over translates of c_F conj(kappa)(c v)^-4 G(1/(N(c)v)), 8 twists, 2 heights each: max rel err 5.3e-14
+      falsifier for t5b.A31 [kappa unconjugated]: err=15.1 -> fails as required
+      falsifier for t5b.A31 [(conj(c) v)^-4]: err=2.78 -> fails as required
+[PASS] t5b.A35 (eq:b3-fe) J(s) at s = -3+0.5i: quadrature of int f(v) v^(2s-1) dv (trapezoid in log v; steps 0.02/0.025 agree to 5.3e-11) vs the right side of (A.35) with J^vee from (A.32) over the tables: max rel err 1.6e-10 over 8 twists
+      falsifier for t5b.A35 [conj(alpha(c))^2 in place of ^4]: err=1.96 -> fails as required
+      falsifier for t5b.A35 [N(c)^(1-2s) in place of N(c)^(2-2s)]: err=0.972 -> fails as required
+time 43.4s
+EXIT STATUS 0: all 7 checks passed

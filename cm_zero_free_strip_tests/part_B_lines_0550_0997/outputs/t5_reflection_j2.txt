@@ -1,0 +1,54 @@
+primes: 7828 time 0.0
+prime Gauss sums done 19.4
+squarefree c: 28237 time 21.1
+tables ready 21.1
+a=(1, 0) C=(-3, 0) v_lam=2 sigma=0 kappa=1.000+0.000j X=767.9 #L=19804 #R=19748  LHS=28.8146833727+0.0000000000j  RHS=28.8146833783+0.0000000000j  rel.err=2.0e-10  min control err=0.00
+a=(4, 0) C=(-3, 0) v_lam=2 sigma=0 kappa=1.000+0.000j X=767.9 #L=19804 #R=19748  LHS=28.8146833727+0.0000000000j  RHS=28.8146833783+0.0000000000j  rel.err=2.0e-10  min control err=0.00
+a=(1, 0) C=(-3, -6) v_lam=3 sigma=0 kappa=1.000+0.000j X=2303.6 #L=59382 #R=59186  LHS=-68.0528919236-0.0000000000j  RHS=-68.0528919155-0.0000000000j  rel.err=1.2e-10  min control err=1.01
+a=(7, 0) C=(-6, 0) v_lam=2 sigma=0 kappa=1.000+0.000j X=3071.5 #L=79220 #R=78942  LHS=-85.5898837717+0.0000000000j  RHS=-85.5898837873+0.0000000000j  rel.err=1.8e-10  min control err=0.00
+a=(-2, -3) C=(-6, 0) v_lam=2 sigma=0 kappa=1.000+0.000j X=3071.5 #L=79220 #R=78942  LHS=-106.1380488678-7.0115989905j  RHS=-106.1380488775-7.0115989978j  rel.err=1.1e-10  min control err=0.00
+a=(1, 0) C=(1, 2) v_lam=1 sigma=- kappa=-0.500-0.866j X=442.3 #L=11424 #R=12381  LHS=-80.4083810792+0.0000000000j  RHS=-80.4083810894-0.0000000000j  rel.err=1.3e-10  min control err=0.90
+a=(1, 0) C=(1, 2) v_lam=1 sigma=- kappa=-0.500+0.866j X=442.3 #L=11424 #R=12381  LHS=-80.4083810792+0.0000000000j  RHS=-80.4083810894-0.0000000000j  rel.err=1.3e-10  min control err=0.90
+a=(1, 0) C=(1, 2) v_lam=1 sigma=- kappa=1.000+0.000j X=442.3 #L=11424 #R=12381  LHS=-80.4083810792+0.0000000000j  RHS=-80.4083810894-0.0000000000j  rel.err=1.3e-10  min control err=0.90
+a=(1, 0) C=(-1, -2) v_lam=1 sigma=+ kappa=-0.500-0.866j X=442.3 #L=11424 #R=12381  LHS=-80.4083810792+0.0000000000j  RHS=-80.4083810894-0.0000000000j  rel.err=1.3e-10  min control err=0.95
+a=(1, 0) C=(-1, -2) v_lam=1 sigma=+ kappa=-0.500+0.866j X=442.3 #L=11424 #R=12381  LHS=-80.4083810792+0.0000000000j  RHS=-80.4083810894-0.0000000000j  rel.err=1.3e-10  min control err=0.95
+a=(1, 0) C=(-1, -2) v_lam=1 sigma=+ kappa=1.000+0.000j X=442.3 #L=11424 #R=12381  LHS=-80.4083810792+0.0000000000j  RHS=-80.4083810894-0.0000000000j  rel.err=1.3e-10  min control err=0.95
+a=(1, 0) C=(-2, -4) v_lam=1 sigma=- kappa=-0.500+0.866j X=1769.0 #L=45624 #R=49482  LHS=67.9928434293+0.0000000000j  RHS=67.9928434191+0.0000000000j  rel.err=1.5e-10  min control err=1.11
+a=(1, 0) C=(-2, -4) v_lam=1 sigma=- kappa=-0.500-0.866j X=1769.0 #L=45624 #R=49482  LHS=67.9928434293+0.0000000000j  RHS=67.9928434191+0.0000000000j  rel.err=1.5e-10  min control err=1.11
+a=(1, 0) C=(-2, -4) v_lam=1 sigma=- kappa=1.000+0.000j X=1769.0 #L=45624 #R=49482  LHS=67.9928434293+0.0000000000j  RHS=67.9928434191+0.0000000000j  rel.err=1.5e-10  min control err=1.11
+a=(7, 0) C=(2, 4) v_lam=1 sigma=+ kappa=-0.500-0.866j X=1769.0 #L=45624 #R=49482  LHS=30.0747216201+0.0000000000j  RHS=30.0747216195-0.0000000000j  rel.err=2.2e-11  min control err=1.14
+a=(7, 0) C=(2, 4) v_lam=1 sigma=+ kappa=1.000+0.000j X=1769.0 #L=45624 #R=49482  LHS=30.0747216201+0.0000000000j  RHS=30.0747216195+0.0000000000j  rel.err=2.2e-11  min control err=1.14
+a=(7, 0) C=(2, 4) v_lam=1 sigma=+ kappa=-0.500+0.866j X=1769.0 #L=45624 #R=49482  LHS=30.0747216201+0.0000000000j  RHS=30.0747216195+0.0000000000j  rel.err=2.2e-11  min control err=1.14
+a=(1, 0) C=(4, -1) v_lam=1 sigma=- kappa=-0.500-0.866j X=3095.8 #L=79842 #R=86592  LHS=13.9401658522+46.5671854560j  RHS=13.9401658517+46.5671854585j  rel.err=5.1e-11  min control err=0.38
+a=(1, 0) C=(4, -1) v_lam=1 sigma=- kappa=-0.500+0.866j X=3095.8 #L=79842 #R=86592  LHS=13.9401658522+46.5671854560j  RHS=13.9401658517+46.5671854585j  rel.err=5.1e-11  min control err=0.38
+a=(1, 0) C=(4, -1) v_lam=1 sigma=- kappa=1.000+0.000j X=3095.8 #L=79842 #R=86592  LHS=13.9401658522+46.5671854560j  RHS=13.9401658517+46.5671854585j  rel.err=5.1e-11  min control err=0.38
+a=(0, 0) C=(1, 0) v_lam=0 sigma=0 kappa=1.000+0.000j X=85.3 #L=2196 #R=2180  LHS=0.3414346347+0.0000000000j  RHS=0.3414346269+0.0000000000j  rel.err=2.3e-08  min control err=0.00
+a=(0, 1) C=(1, 0) v_lam=0 sigma=- kappa=-0.500-0.866j X=147.4 #L=3814 #R=4134  LHS=35.1597955641+0.0000000000j  RHS=35.1597955573+0.0000000000j  rel.err=1.9e-10  min control err=0.00
+a=(0, 1) C=(1, 0) v_lam=0 sigma=- kappa=-0.500+0.866j X=147.4 #L=3814 #R=4134  LHS=35.1597955641+0.0000000000j  RHS=35.1597955573+0.0000000000j  rel.err=1.9e-10  min control err=0.00
+a=(0, 1) C=(1, 0) v_lam=0 sigma=- kappa=1.000+0.000j X=147.4 #L=3814 #R=4134  LHS=35.1597955641+0.0000000000j  RHS=35.1597955573+0.0000000000j  rel.err=1.9e-10  min control err=0.00
+a=(0, -1) C=(1, 0) v_lam=0 sigma=+ kappa=-0.500+0.866j X=147.4 #L=3814 #R=4134  LHS=35.1597955641+0.0000000000j  RHS=35.1597955573+0.0000000000j  rel.err=1.9e-10  min control err=0.00
+a=(0, -1) C=(1, 0) v_lam=0 sigma=+ kappa=-0.500-0.866j X=147.4 #L=3814 #R=4134  LHS=35.1597955641+0.0000000000j  RHS=35.1597955573+0.0000000000j  rel.err=1.9e-10  min control err=0.00
+a=(0, -1) C=(1, 0) v_lam=0 sigma=+ kappa=1.000+0.000j X=147.4 #L=3814 #R=4134  LHS=35.1597955641+0.0000000000j  RHS=35.1597955573+0.0000000000j  rel.err=1.9e-10  min control err=0.00
+a=(1, 0) C=(-2, 0) v_lam=0 sigma=0 kappa=1.000+0.000j X=341.3 #L=8820 #R=8792  LHS=47.2435759270-0.0000000000j  RHS=47.2435759403+0.0000000000j  rel.err=2.8e-10  min control err=0.00
+a=(0, 1) C=(-2, 0) v_lam=0 sigma=- kappa=-0.500+0.866j X=589.7 #L=15212 #R=16506  LHS=49.2052458174-50.5362310485j  RHS=49.2052458170-50.5362310513j  rel.err=4.0e-11  min control err=0.00
+a=(0, 1) C=(-2, 0) v_lam=0 sigma=- kappa=-0.500-0.866j X=589.7 #L=15212 #R=16506  LHS=49.2052458174-50.5362310485j  RHS=49.2052458170-50.5362310513j  rel.err=4.0e-11  min control err=0.00
+a=(0, 1) C=(-2, 0) v_lam=0 sigma=- kappa=1.000+0.000j X=589.7 #L=15212 #R=16506  LHS=49.2052458174-50.5362310485j  RHS=49.2052458170-50.5362310513j  rel.err=4.0e-11  min control err=0.00
+a=(0, -1) C=(-2, 0) v_lam=0 sigma=+ kappa=-0.500+0.866j X=589.7 #L=15212 #R=16506  LHS=49.2052458174-50.5362310485j  RHS=49.2052458170-50.5362310513j  rel.err=4.0e-11  min control err=0.00
+a=(0, -1) C=(-2, 0) v_lam=0 sigma=+ kappa=1.000+0.000j X=589.7 #L=15212 #R=16506  LHS=49.2052458174-50.5362310485j  RHS=49.2052458170-50.5362310513j  rel.err=4.0e-11  min control err=0.00
+a=(0, -1) C=(-2, 0) v_lam=0 sigma=+ kappa=-0.500-0.866j X=589.7 #L=15212 #R=16506  LHS=49.2052458174-50.5362310485j  RHS=49.2052458170-50.5362310513j  rel.err=4.0e-11  min control err=0.00
+a=(1, 1) C=(-2, -3) v_lam=0 sigma=- kappa=1.000+0.000j X=1031.9 #L=26654 #R=28875  LHS=8.0027429150-6.2973920455j  RHS=8.0027429160-6.2973920293j  rel.err=1.6e-09  min control err=0.50
+a=(1, 1) C=(-2, -3) v_lam=0 sigma=- kappa=-0.500-0.866j X=1031.9 #L=26654 #R=28875  LHS=8.0027429150-6.2973920455j  RHS=8.0027429160-6.2973920293j  rel.err=1.6e-09  min control err=0.50
+a=(1, 1) C=(-2, -3) v_lam=0 sigma=- kappa=-0.500+0.866j X=1031.9 #L=26654 #R=28875  LHS=8.0027429150-6.2973920455j  RHS=8.0027429160-6.2973920293j  rel.err=1.6e-09  min control err=0.50
+a=(2, 0) C=(-2, -3) v_lam=0 sigma=0 kappa=-0.500+0.866j X=597.2 #L=15408 #R=15348  LHS=-32.1870652128+82.4812818317j  RHS=-32.1870652105+82.4812818262j  rel.err=6.7e-11  min control err=0.38
+a=(0, 2) C=(-2, -3) v_lam=0 sigma=+ kappa=-0.500-0.866j X=1031.9 #L=26654 #R=28875  LHS=52.1739773226-11.3584290970j  RHS=52.1739773163-11.3584290985j  rel.err=1.2e-10  min control err=0.99
+a=(0, 2) C=(-2, -3) v_lam=0 sigma=+ kappa=1.000+0.000j X=1031.9 #L=26654 #R=28875  LHS=52.1739773226-11.3584290970j  RHS=52.1739773163-11.3584290985j  rel.err=1.2e-10  min control err=0.99
+a=(0, 2) C=(-2, -3) v_lam=0 sigma=+ kappa=-0.500+0.866j X=1031.9 #L=26654 #R=28875  LHS=52.1739773226-11.3584290970j  RHS=52.1739773163-11.3584290985j  rel.err=1.2e-10  min control err=0.99
+RESULT|B53|PASS|err=0.0228 tol=1; 41 nondegenerate cusp configurations (all cusp types, all kappa values found), worst rel. error 2.3e-08; 0 degenerate (LHS=0) with max |RHS| 0.0e+00; kernel Gamma(4/3+-t)Gamma(5/3+-t) and scaling (2pi)^4 x/27 of eq:weight
+RESULT|B55|PASS|err=0.0228 tol=1; 41 nondegenerate cusp configurations (all cusp types, all kappa values found), worst rel. error 2.3e-08; 0 degenerate (LHS=0) with max |RHS| 0.0e+00; dual angular factor alpha(l)^2 and prefactor +conj(kappa)conj(alpha(C))^4 on LHS, i.e. -conj(alpha(c))^4/81 on T
+      falsifier for B55 [sign flipped (prefactor +conj(alpha(c))^4/81 on T)]: err=2 -> fails as required
+      falsifier for B53 [one-derivative kernel Gamma(7/6+-t)Gamma(5/6+-t)]: err=37.7 -> fails as required
+      falsifier for B55 [conj(alpha(C))^2 instead of ^4]: err=2 -> fails as required
+      falsifier for B55 [alpha(l)^1 instead of alpha(l)^2]: err=1.72 -> fails as required
+      falsifier for B53 [(2 pi)^4 x without the factor 1/27]: err=2.26 -> fails as required
+note: a control can coincide with the claim at special cusps (e.g. alpha(C) = +-1 makes conj(alpha(C))^2 = conj(alpha(C))^4); each falsifier above is required to fail at some cusp, and does (max error over cusps).
+time 128.6

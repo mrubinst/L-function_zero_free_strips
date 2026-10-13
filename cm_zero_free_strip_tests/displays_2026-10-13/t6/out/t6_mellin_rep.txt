@@ -1,0 +1,12 @@
+setup: B=25000, pi=(-2, -3), 8832 squarefree c, 252 translates, 36 h0 classes
+PASS Vhat of the two tests: Vhat_G(t) = e^(t^2): 4.9e-26; Vhat(t) = 2K_t(2) for exp(-y-1/y): 0.0
+7063 squarefree n, 8 b; 3.9 s
+    G X=0.5: T_V(j=5) = 0.2627360687-0.0016901459j (6.1 s)
+    G X=3.0: T_V(j=5) = 0.2658945147+0.0479118352j (6.1 s)
+    K X=40.0: T_V(j=5) = -0.0253785744+0.0561989509j (20.7 s)
+    K X=300.0: T_V(j=5) = 0.0387012666-0.0383879887j (20.7 s)
+PASS eq:d127 (with eq:d124, eq:d125): 2 tests x 2 X x j=0..5 x a=1.5,2: max rel err 6.0e-13; falsifiers (largest deviation): noshift 21.59, L2exp 0.72, zeta-angles 2.67
+PASS eq:s1-central Mellin form (R6), Psi = nu chi_.(m): 3 rows m (square factor, lambda and 2, unit) x 2 tests: max rel err 1.3e-12; falsifier chi_n(m) instead of chi_n(m)^3: 2.7e+00
+PASS eq:d144/eq:d145 inner Mellin integral (mark D = pi): X = 0.7, 2 on the line Re t = 4: max rel err 9.0e-12; falsifier T_D(t) instead of T_D(t+1/2): 1.70
+4 checks, 0 failed; time 25.3 s
+PASS

@@ -1,0 +1,617 @@
+[
+ {
+  "labels": [
+   "eq:d096"
+  ],
+  "numbers": [
+   "A.1"
+  ],
+  "page": "52",
+  "line": 3239,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "source": "\\begin{equation}\\label{eq:d096}\n \\Psi(n)=\\xi_0(n)\\prod_{\\pi\\in\\mathcal P}\\chi_\\pi(n)^{j_\\pi},\n\\end{equation}",
+  "before": "Let $\\xi_0$ be a character of $\\mathfrak G$, extended by zero to\nelements that are not primary or not coprime to $6$. Let $\\mathcal P$ be\na finite set of primary primes coprime to $6$, and let $0\\le j_\\pi\\le5$\nfor $\\pi\\in\\mathcal P$. Put",
+  "after": "with the convention $\\chi_\\pi(n)^0=\\ind_{\\pi\\nmid n}$. Then $\\Psi$ is\ncompletely multiplicative on primary elements and vanishes unless\n$(n,6)=1$. Write $T(X;\\Psi)$ for the right side of~\\eqref{eq:T} with this"
+ },
+ {
+  "labels": [
+   "eq:reflection"
+  ],
+  "numbers": [
+   "A.2"
+  ],
+  "page": "53",
+  "line": 3252,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "source": "\\begin{equation}\\label{eq:reflection}\n C\\sum_{0\\ne\\ell\\in\\lambda^{-4}\\OO}\n \\frac{d_\\sigma(\\ell)\\alpha(\\ell)^2}{\\sqrt{\\N(\\ell)}}\n \\psi(\\lambda^4\\ell)\\prod_{\\pi\\in\\mathcal A}B_{\\pi,j_\\pi}(\\lambda^4\\ell)\n V^\\sharp\\left(\\frac{\\N(\\ell)X}{\\N(c)^2}\\right).\n\\end{equation}",
+  "before": "\n\\begin{proposition}[CM transformation formula]\\label{prop:b3-reflection}\nFor every $X>0$, $T(X;\\Psi)$ is a sum of at most\n$5184\\cdot2^{|\\mathcal P|}$ terms of the form",
+  "after": "In each term, $\\sigma\\in\\{0,+,-\\}$ and $d_\\sigma$ is the coefficient\nsequence of $\\overline\\theta$ at the cusp $\\gamma_\\sigma\\infty$;\n$\\mathcal A$ is a set with"
+ },
+ {
+  "labels": [
+   "eq:d097"
+  ],
+  "numbers": [
+   "A.3"
+  ],
+  "page": "53",
+  "line": 3264,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "source": "\\begin{equation}\\label{eq:d097}\n C=-\\frac{\\overline{\\alpha(c)}^{\\,4}}{81}\\,C',\\qquad|C'|\\le1.\n\\end{equation}",
+  "before": "$\\mathcal A$ is a set with\n$\\{\\pi\\in\\mathcal P:j_\\pi\\ne0\\}\\subseteq\\mathcal A\\subseteq\\mathcal P$;\n$c=c_0\\prod_{\\pi\\in\\mathcal A}\\pi$, where $c_0$ divides $8\\lambda^2$ up to\na unit; $\\psi(x)=e(\\beta x/(\\lambda^3c_0))$ for some $\\beta\\in\\OO$; and",
+  "after": "Each series converges absolutely. The weight $V^\\sharp$ and the local\nfactors $B_{\\pi,j}$ are those of~\\eqref{eq:weight} and~\\eqref{eq:local}.\n\\end{proposition}"
+ },
+ {
+  "labels": [
+   "eq:d098"
+  ],
+  "numbers": [
+   "A.4"
+  ],
+  "page": "53",
+  "line": 3289,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "source": "\\begin{equation}\\label{eq:d098}\n t_0(\\ell)=\\tau(\\ell),\\qquad\n t_+(\\ell)=\\omega\\tau_2(\\omega\\ell)\\ce(\\ell),\\qquad\n t_-(\\ell)=\\omega^2\\tau_1(\\omega^2\\ell)\\ce(\\ell),\\qquad\n d_\\sigma(\\ell)=\\overline{t_\\sigma(-\\ell)}.\n\\end{equation}",
+  "before": "tabulated in~\\cite[Theorem~23, (5.7), (5.9), (5.10)]{QF} in terms of the\ncubic Gauss sums $g(r,c)$ of~\\cite[(5.5)]{QF}; there $\\sqrt{-3}$ is our\n$\\lambda$, so $g(-3,c)=g(\\lambda^2,c)$, and $c$ is primary, squarefree and\npossibly even. With them,",
+  "after": "These are precisely the coefficients of the conjugated theta functions\nat the three cusps. Their support is contained in the set of indices\n$\\ell=u\\lambda^mnb^3$, with $u$ a unit, $m\\ge-4$, $n$ squarefree,"
+ },
+ {
+  "labels": [
+   "eq:d099"
+  ],
+  "numbers": [
+   "A.5"
+  ],
+  "page": "53",
+  "line": 3301,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "source": "\\begin{equation}\\label{eq:d099}\n |d_\\sigma(u\\lambda^mnb^3)|\\le27\\cdot3^{m/6}|b|.\n\\end{equation}",
+  "before": "$\\ell=u\\lambda^mnb^3$, with $u$ a unit, $m\\ge-4$, $n$ squarefree,\nand $n,b$ primary (the tables of~\\cite{QF} impose further restrictions);\nthis representation is unique, and, by~\\cite[Corollary~24]{QF}\nand~\\cite[Lemma~6.4]{OAI1112},",
+  "after": "In the varying quadratic symbol in~\\eqref{eq:reflection}, the factor\n$b^3$ contributes $(b/k)_2$, since $(b^3/k)_2=(b/k)_2$.\nFixing $u,m,b$ leaves squarefree columns $n$, exactly as required for"
+ },
+ {
+  "labels": [
+   "eq:d100"
+  ],
+  "numbers": [
+   "A.6"
+  ],
+  "page": "53",
+  "line": 3322,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\subsection{Uniformity in the twist and decay of the weight}\\label{sec:b3-lemmas}",
+  "source": "\\begin{equation}\\label{eq:d100}\n \\Psi_{k_0}(n)=\\xi_0(n)\\prod_{\\pi\\in\\mathcal P_{\\rm fix}}\\chi_\\pi(n)^{j_\\pi}\n \\prod_{\\pi\\mid k_0}\\chi_\\pi(n).\n\\end{equation}",
+  "before": "Fix $\\xi_0$, a finite set $\\mathcal P_{\\rm fix}$ of primary primes\ncoprime to $6$, and exponents $0\\le j_\\pi\\le5$ for\n$\\pi\\in\\mathcal P_{\\rm fix}$. For squarefree primary $k_0$ coprime to\n$6\\prod_{\\pi\\in\\mathcal P_{\\rm fix}}\\pi$ put",
+  "after": "The terms of Proposition~\\ref{prop:b3-reflection} for $\\Psi_{k_0}$ can\nbe indexed by pairs $(h_0,\\mathcal A_{\\rm fix})$, with $h_0\\in\\OO/72\\OO$\nand"
+ },
+ {
+  "labels": [
+   "eq:d101"
+  ],
+  "numbers": [
+   "A.7"
+  ],
+  "page": "54",
+  "line": 3354,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\subsection{Uniformity in the twist and decay of the weight}\\label{sec:b3-lemmas}",
+  "source": "\\begin{equation}\\label{eq:d101}\n \\bigl|(x\\partial_x)^jV^\\sharp(x)\\bigr|\n \\ll_{A,j,I}\\|W\\|_{C^J(I)}\\min(x^{1/4},x^{-A})\\qquad(x>0),\n\\end{equation}",
+  "before": "\\begin{lemma}[Decay of the reflected weight]\\label{lem:b3-decay}\nLet $I\\subset(0,\\infty)$ be a compact interval, $W\\in C_c^\\infty(I)$ and\n$V(y)=\\sqrt y\\,W(y)$. For every $A>0$ and every integer $j\\ge0$ there is\n$J=J(A,j)$ such that",
+  "after": "where $\\|W\\|_{C^J(I)}=\\max_{0\\le i\\le J}\\sup_I|W^{(i)}|$.\n\\end{lemma}\n"
+ },
+ {
+  "labels": [
+   "eq:b3-stirling"
+  ],
+  "numbers": [
+   "A.8"
+  ],
+  "page": "54",
+  "line": 3369,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\subsection{Uniformity in the twist and decay of the weight}\\label{sec:b3-lemmas}",
+  "source": "\\begin{equation}\\label{eq:b3-stirling}\n |R(\\eta+iu)|\\ll_A(1+|u|)^{4\\eta}\\qquad(-\\tfrac14\\le\\eta\\le A,\\ u\\in\\mathbb R).\n\\end{equation}",
+  "before": "$|\\Gamma(x+iy)|=\\sqrt{2\\pi}\\,|y|^{x-1/2}e^{-\\pi|y|/2}(1+O(1/|y|))$, uniform\nfor $x$ in compact sets and $|y|\\ge1$, gives\n$|\\Gamma(a+\\eta+iu)/\\Gamma(a-\\eta-iu)|\\asymp|u|^{2\\eta}$ for\n$a\\in\\{\\frac43,\\frac53\\}$ and $|u|\\ge1$. With continuity for $|u|\\le1$,",
+  "after": "The zeta kernel $\\Gamma(\\frac76+t)\\Gamma(\\frac56+t)/\\bigl(\\Gamma(\\frac76-t)\\Gamma(\\frac56-t)\\bigr)$ has the same\nexponent and is holomorphic in $\\Re t>-\\frac56$; both regions contain\n$\\Re t\\ge-\\frac14$, which is all that is used. Next,"
+ },
+ {
+  "labels": [
+   "eq:d102"
+  ],
+  "numbers": [
+   "A.9"
+  ],
+  "page": "54",
+  "line": 3387,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\subsection{Uniformity in the twist and decay of the weight}\\label{sec:b3-lemmas}",
+  "source": "\\begin{equation}\\label{eq:d102}\n \\bigl|(x\\partial_x)^jV^\\sharp(x)\\bigr|\n \\le\\frac{Y^{-\\eta}}{2\\pi}\\int_{\\mathbb R}|\\eta+iu|^j\\,\n |\\widehat V(-\\eta-iu)|\\,|R(\\eta+iu)|\\,du .\n\\end{equation}",
+  "before": "power of $|\\Im t|$ in the strip $-\\frac14\\le\\Re t\\le A$. We move the\ncontour to $\\Re t=-\\frac14$ if $x\\le1$ and to $\\Re t=A$ if $x\\ge1$,\ncrossing no poles. Each application of $x\\partial_x$ multiplies the\nintegrand by $-t$. With $Y=(2\\pi)^4x/27$ and $\\eta=-\\frac14$ or $A$,",
+  "after": "By~\\eqref{eq:b3-stirling} and the bound for $\\widehat V$ with\n$k=J:=\\lceil4A\\rceil+j+2$, the integral is\n$\\ll_{A,j,I}\\|W\\|_{C^J(I)}$. Since $Y\\asymp x$, this proves the lemma."
+ },
+ {
+  "labels": [
+   "eq:b3-bessel"
+  ],
+  "numbers": [
+   "A.10"
+  ],
+  "page": "55",
+  "line": 3422,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:b3-reflection}}\\label{sec:b3-proof}",
+  "source": "\\begin{equation}\\label{eq:b3-bessel}\n \\int_0^\\infty v^{2s}K_{1/3}(4\\pi|\\ell|v)\\,dv\n =2^{2s-1}\\Gamma(s+\\tfrac13)\\Gamma(s+\\tfrac23)(4\\pi|\\ell|)^{-2s-1}\n \\qquad(\\Re s>-\\tfrac13).\n\\end{equation}",
+  "before": "derivatives $\\frac12(\\partial_{\\Re z}\\pm i\\partial_{\\Im z})$, so that\n$\\partial_{\\bar z}\\ce(\\ell z)=2\\pi i\\bar\\ell\\,\\ce(\\ell z)$ and\n$\\partial_z\\ce(\\ell z)=2\\pi i\\ell\\,\\ce(\\ell z)$. The Mellin integral of\nthe Bessel function is~\\cite[(5.21)]{QF} (see~\\cite[(10.43.19)]{DLMF})",
+  "after": "\n\\paragraph{Step 1: the twisted series and its translates.} Let $L=72$.\nIn~\\cite[Appendix~A.2]{OAI1112} $L$ is any modulus divisible by sufficiently"
+ },
+ {
+  "labels": [
+   "eq:d103"
+  ],
+  "numbers": [
+   "A.11"
+  ],
+  "page": "55",
+  "line": 3441,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:b3-reflection}}\\label{sec:b3-proof}",
+  "source": "\\begin{equation}\\label{eq:d103}\n \\Theta_\\Psi(z,v)=\\sum_{0\\ne\\ell\\in\\lambda^{-3}\\OO}d_0(\\ell)\\,\n \\phi(\\lambda^3\\ell)\\prod_{\\pi\\in\\mathcal P}\\chi_\\pi(\\lambda^3\\ell)^{j_\\pi}\\,\n vK_{1/3}(4\\pi|\\ell|v)\\,\\ce(\\ell z).\n\\end{equation}",
+  "before": "Define $\\phi:\\OO\\to\\mathbb C$ by $\\phi(x)=(\\lambda/x)_3\\,\\xi_0(x)$ if $x$\nis primary and coprime to $6$, and $\\phi(x)=0$ otherwise. Since\n$(\\lambda/x)_3$ depends only on $x\\bmod9$, $\\phi$ is periodic modulo $L$,\nand $|\\phi|\\le1$. Put",
+  "after": "By~\\eqref{eq:theta-coeff} and the selection statement after it, the\ncoefficient of $\\Theta_\\Psi$ at $\\ell$ vanishes unless $\\lambda^3\\ell=nb^3$\nwith $n$ squarefree and $n,b$ primary and coprime to $6$. This"
+ },
+ {
+  "labels": [
+   "eq:b3-coeff"
+  ],
+  "numbers": [
+   "A.12"
+  ],
+  "page": "55",
+  "line": 3450,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:b3-reflection}}\\label{sec:b3-proof}",
+  "source": "\\begin{equation}\\label{eq:b3-coeff}\n 3^{5/2}|b|\\,\\overline{(\\lambda/n)_3}\\,\\gamma_2(n)\\cdot\n (\\lambda/nb^3)_3\\,\\Psi(nb^3)\n =3^{5/2}|b|\\,\\gamma_2(n)\\Psi(n)\\Psi(b)^3,\n\\end{equation}",
+  "before": "By~\\eqref{eq:theta-coeff} and the selection statement after it, the\ncoefficient of $\\Theta_\\Psi$ at $\\ell$ vanishes unless $\\lambda^3\\ell=nb^3$\nwith $n$ squarefree and $n,b$ primary and coprime to $6$. This\nrepresentation is unique, and the coefficient is then",
+  "after": "because $(\\lambda/b^3)_3=1$ and $\\Psi$ is completely multiplicative. For\n$h_0\\in\\OO/L\\OO$ and $h\\in\\OO/\\pi\\OO$ put\n\\begin{equation}\\label{eq:d104}"
+ },
+ {
+  "labels": [
+   "eq:d104"
+  ],
+  "numbers": [
+   "A.13"
+  ],
+  "page": "55",
+  "line": 3457,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:b3-reflection}}\\label{sec:b3-proof}",
+  "source": "\\begin{equation}\\label{eq:d104}\n \\widehat\\phi(h_0)=\\frac1{\\N(L)}\\sum_{x\\bmod L}\\phi(x)\\,\n e\\Bigl(-\\frac{h_0x}L\\Bigr),\\qquad\n C_{\\pi,j}(h)=\\frac1{\\N(\\pi)}\\sum_{y\\bmod\\pi}\\chi_\\pi(y)^j\\,\n e\\Bigl(-\\frac{hy}\\pi\\Bigr).\n\\end{equation}",
+  "before": " =3^{5/2}|b|\\,\\gamma_2(n)\\Psi(n)\\Psi(b)^3,\n\\end{equation}\nbecause $(\\lambda/b^3)_3=1$ and $\\Psi$ is completely multiplicative. For\n$h_0\\in\\OO/L\\OO$ and $h\\in\\OO/\\pi\\OO$ put",
+  "after": "Finite Fourier expansion~\\cite[(4.5)]{QF} of $\\phi$ modulo $L$ and of\n$\\chi_\\pi^{j_\\pi}$ modulo $\\pi$ gives, as\nin~\\cite[Lemma~6.1 and (A.2)--(A.5)]{OAI1112},"
+ },
+ {
+  "labels": [
+   "eq:b3-translates"
+  ],
+  "numbers": [
+   "A.14"
+  ],
+  "page": "55",
+  "line": 3466,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:b3-reflection}}\\label{sec:b3-proof}",
+  "source": "\\begin{equation}\\label{eq:b3-translates}\n \\Theta_\\Psi(z,v)=\\sum_{\\mathbf h}c_{\\rm F}(\\mathbf h)\\,\n \\overline{\\theta(z+z_{\\mathbf h},v)},\\qquad\n z_{\\mathbf h}=\\lambda^2\\Bigl(\\frac{h_0}L+\\sum_{\\pi\\in\\mathcal P}\n \\frac{h_\\pi}\\pi\\Bigr),\\qquad\n c_{\\rm F}(\\mathbf h)=\\widehat\\phi(h_0)\\prod_{\\pi\\in\\mathcal P}\n C_{\\pi,j_\\pi}(h_\\pi),\n\\end{equation}",
+  "before": "\\end{equation}\nFinite Fourier expansion~\\cite[(4.5)]{QF} of $\\phi$ modulo $L$ and of\n$\\chi_\\pi^{j_\\pi}$ modulo $\\pi$ gives, as\nin~\\cite[Lemma~6.1 and (A.2)--(A.5)]{OAI1112},",
+  "after": "where $\\mathbf h=(h_0,(h_\\pi)_{\\pi\\in\\mathcal P})$ runs over\n$\\OO/L\\OO\\times\\prod_\\pi\\OO/\\pi\\OO$. Indeed, multiplying the mode\n$\\ce(\\ell z)$ by $e(\\lambda^3\\ell\\eta)=\\ce(\\lambda^2\\ell\\eta)$ (recall $e(x)=\\ce(x/\\lambda)$) translates"
+ },
+ {
+  "labels": [
+   "eq:d105"
+  ],
+  "numbers": [
+   "A.15"
+  ],
+  "page": "56",
+  "line": 3511,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:b3-reflection}}\\label{sec:b3-proof}",
+  "source": "\\begin{equation}\\label{eq:d105}\n  g=\\begin{pmatrix}a&(a\\delta-1)/c\\\\c&\\delta\\end{pmatrix}\n  \\in\\mathrm{SL}_2(\\OO),\\qquad\n  g_1=gH^{-1}\\in\\Gamma(3),\\qquad\n  \\theta(HP)=\\theta(\\gamma_\\sigma P)\\quad(P\\in\\mathbb H^3).\n \\end{equation}",
+  "before": " $8\\lambda^2$ up to a unit. For $\\pi\\in\\mathcal A$,\n $a\\equiv\\sigma_\\pi h_\\pi\\pmod\\pi$ with $\\sigma_\\pi=\\lambda^2c/\\pi$.\n\\item[(b)] There are $\\delta\\in\\OO$ with $a\\delta\\equiv1\\pmod c$, a matrix\n $H\\in\\mathrm{SL}_2(\\OO)$ and $\\sigma\\in\\{0,+,-\\}$ such that",
+  "after": " The label $\\sigma$ and the residue of $\\delta$ modulo $\\lambda^3c_0$ are\n the same for the whole group. Since $\\theta(gP)=\\kappa(g_1)\\theta(HP)$\n by (T1),"
+ },
+ {
+  "labels": [
+   "eq:b3-automorphy"
+  ],
+  "numbers": [
+   "A.16"
+  ],
+  "page": "56",
+  "line": 3520,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:b3-reflection}}\\label{sec:b3-proof}",
+  "source": "\\begin{equation}\\label{eq:b3-automorphy}\n  \\overline{\\theta(a/c+z,v)}\n  =\\overline{\\kappa(g_1)}\\,F_\\sigma\\bigl(g^{-1}(a/c+z,v)\\bigr),\n  \\qquad F_\\sigma(P)=\\overline{\\theta(\\gamma_\\sigma P)}.\n \\end{equation}",
+  "before": " \\end{equation}\n The label $\\sigma$ and the residue of $\\delta$ modulo $\\lambda^3c_0$ are\n the same for the whole group. Since $\\theta(gP)=\\kappa(g_1)\\theta(HP)$\n by (T1),",
+  "after": "\\item[(c)] $\\kappa(g_1)=\\kappa_0\\prod_{\\pi\\in\\mathcal A}\\chi_\\pi(a)^2$,\n where $|\\kappa_0|=1$ and $\\kappa_0$ is the same for the whole\n group~\\cite[(A.10)]{OAI1112}."
+ },
+ {
+  "labels": [
+   "eq:b3-crt"
+  ],
+  "numbers": [
+   "A.17"
+  ],
+  "page": "56",
+  "line": 3529,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:b3-reflection}}\\label{sec:b3-proof}",
+  "source": "\\begin{equation}\\label{eq:b3-crt}\n  \\ce\\Bigl(-\\frac{\\delta\\ell}c\\Bigr)=\\psi(\\lambda^4\\ell)\n  \\prod_{\\pi\\in\\mathcal A}e\\Bigl(\\frac{\\epsilon_\\pi h_\\pi^{-1}\\lambda^4\\ell}\n  \\pi\\Bigr),\n \\end{equation}",
+  "before": "\\item[(c)] $\\kappa(g_1)=\\kappa_0\\prod_{\\pi\\in\\mathcal A}\\chi_\\pi(a)^2$,\n where $|\\kappa_0|=1$ and $\\kappa_0$ is the same for the whole\n group~\\cite[(A.10)]{OAI1112}.\n\\item[(d)] For $\\ell\\in\\lambda^{-4}\\OO$,",
+  "after": " where $\\psi(x)=e(\\beta x/(\\lambda^3c_0))$ with $\\beta\\in\\OO$ the same for\n the whole group, and $\\epsilon_\\pi\\in(\\OO/\\pi\\OO)^\\times$ depends only\n on $c$ and $\\pi$~\\cite[(A.11)]{OAI1112}."
+ },
+ {
+  "labels": [
+   "eq:b3-local"
+  ],
+  "numbers": [
+   "A.18"
+  ],
+  "page": "56",
+  "line": 3538,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:b3-reflection}}\\label{sec:b3-proof}",
+  "source": "\\begin{equation}\\label{eq:b3-local}\n  \\sum_{h\\not\\equiv0\\ (\\pi)}C_{\\pi,j}(h)\\,\\chi_\\pi(\\sigma_\\pi h)^{-2}\\,\n  e\\Bigl(\\frac{\\epsilon_\\pi h^{-1}x}\\pi\\Bigr)\n  =\\chi_\\pi(\\sigma_\\pi)^{-2}\\varpi_{\\pi,j}B_{\\pi,j}(x),\n  \\qquad|\\varpi_{\\pi,j}|=1,\n \\end{equation}",
+  "before": " where $\\psi(x)=e(\\beta x/(\\lambda^3c_0))$ with $\\beta\\in\\OO$ the same for\n the whole group, and $\\epsilon_\\pi\\in(\\OO/\\pi\\OO)^\\times$ depends only\n on $c$ and $\\pi$~\\cite[(A.11)]{OAI1112}.\n\\item[(e)] For $\\pi\\in\\mathcal A$, $0\\le j\\le5$ and $x\\in\\OO$,",
+  "after": " with $B_{\\pi,j}$ as in~\\eqref{eq:local}. This\n is~\\cite[(A.12)]{OAI1112}, where $\\varpi_{\\pi,j}$ is called\n $\\omega_{p,j}$."
+ },
+ {
+  "labels": [
+   "eq:d106"
+  ],
+  "numbers": [
+   "A.19"
+  ],
+  "page": "56",
+  "line": 3551,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:b3-reflection}}\\label{sec:b3-proof}",
+  "source": "\\begin{equation}\\label{eq:d106}\n \\mathcal T(w)=\\Bigl(\\ssum_n\\frac{\\overline{\\alpha(n)}^{\\,2}\\gamma_2(n)\n \\Psi(n)}{\\N(n)^w}\\Bigr)\n \\Bigl(\\sum_b\\frac{\\overline{\\alpha(b)}^{\\,6}\\Psi(b)^3}{\\N(b)^{3w-1/2}}\\Bigr),\n\\end{equation}",
+  "before": "\\end{enumerate}\n\n\\paragraph{Step 3: the Mellin transform at the identity cusp.} For\n$\\Re w>1$ put",
+  "after": "a product of absolutely convergent series. The summand\nof~\\eqref{eq:T} is the coefficient times\n$V(\\N(n)\\N(b)^3/X)/(\\sqrt{\\N(n)}\\,\\N(b))$. Inserting"
+ },
+ {
+  "labels": [
+   "eq:b3-inversion"
+  ],
+  "numbers": [
+   "A.20"
+  ],
+  "page": "56",
+  "line": 3561,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:b3-reflection}}\\label{sec:b3-proof}",
+  "source": "\\begin{equation}\\label{eq:b3-inversion}\n T(X;\\Psi)=\\frac1{2\\pi i}\\int_{(\\sigma_1)}\\widehat V(w-\\tfrac12)\\,\n \\mathcal T(w)\\,X^{w-1/2}\\,dw\\qquad(\\sigma_1>1).\n\\end{equation}",
+  "before": "of~\\eqref{eq:T} is the coefficient times\n$V(\\N(n)\\N(b)^3/X)/(\\sqrt{\\N(n)}\\,\\N(b))$. Inserting\n$V(y)=\\frac1{2\\pi i}\\int_{(\\sigma_1)}\\widehat V(w-\\frac12)y^{1/2-w}dw$,\nwhere $\\int_{(\\sigma)}$ runs upward along $\\Re w=\\sigma$, gives",
+  "after": "\nThe series for $\\Theta_\\Psi$ has polynomially bounded coefficients, and\n$K_{1/3}(x)\\ll e^{-x}$ for $x\\ge1$~\\cite[(10.25.3)]{DLMF}, so it may be differentiated termwise."
+ },
+ {
+  "labels": [
+   "eq:d107"
+  ],
+  "numbers": [
+   "A.21"
+  ],
+  "page": "56",
+  "line": 3569,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:b3-reflection}}\\label{sec:b3-proof}",
+  "source": "\\begin{equation}\\label{eq:d107}\n f(v)=\\partial_{\\bar z}^{\\,2}\\Theta_\\Psi(z,v)\\big|_{z=0},\\qquad\n \\mathcal J(s)=\\int_0^\\infty f(v)\\,v^{2s-1}dv.\n\\end{equation}",
+  "before": "\nThe series for $\\Theta_\\Psi$ has polynomially bounded coefficients, and\n$K_{1/3}(x)\\ll e^{-x}$ for $x\\ge1$~\\cite[(10.25.3)]{DLMF}, so it may be differentiated termwise.\nPut",
+  "after": "Since $(2\\pi i\\bar\\ell)^2=-4\\pi^2\\N(\\ell)\\overline{\\alpha(\\ell)}^{\\,2}$,\n\\eqref{eq:b3-bessel} shows that a mode $\\ell$ contributes its coefficient\ntimes"
+ },
+ {
+  "labels": [
+   "eq:b3-mode"
+  ],
+  "numbers": [
+   "A.22"
+  ],
+  "page": "57",
+  "line": 3576,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:b3-reflection}}\\label{sec:b3-proof}",
+  "source": "\\begin{equation}\\label{eq:b3-mode}\n -\\frac\\pi2(2\\pi)^{-2s}\\Gamma(s+\\tfrac13)\\Gamma(s+\\tfrac23)\\,\n \\overline{\\alpha(\\ell)}^{\\,2}\\N(\\ell)^{1/2-s}.\n\\end{equation}",
+  "before": "\\end{equation}\nSince $(2\\pi i\\bar\\ell)^2=-4\\pi^2\\N(\\ell)\\overline{\\alpha(\\ell)}^{\\,2}$,\n\\eqref{eq:b3-bessel} shows that a mode $\\ell$ contributes its coefficient\ntimes",
+  "after": "For $\\ell=\\lambda^{-3}nb^3$ we have $\\alpha(\\lambda^{-3})=i$, so\n\\begin{equation}\\label{eq:d108}\n \\overline{\\alpha(\\ell)}^{\\,2}"
+ },
+ {
+  "labels": [
+   "eq:d108"
+  ],
+  "numbers": [
+   "A.23"
+  ],
+  "page": "57",
+  "line": 3581,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:b3-reflection}}\\label{sec:b3-proof}",
+  "source": "\\begin{equation}\\label{eq:d108}\n \\overline{\\alpha(\\ell)}^{\\,2}\n =-\\overline{\\alpha(n)}^{\\,2}\\overline{\\alpha(b)}^{\\,6},\\qquad\n \\N(\\ell)^{1/2-s}=27^{s-1/2}\\N(n)^{1/2-s}\\N(b)^{3/2-3s}.\n\\end{equation}",
+  "before": " -\\frac\\pi2(2\\pi)^{-2s}\\Gamma(s+\\tfrac13)\\Gamma(s+\\tfrac23)\\,\n \\overline{\\alpha(\\ell)}^{\\,2}\\N(\\ell)^{1/2-s}.\n\\end{equation}\nFor $\\ell=\\lambda^{-3}nb^3$ we have $\\alpha(\\lambda^{-3})=i$, so",
+  "after": "Inserting\n\\eqref{eq:b3-coeff} and using $3^{5/2}\\cdot27^{-1/2}=3$ and\n$|b|\\,\\N(b)^{3/2-3s}=\\N(b)^{2-3s}$, we get"
+ },
+ {
+  "labels": [
+   "eq:b3-J"
+  ],
+  "numbers": [
+   "A.24"
+  ],
+  "page": "57",
+  "line": 3589,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:b3-reflection}}\\label{sec:b3-proof}",
+  "source": "\\begin{equation}\\label{eq:b3-J}\n \\mathcal J(s)=\\frac{3\\pi}2\\Bigl(\\frac{27}{(2\\pi)^2}\\Bigr)^s\n \\Gamma(s+\\tfrac13)\\Gamma(s+\\tfrac23)\\,\\mathcal T(s-\\tfrac12)\n \\qquad(\\Re s>\\tfrac32).\n\\end{equation}",
+  "before": "\\end{equation}\nInserting\n\\eqref{eq:b3-coeff} and using $3^{5/2}\\cdot27^{-1/2}=3$ and\n$|b|\\,\\N(b)^{3/2-3s}=\\N(b)^{2-3s}$, we get",
+  "after": "Termwise integration is justified. Since $K_{1/3}>0$, the sum over the\nmodes of the absolute values of the integrals is a constant times\n$\\sum_n\\N(n)^{1/2-\\Re s}\\sum_b\\N(b)^{2-3\\Re s}$, which is finite for"
+ },
+ {
+  "labels": [
+   "eq:d109"
+  ],
+  "numbers": [
+   "A.25"
+  ],
+  "page": "57",
+  "line": 3605,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:b3-reflection}}\\label{sec:b3-proof}",
+  "source": "\\begin{equation}\\label{eq:d109}\n (z',v'):=g^{-1}(a/c+z,v)=\\Bigl(-\\frac\\delta c-\\frac{\\bar z}\n {c^2(v^2+z\\bar z)},\\ \\frac v{\\N(c)(v^2+z\\bar z)}\\Bigr),\n\\end{equation}",
+  "before": "\n\\paragraph{Step 4: the chain rule at a cusp.} Fix $\\mathbf h$, with the\ndata of Step~2, and fix $v>0$. By~\\cite[(5.1), (5.19)]{QF} and\n$\\det g=1$,",
+  "after": "and $\\bar z'=\\overline{z'}$. Regard $z'$, $\\bar z'$ and $v'$ as smooth\nfunctions of $(z,\\bar z)$ near $0$. Differentiation gives\n\\begin{equation}\\label{eq:d110}"
+ },
+ {
+  "labels": [
+   "eq:d110"
+  ],
+  "numbers": [
+   "A.26"
+  ],
+  "page": "57",
+  "line": 3611,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:b3-reflection}}\\label{sec:b3-proof}",
+  "source": "\\begin{equation}\\label{eq:d110}\n\\begin{aligned}\n \\partial_{\\bar z}z'&=-\\frac{v^2}{c^2(v^2+z\\bar z)^2},&\n \\partial_{\\bar z}^{\\,2}z'&=\\frac{2zv^2}{c^2(v^2+z\\bar z)^3},\\\\\n \\partial_{\\bar z}\\bar z'&=\\frac{z^2}{\\bar c^2(v^2+z\\bar z)^2},&\n \\partial_{\\bar z}^{\\,2}\\bar z'&=-\\frac{2z^3}{\\bar c^2(v^2+z\\bar z)^3},\\\\\n \\partial_{\\bar z}v'&=-\\frac{zv}{\\N(c)(v^2+z\\bar z)^2},&\n \\partial_{\\bar z}^{\\,2}v'&=\\frac{2z^2v}{\\N(c)(v^2+z\\bar z)^3}.\n\\end{aligned}\n\\end{equation}",
+  "before": " {c^2(v^2+z\\bar z)},\\ \\frac v{\\N(c)(v^2+z\\bar z)}\\Bigr),\n\\end{equation}\nand $\\bar z'=\\overline{z'}$. Regard $z'$, $\\bar z'$ and $v'$ as smooth\nfunctions of $(z,\\bar z)$ near $0$. Differentiation gives",
+  "after": "At $z=0$ all six vanish except $\\partial_{\\bar z}z'=-(cv)^{-2}$. For a\nsmooth function $F$ of $(z',v')$, the chain rule in the variables\n$Y\\in\\{z',\\bar z',v'\\}$ gives"
+ },
+ {
+  "labels": [
+   "eq:d111"
+  ],
+  "numbers": [
+   "A.27"
+  ],
+  "page": "57",
+  "line": 3624,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:b3-reflection}}\\label{sec:b3-proof}",
+  "source": "\\begin{equation}\\label{eq:d111}\n \\partial_{\\bar z}^{\\,2}\\bigl[F(z',v')\\bigr]\n =\\sum_{Y,Y'}(\\partial_Y\\partial_{Y'}F)\\,(\\partial_{\\bar z}Y)\n (\\partial_{\\bar z}Y')+\\sum_Y(\\partial_YF)\\,\\partial_{\\bar z}^{\\,2}Y,\n\\end{equation}",
+  "before": "\\end{equation}\nAt $z=0$ all six vanish except $\\partial_{\\bar z}z'=-(cv)^{-2}$. For a\nsmooth function $F$ of $(z',v')$, the chain rule in the variables\n$Y\\in\\{z',\\bar z',v'\\}$ gives",
+  "after": "and at $z=0$ only the term with $Y=Y'=z'$ survives. This\nproves~\\eqref{eq:chain}. Taking $F=F_\\sigma$ and\nusing~\\eqref{eq:b3-automorphy},"
+ },
+ {
+  "labels": [
+   "eq:b3-cusp"
+  ],
+  "numbers": [
+   "A.28"
+  ],
+  "page": "57",
+  "line": 3632,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:b3-reflection}}\\label{sec:b3-proof}",
+  "source": "\\begin{equation}\\label{eq:b3-cusp}\n \\partial_{\\bar z}^{\\,2}\\overline{\\theta(a/c+z,v)}\\big|_{z=0}\n =\\overline{\\kappa(g_1)}\\,(cv)^{-4}\\,G\\Bigl(\\frac1{\\N(c)v}\\Bigr),\n \\qquad G(v'):=(\\partial_{z'}^{\\,2}F_\\sigma)(-\\delta/c,v').\n\\end{equation}",
+  "before": "\\end{equation}\nand at $z=0$ only the term with $Y=Y'=z'$ survives. This\nproves~\\eqref{eq:chain}. Taking $F=F_\\sigma$ and\nusing~\\eqref{eq:b3-automorphy},",
+  "after": "In the expansion\n\\begin{equation}\\label{eq:d112}\n F_\\sigma(z',v')=\\frac{3^{5/2}}2\\ind_{\\sigma=0}v'^{\\,2/3}"
+ },
+ {
+  "labels": [
+   "eq:d112"
+  ],
+  "numbers": [
+   "A.29"
+  ],
+  "page": "57",
+  "line": 3638,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:b3-reflection}}\\label{sec:b3-proof}",
+  "source": "\\begin{equation}\\label{eq:d112}\n F_\\sigma(z',v')=\\frac{3^{5/2}}2\\ind_{\\sigma=0}v'^{\\,2/3}\n +\\sum_{0\\ne\\ell\\in\\lambda^{-4}\\OO}d_\\sigma(\\ell)\\,v'K_{1/3}(4\\pi|\\ell|v')\n \\,\\ce(\\ell z'),\n\\end{equation}",
+  "before": " =\\overline{\\kappa(g_1)}\\,(cv)^{-4}\\,G\\Bigl(\\frac1{\\N(c)v}\\Bigr),\n \\qquad G(v'):=(\\partial_{z'}^{\\,2}F_\\sigma)(-\\delta/c,v').\n\\end{equation}\nIn the expansion",
+  "after": "the operator $\\partial_{z'}^{\\,2}$ removes the constant term and\nmultiplies the mode $\\ell$ by $(2\\pi i\\ell)^2=-4\\pi^2\\N(\\ell)\\alpha(\\ell)^2$.\nHence"
+ },
+ {
+  "labels": [
+   "eq:b3-G"
+  ],
+  "numbers": [
+   "A.30"
+  ],
+  "page": "58",
+  "line": 3646,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:b3-reflection}}\\label{sec:b3-proof}",
+  "source": "\\begin{equation}\\label{eq:b3-G}\n G(v')=-4\\pi^2\\sum_{0\\ne\\ell\\in\\lambda^{-4}\\OO}d_\\sigma(\\ell)\\N(\\ell)\n \\alpha(\\ell)^2\\,v'K_{1/3}(4\\pi|\\ell|v')\\,\\ce\\Bigl(-\\frac{\\delta\\ell}c\\Bigr).\n\\end{equation}",
+  "before": "\\end{equation}\nthe operator $\\partial_{z'}^{\\,2}$ removes the constant term and\nmultiplies the mode $\\ell$ by $(2\\pi i\\ell)^2=-4\\pi^2\\N(\\ell)\\alpha(\\ell)^2$.\nHence",
+  "after": "On this side the derivative is in $z'$ rather than $\\bar z'$, which is\nwhy $\\alpha(\\ell)^2$ appears instead of $\\overline{\\alpha(\\ell)}^{\\,2}$. In\nthe zeta case the single factor $-(cv)^{-2}$ produces the sign and the"
+ },
+ {
+  "labels": [
+   "eq:d113"
+  ],
+  "numbers": [
+   "A.31"
+  ],
+  "page": "58",
+  "line": 3661,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:b3-reflection}}\\label{sec:b3-proof}",
+  "source": "\\begin{equation}\\label{eq:d113}\n c_{\\rm F}(\\mathbf h)\\,\\overline{\\kappa(g_{1,\\mathbf h})}\\,\n (c_{\\mathbf h}v)^{-4}\\,G_{\\mathbf h}\\bigl(1/(\\N(c_{\\mathbf h})v)\\bigr),\n\\end{equation}",
+  "before": "$\\lambda^{-3}\\OO\\setminus\\{0\\}$ we have $|\\ell|\\ge3^{-3/2}$, so the\ndefining series shows that $f(v)$ decays exponentially as $v\\to\\infty$.\nAs $v\\to0$, by~\\eqref{eq:b3-translates} and~\\eqref{eq:b3-cusp}, $f(v)$\nis the finite sum of the terms",
+  "after": "where the subscript $\\mathbf h$ marks the data of $\\mathbf h$.\nBy~\\eqref{eq:b3-G}, and since $|\\ell|\\ge1/9$ on\n$\\lambda^{-4}\\OO\\setminus\\{0\\}$, each $G_{\\mathbf h}(v')$ decays"
+ },
+ {
+  "labels": [
+   "eq:b3-dual"
+  ],
+  "numbers": [
+   "A.32"
+  ],
+  "page": "58",
+  "line": 3674,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:b3-reflection}}\\label{sec:b3-proof}",
+  "source": "\\begin{equation}\\label{eq:b3-dual}\n \\mathcal J^\\vee_{\\mathbf h}(s'):=\\int_0^\\infty G_{\\mathbf h}(v')\\,\n v'^{\\,2s'-1}dv'\n =-\\frac\\pi2(2\\pi)^{-2s'}\\Gamma(s'+\\tfrac13)\\Gamma(s'+\\tfrac23)\n \\sum_{0\\ne\\ell\\in\\lambda^{-4}\\OO}\\frac{d_\\sigma(\\ell)\\alpha(\\ell)^2}\n {\\N(\\ell)^{s'-1/2}}\\,\\ce\\Bigl(-\\frac{\\delta\\ell}c\\Bigr).\n\\end{equation}",
+  "before": "of bounded width.\n\nFor $\\Re s'>\\frac32$ the computation of Step~3, with $\\ell$ in place of\n$\\bar\\ell$, gives",
+  "after": "The series and the termwise integration converge absolutely. Indeed,\nwrite $\\ell=u\\lambda^mnb^3$ uniquely as in Appendix~\\ref{app:reflection}.\nThe bound $|d_\\sigma(\\ell)|\\le27\\cdot3^{m/6}|b|$ gives"
+ },
+ {
+  "labels": [
+   "eq:d114"
+  ],
+  "numbers": [
+   "A.33"
+  ],
+  "page": "58",
+  "line": 3684,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:b3-reflection}}\\label{sec:b3-proof}",
+  "source": "\\begin{equation}\\label{eq:d114}\n \\sum_{\\ell}|d_\\sigma(\\ell)|\\,\\N(\\ell)^{1/2-\\Re s'}\n \\le6\\cdot27\\sum_{m\\ge-4}3^{m(2/3-\\Re s')}\\sum_n\\N(n)^{1/2-\\Re s'}\n \\sum_b\\N(b)^{2-3\\Re s'}<\\infty .\n\\end{equation}",
+  "before": "\\end{equation}\nThe series and the termwise integration converge absolutely. Indeed,\nwrite $\\ell=u\\lambda^mnb^3$ uniquely as in Appendix~\\ref{app:reflection}.\nThe bound $|d_\\sigma(\\ell)|\\le27\\cdot3^{m/6}|b|$ gives",
+  "after": "\nNow let $\\Re s<\\frac12$. In each term of $f$ substitute\n$v=1/(\\N(c)v')$:"
+ },
+ {
+  "labels": [
+   "eq:d115"
+  ],
+  "numbers": [
+   "A.34"
+  ],
+  "page": "58",
+  "line": 3692,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:b3-reflection}}\\label{sec:b3-proof}",
+  "source": "\\begin{equation}\\label{eq:d115}\n \\int_0^\\infty(cv)^{-4}G\\Bigl(\\frac1{\\N(c)v}\\Bigr)v^{2s-1}dv\n =c^{-4}\\N(c)^{4-2s}\\int_0^\\infty G(v')\\,v'^{\\,3-2s}dv'\n =\\overline{\\alpha(c)}^{\\,4}\\N(c)^{2-2s}\\mathcal J^\\vee(2-s).\n\\end{equation}",
+  "before": "\\end{equation}\n\nNow let $\\Re s<\\frac12$. In each term of $f$ substitute\n$v=1/(\\N(c)v')$:",
+  "after": "This integral converges absolutely, because $\\Re(2-s)>\\frac32$; here\n$c^{-4}\\N(c)^2=(\\bar c/c)^2=\\overline{\\alpha(c)}^{\\,4}$. Summing over\nthe finitely many $\\mathbf h$,"
+ },
+ {
+  "labels": [
+   "eq:b3-fe"
+  ],
+  "numbers": [
+   "A.35"
+  ],
+  "page": "58",
+  "line": 3700,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:b3-reflection}}\\label{sec:b3-proof}",
+  "source": "\\begin{equation}\\label{eq:b3-fe}\n \\mathcal J(s)=\\sum_{\\mathbf h}c_{\\rm F}(\\mathbf h)\\,\n \\overline{\\kappa(g_{1,\\mathbf h})}\\,\\overline{\\alpha(c_{\\mathbf h})}^{\\,4}\n \\N(c_{\\mathbf h})^{2-2s}\\mathcal J^\\vee_{\\mathbf h}(2-s)\n \\qquad(\\Re s<\\tfrac12).\n\\end{equation}",
+  "before": "\\end{equation}\nThis integral converges absolutely, because $\\Re(2-s)>\\frac32$; here\n$c^{-4}\\N(c)^2=(\\bar c/c)^2=\\overline{\\alpha(c)}^{\\,4}$. Summing over\nthe finitely many $\\mathbf h$,",
+  "after": "\nBy~\\eqref{eq:b3-J}, for $\\Re w>1$,\n\\begin{equation}\\label{eq:d116}"
+ },
+ {
+  "labels": [
+   "eq:d116"
+  ],
+  "numbers": [
+   "A.36"
+  ],
+  "page": "58",
+  "line": 3708,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:b3-reflection}}\\label{sec:b3-proof}",
+  "source": "\\begin{equation}\\label{eq:d116}\n \\mathcal T(w)=\\mathcal J(w+\\tfrac12)\\Big/\\Bigl(\\frac{3\\pi}2\n \\Bigl(\\frac{27}{(2\\pi)^2}\\Bigr)^{w+1/2}\\Gamma(w+\\tfrac56)\n \\Gamma(w+\\tfrac76)\\Bigr).\n\\end{equation}",
+  "before": " \\qquad(\\Re s<\\tfrac12).\n\\end{equation}\n\nBy~\\eqref{eq:b3-J}, for $\\Re w>1$,",
+  "after": "The right side is entire, so $\\mathcal T$ continues to an entire\nfunction. Fix $\\sigma_1\\in(1,2]$ and $\\sigma_2\\in[-1,0)$. On\n$\\Re w=\\sigma_1$, $\\mathcal T$ is bounded. On $\\Re w=\\sigma_2$, apply"
+ },
+ {
+  "labels": [
+   "eq:d117"
+  ],
+  "numbers": [
+   "A.37"
+  ],
+  "page": "58",
+  "line": 3718,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:b3-reflection}}\\label{sec:b3-proof}",
+  "source": "\\begin{equation}\\label{eq:d117}\n |\\mathcal T(w)|\\ll\\Bigl|\\frac{\\Gamma(\\frac{11}6-w)\\Gamma(\\frac{13}6-w)}\n {\\Gamma(w+\\frac56)\\Gamma(w+\\frac76)}\\Bigr|\n \\ll(1+|\\Im w|)^{2-4\\sigma_2}.\n\\end{equation}",
+  "before": "function. Fix $\\sigma_1\\in(1,2]$ and $\\sigma_2\\in[-1,0)$. On\n$\\Re w=\\sigma_1$, $\\mathcal T$ is bounded. On $\\Re w=\\sigma_2$, apply\n\\eqref{eq:b3-fe} and~\\eqref{eq:b3-dual} at $s'=\\frac32-w$. Stirling's\nformula then gives",
+  "after": "In the strip $\\sigma_2\\le\\Re w\\le\\sigma_1$, $\\mathcal J(w+\\frac12)$ is\nbounded and $1/\\Gamma$ is entire of order one, so $\\mathcal T$ has finite\norder there. The Phragm\\'en--Lindel\\\"of principle~\\cite{PL08}, \\cite[\\S5.65]{Tit39} gives"
+ },
+ {
+  "labels": [
+   "eq:d118"
+  ],
+  "numbers": [
+   "A.38"
+  ],
+  "page": "59",
+  "line": 3737,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:b3-reflection}}\\label{sec:b3-proof}",
+  "source": "\\begin{equation}\\label{eq:d118}\n \\frac{-\\frac\\pi2(2\\pi)^{-2-2t}}{\\frac{3\\pi}2\\bigl(\\frac{27}{(2\\pi)^2}\n \\bigr)^{1-t}}=-\\frac1{81}\\Bigl(\\frac{(2\\pi)^4}{27}\\Bigr)^{-t}.\n\\end{equation}",
+  "before": "and~\\eqref{eq:b3-dual} at $s'=\\frac32-w$, and set $t=\\frac12-w$. Then\n$\\frac32-w=1+t$, $w+\\frac56=\\frac43-t$, $w+\\frac76=\\frac53-t$,\n$\\N(c)^{2-2s}=\\N(c)^{2t}$ and $X^{w-1/2}=X^{-t}$. The constants combine\nas",
+  "after": "With $R(t)$ the gamma quotient of~\\eqref{eq:weight}, this gives\n\\begin{equation}\\label{eq:d119}\n\\begin{split}"
+ },
+ {
+  "labels": [
+   "eq:d119"
+  ],
+  "numbers": [
+   "A.39"
+  ],
+  "page": "59",
+  "line": 3742,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:b3-reflection}}\\label{sec:b3-proof}",
+  "source": "\\begin{equation}\\label{eq:d119}\n\\begin{split}\n T(X;\\Psi)=-\\frac1{81}\\sum_{\\mathbf h}c_{\\rm F}(\\mathbf h)\\,\n &\\overline{\\kappa(g_{1,\\mathbf h})}\\,\\overline{\\alpha(c)}^{\\,4}\n \\sum_{0\\ne\\ell\\in\\lambda^{-4}\\OO}\\frac{d_\\sigma(\\ell)\\alpha(\\ell)^2}\n {\\sqrt{\\N(\\ell)}}\\,\\ce\\Bigl(-\\frac{\\delta\\ell}c\\Bigr)\\\\\n &\\times\\frac1{2\\pi i}\\int_{(\\frac12-\\sigma_2)}\\widehat V(-t)R(t)\n \\Bigl(\\frac{(2\\pi)^4\\N(\\ell)X}{27\\N(c)^2}\\Bigr)^{-t}dt,\n\\end{split}\n\\end{equation}",
+  "before": " \\frac{-\\frac\\pi2(2\\pi)^{-2-2t}}{\\frac{3\\pi}2\\bigl(\\frac{27}{(2\\pi)^2}\n \\bigr)^{1-t}}=-\\frac1{81}\\Bigl(\\frac{(2\\pi)^4}{27}\\Bigr)^{-t}.\n\\end{equation}\nWith $R(t)$ the gamma quotient of~\\eqref{eq:weight}, this gives",
+  "after": "where $c,\\sigma,\\delta$ are the data of $\\mathbf h$. The interchange of\nthe $\\ell$-sum and the $t$-integral is justified by the absolute\nconvergence in~\\eqref{eq:b3-dual} (note $\\Re(1+t)>\\frac32$), the rapid"
+ },
+ {
+  "labels": [
+   "eq:d120"
+  ],
+  "numbers": [
+   "A.40"
+  ],
+  "page": "59",
+  "line": 3768,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:b3-reflection}}\\label{sec:b3-proof}",
+  "source": "\\begin{equation}\\label{eq:d120}\n c_{\\rm F}(\\mathbf h)=\\widehat\\phi(h_0)\\prod_{\\pi\\in\\mathcal P\\setminus\n \\mathcal A}\\bigl(1-\\N(\\pi)^{-1}\\bigr)\\prod_{\\pi\\in\\mathcal A}\n C_{\\pi,j_\\pi}(h_\\pi).\n\\end{equation}",
+  "before": "for $\\pi\\in\\mathcal P\\setminus\\mathcal A$, $h_\\pi=0$ and $j_\\pi=0$. By\nStep~2(a),(c),\n$\\overline{\\kappa(g_1)}=\\overline{\\kappa_0}\\prod_{\\pi\\in\\mathcal A}\n\\chi_\\pi(\\sigma_\\pi h_\\pi)^{-2}$. Insert this,~\\eqref{eq:b3-crt} and",
+  "after": "The sum over the $h_\\pi$ factors into the local sums~\\eqref{eq:b3-local}\nwith $x=\\lambda^4\\ell$. The group therefore contributes~\\eqref{eq:reflection}\nwith"
+ },
+ {
+  "labels": [
+   "eq:b3-C"
+  ],
+  "numbers": [
+   "A.41"
+  ],
+  "page": "59",
+  "line": 3776,
+  "section": "\\section{The CM transformation formula}\\label{app:reflection}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:b3-reflection}}\\label{sec:b3-proof}",
+  "source": "\\begin{equation}\\label{eq:b3-C}\n C=-\\frac{\\overline{\\alpha(c)}^{\\,4}}{81}\\,\\widehat\\phi(h_0)\\,\n \\overline{\\kappa_0}\\prod_{\\pi\\in\\mathcal P\\setminus\\mathcal A}\n \\bigl(1-\\N(\\pi)^{-1}\\bigr)\\prod_{\\pi\\in\\mathcal A}\n \\chi_\\pi(\\sigma_\\pi)^{-2}\\varpi_{\\pi,j_\\pi},\n\\end{equation}",
+  "before": "\\end{equation}\nThe sum over the $h_\\pi$ factors into the local sums~\\eqref{eq:b3-local}\nwith $x=\\lambda^4\\ell$. The group therefore contributes~\\eqref{eq:reflection}\nwith",
+  "after": "so $|C|\\le1/81$. The zeta case has $-\\frac i{81}\\overline{\\alpha(c)}^{\\,2}$\nin place of $-\\frac1{81}\\overline{\\alpha(c)}^{\\,4}$, with the same\nremaining factors~\\cite[App.~A.2]{OAI1112}. Each"
+ }
+]

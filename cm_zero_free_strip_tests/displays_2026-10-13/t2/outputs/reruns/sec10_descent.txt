@@ -1,0 +1,29 @@
+RESULT|S10.1|PASS|err=3.66e-16 tol=1e-12; (10.1) cube inversion, X=2000, two (k, f, xi)
+      falsifier for S10.1 [conj(alpha(h))^3 (zeta factor)]: err=0.046 -> fails as required
+RESULT|S10.2-3|PASS|err=0 tol=0; (10.2), (10.3) 79506 exact cases: H + H^2 F N(h)^3/X <= 2 Sigma and X/N(h)^3 >= 1
+      falsifier for S10.2-3 [H_c^3 = min(X, X^2/H)]: err=1.75e+05 -> fails as required
+RESULT|S10.4|PASS|err=0 tol=0; text after (10.4), 464023 exact cases: H^2 <= X empties the supremum; a nonempty supremum has N(b)^3 > X^2/H^2
+RESULT|S10.5-7|PASS|err=0 tol=0; (10.5)-(10.7): Y_{C,e0} -> Y_enlarged; N(h) F^2 ~ Y_natural; ratio Sigma/(LF) (>= 1 iff LF <= Sigma)
+RESULT|S10.8|PASS|err=0 tol=0; (10.8): H' = H/(N(b)^3 F^2 R^2); without enlargement H/(F^2 R^2), = H at F = R = 1
+RESULT|S10.15|PASS|err=0 tol=0; (10.15): H'/Sigma' = H/(Sigma F R); the three inequalities on 100000 samples with R, F >= 1
+RESULT|S10.23|PASS|err=0 tol=0; (10.23): H/Sigma = D^-theta/B at H = D^{1+theta}; C D^-theta/B <= D^{-theta/2} once D >= (C/B)^{2/theta} (20000 samples)
+RESULT|S10.9|PASS|err=0 tol=0; (10.9) for pi | k' and pi does not divide k'
+      falsifier for S10.9 [third term 1 instead of 1_{pi not| k'}]: err=1 -> fails as required
+RESULT|S10.10|PASS|err=0 tol=0; (10.10) 100000 retained (r, f', k') with f' | k' in Z[omega]: F' <= N(f') <= N(k') <= HL/(Sigma F N(r)^2) <= H', H' >= F' >= 1
+      falsifier for S10.10 [N(r) < R (the last inequality fails)]: err=1e+05 -> fails as required
+RESULT|S10.11a|PASS|err=3.62e-15 tol=1e-12; a(vn) = a(v) a(n) chi_n(v)^4 for 300 coprime squarefree pairs, two xi, a = conj(alpha)^2 gamma_2 xi
+      falsifier for S10.11a [chi_n(v)^2]: err=1.73 -> fails as required
+RESULT|S10.11|PASS|err=2.95e-15 tol=1e-12; (10.11) exact, 8 cases (X' = 2000, two xi, r with 1-3 primes); min |LHS| = 0.0559
+      falsifier for S10.11 [C_1(X'/N(j); k', f') without j in the twist]: err=1.95 -> fails as required
+      falsifier for S10.11 [no sign mu_K(j)]: err=2.75 -> fails as required
+RESULT|S10.11b|PASS|err=0 tol=0; E_r <= tau(r) sum_j E(H, X/N(j), F N(j)); largest ratio 0.306; H=12,X=300,F=1,N(r)=7: 0.0008577 <= 0.002974; H=25,X=500,F=1,N(r)=91: 0.001911 <= 0.01843; H=10,X=400,F=7,N(r)=13: 0.0004016 <= 0.001311
+RESULT|S10.18|PASS|err=0 tol=1e-12; (10.18) 6 units; max |a_xi(n)| = 1.000000000000001 (N(n) <= 2600, two xi); X=200,F=1: E/(X||W||^2)=0.00167, C_I=0.406; X=500,F=1: E/(X||W||^2)=0.000893, C_I=0.464; X=300,F=7: E/(X||W||^2)=0.000888, C_I=0.282; X=800,F=13: E/(X||W||^2)=0.000264, C_I=0.181
+RESULT|S10.12-13|PASS|err=0 tol=0; (10.12), (10.13) on 200000 retained sets: H', Sigma' = L/R, H'/Sigma' preserved; X'/N(j) >= Sigma F/H >= 1
+RESULT|S10.16-20|PASS|err=0 tol=0; 100000 chains; longest 5 steps; leaves {'no retained r': 59984, 'empty cube supremum': 40016}
+RESULT|S10.cite|PASS|err=0 tol=0; Lemma 4.4, Lemma 5.3, Proposition 5.4 (C^{4m+12}, [u/16,4v]), Proposition 5.1, Section 5.5, Section 7, Lemma 7.3 all match the source
+      S10.22 sanity [(10.22) is a bound]: E(H,X,F)/(Sigma ||W||_inf^2) with a = conj(alpha)^2 gamma_2; control a(n) = 1
+          X=300, F=1:  H=1: 0.000657 (control 0.0149);  H=10: 0.00804 (control 0.0235);  H=40: 0.043 (control 0.051);  H=160: 0.166 (control 0.167)
+          X=600, F=1:  H=1: 0.0016 (control 0.0118);  H=10: 0.00512 (control 0.0153);  H=40: 0.0206 (control 0.0283);  H=160: 0.0723 (control 0.0782)
+          X=1200, F=1:  H=1: 0.000462 (control 0.012);  H=10: 0.00234 (control 0.0133);  H=40: 0.00961 (control 0.0192);  H=160: 0.0363 (control 0.0433)
+          X=300, F=7:  H=1: 0.000127 (control 0.000113);  H=10: 0.000787 (control 0.000753);  H=40: 0.0031 (control 0.00291);  H=160: 0.0121 (control 0.0119)
+ALL PASS

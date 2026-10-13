@@ -1,0 +1,19 @@
+[PASS] C1 |(O/72)^x| = 2592, |frak G| = 432 (= 2592/6), closed under multiplication: True; reduction to (O/4)^x is onto the 12 classes, every fibre of size [36]
+[PASS] C1b squarefree primary n coprime to 6 with N(n) <= 9000 meet 432 of the 432 classes
+[PASS] C2 G(n) = conj(chi_n(4)) gamma_3(n) for 367 squarefree n (N <= 1300): |G| = 1 (err 2.1e-14), depends only on n mod 4 (spread 2.2e-14), equals OAI's closed form conj(chi_n(4))(1+i^-b+i^a+i^(b-a))/2 (err 2.2e-14)
+      falsifier C2 [G depends only on n mod 2]: max spread within classes mod 2 = 2.00 -> fails as required
+      falsifier C2 [drop conj(chi_n(4))]: max |gamma_3 - G| = 1.73 -> fails as required
+[PASS] C3 R(a,b) = chi_b(a)/chi_a(b) over 5861 coprime pairs: values +-1 (violations 0), depends only on classes mod 4 (spread 4.0e-16), all 144 class pairs seen, symmetric (err 0.0e+00)
+[PASS] C3b on classes mod 4: R is a bicharacter (err 0.0e+00), R(c,c) = chi_c(-1) (err 0.0e+00), G(xy) = G(x)G(y)R(x,y) (err 3.7e-15) [OAI1112 (4.1) and App. A.1]
+      falsifier C3 [R depends only on classes mod 2]: spread 2 -> fails as required
+[PASS] C4 chi_x(-1) = (-1)^((N(x)-1)/6) for all primary x coprime to 6, N <= 3000 (violations 0); it depends only on x mod 4 (spread 0)
+      falsifier C4 [(-1)^((N-1)/3), i.e. chi_x(-1) = 1 (as for the cubic symbol)]: 454 violations -> fails as required
+[PASS] C5 (7.7) chi_x(-1) conj(G(x)) G(y) R(x,y) = G(y x^-1) for all 144 pairs of classes mod 4, hence on frak G x frak G (err 3.8e-15)
+      falsifier C5 [drop chi_x(-1)]: err 2.00 -> fails as required
+      falsifier C5 [G(x y^-1) on the right]: err 1.73 -> fails as required
+[PASS] C6 class form over 70 random coprime squarefree pairs (N(z1 z2) <= 2600): forward (7.3)/(7.9) err 4.9e-14, with xi_1 = chi_n(omega) or a character mod 4 err 4.9e-14, reverse (7.10) err 5.6e-14
+      falsifier C6 [zeta coefficient conj(alpha) gamma_2 in the forward identity]: err 2.00 -> fails as required
+      falsifier C6 [G(t) for G(t^-1) in the forward identity]: err 1.73 -> fails as required
+      falsifier C6 [reverse identity without conj(alpha(z1)) alpha(z2) (zeta form)]: err 2.00 -> fails as required
+[PASS] C7 the 12 characters of (O/4)^x: |c_xi| <= 1 (max 0.500), sum c_xi = G(1) = 1 (err 3.5e-16); literal expansion sum_xi c_xi a_xi(z1) conj(a_xi(z2)) reproduces the left side of (7.3) for 40 pairs (err 5.6e-14)
+SUMMARY test_classgroup: 18 checks, 0 FAIL

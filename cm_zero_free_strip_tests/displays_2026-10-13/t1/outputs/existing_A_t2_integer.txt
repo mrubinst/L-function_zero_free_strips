@@ -1,0 +1,12 @@
+[PASS] A2.01 (l.158-162) [E] 1065 pairs (d,p), d in [1, 2, -3, 7, -11, 5, 16, -432, 13, 30], 5<=p<600, p!|d: brute-force count = -sum Legendre = PARI ellap | falsifier detected
+[PASS] A2.02 (l.165-166) [E] #{y mod p: y^2=c} = 1+(c/p) for all c, 5<=p<400 | falsifier detected
+[PASS] A2.03 (l.168-171) [E] symbolic: 1 - a p^-(s+1/2) + p^(1-2(s+1/2)) = 1 - (a/sqrt p) p^-s + p^-2s | falsifier detected
+[PASS] A2.04 (l.172-174) [E] centre of FE s<->2-s is 1; shift by 1/2 moves it to 1/2 (see A0.03 for the PARI functional-equation check) | falsifier detected
+[PASS] A2.05 (l.177-183, eq:qd) [E] q_1(25)=1 != mu(25)=0, so q_d is not the Moebius function | falsifier detected
+[PASS] A2.06 (l.185-193, eq:integer-convolution) [E] 32382 values (d in 1,2,-3,7,16; m<=20000, (m,6d)=1), max err 2.7e-15; falsifiers: drop (r,t)=1 -> 13 mismatches, drop mu(t)^2 -> 13 mismatches | falsifier detected
+[PASS] A2.07 (l.198-208, eq:reciprocal) [E] L(E_d,s+1/2)*sum q_d m^-s = B_d(s) coefficientwise (exact, PARI ellan), d in [1, 2, -3, 7, 16, -11, 320, 1458, 109375, -1728], m<=6000: 60000 coefficients | falsifier detected
+[PASS] A2.08 (l.209-211) [E] 22 poles of local factors at p|6d (|d|<=300 and non-minimal d): min |p^-s| at a pole = 1.000000 >= 1, so Re s <= 0 there (also for non-minimal models) | falsifier detected
+[SANITY] A2.09 (l.218-220, target) [A] d=1: D=1000: |S|=4.95, |S|/D^0.5=0.157, |S|/D^(11/12)=0.0088; D=10000: |S|=45.40, |S|/D^0.5=0.454, |S|/D^(11/12)=0.0098; D=100000: |S|=83.69, |S|/D^0.5=0.265, |S|/D^(11/12)=0.0022 || d=7: D=1000: |S|=4.29, |S|/D^0.5=0.136, |S|/D^(11/12)=0.0076; D=10000: |S|=25.52, |S|/D^0.5=0.255, |S|/D^(11/12)=0.0055; D=100000: |S|=10.17, |S|/D^0.5=0.032, |S|/D^(11/12)=0.0003
+[PASS] A2.10 (l.226-228) [E] chi_-3(t) = kronecker(-3,t), t<=3000 | falsifier detected
+[PASS] A2.11 (l.230-237, table) [E] 2566 pairs (d,p<3000): table entries incl. a_p(d)=0 for inert p (PARI ellan) | falsifier detected
+[PASS] A2.12 (l.238-240) [E] (a_5,a_7,q(5),q(25),q(7)) = (0, -4, 0.0, 1.0, 1.5118578920369088) | falsifier detected

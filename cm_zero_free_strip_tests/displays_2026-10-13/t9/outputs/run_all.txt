@@ -1,0 +1,13 @@
+d1_alpha_mult: rc=0 failure-lines=0 time=0s  SUMMARY: 7 checks, 0 failures
+d2_rowchar: rc=0 failure-lines=0 time=3s  SUMMARY: 47 checks, 0 failures
+d3_poisson: rc=0 failure-lines=0 time=8s  SUMMARY: 45 checks, 0 failures
+d4_mellin: rc=0 failure-lines=0 time=16s  SUMMARY: 7 checks, 0 failures
+d5_lattice: rc=0 failure-lines=0 time=6s  SUMMARY: 13 checks, 0 failures
+d6_fourth_moment: rc=0 failure-lines=0 time=0s  SUMMARY: 3 checks, 0 failures
+s5/t1_dual_profile (rerun): rc=0 failure-lines=0 time=15s  SUMMARY: 13 checks, 0 failures
+s5/t2_hankel (rerun): rc=0 failure-lines=0 time=1s  SUMMARY: 21 checks, 0 failures
+s5/t3_reflection (rerun): rc=0 failure-lines=0 time=1s  SUMMARY: 119 checks, 0 failures
+s5/t4_lattice (rerun): rc=0 failure-lines=0 time=1s  SUMMARY: 24 checks, 0 failures
+s5/t5_row_reflection (rerun): rc=0 failure-lines=0 time=2s  SUMMARY: 23 checks, 0 failures
+s5/t6_kappa (rerun): rc=0 failure-lines=0 time=0s  SUMMARY: 4 checks, 0 failures
+total time 53s; status 0

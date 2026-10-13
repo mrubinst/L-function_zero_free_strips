@@ -1,0 +1,18 @@
+    d=1 sigma=1.5: lhs 0.554622364859 rhs 0.554622364859; sum|q|m^-s 1.181114 <= sum r m^-s 1.288437 <= 1.299469
+    d=1 sigma=2.0: lhs 0.602735271723 rhs 0.602735271723; sum|q|m^-s 1.046914 <= sum r m^-s 1.070892 <= 1.070992
+    d=1 sigma=3.0: lhs 0.875372372028 rhs 0.875372372028; sum|q|m^-s 1.005102 <= sum r m^-s 1.007301 <= 1.007301
+    d=7 sigma=1.5: lhs 0.526824634286 rhs 0.526824634286; sum|q|m^-s 1.121917 <= sum r m^-s 1.288437 <= 1.299469
+    d=7 sigma=2.0: lhs 0.589393434157 rhs 0.589393434157; sum|q|m^-s 1.023740 <= sum r m^-s 1.070892 <= 1.070992
+    d=7 sigma=3.0: lhs 0.872087026740 rhs 0.872087026740; sum|q|m^-s 1.001330 <= sum r m^-s 1.007301 <= 1.007301
+    d=-3 sigma=1.5: lhs 0.573679716388 rhs 0.573679716388; sum|q|m^-s 1.221699 <= sum r m^-s 1.288437 <= 1.299469
+    d=-3 sigma=2.0: lhs 0.609972680793 rhs 0.609972680793; sum|q|m^-s 1.059485 <= sum r m^-s 1.070892 <= 1.070992
+    d=-3 sigma=3.0: lhs 0.876644759965 rhs 0.876644759965; sum|q|m^-s 1.006563 <= sum r m^-s 1.007301 <= 1.007301
+[PASS] eq:d030 (6.4) T1-M1: d in {1,7,-3}, sigma in {1.5,2,3}, m <= 3000, weight bump(1,2) e^{iy}: D-integral of the sum = sum times y-integral, max rel err 5.1e-16; |q_d(m)| <= r(m) for all m <= 3000 (violations 0); partial sums bounded by (1-4^-s)(1-3^-s)zeta_K(s) (violations 0); falsifier y^-sigma: rel err 0.90 | falsifier detected
+    d=1 s=(3+0j): F_W1 W2^ = -7.1018358789+3.0000136361j, W1^W2^B/L = -7.1018358789+3.0000136361j, F_W2 W1^ = -7.1018358788+3.0000136361j; rel err 1.2e-11 (tol 1e-09)
+    d=1 s=(2.2+5j): F_W1 W2^ = 2.7214885356+0.0610449133j, W1^W2^B/L = 2.7214884194+0.0610449779j, F_W2 W1^ = 2.7214885336+0.0610449412j; rel err 4.9e-08 (tol 2e-06)
+    d=7 s=(3+0j): F_W1 W2^ = -7.0652306282+2.9845505569j, W1^W2^B/L = -7.0652306281+2.9845505568j, F_W2 W1^ = -7.0652306283+2.9845505569j; rel err 2.5e-11 (tol 1e-09)
+    d=7 s=(2.2+5j): F_W1 W2^ = 2.7631635012+0.0434934178j, W1^W2^B/L = 2.7631635075+0.0434935093j, F_W2 W1^ = 2.7631635081+0.0434933441j; rel err 6.0e-08 (tol 2e-06)
+    d=16 s=(3+0j): F_W1 W2^ = -7.0788506395+2.9903040296j, W1^W2^B/L = -7.0788506398+2.9903040298j, F_W2 W1^ = -7.0788506396+2.9903040297j; rel err 3.8e-11 (tol 1e-09)
+    d=16 s=(2.2+5j): F_W1 W2^ = 2.7456353363+0.0365339927j, W1^W2^B/L = 2.7456351767+0.0365338309j, F_W2 W1^ = 2.7456353376+0.0365339376j; rel err 8.3e-08 (tol 2e-06)
+[PASS] eq:d031 (6.5) T1-M2: d in {1,7,16}, s in {3, 2.2+5i}, two complex weights, F_W from direct D-quadrature of S_d(D) (D <= 6000), L and B_d from PARI: max rel err/tol 4.1e-02; falsifiers err/tol: crossed pairing 1.0e+10, B_d omitted (d=16) 1.6e+07 | falsifier detected
+SUMMARY: 2 checks, 0 failed

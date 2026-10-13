@@ -1,0 +1,13 @@
+[PASS] C45 L1299 label set X_u {E} X_u = {theta chi(u)^+-1} u {abar theta conj chi(u), alpha theta chi(u)}: finite, conjugation-closed, contains numerator, denominator and conjugates (model Theta_0 = Z/6 x Z/2) :: |X_u| = 48 = 4|Theta_0|; falsifiers: anti-oriented set misses the denominator, half set not closed [falsifier failed as required]
+[PASS] C46 L1320 co-orientation {E} all CM members of X_u and both witnesses have k*sigma = -1 (co-oriented) :: 24 CM members; falsifier: anti-oriented set has k*sigma = +1 [falsifier failed as required]
+[PASS] C47 L1420 lattice main terms vanish {E} int alpha^e f(|z|^2) = 0 for e=1,2,-1,3; coset sums sum_{z in a+mO} alpha(z)^e f(N z/X) have no volume term :: max |int|/int(e=0) 2.1e-16; C_c bump profile, max |sum|/sum(e=0) over 4 cosets (incl. O), e=1,2,-1: X=3000: 5.5e-04, X=30000: 4.2e-07, X=300000: 4.0e-12 (decreasing: O(X^-A) is asymptotic); falsifier e=0: int = 0.022, coset sums ~ volume (up to 7.65e+03) [falsifier failed as required]
+[PASS] C48 L1202 Prop. cm-completed exponent {I} O/2 + max(M-O, 2M-O-N) <= max(M, 2M-N) at N=1 for 0<=O<=2M (summing O-dyads gives Z^eps(Q+Q^2/Z)) :: exact Fractions on a grid M in [0,3]; falsifier weight 2O instead of O/2 exceeds [falsifier failed as required]
+[INFO] C49 L1202 Prop. cm-completed (sanity) {A} sum_{N(m)<=Q}|B_m|^2/(Q+Q^2/Z), Z=1500, 428 completed terms, abar^2 (CM) vs abar (OAI78) :: Q=30: CM 0.258, OAI 0.221; Q=100: CM 0.221, OAI 0.230; Q=300: CM 0.199, OAI 0.191; Q=1000: CM 0.150, OAI 0.145; Q=3000: CM 0.082, OAI 0.082; twisted multiplicativity of gamma2 vs brute force: 3.3e-15
+[PASS] C50 L1389 (MS) as a special case {I} (MS) [theta in (0,1/10]] = eq:cm-inverse with eps=1, nu=1, no slots, r=1, m=1+theta, c_1=theta, c_2=1; m <= 11/10 :: exact; note c_1 must be taken <= theta (fixed for each fixed theta); falsifier c_1 = 2 theta fails [falsifier failed as required]
+[INFO] C103 L1363 eq:cm-inverse (sanity, no slots) {A} sum_{N(u)<=H}|M_u|^2/H with D=400, H=D^1.1=728, 119 columns, 2646 rows :: eps=-1 (co-oriented, CM witness): 0.275; eps=+1 (co-oriented, (MS)): 0.275; anti-oriented alpha*conj chi: 0.279 (all O(1): the anti-oriented family is not large; the guide only says the proof does not extend to it)
+
+--- stderr ---
+./part_C_lines_0998_1509/t05_rows_moments.py:77: RuntimeWarning: invalid value encountered in reciprocal
+  return abs(np.sum(al**e*f)), np.sum(f)
+
+--- exit 0, 16.5 s

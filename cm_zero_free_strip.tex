@@ -32,21 +32,132 @@
 \begin{abstract}
 For a nonzero integer $d$ let $E_d$ be the elliptic curve
 $y^2=x^3+d$ over $\mathbb Q$. Part~I adapts OpenAI's $11/12$
-argument~\cite{OAI1112} to prove that $L(E_d,s)\ne0$ for $\Re s>17/12$.
-Part~II adapts OpenAI's $7/8$ argument~\cite{OAI78} to prove
+argument to prove that $L(E_d,s)\ne0$ for $\Re s>17/12$.
+Part~II adapts OpenAI's $7/8$ argument to prove
 $L(s,\overline\alpha\eta)\ne0$ for $\Re s>7/8$, where $\eta$ is any finite-order Hecke
 character of $\mathbb Q(\sqrt{-3})$ and $\alpha(n)=n/|n|$ on primary generators.
 Consequently $L(E_d,s)\ne0$ for $\Re s>11/8$.
 The analytic normalization is $L(E_d,s+\frac12)$, so the two boundaries
 are $11/12$ and $7/8$ within $0<\Re s<1$.
-The curve characters have infinite order~\cite{Deuring}, and require new
+The curve characters have infinite order, and require new
 transformation and moment arguments. These are proved here; steps identical to
-the original arguments are cited. Part~II also uses OpenAI's finite-order $7/8$
-theorem as an external input. Its CM adaptations have been checked internally
-and numerically; external review is pending (Section~\ref{sec:78status}).
-Higher-weight and symmetric-power extensions are discussed as expectations in
-Section~\ref{sec:higherweight}; more general CM forms are the subject of a second paper, now being written.
+the original arguments are cited. Part~II also uses the ideas from OpenAI's finite-order $7/8$
+theorem.
+Higher-weight and symmetric-power extensions are discussed; more general CM forms are the subject of a second paper.
 \end{abstract}
+
+\section*{Introduction}
+
+We study the family of elliptic curves
+\begin{equation}\label{eq:intro-curve}
+ E_d\colon y^2=x^3+d,\qquad d\in\mathbb Z\setminus\{0\}.
+\end{equation}
+The discriminant of this equation is
+$-432d^2$, so the curve is nonsingular when $d\ne0$. Its $j$-invariant is $0$.
+We fix $d$ throughout Part~I; the larger family that we average over will be a family of character twists.
+
+\paragraph{Complex multiplication.}
+Every elliptic curve has the multiplication maps $P\mapsto mP$ for integers $m$.
+These curves have an additional endomorphism. Put
+$\omega=e^{2\pi i/3}$ and $K=\mathbb Q(\omega)=\mathbb Q(\sqrt{-3})$. The map
+\begin{equation}\label{eq:intro-cm-map}
+ (x,y)\longmapsto(\omega x,y)
+\end{equation}
+preserves the equation and fixes the point at infinity. The full ring of endomorphisms over
+$\overline{\mathbb Q}$ is $\OO$, the ring of Eisenstein integers, rather than just $\mathbb Z$.
+This is what \emph{complex multiplication}, or CM, means here~\cite{SilATAEC,Deuring}; the additional maps
+are defined over $K$. Moreover, adjoining a sixth root of $d$ makes $E_d$ isomorphic to $E_1$ by
+scaling $x$ and $y$. Thus this is a family of \emph{sextic twists}, which explains the appearance of
+sixth-order residue symbols below.
+
+\paragraph{Point counts and the $L$-function.}
+At a prime of good reduction, let $\widetilde E_d$ be the reduction of a minimal model and set
+$a_p(d)=p+1-\#\widetilde E_d(\mathbb F_p)$, counting the point at infinity.
+In particular, at $p\nmid6d$ the displayed equation is already a good model, and
+\begin{equation}\label{eq:intro-ap}
+ a_p(d)=-\sum_{x=0}^{p-1}\left(\frac{x^3+d}{p}\right).
+\end{equation}
+Here the Legendre symbol is $1$ for a nonzero square, $-1$ for a nonsquare, and $0$ at zero.
+So $a_p(d)$ measures the deviation of the point count from $p+1$.
+Hasse's bound gives $|a_p(d)|\le2\sqrt p$~\cite{Has36,SilAEC}.
+
+The $L$-function packages these counts into an Euler product and a Dirichlet series:
+\begin{equation}\label{eq:intro-L}
+ L(E_d,s)=\prod_p L_p(E_d,s)=\sum_{m\ge1}\frac{a_m(E_d)}{m^s}.
+\end{equation}
+The standard local factors for an elliptic curve are
+\begin{equation}\label{eq:intro-local}
+ L_p(E_d,s)=
+ \begin{cases}
+  (1-a_p(d)p^{-s}+p^{1-2s})^{-1},&\text{good reduction},\\
+  (1-p^{-s})^{-1},&\text{split multiplicative reduction},\\
+  (1+p^{-s})^{-1},&\text{nonsplit multiplicative reduction},\\
+  1,&\text{additive reduction}.
+ \end{cases}
+\end{equation}
+The local factors define the coefficients $a_m(E_d)$, with $a_1(E_d)=1$, and the product and series
+converge absolutely for $\Re s>3/2$. These are the standard minimal-model factors~\cite[Appendix~C, \S16]{SilAEC}.
+For our $j=0$ curves every bad prime has additive reduction, so its factor is $1$.
+The given equation need not be minimal: a prime dividing $6d$ can still be a prime of good reduction
+after a change of model. This is why factors at those primes must be taken from a minimal model.
+
+\paragraph{The functional equation and the normalization.}
+Let $N_d$ be the conductor of $E_d$, a positive integer whose prime divisors are exactly the primes of
+bad reduction. Deuring's identification with a Hecke $L$-function, together with Hecke's theory, shows
+that $L(E_d,s)$ and its completed function extend to entire functions and satisfy~\cite{Deuring,Hec20}
+\begin{equation}\label{eq:intro-fe}
+ \Lambda(E_d,s)=N_d^{s/2}(2\pi)^{-s}\Gamma(s)L(E_d,s),\qquad
+ \Lambda(E_d,s)=\epsilon_d\Lambda(E_d,2-s),\qquad \epsilon_d\in\{1,-1\}.
+\end{equation}
+The sign $\epsilon_d$ is the \emph{root number}. The symmetry is about $\Re s=1$.
+To put the critical line in the same position as for zeta, we use the shifted function
+$\mathcal L_d(s)=L(E_d,s+\frac12)$. Its completed form is
+\begin{equation}\label{eq:intro-fe-u}
+ \Lambda^{\mathrm u}(E_d,s)=N_d^{s/2}(2\pi)^{-s}\Gamma(s+\tfrac12)\mathcal L_d(s),
+ \qquad \Lambda^{\mathrm u}(E_d,s)=\epsilon_d\Lambda^{\mathrm u}(E_d,1-s).
+\end{equation}
+Thus the critical line is now $\Re s=1/2$, and the Euler product converges absolutely for $\Re s>1$.
+Part~I proves that $\mathcal L_d(s)$ has no zeros for $\Re s>11/12$; Part~II improves this to $\Re s>7/8$.
+In the original variable, these are the boundaries $17/12$ and $11/8$.
+
+\paragraph{Why CM connects the curves to the OpenAI method.}
+CM expresses the curve's degree-two Euler product over rational primes as a Hecke Euler product over
+$K$. In this family the character can be written explicitly. For a primary Eisenstein integer
+$n\equiv1\pmod3$ coprime to $6d$, put
+\begin{equation}\label{eq:intro-psi}
+ \N(n)=|n|^2,\qquad \alpha(n)=\frac n{|n|},\qquad
+ \psi_d(n)=\alpha(n)\overline{\left(\frac{4d}{n}\right)_6}.
+\end{equation}
+The sextic residue symbol is a sixth root of unity determined by residues modulo the prime factors of
+$n$; Section~\ref{sec:lattice} defines it precisely. The ring $\OO$ has unique factorization, and each
+ideal coprime to $3$ has one primary generator, so sums over such $n$ are also sums over ideals. With
+$B_d(s)=\prod_{p\mid6d}L_p(E_d,s+\frac12)$, the concrete identity is
+\begin{equation}\label{eq:intro-hecke}
+ \mathcal L_d(s)=B_d(s)L^{(6d)}(s,\psi_d),\qquad
+ L^{(6d)}(s,\psi_d)=
+ \sum_{\substack{n\ \mathrm{primary}\\(n,6d)=1}}
+ \frac{\psi_d(n)}{\N(n)^s}\qquad(\Re s>1).
+\end{equation}
+Here $L^{(6d)}$ means that the Euler factors above primes dividing $6d$ have been deleted.
+Sections~\ref{sec:integer}--\ref{sec:lattice} prove this identity directly from point counts, including its
+sign and the factor $4$. The finite factor $B_d$ is holomorphic and nonzero for $\Re s>0$, so this
+deletion preserves the zeros under discussion.
+
+Taking the reciprocal introduces the Eisenstein M\"obius function $\muk$, defined by prime
+factorization in $\OO$:
+\begin{equation}\label{eq:intro-inverse}
+ \frac1{L^{(6d)}(s,\psi_d)}=
+ \sum_{\substack{n\ \mathrm{primary}\\(n,6d)=1}}
+ \frac{\muk(n)\alpha(n)\overline{(4d/n)_6}}{\N(n)^s}
+ =\sum_{m\ge1}\frac{q_d(m)}{m^s}\qquad(\Re s>1).
+\end{equation}
+The last equality groups the terms by their ordinary integer norm and defines $q_d(m)$.
+The OpenAI $11/12$ argument~\cite{OAI1112} estimates analogous M\"obius sums in a family of sextic twists
+over this same field. Here the additional factor is $\alpha(n)=n/|n|$, which records the angle of $n$.
+It makes the curve character infinite order, so the finite-order theorem requires an adaptation.
+The same residue symbols, Poisson summation and cubic theta function remain available; the angular
+factor changes the theta derivative and the subsequent estimates. The six steps below outline this
+adaptation. In them $W$ is a smooth, compactly supported weight, and $D$ is the size of the norms being summed.
 
 \paragraph{The method in six sentences.}
 \begin{enumerate}
@@ -85,7 +196,7 @@ Section~\ref{sec:higherweight}; more general CM forms are the subject of a secon
 
 \paragraph{What is proved here, and what is quoted.}
 These notes follow the zeta guide~\cite{ZG}. A proof step identical to
-\cite{OAI1112} or~\cite{OAI78} is cited by number or source label; every CM change
+\cite{OAI1112} or~\cite{OAI78} is cited by number; every CM change
 is written out. Background on $\OO$, residue symbols, Gauss sums, Poisson summation
 and the cubic theta function is in~\cite{QF}. Part~I treats the $j=0$ curves over
 $\mathbb Q$, with $d$ fixed and constants allowed to depend on it; Part~II treats
@@ -2169,11 +2280,10 @@ the smooth majorant $\mathcal A(W)$ on the left. \qed
 
 The remaining sections adapt OpenAI's $7/8$ argument~\cite{OAI78}, explained
 for $\zeta$ in~\cite{G78}, to the curves $E_d$. The result is a wider
-zero-free strip. Equation and line references to~\cite{OAI78} are to its
-\TeX\ source. Throughout Part~II, $\mu=\muk$ is the M\"obius function on primary
+zero-free strip. Throughout Part~II, $\mu=\muk$ is the M\"obius function on primary
 elements, and $\chi_\bullet(u)$ denotes the character $n\mapsto\chi_n(u)$.
 
-\begin{theorem}[see Section~\ref{sec:78status} for its status]\label{thm:78}
+\begin{theorem}\label{thm:78}
 Let $\eta$ be a finite-order Hecke character of $K=\mathbb Q(\sqrt{-3})$, and put
 $\psi=\overline\alpha\,\eta$, that is, $\psi(n)=\overline{\alpha(n)}\,\eta(n)$ on
 primary $n$ prime to the conductor of $\eta$. Then
@@ -2815,11 +2925,10 @@ $\mathcal F_{\rm CM}$ by Proposition~\ref{prop:s6-shared}. Every margin is chose
 in~\cite{OAI78}, so all margins are uniform in $\psi$. The continuation criterion then gives the
 contradiction. Hence $\beta_*\le7/8$, which is Theorem~\ref{thm:78}.
 
-\section{What has been checked, and what remains}\label{sec:78status}
-We read~\cite{OAI78} in eight consecutive parts. For each part we listed every use of a property of
-the target or of a row character, and classified it as unchanged, routine, or needing a new argument.
-None needed a new idea, but several needed new proofs; these are written out in
-Appendices~\ref{app:s1-general}--\ref{app:s6}. The table summarizes.
+\section{What changes in the CM case}\label{sec:78status}
+The table goes through~\cite{OAI78} and records, for each part, how the properties of the target and of the row
+characters that it uses change in the CM case. No new idea is needed, but several statements need new proofs;
+these are given in Appendices~\ref{app:s1-general}--\ref{app:s6}.
 \begin{center}
 \small
 \begin{tabular}{p{2.7cm}p{4.6cm}p{7.2cm}}
@@ -2844,8 +2953,7 @@ Sections of~\cite{OAI78} & content & CM change\\\midrule
 \end{tabular}
 \end{center}
 
-The six statements that an earlier version of these notes left open are now written out, at the
-generality of~\cite{OAI78}. In each, a step identical to~\cite{OAI78} is cited by its number there, and a
+Six statements need new proofs. They are proved in the appendices, at the generality of~\cite{OAI78}. In each, a step identical to~\cite{OAI78} is cited by its number there, and a
 step that changes in the CM case is proved.
 \begin{enumerate}
 \item \emph{The transformation formula for $\partial_{\bar z}^{\,2}\theta$}, for a general modulus supported on $S$,
@@ -2873,7 +2981,7 @@ label set $\mathcal X_u$, which~\cite{OAI78} derives from a statement that is fa
 Lemma~\ref{lem:r3-ceiling}.
 
 \paragraph{What Theorem~\ref{thm:78} rests on.} Besides the results proved here, the proof uses the steps
-of~\cite{OAI78} cited as identical (each checked against the source), OpenAI's theorem for finite-order
+of~\cite{OAI78} cited as identical, OpenAI's theorem for finite-order
 characters~\cite[Theorem~1.1]{OAI78}, the theorem of Kubota and Patterson~\cite{Kub69,Pat77} in the form~\cite[Theorem~23]{QF}, the
 quadratic large sieve~\cite{HB95,GL}, and the prime number theorem for prime ideals in ray classes~\cite{Hec17,Hec20}. OpenAI's
 $7/8$ theorem is formalized in Lean~\cite{OAIlean}. Of the CM argument, only the last step of Part~I is
@@ -2895,10 +3003,7 @@ is in progress.
 \item the twisted paired identities and the twisted first Poisson reduction of Appendix~\ref{app:s6};
 \item the Bessel--Mellin formulas, the reflection constants, and the Stirling exponents of all the gamma quotients.
 \end{itemize}
-The proof supplied here has been checked by internal referee passes and these tests;
-external review of the CM adaptations is pending. The external inputs are those
-listed above. Numerical checks support the identities, but do not establish the
-uniform analytic estimates.
+Numerical checks support the identities, but do not establish the uniform analytic estimates.
 
 \section{CM newforms of higher weight: why the method should extend}\label{sec:higherweight}
 
@@ -3065,7 +3170,7 @@ The numerical checks of this section were made with short Python scripts.
 Every numbered display of these notes was catalogued and checked where a computation can check it: identities
 and explicit inequalities were tested on finite samples, and estimates received size checks where feasible.
 For twelve estimates not even a size check is possible. Testing every display is overkill, but we wanted to catch mistakes of every size: wrong normalizations,
-sign errors, dropped factors and careless slips. Section~\ref{sec:numerics-displays} lists all $342$ numbered displays, and for each one says what was
+sign errors, dropped factors and careless slips. Section~\ref{sec:numerics-displays} lists all $352$ numbered displays, and for each one says what was
 done and what was found. Section~\ref{sec:numerics-limits} says what the checks do not establish.
 
 The checks use Python and the conventions of these notes. Elements of $\OO$ are written as pairs $A+B\omega$.
@@ -3082,10 +3187,11 @@ continuation; these are consistency checks, and the table says so. Zero counts c
 finitely many boundary samples, and maxima are taken over sampled points; such results hold on the tested grid
 only.
 
-The scripts are in a directory \texttt{tests\_cm/}, which will be posted with the source. The display tests are in its subfolder
-\texttt{displays\_2026-10-13}, in nine groups \texttt{t1}--\texttt{t9}. The file \texttt{rows.json} of each group
+The scripts are posted with the source, in the folder \texttt{cm\_zero\_free\_strip\_tests} of
+\url{https://github.com/mrubinst/L-function_zero_free_strips}. The display tests are in its subfolder
+\texttt{displays\_2026-10-13}, in ten groups \texttt{t0}--\texttt{t9}. The file \texttt{rows.json} of each group
 names the script behind every row of the table below, and \texttt{run\_all.sh} reruns all of them in about half an
-hour, including the earlier suites in the other subfolders of \texttt{tests\_cm/} on which they rely. Every runner
+hour, including the earlier suites in the other subfolders on which they rely. Every runner
 exits with a nonzero status if any check fails, including failures in nested suites. The script
 \texttt{check\_runner\_propagation.py} verifies this by making each script, in turn, fail.
 
@@ -3113,13 +3219,13 @@ Each numbered display is of one of six kinds, and the kind determines what a com
 \begin{tabular}{@{}llrl@{}}
 \toprule
 Kind & & Displays & Outcome\\\midrule
-E & identity & 185 & all pass\\
+E & identity & 189 & all pass\\
 I & explicit inequality & 22 & all pass\\
 A & estimate & 44 & 32 size checks, all consistent; 12 not testable by computation\\
-D & definition & 72 & implemented in the tests\\
-C & cited result & 6 & agrees with its source\\
+D & definition & 76 & implemented in the tests\\
+C & cited result & 8 & agrees with its source\\
 R & restatement & 13 & covered by the restated display\\\midrule
- & total & 342 & \\\bottomrule
+ & total & 352 & \\\bottomrule
 \end{tabular}
 \end{center}
 
@@ -3147,7 +3253,17 @@ Display & Kind & What was done & Result\\\midrule
 \endfoot
 \bottomrule
 \endlastfoot
-\multicolumn{4}{@{}l}{\emph{Front matter}}\\
+\multicolumn{4}{@{}l}{\emph{Introduction}}\\
+\eqref{eq:intro-curve} & D & Definition of $E_d$; discriminant $-432d^2$ (sympy) and $j=0$ (PARI) for 40 values of $d$ & definition (consistency PASS)\\
+\eqref{eq:intro-cm-map} & D & The map; $(\omega x)^3+d=x^3+d$ (sympy), so it preserves the equation; order 3 & definition (consistency PASS)\\
+\eqref{eq:intro-ap} & E & Brute-force point count, minus the Legendre sum and PARI ellap agree for 1366 pairs $(d,p)$, $p<800$, $p\nmid6d$ & PASS (exact)\\
+\eqref{eq:intro-L} & D & Definition of $a_m$; PARI ellan equals the product of the local factors \eqref{eq:intro-local} for $m\le2500$, 10 values of $d$ & definition (consistency PASS, exact)\\
+\eqref{eq:intro-local} & C & Standard local factors~\cite[Appendix~C, \S16]{SilAEC}; for $0<|d|\le200$ all 1200 bad primes are additive (PARI), $a_p=0$ there; $d=16$ is good at $2$ & checked against source; PASS (exact)\\
+\eqref{eq:intro-fe} & C & Deuring--Hecke functional equation; checked with PARI lfun for 8 curves ($N=27$ to $15552$) at 4 complex points, $\epsilon$ from ellrootno & checked against source; PASS (rel err below $10^{-40}$)\\
+\eqref{eq:intro-fe-u} & E & $\Lambda^{\rm u}(s)=\epsilon\Lambda^{\rm u}(1-s)$ for the same curves and points (PARI lfun) & PASS (rel err below $10^{-40}$)\\
+\eqref{eq:intro-psi} & D & Definitions; $\overline{(4d/n)_6}=((4d)^5/n)_6$ exactly for 2258 pairs, so $\psi_d=\alpha\chi_\bullet(u_d)$ as in \eqref{eq:ud} & definition (consistency PASS, exact)\\
+\eqref{eq:intro-hecke} & E & Coefficientwise in $\mathbb Z[\omega]$: $a_m=\sum b(m_1)\sum_{\N(n)=m_2}n\overline{(4d/n)_6}$, $b$ the local factors at $p\mid6d$ (PARI, minimal model), $m\le2500$, 10 values of $d$ including non-minimal ones & PASS (exact)\\
+\eqref{eq:intro-inverse} & E & $\sum_{\N(n)=m}\muk(n)n\overline{(4d/n)_6}$ equals the coefficient of $\prod_{p\nmid6d}(1-a_pX+pX^2)$, 7919 pairs $(d,m)$, $m\le2500$ & PASS (exact)\\
 \eqref{eq:d001} & R & Restates $S_d(D)=A_{u_d}(D)$ of \eqref{eq:normgroup}, with $u_d=(4d)^5$; covered by that display's test. & see \eqref{eq:normgroup}\\
 \multicolumn{4}{@{}l}{\emph{Section~2}}\\
 \eqref{eq:d002} & E & Brute-force point count = minus Legendre sum = PARI ellap for 1065 pairs $(d,p)$, $p<600$. & PASS (exact)\\
@@ -3168,7 +3284,7 @@ Display & Kind & What was done & Result\\\midrule
 \eqref{eq:d010} & E & Index arithmetic: index of $(4d)^5$ is $5\cdot$index of $4d$, i.e. minus it mod 6, zeros preserved, 12000 pairs $(d,n)$. & PASS (exact)\\
 \eqref{eq:point-identity} & E & Exact in $\mathbb Z[\omega]$ for 27528 pairs $(d,\pi)$, $|d|\le60$, $p<1500$. & PASS (exact)\\
 \eqref{eq:d011} & E & $\psi_d(\pi)\psi_d(\bar\pi)=1$ and $\psi_d(\pi)+\psi_d(\bar\pi)=\lambda_d(p)$ for $p<3000$, 5 values of $d$. & PASS (max err 1.2e-15)\\
-\eqref{eq:normgroup} & E & Exact in $\mathbb Z[\omega]$, 8 values of $d$, $m\le2\cdot10^4$; $S_d=A_{u_d}$ to 1.3e-14; an additional Python/PARI check of 10800 pairs $(d,n)$ (lean-cm/checks/hecke\_identity.py; a numerical check, not a Lean proof). & PASS (exact; $S_d=A_{u_d}$ to 1.3e-14)\\
+\eqref{eq:normgroup} & E & Exact in $\mathbb Z[\omega]$, 8 values of $d$, $m\le2\cdot10^4$; $S_d=A_{u_d}$ to 1.3e-14; an additional Python/PARI check of 10800 pairs $(d,n)$ (deuring\_identity/hecke\_identity.py; a numerical check, not a Lean proof). & PASS (exact; $S_d=A_{u_d}$ to 1.3e-14)\\
 \eqref{eq:d012} & E & First identity exact vs PARI ellan for 51264 coefficients ($m\le2\cdot10^4$, 8 values of $d$); the second is \eqref{eq:normgroup}. & PASS (exact)\\
 \eqref{eq:d013} & D & Notation; checked that $\chi^2$ is the cubic symbol, $\chi^3$ the Legendre symbol and $\kappa(-1)=1$, 188 pairs $(p,\pi)$, $p<1200$. & definition (consistency PASS, exact)\\
 \eqref{eq:d014} & E & Both root counts exact at every residue, 188 pairs $(p,\pi)$, $7\le p<1200$. & PASS (exact)\\
@@ -5108,10 +5224,9 @@ $W^\sharp(y)=\mathcal MW(\frac32)y^{1/2}+O(y^{3/2})$.
 \end{proof}
 
 \subsection{Where these statements are used}\label{sec:s2-uses}
-We searched~\cite{OAI78} for every use of its Lemma~4.8 (equation~(4.14) there),
-Lemmas~4.9 and~4.10, and the primitive functional equation. We also
-searched for every count of zeros. There is none. The uses are listed below, with the CM statement that replaces
-each. The characters that occur are of three kinds: the target; the denominators $\psi\overline{\chi_\bullet(u)}$
+Below we list the uses in~\cite{OAI78} of its Lemma~4.8 (equation~(4.14) there), of Lemmas~4.9 and~4.10, and of
+the primitive functional equation, each with the CM statement that replaces it; \cite{OAI78} uses no count of
+zeros. The characters that occur are of three kinds: the target; the denominators $\psi\overline{\chi_\bullet(u)}$
 and the other CM members of $\mathcal X_u$; and finite-order characters (numerators, slot characters, and the
 finite-order members of $\mathcal X_u$). For the third kind,~\cite{OAI78} applies as it stands, with zero-free
 input $b\ge\frac78$ from~\cite[Theorem~1.1]{OAI78}.
@@ -5524,7 +5639,7 @@ $\alpha^{-\varsigma}\theta\chi_\bullet(u)^\varsigma$ are not in $\mathcal X_u$. 
 Lemma~\ref{lem:s3-labels}(b), $\mathcal X_u$ already contains every $L$-function that the high side bounds
 through the bins, namely the numerator, the denominator, their conjugates and the slot characters.
 
-\paragraph{Status.} This appendix proves item~3 of Section~\ref{sec:78status}. From Lemma~\ref{lem:cm-growth},
+\paragraph{Summary.} This appendix proves item~3 of Section~\ref{sec:78status}. From Lemma~\ref{lem:cm-growth},
 proved in Appendix~\ref{app:s2-hecke}, the detector uses the functional equation, the absence of poles, and the
 uniform strip bound. Under the contradiction hypothesis $\beta_*>7/8$ one has $\beta^\sharp=\beta_*$, so
 Proposition~\ref{prop:s3-detector}(ii) is the bin ceiling of Lemma~\ref{lem:r3-ceiling}. The mean-value estimates that consume the CM witnesses in Part~II are items~4

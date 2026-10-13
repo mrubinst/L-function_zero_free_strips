@@ -1,0 +1,5 @@
+[PASS] D06.1 L1648 Sym^m factorization: local Euler polynomials agree at all good p <= 600, m = 1..8, d in [1, 2, -3, 7, 5, -11, 17] | 5960 (d,p,m) cases, max coefficient error=1.2e-12; falsifiers chi_-3^(m/2+1): 12.00, psi*chi(2): 120.01
+[PASS] D06.2 L1655 last factor: chi_{-3}^{m/2} is trivial (zeta, pole at s=1) iff m = 0 mod 4, and chi_{-3} iff m = 2 mod 4 | falsifier (opposite parity) rejected
+[PASS] D06.3 L1645 normalization: Sym^m eigenvalues of E_d at p have absolute value p^{m/2}; dividing by p^{m/2} (shift s -> s+m/2) makes them unimodular | |alpha_p|^2 = 7.000000 = p = 7; falsifier: unnormalized |alpha_p| != 1
+
+--- exit 0, 0.8 s

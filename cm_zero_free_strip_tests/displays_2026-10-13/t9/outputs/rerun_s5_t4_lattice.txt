@@ -1,0 +1,29 @@
+RESULT|4a-theta=1-t=0.0-e=+1|PASS|err=0.0595 tol=1; unmasked |L(X,t)| for X=30,300,3000,30000,300000: 5.95e-01, 1.14e-01, 1.28e-01, 3.36e-02, 1.60e-04
+RESULT|4a-theta=1-t=0.0-e=-1|PASS|err=0.0595 tol=1; unmasked |L(X,t)| for X=30,300,3000,30000,300000: 5.95e-01, 1.14e-01, 1.28e-01, 3.36e-02, 1.60e-04
+RESULT|4a-falsifier-calibration-t=0.0|PASS|err=4.79e-10 tol=0.01; e=0: |L|/X -> pi/(6sqrt3)|I(t)| = 0.06711; got 0.07467, 0.06693, 0.06712, 0.06711, 0.06711
+      falsifier for 4a-theta=1-t=0.0 [no angular factor (e=0): volume main term]: err=2.01e+04 -> fails as required
+RESULT|4a-theta=1-t=3.7-e=+1|PASS|err=0.0673 tol=1; unmasked |L(X,t)| for X=30,300,3000,30000,300000: 6.73e-01, 4.52e-01, 1.10e-01, 3.01e-02, 1.87e-04
+RESULT|4a-theta=1-t=3.7-e=-1|PASS|err=0.0673 tol=1; unmasked |L(X,t)| for X=30,300,3000,30000,300000: 6.73e-01, 4.52e-01, 1.10e-01, 3.01e-02, 1.87e-04
+RESULT|4a-falsifier-calibration-t=3.7|PASS|err=2.75e-10 tol=0.01; e=0: |L|/X -> pi/(6sqrt3)|I(t)| = 0.05916; got 0.06864, 0.05891, 0.05916, 0.05916, 0.05916
+      falsifier for 4a-theta=1-t=3.7 [no angular factor (e=0): volume main term]: err=1.77e+04 -> fails as required
+RESULT|4a-theta=chi(-1)-t=0.0-e=+1|PASS|err=0.246 tol=1; unmasked |L(X,t)| for X=30,300,3000,30000,300000: 2.85e-01, 1.87e+00, 2.46e+00, 2.98e-01, 1.12e-02
+RESULT|4a-theta=chi(-1)-t=0.0-e=-1|PASS|err=0.246 tol=1; unmasked |L(X,t)| for X=30,300,3000,30000,300000: 2.85e-01, 1.87e+00, 2.46e+00, 2.98e-01, 1.12e-02
+RESULT|4a-theta=chi(-1)-t=3.7-e=+1|PASS|err=0.19 tol=1; unmasked |L(X,t)| for X=30,300,3000,30000,300000: 4.90e-01, 1.90e+00, 1.36e+00, 2.24e-01, 7.23e-03
+RESULT|4a-theta=chi(-1)-t=3.7-e=-1|PASS|err=0.19 tol=1; unmasked |L(X,t)| for X=30,300,3000,30000,300000: 4.90e-01, 1.90e+00, 1.36e+00, 2.24e-01, 7.23e-03
+RESULT|4a-theta=(l/2)_3-t=0.0-e=+1|PASS|err=0.128 tol=1; unmasked |L(X,t)| for X=30,300,3000,30000,300000: 1.28e+00, 2.23e-01, 4.00e-01, 6.46e-02, 3.09e-04
+RESULT|4a-theta=(l/2)_3-t=0.0-e=-1|PASS|err=0.0472 tol=1; unmasked |L(X,t)| for X=30,300,3000,30000,300000: 4.72e-01, 3.75e-01, 7.20e-02, 5.40e-03, 2.67e-05
+RESULT|4a-theta=(l/2)_3-t=3.7-e=+1|PASS|err=0.128 tol=1; unmasked |L(X,t)| for X=30,300,3000,30000,300000: 1.26e+00, 1.28e+00, 1.16e-01, 5.60e-02, 3.62e-04
+RESULT|4a-theta=(l/2)_3-t=3.7-e=-1|PASS|err=0.0639 tol=1; unmasked |L(X,t)| for X=30,300,3000,30000,300000: 6.39e-01, 3.13e-01, 1.62e-01, 2.14e-03, 3.14e-05
+RESULT|4a-theta=chi(-1)(l/2)_3-t=0.0-e=+1|PASS|err=0.226 tol=1; unmasked |L(X,t)| for X=30,300,3000,30000,300000: 3.95e-01, 9.36e-01, 2.06e+00, 2.93e-01, 1.13e-02
+RESULT|4a-theta=chi(-1)(l/2)_3-t=0.0-e=-1|PASS|err=0.0904 tol=1; unmasked |L(X,t)| for X=30,300,3000,30000,300000: 4.09e-01, 9.04e-01, 2.74e-02, 7.03e-02, 3.52e-03
+RESULT|4a-theta=chi(-1)(l/2)_3-t=3.7-e=+1|PASS|err=0.176 tol=1; unmasked |L(X,t)| for X=30,300,3000,30000,300000: 5.23e-01, 1.76e+00, 1.16e+00, 2.20e-01, 7.16e-03
+RESULT|4a-theta=chi(-1)(l/2)_3-t=3.7-e=-1|PASS|err=0.166 tol=1; unmasked |L(X,t)| for X=30,300,3000,30000,300000: 5.77e-01, 1.66e+00, 6.61e-01, 7.06e-02, 2.66e-03
+mask primes: [(1, 3), (-2, -3), (4, 3), (1, -3), (-5, 0)] [7, 7, 13, 13, 25]
+RESULT|4b-inclusion-exclusion|PASS|err=1.57e-13 tol=1e-09; masked sum = sum_{d|R} mu(d) alpha(d)^e theta(d) N(d)^{it} L^0(X/N(d))
+RESULT|4b-masked-bounded|PASS|err=3.28 tol=32; masked |L| <= (number of divisors of R) x O(1); max 3.28
+   finite-order: product/sqrt(T) = 13.1, centered difference/sqrt(T) = 0.0442
+   finite-order: product/sqrt(T) = 13.1, centered difference/sqrt(T) = 0.0517
+   finite-order: product/sqrt(T) = 13.1, centered difference/sqrt(T) = 3.03e-16
+RESULT|4c-centered|PASS|err=6.25e-06 tol=0.001; CM: T^{-1/2}|L(U1)L(U2) - L(V1)L(V2)| is tiny (no main term to cancel), T = 9e6
+      falsifier for 4c-centered [finite-order uncentered product has size T^{1/2}]: err=13.1 -> fails as required
+SUMMARY: 24 checks, 0 failures

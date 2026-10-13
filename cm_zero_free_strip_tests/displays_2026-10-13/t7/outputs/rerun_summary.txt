@@ -1,0 +1,10 @@
+s2/t1_theta_fe: exit 0, 31 s
+s2/t2_growth: exit 0, 167 s
+s2/t3_reflection: exit 0, 395 s
+s2/t4_conductors: exit 0, 0 s
+s3/t1_labels: exit 0, 4 s
+s3/t2_conductors: exit 0, 21 s
+s3/t3_fe: exit 0, 22 s
+s3/t4_gamma: exit 0, 23 s
+s3/t5_citations: exit 0, 1 s
+rerun_existing: overall exit 0

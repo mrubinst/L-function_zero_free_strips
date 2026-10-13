@@ -1,0 +1,12 @@
+t1_dual_profile: SUMMARY: 13 checks, 0 failures
+-- exit 0, failure lines 0
+t2_hankel: SUMMARY: 21 checks, 0 failures
+-- exit 0, failure lines 0
+t3_reflection: SUMMARY: 119 checks, 0 failures
+-- exit 0, failure lines 0
+t4_lattice: SUMMARY: 24 checks, 0 failures
+-- exit 0, failure lines 0
+t5_row_reflection: SUMMARY: 23 checks, 0 failures
+-- exit 0, failure lines 0
+t6_kappa: SUMMARY: 4 checks, 0 failures
+-- exit 0, failure lines 0

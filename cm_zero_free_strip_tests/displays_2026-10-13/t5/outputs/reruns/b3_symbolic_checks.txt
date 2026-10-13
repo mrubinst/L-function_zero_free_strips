@@ -1,0 +1,27 @@
+(1) mode Mellin, two derivatives: worst rel err 9.95e-41
+(2) J constant ratio simplifies to 1: 1
+(3) assembly constant ratio: 1
+    numeric t= 0.3 (0.9999999999999998+0j)
+    numeric t= (1.7+2j) (0.9999999999999992+1.3552527156068805e-20j)
+    numeric t= (-0.4+5j) (1+1.3552527156068805e-20j)
+(4) c^-4 N(c)^2 vs conj(alpha(c))^4: 1.62e-41
+    substitution check rel err 1.31e-41
+    substitution check rel err 4.76e-42
+(5) 0 0 0
+(6) eta=-0.25: growth exponent -0.9999999 vs 4eta=-1.0
+(6) eta=0: growth exponent 0.0 vs 4eta=0
+(6) eta=0.5: growth exponent 1.9999998 vs 4eta=2.0
+(6) eta=2: growth exponent 7.999998 vs 4eta=8
+(6) eta=5: growth exponent 19.99998 vs 4eta=20
+(7) alpha(lambda^-3)= (0.0 + 1.0j)  conj^2= (-1.0 + 0.0j)  3^{5/2}/27^{1/2}= 3.0
+j=1: generic-F chain rule at z=zbar=0: True
+j=2: generic-F chain rule at z=zbar=0: True
+j=3: generic-F chain rule at z=zbar=0: True
+dz'   : True True
+dzbar': True True
+dv'   : True True
+(8) sigma_2=-1: exponent 5.999999 vs 2-4sigma_2=6
+(8) sigma_2=-0.5: exponent 3.999999 vs 2-4sigma_2=4.0
+(8) sigma_2=-0.1: exponent 2.4 vs 2-4sigma_2=2.4
+(9) lambda^2/72*8*lambda^2 = 1
+EXIT STATUS 0: all 26 checks passed

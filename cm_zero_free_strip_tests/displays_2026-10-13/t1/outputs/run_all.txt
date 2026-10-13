@@ -1,0 +1,28 @@
+== t1_pointcount_steps: exit 0, failure lines 0, 0 s
+[PASS] eq:d013 (3.11) T1-P1: 188 pairs (p, pi), 7<=p<1200, all residues: chi^2 = cubic symbol t^((p-1)/3) mod pi (values in mu_3), chi^3 = Legendre (t/p), kappa
+[PASS] eq:d014 (3.12) T1-P2: 188 pairs (p, pi): #{y:y^2=U} = 1+rho(U) and #{x:x^3=V} = 1+kappa(V)+conj kappa(V) exactly for every U, V in F_p; failures 0, 0; fa
+[PASS] eq:d016 (3.15) T1-P3: 188 pairs (p, pi), exact in Z[omega]: #{t:t^2-t+a=0} = 1+rho(1-4a) (failures 0); J(k,k) = sum k(a)(1+rho(1-4a)) (0) = sum k(a)rho(1
+[PASS] eq:b1-S (3.16) T1-P4: 11252 triples (p, pi, d), 7<=p<1200, 0<|d|<=30, p not | d, exact in Z[omega]: S = -rho(d)kappa(4d)pi (failures 0) and brute-force a
+== t1_euler_chain: exit 0, failure lines 0, 1 s
+[PASS] eq:b1-euler (3.17) T1-E1: 7 values of d (incl. non-minimal 320=5*2^6), s in {3, 2.5+4i}, X=20000: all five members agree; max err/tol = 1.89e-04; falsifi
+== t1_mellin: exit 0, failure lines 0, 7 s
+[PASS] eq:d030 (6.4) T1-M1: d in {1,7,-3}, sigma in {1.5,2,3}, m <= 3000, weight bump(1,2) e^{iy}: D-integral of the sum = sum times y-integral, max rel err 5.1
+[PASS] eq:d031 (6.5) T1-M2: d in {1,7,16}, s in {3, 2.2+5i}, two complex weights, F_W from direct D-quadrature of S_d(D) (D <= 6000), L and B_d from PARI: max r
+== t1_sizes: exit 0, failure lines 0, 2 s
+[PASS] eq:d023 (5.8) T1-S1: sympy: (|4d|^10)^(1/12) = |4d|^(5/6) exactly; falsifier |4d|^(5/12) | falsifier detected
+[PASS] eq:d023 (5.8) T1-S2: sympy: first term = D^(1+theta/2) Y^(-1/2) exactly; Y<7 gives first term > D^(1+theta/2)/sqrt7 >= D/sqrt7 on a grid of 72 (D, theta,
+[PASS] eq:d023 (5.8) T1-S3a: explicit trivial bound |S_d(D)| <= (1+8bD)||W||_inf (Lemma b1-extract(i)) for 60 values of d, D in [100, 1000, 10000] (violations 0
+[SANITY] eq:d023 (5.8) T1-S3b: max |S_d(D)|/(N_0^(1/12)D^(11/12+5theta/12)+N_0^(1/6)D^(5/6-theta/6)), theta=0.1, eps=0, 0<|d|<=30: D=100: 4.22e-03, D=1000: 1.16
+== A_t0_intro: exit 0, failure lines 0, 1 s
+== A_t2_integer: exit 0, failure lines 0, 44 s
+== A_t3_lattice: exit 0, failure lines 0, 8 s
+== A_t4_average: exit 0, failure lines 0, 4 s
+== A_t5_sixth: exit 0, failure lines 0, 7 s
+== B_t1_zeros: exit 0, failure lines 0, 5 s
+== b1_points: exit 0, failure lines 0, 13 s
+== b1_extract: exit 0, failure lines 0, 1 s
+== b1_bd: exit 0, failure lines 0, 0 s
+== r1_extraction_rows: exit 0, failure lines 0, 1 s
+== lean_hecke_identity: exit 0, failure lines 0, 2 s
+re-run of existing tests: total 86 s, overall status 0
+agent t1: total 96 s, overall status 0

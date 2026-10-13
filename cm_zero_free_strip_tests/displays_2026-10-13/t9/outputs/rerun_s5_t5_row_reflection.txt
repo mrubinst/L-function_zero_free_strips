@@ -1,0 +1,29 @@
+--- psi=chi_p7 chi_p13^6, e=+1: N(f_k)=63, N(g_k)=63, r_k norms=[4, 13], R_0k norms=[4, 13]
+RESULT|5-psi=chi_p7 chi_p13^6, e=+1-conductor-bound|PASS|err=0 tol=0; C_k N(r_k) = 248.946 <= 27 C_k^fin N(R_0k) = 6721.546
+RESULT|5-psi=chi_p7 chi_p13^6, e=+1-reflection|PASS|err=1.08e-15 tol=1e-09; OAI78 L12736-12744 in CM form: deleted/restored factors, C_k, r_k, eps(xi_k)
+      falsifier for 5-psi=chi_p7 chi_p13^6, e=+1-reflection [J_0 dual profile]: err=0.172 -> fails as required
+RESULT|5-psi=chi_p7 chi_p13^6, e=+1-mask-deletion|PASS|err=2.78e-17 tol=1e-10; (2.1a): S_{k,R}(X) = sum_{d|R} mu(d) alpha(d)^e psi_k^0(d) N(d)^{-1/2} T_k(X/N d)
+--- psi=chi_p7 chi_p13^6, e=-1: N(f_k)=7, N(g_k)=63, r_k norms=[3, 4, 13], R_0k norms=[4, 13]
+RESULT|5-psi=chi_p7 chi_p13^6, e=-1-conductor-bound|PASS|err=0 tol=0; C_k N(r_k) = 82.982 <= 27 C_k^fin N(R_0k) = 6721.546
+RESULT|5-psi=chi_p7 chi_p13^6, e=-1-reflection|PASS|err=1.02e-15 tol=1e-09; OAI78 L12736-12744 in CM form: deleted/restored factors, C_k, r_k, eps(xi_k)
+      falsifier for 5-psi=chi_p7 chi_p13^6, e=-1-reflection [OAI78's finite-order C_k and R_0k]: err=0.342 -> fails as required
+      falsifier for 5-psi=chi_p7 chi_p13^6, e=-1-reflection [J_0 dual profile]: err=0.305 -> fails as required
+RESULT|5-psi=chi_p7 chi_p13^6, e=-1-mask-deletion|PASS|err=0 tol=1e-10; (2.1a): S_{k,R}(X) = sum_{d|R} mu(d) alpha(d)^e psi_k^0(d) N(d)^{-1/2} T_k(X/N d)
+--- psi=(./2)_3 chi_p19^2 chi_p7^3, e=+1: N(f_k)=4788, N(g_k)=4788, r_k norms=[], R_0k norms=[]
+RESULT|5-psi=(./2)_3 chi_p19^2 chi_p7^3, e=+1-conductor-bound|PASS|err=0 tol=0; C_k N(r_k) = 363.844 <= 27 C_k^fin N(R_0k) = 9823.798
+RESULT|5-psi=(./2)_3 chi_p19^2 chi_p7^3, e=+1-reflection|PASS|err=4.19e-16 tol=1e-09; OAI78 L12736-12744 in CM form: deleted/restored factors, C_k, r_k, eps(xi_k)
+      falsifier for 5-psi=(./2)_3 chi_p19^2 chi_p7^3, e=+1-reflection [J_0 dual profile]: err=0.14 -> fails as required
+RESULT|5-psi=(./2)_3 chi_p19^2 chi_p7^3, e=+1-mask-deletion|PASS|err=5.72e-17 tol=1e-10; (2.1a): S_{k,R}(X) = sum_{d|R} mu(d) alpha(d)^e psi_k^0(d) N(d)^{-1/2} T_k(X/N d)
+--- psi=chi_p31^5, e=-1: N(f_k)=31, N(g_k)=279, r_k norms=[3, 4], R_0k norms=[4]
+RESULT|5-psi=chi_p31^5, e=-1-conductor-bound|PASS|err=0 tol=0; C_k N(r_k) = 28.269 <= 27 C_k^fin N(R_0k) = 2289.757
+RESULT|5-psi=chi_p31^5, e=-1-reflection|PASS|err=1.26e-15 tol=1e-09; OAI78 L12736-12744 in CM form: deleted/restored factors, C_k, r_k, eps(xi_k)
+      falsifier for 5-psi=chi_p31^5, e=-1-reflection [OAI78's finite-order C_k and R_0k]: err=0.342 -> fails as required
+      falsifier for 5-psi=chi_p31^5, e=-1-reflection [J_0 dual profile]: err=0.345 -> fails as required
+RESULT|5-psi=chi_p31^5, e=-1-mask-deletion|PASS|err=2.78e-17 tol=1e-10; (2.1a): S_{k,R}(X) = sum_{d|R} mu(d) alpha(d)^e psi_k^0(d) N(d)^{-1/2} T_k(X/N d)
+--- psi=(./2)_3 chi_p13^4, e=-1: N(f_k)=468, N(g_k)=52, r_k norms=[], R_0k norms=[3]
+RESULT|5-psi=(./2)_3 chi_p13^4, e=-1-conductor-bound|PASS|err=0 tol=0; C_k N(r_k) = 35.564 <= 27 C_k^fin N(R_0k) = 320.074
+RESULT|5-psi=(./2)_3 chi_p13^4, e=-1-reflection|PASS|err=3.93e-16 tol=1e-09; OAI78 L12736-12744 in CM form: deleted/restored factors, C_k, r_k, eps(xi_k)
+      falsifier for 5-psi=(./2)_3 chi_p13^4, e=-1-reflection [OAI78's finite-order C_k and R_0k]: err=0.241 -> fails as required
+      falsifier for 5-psi=(./2)_3 chi_p13^4, e=-1-reflection [J_0 dual profile]: err=0.201 -> fails as required
+RESULT|5-psi=(./2)_3 chi_p13^4, e=-1-mask-deletion|PASS|err=7.85e-17 tol=1e-10; (2.1a): S_{k,R}(X) = sum_{d|R} mu(d) alpha(d)^e psi_k^0(d) N(d)^{-1/2} T_k(X/N d)
+SUMMARY: 23 checks, 0 failures

@@ -1,0 +1,36 @@
+RESULT|helper|PASS|err=2.37e-15 tol=1e-12; vectorized gamma_j = brute-force gamma_j (common.py) for 29 n, j = -1, 1, 2, 3
+RESULT|eq:b2-g1g2|PASS|err=2.39e-15 tol=1e-11; 150 squarefree n (53 composite), N(n) <= 529
+      falsifier for eq:b2-g1g2 [alpha(n) in place of conj(alpha(n))]: err=2 -> fails as required
+      falsifier for eq:b2-g1g2 [Moebius sign dropped]: err=2 -> fails as required
+RESULT|gamma_j-unimodular|PASS|err=7.77e-16 tol=1e-11; |gamma_j(n)| = 1 for j = +-1, 2, 3, 4, 5 and the same 149 n (text before eq:b2-g1g2)
+RESULT|eq:b2-crt|PASS|err=2.33e-15 tol=1e-11; 83 coprime squarefree pairs, N(z1 z2) <= 5000, brute-force Gauss sums mod z1 z2; both directions; R(z1,z2) = chi_z2(z1)/chi_z1(z2) is +-1 (38 pairs with R = -1)
+      falsifier for eq:b2-crt [R(z1,z2) dropped]: err=2 -> fails as required
+      falsifier for eq:b2-crt [gamma_1(z1) gamma_-1(z2) (directions swapped)]: err=2 -> fails as required
+RESULT|eq:b2-two|PASS|err=2.4e-15 tol=1e-11; both identities, 150 squarefree n (errors 1.8e-15, 2.4e-15)
+      falsifier for eq:b2-two [G(n) for conj(G(n)) in the first]: err=2 -> fails as required
+      falsifier for eq:b2-two [a^zeta unconjugated in the second]: err=2 -> fails as required
+RESULT|eq:d040|PASS|err=1.79e-15 tol=1e-11; both equalities, 83 pairs (first 1.8e-15, second 1.3e-15); G(z2 z1^-1) on classes
+      falsifier for eq:d040 [G(z1 z2^-1) on the right]: err=1.73 -> fails as required
+      falsifier for eq:d040 [chi_z1(-1) dropped from the middle]: err=2 -> fails as required
+RESULT|eq:d041|PASS|err=2.48e-15 tol=1e-11; both identities, 149 squarefree n != 1 (errors 2.5e-15, 1.9e-15)
+      falsifier for eq:d041 [alpha for conj(alpha) on the right of the first]: err=2 -> fails as required
+      falsifier for eq:d041 [conj(alpha) for alpha on the right of the second]: err=2 -> fails as required
+RESULT|eq:d042|PASS|err=1.02e-14 tol=1e-11; 83 pairs x 6 characters xi of frak G (trivial + 5 random)
+      falsifier for eq:d042 [(xi G)(z2 z1^-1) on the right]: err=2 -> fails as required
+RESULT|eq:d039|PASS|err=3.41e-14 tol=1e-11; all 432 x 432 coefficients: expansions reproduce xi1(t)G(t^-1) and (xi G)(t) for all t (3.4e-14, 3.4e-14); c_xi(1) = c_xi (2.9e-16); max |c|, |l| = 0.500 <= 1
+      falsifier for eq:d039 [c_xi(xi1) computed with G(t) for G(t^-1)]: err=1.73 -> fails as required
+RESULT|eq:d037|PASS|err=1.04e-14 tol=1e-11; c_xi from its definition (independent table, basis orders [12, 6, 6]): sum_xi c_xi xi(t) = G(t^-1) for all 432 t; sum c_xi = G(1) = 1; max |c_xi| = 0.500
+RESULT|eq:b2-forward|PASS|err=1.67e-14 tol=1e-10; 60 pairs x 4 characters xi1 (incl. trivial), literal sum over the 432 xi with c_xi(xi1)
+      falsifier for eq:b2-forward [zeta coefficients conj(alpha) gamma_2 in a_xi]: err=2 -> fails as required
+      falsifier for eq:b2-forward [xi1 conjugated on the wrong column]: err=2 -> fails as required
+RESULT|eq:b2-reverse|PASS|err=1.32e-14 tol=1e-10; 60 pairs x 4 characters xi, literal sum over the 432 xi1 with l_xi1(xi), beta = mu conj(alpha) xi1
+      falsifier for eq:b2-reverse [beta = mu xi1 (no conj(alpha), zeta form)]: err=2 -> fails as required
+RESULT|eq:b2-twisted|PASS|err=1.51e-14 tol=1e-11; 120 coprime squarefree pairs (N(ab) <= 6000) x 6 characters xi: twisted multiplicativity and |a_xi| = 1
+      falsifier for eq:b2-twisted [chi_b(a)^2 in place of chi_b(a)^4]: err=1.73 -> fails as required
+RESULT|eq:d038|PASS|err=1.51e-14 tol=1e-11; same data as eq:b2-twisted with (v0, n) = (a, b)
+RESULT|eq:d044|PASS|err=4e-16 tol=1e-12; 72 triples (g, z1, z2), g squarefree with 0-2 primes, (g, z1 z2) = (z1, z2) = 1
+      falsifier for eq:d044 [alpha(n1) alpha(n2) = alpha(z1) alpha(z2) (no conjugation)]: err=2 -> fails as required
+RESULT|eq:d046|PASS|err=1.12e-14 tol=1e-10; 72 triples (69 with g != 1, incl. z1 = 1 and z1 = z2 = 1), literal sum over the 432 xi; z1 = z2 = 1: sum c_xi = G(1) = 1 (err 4.1e-15)
+      falsifier for eq:d046 [zeta coefficients conj(alpha) gamma_2 on the right]: err=2 -> fails as required
+      falsifier for eq:d046 [alpha(n1) conj(alpha(n2)) on the left]: err=2 -> fails as required
+t2a done in 0.3 s

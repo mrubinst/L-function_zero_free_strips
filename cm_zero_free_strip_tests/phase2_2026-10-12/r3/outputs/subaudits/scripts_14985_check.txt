@@ -1,0 +1,23 @@
+E1-E2 = 0
+C(7/8)= 3/16  C(s)-s = -11/16
+B0= 53/32
+floor: -7/1200
+small margin: -79/800  +2/100: -63/800
+63/50 = 1+3/5-17/50: 63/50
+Rshort-L = 0
+Estar formula check: 0
+Dx: 0  Px: 0  J: 0
+quadratic: 0 0
+certificate identity: 0
+min -E* on grid: 0.00022829151618832325 (0.3875, 0.5)  49/440640= 0.00011120188816267247
+capacity comparison: 0
+bound at q=1/2, m=1/3, 9/2+12Delta>=4 ->  1/4
+1-h/4 = 51/64
+E(h) with R=1-delta, q=delta/2: -delta/16 - 1/48
+slope R+delta/2-17/50 with R=1-delta: 33/50 - delta/2
+E(1/2) intermediate: 25*delta/96 - 529/2400  at 5/6: -49/14400  root: [529/625] 0.8464
+R_*<=17/12 bound: 104/75  17/12= 17/12  +1/96: 137/96 139/96= 139/96
+139/96+1/2-17/50 = 3859/2400
+8/39-7/37 = 23/1443  1/5-7/37= 2/185  5ell-h = 1/48  ell/h= 8/39
+small rows margin -79/800+2/100 = -63/800
+m_w, m_z: 23/960 13/9600

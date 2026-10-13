@@ -1,0 +1,13 @@
+[SANITY] A4.01 (l.378) [A] H=1000: rows/H=3.6420; H=10000: rows/H=3.6294; H=100000: rows/H=3.6280; H=1000000: rows/H=3.6276; X=1000: #columns(N<=X)/X=0.3030; X=10000: #columns(N<=X)/X=0.3027; X=100000: #columns(N<=X)/X=0.3024 (limits 2pi/sqrt3=3.6276, 2pi/sqrt3/12=0.3023)
+[PASS] A4.02 (l.379-402, eq:coordinates, eq:double) [E] coordinate column set = primary coprime to 6 on |A|,|B|<=200; literal coordinate M = double-sum M for (D,H)=(25,150),(40,300),(60,200): max rel err 1.4e-15; falsifiers (alpha(n1) unconjugated / chi_n1 unconjugated): rel err 0.43 / 0.95 | falsifier detected
+[PASS] A4.03 (l.403-405) [E] max err 3.3e-16 on 2000 pairs | falsifier detected
+[PASS] A4.04 (l.408-411) [E] A_u(D) = sum_m q_u(m)W(m/D), 5 rows, D<=3000: max err 1.4e-14 | falsifier detected
+[PASS] A4.05 (l.412-425, eq:allrows) [E] 30 rows, 810 (u,p) local checks (p<=109), multiplicativity, vanishing at 2,3 and p^3,p^4, reduction to eq:qd at u_7; falsifiers (+sign at split p: 387, -chi at inert p^2: 414, non-coprime product: 22) | falsifier detected
+[PASS] A4.06 (l.426-427) [E] p=7: chi_pi(u) != conj chi_pibar(u) for 3 of 5 rows; q_u(7) takes 5 values while mu, chi_-3 are fixed | falsifier detected
+[SANITY] A4.07 (l.430-437, eq:MS) [A] theta=0.1: D=100: M/D^2.1=0.2872 (rows 582, cols 28); D=200: M/D^2.1=0.2734 (rows 1236, cols 52); D=400: M/D^2.1=0.2746 (rows 2646, cols 119); D=800: M/D^2.1=0.2793 (rows 5646, cols 224); D=1600: M/D^2.1=0.2713 (rows 12120, cols 453)
+[UNTESTED] A4.07b (l.437-439) [A] dependence of the constant on finitely many derivatives of W; d-independence (structural remark, not finitely testable)
+[PASS] A4.08 (l.441-443) [E] 150 columns, H=20000: S_H(n,n) = #coprime u <= #rows = 72564 | falsifier detected
+[SANITY] A4.09 (l.445-451) [A] max |S_H(n,n) - main|/(tau(n)(sqrt H+1)) = 0.347 over 62 columns x H in 1e3..4e5 (bounded; without the Euler product the ratio reaches 93.2)
+[PASS] A4.10 (l.451-452) [I] covolume of Z[omega] = sqrt(3)/2; pi H / covolume = 2 pi H/sqrt3 | falsifier detected
+[SANITY] A4.11 (l.452-453) [A] D=100: diag/(HD)=0.2888; D=400: diag/(HD)=0.2712; D=1600: diag/(HD)=0.2736
+[UNTESTED] A4.12 (l.453-455) [A] remark on what (MS) bounds (whole off-diagonal, not termwise) -- not a numerical claim

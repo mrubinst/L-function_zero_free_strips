@@ -1,0 +1,9 @@
+   9062 good primary n with q_n <= 30000 (0s)
+[PASS] T7-D6 eq:d165 L_orig(s,phi) = prod_p (1 - phi(p) q_p^-s)^-1 and 1/L_orig = sum mu(n) phi(n) q_n^-s :: 4 members (finite/CM, sigma = +-1) x 2 s, q_n <= 30000: max error 4.1e-10; falsifiers: (1 + phi(p)q^-s)^-1 min error 5.28e-03, mu omitted min error 5.29e-03 [falsifier failed as required]
+   theta=1, sigma=-1: f0 exponents [2, 2, 1, 1], N(m) = 13104
+   chi(lam), sigma=-1: f0 exponents [2, 4, 1, 1], N(m) = 117936
+   chi(2)chi(-1), sigma=+1: f0 exponents [3, 2, 1, 1], N(m) = 52416
+   chi(lam)^3 chi(2)^2 chi(-1), sigma=+1: f0 exponents [1, 1, 1, 1], N(m) = 3276
+[PASS] T7-D9 eq:d167 phi((a)) = alpha(a')^sigma phi0*((a)) = (a/|a|)^sigma eps_a^-sigma phi0f(a): well defined, type (z/|z|)^sigma, = CM member :: 4 finite-order phi_0 (sigma = +-1) x 400 random a: alpha(a') identity 6.5e-16; eps_a mod-3/multiplicative failures 0; phi0f mod f0 4.6e-15; two expressions and generator independence 6.7e-16; x = 1 mod m: 6.8e-15; = CM member 2.5e-16; falsifiers (generator dependence, min over a with a nonzero value): eps^(+sigma) 1.73, no eps 2.00 [falsifier failed as required]
+time 2.2s
+SUMMARY: 2 PASS, 0 FAIL

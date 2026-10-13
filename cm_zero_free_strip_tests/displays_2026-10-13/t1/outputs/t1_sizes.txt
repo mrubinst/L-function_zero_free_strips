@@ -1,0 +1,5 @@
+[PASS] eq:d023 (5.8) T1-S1: sympy: (|4d|^10)^(1/12) = |4d|^(5/6) exactly; falsifier |4d|^(5/12) | falsifier detected
+[PASS] eq:d023 (5.8) T1-S2: sympy: first term = D^(1+theta/2) Y^(-1/2) exactly; Y<7 gives first term > D^(1+theta/2)/sqrt7 >= D/sqrt7 on a grid of 72 (D, theta, Y) (violations 0); falsifier "> D^(1+theta/2)" holds only in 27/72 | falsifier detected
+[PASS] eq:d023 (5.8) T1-S3a: explicit trivial bound |S_d(D)| <= (1+8bD)||W||_inf (Lemma b1-extract(i)) for 60 values of d, D in [100, 1000, 10000] (violations 0)
+[SANITY] eq:d023 (5.8) T1-S3b: max |S_d(D)|/(N_0^(1/12)D^(11/12+5theta/12)+N_0^(1/6)D^(5/6-theta/6)), theta=0.1, eps=0, 0<|d|<=30: D=100: 4.22e-03, D=1000: 1.16e-03, D=10000: 1.13e-03 (max at d,D=(-1, 100))
+SUMMARY: 3 checks, 0 failed

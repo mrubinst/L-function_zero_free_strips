@@ -1,0 +1,5 @@
+[PASS] T7-C7 eq:d151 Fourier transform of the Gaussian with e(z) = exp(4 pi i Im z/sqrt3) :: symbolic (sympy) equality: True; quadrature at 5 (v, eta): max rel. error 2.44e-25; falsifier e(z)=exp(2 pi i Im z): min rel. error 2.25 [falsifier failed as required]
+[PASS] T7-C8a proof of lem:s2-fe(i) d/d(conj eta) e(-w eta) = (2 pi/sqrt3) conj(w) e(-w eta) :: symbolic: True
+[PASS] T7-C8b eq:d152 Ghat(eta) = (sqrt3/2pi) dbar(...) = -sqrt3/(2v^2) eta exp(-2 pi|eta|^2/(sqrt3 v)) :: second equality symbolic: True; quadrature of int conj(w) e^(-2 pi v|w|^2/sqrt3) e(-w eta) at 5 (v, eta): max error 2.03e-25 (relative; absolute at eta = 0); falsifiers: d/d eta symbolic equality False, conj(eta) min rel. error 0.683, sign + min rel. error 2.0 [falsifier failed as required]
+time 0.8s
+SUMMARY: 3 PASS, 0 FAIL

@@ -1,0 +1,5 @@
+RESULT|s6-T1|PASS|err=2.58e-15 tol=1e-12; twisted reduction M_D = Z + sum_xi c_xi(conj nu) S_xi, D=120, H=170: 33 columns, 102 (r0,f) pairs; M_D=0.0060595422, Z=0.006434
+      falsifier for s6-T1 [nu(m1) conj nu(m2)]: err=0.124 -> fails as required
+      falsifier for s6-T1 [no twist on dual side]: err=0.082 -> fails as required
+      falsifier for s6-T1 [r0, f not restricted to be coprime to pi13]: err=0.00548 -> fails as required
+      falsifier for s6-T1 [zeta coefficients]: err=0.0738 -> fails as required

@@ -1,0 +1,10 @@
+[PASS] b4_checks: exit 0, 9 required ids (all PASS), 7 falsifiers failed as required, 0 failure lines, 18 s
+[PASS] t2_poisson: exit 0, 1 required ids (all PASS), 11 falsifiers failed as required, 0 failure lines, 76 s
+[PASS] t3_gauss: exit 0, 1 required ids (all PASS), 12 falsifiers failed as required, 0 failure lines, 3 s
+[PASS] t3_sec10_new: exit 0, 12 required ids (all PASS), 7 falsifiers failed as required, 0 failure lines, 6 s
+[PASS] t4_theta: exit 0, 2 required ids (all PASS), 13 falsifiers failed as required, 0 failure lines, 11 s
+[PASS] t5_reflection_j2: exit 0, 2 required ids (all PASS), 5 falsifiers failed as required, 0 failure lines, 129 s
+[PASS] t7_descent: exit 0, 18 required ids (all PASS), 7 falsifiers failed as required, 0 failure lines, 6 s
+[PASS] test_sec10_descent: exit 0, 16 required ids (all PASS), 7 falsifiers failed as required, 0 failure lines, 6 s
+wall clock 130 s
+ALL PASS

@@ -1,0 +1,13 @@
+Z=100 Q=12.5 (42 rows): sum|C|^2 = 0.2175, ratio to Q+Q^2/Z = 0.015; worst O-dyad ratio 0.015
+Z=100 Q=50 (186 rows): sum|C|^2 = 0.9918, ratio to Q+Q^2/Z = 0.013; worst O-dyad ratio 0.016
+Z=100 Q=100 (366 rows): sum|C|^2 = 2.122, ratio to Q+Q^2/Z = 0.011; worst O-dyad ratio 0.018
+Z=100 Q=200 (732 rows): sum|C|^2 = 4.222, ratio to Q+Q^2/Z = 0.007; worst O-dyad ratio 0.008
+Z=100 Q=800 (2904 rows): sum|C|^2 = 17.67, ratio to Q+Q^2/Z = 0.002; worst O-dyad ratio 0.002
+[0.4 s]
+Z=300 Q=37.5 (138 rows): sum|C|^2 = 0.9059, ratio to Q+Q^2/Z = 0.021; worst O-dyad ratio 0.020
+Z=300 Q=150 (546 rows): sum|C|^2 = 3.528, ratio to Q+Q^2/Z = 0.016; worst O-dyad ratio 0.019
+Z=300 Q=300 (1074 rows): sum|C|^2 = 7.147, ratio to Q+Q^2/Z = 0.012; worst O-dyad ratio 0.019
+Z=300 Q=600 (2172 rows): sum|C|^2 = 13.73, ratio to Q+Q^2/Z = 0.008; worst O-dyad ratio 0.009
+Z=300 Q=2400 (8688 rows): sum|C|^2 = 56.07, ratio to Q+Q^2/Z = 0.003; worst O-dyad ratio 0.002
+[3.5 s]
+PASS time 3.5 s

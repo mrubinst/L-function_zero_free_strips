@@ -1,0 +1,152 @@
+[
+ {
+  "labels": [
+   "eq:intro-curve"
+  ],
+  "numbers": [
+   "0.1"
+  ],
+  "page": "",
+  "line": 52,
+  "section": "front",
+  "subsection": "Introduction",
+  "source": "\\begin{equation}\\label{eq:intro-curve}\n E_d\\colon y^2=x^3+d,\\qquad d\\in\\mathbb Z\\setminus\\{0\\}.\n\\end{equation}",
+  "before": "he original arguments are cited. Part~II also uses the ideas from OpenAI's finite-order $7/8$\ntheorem.\nHigher-weight and symmetric-power extensions are discussed; more general CM forms are the subject of a second paper.\n\\end{abstract}\n\n\\section*{Introduction}\n\nWe study the family of elliptic curves\n",
+  "after": "\nThe discriminant of this equation is\n$-432d^2$, so the curve is nonsingular when $d\\ne0$. Its $j$-invariant is $0$.\nWe fix $d$ throughout Part~I; the larger family that we average over will be a family of character twists.\n\n\\paragraph{Complex multiplication.}\nEvery elliptic curve has the multiplica"
+ },
+ {
+  "labels": [
+   "eq:intro-cm-map"
+  ],
+  "numbers": [
+   "0.2"
+  ],
+  "page": "",
+  "line": 63,
+  "section": "front",
+  "subsection": "Introduction",
+  "source": "\\begin{equation}\\label{eq:intro-cm-map}\n (x,y)\\longmapsto(\\omega x,y)\n\\end{equation}",
+  "before": "we average over will be a family of character twists.\n\n\\paragraph{Complex multiplication.}\nEvery elliptic curve has the multiplication maps $P\\mapsto mP$ for integers $m$.\nThese curves have an additional endomorphism. Put\n$\\omega=e^{2\\pi i/3}$ and $K=\\mathbb Q(\\omega)=\\mathbb Q(\\sqrt{-3})$. The map\n",
+  "after": "\npreserves the equation and fixes the point at infinity. The full ring of endomorphisms over\n$\\overline{\\mathbb Q}$ is $\\OO$, the ring of Eisenstein integers, rather than just $\\mathbb Z$.\nThis is what \\emph{complex multiplication}, or CM, means here~\\cite{SilATAEC,Deuring}; the additional maps\nare "
+ },
+ {
+  "labels": [
+   "eq:intro-ap"
+  ],
+  "numbers": [
+   "0.3"
+  ],
+  "page": "",
+  "line": 77,
+  "section": "front",
+  "subsection": "Introduction",
+  "source": "\\begin{equation}\\label{eq:intro-ap}\n a_p(d)=-\\sum_{x=0}^{p-1}\\left(\\frac{x^3+d}{p}\\right).\n\\end{equation}",
+  "before": "\n\\paragraph{Point counts and the $L$-function.}\nAt a prime of good reduction, let $\\widetilde E_d$ be the reduction of a minimal model and set\n$a_p(d)=p+1-\\#\\widetilde E_d(\\mathbb F_p)$, counting the point at infinity.\nIn particular, at $p\\nmid6d$ the displayed equation is already a good model, and\n",
+  "after": "\nHere the Legendre symbol is $1$ for a nonzero square, $-1$ for a nonsquare, and $0$ at zero.\nSo $a_p(d)$ measures the deviation of the point count from $p+1$.\nHasse's bound gives $|a_p(d)|\\le2\\sqrt p$~\\cite{Has36,SilAEC}.\n\nThe $L$-function packages these counts into an Euler product and a Dirichlet"
+ },
+ {
+  "labels": [
+   "eq:intro-L"
+  ],
+  "numbers": [
+   "0.4"
+  ],
+  "page": "",
+  "line": 85,
+  "section": "front",
+  "subsection": "Introduction",
+  "source": "\\begin{equation}\\label{eq:intro-L}\n L(E_d,s)=\\prod_p L_p(E_d,s)=\\sum_{m\\ge1}\\frac{a_m(E_d)}{m^s}.\n\\end{equation}",
+  "before": " Legendre symbol is $1$ for a nonzero square, $-1$ for a nonsquare, and $0$ at zero.\nSo $a_p(d)$ measures the deviation of the point count from $p+1$.\nHasse's bound gives $|a_p(d)|\\le2\\sqrt p$~\\cite{Has36,SilAEC}.\n\nThe $L$-function packages these counts into an Euler product and a Dirichlet series:\n",
+  "after": "\nThe standard local factors for an elliptic curve are\n\\begin{equation}\\label{eq:intro-local}\n L_p(E_d,s)=\n \\begin{cases}\n  (1-a_p(d)p^{-s}+p^{1-2s})^{-1},&\\text{good reduction},\\\\\n  (1-p^{-s})^{-1},&\\text{split multiplicative reduction},\\\\\n  (1+p^{-s})^{-1},&\\text{nonsplit multiplicative reduction},"
+ },
+ {
+  "labels": [
+   "eq:intro-local"
+  ],
+  "numbers": [
+   "0.5"
+  ],
+  "page": "",
+  "line": 89,
+  "section": "front",
+  "subsection": "Introduction",
+  "source": "\\begin{equation}\\label{eq:intro-local}\n L_p(E_d,s)=\n \\begin{cases}\n  (1-a_p(d)p^{-s}+p^{1-2s})^{-1},&\\text{good reduction},\\\\\n  (1-p^{-s})^{-1},&\\text{split multiplicative reduction},\\\\\n  (1+p^{-s})^{-1},&\\text{nonsplit multiplicative reduction},\\\\\n  1,&\\text{additive reduction}.\n \\end{cases}\n\\end{equation}",
+  "before": "ives $|a_p(d)|\\le2\\sqrt p$~\\cite{Has36,SilAEC}.\n\nThe $L$-function packages these counts into an Euler product and a Dirichlet series:\n\\begin{equation}\\label{eq:intro-L}\n L(E_d,s)=\\prod_p L_p(E_d,s)=\\sum_{m\\ge1}\\frac{a_m(E_d)}{m^s}.\n\\end{equation}\nThe standard local factors for an elliptic curve are\n",
+  "after": "\nThe local factors define the coefficients $a_m(E_d)$, with $a_1(E_d)=1$, and the product and series\nconverge absolutely for $\\Re s>3/2$. These are the standard minimal-model factors~\\cite[Appendix~C, \\S16]{SilAEC}.\nFor our $j=0$ curves every bad prime has additive reduction, so its factor is $1$.\nT"
+ },
+ {
+  "labels": [
+   "eq:intro-fe"
+  ],
+  "numbers": [
+   "0.6"
+  ],
+  "page": "",
+  "line": 108,
+  "section": "front",
+  "subsection": "Introduction",
+  "source": "\\begin{equation}\\label{eq:intro-fe}\n \\Lambda(E_d,s)=N_d^{s/2}(2\\pi)^{-s}\\Gamma(s)L(E_d,s),\\qquad\n \\Lambda(E_d,s)=\\epsilon_d\\Lambda(E_d,2-s),\\qquad \\epsilon_d\\in\\{1,-1\\}.\n\\end{equation}",
+  "before": " be the conductor of $E_d$, a positive integer whose prime divisors are exactly the primes of\nbad reduction. Deuring's identification with a Hecke $L$-function, together with Hecke's theory, shows\nthat $L(E_d,s)$ and its completed function extend to entire functions and satisfy~\\cite{Deuring,Hec20}\n",
+  "after": "\nThe sign $\\epsilon_d$ is the \\emph{root number}. The symmetry is about $\\Re s=1$.\nTo put the critical line in the same position as for zeta, we use the shifted function\n$\\mathcal L_d(s)=L(E_d,s+\\frac12)$. Its completed form is\n\\begin{equation}\\label{eq:intro-fe-u}\n \\Lambda^{\\mathrm u}(E_d,s)=N_d^{s"
+ },
+ {
+  "labels": [
+   "eq:intro-fe-u"
+  ],
+  "numbers": [
+   "0.7"
+  ],
+  "page": "",
+  "line": 115,
+  "section": "front",
+  "subsection": "Introduction",
+  "source": "\\begin{equation}\\label{eq:intro-fe-u}\n \\Lambda^{\\mathrm u}(E_d,s)=N_d^{s/2}(2\\pi)^{-s}\\Gamma(s+\\tfrac12)\\mathcal L_d(s),\n \\qquad \\Lambda^{\\mathrm u}(E_d,s)=\\epsilon_d\\Lambda^{\\mathrm u}(E_d,1-s).\n\\end{equation}",
+  "before": "=\\epsilon_d\\Lambda(E_d,2-s),\\qquad \\epsilon_d\\in\\{1,-1\\}.\n\\end{equation}\nThe sign $\\epsilon_d$ is the \\emph{root number}. The symmetry is about $\\Re s=1$.\nTo put the critical line in the same position as for zeta, we use the shifted function\n$\\mathcal L_d(s)=L(E_d,s+\\frac12)$. Its completed form is\n",
+  "after": "\nThus the critical line is now $\\Re s=1/2$, and the Euler product converges absolutely for $\\Re s>1$.\nPart~I proves that $\\mathcal L_d(s)$ has no zeros for $\\Re s>11/12$; Part~II improves this to $\\Re s>7/8$.\nIn the original variable, these are the boundaries $17/12$ and $11/8$.\n\n\\paragraph{Why CM c"
+ },
+ {
+  "labels": [
+   "eq:intro-psi"
+  ],
+  "numbers": [
+   "0.8"
+  ],
+  "page": "",
+  "line": 127,
+  "section": "front",
+  "subsection": "Introduction",
+  "source": "\\begin{equation}\\label{eq:intro-psi}\n \\N(n)=|n|^2,\\qquad \\alpha(n)=\\frac n{|n|},\\qquad\n \\psi_d(n)=\\alpha(n)\\overline{\\left(\\frac{4d}{n}\\right)_6}.\n\\end{equation}",
+  "before": "/8$.\n\n\\paragraph{Why CM connects the curves to the OpenAI method.}\nCM expresses the curve's degree-two Euler product over rational primes as a Hecke Euler product over\n$K$. In this family the character can be written explicitly. For a primary Eisenstein integer\n$n\\equiv1\\pmod3$ coprime to $6d$, put\n",
+  "after": "\nThe sextic residue symbol is a sixth root of unity determined by residues modulo the prime factors of\n$n$; Section~\\ref{sec:lattice} defines it precisely. The ring $\\OO$ has unique factorization, and each\nideal coprime to $3$ has one primary generator, so sums over such $n$ are also sums over ideal"
+ },
+ {
+  "labels": [
+   "eq:intro-hecke"
+  ],
+  "numbers": [
+   "0.9"
+  ],
+  "page": "",
+  "line": 135,
+  "section": "front",
+  "subsection": "Introduction",
+  "source": "\\begin{equation}\\label{eq:intro-hecke}\n \\mathcal L_d(s)=B_d(s)L^{(6d)}(s,\\psi_d),\\qquad\n L^{(6d)}(s,\\psi_d)=\n \\sum_{\\substack{n\\ \\mathrm{primary}\\\\(n,6d)=1}}\n \\frac{\\psi_d(n)}{\\N(n)^s}\\qquad(\\Re s>1).\n\\end{equation}",
+  "before": "dulo the prime factors of\n$n$; Section~\\ref{sec:lattice} defines it precisely. The ring $\\OO$ has unique factorization, and each\nideal coprime to $3$ has one primary generator, so sums over such $n$ are also sums over ideals. With\n$B_d(s)=\\prod_{p\\mid6d}L_p(E_d,s+\\frac12)$, the concrete identity is\n",
+  "after": "\nHere $L^{(6d)}$ means that the Euler factors above primes dividing $6d$ have been deleted.\nSections~\\ref{sec:integer}--\\ref{sec:lattice} prove this identity directly from point counts, including its\nsign and the factor $4$. The finite factor $B_d$ is holomorphic and nonzero for $\\Re s>0$, so this\nd"
+ },
+ {
+  "labels": [
+   "eq:intro-inverse"
+  ],
+  "numbers": [
+   "0.10"
+  ],
+  "page": "",
+  "line": 148,
+  "section": "front",
+  "subsection": "Introduction",
+  "source": "\\begin{equation}\\label{eq:intro-inverse}\n \\frac1{L^{(6d)}(s,\\psi_d)}=\n \\sum_{\\substack{n\\ \\mathrm{primary}\\\\(n,6d)=1}}\n \\frac{\\muk(n)\\alpha(n)\\overline{(4d/n)_6}}{\\N(n)^s}\n =\\sum_{m\\ge1}\\frac{q_d(m)}{m^s}\\qquad(\\Re s>1).\n\\end{equation}",
+  "before": "ctly from point counts, including its\nsign and the factor $4$. The finite factor $B_d$ is holomorphic and nonzero for $\\Re s>0$, so this\ndeletion preserves the zeros under discussion.\n\nTaking the reciprocal introduces the Eisenstein M\\\"obius function $\\muk$, defined by prime\nfactorization in $\\OO$:\n",
+  "after": "\nThe last equality groups the terms by their ordinary integer norm and defines $q_d(m)$.\nThe OpenAI $11/12$ argument~\\cite{OAI1112} estimates analogous M\\\"obius sums in a family of sextic twists\nover this same field. Here the additional factor is $\\alpha(n)=n/|n|$, which records the angle of $n$.\nIt"
+ }
+]

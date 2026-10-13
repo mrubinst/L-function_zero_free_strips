@@ -1,0 +1,16 @@
+setup: B=25000, pi=(1, 3), 8832 squarefree c, 252 translates, 36 h0 classes
+tables: d_0 8132, d_+ 26319, d_- 26319 entries; 4.0 s
+PASS T1 eq:d129 Fourier inversion: 2268 classes x mod 18pi, j=0..5: max err 7.5e-14; |sum_h C(h)| = 5.3e-17; falsifiers: z_h without lambda^2 1.97, e(+hy) in C_pi,j 2.00
+PASS T2 eq:d130 cusp expansions: 11 matrices H (sigma in ['+', '-', '0']), 33 points: max rel err 1.8e-15; falsifier d_+ <-> d_-: 7.65e-02
+PASS T3 eq:s1-automorphy (+eq:d130): 252 translates (sigma=0,+,-; N(c)=1,4,7,28) and 8 cusps with lambda|c, 2 points each: max rel err 2.3e-13 / 7.4e-14; falsifiers kappa (not conj, 250 cases) 1.73, d_+<->d_- 32.58
+PASS T4 eq:s1-cusp, eq:d131: 260 cusps: max rel err 3.6e-13; falsifiers (cv)^-2: 2.00, conj(alpha(l))^2: 78.19
+PASS T5 eq:d132 majorant: 60770 nonzero entries (all sigma), support u lambda^k n b^3 (k>=-4, n sf) violated 0 times; |d| <= 27 3^(k/6)|b| violated 0 times, max ratio 1.0000; units per (k,n,b) <= 6; Re s'=2.0: partial LHS (one sigma) 2.861e+04 <= RHS (truncated, finite) 1.076e+05; Re s'=1.6: partial LHS (one sigma) 1.027e+04 <= RHS (truncated, finite) 5.05e+04; falsifier constant 9: 60770 violations
+[time 17.7 s]
+   j=0: eq:s1-fe at s=-2, -2.5+1.5i done (25.2 s)
+   j=1: eq:s1-fe at s=-2, -2.5+1.5i done (30.9 s)
+   j=4: eq:s1-fe at s=-2, -2.5+1.5i done (36.7 s)
+PASS T6a eq:s1-fe (+eq:s1-dual): j=0,1,4, s=-2,-2.5+1.5i, v0=0.22,0.15: max rel err 1.9e-13 (v0-dependence 8.3e-16); falsifiers conj(alpha(c))^2: 1.96, N(c)^(1-2s): 0.81
+PASS T6b eq:s1-direct by quadrature: j=0,1,4, s=4, 3.5+2i: J_2 by quadrature of f vs (3pi/2)(27/(2pi)^2)^s GG D_2 L_2: max rel err 1.8e-12; falsifiers one-derivative constant 3^(5/2)/4: 0.17, zeta angular powers conj(alpha), conj(alpha)^3: 4.4e-03
+PASS T6c gamma_2 brute force: 108 squarefree n (N(n) <= 400, odd): fast gamma_2 = definition eq:d036 (0 mismatches)
+8 checks, 0 failed; time 47.4 s
+PASS

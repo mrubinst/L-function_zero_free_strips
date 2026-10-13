@@ -1,0 +1,6 @@
+[PASS] E1 d = 7*13*19: for each of the 6 primes pi | d, chi_n(u_d pi^6) = chi_n(u_d) for all 1696 columns with N(n) <= 6000 (max difference 0.0e+00), so A_{u_d pi^6}(D) = A_{u_d}(D) exactly
+      falsifier E1 [pi = (-5, 0) does not divide d]: |A_u0 - A_u0pi^6| = 0.033 -> fails as required
+[PASS] E2 216 cases (d in {1,2,-3,7}, D in {1500,6000}, Y in {30,120,600}, up to 12 primes each): max |A_u0 - A_u0pi^6| / ((1+16b)||W|| D/Y) = 0.022; max count / (1+16bD/Y) = 0.042; the difference equals the sum over pi | n (checked directly in 6 cases)
+      falsifier E2 [count <= bD/(10Y) (sensitivity)]: min count / (bD/(10Y)) = 3.20 -> fails as required
+[PASS] E3 rows u_0 pi^6 pairwise distinct with N = N_0 N(pi)^6 <= N_0 Y^6 in every case
+SUMMARY test_extraction_rows: 5 checks, 0 FAIL

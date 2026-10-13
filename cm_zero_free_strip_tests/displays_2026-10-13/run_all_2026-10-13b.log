@@ -1,0 +1,250 @@
+===== t1: ./run_all.sh
+== t1_pointcount_steps: exit 0, failure lines 0, 1 s
+[PASS] eq:d013 (3.11) T1-P1: 188 pairs (p, pi), 7<=p<1200, all residues: chi^2 = cubic symbol t^((p-1)/3) mod pi (values in mu_3), chi^3 = Legendre (t/p), kappa
+[PASS] eq:d014 (3.12) T1-P2: 188 pairs (p, pi): #{y:y^2=U} = 1+rho(U) and #{x:x^3=V} = 1+kappa(V)+conj kappa(V) exactly for every U, V in F_p; failures 0, 0; fa
+[PASS] eq:d016 (3.15) T1-P3: 188 pairs (p, pi), exact in Z[omega]: #{t:t^2-t+a=0} = 1+rho(1-4a) (failures 0); J(k,k) = sum k(a)(1+rho(1-4a)) (0) = sum k(a)rho(1
+[PASS] eq:b1-S (3.16) T1-P4: 11252 triples (p, pi, d), 7<=p<1200, 0<|d|<=30, p not | d, exact in Z[omega]: S = -rho(d)kappa(4d)pi (failures 0) and brute-force a
+== t1_euler_chain: exit 0, failure lines 0, 1 s
+[PASS] eq:b1-euler (3.17) T1-E1: 7 values of d (incl. non-minimal 320=5*2^6), s in {3, 2.5+4i}, X=20000: all five members agree; max err/tol = 1.89e-04; falsifi
+== t1_mellin: exit 0, failure lines 0, 8 s
+[PASS] eq:d030 (6.4) T1-M1: d in {1,7,-3}, sigma in {1.5,2,3}, m <= 3000, weight bump(1,2) e^{iy}: D-integral of the sum = sum times y-integral, max rel err 5.1
+[PASS] eq:d031 (6.5) T1-M2: d in {1,7,16}, s in {3, 2.2+5i}, two complex weights, F_W from direct D-quadrature of S_d(D) (D <= 6000), L and B_d from PARI: max r
+== t1_sizes: exit 0, failure lines 0, 2 s
+[PASS] eq:d023 (5.8) T1-S1: sympy: (|4d|^10)^(1/12) = |4d|^(5/6) exactly; falsifier |4d|^(5/12) | falsifier detected
+[PASS] eq:d023 (5.8) T1-S2: sympy: first term = D^(1+theta/2) Y^(-1/2) exactly; Y<7 gives first term > D^(1+theta/2)/sqrt7 >= D/sqrt7 on a grid of 72 (D, theta,
+[PASS] eq:d023 (5.8) T1-S3a: explicit trivial bound |S_d(D)| <= (1+8bD)||W||_inf (Lemma b1-extract(i)) for 60 values of d, D in [100, 1000, 10000] (violations 0
+[SANITY] eq:d023 (5.8) T1-S3b: max |S_d(D)|/(N_0^(1/12)D^(11/12+5theta/12)+N_0^(1/6)D^(5/6-theta/6)), theta=0.1, eps=0, 0<|d|<=30: D=100: 4.22e-03, D=1000: 1.16
+== A_t0_intro: exit 0, failure lines 0, 1 s
+== A_t2_integer: exit 0, failure lines 0, 42 s
+== A_t3_lattice: exit 0, failure lines 0, 12 s
+== A_t4_average: exit 0, failure lines 0, 5 s
+== A_t5_sixth: exit 0, failure lines 0, 6 s
+== B_t1_zeros: exit 0, failure lines 0, 5 s
+== b1_points: exit 0, failure lines 0, 13 s
+== b1_extract: exit 0, failure lines 0, 1 s
+== b1_bd: exit 0, failure lines 0, 0 s
+== r1_extraction_rows: exit 0, failure lines 0, 1 s
+== lean_hecke_identity: exit 0, failure lines 0, 2 s
+re-run of existing tests: total 88 s, overall status 0
+agent t1: total 100 s, overall status 0
+===== t1 exit 0
+===== t2: ./run_all.sh
+== new tests
+t2a_gauss_identities.txt                      exit 0, failure lines 0, 1s
+t2b_sxi_endtoend.txt                          exit 0, failure lines 0, 19s
+t2c_change_of_variables.txt                   exit 0, failure lines 0, 2s
+t2d_sizecheck_hyp.txt                         exit 0, failure lines 0, 3s
+== reruns of existing tests (unchanged scripts, read-only)
+partB_t2_poisson.txt                          exit 0, failure lines 0, 80s
+partB_t3_gauss.txt                            exit 0, failure lines 0, 2s
+partB_t4_theta.txt                            exit 0, failure lines 0, 11s
+partB_t6_sieve.txt                            exit 0, failure lines 0, 2s
+partB_t5_reflection_j2.txt                    exit 0, failure lines 0, 132s
+b2_reduction_170.txt                          exit 0, failure lines 0, 2s
+b2_reduction_40.txt                           exit 0, failure lines 0, 6s
+b2_reduction_D300_H360.txt                    exit 0, failure lines 0, 24s
+b2_normalization.txt                          exit 0, failure lines 0, 1s
+b3_symbolic.txt                               exit 0, failure lines 0, 3s
+b4_checks.txt                                 exit 0, failure lines 0, 18s
+r1_test_classgroup.txt                        exit 0, failure lines 0, 2s
+r1_test_step45_bookkeeping.txt                exit 0, failure lines 0, 5s
+r2_t2_grouping_cusp_data.txt                  exit 0, failure lines 0, 9s
+r2_t3_gl_family.txt                           exit 0, failure lines 0, 1s
+sec10_descent.txt                             exit 0, failure lines 0, 6s
+total 329 s; overall status 0
+===== t2 exit 0
+===== t3: python3 run_t3.py
+[PASS] t3_gauss: exit 0, 1 required ids (all PASS), 12 falsifiers failed as required, 0 failure lines, 3 s
+[PASS] test_sec10_descent: exit 0, 16 required ids (all PASS), 7 falsifiers failed as required, 0 failure lines, 6 s
+[PASS] t7_descent: exit 0, 18 required ids (all PASS), 7 falsifiers failed as required, 0 failure lines, 6 s
+[PASS] t3_sec10_new: exit 0, 12 required ids (all PASS), 7 falsifiers failed as required, 0 failure lines, 6 s
+[PASS] t4_theta: exit 0, 2 required ids (all PASS), 13 falsifiers failed as required, 0 failure lines, 11 s
+[PASS] b4_checks: exit 0, 9 required ids (all PASS), 7 falsifiers failed as required, 0 failure lines, 18 s
+[PASS] t2_poisson: exit 0, 1 required ids (all PASS), 11 falsifiers failed as required, 0 failure lines, 76 s
+[PASS] t5_reflection_j2: exit 0, 2 required ids (all PASS), 5 falsifiers failed as required, 0 failure lines, 129 s
+wall clock 130 s
+ALL PASS
+===== t3 exit 0
+===== t4: python3 run_all.py
+t4_sources.py            exit 0, failure lines 0, 0.0 s
+   [PASS] S0 29 inventory displays: verbatim in the current guide (missing: none); aux numbers agree (mismatch: none)
+   [CITED] S1 eq:d081 = G78 eq:amplitude character for character (falsifier: exponent z for z-1 differs)
+   [CITED] S2 eq:d080 = G78 eq:witness with psi -> conj(alpha) theta conj(chi.(u)) (falsifier: the anti-oriented substitution alpha theta conj(chi) does not match)
+   [CITED] S3 12 OAI78 source passages found at the stated lines (eq:d074 L378-384, eq:d075 L4043-4048, eq:d076 L2819-2826, eq:d199 L9225-9244, eq:cm-inverse L9258-9262, eq:d082 L10774-10776, eq:signal-c
+t4_local_euler.py        exit 0, failure lines 0, 1.9 s
+   [PASS] L1a OAI78 L3878-3884 and eq:local-scalar-values re-derived by brute force at p = [(-2, -3), (1, 3), (1, -3)] (norms [7, 7, 13]), 393 cases: max rel err g 7.5e-14, C_p 9.1e-15
+   [PASS] L1b eq:d075 local factor: brute-force OAI78 eq:local-P = closed form lem:local-euler with eta(p)->psi(p), 8 split + 2 inert primes, j=0..5, 6 values of rho, 3 target values (1080 identities): m
+t4_lfunctions.py         exit 0, failure lines 0, 11.3 s
+   [PASS] F0 parameters: abar_mod3: k=1 Q=9 N_PARI=27 ord=1; k1_Q7: k=1 Q=7 N_PARI=21 ord=6; k1_Q28: k=1 Q=28 N_PARI=84 ord=6; k1_Q112: k=1 Q=112 N_PARI=336 ord=6; k1_Q441: k=1 Q=441 N_PARI=1323 ord=6; k
+   [PASS] F1 eq:d077: Lambda(s)/conj(Lambda(1-conj s)) constant over 5 points s, for 6 members of F_CM (Q = 9, 7, 28, 112, 441, 1008): max spread 7.8e-38, ||eps|-1| <= 2.9e-38; falsifiers (min spread, mu
+   [PASS] F2 eq:d078 size check: measured ratio = (2pi)^(2sigma-1)|Gamma(3/2-s)/Gamma(1/2+s)|/(3+|t|)^(1-2sigma) to rel. err 1.8e-38 for 6 characters (Q = 7..1008), sigma in [-2/5,7/5], |t|<=100; max rat
+   [PASS] F3 eq:d071 sanity (argument principle, 0.88<=Re s<=2, |Im s|<=30): no zeros; abar_mod3: winding +4e-18, min|L| 0.56; crit. box 8.00 vs 8; k1_Q7: winding -2e-18, min|L| 0.40; crit. box 7.00 vs 7
+   [PASS] F4 eq:d087 sanity (unitary normalization 0.88<=Re s<=2, |Im s|<=30; eta products w/2+0.38<=Re s<=w/2+1.5): no zeros; abar2_mod3: winding -6e-18, min|L| 0.49; crit. box 8.00 vs 8; abar3_mod3: wi
+t4_moments.py            exit 0, failure lines 0, 6.6 s
+   [PASS] M1 eq:cm-inverse size check with one slot (m=1, r=0.3, z_1=0.25): sum|M_uQ_u|^2/Z^m at Z = 1e4, 4e4, 1.6e5: nu=1, eps=+1: 0.127, 0.134, 0.125 (growth exp +0.04); nu=1, eps=-1: 0.127, 0.134, 0.1
+   [PASS] M2 eq:d084 size check (z=0, tau=1, M=m=1, Z=4000, 14526 rows): sum_k|S_k(n1)S_k(n2)|^2/Z^M: n1=n2=0.5: e=+1 0.338, e=-1 0.332, control e=0 0.393 (without the 2 principal rows 0.331) [58 plain l
+rerun_existing.py        exit 0, failure lines 0, 87.1 s
+   [PASS] part_C_lines_0998_1509/t01_curves.py C02: reported ['PASS'] (need PASS), exit 0, 0.7 s
+   [PASS] part_C_lines_0998_1509/t01_curves.py C03: reported ['PASS'] (need PASS), exit 0, 0.7 s
+   [PASS] part_C_lines_0998_1509/t01_curves.py C04: reported ['PASS'] (need PASS), exit 0, 0.7 s
+   [PASS] part_C_lines_0998_1509/t01_curves.py C05: reported ['PASS'] (need PASS), exit 0, 0.7 s
+   [PASS] part_C_lines_0998_1509/t01_curves.py C07: reported ['PASS'] (need PASS), exit 0, 0.7 s
+   [PASS] part_C_lines_0998_1509/t01_curves.py C08: reported ['PASS'] (need PASS), exit 0, 0.7 s
+   [PASS] part_C_lines_0998_1509/t01_curves.py C09: reported ['PASS'] (need PASS), exit 0, 0.7 s
+   [PASS] part_C_lines_0998_1509/t02_gauss.py C13: reported ['PASS'] (need PASS), exit 0, 2.0 s
+   [PASS] part_C_lines_0998_1509/t02_gauss.py C14: reported ['PASS'] (need PASS), exit 0, 2.0 s
+   [PASS] part_C_lines_0998_1509/t02_gauss.py C15: reported ['PASS'] (need PASS), exit 0, 2.0 s
+   [PASS] part_C_lines_0998_1509/t02_gauss.py C17: reported ['PASS'] (need PASS), exit 0, 2.0 s
+   [PASS] part_C_lines_0998_1509/t02_gauss.py C19: reported ['PASS'] (need PASS), exit 0, 2.0 s
+   [PASS] part_C_lines_0998_1509/t02_gauss.py C23: reported ['PASS'] (need PASS), exit 0, 2.0 s
+   [PASS] part_C_lines_0998_1509/t04_growth_fe.py C37: reported ['PASS'] (need PASS), exit 0, 87.0 s
+   [PASS] part_C_lines_0998_1509/t04_growth_fe.py C38: reported ['PASS'] (need PASS), exit 0, 87.0 s
+   [PASS] part_C_lines_0998_1509/t04_growth_fe.py C39: reported ['PASS'] (need PASS), exit 0, 87.0 s
+   [PASS] part_C_lines_0998_1509/t04_growth_fe.py C43: reported ['PASS'] (need PASS), exit 0, 87.0 s
+   [PASS] part_C_lines_0998_1509/t05_rows_moments.py C45: reported ['PASS'] (need PASS), exit 0, 16.5 s
+   [PASS] part_C_lines_0998_1509/t05_rows_moments.py C46: reported ['PASS'] (need PASS), exit 0, 16.5 s
+   [PASS] part_C_lines_0998_1509/t05_rows_moments.py C103: reported ['INFO'] (need INFO), exit 0, 16.5 s
+   [PASS] part_C_lines_0998_1509/t06_final_inequality.py C58: reported ['PASS'] (need PASS), exit 0, 1.0 s
+   [PASS] part_C_lines_0998_1509/t06_final_inequality.py C59: reported ['PASS'] (need PASS), exit 0, 1.0 s
+   [PASS] part_C_lines_0998_1509/t06_final_inequality.py C60: reported ['PASS'] (need PASS), exit 0, 1.0 s
+   [PASS] part_C_lines_0998_1509/t08_theorem_sanity.py C98: reported ['PASS'] (need PASS), exit 0, 4.7 s
+   [PASS] part_D_lines_1510_end/t01_eta_quotients.py D01.11: reported ['PASS'] (need PASS), exit 0, 0.6 s
+   [PASS] part_D_lines_1510_end/t01_eta_quotients.py D01.12: reported ['PASS'] (need PASS), exit 0, 0.6 s
+   [PASS] part_D_lines_1510_end/t01_eta_quotients.py D01.13: reported ['PASS'] (need PASS), exit 0, 0.6 s
+   [PASS] part_D_lines_1510_end/t02_chain_rule.py D02.1: reported ['PASS'] (need PASS), exit 0, 32.4 s
+   [PASS] part_D_lines_1510_end/t02_chain_rule.py D02.3: reported ['PASS'] (need PASS), exit 0, 32.4 s
+   [PASS] part_D_lines_1510_end/t03_mellin.py D03.1: reported ['PASS'] (need PASS), exit 0, 21.6 s
+   [PASS] part_D_lines_1510_end/t03_mellin.py D03.3: reported ['PASS'] (need PASS), exit 0, 21.6 s
+   [PASS] part_D_lines_1510_end/t04_kernels.py D04.1: reported ['PASS'] (need PASS), exit 0, 37.7 s
+   [PASS] part_D_lines_1510_end/t04_kernels.py D04.2: reported ['PASS'] (need PASS), exit 0, 37.7 s
+   [PASS] part_D_lines_1510_end/t04_kernels.py D04.5: reported ['PASS'] (need PASS), exit 0, 37.7 s
+   [PASS] part_D_lines_1510_end/t05_misc.py D05.2: reported ['PASS'] (need PASS), exit 0, 3.8 s
+   [PASS] part_D_lines_1510_end/t05_misc.py D05.7: reported ['PASS'] (need PASS), exit 0, 3.8 s
+   [PASS] part_D_lines_1510_end/t06_sympowers.py D06.1: reported ['PASS'] (need PASS), exit 0, 0.8 s
+   [PASS] part_D_lines_1510_end/t06_sympowers.py D06.2: reported ['PASS'] (need PASS), exit 0, 0.8 s
+   [PASS] phase2_2026-10-12/r3/t1_gauss_and_curves.py G2: reported ['PASS'] (need PASS), exit 0, 1.1 s
+   [PASS] phase2_2026-10-12/r3/t1_gauss_and_curves.py G3: reported ['PASS'] (need PASS), exit 0, 1.1 s
+   [PASS] phase2_2026-10-12/r3/t1_gauss_and_curves.py G4: reported ['PASS'] (need PASS), exit 0, 1.1 s
+   [PASS] phase2_2026-10-12/r3/t1_gauss_and_curves.py C1: reported ['PASS'] (need PASS), exit 0, 1.1 s
+   [PASS] phase2_2026-10-12/r3/t1_gauss_and_curves.py C2: reported ['PASS'] (need PASS), exit 0, 1.1 s
+   [PASS] phase2_2026-10-12/r3/t2_higher_weight.py H1: reported ['PASS'] (need PASS), exit 0, 17.5 s
+   [PASS] phase2_2026-10-12/r3/t2_higher_weight.py H2: reported ['PASS'] (need PASS), exit 0, 17.5 s
+   [PASS] phase2_2026-10-12/r3/t2_higher_weight.py H3: reported ['PASS'] (need PASS), exit 0, 17.5 s
+   [PASS] phase2_2026-10-12/r3/t2_higher_weight.py H6: reported ['PASS'] (need PASS), exit 0, 17.5 s
+   [PASS] phase2_2026-10-12/r3/t2_higher_weight.py H7: reported ['PASS'] (need PASS), exit 0, 17.5 s
+   [PASS] phase2_2026-10-12/r3/t3_final_inequality.py E4: reported ['PASS'] (need PASS), exit 0, 0.9 s
+   [PASS] phase2_2026-10-12/r3/t3_final_inequality.py E4f: reported ['PASS'] (need PASS), exit 0, 0.9 s
+   [PASS] phase2_2026-10-12/r3/t3_final_inequality.py E5: reported ['PASS'] (need PASS), exit 0, 0.9 s
+   [PASS] phase2_2026-10-12/r3/t3_final_inequality.py E6: reported ['PASS'] (need PASS), exit 0, 0.9 s
+# total 107.0 s; ALL PASS
+===== t4 exit 0
+===== t5: python3 run_all.py --reruns
+t5a_finite_identities.py: exit 0 (12 s)
+t5b_theta_pointwise.py: exit 0 (44 s)
+t5c_mellin.py: exit 0 (21 s)
+t5d_decay.py: exit 0 (11 s)
+proofs_2026-10-12/b3/b3_symbolic_checks.py exit=0 wall=4s (all started together)
+proofs_2026-10-12/b3/t_b3_prop_endtoend.py exit=0 wall=59s (all started together)
+phase2_2026-10-12/r2/t1_prop_grouped_endtoend.py exit=0 wall=102s (all started together)
+phase2_2026-10-12/r2/t2_grouping_cusp_data.py exit=0 wall=102s (all started together)
+part_B_lines_0550_0997/t4_theta.py exit=0 wall=102s (all started together)
+part_B_lines_0550_0997/t5_reflection_j2.py exit=0 wall=139s (all started together)
+part_D_lines_1510_end/t02_chain_rule.py exit=0 wall=139s (all started together)
+part_D_lines_1510_end/t03_mellin.py exit=0 wall=139s (all started together)
+part_D_lines_1510_end/t04_kernels.py exit=0 wall=139s (all started together)
+part_D_lines_1510_end/t07_theta_appendix.py exit=0 wall=139s (all started together)
+part_D_lines_1510_end/t08_reflection_j.py exit=0 wall=224s (all started together)
+total wall time 312 s
+ALL PASS
+===== t5 exit 0
+===== t6: ./run_all.sh
+t6_moment_sanity: exit 0, 3 s
+t6_kernel_bookkeeping: exit 0, 23 s
+t6_mellin_rep: exit 0, 25 s
+t6_theta_translates_pi1: exit 0, 47 s
+t6_theta_translates_pi0: exit 0, 47 s
+rerun_b3_symbolic: exit 0, 4 s
+rerun_s1_kernel: exit 0, 22 s
+rerun_s1_local: exit 0, 28 s
+rerun_b3_endtoend: exit 0, 56 s
+rerun_s1_endtoend_g0: exit 0, 115 s
+rerun_s1_endtoend_g1: exit 0, 115 s
+rerun_s1_endtoend_b0: exit 0, 121 s
+rerun_s1_endtoend_b1: exit 0, 121 s
+rerun overall status 0
+t6 overall status 0; wall time 121 s
+===== t6 exit 0
+===== t7: ./run_all.sh
+c1_pres_gauss: exit 0, [FAIL] lines 0, 2 s
+[PASS] T7-C1a eq:s2-pres psi((a)) = phi(a) conj(alpha(a)) is generator-independent, multiplicative, of type zbar/|z| :: 8 characters; max errors: gene
+[PASS] T7-C1b lem:s2-pres(iii) alphabar: phi(a) = unit = a mod 3; psi((n)) = conj(alpha(n)) on primary n :: max error 0.0e+00; unit mismatches 0
+[PASS] T7-C2 eq:d147 gamma(alphabar) = -1 (sum zeta e(zeta/3) = -3 exactly), W(alphabar) = 1; W independent of generator f :: sum = -3.000000000000+0.
+[PASS] T7-C3 eq:s2-gauss sum_x phi(x) e(hx/f) = conj(phi(h)) sqrt(Q) gamma for all h mod f, exactly in Z[zeta_M]; |gamma| = 1 :: 8 characters, all h m
+c2_fourier: exit 0, [FAIL] lines 0, 1 s
+[PASS] T7-C7 eq:d151 Fourier transform of the Gaussian with e(z) = exp(4 pi i Im z/sqrt3) :: symbolic (sympy) equality: True; quadrature at 5 (v, eta)
+[PASS] T7-C8a proof of lem:s2-fe(i) d/d(conj eta) e(-w eta) = (2 pi/sqrt3) conj(w) e(-w eta) :: symbolic: True
+[PASS] T7-C8b eq:d152 Ghat(eta) = (sqrt3/2pi) dbar(...) = -sqrt3/(2v^2) eta exp(-2 pi|eta|^2/(sqrt3 v)) :: second equality symbolic: True; quadrature 
+c3_theta_mellin: exit 0, [FAIL] lines 0, 10 s
+[PASS] T7-C9a eq:d153 Poisson step: sum_z G(t+fz) = (2/(sqrt3 Q)) sum_y e(ty/f) Ghat(y/f), every t mod f :: 8 characters x 3 v x all residues t: max r
+[PASS] T7-C9b eq:d153, eq:d148 line 1 = line 2 = Theta(v) = -gamma/(f sqrt Q) v^-2 conj Theta(1/(Qv)) :: 8 characters x 5 v: max rel. error 1.9e-15; f
+[PASS] T7-C5 eq:d149, eq:d154 Mellin transform of Theta = (2pi/sqrt3)^{-s-1/2} Gamma(s+1/2) sum_a = 6 (...) L(s,psi); also conj :: 8 characters x 3 s 
+[PASS] T7-C11 eq:d155 B(w), B^-(w) by quadrature over (v0, oo) = incomplete-gamma series (as implemented in s2/t1) :: 8 characters x 4 w x (B, B^-): m
+[PASS] T7-C12 eq:d156 int_0^{v0} Theta v^{s+1/2} dv/v = -gamma/(f sqrt Q) int_0^{v0} conj Theta(1/(Qv)) v^{s-3/2} dv/v = -gamma/(f sqrt Q) Q^{3/2-s} B
+[PASS] T7-C13 eq:s2-split Q^{s/2} I(s) = Q^{s/2} B(s) + W Q^{(1-s)/2} B^-(1-s) and its conjugate; kappa; -gamma/(f sqrt Q) = W/Q :: 8 characters x 4 s
+[PASS] T7-C6 eq:d150 Q^{s/2} I_psi(s) = W Q^{(1-s)/2} I_conjpsi(1-s) (Lambda FE) from direct theta quadratures, W = -gamma sqrt Q/f :: 8 characters x 
+c4_fe_pari: exit 0, [FAIL] lines 0, 4 s
+[PASS] T7-C6p eq:d150 FE with the explicit root number W = -gamma sqrt Q/f (PARI lfuncheckfeq, coefficients from psi) :: 8 characters, psi and conj ps
+[PASS] T7-C14 eq:s2-fe-unc L(s,psi) = W (3Q/(2pi)^2)^{1/2-s} Gamma(3/2-s)/Gamma(1/2+s) L(1-s, conj psi) :: 8 characters x 6 s (PARI values): max rel. 
+[PASS] T7-C15 eq:d157 |L(-1/10+it)| = (3Q)^{3/5}(2pi)^{-6/5} G(-1/10,t)|L(11/10-it, conj psi)|; size << Q^{3/5}(3+|t|)^{6/5} :: 8 characters x 6 t: ma
+[PASS] T7-C16 eq:d158 size check: no zero in the disk of radius 2-a-2e (winding 0); max |L|+|1/L| on radius 2-a-6e :: a = 0.6, e = 1e-4, 8 characters 
+[PASS] T7-D10 eq:d168 L(s,phi*) = eps (3Q)^{1/2-s}(2pi)^{2s-1} Gamma(3/2-s)/Gamma(1/2+s) L(1-s, conj phi*), CM members of X_u :: 4 CM members (sigma =
+[PASS] T7-D8 eq:s3-reflected |L(1-a-6e+it,phi*)| <= C0 (3Q)^{a-1/2+6e}(3+|t|)^{2a-1+12e}|L(a+6e-it, conj phi*)| with C0 = 1 on the grid :: 4 CM member
+d1_members: exit 0, [FAIL] lines 0, 2 s
+[PASS] T7-D6 eq:d165 L_orig(s,phi) = prod_p (1 - phi(p) q_p^-s)^-1 and 1/L_orig = sum mu(n) phi(n) q_n^-s :: 4 members (finite/CM, sigma = +-1) x 2 s,
+[PASS] T7-D9 eq:d167 phi((a)) = alpha(a')^sigma phi0*((a)) = (a/|a|)^sigma eps_a^-sigma phi0f(a): well defined, type (z/|z|)^sigma, = CM member :: 4 f
+s2/t1_theta_fe: exit 0, 31 s
+s2/t2_growth: exit 0, 167 s
+s2/t3_reflection: exit 0, 395 s
+s2/t4_conductors: exit 0, 0 s
+s3/t1_labels: exit 0, 4 s
+s3/t2_conductors: exit 0, 21 s
+s3/t3_fe: exit 0, 22 s
+s3/t4_gamma: exit 0, 23 s
+s3/t5_citations: exit 0, 1 s
+rerun_existing: overall exit 0
+run_all: overall exit 0, total 683 s
+===== t7 exit 0
+===== t8: ./run_all.sh
+[PASS] t8_coefficients: exit 0 (0 s)
+[PASS] t8_signal_init: exit 0 (1 s)
+[PASS] t8_beta_block: exit 0 (1 s)
+[PASS] t8_euler_mellin: exit 0 (1 s)
+[PASS] t8_exponents: exit 0 (0 s)
+[PASS] t8_tex_compare: exit 0 (0 s)
+[PASS] t8_size_checks: exit 0 (37 s)
+[PASS] rerun_s4_checks: exit 0 (17 s)
+[PASS] rerun_s6_twisted_paired: exit 0 (1 s)
+[PASS] rerun_s6_twisted_reduction_120_170: exit 0 (0 s)
+[PASS] rerun_s6_twisted_reduction_120_40: exit 0 (2 s)
+[PASS] rerun_s6_twisted_reduction_200_300: exit 0 (2 s)
+[PASS] rerun_s6_margins_and_rows: exit 0 (1 s)
+total wall time 63 s; status 0
+===== t8 exit 0
+===== t9: ./run_all.sh
+d1_alpha_mult: rc=0 failure-lines=0 time=0s  SUMMARY: 7 checks, 0 failures
+d2_rowchar: rc=0 failure-lines=0 time=3s  SUMMARY: 47 checks, 0 failures
+d3_poisson: rc=0 failure-lines=0 time=9s  SUMMARY: 45 checks, 0 failures
+d4_mellin: rc=0 failure-lines=0 time=15s  SUMMARY: 7 checks, 0 failures
+d5_lattice: rc=0 failure-lines=0 time=6s  SUMMARY: 13 checks, 0 failures
+d6_fourth_moment: rc=0 failure-lines=0 time=0s  SUMMARY: 3 checks, 0 failures
+s5/t1_dual_profile (rerun): rc=0 failure-lines=0 time=21s  SUMMARY: 13 checks, 0 failures
+s5/t2_hankel (rerun): rc=0 failure-lines=0 time=0s  SUMMARY: 21 checks, 0 failures
+s5/t3_reflection (rerun): rc=0 failure-lines=0 time=2s  SUMMARY: 119 checks, 0 failures
+s5/t4_lattice (rerun): rc=0 failure-lines=0 time=0s  SUMMARY: 24 checks, 0 failures
+s5/t5_row_reflection (rerun): rc=0 failure-lines=0 time=2s  SUMMARY: 23 checks, 0 failures
+s5/t6_kappa (rerun): rc=0 failure-lines=0 time=0s  SUMMARY: 4 checks, 0 failures
+total time 59s; status 0
+===== t9 exit 0
+===== overall exit 0
+./run_all.sh  2682.93s user 328.99s system 158% cpu 31:44.68 total
+EXIT 0

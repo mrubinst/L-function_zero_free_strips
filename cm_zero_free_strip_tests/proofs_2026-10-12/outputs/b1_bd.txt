@@ -1,0 +1,2 @@
+checked (d,p|6d) pairs: 20918  good p in {2,3}: 96  good p>=5 dividing d: 58  failures: 0  falsifier detections: 154
+EXIT STATUS 0: all checks passed

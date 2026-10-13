@@ -1,0 +1,26 @@
+  D=500 B=1 F=1 xi#0: calH=268.6 (966 rows), X=500.0 (139 columns), 1 f: E = 0.0272, E/(XF||W||^2) = 0.1621
+  D=500 B=1 F=1 xi#7: calH=268.6 (966 rows), X=500.0 (139 columns), 1 f: E = 0.02744, E/(XF||W||^2) = 0.1636
+  D=500 B=1 F=7 xi#0: calH=268.6 (966 rows), X=71.4 (23 columns), 4 f: E = 0.01329, E/(XF||W||^2) = 0.0792
+  D=500 B=1 F=7 xi#7: calH=268.6 (966 rows), X=71.4 (23 columns), 4 f: E = 0.01397, E/(XF||W||^2) = 0.0833
+  D=500 B=3 F=1 xi#0: calH=29.8 (108 rows), X=166.7 (48 columns), 1 f: E = 0.002675, E/(XF||W||^2) = 0.0478
+  D=500 B=3 F=1 xi#7: calH=29.8 (108 rows), X=166.7 (48 columns), 1 f: E = 0.002967, E/(XF||W||^2) = 0.0531
+  D=500 B=2 F=13 xi#0: calH=67.1 (252 rows), X=19.2 (5 columns), 5 f: E = 0.002477, E/(XF||W||^2) = 0.0295
+  D=500 B=2 F=13 xi#7: calH=67.1 (252 rows), X=19.2 (5 columns), 5 f: E = 0.002331, E/(XF||W||^2) = 0.0278
+  D=1500 B=1 F=1 xi#0: calH=721.9 (2610 rows), X=1500.0 (426 columns), 1 f: E = 0.06691, E/(XF||W||^2) = 0.1330
+  D=1500 B=1 F=1 xi#7: calH=721.9 (2610 rows), X=1500.0 (426 columns), 1 f: E = 0.0639, E/(XF||W||^2) = 0.1270
+  D=1500 B=1 F=7 xi#0: calH=721.9 (2610 rows), X=214.3 (62 columns), 4 f: E = 0.03219, E/(XF||W||^2) = 0.0640
+  D=1500 B=1 F=7 xi#7: calH=721.9 (2610 rows), X=214.3 (62 columns), 4 f: E = 0.03228, E/(XF||W||^2) = 0.0642
+  D=1500 B=3 F=1 xi#0: calH=80.2 (294 rows), X=500.0 (139 columns), 1 f: E = 0.008723, E/(XF||W||^2) = 0.0520
+  D=1500 B=3 F=1 xi#7: calH=80.2 (294 rows), X=500.0 (139 columns), 1 f: E = 0.008543, E/(XF||W||^2) = 0.0509
+  D=1500 B=2 F=13 xi#0: calH=180.5 (648 rows), X=57.7 (18 columns), 5 f: E = 0.005856, E/(XF||W||^2) = 0.0233
+  D=1500 B=2 F=13 xi#7: calH=180.5 (648 rows), X=57.7 (18 columns), 5 f: E = 0.005654, E/(XF||W||^2) = 0.0225
+  D=4000 B=1 F=1 xi#0: calH=1745.2 (6342 rows), X=4000.0 (1129 columns), 1 f: E = 0.1649, E/(XF||W||^2) = 0.1229
+  D=4000 B=1 F=1 xi#7: calH=1745.2 (6342 rows), X=4000.0 (1129 columns), 1 f: E = 0.1633, E/(XF||W||^2) = 0.1217
+  D=4000 B=1 F=7 xi#0: calH=1745.2 (6342 rows), X=571.4 (160 columns), 4 f: E = 0.0852, E/(XF||W||^2) = 0.0635
+  D=4000 B=1 F=7 xi#7: calH=1745.2 (6342 rows), X=571.4 (160 columns), 4 f: E = 0.08436, E/(XF||W||^2) = 0.0629
+  D=4000 B=3 F=1 xi#0: calH=193.9 (702 rows), X=1333.3 (374 columns), 1 f: E = 0.01743, E/(XF||W||^2) = 0.0390
+  D=4000 B=3 F=1 xi#7: calH=193.9 (702 rows), X=1333.3 (374 columns), 1 f: E = 0.01826, E/(XF||W||^2) = 0.0408
+  D=4000 B=2 F=13 xi#0: calH=436.3 (1584 rows), X=153.8 (46 columns), 5 f: E = 0.01641, E/(XF||W||^2) = 0.0245
+  D=4000 B=2 F=13 xi#7: calH=436.3 (1584 rows), X=153.8 (46 columns), 5 f: E = 0.01595, E/(XF||W||^2) = 0.0238
+RESULT|eq:b2-hyp|PASS|err=0 tol=0; size check only: E/(XF||W||^2) <= 0.164 over 24 cases in the ranges eq:b2-ranges (theta = 1/10, C = 1, D = 500, 1500, 4000)
+t2d done in 3.2 s

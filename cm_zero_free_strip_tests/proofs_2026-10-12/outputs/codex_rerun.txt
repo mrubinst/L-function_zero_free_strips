@@ -1,0 +1,131 @@
+== b1_points
+cases 4412
+failures (all must be 0): {'aff': 0, 'S': 0, 'Jratio': 0, 'J': 0, 'rk': 0, 'ap': 0, 'hasse': 0}
+falsifier hits (must be < cases; J+pi must be 0): {'J+pi': 0, 'rk_unconj': 0, 'ap_unconj': 1536, 'ap_d': 1320}
+EXIT STATUS 0: all 12 checks passed
+-- exit 0, failure lines 0
+== b1_extract
+T3 lattice count <= 1+8x:  True  max ratio count/(1+8x)=1.0000  falsifier 1+3x violated: True
+T4 multiples count <= 1+8X/N(pi): True
+T6 exclusion count < 2log|d|/log(Y/2): True  falsifier (no factor 2) violated: True
+T7 P(Y)=0 for Y<7: True  P(7)= 2
+T7 largest Y<=1e6 with P(Y) < 0.4 Y/log Y: 96  min ratio P/(Y/logY) over [1e3,1e6]: 0.497
+T8 case-2 implication: True  log(Y/2)>=log(Y)/2 for Y>=4: True
+T9 D^{1+th/2}Y^{-1/2} = N0^{1/12}D^{11/12+5th/12}: True ; D/Y = N0^{1/6}D^{5/6-th/6}: True ; falsifier N0^{1/6} in first: True
+T9b Y<=H^{1/6}=D^{(1+th)/6}<=D for th<=1/10: True
+EXIT STATUS 0: all 13 checks passed
+-- exit 0, failure lines 0
+== b1_bd
+checked (d,p|6d) pairs: 20918  good p in {2,3}: 96  good p>=5 dividing d: 58  failures: 0  falsifier detections: 154
+EXIT STATUS 0: all checks passed
+-- exit 0, failure lines 0
+== b2_reduction_170
+PAIRED forward class form: max err 1.65e-15 over 80 pairs; zeta-coefficient falsifier 2.00e+00
+PAIRED forward with xi_1 = chi_n(omega): max err 1.61e-15
+PAIRED reverse class form: max err 1.54e-15; falsifier mu alpha (not conj alpha): 2.00e+00
+REDUCTION D=120 H=170: 34 columns, 109 (r0,f) pairs; M_D = 0.0070864918, Z = 0.006963, Z + sum c S = 0.0070864918+0.0000000000j; rel err 1.22e-15
+   falsifier zeta: rel err 4.73e-02
+   falsifier kf2: rel err 4.14e-04
+   falsifier noexcl: rel err 3.19e-03
+   falsifier Gswap: rel err 5.17e-02
+EXIT STATUS 0: all 10 checks passed
+-- exit 0, failure lines 0
+== b2_reduction_40
+PAIRED forward class form: max err 1.65e-15 over 80 pairs; zeta-coefficient falsifier 2.00e+00
+PAIRED forward with xi_1 = chi_n(omega): max err 1.61e-15
+PAIRED reverse class form: max err 1.54e-15; falsifier mu alpha (not conj alpha): 2.00e+00
+REDUCTION D=120 H=40: 34 columns, 109 (r0,f) pairs; M_D = 0.0016153990, Z = 0.001638, Z + sum c S = 0.0016153990-0.0000000000j; rel err 2.95e-15
+   falsifier zeta: rel err 8.66e-02
+   falsifier kf2: rel err 9.65e-05
+   falsifier noexcl: rel err 8.12e-02
+   falsifier Gswap: rel err 8.30e-02
+EXIT STATUS 0: all 10 checks passed
+-- exit 0, failure lines 0
+== b2_normalization
+gamma_2(-pi) = gamma_2(pi): 1.3653937842860002e-15  gamma_2(pi)^3 = -alpha(pi) = alpha(-pi): 3.575193960459936e-15
+gamma(psi) with generator zeta q = psi(zeta) gamma(psi), 20 pairs x 6 units: 4.432557604889171e-15
+EXIT STATUS 0: all 3 checks passed
+-- exit 0, failure lines 0
+== b3_symbolic
+(3) assembly constant ratio: 1
+    numeric t= 0.3 (0.9999999999999998+0j)
+    numeric t= (1.7+2j) (0.9999999999999992+1.3552527156068805e-20j)
+    numeric t= (-0.4+5j) (1+1.3552527156068805e-20j)
+(4) c^-4 N(c)^2 vs conj(alpha(c))^4: 1.62e-41
+    substitution check rel err 1.31e-41
+    substitution check rel err 4.76e-42
+(5) 0 0 0
+(6) eta=-0.25: growth exponent -0.9999999 vs 4eta=-1.0
+(6) eta=0: growth exponent 0.0 vs 4eta=0
+(6) eta=0.5: growth exponent 1.9999998 vs 4eta=2.0
+(6) eta=2: growth exponent 7.999998 vs 4eta=8
+(6) eta=5: growth exponent 19.99998 vs 4eta=20
+(7) alpha(lambda^-3)= (0.0 + 1.0j)  conj^2= (-1.0 + 0.0j)  3^{5/2}/27^{1/2}= 3.0
+j=1: generic-F chain rule at z=zbar=0: True
+j=2: generic-F chain rule at z=zbar=0: True
+j=3: generic-F chain rule at z=zbar=0: True
+dz'   : True True
+dzbar': True True
+dv'   : True True
+(8) sigma_2=-1: exponent 5.999999 vs 2-4sigma_2=6
+(8) sigma_2=-0.5: exponent 3.999999 vs 2-4sigma_2=4.0
+(8) sigma_2=-0.1: exponent 2.4 vs 2-4sigma_2=2.4
+(9) lambda^2/72*8*lambda^2 = 1
+EXIT STATUS 0: all 26 checks passed
+-- exit 0, failure lines 0
+== b3_endtoend
+prime Gauss sums 10471 74.1
+squarefree c: 38822 79.8
+supplement (lambda/p)_3 = omega^{-b/3}: failures 0
+twist 1: direct terms 29009; cusps 36, types (sigma,N(c)) {('0', 9): 9, ('0', 36): 27}
+   T direct = 0.230690211170-0.000000000000j   T via Prop = 0.230690211170-0.000000000000j   rel.err 2.06e-14
+   controls (rel.err): {'a2': '2.06e-14', 'zeta': '1.41e+00', 'k1': '1.95e+00'} 86.2
+twist A: direct terms 29009; cusps 36, types (sigma,N(c)) {('+', 1): 3, ('+', 4): 9, ('-', 1): 3, ('-', 4): 9, ('0', 1): 3, ('0', 4): 9}
+   T direct = 0.087609872523-0.000000000000j   T via Prop = 0.087609872523-0.000000000000j   rel.err 2.31e-13
+   controls (rel.err): {'a2': '2.31e-13', 'zeta': '1.41e+00', 'k1': '1.94e+00'} 86.9
+twist B: direct terms 29009; cusps 36, types (sigma,N(c)) {('-', 3): 9, ('-', 12): 27}
+   T direct = -0.029603956300-0.048400799897j   T via Prop = -0.029603956300-0.048400799897j   rel.err 1.13e-12
+   controls (rel.err): {'a2': '1.00e+00', 'zeta': '1.41e+00', 'k1': '2.32e+00'} 89.2
+worst rel.err 1.13e-12  control max over twists {'a2': '1.00e+00', 'zeta': '1.41e+00', 'k1': '2.32e+00'}
+PASS time 89.2
+EXIT STATUS 0: all 3 checks passed
+-- exit 0, failure lines 0
+== b4_checks
+[PASS] C2 reverse paired identity (CM): Moebius coefficients mu conj(alpha) xi1: err 2.63e-15 (tol 1e-10) 
+      falsifier [Moebius coefficients without conj(alpha) (zeta form)]: err 1.99 -> fails as required
+      C3 case C=(1, 3) t=(4, 3) e0=(1, 3) ell=30.0 Y=400.0: LHS 59.2724347111  RHS 59.2724347111+4.3e-16i
+      C3 case C=(1, 3) t=(1, 0) e0=(1, 0) ell=30.0 Y=250.0: LHS 33.6691143217  RHS 33.6691143217-1.5e-15i
+      C3 case C=(-5, -15) t=(4, 3) e0=(-5, 0) ell=40.0 Y=500.0: LHS 58.6371705651  RHS 58.6371705651+4.7e-16i
+[PASS] C3 second Poisson identity (CM coefficients mu conj(alpha) xi1 -> a_{xi'}): err 2.42e-16 (tol 1e-09) relative error
+      falsifier [zeta Moebius coefficients mu xi1 on the left]: err 0.000783 -> fails as required
+      falsifier [zeta cubic coefficients conj(alpha) gamma_2 on the right]: err 0.000782 -> fails as required
+      C4 case L=20.0 F=7.0 H=25.0: LHS 0.000475340186417  RHS 0.000475340186417+5.3e-20i
+      C4 case L=25.0 F=1.0 H=30.0: LHS 0.00101617217583  RHS 0.00101617217583+4.2e-20i
+[PASS] C4 first Poisson identity of the transfer (CM): A(W) = Z + sum ... p_{hf^2}: err 1.15e-15 (tol 1e-09) relative error
+      falsifier [p_y without conj(alpha) (zeta form)]: err 0.236 -> fails as required
+[PASS] C5 regrouping: sum over preimages of mu(e)mu(w) = tau(r) 1_{f'|k'}: err 0 (tol 0) 400 random (r, f', k')
+      C6 case k=(5, 2) f=(1, 3): |P_long| = 0.000511, error 8.5e-19
+      C6 case k=(7, -4) f=(1, 0): |P_long| = 0.000426, error 1.2e-19
+[PASS] C6 cube removal: P_long = sum_b beta_0(b,f) chi_b(k)^3 N(b)^{-1} L_b^{-1/2} (column sum at L_b): err 8.51e-19 (tol 1e-10) 
+      falsifier [conj(alpha)^3 (zeta) in the inversion and in T]: err 0.000978 -> fails as required
+[PASS] C7a (x/k)_2 kappa_lambda(x)^{e_k} is trivial on the six units: err 0 (tol 0) 170 squarefree k
+[PASS] C7b quadratic reciprocity factor (n/k)_2 (k/n)_2 depends only on k, n mod 4: err 0 (tol 0) 144 class pairs
+[PASS] C7c k1 = k2 mod 4: (x/k1 k2)_2 trivial on units (so the product is primitive mod k1 k2): err 0 (tol 0) 156 pairs
+[PASS] C7d even columns: (-2n'/k)_2 = (-2/k)_2 (n'/k)_2 with |(-2/k)_2| = 1: err 0 (tol 0) 
+[PASS] C8 local cost exponent <= 2 v_p(s0) or v_p(g) (as in a^2 Y << H^2 N(g)/X): err 0 (tol 0) 
+[PASS] C10 scale identities: X0' = L/(N(r)N(f')), weights c_* Sigma N(r)/L^2, Phihat argument, zero-frequency weight, block size: err 0 (tol 0) sympy
+[PASS] C10b first transfer: (1/(LF)) H/(N(e0) N(t) ell) = w_{C,e0}: err 0 (tol 0) sympy
+[PASS] C11 the map (f, h) -> h f^2 has multiplicity <= #{f squarefree : f^2 | y} <= tau(y): err 0 (tol 0) max multiplicity 3
+-- exit 0, failure lines 0
+== b4_weight_decay
+x=   1e-06  |V#|=5.267e-06  |V#|/x^(1/4)=1.665e-04  x^3|V#|=5.267e-24  max shift diff=1.1e-14  zeta-quotient diff=1.7e-03
+x=   1e-03  |V#|=3.373e-02  |V#|/x^(1/4)=1.897e-01  x^3|V#|=3.373e-11  max shift diff=1.3e-23  zeta-quotient diff=2.7e-01
+x=   1e-01  |V#|=6.209e-01  |V#|/x^(1/4)=1.104e+00  x^3|V#|=6.209e-04  max shift diff=1.8e-29  zeta-quotient diff=1.1e+00
+x=   1e+00  |V#|=7.514e-02  |V#|/x^(1/4)=7.514e-02  x^3|V#|=7.514e-02  max shift diff=2.5e-32  zeta-quotient diff=2.3e-01
+x=   1e+01  |V#|=1.848e-03  |V#|/x^(1/4)=1.039e-03  x^3|V#|=1.848e+00  max shift diff=2.7e-31  zeta-quotient diff=2.0e-03
+x=   1e+02  |V#|=1.853e-05  |V#|/x^(1/4)=5.859e-06  x^3|V#|=1.853e+01  max shift diff=2.7e-30  zeta-quotient diff=2.1e-05
+x=   1e+03  |V#|=4.444e-11  |V#|/x^(1/4)=7.903e-12  x^3|V#|=4.444e-02  max shift diff=2.7e-29  zeta-quotient diff=6.0e-10
+[PASS] C9 contour shifts to Re t = -1/4, -1, 3 leave V# unchanged; |V#| <= C x^{1/4} (x<=1), x^3|V#| -> 0 (x>=1)
+      falsifier [zeta quotient]: max diff 1.1 over x -> fails as required (threshold 1e-3)
+-- exit 0, failure lines 0
+overall status 0

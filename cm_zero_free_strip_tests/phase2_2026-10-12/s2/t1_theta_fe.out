@@ -1,0 +1,59 @@
+PASS  [A: alphabar, f=3] |gamma(phi)| = 1: err=1.110e-16 (tol 1e-12)
+PASS  [A: alphabar, f=3] |W| = 1: err=1.110e-16 (tol 1e-12)
+PASS  [A: alphabar, f=3] theta transformation (rel): err=1.639e-15 (tol 1e-11)
+      falsifier 'no conj': min rel err = 4.535e-16
+      falsifier 'conj gamma': min rel err = 4.536e-16
+      falsifier '+ sign': min rel err = 2.000e+00
+      falsifier 'conj f': min rel err = 4.534e-16
+PASS  [B: chi_pi, N(pi)=7, f=pi] |gamma(phi)| = 1: err=2.220e-16 (tol 1e-12)
+PASS  [B: chi_pi, N(pi)=7, f=pi] |W| = 1: err=2.220e-16 (tol 1e-12)
+PASS  [B: chi_pi, N(pi)=7, f=pi] theta transformation (rel): err=1.675e-15 (tol 1e-11)
+      falsifier 'no conj': min rel err = 6.585e-04
+      falsifier 'conj gamma': min rel err = 1.984e+00
+      falsifier '+ sign': min rel err = 2.000e+00
+      falsifier 'conj f': min rel err = 1.964e+00
+PASS  [C: zeta^5 chi_pi, N(pi)=13, f=3pi] |gamma(phi)| = 1: err=0.000e+00 (tol 1e-12)
+PASS  [C: zeta^5 chi_pi, N(pi)=13, f=3pi] |W| = 1: err=2.220e-16 (tol 1e-12)
+PASS  [C: zeta^5 chi_pi, N(pi)=13, f=3pi] theta transformation (rel): err=2.912e-15 (tol 1e-11)
+      falsifier 'no conj': min rel err = 1.264e-01
+      falsifier 'conj gamma': min rel err = 1.022e+00
+      falsifier '+ sign': min rel err = 2.000e+00
+      falsifier 'conj f': min rel err = 1.441e+00
+PASS  [D: zeta^3 chi_pi^4, N(pi)=7, f=lambda pi] |gamma(phi)| = 1: err=6.661e-16 (tol 1e-12)
+PASS  [D: zeta^3 chi_pi^4, N(pi)=7, f=lambda pi] |W| = 1: err=6.661e-16 (tol 1e-12)
+PASS  [D: zeta^3 chi_pi^4, N(pi)=7, f=lambda pi] theta transformation (rel): err=3.044e-15 (tol 1e-11)
+      falsifier 'no conj': min rel err = 3.905e-03
+      falsifier 'conj gamma': min rel err = 1.267e-01
+      falsifier '+ sign': min rel err = 2.000e+00
+      falsifier 'conj f': min rel err = 3.780e-01
+PASS  [A: alphabar, f=3] split formula = Dirichlet series at s=3: err=6.950e-14 (tol 2e-07)
+PASS  [A: alphabar, f=3] split-point independence at s=(0.5+3j): err=1.915e-30 (tol 1e-12)
+PASS  [A: alphabar, f=3] split-point independence at s=(0.2-7j): err=1.625e-28 (tol 1e-12)
+PASS  [A: alphabar, f=3] split-point independence at s=(-0.1+11j): err=3.168e-26 (tol 1e-12)
+PASS  [A: alphabar, f=3] split-point independence at s=(0.8+0.3j): err=4.867e-31 (tol 1e-12)
+      falsifier 'W -> -W': split dependence rel = 1.418e+00 (must be large)
+      falsifier 'dual = psi instead of conj psi': rel = 4.483e-30
+PASS  [B: chi_pi, N(pi)=7, f=pi] split formula = Dirichlet series at s=3: err=1.221e-11 (tol 2e-07)
+PASS  [B: chi_pi, N(pi)=7, f=pi] split-point independence at s=(0.5+3j): err=1.342e-30 (tol 1e-12)
+PASS  [B: chi_pi, N(pi)=7, f=pi] split-point independence at s=(0.2-7j): err=5.451e-28 (tol 1e-12)
+PASS  [B: chi_pi, N(pi)=7, f=pi] split-point independence at s=(-0.1+11j): err=1.569e-26 (tol 1e-12)
+PASS  [B: chi_pi, N(pi)=7, f=pi] split-point independence at s=(0.8+0.3j): err=1.607e-30 (tol 1e-12)
+      falsifier 'W -> -W': split dependence rel = 1.428e+00 (must be large)
+      falsifier 'dual = psi instead of conj psi': rel = 1.336e-01
+PASS  [C: zeta^5 chi_pi, N(pi)=13, f=3pi] split formula = Dirichlet series at s=3: err=3.385e-11 (tol 2e-07)
+PASS  [C: zeta^5 chi_pi, N(pi)=13, f=3pi] split-point independence at s=(0.5+3j): err=7.012e-30 (tol 1e-12)
+PASS  [C: zeta^5 chi_pi, N(pi)=13, f=3pi] split-point independence at s=(0.2-7j): err=2.505e-28 (tol 1e-12)
+PASS  [C: zeta^5 chi_pi, N(pi)=13, f=3pi] split-point independence at s=(-0.1+11j): err=9.101e-27 (tol 1e-12)
+PASS  [C: zeta^5 chi_pi, N(pi)=13, f=3pi] split-point independence at s=(0.8+0.3j): err=8.021e-31 (tol 1e-12)
+      falsifier 'W -> -W': split dependence rel = 5.745e-01 (must be large)
+      falsifier 'dual = psi instead of conj psi': rel = 1.307e+00
+PASS  [D: zeta^3 chi_pi^4, N(pi)=7, f=lambda pi] split formula = Dirichlet series at s=3: err=1.883e-11 (tol 2e-07)
+PASS  [D: zeta^3 chi_pi^4, N(pi)=7, f=lambda pi] split-point independence at s=(0.5+3j): err=2.936e-29 (tol 1e-12)
+PASS  [D: zeta^3 chi_pi^4, N(pi)=7, f=lambda pi] split-point independence at s=(0.2-7j): err=8.768e-29 (tol 1e-12)
+PASS  [D: zeta^3 chi_pi^4, N(pi)=7, f=lambda pi] split-point independence at s=(-0.1+11j): err=4.889e-26 (tol 1e-12)
+PASS  [D: zeta^3 chi_pi^4, N(pi)=7, f=lambda pi] split-point independence at s=(0.8+0.3j): err=1.910e-31 (tol 1e-12)
+      falsifier 'W -> -W': split dependence rel = 1.411e+00 (must be large)
+      falsifier 'dual = psi instead of conj psi': rel = 1.479e+01
+PASS  W(alphabar) = +1 (root number of 27a): err=3.864e-16 (tol 1e-12)
+PASS  L(s,alphabar) = L(E_16, s+1/2) coefficientwise at 76 primes 5<=p<400: err=1.776e-15 (tol 1e-09)
+ALL PASS

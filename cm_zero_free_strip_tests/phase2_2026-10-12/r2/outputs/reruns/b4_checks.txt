@@ -1,0 +1,29 @@
+[PASS] C1 forward paired identity with twist xi1 (CM): err 2.22e-15 (tol 1e-10) 60 pairs, 432 characters
+      falsifier [zeta coefficients conj(alpha) gamma_2]: err 1.99 -> fails as required
+      falsifier [xi1 conjugated on the wrong column]: err 2 -> fails as required
+[PASS] C2 reverse paired identity (CM): Moebius coefficients mu conj(alpha) xi1: err 2.63e-15 (tol 1e-10) 
+      falsifier [Moebius coefficients without conj(alpha) (zeta form)]: err 1.99 -> fails as required
+      C3 case C=(1, 3) t=(4, 3) e0=(1, 3) ell=30.0 Y=400.0: LHS 59.2724347111  RHS 59.2724347111+4.3e-16i
+      C3 case C=(1, 3) t=(1, 0) e0=(1, 0) ell=30.0 Y=250.0: LHS 33.6691143217  RHS 33.6691143217-1.5e-15i
+      C3 case C=(-5, -15) t=(4, 3) e0=(-5, 0) ell=40.0 Y=500.0: LHS 58.6371705651  RHS 58.6371705651+4.7e-16i
+[PASS] C3 second Poisson identity (CM coefficients mu conj(alpha) xi1 -> a_{xi'}): err 2.42e-16 (tol 1e-09) relative error
+      falsifier [zeta Moebius coefficients mu xi1 on the left]: err 0.000783 -> fails as required
+      falsifier [zeta cubic coefficients conj(alpha) gamma_2 on the right]: err 0.000782 -> fails as required
+      C4 case L=20.0 F=7.0 H=25.0: LHS 0.000475340186417  RHS 0.000475340186417+5.3e-20i
+      C4 case L=25.0 F=1.0 H=30.0: LHS 0.00101617217583  RHS 0.00101617217583+4.2e-20i
+[PASS] C4 first Poisson identity of the transfer (CM): A(W) = Z + sum ... p_{hf^2}: err 1.15e-15 (tol 1e-09) relative error
+      falsifier [p_y without conj(alpha) (zeta form)]: err 0.236 -> fails as required
+[PASS] C5 regrouping: sum over preimages of mu(e)mu(w) = tau(r) 1_{f'|k'}: err 0 (tol 0) 400 random (r, f', k')
+      C6 case k=(5, 2) f=(1, 3): |P_long| = 0.000511, error 8.5e-19
+      C6 case k=(7, -4) f=(1, 0): |P_long| = 0.000426, error 1.2e-19
+[PASS] C6 cube removal: P_long = sum_b beta_0(b,f) chi_b(k)^3 N(b)^{-1} L_b^{-1/2} (column sum at L_b): err 8.51e-19 (tol 1e-10) 
+      falsifier [conj(alpha)^3 (zeta) in the inversion and in T]: err 0.000978 -> fails as required
+[PASS] C7a (x/k)_2 kappa_lambda(x)^{e_k} is trivial on the six units: err 0 (tol 0) 170 squarefree k
+[PASS] C7b quadratic reciprocity factor (n/k)_2 (k/n)_2 depends only on k, n mod 4: err 0 (tol 0) 144 class pairs
+[PASS] C7c k1 = k2 mod 4: (x/k1 k2)_2 trivial on units (so the product is primitive mod k1 k2): err 0 (tol 0) 156 pairs
+[PASS] C7d even columns: (-2n'/k)_2 = (-2/k)_2 (n'/k)_2 with |(-2/k)_2| = 1: err 0 (tol 0) 
+[PASS] C8 local cost exponent <= 2 v_p(s0) or v_p(g) (as in a^2 Y << H^2 N(g)/X): err 0 (tol 0) 
+[PASS] C10 scale identities: X0' = L/(N(r)N(f')), weights c_* Sigma N(r)/L^2, Phihat argument, zero-frequency weight, block size: err 0 (tol 0) sympy
+[PASS] C10b first transfer: (1/(LF)) H/(N(e0) N(t) ell) = w_{C,e0}: err 0 (tol 0) sympy
+[PASS] C11 the map (f, h) -> h f^2 has multiplicity <= #{f squarefree : f^2 | y} <= tau(y): err 0 (tol 0) max multiplicity 3
+exit 0

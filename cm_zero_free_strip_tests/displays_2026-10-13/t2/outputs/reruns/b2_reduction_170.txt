@@ -1,0 +1,9 @@
+PAIRED forward class form: max err 1.65e-15 over 80 pairs; zeta-coefficient falsifier 2.00e+00
+PAIRED forward with xi_1 = chi_n(omega): max err 1.61e-15
+PAIRED reverse class form: max err 1.54e-15; falsifier mu alpha (not conj alpha): 2.00e+00
+REDUCTION D=120 H=170: 34 columns, 109 (r0,f) pairs; M_D = 0.0070864918, Z = 0.006963, Z + sum c S = 0.0070864918+0.0000000000j; rel err 1.22e-15
+   falsifier zeta: rel err 4.73e-02
+   falsifier kf2: rel err 4.14e-04
+   falsifier noexcl: rel err 3.19e-03
+   falsifier Gswap: rel err 5.17e-02
+EXIT STATUS 0: all 10 checks passed

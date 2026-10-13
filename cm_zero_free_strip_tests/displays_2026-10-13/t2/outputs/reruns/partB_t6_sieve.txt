@@ -1,0 +1,7 @@
+RESULT|B62|PASS|err=0.254 tol=2; K=U=400: 109 rows, 138 squarefree columns (29 even); max LHS/((K+U)sum|beta|^2) = 0.254 over 6 choices NOTE: cited bound with unspecified constant; sanity only
+RESULT|B63|PASS|err=0 tol=0; (b^2/k)_2 = 1 whenever (b,k)=1: True; K=U=400,1600,6400: ratio LHS/((K+U)sum|beta|^2) with beta=1 on squares 0.84, 1.53, 3.19 (grows like sqrt U); with beta=1 on squarefree columns 0.254, 0.276, 0.289 (bounded)
+RESULT|B64|PASS|err=0.299 tol=5; X=1400, 397 (n,b) terms (6 with b!=1), all lattice rows: ratio sum|T|^2/(H+H^2N(f)/X): N(f)=1,H=20: 0.278; N(f)=1,H=150: 0.299; N(f)=1,H=600: 0.239; N(f)=7,H=20: 0.230; N(f)=7,H=150: 0.179; N(f)=7,H=600: 0.077; N(f)=91,H=20: 0.120; N(f)=91,H=150: 0.023; N(f)=91,H=600: 0.006 NOTE: analytic bound with D^eps and unspecified constant; sanity only
+RESULT|B65|PASS|err=0 tol=0; all 10890 nonzero k with N(k)<=3000 factor as u s v0^2 (s squarefree; 4350 have lambda or 2 in s, which the row sum allows)
+RESULT|B66|PASS|err=4.41e-15 tol=1e-10; 400 random (n, v0, f) incl. non-coprime cases; T(X;u s v0^2,f) = T(X;u s,f v0^2) for 8 cases (err 1.3e-15)
+      falsifier for B66 [chi_n(f v0)^4]: err=1.73 -> fails as required
+RESULT|B67|PASS|err=0 tol=0; 6 zeta(2) L(2,chi_-3) = 7.711146; partial sums over N(v0)<=R: R=100: 7.675313 (tail 3.6e-02), R=1000: 7.707534 (tail 3.6e-03), R=10000: 7.710783 (tail 3.6e-04); bookkeeping identity (sympy)

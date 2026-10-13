@@ -1,0 +1,24 @@
+[PASS] eq:s4-M vs OAI78 L9233 (M_u): 1 CM edit(s); source without the edits differs from the guide: yes (falsifier fails as required)
+[PASS] eq:s4-M and eq:d171 are the two lines of eq:d199 (psi_u = nu chi_.(u)^eps written out)
+[PASS] eq:d171 vs OAI78 L9240-9243 (Q_u): 0 CM edit(s)
+[PASS] eq:d172 vs OAI78 L9254 (hypotheses of lem:marked): 0 CM edit(s)
+[PASS] eq:s4-marked vs OAI78 old-eq:4.1: 0 CM edit(s)
+[PASS] eq:s4-a (first form) vs OAI78 L7293 (a(n)): 1 CM edit(s); source without the edits differs from the guide: yes (falsifier fails as required)
+[PASS] eq:s4-a second form = \varphi(n)\cdot (OAI78 L7293 coefficient)
+[PASS] eq:s4-E vs OAI78 eq:canonical-energy: 1 CM edit(s); source without the edits differs from the guide: yes (falsifier fails as required)
+[PASS] eq:s4-T vs eq:s1-marked-completion (guide): 1 CM edit(s); source without the edits differs from the guide: yes (falsifier fails as required)
+[PASS] eq:s4-T vs OAI78 eq:marked-completion: 2 CM edit(s); source without the edits differs from the guide: yes (falsifier fails as required)
+[PASS] eq:s4-inversion vs OAI78 eq:marked-completion-inversion: 1 CM edit(s); source without the edits differs from the guide: yes (falsifier fails as required)
+[PASS] eq:s4-Pa vs OAI78 eq:inverse-first-polynomial: 1 CM edit(s); source without the edits differs from the guide: yes (falsifier fails as required)
+[PASS] eq:s4-a0 vs OAI78 L10807 (a_0): 1 CM edit(s); source without the edits differs from the guide: yes (falsifier fails as required)
+[PASS] eq:s4-child vs OAI78 eq:canonical-child-polynomial: 1 CM edit(s); source without the edits differs from the guide: yes (falsifier fails as required)
+[PASS] eq:s4-R0 vs OAI78 eq:initial-residual-polynomial: 1 CM edit(s); source without the edits differs from the guide: yes (falsifier fails as required)
+[PASS] eq:s4-Astar vs OAI78 L11812-11813 (A_*, nu_*): 1 CM edit(s); source without the edits differs from the guide: yes (falsifier fails as required)
+[PASS] eq:s4-sixth vs OAI78 eq:sixth-power-column-identity: 1 CM edit(s); source without the edits differs from the guide: yes (falsifier fails as required)
+[PASS] eq:d190: both estimates occur verbatim in OAI78 (L6587-6588, L6692); omega = Delta_1/2 (L6606); C_I(s) = s - 2/3 (L5547)
+[PASS] eq:d193 vs OAI1112 L673 (A_u): 1 CM edit(s); source without the edits differs from the guide: yes (falsifier fails as required)
+[PASS] eq:d194 vs OAI1112 eq:ms (Prop. 3.1): same sum and exponent D^(2+theta+eps); the constant's dependence (finite C^k norm of W) is stated in words after eq:d194
+[PASS] eq:d196 vs OAI1112 L742-747: same Mellin identity, with alpha(n)nu(n) and L^S(s, conj psi) for mu(n)nu(n) and L_K^S(s, nu); the Euler product is the middle member
+[PASS] eq:d197 is eq:s4-M with nu = theta in Theta_0, Z^r = D, psi_u = theta chi_.(u)^eps
+
+SUMMARY: 22/22 comparisons pass

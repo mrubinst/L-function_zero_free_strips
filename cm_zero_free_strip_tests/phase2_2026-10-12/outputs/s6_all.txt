@@ -1,0 +1,32 @@
+s6_twisted_paired: exit 0, failure lines 0
+s6_twisted_reduction_120_170: exit 0, failure lines 0
+s6_twisted_reduction_120_40: exit 0, failure lines 0
+s6_twisted_reduction_200_300: exit 0, failure lines 0
+s6_margins_and_rows: exit 0, failure lines 0
+RESULT|s6-T3|PASS|err=0 tol=0; exponent bookkeeping of OAI78 Part I (exact fractions); failed: []
+      falsifier for s6-T3 [no bin ceiling]: err=1 -> fails as required
+RESULT|s6-T4|PASS|err=0 tol=0; each unit u != 1 has chi_p(u) != 1 at some of the first 40 primary primes; the six unit characters are distinct
+      falsifier for s6-T4 [u = 1 is principal (no p with chi_p(1) != 1)]: err=1 -> fails as required
+RESULT|s6-T5|PASS|err=0 tol=1e-12; alpha(p)nu(p) = conj psi((p)) at 300 primes; psi((a)) = conj alpha(a) for 125 elements a = 1 mod 3 pi13; psi not of order <= 1000
+      falsifier for s6-T5 [infinity type alpha instead of conj(alpha)]: err=2 -> fails as required
+RESULT|s6-T2a|PASS|err=1.21e-14 tol=1e-10; forward paired identity over G_S (144 chars), xi1 = conj nu, nu of order 12 mod pi13; 60 pairs
+      falsifier for s6-T2a [xi1 = nu (orientation)]: err=2 -> fails as required
+      falsifier for s6-T2a [G(t) in place of G(t^-1)]: err=1.73 -> fails as required
+      falsifier for s6-T2a [untwisted c_xi (xi1 = 1)]: err=2 -> fails as required
+RESULT|s6-T2b|PASS|err=1.06e-14 tol=1e-10; reverse paired identity over G_S, xi = nu and a random xi, 30 pairs each
+      falsifier for s6-T2b [beta = mu alpha xi1 (not conj alpha)]: err=2 -> fails as required
+RESULT|s6-T1|PASS|err=2.58e-15 tol=1e-12; twisted reduction M_D = Z + sum_xi c_xi(conj nu) S_xi, D=120, H=170: 33 columns, 102 (r0,f) pairs; M_D=0.0060595422, Z=0.006434
+      falsifier for s6-T1 [nu(m1) conj nu(m2)]: err=0.124 -> fails as required
+      falsifier for s6-T1 [no twist on dual side]: err=0.082 -> fails as required
+      falsifier for s6-T1 [r0, f not restricted to be coprime to pi13]: err=0.00548 -> fails as required
+      falsifier for s6-T1 [zeta coefficients]: err=0.0738 -> fails as required
+RESULT|s6-T1|PASS|err=1.45e-14 tol=1e-12; twisted reduction M_D = Z + sum_xi c_xi(conj nu) S_xi, D=120, H=40: 33 columns, 102 (r0,f) pairs; M_D=0.0014490122, Z=0.001514
+      falsifier for s6-T1 [nu(m1) conj nu(m2)]: err=0.176 -> fails as required
+      falsifier for s6-T1 [no twist on dual side]: err=0.0272 -> fails as required
+      falsifier for s6-T1 [r0, f not restricted to be coprime to pi13]: err=0.00717 -> fails as required
+      falsifier for s6-T1 [zeta coefficients]: err=0.0538 -> fails as required
+RESULT|s6-T1|PASS|err=2.44e-15 tol=1e-12; twisted reduction M_D = Z + sum_xi c_xi(conj nu) S_xi, D=200, H=300: 49 columns, 158 (r0,f) pairs; M_D=0.0142047971, Z=0.013214
+      falsifier for s6-T1 [nu(m1) conj nu(m2)]: err=0.0807 -> fails as required
+      falsifier for s6-T1 [no twist on dual side]: err=0.0419 -> fails as required
+      falsifier for s6-T1 [r0, f not restricted to be coprime to pi13]: err=0.00134 -> fails as required
+      falsifier for s6-T1 [zeta coefficients]: err=0.0612 -> fails as required

@@ -1,0 +1,132 @@
+--- alpha: e=1, conductor N(f)=9 (finite part 1), |gamma|=1.000000000000000, eps=1.000000-0.000000j
+RESULT|3-alpha-x^1/2 e^-x|PASS|err=2.02e-16 tol=1e-09; reflection identity, X in (0.6,1.5,4), C = 3N(f)/(4pi^2) = 0.68392
+      falsifier for 3-alpha-x^1/2 e^-x [finite-part conductor scale]: err=0.308 -> fails as required
+      falsifier for 3-alpha-x^1/2 e^-x [J_0 (finite-order) dual profile]: err=0.305 -> fails as required
+RESULT|3-alpha-x^3/2 e^-x|PASS|err=2.88e-16 tol=1e-09; reflection identity, X in (0.6,1.5,4), C = 3N(f)/(4pi^2) = 0.68392
+      falsifier for 3-alpha-x^3/2 e^-x [finite-part conductor scale]: err=0.514 -> fails as required
+RESULT|3-alpha-lognormal|PASS|err=1.63e-11 tol=1e-09; reflection identity, X in (0.6,1.5,4), C = 3N(f)/(4pi^2) = 0.68392
+      falsifier for 3-alpha-lognormal [finite-part conductor scale]: err=1.21 -> fails as required
+RESULT|3-alpha-|gamma||PASS|err=3.33e-16 tol=1e-12; |eps| = |gamma(phi)| = 1
+RESULT|3-alpha-conductor|PASS|err=0 tol=0.5; conductor changes only at lambda: v_lambda(f)=2, v_lambda(g)=0, prime-to-3 parts 1=1
+--- conj alpha: e=-1, conductor N(f)=9 (finite part 1), |gamma|=1.000000000000000, eps=1.000000-0.000000j
+RESULT|3-conj alpha-x^1/2 e^-x|PASS|err=2.02e-16 tol=1e-09; reflection identity, X in (0.6,1.5,4), C = 3N(f)/(4pi^2) = 0.68392
+      falsifier for 3-conj alpha-x^1/2 e^-x [finite-part conductor scale]: err=0.308 -> fails as required
+      falsifier for 3-conj alpha-x^1/2 e^-x [J_0 (finite-order) dual profile]: err=0.305 -> fails as required
+      falsifier for 3-conj alpha-x^1/2 e^-x [root number without the factor e]: err=0.621 -> fails as required
+RESULT|3-conj alpha-x^3/2 e^-x|PASS|err=2.14e-16 tol=1e-09; reflection identity, X in (0.6,1.5,4), C = 3N(f)/(4pi^2) = 0.68392
+      falsifier for 3-conj alpha-x^3/2 e^-x [finite-part conductor scale]: err=0.514 -> fails as required
+      falsifier for 3-conj alpha-x^3/2 e^-x [root number without the factor e]: err=0.992 -> fails as required
+RESULT|3-conj alpha-|gamma||PASS|err=2.22e-16 tol=1e-12; |eps| = |gamma(phi)| = 1
+RESULT|3-conj alpha-conductor|PASS|err=0 tol=0.5; conductor changes only at lambda: v_lambda(f)=2, v_lambda(g)=0, prime-to-3 parts 1=1
+--- alpha chi_p7^5: e=1, conductor N(f)=7 (finite part 63), |gamma|=0.999999999999998, eps=0.997992+0.063333j
+RESULT|3-alpha chi_p7^5-x^1/2 e^-x|PASS|err=6.34e-16 tol=1e-09; reflection identity, X in (0.6,1.5,4), C = 3N(f)/(4pi^2) = 0.53194
+      falsifier for 3-alpha chi_p7^5-x^1/2 e^-x [finite-part conductor scale]: err=0.296 -> fails as required
+      falsifier for 3-alpha chi_p7^5-x^1/2 e^-x [J_0 (finite-order) dual profile]: err=0.256 -> fails as required
+      falsifier for 3-alpha chi_p7^5-x^1/2 e^-x [root number without (f/|f|)^e]: err=0.377 -> fails as required
+RESULT|3-alpha chi_p7^5-x^3/2 e^-x|PASS|err=7.56e-16 tol=1e-09; reflection identity, X in (0.6,1.5,4), C = 3N(f)/(4pi^2) = 0.53194
+      falsifier for 3-alpha chi_p7^5-x^3/2 e^-x [finite-part conductor scale]: err=0.527 -> fails as required
+      falsifier for 3-alpha chi_p7^5-x^3/2 e^-x [root number without (f/|f|)^e]: err=0.544 -> fails as required
+RESULT|3-alpha chi_p7^5-lognormal|PASS|err=2.48e-11 tol=1e-09; reflection identity, X in (0.6,1.5,4), C = 3N(f)/(4pi^2) = 0.53194
+      falsifier for 3-alpha chi_p7^5-lognormal [finite-part conductor scale]: err=0.989 -> fails as required
+      falsifier for 3-alpha chi_p7^5-lognormal [root number without (f/|f|)^e]: err=1.1 -> fails as required
+RESULT|3-alpha chi_p7^5-|gamma||PASS|err=2e-15 tol=1e-12; |eps| = |gamma(phi)| = 1
+RESULT|3-alpha chi_p7^5-conductor|PASS|err=0 tol=0.5; conductor changes only at lambda: v_lambda(f)=0, v_lambda(g)=2, prime-to-3 parts 7=7
+--- alpha^1 chi_p13^1: e=1, conductor N(f)=39 (finite part 117), |gamma|=0.999999999999999, eps=0.729409-0.684078j
+RESULT|3-alpha^1 chi_p13^1-x^1/2 e^-x|PASS|err=5.39e-16 tol=1e-09; reflection identity, X in (0.6,1.5,4), C = 3N(f)/(4pi^2) = 2.96364
+      falsifier for 3-alpha^1 chi_p13^1-x^1/2 e^-x [finite-part conductor scale]: err=0.279 -> fails as required
+      falsifier for 3-alpha^1 chi_p13^1-x^1/2 e^-x [J_0 (finite-order) dual profile]: err=0.296 -> fails as required
+      falsifier for 3-alpha^1 chi_p13^1-x^1/2 e^-x [root number without (f/|f|)^e]: err=0.258 -> fails as required
+RESULT|3-alpha^1 chi_p13^1-x^3/2 e^-x|PASS|err=6.11e-16 tol=1e-09; reflection identity, X in (0.6,1.5,4), C = 3N(f)/(4pi^2) = 2.96364
+      falsifier for 3-alpha^1 chi_p13^1-x^3/2 e^-x [finite-part conductor scale]: err=0.411 -> fails as required
+      falsifier for 3-alpha^1 chi_p13^1-x^3/2 e^-x [root number without (f/|f|)^e]: err=0.383 -> fails as required
+RESULT|3-alpha^1 chi_p13^1-|gamma||PASS|err=7.77e-16 tol=1e-12; |eps| = |gamma(phi)| = 1
+RESULT|3-alpha^1 chi_p13^1-conductor|PASS|err=0 tol=0.5; conductor changes only at lambda: v_lambda(f)=1, v_lambda(g)=2, prime-to-3 parts 13=13
+--- alpha^1 chi_p13^2: e=1, conductor N(f)=117 (finite part 117), |gamma|=1.000000000000000, eps=0.522044-0.852918j
+RESULT|3-alpha^1 chi_p13^2-x^1/2 e^-x|PASS|err=1.78e-16 tol=1e-09; reflection identity, X in (0.6,1.5,4), C = 3N(f)/(4pi^2) = 8.89093
+      falsifier for 3-alpha^1 chi_p13^2-x^1/2 e^-x [J_0 (finite-order) dual profile]: err=0.233 -> fails as required
+      falsifier for 3-alpha^1 chi_p13^2-x^1/2 e^-x [root number without (f/|f|)^e]: err=0.315 -> fails as required
+RESULT|3-alpha^1 chi_p13^2-x^3/2 e^-x|PASS|err=3.93e-16 tol=1e-09; reflection identity, X in (0.6,1.5,4), C = 3N(f)/(4pi^2) = 8.89093
+      falsifier for 3-alpha^1 chi_p13^2-x^3/2 e^-x [root number without (f/|f|)^e]: err=0.422 -> fails as required
+RESULT|3-alpha^1 chi_p13^2-|gamma||PASS|err=4.44e-16 tol=1e-12; |eps| = |gamma(phi)| = 1
+RESULT|3-alpha^1 chi_p13^2-conductor|PASS|err=0 tol=0.5; conductor changes only at lambda: v_lambda(f)=2, v_lambda(g)=2, prime-to-3 parts 13=13
+--- alpha^1 chi_p13^3: e=1, conductor N(f)=117 (finite part 13), |gamma|=1.000000000000000, eps=0.693375+0.720577j
+RESULT|3-alpha^1 chi_p13^3-x^1/2 e^-x|PASS|err=2.95e-16 tol=1e-09; reflection identity, X in (0.6,1.5,4), C = 3N(f)/(4pi^2) = 8.89093
+      falsifier for 3-alpha^1 chi_p13^3-x^1/2 e^-x [finite-part conductor scale]: err=0.378 -> fails as required
+      falsifier for 3-alpha^1 chi_p13^3-x^1/2 e^-x [J_0 (finite-order) dual profile]: err=0.257 -> fails as required
+      falsifier for 3-alpha^1 chi_p13^3-x^1/2 e^-x [root number without (f/|f|)^e]: err=0.349 -> fails as required
+RESULT|3-alpha^1 chi_p13^3-x^3/2 e^-x|PASS|err=7.11e-16 tol=1e-09; reflection identity, X in (0.6,1.5,4), C = 3N(f)/(4pi^2) = 8.89093
+      falsifier for 3-alpha^1 chi_p13^3-x^3/2 e^-x [finite-part conductor scale]: err=0.637 -> fails as required
+      falsifier for 3-alpha^1 chi_p13^3-x^3/2 e^-x [root number without (f/|f|)^e]: err=0.433 -> fails as required
+RESULT|3-alpha^1 chi_p13^3-|gamma||PASS|err=4.44e-16 tol=1e-12; |eps| = |gamma(phi)| = 1
+RESULT|3-alpha^1 chi_p13^3-conductor|PASS|err=0 tol=0.5; conductor changes only at lambda: v_lambda(f)=2, v_lambda(g)=0, prime-to-3 parts 13=13
+--- alpha^-1 chi_p13^1: e=-1, conductor N(f)=117 (finite part 117), |gamma|=1.000000000000000, eps=-0.964246+0.265007j
+RESULT|3-alpha^-1 chi_p13^1-x^1/2 e^-x|PASS|err=3.71e-16 tol=1e-09; reflection identity, X in (0.6,1.5,4), C = 3N(f)/(4pi^2) = 8.89093
+      falsifier for 3-alpha^-1 chi_p13^1-x^1/2 e^-x [J_0 (finite-order) dual profile]: err=0.479 -> fails as required
+      falsifier for 3-alpha^-1 chi_p13^1-x^1/2 e^-x [root number without the factor e]: err=0.625 -> fails as required
+      falsifier for 3-alpha^-1 chi_p13^1-x^1/2 e^-x [root number without (f/|f|)^e]: err=0.245 -> fails as required
+RESULT|3-alpha^-1 chi_p13^1-x^3/2 e^-x|PASS|err=6.34e-16 tol=1e-09; reflection identity, X in (0.6,1.5,4), C = 3N(f)/(4pi^2) = 8.89093
+      falsifier for 3-alpha^-1 chi_p13^1-x^3/2 e^-x [root number without the factor e]: err=1.11 -> fails as required
+      falsifier for 3-alpha^-1 chi_p13^1-x^3/2 e^-x [root number without (f/|f|)^e]: err=0.435 -> fails as required
+RESULT|3-alpha^-1 chi_p13^1-|gamma||PASS|err=2.22e-16 tol=1e-12; |eps| = |gamma(phi)| = 1
+RESULT|3-alpha^-1 chi_p13^1-conductor|PASS|err=0 tol=0.5; conductor changes only at lambda: v_lambda(f)=2, v_lambda(g)=2, prime-to-3 parts 13=13
+--- alpha^-1 chi_p13^2: e=-1, conductor N(f)=39 (finite part 117), |gamma|=1.000000000000000, eps=0.859543-0.511064j
+RESULT|3-alpha^-1 chi_p13^2-x^1/2 e^-x|PASS|err=7.79e-16 tol=1e-09; reflection identity, X in (0.6,1.5,4), C = 3N(f)/(4pi^2) = 2.96364
+      falsifier for 3-alpha^-1 chi_p13^2-x^1/2 e^-x [finite-part conductor scale]: err=0.283 -> fails as required
+      falsifier for 3-alpha^-1 chi_p13^2-x^1/2 e^-x [J_0 (finite-order) dual profile]: err=0.333 -> fails as required
+      falsifier for 3-alpha^-1 chi_p13^2-x^1/2 e^-x [root number without the factor e]: err=0.802 -> fails as required
+      falsifier for 3-alpha^-1 chi_p13^2-x^1/2 e^-x [root number without (f/|f|)^e]: err=0.3 -> fails as required
+RESULT|3-alpha^-1 chi_p13^2-x^3/2 e^-x|PASS|err=1.13e-15 tol=1e-09; reflection identity, X in (0.6,1.5,4), C = 3N(f)/(4pi^2) = 2.96364
+      falsifier for 3-alpha^-1 chi_p13^2-x^3/2 e^-x [finite-part conductor scale]: err=0.371 -> fails as required
+      falsifier for 3-alpha^-1 chi_p13^2-x^3/2 e^-x [root number without the factor e]: err=1.08 -> fails as required
+      falsifier for 3-alpha^-1 chi_p13^2-x^3/2 e^-x [root number without (f/|f|)^e]: err=0.403 -> fails as required
+RESULT|3-alpha^-1 chi_p13^2-lognormal|PASS|err=3.33e-11 tol=1e-09; reflection identity, X in (0.6,1.5,4), C = 3N(f)/(4pi^2) = 2.96364
+      falsifier for 3-alpha^-1 chi_p13^2-lognormal [finite-part conductor scale]: err=0.842 -> fails as required
+      falsifier for 3-alpha^-1 chi_p13^2-lognormal [root number without the factor e]: err=1.81 -> fails as required
+      falsifier for 3-alpha^-1 chi_p13^2-lognormal [root number without (f/|f|)^e]: err=0.675 -> fails as required
+RESULT|3-alpha^-1 chi_p13^2-|gamma||PASS|err=4.44e-16 tol=1e-12; |eps| = |gamma(phi)| = 1
+RESULT|3-alpha^-1 chi_p13^2-conductor|PASS|err=0 tol=0.5; conductor changes only at lambda: v_lambda(f)=1, v_lambda(g)=2, prime-to-3 parts 13=13
+--- alpha^-1 chi_p13^3: e=-1, conductor N(f)=117 (finite part 13), |gamma|=1.000000000000000, eps=0.693375-0.720577j
+RESULT|3-alpha^-1 chi_p13^3-x^1/2 e^-x|PASS|err=3.25e-16 tol=1e-09; reflection identity, X in (0.6,1.5,4), C = 3N(f)/(4pi^2) = 8.89093
+      falsifier for 3-alpha^-1 chi_p13^3-x^1/2 e^-x [finite-part conductor scale]: err=0.378 -> fails as required
+      falsifier for 3-alpha^-1 chi_p13^3-x^1/2 e^-x [J_0 (finite-order) dual profile]: err=0.257 -> fails as required
+      falsifier for 3-alpha^-1 chi_p13^3-x^1/2 e^-x [root number without the factor e]: err=0.892 -> fails as required
+      falsifier for 3-alpha^-1 chi_p13^3-x^1/2 e^-x [root number without (f/|f|)^e]: err=0.349 -> fails as required
+RESULT|3-alpha^-1 chi_p13^3-x^3/2 e^-x|PASS|err=6e-16 tol=1e-09; reflection identity, X in (0.6,1.5,4), C = 3N(f)/(4pi^2) = 8.89093
+      falsifier for 3-alpha^-1 chi_p13^3-x^3/2 e^-x [finite-part conductor scale]: err=0.637 -> fails as required
+      falsifier for 3-alpha^-1 chi_p13^3-x^3/2 e^-x [root number without the factor e]: err=1.11 -> fails as required
+      falsifier for 3-alpha^-1 chi_p13^3-x^3/2 e^-x [root number without (f/|f|)^e]: err=0.433 -> fails as required
+RESULT|3-alpha^-1 chi_p13^3-|gamma||PASS|err=4.44e-16 tol=1e-12; |eps| = |gamma(phi)| = 1
+RESULT|3-alpha^-1 chi_p13^3-conductor|PASS|err=0 tol=0.5; conductor changes only at lambda: v_lambda(f)=2, v_lambda(g)=0, prime-to-3 parts 13=13
+--- alpha chi_p7 chi_p19^3: e=1, conductor N(f)=1197 (finite part 1197), |gamma|=1.000000000000001, eps=0.091633+0.995793j
+RESULT|3-alpha chi_p7 chi_p19^3-x^1/2 e^-x|PASS|err=9.52e-16 tol=1e-09; reflection identity, X in (0.6,1.5,4), C = 3N(f)/(4pi^2) = 90.96109
+      falsifier for 3-alpha chi_p7 chi_p19^3-x^1/2 e^-x [J_0 (finite-order) dual profile]: err=0.28 -> fails as required
+      falsifier for 3-alpha chi_p7 chi_p19^3-x^1/2 e^-x [root number without (f/|f|)^e]: err=0.227 -> fails as required
+RESULT|3-alpha chi_p7 chi_p19^3-x^3/2 e^-x|PASS|err=1.35e-15 tol=1e-09; reflection identity, X in (0.6,1.5,4), C = 3N(f)/(4pi^2) = 90.96109
+      falsifier for 3-alpha chi_p7 chi_p19^3-x^3/2 e^-x [root number without (f/|f|)^e]: err=0.371 -> fails as required
+RESULT|3-alpha chi_p7 chi_p19^3-|gamma||PASS|err=8.88e-16 tol=1e-12; |eps| = |gamma(phi)| = 1
+RESULT|3-alpha chi_p7 chi_p19^3-conductor|PASS|err=0 tol=0.5; conductor changes only at lambda: v_lambda(f)=2, v_lambda(g)=2, prime-to-3 parts 133=133
+--- conj alpha (a/2)_3: e=-1, conductor N(f)=12 (finite part 36), |gamma|=1.000000000000000, eps=1.000000+0.000000j
+RESULT|3-conj alpha (a/2)_3-x^1/2 e^-x|PASS|err=1.68e-16 tol=1e-09; reflection identity, X in (0.6,1.5,4), C = 3N(f)/(4pi^2) = 0.91189
+      falsifier for 3-conj alpha (a/2)_3-x^1/2 e^-x [finite-part conductor scale]: err=0.284 -> fails as required
+      falsifier for 3-conj alpha (a/2)_3-x^1/2 e^-x [J_0 (finite-order) dual profile]: err=0.316 -> fails as required
+      falsifier for 3-conj alpha (a/2)_3-x^1/2 e^-x [root number without the factor e]: err=0.635 -> fails as required
+      falsifier for 3-conj alpha (a/2)_3-x^1/2 e^-x [root number without (f/|f|)^e]: err=0.449 -> fails as required
+RESULT|3-conj alpha (a/2)_3-x^3/2 e^-x|PASS|err=2.61e-16 tol=1e-09; reflection identity, X in (0.6,1.5,4), C = 3N(f)/(4pi^2) = 0.91189
+      falsifier for 3-conj alpha (a/2)_3-x^3/2 e^-x [finite-part conductor scale]: err=0.428 -> fails as required
+      falsifier for 3-conj alpha (a/2)_3-x^3/2 e^-x [root number without the factor e]: err=1.05 -> fails as required
+      falsifier for 3-conj alpha (a/2)_3-x^3/2 e^-x [root number without (f/|f|)^e]: err=0.741 -> fails as required
+RESULT|3-conj alpha (a/2)_3-|gamma||PASS|err=2.22e-16 tol=1e-12; |eps| = |gamma(phi)| = 1
+RESULT|3-conj alpha (a/2)_3-conductor|PASS|err=0 tol=0.5; conductor changes only at lambda: v_lambda(f)=1, v_lambda(g)=2, prime-to-3 parts 4=4
+--- alpha^-1 chi_p7^2 (a/2)_3: e=-1, conductor N(f)=252 (finite part 28), |gamma|=0.999999999999998, eps=-0.991978+0.126411j
+RESULT|3-alpha^-1 chi_p7^2 (a/2)_3-x^1/2 e^-x|PASS|err=1.15e-15 tol=1e-09; reflection identity, X in (0.6,1.5,4), C = 3N(f)/(4pi^2) = 19.14970
+      falsifier for 3-alpha^-1 chi_p7^2 (a/2)_3-x^1/2 e^-x [finite-part conductor scale]: err=0.667 -> fails as required
+      falsifier for 3-alpha^-1 chi_p7^2 (a/2)_3-x^1/2 e^-x [J_0 (finite-order) dual profile]: err=0.428 -> fails as required
+      falsifier for 3-alpha^-1 chi_p7^2 (a/2)_3-x^1/2 e^-x [root number without the factor e]: err=0.658 -> fails as required
+      falsifier for 3-alpha^-1 chi_p7^2 (a/2)_3-x^1/2 e^-x [root number without (f/|f|)^e]: err=0.508 -> fails as required
+RESULT|3-alpha^-1 chi_p7^2 (a/2)_3-x^3/2 e^-x|PASS|err=1.83e-15 tol=1e-09; reflection identity, X in (0.6,1.5,4), C = 3N(f)/(4pi^2) = 19.14970
+      falsifier for 3-alpha^-1 chi_p7^2 (a/2)_3-x^3/2 e^-x [finite-part conductor scale]: err=0.989 -> fails as required
+      falsifier for 3-alpha^-1 chi_p7^2 (a/2)_3-x^3/2 e^-x [root number without the factor e]: err=1.05 -> fails as required
+      falsifier for 3-alpha^-1 chi_p7^2 (a/2)_3-x^3/2 e^-x [root number without (f/|f|)^e]: err=0.809 -> fails as required
+RESULT|3-alpha^-1 chi_p7^2 (a/2)_3-|gamma||PASS|err=2.11e-15 tol=1e-12; |eps| = |gamma(phi)| = 1
+RESULT|3-alpha^-1 chi_p7^2 (a/2)_3-conductor|PASS|err=0 tol=0.5; conductor changes only at lambda: v_lambda(f)=2, v_lambda(g)=0, prime-to-3 parts 28=28
+SUMMARY: 119 checks, 0 failures

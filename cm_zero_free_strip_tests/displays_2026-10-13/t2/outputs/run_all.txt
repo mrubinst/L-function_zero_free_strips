@@ -1,0 +1,23 @@
+== new tests
+t2a_gauss_identities.txt                      exit 0, failure lines 0, 1s
+t2b_sxi_endtoend.txt                          exit 0, failure lines 0, 17s
+t2c_change_of_variables.txt                   exit 0, failure lines 0, 1s
+t2d_sizecheck_hyp.txt                         exit 0, failure lines 0, 3s
+== reruns of existing tests (unchanged scripts, read-only)
+partB_t2_poisson.txt                          exit 0, failure lines 0, 73s
+partB_t3_gauss.txt                            exit 0, failure lines 0, 2s
+partB_t4_theta.txt                            exit 0, failure lines 0, 11s
+partB_t6_sieve.txt                            exit 0, failure lines 0, 3s
+partB_t5_reflection_j2.txt                    exit 0, failure lines 0, 130s
+b2_reduction_170.txt                          exit 0, failure lines 0, 2s
+b2_reduction_40.txt                           exit 0, failure lines 0, 4s
+b2_reduction_D300_H360.txt                    exit 0, failure lines 0, 17s
+b2_normalization.txt                          exit 0, failure lines 0, 1s
+b3_symbolic.txt                               exit 0, failure lines 0, 4s
+b4_checks.txt                                 exit 0, failure lines 0, 18s
+r1_test_classgroup.txt                        exit 0, failure lines 0, 3s
+r1_test_step45_bookkeeping.txt                exit 0, failure lines 0, 5s
+r2_t2_grouping_cusp_data.txt                  exit 0, failure lines 0, 9s
+r2_t3_gl_family.txt                           exit 0, failure lines 0, 2s
+sec10_descent.txt                             exit 0, failure lines 0, 5s
+total 311 s; overall status 0

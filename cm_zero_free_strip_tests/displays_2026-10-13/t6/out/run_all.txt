@@ -1,0 +1,18 @@
+t6_moment_sanity: exit 0, 3 s
+t6_kernel_bookkeeping: exit 0, 20 s
+t6_mellin_rep: exit 0, 21 s
+t6_theta_translates_pi0: exit 0, 43 s
+t6_theta_translates_pi1: exit 0, 43 s
+rerun_b3_symbolic: exit 0, 4 s
+rerun_s1_kernel: exit 0, 19 s
+rerun_s1_local: exit 0, 25 s
+rerun_b3_endtoend: exit 0, 49 s
+rerun_s1_endtoend_g1: exit 0, 100 s
+rerun_s1_endtoend_g0: exit 0, 100 s
+rerun_s1_endtoend_b0: exit 0, 106 s
+rerun_s1_endtoend_b1: exit 0, 106 s
+rerun overall status 0
+t6 overall status 0; wall time 106 s
+real 106.79
+user 520.78
+sys 95.53

@@ -1,0 +1,3 @@
+gamma_2(-pi) = gamma_2(pi): 1.3653937842860002e-15  gamma_2(pi)^3 = -alpha(pi) = alpha(-pi): 3.575193960459936e-15
+gamma(psi) with generator zeta q = psi(zeta) gamma(psi), 20 pairs x 6 units: 4.432557604889171e-15
+EXIT STATUS 0: all 3 checks passed

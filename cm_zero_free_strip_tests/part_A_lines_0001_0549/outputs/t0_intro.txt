@@ -1,0 +1,16 @@
+[PASS] A0.01 (l.33-35) [E] j(E_d)=0 for 0<|d|<=200 (PARI); short Weierstrass j=0 <=> a=0; (x,y)->(omega x,y) is an automorphism | falsifier detected
+[UNTESTED] A0.02 (l.38-39,55-57) [A] main theorems L(E_d,s)!=0 (Re s>17/12), Re s>11/8, L(s,conj(alpha)eta)!=0 (Re s>7/8): conditional analytic conclusions, not finitely testable
+[PASS] A0.03 (l.41-42,172-174) [E] PARI: weight k=2, lfuncheckfeq=-140,-140 bits; strip ((k-1)/2,(k+1)/2)=(Fraction(1, 2), Fraction(3, 2)); shifted L(E,s+1/2) has centre 1/2, unshifted centre 1 | falsifier detected
+[PASS] A0.04 (l.43-45,104,149) [I] 11/12+1/2=17/12, 7/8+1/2=11/8 (Fraction) | falsifier detected
+[PASS] A0.05 (l.45-46) [E] 1124 split primes p<20000: pi not associate to conj(pi), so alpha(pi) is not a root of unity | falsifier detected
+[PASS] A0.06 (l.64-65,120-130) [E] q-expansions to q^3000: weights (Fraction(4, 1), Fraction(3, 1)); a_p=0 for p=2 mod 3 and a_p=Tr(zeta^j conj(pi)^k) (k=3,2), |a_p|<=2p^(k/2); failures 0,0 | falsifier detected
+[PASS] A0.07 (l.72-74) [E] coefficients of 1/L_p in X=p^-s: [1, -lam, 1, 0, 0, 0] (eq:reciprocal tested in A2.07) | falsifier detected
+[PASS] A0.08 (l.76-77,225) [E] (c * (zeta L(chi_-3)))(m) = [m=1] for m<=20000 | falsifier detected
+[PASS] A0.09 (l.82,95) [E] sum_(N n=m) mu_K(n) = c(m), all m<=20000 coprime to 6 | falsifier detected
+[PASS] A0.10 (l.87-88) [I] exponent of D^{1+eps}H equals 2+theta+eps (sympy) | falsifier detected
+[SANITY] A0.11 (l.86-88,378) [A] rows/columns counts: see A4.01 (rows ~ (2pi/sqrt3)H, columns ~ const*D)
+[PASS] A0.12 (l.91-94) [I] |S|^2 <~ D H^(5/6) = D^11/6 at H=D, so |S| <~ D^11/12 | falsifier detected
+[SANITY] A0.13 (l.91-93) [A] row count ~H^{1/6}/log H and O(D/N(pi)) approximation: tested in A5.03, A5.05-A5.07
+[UNTESTED] A0.14 (l.96-104) [A] summary of Poisson/theta/descent steps (Sections 6-8; other chunks). Text check only: "(nbar/|n|)^2 ... (zeta: nbar/|n|)" agrees with a_xi(n)=conj(alpha(n))^2 gamma_2(n)xi(n) and "zeta version produces conj(alpha) gamma_2" at l.661-674
+[PASS] A0.15 (l.57,122-124) [E] d=7, m<=3000: sum n chi_n(u_d) = sum conj(n) conj(chi_n(u_d)) = a_m (alpha vs conj(alpha) is a convention: same L(E_d,s)) | falsifier detected
+[PASS] A0.16 (l.66-67,129-130) [C] local factorisation of Sym^k L(E_d) (k<=6) into psi^(k-2i)-factors (+ zeta/L(chi_-3) for k even) at split and inert p (the zero-free consequence itself is an expectation; untested) | falsifier detected

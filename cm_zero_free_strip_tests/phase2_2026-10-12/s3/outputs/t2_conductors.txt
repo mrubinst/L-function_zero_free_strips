@@ -1,0 +1,7 @@
+[PASS] S3-T2a lem:s3-labels(f) every member (finite and CM) has conductor exponent exactly 1 at each good prime of u :: 180 (row, theta, sigma) cases, j = 1..5; no exception
+[PASS] S3-T2b lem:s3-labels(e) exponent at 2 <= 3, at lambda <= 4; Q <= 5184 N(u') for all members :: max exponent at 2: 3, at lambda: 4; max Q/N(u') = 5184, max Q/N(u) = 1728; falsifier 'Q <= N(u')' holds for all? False [falsifier failed as required]
+[PASS] S3-T2c lem:s3-labels(e) CM conductor = finite-order conductor away from lambda; lambda-exp <= max(2, .); Q_CM <= 9 Q_0 :: 7 cases where the CM member is unramified at lambda (alpha's ramification cancelled by theta chi(u)); falsifier 'f_CM = f_0 always' holds? False [falsifier failed as required]
+[PASS] S3-T2d lem:s3-labels(d) CM members have infinity type alpha^sigma (sigma=-1: zbar/|z|, in F_CM) :: falsifiers (finite order / opposite type) valid for some case? False [falsifier failed as required]
+[PASS] S3-T2e lem:s3-labels(a) conjugate label (conj theta, -sigma): same conductor, conjugate values :: checked with the conductor search and 20 random good primary n per case
+time 22.0s
+SUMMARY: {'PASS': 5}

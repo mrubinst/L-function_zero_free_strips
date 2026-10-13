@@ -1,0 +1,5 @@
+[PASS] S3-T1a lem:s3-labels(a) |Lambda| = 4|Theta_0| distinct members; X_u closed under conjugation :: |Theta_0| = 216, distinct member functions 864, sample of 145 good primary n; falsifier (drop alpha*theta*chi(u)) closed? False [falsifier failed as required]
+[PASS] S3-T1b lem:s3-labels(b) X_u contains numerator, denominator psi conj chi(u), conjugates, slot characters; anti-oriented abar theta chi(u) not in X_u :: 36 slot-type characters checked; anti-oriented twists found in X_u: 0 of 216
+[PASS] S3-T1c lem:s3-labels(c) phi(mn) = phi(m)phi(n) on good primary m, n (zero convention), finite and CM :: max error 4.4e-15 over 2000 pairs; falsifier (chi^-1 := 1 at nonunits) max error 2.00 [falsifier failed as required]
+[PASS] S3-T1d prop:s3-detector(iv) truncated inverse: coefficient 1 at n = 1, 0 for 1 < q_n <= D*, CM member :: 272 good primary n with q_n <= 900; max error 1.8e-15; falsifier (broken zero convention) max |coefficient| on 1 < q_n <= D*: 3.46 [falsifier failed as required]
+SUMMARY: {'PASS': 4}

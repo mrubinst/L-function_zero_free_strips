@@ -1,0 +1,57 @@
+1510 nonzero ideals with N <= 2500
+--- chi_p7^5, e=+1 (guide example): N(f_k)=7, N(g_k)=63, r_k norms [3, 4], R_0k norms [4]
+RESULT|F4-rk-chi_p7^5, e=+1 (guide example)|PASS|err=0 tol=0; r_k squarefree, prime to f_k, differs from R_0k at most at lambda
+RESULT|F4-chi_p7^5, e=+1 (guide example)|PASS|err=3.44e-15 tol=1e-12; [alpha^e psi^0](l) = Xi_k(l) 1_(l,r_k)=1 on all 1510 ideals N <= 2500
+RESULT|F24-chi_p7^5, e=+1 (guide example)|PASS|err=2.26e-16 tol=1e-12; T_k(X;W) = sum_{d0|r_k} mu Xi_k(d0) N(d0)^{-1/2} T_Xi(X/N d0; W), bump X=3,40,300 and x^{1/2}e^{-x} X=0.7,5
+RESULT|F25-chi_p7^5, e=+1 (guide example)|PASS|err=2.08e-16 tol=1e-12; T_conjXi(Y;W#) = sum_{rad h0|r_k} conj Xi(h0) N(h0)^{-1/2} T_conj(alpha^e psi^0)(Y/N h0; W#), Y=0.5,3,12
+--- chi_p7^5, e=-1: N(f_k)=63, N(g_k)=63, r_k norms [4], R_0k norms [4]
+RESULT|F4-rk-chi_p7^5, e=-1|PASS|err=0 tol=0; r_k squarefree, prime to f_k, differs from R_0k at most at lambda
+RESULT|F4-chi_p7^5, e=-1|PASS|err=5.55e-16 tol=1e-12; [alpha^e psi^0](l) = Xi_k(l) 1_(l,r_k)=1 on all 1510 ideals N <= 2500
+RESULT|F24-chi_p7^5, e=-1|PASS|err=1.49e-16 tol=1e-12; T_k(X;W) = sum_{d0|r_k} mu Xi_k(d0) N(d0)^{-1/2} T_Xi(X/N d0; W), bump X=3,40,300 and x^{1/2}e^{-x} X=0.7,5
+RESULT|F25-chi_p7^5, e=-1|PASS|err=2.02e-16 tol=1e-12; T_conjXi(Y;W#) = sum_{rad h0|r_k} conj Xi(h0) N(h0)^{-1/2} T_conj(alpha^e psi^0)(Y/N h0; W#), Y=0.5,3,12
+--- chi_p7 chi_p13^6, e=+1: N(f_k)=63, N(g_k)=63, r_k norms [4, 13], R_0k norms [4, 13]
+RESULT|F4-rk-chi_p7 chi_p13^6, e=+1|PASS|err=0 tol=0; r_k squarefree, prime to f_k, differs from R_0k at most at lambda
+RESULT|F4-chi_p7 chi_p13^6, e=+1|PASS|err=4.11e-15 tol=1e-12; [alpha^e psi^0](l) = Xi_k(l) 1_(l,r_k)=1 on all 1510 ideals N <= 2500
+RESULT|F24-chi_p7 chi_p13^6, e=+1|PASS|err=2.45e-16 tol=1e-12; T_k(X;W) = sum_{d0|r_k} mu Xi_k(d0) N(d0)^{-1/2} T_Xi(X/N d0; W), bump X=3,40,300 and x^{1/2}e^{-x} X=0.7,5
+RESULT|F25-chi_p7 chi_p13^6, e=+1|PASS|err=2.88e-16 tol=1e-12; T_conjXi(Y;W#) = sum_{rad h0|r_k} conj Xi(h0) N(h0)^{-1/2} T_conj(alpha^e psi^0)(Y/N h0; W#), Y=0.5,3,12
+--- chi_p7 chi_p13^6, e=-1: N(f_k)=7, N(g_k)=63, r_k norms [3, 4, 13], R_0k norms [4, 13]
+RESULT|F4-rk-chi_p7 chi_p13^6, e=-1|PASS|err=0 tol=0; r_k squarefree, prime to f_k, differs from R_0k at most at lambda
+RESULT|F4-chi_p7 chi_p13^6, e=-1|PASS|err=4.67e-15 tol=1e-12; [alpha^e psi^0](l) = Xi_k(l) 1_(l,r_k)=1 on all 1510 ideals N <= 2500
+RESULT|F24-chi_p7 chi_p13^6, e=-1|PASS|err=4.25e-16 tol=1e-12; T_k(X;W) = sum_{d0|r_k} mu Xi_k(d0) N(d0)^{-1/2} T_Xi(X/N d0; W), bump X=3,40,300 and x^{1/2}e^{-x} X=0.7,5
+RESULT|F25-chi_p7 chi_p13^6, e=-1|PASS|err=3.09e-16 tol=1e-12; T_conjXi(Y;W#) = sum_{rad h0|r_k} conj Xi(h0) N(h0)^{-1/2} T_conj(alpha^e psi^0)(Y/N h0; W#), Y=0.5,3,12
+--- (./2)_3 chi_p19^2 chi_p7^3, e=+1: N(f_k)=4788, N(g_k)=4788, r_k norms [], R_0k norms []
+RESULT|F4-rk-(./2)_3 chi_p19^2 chi_p7^3, e=+1|PASS|err=0 tol=0; r_k squarefree, prime to f_k, differs from R_0k at most at lambda
+RESULT|F4-(./2)_3 chi_p19^2 chi_p7^3, e=+1|PASS|err=4.97e-16 tol=1e-12; [alpha^e psi^0](l) = Xi_k(l) 1_(l,r_k)=1 on all 1510 ideals N <= 2500
+RESULT|F24-(./2)_3 chi_p19^2 chi_p7^3, e=+1|PASS|err=6.21e-17 tol=1e-12; T_k(X;W) = sum_{d0|r_k} mu Xi_k(d0) N(d0)^{-1/2} T_Xi(X/N d0; W), bump X=3,40,300 and x^{1/2}e^{-x} X=0.7,5
+RESULT|F25-(./2)_3 chi_p19^2 chi_p7^3, e=+1|PASS|err=1.39e-17 tol=1e-12; T_conjXi(Y;W#) = sum_{rad h0|r_k} conj Xi(h0) N(h0)^{-1/2} T_conj(alpha^e psi^0)(Y/N h0; W#), Y=0.5,3,12
+--- chi_p31^5, e=-1: N(f_k)=31, N(g_k)=279, r_k norms [3, 4], R_0k norms [4]
+RESULT|F4-rk-chi_p31^5, e=-1|PASS|err=0 tol=0; r_k squarefree, prime to f_k, differs from R_0k at most at lambda
+RESULT|F4-chi_p31^5, e=-1|PASS|err=3.51e-15 tol=1e-12; [alpha^e psi^0](l) = Xi_k(l) 1_(l,r_k)=1 on all 1510 ideals N <= 2500
+RESULT|F24-chi_p31^5, e=-1|PASS|err=6.71e-16 tol=1e-12; T_k(X;W) = sum_{d0|r_k} mu Xi_k(d0) N(d0)^{-1/2} T_Xi(X/N d0; W), bump X=3,40,300 and x^{1/2}e^{-x} X=0.7,5
+RESULT|F25-chi_p31^5, e=-1|PASS|err=6.24e-16 tol=1e-12; T_conjXi(Y;W#) = sum_{rad h0|r_k} conj Xi(h0) N(h0)^{-1/2} T_conj(alpha^e psi^0)(Y/N h0; W#), Y=0.5,3,12
+--- (./2)_3 chi_p13^4, e=-1: N(f_k)=468, N(g_k)=52, r_k norms [], R_0k norms [3]
+RESULT|F4-rk-(./2)_3 chi_p13^4, e=-1|PASS|err=0 tol=0; r_k squarefree, prime to f_k, differs from R_0k at most at lambda
+RESULT|F4-(./2)_3 chi_p13^4, e=-1|PASS|err=4.48e-16 tol=1e-12; [alpha^e psi^0](l) = Xi_k(l) 1_(l,r_k)=1 on all 1510 ideals N <= 2500
+RESULT|F24-(./2)_3 chi_p13^4, e=-1|PASS|err=8.33e-17 tol=1e-12; T_k(X;W) = sum_{d0|r_k} mu Xi_k(d0) N(d0)^{-1/2} T_Xi(X/N d0; W), bump X=3,40,300 and x^{1/2}e^{-x} X=0.7,5
+RESULT|F25-(./2)_3 chi_p13^4, e=-1|PASS|err=6.21e-17 tol=1e-12; T_conjXi(Y;W#) = sum_{rad h0|r_k} conj Xi(h0) N(h0)^{-1/2} T_conj(alpha^e psi^0)(Y/N h0; W#), Y=0.5,3,12
+--- chi_p13^3, e=+1: N(f_k)=117, N(g_k)=13, r_k norms [4], R_0k norms [3, 4]
+RESULT|F4-rk-chi_p13^3, e=+1|PASS|err=0 tol=0; r_k squarefree, prime to f_k, differs from R_0k at most at lambda
+RESULT|F4-chi_p13^3, e=+1|PASS|err=4.46e-16 tol=1e-12; [alpha^e psi^0](l) = Xi_k(l) 1_(l,r_k)=1 on all 1510 ideals N <= 2500
+RESULT|F24-chi_p13^3, e=+1|PASS|err=1.86e-16 tol=1e-12; T_k(X;W) = sum_{d0|r_k} mu Xi_k(d0) N(d0)^{-1/2} T_Xi(X/N d0; W), bump X=3,40,300 and x^{1/2}e^{-x} X=0.7,5
+RESULT|F25-chi_p13^3, e=+1|PASS|err=1.57e-16 tol=1e-12; T_conjXi(Y;W#) = sum_{rad h0|r_k} conj Xi(h0) N(h0)^{-1/2} T_conj(alpha^e psi^0)(Y/N h0; W#), Y=0.5,3,12
+RESULT|F5|PASS|err=3.11e-15 tol=1e-12; alpha^e psi^*((a)) = phi_alpha(a)^e phi_0(a) (a/|a|)^e for all a prime to 3g_k in a box, all rows
+RESULT|F5-phialpha|PASS|err=0 tol=1e-12; phi_alpha(a) = u(a)^{-1} depends only on a mod 3; phi_alpha(u) = u^{-1}
+RESULT|F5-units|PASS|err=3.58e-15 tol=1e-12; phi_k(u) = u^{-e} and phi_0(u) = 1 on the six units
+RESULT|F5-agree|PASS|err=4.77e-15 tol=1e-12; Xi_k = alpha^e psi_k^* on ideals prime to 3 g_k (Lemma s5-rowchar (a))
+      falsifier for F5 [phi_alpha(a) = u(a) (no inverse)]: err=1.73 -> fails as required
+      falsifier for F4 [OAI78's R_0k (from g_k) in place of r_k]: err=1 -> fails as required
+      falsifier for F4 [r_k without the primes of S]: err=1 -> fails as required
+      falsifier for F4 [no indicator 1_(l,r_k)=1]: err=1 -> fails as required
+      falsifier for F24 [R_0k in place of r_k]: err=0.187 -> fails as required
+      falsifier for F24 [omit mu(d0)]: err=0.434 -> fails as required
+      falsifier for F25 [squarefree h0 only]: err=0.174 -> fails as required
+      falsifier for F25 [R_0k in place of r_k]: err=0.193 -> fails as required
+RESULT|F26|PASS|err=6.4e-17 tol=1e-12; Delta_k = Q (X1X2)^{-1/2} sum alpha(l1l2)^e psi_k(l1l2){...}, psi_k(n) = (n/2)_3 chi_n(k), 3 rows, e = +-1
+      falsifier for F26 [unequal products X1X2 != Y1Y2]: err=0.00385 -> fails as required
+      falsifier for F26 [no angular factor]: err=0.0911 -> fails as required
+SUMMARY: 47 checks, 0 failures

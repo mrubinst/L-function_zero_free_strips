@@ -1,0 +1,24 @@
+prime Gauss sums 13851 80.0
+squarefree c: 52912 84.0
+left side done 84.4
+   table ('0', 1): 54 coefficients, t=85s
+   table ('0', 7): 2882 coefficients, t=85s
+   table ('-', 4): 3036 coefficients, t=85s
+   table ('-', 28): 148959 coefficients, t=91s
+   table ('+', 1): 198 coefficients, t=91s
+   table ('+', 7): 9312 coefficients, t=92s
+   table ('0', 4): 954 coefficients, t=92s
+   table ('0', 28): 45830 coefficients, t=94s
+   table ('-', 1): 198 coefficients, t=94s
+   table ('-', 7): 9312 coefficients, t=94s
+   table ('+', 4): 3036 coefficients, t=94s
+   table ('+', 28): 148959 coefficients, t=99s
+groups 72; cusp types (sigma, N(c)): {('+', 1): 3, ('+', 4): 9, ('+', 7): 3, ('+', 28): 9, ('-', 1): 3, ('-', 4): 9, ('-', 7): 3, ('-', 28): 9, ('0', 1): 3, ('0', 4): 9, ('0', 7): 3, ('0', 28): 9}
+j=0: T direct = 0.016371169410-0.013175513234j   T via Proposition (grouped) = 0.016371169410-0.013175513234j   rel.err 2.48e-12
+j=1: T direct = -0.111568817344-0.020547984483j   T via Proposition (grouped) = -0.111568817344-0.020547984483j   rel.err 8.56e-13
+j=2: T direct = -0.124299536806-0.156453180028j   T via Proposition (grouped) = -0.124299536806-0.156453180028j   rel.err 3.10e-13
+j=3: T direct = 0.119392954526-0.103659339670j   T via Proposition (grouped) = 0.119392954526-0.103659339670j   rel.err 2.64e-13
+j=4: T direct = -0.091684697782+0.004433133928j   T via Proposition (grouped) = -0.091684697781+0.004433133928j   rel.err 6.78e-13
+j=5: T direct = -0.405540416742+0.260849377863j   T via Proposition (grouped) = -0.405540416742+0.260849377863j   rel.err 1.35e-13
+controls (max rel.err over j, must be >= 1e-2): {'alpha_c_unconj': '1.38e+00', 'abar_c^2': '1.96e+00', 'zeta_-i': '1.41e+00', 'kappa_unconj': '3.49e+00', 'B_-j': '4.02e+00', 'k1': '5.52e+00', 'left_abar3': '1.52e+00'}
+PASS time 101.6

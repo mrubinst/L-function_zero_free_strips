@@ -1,0 +1,270 @@
+{
+  "suites": 23,
+  "status": 0,
+  "seconds": 898.57,
+  "source_sha256": "41a8c450a2e9fb2a6a411ba83d01a8e2f73a2fea86ea03915ff094cca4edebbb",
+  "results": [
+    {
+      "suite": "r1_extraction",
+      "directory": "r1",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-I",
+        "test_extraction_rows.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.68
+    },
+    {
+      "suite": "r1_classgroup",
+      "directory": "r1",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-I",
+        "test_classgroup.py"
+      ],
+      "exit_code": 0,
+      "seconds": 2.24
+    },
+    {
+      "suite": "r1_bookkeeping",
+      "directory": "r1",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-I",
+        "test_step45_bookkeeping.py"
+      ],
+      "exit_code": 0,
+      "seconds": 5.06
+    },
+    {
+      "suite": "r2_t3",
+      "directory": "r2",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-B",
+        "t3_gl_family.py"
+      ],
+      "exit_code": 0,
+      "seconds": 1.35
+    },
+    {
+      "suite": "r3_t1",
+      "directory": "r3",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "t1_gauss_and_curves.py"
+      ],
+      "exit_code": 0,
+      "seconds": 1.11
+    },
+    {
+      "suite": "r2_t2",
+      "directory": "r2",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-B",
+        "t2_grouping_cusp_data.py"
+      ],
+      "exit_code": 0,
+      "seconds": 8.35
+    },
+    {
+      "suite": "r3_t3",
+      "directory": "r3",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "t3_final_inequality.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.82
+    },
+    {
+      "suite": "r3_t2",
+      "directory": "r3",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "t2_higher_weight.py"
+      ],
+      "exit_code": 0,
+      "seconds": 13.36
+    },
+    {
+      "suite": "s1_local",
+      "directory": "s1",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "t_s1_local_phases.py"
+      ],
+      "exit_code": 0,
+      "seconds": 22.65
+    },
+    {
+      "suite": "r2_t1",
+      "directory": "r2",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-B",
+        "t1_prop_grouped_endtoend.py"
+      ],
+      "exit_code": 0,
+      "seconds": 88.93
+    },
+    {
+      "suite": "s1_endtoend_g0",
+      "directory": "s1",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "t_s1_endtoend_active.py",
+        "gauss",
+        "0"
+      ],
+      "exit_code": 0,
+      "seconds": 103.52
+    },
+    {
+      "suite": "s1_endtoend_g1",
+      "directory": "s1",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "t_s1_endtoend_active.py",
+        "gauss",
+        "1"
+      ],
+      "exit_code": 0,
+      "seconds": 103.31
+    },
+    {
+      "suite": "s1_kernel",
+      "directory": "s1",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "t_s1_kernel.py"
+      ],
+      "exit_code": 0,
+      "seconds": 16.77
+    },
+    {
+      "suite": "s2_t1",
+      "directory": "s2",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "t1_theta_fe.py"
+      ],
+      "exit_code": 0,
+      "seconds": 68.41
+    },
+    {
+      "suite": "s1_endtoend_b0",
+      "directory": "s1",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "t_s1_endtoend_active.py",
+        "bessel",
+        "0"
+      ],
+      "exit_code": 0,
+      "seconds": 164.86
+    },
+    {
+      "suite": "s1_endtoend_b1",
+      "directory": "s1",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "t_s1_endtoend_active.py",
+        "bessel",
+        "1"
+      ],
+      "exit_code": 0,
+      "seconds": 187.7
+    },
+    {
+      "suite": "s2_t4",
+      "directory": "s2",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "t4_conductors.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.06
+    },
+    {
+      "suite": "s3_all",
+      "directory": "s3",
+      "command": [
+        "./run_all.sh"
+      ],
+      "exit_code": 0,
+      "seconds": 115.19
+    },
+    {
+      "suite": "s4_checks",
+      "directory": "s4",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "s4_checks.py"
+      ],
+      "exit_code": 0,
+      "seconds": 23.19
+    },
+    {
+      "suite": "s5_all",
+      "directory": "s5",
+      "command": [
+        "./run_all.sh"
+      ],
+      "exit_code": 0,
+      "seconds": 35.26
+    },
+    {
+      "suite": "s6_all",
+      "directory": "s6",
+      "command": [
+        "./run_all.sh"
+      ],
+      "exit_code": 0,
+      "seconds": 9.92
+    },
+    {
+      "suite": "s2_t2",
+      "directory": "s2",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "t2_growth.py"
+      ],
+      "exit_code": 0,
+      "seconds": 294.69
+    },
+    {
+      "suite": "s2_t3",
+      "directory": "s2",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "t3_reflection.py"
+      ],
+      "exit_code": 0,
+      "seconds": 642.54
+    }
+  ],
+  "source_sha256_after_exposition_changes": "72186100d52f2156325021f0a614f38a32720d70eedba4659bd89187cd1c9c21"
+}

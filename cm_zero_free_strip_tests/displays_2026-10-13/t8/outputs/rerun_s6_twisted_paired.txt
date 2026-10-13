@@ -1,0 +1,6 @@
+RESULT|s6-T2a|PASS|err=1.21e-14 tol=1e-10; forward paired identity over G_S (144 chars), xi1 = conj nu, nu of order 12 mod pi13; 60 pairs
+      falsifier for s6-T2a [xi1 = nu (orientation)]: err=2 -> fails as required
+      falsifier for s6-T2a [G(t) in place of G(t^-1)]: err=1.73 -> fails as required
+      falsifier for s6-T2a [untwisted c_xi (xi1 = 1)]: err=2 -> fails as required
+RESULT|s6-T2b|PASS|err=1.06e-14 tol=1e-10; reverse paired identity over G_S, xi = nu and a random xi, 30 pairs each
+      falsifier for s6-T2b [beta = mu alpha xi1 (not conj alpha)]: err=2 -> fails as required

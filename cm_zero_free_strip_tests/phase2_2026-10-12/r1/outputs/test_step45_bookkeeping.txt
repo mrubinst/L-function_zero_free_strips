@@ -1,0 +1,8 @@
+[PASS] S1 3777 random support points (D = 6000, H = D^1.1, I = [1,2], C_Phi = 1.7): N(r0)N(f) <= b0 D and H N(k) <= C_Phi N(f)^2 N(m1) N(m2) <= C_Phi b0^2 D^2/N(r0)^2
+[PASS] S2 N(k) <= calH, rho in [1,4) (max 3.783), kappa <= C1 (max kappa/C1 = 0.697), x_i in [a0/4, b0] (min x_i = 0.299), kernel identities W_0(rho x_i), kappa/(x1 x2)
+      falsifier S2 [rho in [1,2)]: some rho >= 2 occurs -> fails as required
+      falsifier S2 [support [a0/2, b0]]: some x_i < a0/2 occurs -> fails as required
+      falsifier S2 [hat Phi argument with N(f) for N(f)^2]: identity breaks -> fails as required
+[PASS] S3 (X/N(j), F N(j)) satisfy (7.15) with the same calH for every prime j | r0
+[PASS] S4 max over dyadic B of [sum_{B<=N(r0)<2B} (H N(r0)/D^2)(D/B)^2] / H = 1.000 (bounded)
+SUMMARY test_step45_bookkeeping: 7 checks, 0 FAIL

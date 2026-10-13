@@ -1,0 +1,27 @@
+Claim: invCoeff d n = sum_{c primary, N c = n, (c,6d)=1} mu_K(c) sqrt(N c) psi_d(c),
+       psi_d(c) = alpha(c) (u_d / c)_6, u_d = (4d)^5;  n = 1..600
+  d =     1: OK   max|lhs-rhs| = 5.27e-14  (75 nonzero coefficients)
+  d =     2: OK   max|lhs-rhs| = 1.24e-14  (75 nonzero coefficients)
+  d =     3: OK   max|lhs-rhs| = 2.84e-14  (75 nonzero coefficients)
+  d =    -1: OK   max|lhs-rhs| = 2.58e-14  (75 nonzero coefficients)
+  d =    -2: OK   max|lhs-rhs| = 1.24e-14  (75 nonzero coefficients)
+  d =    -3: OK   max|lhs-rhs| = 5.86e-14  (75 nonzero coefficients)
+  d =     5: OK   max|lhs-rhs| = 3.28e-14  (71 nonzero coefficients)
+  d =     7: OK   max|lhs-rhs| = 6.93e-14  (63 nonzero coefficients)
+  d =    -7: OK   max|lhs-rhs| = 4.00e-14  (63 nonzero coefficients)
+  d =    11: OK   max|lhs-rhs| = 5.15e-14  (74 nonzero coefficients)
+  d =    12: OK   max|lhs-rhs| = 2.18e-14  (75 nonzero coefficients)
+  d =    16: OK   max|lhs-rhs| = 0.00e+00  (75 nonzero coefficients)
+  d =   -16: OK   max|lhs-rhs| = 1.07e-14  (75 nonzero coefficients)
+  d =    30: OK   max|lhs-rhs| = 4.50e-14  (71 nonzero coefficients)
+  d =  -432: OK   max|lhs-rhs| = 0.00e+00  (75 nonzero coefficients)
+  d =     4: OK   max|lhs-rhs| = 6.64e-14  (75 nonzero coefficients)
+  d =     9: OK   max|lhs-rhs| = 7.24e-14  (75 nonzero coefficients)
+  d =    25: OK   max|lhs-rhs| = 5.86e-14  (71 nonzero coefficients)
+Identity: TRUE on 10800 pairs (d, n).
+Falsifiers (must fail):
+  F1 conj(alpha) instead of alpha    :   636 mismatches, fails for d in [1, 3, -1, -3, 5, 7, -7, 11, 12, 30, 4, 9, 25]  -> fails as required
+  F2 u = 4d instead of (4d)^5        :   636 mismatches, fails for d in [1, 3, -1, -3, 5, 7, -7, 11, 12, 30, 4, 9, 25]  -> fails as required
+  F3 u = d^5 instead of (4d)^5       :   905 mismatches, fails for d in [1, 2, 3, -1, -2, -3, 5, 7, -7, 11, 12, 16, -16, 30, -432, 4, 9, 25]  -> fails as required
+  F4 primary = 2 mod 3 (c -> -c)     :  1313 mismatches, fails for d in [1, 2, 3, -1, -2, -3, 5, 7, -7, 11, 12, 16, -16, 30, -432, 4, 9, 25]  -> fails as required
+RESULT: PASS

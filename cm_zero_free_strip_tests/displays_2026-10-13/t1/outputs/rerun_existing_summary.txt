@@ -1,0 +1,12 @@
+== A_t0_intro: exit 0, failure lines 0, 1 s
+== A_t2_integer: exit 0, failure lines 0, 42 s
+== A_t3_lattice: exit 0, failure lines 0, 12 s
+== A_t4_average: exit 0, failure lines 0, 5 s
+== A_t5_sixth: exit 0, failure lines 0, 6 s
+== B_t1_zeros: exit 0, failure lines 0, 5 s
+== b1_points: exit 0, failure lines 0, 13 s
+== b1_extract: exit 0, failure lines 0, 1 s
+== b1_bd: exit 0, failure lines 0, 0 s
+== r1_extraction_rows: exit 0, failure lines 0, 1 s
+== lean_hecke_identity: exit 0, failure lines 0, 2 s
+re-run of existing tests: total 88 s, overall status 0

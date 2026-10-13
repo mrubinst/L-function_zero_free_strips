@@ -1,0 +1,242 @@
+[
+ {
+  "label": "eq:s2-pres",
+  "number": "C.1",
+  "kind": "E",
+  "what": "For 8 primitive $\\phi$: $\\psi$ is generator-independent, multiplicative, of type $\\bar z/|z|$; $\\bar\\alpha$ case; falsifier $\\phi(a)\\alpha(a)$",
+  "script": "displays_2026-10-13/t7/c1_pres_gauss.py T7-C1a, T7-C1b; phase2_2026-10-12/s2/t4_conductors.py",
+  "result": "PASS (max err 1.4e-15)"
+ },
+ {
+  "label": "eq:d147",
+  "number": "C.2",
+  "kind": "D",
+  "what": "Definitions, implemented directly in the tests; example $\\gamma(\\bar\\alpha)=-1$ exactly; $W$ independent of the generator $f$",
+  "script": "displays_2026-10-13/t7/c1_pres_gauss.py T7-C2",
+  "result": "definition; example PASS (exact)"
+ },
+ {
+  "label": "eq:s2-gauss",
+  "number": "C.3",
+  "kind": "E",
+  "what": "Exact check in $\\mathbb Z[\\zeta_M]$ for all $h$ mod $f$, 8 characters; matches [QF, Lemma 17]; falsifiers $\\phi(h)$, imprimitive $\\phi$",
+  "script": "displays_2026-10-13/t7/c1_pres_gauss.py T7-C3",
+  "result": "PASS (exact)"
+ },
+ {
+  "label": "eq:d148",
+  "number": "C.4",
+  "kind": "E",
+  "what": "Both sides from direct theta sums at 4--5 values of $v$, 4 + 8 characters; falsifiers: no conjugation, $\\bar\\gamma$, sign, $\\bar f$",
+  "script": "phase2_2026-10-12/s2/t1_theta_fe.py (re-run); displays_2026-10-13/t7/c3_theta_mellin.py T7-C9b",
+  "result": "PASS (max rel err 3e-15)"
+ },
+ {
+  "label": "eq:d149",
+  "number": "C.5",
+  "kind": "E",
+  "what": "Quadrature of the direct theta series vs $6(2\\pi/\\sqrt3)^{-s-1/2}\\Gamma(s+\\frac12)L(s,\\psi)$ at 3 points, $\\psi$ and $\\bar\\psi$, 8 characters",
+  "script": "displays_2026-10-13/t7/c3_theta_mellin.py T7-C5",
+  "result": "PASS (max rel err 1.6e-12)"
+ },
+ {
+  "label": "eq:d150",
+  "number": "C.6",
+  "kind": "E",
+  "what": "FE from direct theta quadratures in the strip; PARI lfuncheckfeq with explicit $W=-\\gamma\\sqrt Q/f$; falsifiers $-W$, $\\bar W$",
+  "script": "displays_2026-10-13/t7/c3_theta_mellin.py T7-C6; displays_2026-10-13/t7/c4_fe_pari.py T7-C6p; phase2_2026-10-12/s2/t1_theta_fe.py (re-run)",
+  "result": "PASS (max rel err 7e-15; PARI -253 bits)"
+ },
+ {
+  "label": "eq:d151",
+  "number": "C.7",
+  "kind": "E",
+  "what": "Symbolic evaluation (sympy) and quadrature at 5 points; agrees with [QF, Example 20]; falsifier $e(z)=e^{2\\pi i\\,{\\rm Im}\\,z}$",
+  "script": "displays_2026-10-13/t7/c2_fourier.py T7-C7",
+  "result": "holds (symbolic); PASS (quad err 2e-25)"
+ },
+ {
+  "label": "eq:d152",
+  "number": "C.8",
+  "kind": "E",
+  "what": "Wirtinger derivative symbolically; transform of $\\bar w e^{-2\\pi v|w|^2/\\sqrt3}$ by quadrature at 5 points; falsifiers $\\partial_\\eta$, sign",
+  "script": "displays_2026-10-13/t7/c2_fourier.py T7-C8a, T7-C8b",
+  "result": "holds (symbolic); PASS (quad err 2e-25)"
+ },
+ {
+  "label": "eq:d153",
+  "number": "C.9",
+  "kind": "E",
+  "what": "Poisson step for every residue $t$ mod $f$; both lines vs direct theta sums, 8 characters; falsifiers: Jacobian, $e(-ty/f)$",
+  "script": "displays_2026-10-13/t7/c3_theta_mellin.py T7-C9a, T7-C9b",
+  "result": "PASS (max rel err 1.5e-13)"
+ },
+ {
+  "label": "eq:d154",
+  "number": "C.10",
+  "kind": "E",
+  "what": "Quadrature of the direct theta series vs the termwise element sum, at 3 points with ${\\rm Re}\\,s>1$, 8 characters",
+  "script": "displays_2026-10-13/t7/c3_theta_mellin.py T7-C5",
+  "result": "PASS (max rel err 1.6e-12)"
+ },
+ {
+  "label": "eq:d155",
+  "number": "C.11",
+  "kind": "D",
+  "what": "Definitions of $B$, $B^-$; quadrature agrees with the incomplete-gamma series used in the s2 tests",
+  "script": "displays_2026-10-13/t7/c3_theta_mellin.py T7-C11",
+  "result": "definition; consistency PASS (err 4e-14)"
+ },
+ {
+  "label": "eq:d156",
+  "number": "C.12",
+  "kind": "E",
+  "what": "Three expressions by separate quadratures and series, 8 characters, 2 points; falsifiers $Q^{s-3/2}$, $B^-(s)$",
+  "script": "displays_2026-10-13/t7/c3_theta_mellin.py T7-C12",
+  "result": "PASS (max rel err 6.5e-15)"
+ },
+ {
+  "label": "eq:s2-split",
+  "number": "C.13",
+  "kind": "E",
+  "what": "Both sides by quadrature at 4 points (2 with ${\\rm Re}\\,s<1$), also conjugate identity; constants symbolically; falsifiers $\\bar W$, $-W$",
+  "script": "displays_2026-10-13/t7/c3_theta_mellin.py T7-C13",
+  "result": "PASS (max rel err 1.1e-11)"
+ },
+ {
+  "label": "eq:s2-fe-unc",
+  "number": "C.14",
+  "kind": "E",
+  "what": "PARI values of both sides at 6 points, 8 characters (a consistency check of PARI's continuation); sympy equivalence with eq:d150; falsifiers $\\Gamma(1-s)/\\Gamma(s)$, no 3",
+  "script": "displays_2026-10-13/t7/c4_fe_pari.py T7-C14; phase2_2026-10-12/s3/t3_fe.py S3-T3a (re-run)",
+  "result": "PASS (max rel err 9e-16)"
+ },
+ {
+  "label": "eq:d157",
+  "number": "C.15",
+  "kind": "E",
+  "what": "Equality from PARI values at 6 heights, 8 characters (a consistency check of PARI's continuation); ratio to $Q^{3/5}(3+|t|)^{6/5}$ at most 0.30 on the tested heights; gamma quotient on a grid",
+  "script": "displays_2026-10-13/t7/c4_fe_pari.py T7-C15; phase2_2026-10-12/s2/t2_growth.py (re-run)",
+  "result": "PASS (max rel err 4e-16)"
+ },
+ {
+  "label": "eq:d158",
+  "number": "C.16",
+  "kind": "A",
+  "what": "For 8 characters, $a=0.6$, $t=0,10,40$: the winding number of $\\mathcal L$ estimated from 256 samples on a circle is 0 (no zero found in the disk), and the largest of $|\\mathcal L|+|\\mathcal L^{-1}|$ over 64 samples on a smaller circle is about 8.4; proved in Lemma s2-logcontrol",
+  "script": "displays_2026-10-13/t7/c4_fe_pari.py T7-C16",
+  "result": "size check on the sampled circles: log ratio at most 0.30"
+ },
+ {
+  "label": "eq:d159",
+  "number": "C.17",
+  "kind": "E",
+  "what": "Deletion identity at $s=2.5+1.3i$ for 8 CM members; conductor bounds and exponents by brute force and random sampling",
+  "script": "phase2_2026-10-12/s3/t3_fe.py S3-T3c, phase2_2026-10-12/s3/t2_conductors.py S3-T2a--c, phase2_2026-10-12/s2/t4_conductors.py (re-run)",
+  "result": "PASS (max err 1.2e-9)"
+ },
+ {
+  "label": "eq:d160",
+  "number": "C.18",
+  "kind": "E",
+  "what": "Both sides computed independently (Mellin--Barnes $W^\\sharp$), 3 characters; falsifiers: finite-order kernel, $\\bar W$",
+  "script": "phase2_2026-10-12/s2/t3_reflection.py (re-run)",
+  "result": "PASS (max rel err 6e-15)"
+ },
+ {
+  "label": "eq:d161",
+  "number": "D.1",
+  "kind": "D",
+  "what": "Definition, as in [OAI78, L3333--3335]; the tests use a model $\\Theta_0$ of order 216 containing $\\eta$",
+  "script": "phase2_2026-10-12/s3/t1_labels.py (model group)",
+  "result": "definition (checked against source)"
+ },
+ {
+  "label": "eq:s3-beta",
+  "number": "D.2",
+  "kind": "D",
+  "what": "Definition of $\\beta^\\sharp$; nothing to compute",
+  "script": "-",
+  "result": "definition"
+ },
+ {
+  "label": "eq:d162",
+  "number": "D.3",
+  "kind": "D",
+  "what": "Label set as implemented in the s3 tests: $4|\\Theta_0|=864$ distinct members, closed under conjugation",
+  "script": "phase2_2026-10-12/s3/t1_labels.py S3-T1a (re-run)",
+  "result": "definition; consistency PASS"
+ },
+ {
+  "label": "eq:d163",
+  "number": "D.4",
+  "kind": "D",
+  "what": "Members with the zero convention of [OAI78, L636--639], implemented by s3lib.Member; multiplicativity checked",
+  "script": "phase2_2026-10-12/s3/t1_labels.py S3-T1c (re-run)",
+  "result": "definition; consistency PASS"
+ },
+ {
+  "label": "eq:d164",
+  "number": "D.5",
+  "kind": "D",
+  "what": "Set of members; numerator, denominator, conjugates, slot characters found in it",
+  "script": "phase2_2026-10-12/s3/t1_labels.py S3-T1a, S3-T1b (re-run)",
+  "result": "definition; consistency PASS"
+ },
+ {
+  "label": "eq:d165",
+  "number": "D.6",
+  "kind": "E",
+  "what": "Direct sum vs Euler product and vs reciprocal of the M\\\"obius series, 4 members, 2 points; falsifiers sign, $\\mu$ omitted",
+  "script": "displays_2026-10-13/t7/d1_members.py T7-D6; phase2_2026-10-12/s3/t1_labels.py S3-T1c, S3-T1d (re-run)",
+  "result": "PASS (max err 4e-10)"
+ },
+ {
+  "label": "eq:d166",
+  "number": "D.7",
+  "kind": "E",
+  "what": "Deletion identity at $s=2.5+1.3i$, 8 CM members and a control; $\\varphi^*(p)=0$ at the good primes of $u$",
+  "script": "phase2_2026-10-12/s3/t3_fe.py S3-T3c, phase2_2026-10-12/s3/t2_conductors.py S3-T2a (re-run)",
+  "result": "PASS (max err 1.2e-9)"
+ },
+ {
+  "label": "eq:s3-reflected",
+  "number": "D.8",
+  "kind": "I",
+  "what": "PARI values for 4 CM members on a grid of $(a,e,t)$: ratio at most 0.96, so $C_0=1$ works; gamma quotient grid",
+  "script": "displays_2026-10-13/t7/c4_fe_pari.py T7-D8; phase2_2026-10-12/s3/t4_gamma.py S3-T4a (re-run)",
+  "result": "PASS (ratio at most 0.96)"
+ },
+ {
+  "label": "eq:d167",
+  "number": "D.9",
+  "kind": "E",
+  "what": "Both expressions for 4 members and 400 random $a$: generator-independent, type $(z/|z|)^\\varsigma$, equal to the CM member",
+  "script": "displays_2026-10-13/t7/d1_members.py T7-D9",
+  "result": "PASS (max err 7e-15)"
+ },
+ {
+  "label": "eq:d168",
+  "number": "D.10",
+  "kind": "E",
+  "what": "PARI FE check (lfuncheckfeq, $|\\epsilon|=1$; a consistency check of PARI's continuation) and the identity at 4 points for 4 CM members, both $\\varsigma$",
+  "script": "displays_2026-10-13/t7/c4_fe_pari.py T7-D10; phase2_2026-10-12/s3/t3_fe.py S3-T3a (re-run)",
+  "result": "PASS (max rel err 6e-16)"
+ },
+ {
+  "label": "eq:d169",
+  "number": "D.11",
+  "kind": "R",
+  "what": "Lemma s3-logcontrol is Lemma s2-logcontrol applied to $\\varphi^*$ or its conjugate",
+  "script": "-",
+  "result": "see eq:d158"
+ },
+ {
+  "label": "eq:d200",
+  "number": "D.12",
+  "kind": "D",
+  "what": "Same as [OAI78, eqs.\\ old-eq:1.1a, 1.1] at base $U$ with a CM label; coefficients $\\mu(n)\\varphi(n)$ as in S3-T1d",
+  "script": "phase2_2026-10-12/s3/t1_labels.py S3-T1d (re-run)",
+  "result": "definition (checked against source)"
+ }
+]

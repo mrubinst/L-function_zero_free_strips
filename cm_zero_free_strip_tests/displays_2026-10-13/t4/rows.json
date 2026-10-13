@@ -1,0 +1,234 @@
+[
+ {
+  "label": "eq:d071",
+  "number": "11.1",
+  "kind": "A",
+  "what": "Main theorem. Argument principle on the box $0.88\\le\\Re s\\le2$, $|\\Im s|\\le30$, from 15000 boundary samples (phase steps below 0.5): no zeros found, for six members of $\\mathcal F_{\\rm CM}$, $Q=7$ to $1008$",
+  "script": "displays_2026-10-13/t4/t4_lfunctions.py F3",
+  "result": "size check: no zeros found in the tested box (6 characters); proved in Sections 11-15 and the appendices"
+ },
+ {
+  "label": "eq:d072",
+  "number": "11.2",
+  "kind": "A",
+  "what": "Follows from (11.1) and (11.3). Argument principle on the box $1.38\\le\\Re s\\le2.65$, $0\\le\\Im s\\le40$, from 12000 boundary samples: no zeros found, five curves",
+  "script": "part_C_lines_0998_1509/t08_theorem_sanity.py C98",
+  "result": "size check: no zeros found in the tested box (5 curves)"
+ },
+ {
+  "label": "eq:d073",
+  "number": "11.3",
+  "kind": "E",
+  "what": "$a_m/\\sqrt m=\\sum_{N(n)=m}\\psi_d^*(n)$ for 8 curves, $m\\le600$; bad Euler factors nonzero; falsifier $\\chi_n(d)$ fails",
+  "script": "part_C_lines_0998_1509/t01_curves.py C04, C05 (also C02, C03, C09; phase2_2026-10-12/r3/t1 C1, C2)",
+  "result": "PASS (max err 3e-15)"
+ },
+ {
+  "label": "eq:d074",
+  "number": "11.4",
+  "kind": "D",
+  "what": "OAI78 old-eq:1.1b (L378-384) with the finite-order family replaced by $\\mathcal F_{\\rm CM}$; text compared",
+  "script": "displays_2026-10-13/t4/t4_sources.py S3",
+  "result": "definition"
+ },
+ {
+  "label": "eq:cm-weight",
+  "number": "12.1",
+  "kind": "E",
+  "what": "425 pairs ($c$ squarefree, $n$), $\\eta=\\chi_\\bullet(2+\\omega)$, brute-force Gauss sums; falsifier $\\bar\\alpha(n)^3$ fails",
+  "script": "part_C_lines_0998_1509/t02_gauss.py C13",
+  "result": "PASS (max err 2e-15)"
+ },
+ {
+  "label": "eq:d075",
+  "number": "12.2",
+  "kind": "E",
+  "what": "Local factor: OAI78 eq:local-P summed with generic unimodular $\\psi(p)$ equals the closed form, all $j$, $\\rho$, 10 primes; 3 falsifiers",
+  "script": "displays_2026-10-13/t4/t4_local_euler.py L1a, L1b; displays_2026-10-13/t4/t4_sources.py S3",
+  "result": "PASS (max rel err 9e-16)"
+ },
+ {
+  "label": "eq:signal-cm",
+  "number": "12.3",
+  "kind": "E",
+  "what": "Brute-force Gauss sums at 165 primes (5 inert) and 60 squarefree composites; falsifier $\\alpha$ for $\\bar\\alpha$ fails",
+  "script": "part_C_lines_0998_1509/t02_gauss.py C14, C17; phase2_2026-10-12/r3/t1_gauss_and_curves.py G2",
+  "result": "PASS (max err 8e-15)"
+ },
+ {
+  "label": "eq:d076",
+  "number": "12.4",
+  "kind": "D",
+  "what": "OAI78 $\\mathcal C_V$ (L2819-2826) with $\\bar\\alpha\\to\\bar\\alpha^2$; its weight equals (12.1) with $\\nu=\\eta$ (425 pairs)",
+  "script": "part_C_lines_0998_1509/t02_gauss.py C19; displays_2026-10-13/t4/t4_sources.py S3",
+  "result": "definition (C19 PASS, err 2e-15)"
+ },
+ {
+  "label": "eq:d077",
+  "number": "13.1",
+  "kind": "E",
+  "what": "$\\Lambda(s)=\\epsilon\\Lambda(1-s,\\bar\\psi)$ for six non-self-dual members ($Q\\le1008$) and 5 curves; falsifiers $Q$, $\\Gamma(s)$, $\\pi^{-s}$ fail",
+  "script": "displays_2026-10-13/t4/t4_lfunctions.py F0, F1; part_C_lines_0998_1509/t04_growth_fe.py C37, C38",
+  "result": "PASS (max err 8e-38)"
+ },
+ {
+  "label": "eq:d078",
+  "number": "13.2",
+  "kind": "A",
+  "what": "Measured ratio equals $(2\\pi)^{2\\sigma-1}|\\Gamma(\\frac32-s)/\\Gamma(\\frac12+s)|(3+|t|)^{2\\sigma-1}$, bounded on $[-\\frac25,\\frac75]$, independent of $Q$",
+  "script": "displays_2026-10-13/t4/t4_lfunctions.py F2; part_C_lines_0998_1509/t04_growth_fe.py C39, C43",
+  "result": "size check: ratio at most 1955, same for all Q; proved in Lemma lem:cm-growth"
+ },
+ {
+  "label": "eq:d079",
+  "number": "13.3",
+  "kind": "D",
+  "what": "Model $\\Theta_0=\\mathbb Z/6\\times\\mathbb Z/2$: $4|\\Theta_0|$ labels, closed under conjugation, contains numerator and denominator",
+  "script": "part_C_lines_0998_1509/t05_rows_moments.py C45",
+  "result": "definition (C45 PASS)"
+ },
+ {
+  "label": "eq:d080",
+  "number": "13.4",
+  "kind": "D",
+  "what": "Text equals G78 eq:witness with $\\psi\\to\\bar\\alpha\\theta\\overline{\\chi_\\bullet(u)}$; both witnesses co-oriented",
+  "script": "displays_2026-10-13/t4/t4_sources.py S2; part_C_lines_0998_1509/t05_rows_moments.py C46",
+  "result": "definition (S2, C46 PASS)"
+ },
+ {
+  "label": "eq:d081",
+  "number": "13.5",
+  "kind": "C",
+  "what": "Identical, character for character, to G78 eq:amplitude (Section 4.4); finite-order prime polynomial",
+  "script": "displays_2026-10-13/t4/t4_sources.py S1",
+  "result": "checked against source"
+ },
+ {
+  "label": "eq:d199",
+  "number": "14.1",
+  "kind": "D",
+  "what": "OAI78 lem:marked set-up (L9225-9244) with $\\alpha(n)^\\epsilon$ on the M\\\"obius variable only; text compared; implemented in M1",
+  "script": "displays_2026-10-13/t4/t4_sources.py S3; displays_2026-10-13/t4/t4_moments.py M1",
+  "result": "definition"
+ },
+ {
+  "label": "eq:cm-inverse",
+  "number": "14.2",
+  "kind": "A",
+  "what": "With one slot, $m=1$, $r=0.3$, $z_1=0.25$: $\\sum|M_uQ_u|^2/Z^m\\approx0.13$ for $Z=10^4$ to $1.6\\cdot10^5$, no growth",
+  "script": "displays_2026-10-13/t4/t4_moments.py M1; part_C_lines_0998_1509/t05_rows_moments.py C103",
+  "result": "size check: ratio 0.13, growth exponent at most 0.05; proved in Prop. prop:s4-marked"
+ },
+ {
+  "label": "eq:d082",
+  "number": "14.3",
+  "kind": "E",
+  "what": "Brute-force Gauss sums at 165 primes and 60 squarefree composites; falsifiers drop $\\chi_n(-1)$, $\\alpha$ for $\\bar\\alpha$",
+  "script": "part_C_lines_0998_1509/t02_gauss.py C23; phase2_2026-10-12/r3/t1_gauss_and_curves.py G3",
+  "result": "PASS (max err 7e-15)"
+ },
+ {
+  "label": "eq:d083",
+  "number": "14.4",
+  "kind": "D",
+  "what": "OAI78 old-eq:1.1 with $\\psi\\to\\alpha^e\\psi_k$, $\\psi_k=\\tau\\chi_\\bullet(k)$ (L12493-12497); text compared; implemented in M2",
+  "script": "displays_2026-10-13/t4/t4_sources.py S3; displays_2026-10-13/t4/t4_moments.py M2",
+  "result": "definition"
+ },
+ {
+  "label": "eq:d084",
+  "number": "14.5",
+  "kind": "A",
+  "what": "$z=0$, $Z=4000$: ratio 0.29 to 0.34 for $e=\\pm1$; control $e=0$ with principal rows gives 252",
+  "script": "displays_2026-10-13/t4/t4_moments.py M2",
+  "result": "size check: ratio at most 0.34; proved in Prop. prop:s5-plain"
+ },
+ {
+  "label": "eq:d085",
+  "number": "15.1",
+  "kind": "I",
+  "what": "OAI78 certificate re-derived symbolically, exact rational and float grids; minimum $2.28\\cdot10^{-4}$; falsifier 48 for 49",
+  "script": "part_C_lines_0998_1509/t06_final_inequality.py C58; phase2_2026-10-12/r3/t3_final_inequality.py E4, E5",
+  "result": "PASS (exact)"
+ },
+ {
+  "label": "eq:d086",
+  "number": "15.2",
+  "kind": "I",
+  "what": "$1-h/4=51/64$ at $h=13/16$; exact for $0<\\Delta\\le1/24$, $\\epsilon_{\\rm total}<49/440640$; falsifier $50/440640$",
+  "script": "part_C_lines_0998_1509/t06_final_inequality.py C59; phase2_2026-10-12/r3/t3_final_inequality.py E6",
+  "result": "PASS (exact)"
+ },
+ {
+  "label": "eq:d087",
+  "number": "17.1",
+  "kind": "A",
+  "what": "Expected, not claimed. Argument principle from 15000 boundary samples: no zeros found in $\\Re s>k/2+0.88$, $|\\Im s|\\le30$, for two eta products and four characters with $k=2,3$",
+  "script": "displays_2026-10-13/t4/t4_lfunctions.py F4",
+  "result": "size check: no zeros found in the tested box (6 L-functions)"
+ },
+ {
+  "label": "eq:d088",
+  "number": "17.2",
+  "kind": "E",
+  "what": "Dirichlet coefficients of $\\eta(2z)^3\\eta(6z)^3$ against the right side, $n\\le3000$; falsifier without $(1+3^{-s})^{-1}$",
+  "script": "part_D_lines_1510_end/t01_eta_quotients.py D01.11-D01.13; phase2_2026-10-12/r3/t2_higher_weight.py H7",
+  "result": "PASS (max err 4e-15)"
+ },
+ {
+  "label": "eq:d089",
+  "number": "17.3",
+  "kind": "E",
+  "what": "60 random $(c,n,k)$; also $k=0$; falsifier exponent $k$ fails",
+  "script": "part_D_lines_1510_end/t05_misc.py D05.2",
+  "result": "PASS (max err 4e-16)"
+ },
+ {
+  "label": "eq:d090",
+  "number": "17.4",
+  "kind": "E",
+  "what": "sympy on a complete monomial basis, $j\\le6$; falsifiers: unsigned coefficient, $z\\ne0$",
+  "script": "part_D_lines_1510_end/t02_chain_rule.py D02.1, D02.3; phase2_2026-10-12/r3/t2_higher_weight.py H1",
+  "result": "holds (symbolic)"
+ },
+ {
+  "label": "eq:d091",
+  "number": "17.5",
+  "kind": "E",
+  "what": "40-digit quadrature, $j=1,\\dots,6$, three $(\\ell,s)$ each; three falsifiers fail",
+  "script": "part_D_lines_1510_end/t03_mellin.py D03.1, D03.3; phase2_2026-10-12/r3/t2_higher_weight.py H2",
+  "result": "PASS (max rel err 2e-40)"
+ },
+ {
+  "label": "eq:d092",
+  "number": "17.6",
+  "kind": "D",
+  "what": "$R_1,R_2$ equal the two table kernels; rightmost pole $\\frac16-\\frac{j+1}2$ for $j\\le40$",
+  "script": "part_D_lines_1510_end/t04_kernels.py D04.1, D04.2",
+  "result": "definition (D04.1 PASS)"
+ },
+ {
+  "label": "eq:d093",
+  "number": "17.7",
+  "kind": "E",
+  "what": "Exact (sympy) for $j\\le60$; ratio to $j^4/16$ tends to 1; falsifier denominator 648",
+  "script": "part_D_lines_1510_end/t04_kernels.py D04.5; phase2_2026-10-12/r3/t2_higher_weight.py H3",
+  "result": "PASS (exact)"
+ },
+ {
+  "label": "eq:d094",
+  "number": "17.8",
+  "kind": "E",
+  "what": "Truncated Euler products, $\\psi=\\alpha^2\\chi_\\bullet(4)$, $s=2.5+0.3i$, $t=1.7$; falsifier $L(s+it)$",
+  "script": "part_D_lines_1510_end/t05_misc.py D05.7",
+  "result": "PASS (err 2e-24)"
+ },
+ {
+  "label": "eq:d095",
+  "number": "17.9",
+  "kind": "E",
+  "what": "Local Euler polynomials at good $p\\le600$, $m\\le8$, 7 curves (5960 cases); two falsifiers fail",
+  "script": "part_D_lines_1510_end/t06_sympowers.py D06.1, D06.2; phase2_2026-10-12/r3/t2_higher_weight.py H6",
+  "result": "PASS (max err 1e-12)"
+ }
+]

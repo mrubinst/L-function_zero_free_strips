@@ -1,0 +1,38 @@
+[PASS] C62 L1002 source-check falsifier {C} deliberately wrong needles (CM scalar in OAI78, wrong constants) are absent :: found: [False, False, False, False, False] [falsifier failed as required]
+[CITED] C63 L1040 16,700 lines {C} OAI78 source has about 16,700 lines :: 16677 lines
+[CITED] C64 L1075 thm:main {C} finite-order Hecke L-functions over Q(sqrt-3) have no zero in Re s>7/8 :: OAI78 L106, L107, L108
+[CITED] C65 L1082 continuation criterion {C} Prop. lem:continuation-criterion; reciprocal Euler product bounded on Re s>=2; sigma_0=7/8, C(s)=s-11/16 :: OAI78 L400, L450, L514
+[CITED] C66 L1107 probe weight {C} eta enters the probe only through gamma_2(c) abar(A) Psi(A), Psi(a) = eta(a) x fixed phases :: OAI78 L3386, L3363, L3397
+[CITED] C67 L1129 L2331 {C} OAI78 L2331: the zbar-derivative removes the constant term C_H(v) :: OAI78 L2331
+[UNTESTED] C68 L1126 cusp constant terms {C} theta has a nonzero constant term at the identity cusp and none at the other two cusps :: reason: needs the cusp expansions of Dunn-Radziwill App. A (F_1, F_19, F_10); OAI78 L1936-1940 only defines C_H(v)
+[CITED] C69 L1140 rows {C} row u = zeta^S(6z) L^S(w,chi(u)) / L^S(x, eta conj chi(u)) H_{eta,u} (eta -> psi in the guide) :: OAI78 L4045, L4046, L3831
+[CITED] C70 L1148 L4056, H = 1 + O(P_0^-4/5) {C} second region (L4056); H << q_u^eps; H_{eta,1} = 1+O(P_0^{-c_H}), c_H = 4/5 :: OAI78 L4056, L4060, L4064
+[CITED] C71 L1154 L3871 {C} OAI78 L3871: no ray-class restriction on p :: OAI78 L3871
+[CITED] C72 L1160 eq:signal {C} gamma1 gamma2 = mu alpha G for squarefree c (rearranged in eq:signal-cm) :: OAI78 L967, L964
+[CITED] C73 L1168 a_p, b_p {C} a_p = abar^3 eta^3, b_p = abar^2 eta^2 conj chi_p(4), b_p^3 = a_p^2; J_0 = -eta(p) rho^-1 Q^-x + ... :: OAI78 L3863, L3864, L3865, L4025
+[CITED] C74 L1182 c_S {C} principal data: H_eta = H_{eta,1}(s,1,1/6), c_S = W1^(1) M(1/6) (Res zeta^S)^2/6 (positive iff M(1/6)>0) :: OAI78 L5520, L5521
+[CITED] C75 L1192 B_m = C_V with abar -> abar^2 {C} OAI78's completed row C_V(X;m,nu) :: OAI78 L2822
+[CITED] C76 L1202 lem:unmarked-completed-moment {C} bound Z^{O/2+max(M-O,2M-O-N)+eps} (=> Z^eps(Q+Q^2/Z), see C48) :: OAI78 L3139, L3159
+[CITED] C77 L1207 marked lemmas {C} lem:hybrid-energy, lem:reflected-energy, lem:probe-row-norm, Cor. cor:marked-reflection exist :: OAI78 L7510, L7747, L8111, L7361
+[CITED] C78 L1221 table, OAI78 column {C} dbar theta; Gamma(s+1/3)Gamma(s+2/3); R(t)=prod Gamma(1+t+-1/6)/Gamma(1-t+-1/6); -i/81 abar(c)^2; abar(n)abar(b)^3; alpha(mu) :: OAI78 L2296, L2299, L1741, L1833, L1729, L1768; CM column verified independently in t03 (C28-C32)
+[CITED] C79 L1232 kernel bounds {C} |R(sigma+iu)| << (1+|u|)^{4 sigma} on -1/4<=sigma<=A; first pole -5/6; min(x^{1/4},(1+x)^{-A}) :: OAI78 L2414, L2412, L2409, L1862; guide writes x^{-A} for (1+x)^{-A} (equivalent for the min)
+[CITED] C80 L1242 marks {C} chi_p(x)^0 = 1_{p not | x} (zero convention) :: OAI78 L1674
+[CITED] C81 L1247 Z^{3/16} {C} compensated low estimate Z^{l_x/2+b/12+eps} = Z^{3/16+eps} :: OAI78 L8570, L509
+[CITED] C82 L1266 lem:hecke-strip-growth {C} |L(sigma+it,psi)| << Q^{3/5}(3+|t|)^2 on [-1/10,11/10]; FE with Gamma(s); |L(-1/10+it)| << Q^{3/5}(3+|t|)^{6/5} :: OAI78 L1429, L1430, L1440, L1450; CM: Gamma(s) -> Gamma(s+1/2), verified in t04 (C37-C40)
+[CITED] C83 L1286 lem:logarithmic-control {C} logarithmic control lemma, with principal clauses :: OAI78 L1531, L1533
+[CITED] C84 L1292 X_u and Theta {C} Theta = <eta, T^>, X_u = {nu chi(u)^sigma}, Q_psi << q_u; slot characters lie in X_u :: OAI78 L4224, L4233, L4248, L15029
+[CITED] C85 L1338 lem:bin-prime-bound {C} |Q_i(u;z)| << U^eps P_i^{a-1/2+O(e)} :: OAI78 L15015, L15021
+[CITED] C86 L1340 old-eq:3.5 {C} uniform slot bound Z^{kappa z+eps} under beta_* <= (1+kappa)/2, used only for slot characters (only zero-free use in lem:plain: L12833-12898) :: OAI78 L12873, L12833, L12896
+[CITED] C87 L1350 lem:sextic-large-sieve {C} arbitrary coefficients c_n independent of the row; bound (KD)^eps{K+D+(KD)^{2/3}} :: OAI78 L4708, L4717
+[CITED] C88 L1354 lem:marked {C} conditions r+2z<=m-c_1, 2r+8z<=3m-c_2; M_u, Q_u with psi_u = nu chi(u)^eps on n and p; bound Z^{m+eps}; either sign :: OAI78 L9254, L9233, L9227, L9242, L9259, L9264
+[CITED] C89 L1387 lem:inverse-amplification {C} input is lem:marked with no prime slots :: OAI78 L12364
+[CITED] C90 L1393 lem:plain {C} 3/4<=kappa<=1; z=0 no restriction; n1+n2+6 kappa z<=M; beta_*<=(1+kappa)/2; M=m+q; uniform in moving moduli, masks, frozen labels :: OAI78 L12532, L12561, L12565, L12592, L12577
+[CITED] C91 L1431 eq:common-high-exponent {C} E(d) = C_0 + 2delta/3 + q/6 - h(1-R) + (d-h)(R+delta/2-17/50), C_0 = -1/48 :: OAI78 L15732, L15734
+[CITED] C92 L1444 lem:balanced-endpoint {C} -E_* >= 49/440640 for 0<=delta<=5/6, 0<=x<=1/2, q = x delta, R = R_* :: OAI78 L15994, L15995, L16000
+[CITED] C93 L1450 eq:adaptive-endpoint {C} E_actual(h) - Delta <= -49/440640 - (1-h/4)Delta + eps_total = ... - (51/64)Delta :: OAI78 L16098, L16099, L16101, L16104
+[CITED] C94 L1452 h Delta/4 from kappa {C} kappa = 3/4+2Delta; capacity comparison raises the row exponent by at most Delta/4; coefficient of R is d :: OAI78 L15926, L15960, L16090
+[CITED] C95 L1470 table of OAI78 line ranges {C} eight consecutive parts 1-1648,...,14985-16677 start at section/part boundaries and contain the cited lemmas :: boundaries [1648, 3313, 4687, 6807, 9209, 12477, 14985] are \section/\part lines: True; cited labels inside the stated parts: True; last line 16677
+[CITED] C96 L1488 L2003-2279 {C} cross-prime phase bookkeeping lies in OAI78 L2003-2279 :: supplementary-law periodicity at L2003, eq:reflection-cross-prime-phase at L2271
+[CITED] C97 L1083 G78 references {C} G78 Prop. 1, Sections 3.1, 3.2, 3.3 (bin ceiling, witnesses, sextic sieve), 4.2, 4.4 (Q_i(u)), 5.1, 6 are the cited items :: G78 Prop. 1: L137; G78 3.1 probe formula: L183; G78 3.2 first evaluation: L239; G78 3.3 second evaluation: L280; G78 4.2 compensated probe: L416; G78 4.4 high side: L460; G78 5.1 three averages: L495; G78 6 final inequality: L572; Q_i(u) at G78 L474; bin a<=beta_* L323; witnesses L328; sieve L339
+[PASS] C105 L1484 six statements; eight parts {E} the status list has 6 items and the table 8 consecutive parts :: items 6 (L1484-1496), table rows 8; falsifier: 7 items [falsifier failed as required]
+[CITED] C106 L1351 only row count of Part I; numerator U^{delta/2} {C} G78: Part I uses only M_r (sextic large sieve); G78 6: the size U^{delta/2} of the numerator on the reflected line :: G78 L338, L581

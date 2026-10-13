@@ -1,0 +1,52 @@
+== r1_classgroup
+   exit 0, failure lines 1
+== r1_extraction
+   exit 0, failure lines 1
+== r1_bookkeeping
+   exit 0, failure lines 1
+== r2_t2
+   exit 0, failure lines 0
+== r2_t1
+   exit 0, failure lines 0
+== r2_t3
+   exit 0, failure lines 0
+== r3_t1
+   exit 0, failure lines 0
+== r3_t2
+   exit 0, failure lines 0
+== r3_t3
+   exit 0, failure lines 0
+== s1_local
+   exit 0, failure lines 0
+== s1_endtoend_g0
+   exit 0, failure lines 0
+== s1_endtoend_g1
+   exit 0, failure lines 0
+== s1_endtoend_b0
+   exit 0, failure lines 0
+== s1_endtoend_b1
+   exit 0, failure lines 0
+== s1_kernel
+   exit 0, failure lines 0
+== s2_t1
+   exit 0, failure lines 0
+== s2_t2
+   exit 0, failure lines 0
+== s2_t3
+   exit 0, failure lines 0
+== s2_t4
+   exit 0, failure lines 0
+== s3_all
+   exit 0, failure lines 0
+== s4_checks
+   exit 0, failure lines 0
+== s5_all
+   exit 0, failure lines 0
+== s6_all
+   exit 0, failure lines 0
+overall status 1
+./run_all.sh  1094.32s user 94.85s system 98% cpu 20:10.20 total
+
+NOTE (2026-10-12): "overall status 1" above was a false positive of the old failure counter, which matched the
+summary line "0 FAIL" in the r1 suites. Rescanned with the corrected pattern (now in run_all.sh): every suite exited 0
+and has 0 failure lines (23 suites; 166 PASS lines; every falsifier failed as required).

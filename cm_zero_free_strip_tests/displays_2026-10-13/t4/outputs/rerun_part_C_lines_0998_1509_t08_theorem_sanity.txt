@@ -1,0 +1,3 @@
+[PASS] C98 L1015 thm:78 conclusion (finite height) {A} L(E_d,s) != 0 on 1.38<=Re s<=2.65, 0<=Im s<=40 for d in {1,2,-3,5,16} (argument principle) :: d=1: zeros in box = 0.000 (min |L| on boundary 0.564); critical box winding 23.000 vs lfunzeros 23; d=2: zeros in box = -0.000 (min |L| on boundary 0.666); critical box winding 41.000 vs lfunzeros 41; d=-3: zeros in box = 0.000 (min |L| on boundary 0.464); critical box winding 38.000 vs lfunzeros 38; d=5: zeros in box = 0.000 (min |L| on boundary 0.678); critical box winding 43.000 vs lfunzeros 43; d=16: zeros in box = 0.000 (min |L| on boundary 0.56); critical box winding 21.000 vs lfunzeros 21; falsifier: the same count finds the central zeros [falsifier failed as required]
+
+--- exit 0, 4.7 s

@@ -1,0 +1,71 @@
+t4_sources.py            exit 0, failure lines 0, 0.0 s
+   [PASS] S0 29 inventory displays: verbatim in the current guide (missing: none); aux numbers agree (mismatch: none)
+   [CITED] S1 eq:d081 = G78 eq:amplitude character for character (falsifier: exponent z for z-1 differs)
+   [CITED] S2 eq:d080 = G78 eq:witness with psi -> conj(alpha) theta conj(chi.(u)) (falsifier: the anti-oriented substitution alpha theta conj(chi) does not match)
+   [CITED] S3 12 OAI78 source passages found at the stated lines (eq:d074 L378-384, eq:d075 L4043-4048, eq:d076 L2819-2826, eq:d199 L9225-9244, eq:cm-inverse L9258-9262, eq:d082 L10774-10776, eq:signal-c
+t4_local_euler.py        exit 0, failure lines 0, 2.0 s
+   [PASS] L1a OAI78 L3878-3884 and eq:local-scalar-values re-derived by brute force at p = [(-2, -3), (1, 3), (1, -3)] (norms [7, 7, 13]), 393 cases: max rel err g 7.5e-14, C_p 9.1e-15
+   [PASS] L1b eq:d075 local factor: brute-force OAI78 eq:local-P = closed form lem:local-euler with eta(p)->psi(p), 8 split + 2 inert primes, j=0..5, 6 values of rho, 3 target values (1080 identities): m
+t4_lfunctions.py         exit 0, failure lines 0, 12.1 s
+   [PASS] F0 parameters: abar_mod3: k=1 Q=9 N_PARI=27 ord=1; k1_Q7: k=1 Q=7 N_PARI=21 ord=6; k1_Q28: k=1 Q=28 N_PARI=84 ord=6; k1_Q112: k=1 Q=112 N_PARI=336 ord=6; k1_Q441: k=1 Q=441 N_PARI=1323 ord=6; k
+   [PASS] F1 eq:d077: Lambda(s)/conj(Lambda(1-conj s)) constant over 5 points s, for 6 members of F_CM (Q = 9, 7, 28, 112, 441, 1008): max spread 7.8e-38, ||eps|-1| <= 2.9e-38; falsifiers (min spread, mu
+   [PASS] F2 eq:d078 size check: measured ratio = (2pi)^(2sigma-1)|Gamma(3/2-s)/Gamma(1/2+s)|/(3+|t|)^(1-2sigma) to rel. err 1.8e-38 for 6 characters (Q = 7..1008), sigma in [-2/5,7/5], |t|<=100; max rat
+   [PASS] F3 eq:d071 sanity (argument principle, 0.88<=Re s<=2, |Im s|<=30): no zeros; abar_mod3: winding +4e-18, min|L| 0.56; crit. box 8.00 vs 8; k1_Q7: winding -2e-18, min|L| 0.40; crit. box 7.00 vs 7
+   [PASS] F4 eq:d087 sanity (unitary normalization 0.88<=Re s<=2, |Im s|<=30; eta products w/2+0.38<=Re s<=w/2+1.5): no zeros; abar2_mod3: winding -6e-18, min|L| 0.49; crit. box 8.00 vs 8; abar3_mod3: wi
+t4_moments.py            exit 0, failure lines 0, 7.1 s
+   [PASS] M1 eq:cm-inverse size check with one slot (m=1, r=0.3, z_1=0.25): sum|M_uQ_u|^2/Z^m at Z = 1e4, 4e4, 1.6e5: nu=1, eps=+1: 0.127, 0.134, 0.125 (growth exp +0.04); nu=1, eps=-1: 0.127, 0.134, 0.1
+   [PASS] M2 eq:d084 size check (z=0, tau=1, M=m=1, Z=4000, 14526 rows): sum_k|S_k(n1)S_k(n2)|^2/Z^M: n1=n2=0.5: e=+1 0.338, e=-1 0.332, control e=0 0.393 (without the 2 principal rows 0.331) [58 plain l
+rerun_existing.py        exit 0, failure lines 0, 86.6 s
+   [PASS] part_C_lines_0998_1509/t01_curves.py C02: reported ['PASS'] (need PASS), exit 0, 0.8 s
+   [PASS] part_C_lines_0998_1509/t01_curves.py C03: reported ['PASS'] (need PASS), exit 0, 0.8 s
+   [PASS] part_C_lines_0998_1509/t01_curves.py C04: reported ['PASS'] (need PASS), exit 0, 0.8 s
+   [PASS] part_C_lines_0998_1509/t01_curves.py C05: reported ['PASS'] (need PASS), exit 0, 0.8 s
+   [PASS] part_C_lines_0998_1509/t01_curves.py C07: reported ['PASS'] (need PASS), exit 0, 0.8 s
+   [PASS] part_C_lines_0998_1509/t01_curves.py C08: reported ['PASS'] (need PASS), exit 0, 0.8 s
+   [PASS] part_C_lines_0998_1509/t01_curves.py C09: reported ['PASS'] (need PASS), exit 0, 0.8 s
+   [PASS] part_C_lines_0998_1509/t02_gauss.py C13: reported ['PASS'] (need PASS), exit 0, 2.2 s
+   [PASS] part_C_lines_0998_1509/t02_gauss.py C14: reported ['PASS'] (need PASS), exit 0, 2.2 s
+   [PASS] part_C_lines_0998_1509/t02_gauss.py C15: reported ['PASS'] (need PASS), exit 0, 2.2 s
+   [PASS] part_C_lines_0998_1509/t02_gauss.py C17: reported ['PASS'] (need PASS), exit 0, 2.2 s
+   [PASS] part_C_lines_0998_1509/t02_gauss.py C19: reported ['PASS'] (need PASS), exit 0, 2.2 s
+   [PASS] part_C_lines_0998_1509/t02_gauss.py C23: reported ['PASS'] (need PASS), exit 0, 2.2 s
+   [PASS] part_C_lines_0998_1509/t04_growth_fe.py C37: reported ['PASS'] (need PASS), exit 0, 86.5 s
+   [PASS] part_C_lines_0998_1509/t04_growth_fe.py C38: reported ['PASS'] (need PASS), exit 0, 86.5 s
+   [PASS] part_C_lines_0998_1509/t04_growth_fe.py C39: reported ['PASS'] (need PASS), exit 0, 86.5 s
+   [PASS] part_C_lines_0998_1509/t04_growth_fe.py C43: reported ['PASS'] (need PASS), exit 0, 86.5 s
+   [PASS] part_C_lines_0998_1509/t05_rows_moments.py C45: reported ['PASS'] (need PASS), exit 0, 17.1 s
+   [PASS] part_C_lines_0998_1509/t05_rows_moments.py C46: reported ['PASS'] (need PASS), exit 0, 17.1 s
+   [PASS] part_C_lines_0998_1509/t05_rows_moments.py C103: reported ['INFO'] (need INFO), exit 0, 17.1 s
+   [PASS] part_C_lines_0998_1509/t06_final_inequality.py C58: reported ['PASS'] (need PASS), exit 0, 1.0 s
+   [PASS] part_C_lines_0998_1509/t06_final_inequality.py C59: reported ['PASS'] (need PASS), exit 0, 1.0 s
+   [PASS] part_C_lines_0998_1509/t06_final_inequality.py C60: reported ['PASS'] (need PASS), exit 0, 1.0 s
+   [PASS] part_C_lines_0998_1509/t08_theorem_sanity.py C98: reported ['PASS'] (need PASS), exit 0, 4.9 s
+   [PASS] part_D_lines_1510_end/t01_eta_quotients.py D01.11: reported ['PASS'] (need PASS), exit 0, 0.6 s
+   [PASS] part_D_lines_1510_end/t01_eta_quotients.py D01.12: reported ['PASS'] (need PASS), exit 0, 0.6 s
+   [PASS] part_D_lines_1510_end/t01_eta_quotients.py D01.13: reported ['PASS'] (need PASS), exit 0, 0.6 s
+   [PASS] part_D_lines_1510_end/t02_chain_rule.py D02.1: reported ['PASS'] (need PASS), exit 0, 33.4 s
+   [PASS] part_D_lines_1510_end/t02_chain_rule.py D02.3: reported ['PASS'] (need PASS), exit 0, 33.4 s
+   [PASS] part_D_lines_1510_end/t03_mellin.py D03.1: reported ['PASS'] (need PASS), exit 0, 22.7 s
+   [PASS] part_D_lines_1510_end/t03_mellin.py D03.3: reported ['PASS'] (need PASS), exit 0, 22.7 s
+   [PASS] part_D_lines_1510_end/t04_kernels.py D04.1: reported ['PASS'] (need PASS), exit 0, 38.4 s
+   [PASS] part_D_lines_1510_end/t04_kernels.py D04.2: reported ['PASS'] (need PASS), exit 0, 38.4 s
+   [PASS] part_D_lines_1510_end/t04_kernels.py D04.5: reported ['PASS'] (need PASS), exit 0, 38.4 s
+   [PASS] part_D_lines_1510_end/t05_misc.py D05.2: reported ['PASS'] (need PASS), exit 0, 3.9 s
+   [PASS] part_D_lines_1510_end/t05_misc.py D05.7: reported ['PASS'] (need PASS), exit 0, 3.9 s
+   [PASS] part_D_lines_1510_end/t06_sympowers.py D06.1: reported ['PASS'] (need PASS), exit 0, 0.8 s
+   [PASS] part_D_lines_1510_end/t06_sympowers.py D06.2: reported ['PASS'] (need PASS), exit 0, 0.8 s
+   [PASS] phase2_2026-10-12/r3/t1_gauss_and_curves.py G2: reported ['PASS'] (need PASS), exit 0, 1.2 s
+   [PASS] phase2_2026-10-12/r3/t1_gauss_and_curves.py G3: reported ['PASS'] (need PASS), exit 0, 1.2 s
+   [PASS] phase2_2026-10-12/r3/t1_gauss_and_curves.py G4: reported ['PASS'] (need PASS), exit 0, 1.2 s
+   [PASS] phase2_2026-10-12/r3/t1_gauss_and_curves.py C1: reported ['PASS'] (need PASS), exit 0, 1.2 s
+   [PASS] phase2_2026-10-12/r3/t1_gauss_and_curves.py C2: reported ['PASS'] (need PASS), exit 0, 1.2 s
+   [PASS] phase2_2026-10-12/r3/t2_higher_weight.py H1: reported ['PASS'] (need PASS), exit 0, 17.4 s
+   [PASS] phase2_2026-10-12/r3/t2_higher_weight.py H2: reported ['PASS'] (need PASS), exit 0, 17.4 s
+   [PASS] phase2_2026-10-12/r3/t2_higher_weight.py H3: reported ['PASS'] (need PASS), exit 0, 17.4 s
+   [PASS] phase2_2026-10-12/r3/t2_higher_weight.py H6: reported ['PASS'] (need PASS), exit 0, 17.4 s
+   [PASS] phase2_2026-10-12/r3/t2_higher_weight.py H7: reported ['PASS'] (need PASS), exit 0, 17.4 s
+   [PASS] phase2_2026-10-12/r3/t3_final_inequality.py E4: reported ['PASS'] (need PASS), exit 0, 0.9 s
+   [PASS] phase2_2026-10-12/r3/t3_final_inequality.py E4f: reported ['PASS'] (need PASS), exit 0, 0.9 s
+   [PASS] phase2_2026-10-12/r3/t3_final_inequality.py E5: reported ['PASS'] (need PASS), exit 0, 0.9 s
+   [PASS] phase2_2026-10-12/r3/t3_final_inequality.py E6: reported ['PASS'] (need PASS), exit 0, 0.9 s
+# total 107.8 s; ALL PASS

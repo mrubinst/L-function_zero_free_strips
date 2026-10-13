@@ -1,0 +1,330 @@
+[
+ {
+  "label": "eq:d096",
+  "number": "A.1",
+  "kind": "D",
+  "what": "Definition of $\\Psi$; checked complete multiplicativity and vanishing at even $n$: 5 characters, 1500 random pairs",
+  "script": "displays_2026-10-13/t5/t5a_finite_identities.py t5a.A1",
+  "result": "definition; consistency PASS (exact)"
+ },
+ {
+  "label": "eq:reflection",
+  "number": "A.2",
+  "kind": "E",
+  "what": "End to end: $T(X;\\Psi)$ from (8.1) vs the grouped sum, 72 groups, $P=\\{\\pi\\}$, $j=0,\\dots,5$; also $P$ empty",
+  "script": "phase2_2026-10-12/r2/t1_prop_grouped_endtoend.py T1; proofs_2026-10-12/b3/t_b3_prop_endtoend.py",
+  "result": "PASS (max rel err 2.5e-12; 7 falsifiers fail)"
+ },
+ {
+  "label": "eq:d097",
+  "number": "A.3",
+  "kind": "I",
+  "what": "Factors of $C'$ in (A.41): $|\\hat\\phi(h_0)|\\le1$ for all $h_0$ (5 twists), $|\\varpi|=1$, $|\\kappa_0|=1$",
+  "script": "displays_2026-10-13/t5/t5a_finite_identities.py t5a.A3",
+  "result": "PASS (max $|\\hat\\phi|$ = 0.083; $|\\varpi|=1$ to 3e-14)"
+ },
+ {
+  "label": "eq:d098",
+  "number": "A.4",
+  "kind": "D",
+  "what": "Same as [QF, Thm 23 (T3)]; these coefficients reproduce $\\overline\\theta$ at the three cusps numerically",
+  "script": "part_D_lines_1510_end/t07_theta_appendix.py D07.2, D07.3; displays_2026-10-13/t5/t5b_theta_pointwise.py t5b.A15",
+  "result": "definition; checked against source (rel err 4e-15)"
+ },
+ {
+  "label": "eq:d099",
+  "number": "A.5",
+  "kind": "I",
+  "what": "Bound checked for every nonzero $d_\\sigma(\\ell)$ with $N(9\\ell)\\le30000$; sharp; same as [QF Cor. 24]",
+  "script": "part_D_lines_1510_end/t07_theta_appendix.py D07.4; displays_2026-10-13/t5/t5a_finite_identities.py t5a.A33",
+  "result": "PASS (0 violations; equality attained)"
+ },
+ {
+  "label": "eq:d100",
+  "number": "A.6",
+  "kind": "D",
+  "what": "Definition: (A.1) with $j_\\pi=1$ for $\\pi\\mid k_0$; row primes have $j=1$ (B59), hence are active",
+  "script": "part_B_lines_0550_0997/t4_theta.py B59; displays_2026-10-13/t5/t5a_finite_identities.py t5a.A40",
+  "result": "definition"
+ },
+ {
+  "label": "eq:d101",
+  "number": "A.7",
+  "kind": "A",
+  "what": "Size check with compact $W\\in C^{17}$: ratio to $\\min(x^{1/4},x^{-A})$ bounded, $A\\le3$, $j\\le2$; slope 4/3 at 0",
+  "script": "displays_2026-10-13/t5/t5d_decay.py t5d.A7; part_D_lines_1510_end/t04_kernels.py D04.4",
+  "result": "size check: bounded on $[10^{-8},10^8]$; proved in Lemma 13"
+ },
+ {
+  "label": "eq:b3-stirling",
+  "number": "A.8",
+  "kind": "A",
+  "what": "Fitted growth exponents of $|R(\\eta+iu)|$ equal $4\\eta$ for five $\\eta$; the ratio stays bounded on the sampled grid",
+  "script": "proofs_2026-10-12/b3/b3_symbolic_checks.py (6); part_D_lines_1510_end/t04_kernels.py D04.3",
+  "result": "size check: exponents $4\\eta$ within 2e-5; proved by Stirling"
+ },
+ {
+  "label": "eq:d102",
+  "number": "A.9",
+  "kind": "I",
+  "what": "Inequality at 33 values $x\\in[10^{-8},10^8]$, $j\\le2$, $\\eta=-1/4,1,2$; left side from the line $\\Re t=0$",
+  "script": "displays_2026-10-13/t5/t5d_decay.py t5d.A9",
+  "result": "PASS (0 violations)"
+ },
+ {
+  "label": "eq:b3-bessel",
+  "number": "A.10",
+  "kind": "E",
+  "what": "mpmath, 30 digits, 8 cases including $s=-0.3$ and complex $s$; same as [QF (5.21)]",
+  "script": "displays_2026-10-13/t5/t5c_mellin.py t5c.A10",
+  "result": "PASS (max rel err 1e-29)"
+ },
+ {
+  "label": "eq:d103",
+  "number": "A.11",
+  "kind": "D",
+  "what": "Definition of $\\Theta_\\Psi$; implemented in the pointwise tests of (A.14) and (A.31)",
+  "script": "displays_2026-10-13/t5/t5b_theta_pointwise.py t5b.A14, t5b.A31",
+  "result": "definition"
+ },
+ {
+  "label": "eq:b3-coeff",
+  "number": "A.12",
+  "kind": "E",
+  "what": "3424 indices: $d_0$ from the QF table times the twist vs the right side with brute-force $\\gamma_2$",
+  "script": "displays_2026-10-13/t5/t5a_finite_identities.py t5a.A12",
+  "result": "PASS (max abs err 2e-13; 2 falsifiers fail)"
+ },
+ {
+  "label": "eq:d104",
+  "number": "A.13",
+  "kind": "D",
+  "what": "Definitions of $\\hat\\phi$ and $C_{\\pi,j}$; implemented literally with $L=72$",
+  "script": "displays_2026-10-13/t5/t5a_finite_identities.py t5a.A40; displays_2026-10-13/t5/t5b_theta_pointwise.py t5b.A14",
+  "result": "definition"
+ },
+ {
+  "label": "eq:b3-translates",
+  "number": "A.14",
+  "kind": "E",
+  "what": "8 twists, $L=72$: coefficient identity for all $N(x)\\le1500$ and pointwise with the actual $\\theta$; $\\sum c_F=0$",
+  "script": "displays_2026-10-13/t5/t5b_theta_pointwise.py t5b.A14",
+  "result": "PASS (max err 9e-14)"
+ },
+ {
+  "label": "eq:d105",
+  "number": "A.15",
+  "kind": "E",
+  "what": "$g_1\\in\\Gamma(3)$ in exact arithmetic (528 translates); $\\theta(HP)=\\theta(\\gamma_\\sigma P)$ numerically, 12 matrices $H$",
+  "script": "phase2_2026-10-12/r2/t2_grouping_cusp_data.py (b); displays_2026-10-13/t5/t5b_theta_pointwise.py t5b.A15",
+  "result": "PASS (exact for $g_1$; $\\theta$ to rel err 4e-15)"
+ },
+ {
+  "label": "eq:b3-automorphy",
+  "number": "A.16",
+  "kind": "E",
+  "what": "Pointwise at 61 cusps of all types, $\\theta$ from [QF Thm 23], own cusp data",
+  "script": "displays_2026-10-13/t5/t5b_theta_pointwise.py t5b.A16",
+  "result": "PASS (max rel err 4e-14)"
+ },
+ {
+  "label": "eq:b3-crt",
+  "number": "A.17",
+  "kind": "E",
+  "what": "Exact in $\\mathbb Z[\\omega]$ for 46 groups (528 translates), $L=72$, $M=\\lambda^{12}72^4$",
+  "script": "phase2_2026-10-12/r2/t2_grouping_cusp_data.py (d)",
+  "result": "PASS (exact)"
+ },
+ {
+  "label": "eq:b3-local",
+  "number": "A.18",
+  "kind": "E",
+  "what": "Literal $C_{\\pi,j}$: 4 primes (one inert), all $j$, all $x$; also with actual cusp data",
+  "script": "displays_2026-10-13/t5/t5a_finite_identities.py t5a.A18; phase2_2026-10-12/r2/t2_grouping_cusp_data.py (e)",
+  "result": "PASS (max err 6e-14)"
+ },
+ {
+  "label": "eq:d106",
+  "number": "A.19",
+  "kind": "D",
+  "what": "Definition of $\\mathcal T(w)$; used as the product of the two series in the test of (A.20)",
+  "script": "displays_2026-10-13/t5/t5c_mellin.py t5c.A20",
+  "result": "definition"
+ },
+ {
+  "label": "eq:b3-inversion",
+  "number": "A.20",
+  "kind": "E",
+  "what": "$T(X;\\Psi)$ from (8.1) vs the $w$-integral on $\\Re w=1.5,2$, $X=60,300$",
+  "script": "displays_2026-10-13/t5/t5c_mellin.py t5c.A20",
+  "result": "PASS (max rel err 8e-13; 2 falsifiers fail)"
+ },
+ {
+  "label": "eq:d107",
+  "number": "A.21",
+  "kind": "D",
+  "what": "Definitions of $f$ and $\\mathcal J$; implemented in the tests of (A.24) and (A.35)",
+  "script": "displays_2026-10-13/t5/t5c_mellin.py t5c.A24; displays_2026-10-13/t5/t5b_theta_pointwise.py t5b.A35",
+  "result": "definition"
+ },
+ {
+  "label": "eq:b3-mode",
+  "number": "A.22",
+  "kind": "E",
+  "what": "mpmath, 40 digits, 9 pairs $(\\ell,s)$",
+  "script": "proofs_2026-10-12/b3/b3_symbolic_checks.py (1); part_B_lines_0550_0997/t4_theta.py B45",
+  "result": "PASS (max rel err 1e-40)"
+ },
+ {
+  "label": "eq:d108",
+  "number": "A.23",
+  "kind": "E",
+  "what": "720 pairs $(n,b)$, three values of $s$; $\\alpha(\\lambda^{-3})=i$",
+  "script": "displays_2026-10-13/t5/t5a_finite_identities.py t5a.A23; proofs_2026-10-12/b3/b3_symbolic_checks.py (7)",
+  "result": "PASS (max rel err 4e-15)"
+ },
+ {
+  "label": "eq:b3-J",
+  "number": "A.24",
+  "kind": "E",
+  "what": "Quadrature of $\\int f(v)v^{2s-1}dv$ from the twisted theta series vs the Dirichlet series, $s=2.5$, $3+1.2i$",
+  "script": "displays_2026-10-13/t5/t5c_mellin.py t5c.A24",
+  "result": "PASS (max rel err 2e-14; 3 falsifiers fail)"
+ },
+ {
+  "label": "eq:d109",
+  "number": "A.25",
+  "kind": "E",
+  "what": "Formula vs the action of $g^{-1}$ at 61 cusps; sympy with $ad-bc=1$",
+  "script": "displays_2026-10-13/t5/t5b_theta_pointwise.py t5b.A25; part_B_lines_0550_0997/t4_theta.py B48",
+  "result": "PASS (max err 3e-15)"
+ },
+ {
+  "label": "eq:d110",
+  "number": "A.26",
+  "kind": "E",
+  "what": "sympy: the six first and second derivatives",
+  "script": "proofs_2026-10-12/b3/b3_symbolic_checks.py part 2; part_B_lines_0550_0997/t4_theta.py B49",
+  "result": "PASS (exact)"
+ },
+ {
+  "label": "eq:d111",
+  "number": "A.27",
+  "kind": "E",
+  "what": "sympy, generic polynomial $F$, general $z$; at $z=0$ only $Y=Y'=z'$ survives",
+  "script": "displays_2026-10-13/t5/t5a_finite_identities.py t5a.A27; part_B_lines_0550_0997/t4_theta.py B51",
+  "result": "PASS (exact)"
+ },
+ {
+  "label": "eq:b3-cusp",
+  "number": "A.28",
+  "kind": "E",
+  "what": "Pointwise at 61 cusps: second $\\bar z$-derivative from the expansion at infinity vs the cusp side",
+  "script": "displays_2026-10-13/t5/t5b_theta_pointwise.py t5b.A28",
+  "result": "PASS (max rel err 2e-14; 3 falsifiers fail)"
+ },
+ {
+  "label": "eq:d112",
+  "number": "A.29",
+  "kind": "E",
+  "what": "Expansions from $d_\\sigma$ equal $\\overline{\\theta(\\gamma_\\sigma P)}$; constant term only for $\\sigma=0$",
+  "script": "part_D_lines_1510_end/t07_theta_appendix.py D07.2, D07.3; displays_2026-10-13/t5/t5b_theta_pointwise.py t5b.A15, t5b.A16",
+  "result": "PASS (rel err 4e-15)"
+ },
+ {
+  "label": "eq:b3-G",
+  "number": "A.30",
+  "kind": "E",
+  "what": "Used in the pointwise test of (A.28); the variant with $\\overline{\\alpha(\\ell)}^2$ fails",
+  "script": "displays_2026-10-13/t5/t5b_theta_pointwise.py t5b.A28; part_B_lines_0550_0997/t4_theta.py B44",
+  "result": "PASS (max rel err 2e-14)"
+ },
+ {
+  "label": "eq:d113",
+  "number": "A.31",
+  "kind": "E",
+  "what": "$f(v)$ from the twisted series vs the sum over 36 to 252 translates, 8 twists",
+  "script": "displays_2026-10-13/t5/t5b_theta_pointwise.py t5b.A31",
+  "result": "PASS (max rel err 5e-14)"
+ },
+ {
+  "label": "eq:b3-dual",
+  "number": "A.32",
+  "kind": "E",
+  "what": "Single mode (mpmath) and truncated series at three cusps by quadrature",
+  "script": "displays_2026-10-13/t5/t5c_mellin.py t5c.A32",
+  "result": "PASS (max rel err 2e-14)"
+ },
+ {
+  "label": "eq:d114",
+  "number": "A.33",
+  "kind": "I",
+  "what": "Termwise bound for all $d_\\sigma(\\ell)$, $N(9\\ell)\\le30000$; partial sums for $s'=1.6,2,3$",
+  "script": "displays_2026-10-13/t5/t5a_finite_identities.py t5a.A33",
+  "result": "PASS (0 violations)"
+ },
+ {
+  "label": "eq:d115",
+  "number": "A.34",
+  "kind": "E",
+  "what": "Substitution by mpmath quadrature at two $s$; $c^{-4}N(c)^2=\\overline{\\alpha(c)}^4$",
+  "script": "proofs_2026-10-12/b3/b3_symbolic_checks.py (4)",
+  "result": "PASS (max rel err 1e-41)"
+ },
+ {
+  "label": "eq:b3-fe",
+  "number": "A.35",
+  "kind": "E",
+  "what": "$\\mathcal J(-3+0.5i)$ by quadrature in $v$ vs the right side, 8 twists",
+  "script": "displays_2026-10-13/t5/t5b_theta_pointwise.py t5b.A35",
+  "result": "PASS (max rel err 2e-10; 2 falsifiers fail)"
+ },
+ {
+  "label": "eq:d116",
+  "number": "A.36",
+  "kind": "E",
+  "what": "sympy: (A.24) at $s=w+1/2$",
+  "script": "displays_2026-10-13/t5/t5c_mellin.py t5c.A36; proofs_2026-10-12/b3/b3_symbolic_checks.py (5)",
+  "result": "holds (symbolic)"
+ },
+ {
+  "label": "eq:d117",
+  "number": "A.37",
+  "kind": "A",
+  "what": "Fitted exponents 6.0, 4.0, 2.4 at $\\sigma_2=-1,-0.5,-0.1$ equal $2-4\\sigma_2$",
+  "script": "proofs_2026-10-12/b3/b3_symbolic_checks.py (8)",
+  "result": "size check: exponents to 1e-6; proved by Stirling"
+ },
+ {
+  "label": "eq:d118",
+  "number": "A.38",
+  "kind": "E",
+  "what": "sympy, and numerically at three values of $t$",
+  "script": "proofs_2026-10-12/b3/b3_symbolic_checks.py (3)",
+  "result": "holds (symbolic)"
+ },
+ {
+  "label": "eq:d119",
+  "number": "A.39",
+  "kind": "E",
+  "what": "End to end, $P$ empty, three twists, all cusp types: (8.1) vs this formula at $\\Re t=0$",
+  "script": "proofs_2026-10-12/b3/t_b3_prop_endtoend.py",
+  "result": "PASS (max rel err 1.1e-12; 3 falsifiers fail)"
+ },
+ {
+  "label": "eq:d120",
+  "number": "A.40",
+  "kind": "E",
+  "what": "$C_{\\pi,0}(0)=1-1/N(\\pi)$ and $C_{\\pi,j}(0)=0$ for $j\\ne0$, 4 primes",
+  "script": "displays_2026-10-13/t5/t5a_finite_identities.py t5a.A40",
+  "result": "PASS (max err 4e-16)"
+ },
+ {
+  "label": "eq:b3-C",
+  "number": "A.41",
+  "kind": "E",
+  "what": "Grouped end to end with this $C$, $j=0,\\dots,5$; $\\kappa_0$ agrees with [OAI1112 (A.10)]",
+  "script": "phase2_2026-10-12/r2/t1_prop_grouped_endtoend.py T1; phase2_2026-10-12/r2/t2_grouping_cusp_data.py (c)",
+  "result": "PASS (max rel err 2.5e-12)"
+ }
+]

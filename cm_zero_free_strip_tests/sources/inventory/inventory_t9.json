@@ -1,0 +1,392 @@
+[
+ {
+  "labels": [
+   "eq:s5-alpha-mult"
+  ],
+  "numbers": [
+   "F.1"
+  ],
+  "page": "93",
+  "line": 5722,
+  "section": "\\section{The plain fourth moment with an angular factor}\\label{app:s5-plain}",
+  "subsection": "\\subsection{Setting and statement}\\label{sec:s5-setting}",
+  "source": "\\begin{equation}\\label{eq:s5-alpha-mult}\n \\alpha(ll')=\\alpha(l)\\alpha(l'),\\qquad|\\alpha(l)|=1\\qquad(l,l'\\text{ outside }\\mathcal S).\n\\end{equation}",
+  "before": "$\\psi_k$ and never the angular factor.\n\nFor an ideal $l$ outside $\\mathcal S$ put $\\alpha(l)=\\alpha(l_0)$, where $l_0$ is its primary\ngenerator. Products of primary elements are primary (L578--582), so",
+  "after": "For $e\\in\\{1,-1\\}$ the \\emph{CM plain polynomial} of log-length $n$ is\n\\begin{equation}\\label{eq:s5-plain-def}\n S^{(e)}_{\\psi_k}(n;W)=Z^{-n/2}\\sum_l\\alpha(l)^e\\psi_k(l)\\,W\\Bigl(\\frac{\\N(l)}{Z^n}\\Bigr),"
+ },
+ {
+  "labels": [
+   "eq:s5-plain-def"
+  ],
+  "numbers": [
+   "F.2"
+  ],
+  "page": "93",
+  "line": 5726,
+  "section": "\\section{The plain fourth moment with an angular factor}\\label{app:s5-plain}",
+  "subsection": "\\subsection{Setting and statement}\\label{sec:s5-setting}",
+  "source": "\\begin{equation}\\label{eq:s5-plain-def}\n S^{(e)}_{\\psi_k}(n;W)=Z^{-n/2}\\sum_l\\alpha(l)^e\\psi_k(l)\\,W\\Bigl(\\frac{\\N(l)}{Z^n}\\Bigr),\n\\end{equation}",
+  "before": "\\begin{equation}\\label{eq:s5-alpha-mult}\n \\alpha(ll')=\\alpha(l)\\alpha(l'),\\qquad|\\alpha(l)|=1\\qquad(l,l'\\text{ outside }\\mathcal S).\n\\end{equation}\nFor $e\\in\\{1,-1\\}$ the \\emph{CM plain polynomial} of log-length $n$ is",
+  "after": "the analogue of~\\cite[eq.~old-eq:1.1, L704--708]{OAI78}, with every mask of $\\psi_k$ retained.\n\n\\begin{proposition}[Fourth moment with an angular factor]\\label{prop:s5-plain}"
+ },
+ {
+  "labels": [
+   "eq:s5-plain-bound"
+  ],
+  "numbers": [
+   "F.3"
+  ],
+  "page": "94",
+  "line": 5736,
+  "section": "\\section{The plain fourth moment with an angular factor}\\label{app:s5-plain}",
+  "subsection": "\\subsection{Setting and statement}\\label{sec:s5-setting}",
+  "source": "\\begin{equation}\\label{eq:s5-plain-bound}\n \\sum_{k\\in\\mathcal R_z}\\Bigl|S^{(e)}_{\\psi_k}(n_1;W_1)\\,S^{(e)}_{\\psi_k}(n_2;W_2)\\,Q\\Bigr|^2\\ll Z^{M+\\varepsilon}\n\\end{equation}",
+  "before": "Let $3/4\\le\\kappa\\le1$ and $e\\in\\{1,-1\\}$. Let $n_1,n_2$, the slot product $Q=\\prod_iQ_{\\psi_k,i}$,\nits coefficients $\\nu_i$, the masks and the profiles satisfy the hypotheses of~\\cite[Lemma~lem:plain,\nL12531--12546]{OAI78}. For every $\\varepsilon>0$ there is a slot mesh $\\eta>0$ such that, if $z_i\\le\\eta$\nfor every $i$, then",
+  "after": "in either of the following cases:\n\\begin{enumerate}\n\\item $z=0$, with no restriction on the lengths $n_1,n_2\\ge0$ and no lower bound on the conductor;"
+ },
+ {
+  "labels": [
+   "eq:s5-natural"
+  ],
+  "numbers": [
+   "F.4"
+  ],
+  "page": "94",
+  "line": 5780,
+  "section": "\\section{The plain fourth moment with an angular factor}\\label{app:s5-plain}",
+  "subsection": "\\subsection{The primitive CM row character}\\label{sec:s5-rowchar}",
+  "source": "\\begin{equation}\\label{eq:s5-natural}\n [\\alpha^e\\psi_k^0](l)=\\Xi_k(l)\\,\\ind_{(l,\\mathfrak r_k)=1}.\n \\end{equation}",
+  "before": " $1/9\\le\\N(\\mathfrak f_k)/\\N(\\mathfrak g_k)\\le9$.\n\\item[(c)] Let $\\mathfrak r_k$ be the product of the primes not dividing $\\mathfrak f_k$ that lie in\n $\\mathcal S$ or at which $\\psi_k^0$ vanishes. Write $[\\alpha^e\\psi_k^0](l)$ for $\\alpha(l)^e\\psi_k^0(l)$\n when $l$ is outside $\\mathcal S$, and for $0$ otherwise. Then, for every nonzero ideal $l$,",
+  "after": " The ideal $\\mathfrak r_k$ is squarefree, prime to $\\mathfrak f_k$, and differs from $R_{0,k}$ at most\n at~$\\lambda$.\n\\item[(d)] Put $C_k^{\\rm CM}=3\\N(\\mathfrak f_k)/(4\\pi^2)$, and let $C_k=3\\N(\\mathfrak g_k)/(4\\pi^2)$ be the"
+ },
+ {
+  "labels": [
+   "eq:d175"
+  ],
+  "numbers": [
+   "F.5"
+  ],
+  "page": "95",
+  "line": 5802,
+  "section": "\\section{The plain fourth moment with an angular factor}\\label{app:s5-plain}",
+  "subsection": "\\subsection{The primitive CM row character}\\label{sec:s5-rowchar}",
+  "source": "\\begin{equation}\\label{eq:d175}\n \\alpha^e\\psi_k^*((a))=\\varphi_\\alpha(a)^e\\varphi_0(a)\\,(a/|a|)^e .\n\\end{equation}",
+  "before": "type $a/|a|$.\n\nSince $K$ has class number one, $\\psi_k^*((a))=\\varphi_0(a)$, where $\\varphi_0$ is a primitive character of\n$(\\OO/\\mathfrak g_k)^\\times$ that is trivial on units. Thus, for $a$ prime to $3\\mathfrak g_k$,",
+  "after": "Let $\\varphi_k$ be the primitive character inducing $\\varphi_\\alpha^e\\varphi_0$, and let $\\mathfrak f_k$ be\nits conductor. On units $\\varphi_k(u)=\\varphi_\\alpha(u)^e\\varphi_0(u)=u^{-e}$, so\n$\\Xi_k((a))=\\varphi_k(a)(a/|a|)^e$ is well defined on ideals prime to $\\mathfrak f_k$. It agrees with"
+ },
+ {
+  "labels": [
+   "eq:s5-root"
+  ],
+  "numbers": [
+   "F.6"
+  ],
+  "page": "95",
+  "line": 5850,
+  "section": "\\section{The plain fourth moment with an angular factor}\\label{app:s5-plain}",
+  "subsection": "\\subsection{Reflection of a plain sum with an angular factor}\\label{sec:s5-reflection}",
+  "source": "\\begin{equation}\\label{eq:s5-root}\n \\gamma(\\varphi)=\\frac1{\\sqrt{\\N(f)}}\\sum_{x\\bmod f}\\varphi(x)\\,e\\Bigl(\\frac xf\\Bigr),\\qquad\n \\epsilon(\\Xi)=e\\,\\gamma(\\varphi)\\,\\Bigl(\\frac f{|f|}\\Bigr)^e .\n\\end{equation}",
+  "before": "Let $\\Xi$ be a primitive Hecke character of $K$ with conductor $\\mathfrak f=(f)$ and infinity type\n$(a/|a|)^e$, $e\\in\\{1,-1\\}$. Thus $\\Xi((a))=\\varphi(a)(a/|a|)^e$ for $a$ prime to $\\mathfrak f$, with\n$\\varphi$ primitive modulo $f$ and $\\varphi(u)=u^{-e}$ on units; in particular $\\mathfrak f\\ne(1)$, since\n$\\varphi(-1)=-1$. Put $C_\\Xi=3\\N(\\mathfrak f)/(4\\pi^2)$, and",
+  "after": "Let $W$ be smooth on $(0,\\infty)$, such that $g(z)=(z/|z|)^eW(|z|^2)$, with $g(0)=0$, is a Schwartz\nfunction on $\\mathbb C$. This holds, for example, for annular $W$. Define the Hankel transform~\\cite[\\S10.22(v)]{DLMF}\n\\begin{equation}\\label{eq:s5-sharp-def}"
+ },
+ {
+  "labels": [
+   "eq:s5-sharp-def"
+  ],
+  "numbers": [
+   "F.7"
+  ],
+  "page": "95",
+  "line": 5856,
+  "section": "\\section{The plain fourth moment with an angular factor}\\label{app:s5-plain}",
+  "subsection": "\\subsection{Reflection of a plain sum with an angular factor}\\label{sec:s5-reflection}",
+  "source": "\\begin{equation}\\label{eq:s5-sharp-def}\n W^\\sharp(y)=\\int_0^\\infty W(x)\\,J_1\\bigl(2\\sqrt{xy}\\bigr)\\,dx .\n\\end{equation}",
+  "before": " \\epsilon(\\Xi)=e\\,\\gamma(\\varphi)\\,\\Bigl(\\frac f{|f|}\\Bigr)^e .\n\\end{equation}\nLet $W$ be smooth on $(0,\\infty)$, such that $g(z)=(z/|z|)^eW(|z|^2)$, with $g(0)=0$, is a Schwartz\nfunction on $\\mathbb C$. This holds, for example, for annular $W$. Define the Hankel transform~\\cite[\\S10.22(v)]{DLMF}",
+  "after": "Then $|\\epsilon(\\Xi)|=1$, and for every $X>0$\n\\begin{equation}\\label{eq:s5-reflection}\n X^{-1/2}\\sum_{\\mathfrak a}\\Xi(\\mathfrak a)\\,W\\Bigl(\\frac{\\N\\mathfrak a}X\\Bigr)"
+ },
+ {
+  "labels": [
+   "eq:s5-reflection"
+  ],
+  "numbers": [
+   "F.8"
+  ],
+  "page": "96",
+  "line": 5860,
+  "section": "\\section{The plain fourth moment with an angular factor}\\label{app:s5-plain}",
+  "subsection": "\\subsection{Reflection of a plain sum with an angular factor}\\label{sec:s5-reflection}",
+  "source": "\\begin{equation}\\label{eq:s5-reflection}\n X^{-1/2}\\sum_{\\mathfrak a}\\Xi(\\mathfrak a)\\,W\\Bigl(\\frac{\\N\\mathfrak a}X\\Bigr)\n =\\epsilon(\\Xi)\\,Y^{-1/2}\\sum_{\\mathfrak b}\\overline{\\Xi(\\mathfrak b)}\\,W^\\sharp\\Bigl(\\frac{\\N\\mathfrak b}Y\\Bigr),\n \\qquad Y=\\frac{C_\\Xi}X .\n\\end{equation}",
+  "before": "\\begin{equation}\\label{eq:s5-sharp-def}\n W^\\sharp(y)=\\int_0^\\infty W(x)\\,J_1\\bigl(2\\sqrt{xy}\\bigr)\\,dx .\n\\end{equation}\nThen $|\\epsilon(\\Xi)|=1$, and for every $X>0$",
+  "after": "Both sums run over nonzero ideals and converge absolutely.\n\\end{lemma}\n"
+ },
+ {
+  "labels": [
+   "eq:d176"
+  ],
+  "numbers": [
+   "F.9"
+  ],
+  "page": "96",
+  "line": 5871,
+  "section": "\\section{The plain fourth moment with an angular factor}\\label{app:s5-plain}",
+  "subsection": "\\subsection{Reflection of a plain sum with an angular factor}\\label{sec:s5-reflection}",
+  "source": "\\begin{equation}\\label{eq:d176}\n \\sum_{\\mathfrak a}\\Xi(\\mathfrak a)W(\\N\\mathfrak a/X)=\\frac16\\sum_{a\\in\\OO}\\varphi(a)\\,g_X(a),\\qquad\n g_X(z)=(z/|z|)^eW(|z|^2/X).\n\\end{equation}",
+  "before": "\n\\begin{proof}\nFor $a\\in\\OO$ put $c(a)=\\varphi(a)(a/|a|)^e$, which is $0$ unless $(a,f)=1$. Then $c(ua)=c(a)$ for units\n$u$, and every ideal prime to $\\mathfrak f$ has six generators. So",
+  "after": "Write $\\widehat h(w)=\\int_{\\mathbb C}h(z)e(-zw)\\,d^2z$. Write $a=t+fy$ with $t\\bmod f$ and $y\\in\\OO$. Poisson\nsummation over $\\OO$~\\cite[Theorem~19]{QF}, applied to $y\\mapsto g_X(t+fy)$, and the substitution\n$z=t+fy$ (as in~\\cite[(4.20)]{QF}) give"
+ },
+ {
+  "labels": [
+   "eq:d177"
+  ],
+  "numbers": [
+   "F.10"
+  ],
+  "page": "96",
+  "line": 5878,
+  "section": "\\section{The plain fourth moment with an angular factor}\\label{app:s5-plain}",
+  "subsection": "\\subsection{Reflection of a plain sum with an angular factor}\\label{sec:s5-reflection}",
+  "source": "\\begin{equation}\\label{eq:d177}\n \\sum_{y\\in\\OO}g_X(t+fy)=\\frac2{\\sqrt3}\\,\\frac1{\\N(f)}\\sum_{w\\in\\OO}e\\Bigl(\\frac{tw}f\\Bigr)\\widehat{g_X}\\Bigl(\\frac wf\\Bigr).\n\\end{equation}",
+  "before": "\\end{equation}\nWrite $\\widehat h(w)=\\int_{\\mathbb C}h(z)e(-zw)\\,d^2z$. Write $a=t+fy$ with $t\\bmod f$ and $y\\in\\OO$. Poisson\nsummation over $\\OO$~\\cite[Theorem~19]{QF}, applied to $y\\mapsto g_X(t+fy)$, and the substitution\n$z=t+fy$ (as in~\\cite[(4.20)]{QF}) give",
+  "after": "By~\\cite[Lemma~17]{QF}, $\\sum_{t\\bmod f}\\varphi(t)e(tw/f)=\\overline{\\varphi(w)}\\sqrt{\\N(f)}\\,\\gamma(\\varphi)$ for\nevery $w\\in\\OO$; both sides vanish when $(w,f)\\ne1$. The same lemma gives $|\\gamma(\\varphi)|=1$. Hence\n\\begin{equation}\\label{eq:s5-step1}"
+ },
+ {
+  "labels": [
+   "eq:s5-step1"
+  ],
+  "numbers": [
+   "F.11"
+  ],
+  "page": "96",
+  "line": 5883,
+  "section": "\\section{The plain fourth moment with an angular factor}\\label{app:s5-plain}",
+  "subsection": "\\subsection{Reflection of a plain sum with an angular factor}\\label{sec:s5-reflection}",
+  "source": "\\begin{equation}\\label{eq:s5-step1}\n \\sum_{a\\in\\OO}\\varphi(a)g_X(a)=\\frac2{\\sqrt3}\\,\\frac{\\gamma(\\varphi)}{\\sqrt{\\N(f)}}\n \\sum_{w\\in\\OO}\\overline{\\varphi(w)}\\,\\widehat{g_X}(w/f).\n\\end{equation}",
+  "before": " \\sum_{y\\in\\OO}g_X(t+fy)=\\frac2{\\sqrt3}\\,\\frac1{\\N(f)}\\sum_{w\\in\\OO}e\\Bigl(\\frac{tw}f\\Bigr)\\widehat{g_X}\\Bigl(\\frac wf\\Bigr).\n\\end{equation}\nBy~\\cite[Lemma~17]{QF}, $\\sum_{t\\bmod f}\\varphi(t)e(tw/f)=\\overline{\\varphi(w)}\\sqrt{\\N(f)}\\,\\gamma(\\varphi)$ for\nevery $w\\in\\OO$; both sides vanish when $(w,f)\\ne1$. The same lemma gives $|\\gamma(\\varphi)|=1$. Hence",
+  "after": "\nWe now compute $\\widehat{g_X}$. Write $z=re^{i\\theta}$ and $w=\\rho e^{i\\beta}$. Then\n$\\operatorname{Im}(zw)=r\\rho\\sin(\\theta+\\beta)$. The Jacobi--Anger expansion~\\cite[(10.12.1)]{DLMF}"
+ },
+ {
+  "labels": [
+   "eq:d178"
+  ],
+  "numbers": [
+   "F.12"
+  ],
+  "page": "96",
+  "line": 5891,
+  "section": "\\section{The plain fourth moment with an angular factor}\\label{app:s5-plain}",
+  "subsection": "\\subsection{Reflection of a plain sum with an angular factor}\\label{sec:s5-reflection}",
+  "source": "\\begin{equation}\\label{eq:d178}\n \\int_0^{2\\pi}e^{ie\\theta}\\exp\\Bigl(-\\frac{4\\pi i r\\rho}{\\sqrt3}\\sin(\\theta+\\beta)\\Bigr)d\\theta\n =2\\pi J_e\\Bigl(\\frac{4\\pi r\\rho}{\\sqrt3}\\Bigr)e^{-ie\\beta}\n =2\\pi e\\,J_1\\Bigl(\\frac{4\\pi r\\rho}{\\sqrt3}\\Bigr)\\Bigl(\\frac{\\bar w}{|w|}\\Bigr)^e .\n\\end{equation}",
+  "before": "\nWe now compute $\\widehat{g_X}$. Write $z=re^{i\\theta}$ and $w=\\rho e^{i\\beta}$. Then\n$\\operatorname{Im}(zw)=r\\rho\\sin(\\theta+\\beta)$. The Jacobi--Anger expansion~\\cite[(10.12.1)]{DLMF}\n$e^{-ix\\sin\\phi}=\\sum_nJ_n(x)e^{-in\\phi}$ and $J_{-1}=-J_1$ give",
+  "after": "Integrating against $W(r^2/X)\\,r\\,dr$ and substituting $x=r^2/X$ gives, for $w\\ne0$,\n\\begin{equation}\\label{eq:s5-hankel}\n \\widehat{g_X}(w)=\\pi eX\\Bigl(\\frac{\\bar w}{|w|}\\Bigr)^e\\int_0^\\infty W(x)\\,"
+ },
+ {
+  "labels": [
+   "eq:s5-hankel"
+  ],
+  "numbers": [
+   "F.13"
+  ],
+  "page": "96",
+  "line": 5897,
+  "section": "\\section{The plain fourth moment with an angular factor}\\label{app:s5-plain}",
+  "subsection": "\\subsection{Reflection of a plain sum with an angular factor}\\label{sec:s5-reflection}",
+  "source": "\\begin{equation}\\label{eq:s5-hankel}\n \\widehat{g_X}(w)=\\pi eX\\Bigl(\\frac{\\bar w}{|w|}\\Bigr)^e\\int_0^\\infty W(x)\\,\n J_1\\Bigl(4\\pi|w|\\sqrt{Xx/3}\\Bigr)dx .\n\\end{equation}",
+  "before": " =2\\pi J_e\\Bigl(\\frac{4\\pi r\\rho}{\\sqrt3}\\Bigr)e^{-ie\\beta}\n =2\\pi e\\,J_1\\Bigl(\\frac{4\\pi r\\rho}{\\sqrt3}\\Bigr)\\Bigl(\\frac{\\bar w}{|w|}\\Bigr)^e .\n\\end{equation}\nIntegrating against $W(r^2/X)\\,r\\,dr$ and substituting $x=r^2/X$ gives, for $w\\ne0$,",
+  "after": "At $w=0$ we get $\\widehat{g_X}(0)=\\int g_X=0$, because $\\int_0^{2\\pi}e^{ie\\theta}d\\theta=0$.\n\nInsert~\\eqref{eq:s5-hankel} at $w/f$ into~\\eqref{eq:s5-step1}. Three identities simplify the result:"
+ },
+ {
+  "labels": [
+   "eq:d179"
+  ],
+  "numbers": [
+   "F.14"
+  ],
+  "page": "96",
+  "line": 5904,
+  "section": "\\section{The plain fourth moment with an angular factor}\\label{app:s5-plain}",
+  "subsection": "\\subsection{Reflection of a plain sum with an angular factor}\\label{sec:s5-reflection}",
+  "source": "\\begin{equation}\\label{eq:d179}\n \\Bigl(\\frac{\\overline{w/f}}{|w/f|}\\Bigr)^e=\\Bigl(\\frac{\\bar w}{|w|}\\Bigr)^e\\Bigl(\\frac f{|f|}\\Bigr)^e,\\qquad\n \\overline{\\varphi(w)}\\Bigl(\\frac{\\bar w}{|w|}\\Bigr)^e=\\overline{c(w)},\\qquad\n 4\\pi\\Bigl|\\frac wf\\Bigr|\\sqrt{\\frac{Xx}3}=2\\sqrt{\\frac{x\\N(w)}Y}.\n\\end{equation}",
+  "before": "\\end{equation}\nAt $w=0$ we get $\\widehat{g_X}(0)=\\int g_X=0$, because $\\int_0^{2\\pi}e^{ie\\theta}d\\theta=0$.\n\nInsert~\\eqref{eq:s5-hankel} at $w/f$ into~\\eqref{eq:s5-step1}. Three identities simplify the result:",
+  "after": "The last uses $Y=C_\\Xi/X$. Hence\n\\begin{equation}\\label{eq:d180}\n \\sum_{a}\\varphi(a)g_X(a)=\\frac{2\\pi eX}{\\sqrt3}\\,\\frac{\\gamma(\\varphi)}{\\sqrt{\\N(f)}}\\Bigl(\\frac f{|f|}\\Bigr)^e"
+ },
+ {
+  "labels": [
+   "eq:d180"
+  ],
+  "numbers": [
+   "F.15"
+  ],
+  "page": "96",
+  "line": 5910,
+  "section": "\\section{The plain fourth moment with an angular factor}\\label{app:s5-plain}",
+  "subsection": "\\subsection{Reflection of a plain sum with an angular factor}\\label{sec:s5-reflection}",
+  "source": "\\begin{equation}\\label{eq:d180}\n \\sum_{a}\\varphi(a)g_X(a)=\\frac{2\\pi eX}{\\sqrt3}\\,\\frac{\\gamma(\\varphi)}{\\sqrt{\\N(f)}}\\Bigl(\\frac f{|f|}\\Bigr)^e\n \\sum_{w\\ne0}\\overline{c(w)}\\,W^\\sharp\\Bigl(\\frac{\\N(w)}Y\\Bigr).\n\\end{equation}",
+  "before": " \\overline{\\varphi(w)}\\Bigl(\\frac{\\bar w}{|w|}\\Bigr)^e=\\overline{c(w)},\\qquad\n 4\\pi\\Bigl|\\frac wf\\Bigr|\\sqrt{\\frac{Xx}3}=2\\sqrt{\\frac{x\\N(w)}Y}.\n\\end{equation}\nThe last uses $Y=C_\\Xi/X$. Hence",
+  "after": "Group $w$ into ideals (six generators each, and $\\overline c$ is invariant under units) and divide by $6$.\nMultiplying by $X^{-1/2}$ and using $X^{1/2}Y^{1/2}=C_\\Xi^{1/2}=\\sqrt{3\\N(f)}/(2\\pi)$ gives the\ncoefficient $e\\gamma(\\varphi)(f/|f|)^e=\\epsilon(\\Xi)$. Absolute convergence holds on the left because $g$"
+ },
+ {
+  "labels": [
+   "eq:d181"
+  ],
+  "numbers": [
+   "F.16"
+  ],
+  "page": "97",
+  "line": 5943,
+  "section": "\\section{The plain fourth moment with an angular factor}\\label{app:s5-plain}",
+  "subsection": "\\subsection{Reflection of a plain sum with an angular factor}\\label{sec:s5-reflection}",
+  "source": "\\begin{equation}\\label{eq:d181}\n |(y\\partial_y)^jW^\\sharp(y)|\\ll_{j,A}\\min\\bigl(y^{1/2},y^{-A}\\bigr),\n \\end{equation}",
+  "before": " $\\frac32+n$ ($n\\ge0$). Uniformly for $\\sigma$ in compact subsets of $(-\\frac12,\\infty)$,\n $|G(\\sigma+it)|=|t|^{2\\sigma-1}(1+O(|t|^{-1}))$ as $|t|\\to\\infty$, the same exponent as for\n $\\Gamma(s)/\\Gamma(1-s)$.\n\\item[(c)] For integers $j\\ge0$ and every $A\\ge0$,",
+  "after": " with constants given by finitely many seminorms of $W$. Also\n $W^\\sharp(y)=\\mathcal MW(\\tfrac32)\\,y^{1/2}+O(y^{3/2})$ as $y\\to0$. For $W_\\omega(y)=W(y)y^{i\\omega}$ the\n same bounds hold with an extra factor $(1+|\\omega|)^{h}$, where $h=h(j,A)$ is fixed."
+ },
+ {
+  "labels": [
+   "eq:d182"
+  ],
+  "numbers": [
+   "F.17"
+  ],
+  "page": "97",
+  "line": 5958,
+  "section": "\\section{The plain fourth moment with an angular factor}\\label{app:s5-plain}",
+  "subsection": "\\subsection{Reflection of a plain sum with an angular factor}\\label{sec:s5-reflection}",
+  "source": "\\begin{equation}\\label{eq:d182}\n \\int_0^\\infty J_1(2\\sqrt{xy})\\,y^{s-1}\\,dy=x^{-s}G(s)\\qquad(-\\tfrac12<\\Re s<\\tfrac34).\n\\end{equation}",
+  "before": "$(0,\\infty)$. For $-\\frac12<\\sigma<\\frac14$ the double integral of $|W(x)J_1(2\\sqrt{xy})|y^{\\sigma-1}$\nconverges, by $|J_1(t)|\\le t/2$ and $|J_1(t)|\\ll t^{-1/2}$~\\cite[(10.14.4), (10.7.8)]{DLMF}. The classical Mellin transform\n$\\int_0^\\infty t^{\\mu-1}J_1(t)\\,dt=2^{\\mu-1}\\Gamma(\\frac{1+\\mu}2)/\\Gamma(\\frac{3-\\mu}2)$, valid for\n$-1<\\Re\\mu<\\frac32$ (\\cite[(10.22.43)]{DLMF}, with $\\mu-1$ in place of $\\mu$), with $t=2\\sqrt{xy}$, gives",
+  "after": "Fubini then gives $\\mathcal MW^\\sharp(s)=\\mathcal MW(1-s)G(s)$. Since $\\mathcal MW_1(-s)=\\mathcal MW(1-s)$,\nMellin inversion on a line in $(-\\frac12,\\frac14)$ identifies $W^\\sharp$ with $K_{W_1}$. The inversion is\nlegitimate because $W^\\sharp$ is continuous and $\\mathcal MW(1-s)G(s)$ is integrable on the line,"
+ },
+ {
+  "labels": [
+   "eq:d183"
+  ],
+  "numbers": [
+   "F.18"
+  ],
+  "page": "98",
+  "line": 5999,
+  "section": "\\section{The plain fourth moment with an angular factor}\\label{app:s5-plain}",
+  "subsection": "\\subsection{Lattice sums with an angular factor}\\label{sec:s5-lattice}",
+  "source": "\\begin{equation}\\label{eq:d183}\n \\mathcal L_i(X,t)=\\sum_{l\\ \\text{outside}\\ \\mathcal S}\\alpha(l)^e\\vartheta(l)\\,\\ind_{(l,\\mathfrak r_*)=1}\\,\n \\N(l)^{it}\\,W_i\\Bigl(\\frac{\\N(l)}X\\Bigr).\n\\end{equation}",
+  "before": "\\item $\\mathfrak r_*$ be squarefree, with $\\N(\\mathfrak r_*)\\le Z^{B_*}$;\n\\item $W_1,W_2$ be smooth profiles on fixed annuli, and $e\\in\\{1,-1\\}$.\n\\end{itemize}\nFor $X>0$ and $t\\in\\mathbb R$ put",
+  "after": "Then, with $J$ fixed and finitely many seminorms, uniformly in $X>0$, in $\\mathfrak r_*$ and in the\nfinite set,\n\\begin{equation}\\label{eq:s5-lattice}"
+ },
+ {
+  "labels": [
+   "eq:s5-lattice"
+  ],
+  "numbers": [
+   "F.19"
+  ],
+  "page": "98",
+  "line": 6005,
+  "section": "\\section{The plain fourth moment with an angular factor}\\label{app:s5-plain}",
+  "subsection": "\\subsection{Lattice sums with an angular factor}\\label{sec:s5-lattice}",
+  "source": "\\begin{equation}\\label{eq:s5-lattice}\n |\\mathcal L_i(X,t)|\\ll Z^{\\varepsilon_1}(1+|t|)^J,\\qquad|\\mathcal L_i(X,t)|\\ll X .\n\\end{equation}",
+  "before": " \\N(l)^{it}\\,W_i\\Bigl(\\frac{\\N(l)}X\\Bigr).\n\\end{equation}\nThen, with $J$ fixed and finitely many seminorms, uniformly in $X>0$, in $\\mathfrak r_*$ and in the\nfinite set,",
+  "after": "Consequently:\n\\begin{itemize}\n\\item \\cite[eq.~old-eq:2.18d]{OAI78} holds with $c_{\\vartheta,\\mathfrak r_*}=0$;"
+ },
+ {
+  "labels": [
+   "eq:d184"
+  ],
+  "numbers": [
+   "F.20"
+  ],
+  "page": "98",
+  "line": 6023,
+  "section": "\\section{The plain fourth moment with an angular factor}\\label{app:s5-plain}",
+  "subsection": "\\subsection{Lattice sums with an angular factor}\\label{sec:s5-lattice}",
+  "source": "\\begin{equation}\\label{eq:d184}\n \\mathcal L_i^0(X,t)=\\sum_{z\\in\\OO}w(z)\\,g_{X,t}(z),\\qquad\n g_{X,t}(z)=X^{it}h_t(z/\\sqrt X),\\qquad h_t(z)=(z/|z|)^e|z|^{2it}W_i(|z|^2).\n\\end{equation}",
+  "before": "First let $\\mathfrak r_*=(1)$, and call the sum $\\mathcal L_i^0$. The primary generators of ideals outside\n$\\mathcal S$ are the $z\\equiv1\\pmod3$ that are prime to the primes of $\\mathcal S$. The value $\\vartheta(l)$\ndepends only on $z$ modulo a fixed modulus. So there are a fixed nonzero $N_0\\in\\OO$ and a function $w$ on\n$\\OO/N_0$ with $|w|\\le1$ such that",
+  "after": "Poisson summation in each class $t_0+N_0\\OO$, exactly as in the proof of Lemma~\\ref{lem:s5-reflection},\ngives\n\\begin{equation}\\label{eq:d185}"
+ },
+ {
+  "labels": [
+   "eq:d185"
+  ],
+  "numbers": [
+   "F.21"
+  ],
+  "page": "98",
+  "line": 6029,
+  "section": "\\section{The plain fourth moment with an angular factor}\\label{app:s5-plain}",
+  "subsection": "\\subsection{Lattice sums with an angular factor}\\label{sec:s5-lattice}",
+  "source": "\\begin{equation}\\label{eq:d185}\n \\mathcal L_i^0(X,t)=\\frac2{\\sqrt3}\\,\\frac1{\\N(N_0)}\\sum_{w\\in\\OO}\\widehat w(w)\\,X^{1+it}\\,\n \\widehat{h_t}\\bigl(\\sqrt X\\,w/N_0\\bigr),\n\\end{equation}",
+  "before": " g_{X,t}(z)=X^{it}h_t(z/\\sqrt X),\\qquad h_t(z)=(z/|z|)^e|z|^{2it}W_i(|z|^2).\n\\end{equation}\nPoisson summation in each class $t_0+N_0\\OO$, exactly as in the proof of Lemma~\\ref{lem:s5-reflection},\ngives",
+  "after": "where $\\widehat w(w)=\\sum_{t_0\\bmod N_0}w(t_0)e(t_0w/N_0)$, so $|\\widehat w|\\le\\N(N_0)$.\n\nThe zero frequency is"
+ },
+ {
+  "labels": [
+   "eq:d186"
+  ],
+  "numbers": [
+   "F.22"
+  ],
+  "page": "98",
+  "line": 6043,
+  "section": "\\section{The plain fourth moment with an angular factor}\\label{app:s5-plain}",
+  "subsection": "\\subsection{Lattice sums with an angular factor}\\label{sec:s5-lattice}",
+  "source": "\\begin{equation}\\label{eq:d186}\n |\\mathcal L_i^0|\\ll(1+|t|)^{J_0}X\\sum_{w\\ne0}(1+\\sqrt X|w|/|N_0|)^{-J_0}\\ll(1+|t|)^{J_0}.\n\\end{equation}",
+  "before": "\nFor the other frequencies, note that $h_t$ is smooth and supported on a fixed annulus, with\n$\\partial^\\beta h_t\\ll(1+|t|)^{|\\beta|}$. So $|\\widehat{h_t}(\\xi)|\\ll(1+|t|)^{J_0}(1+|\\xi|)^{-J_0}$ for any\nfixed $J_0\\ge3$. For $X\\ge1$ this gives",
+  "after": "For $0<X<1$, absolute counting on the fixed annulus gives $O(1)$.\n\nFor a general mask, remove from $\\mathfrak r_*$ its primes in $\\mathcal S$. Then~\\eqref{eq:s5-alpha-mult}"
+ },
+ {
+  "labels": [
+   "eq:s5-coeff"
+  ],
+  "numbers": [
+   "F.23"
+  ],
+  "page": "99",
+  "line": 6070,
+  "section": "\\section{The plain fourth moment with an angular factor}\\label{app:s5-plain}",
+  "subsection": "\\subsection{The coefficient class}\\label{sec:s5-coefficients}",
+  "source": "\\begin{equation}\\label{eq:s5-coeff}\n \\Bigl(\\prod_{i\\in\\mathcal I'}\\nu_i(p_i)W_i^{\\rm slot}(\\N(p_i)/P_i)\\Bigr)D_{\\mathbf b}(l_1,l_2)\\,\n \\alpha(l_1l_2)^e\\,\\tau_1(u)\\N(u)^{it}\\ind_{(u,\\mathfrak R)=1}\\ind_{s\\mid u},\\qquad u=\\Pi l_1l_2,\n\\end{equation}",
+  "before": "\\subsection{The coefficient class}\\label{sec:s5-coefficients}\n\n\\begin{lemma}\\label{lem:s5-coefficients}\nReplace the coefficient~\\cite[eq.~eq:centered-coefficient-form, L13051--13064]{OAI78} by",
+  "after": "with the angular factor on the two plain variables only. Every operation of~\\cite{OAI78} in\nL12602--14778 takes~\\eqref{eq:s5-coeff} to a coefficient of the same form. The angular factor of each\nextracted plain prime power becomes a frozen scalar of modulus one, the same in both rectangles."
+ },
+ {
+  "labels": [
+   "eq:d187"
+  ],
+  "numbers": [
+   "F.24"
+  ],
+  "page": "100",
+  "line": 6134,
+  "section": "\\section{The plain fourth moment with an angular factor}\\label{app:s5-plain}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:s5-plain}}\\label{sec:s5-proof}",
+  "source": "\\begin{equation}\\label{eq:d187}\n T_k(X;W)=\\sum_{d_0\\mid\\mathfrak r_k}\\frac{\\mu(d_0)\\Xi_k(d_0)}{\\sqrt{\\N(d_0)}}\\,T_{\\Xi_k}\\bigl(X/\\N(d_0);W\\bigr).\n\\end{equation}",
+  "before": "so the row family $\\mathcal R_z$ is preserved.\n\n\\emph{Step 3: reflection} (L12677--12761). This step changes. For a natural character,\n\\eqref{eq:s5-natural} gives, by M\\\"obius inversion on $(l,\\mathfrak r_k)=1$ and multiplicativity of $\\Xi_k$,",
+  "after": "Here $T_{\\Xi_k}$ is the normalized sum of $\\Xi_k$ over all nonzero ideals. Reflect each term\nby~\\eqref{eq:s5-reflection}. Then restore the deleted factors: every ideal is uniquely $h_0\\mathfrak b'$\nwith $\\operatorname{rad}(h_0)\\mid\\mathfrak r_k$ and $(\\mathfrak b',\\mathfrak r_k)=1$, and~\\eqref{eq:s5-natural}"
+ },
+ {
+  "labels": [
+   "eq:d188"
+  ],
+  "numbers": [
+   "F.25"
+  ],
+  "page": "100",
+  "line": 6141,
+  "section": "\\section{The plain fourth moment with an angular factor}\\label{app:s5-plain}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:s5-plain}}\\label{sec:s5-proof}",
+  "source": "\\begin{equation}\\label{eq:d188}\n T_{\\overline{\\Xi_k}}(Y;W^\\sharp)=\\sum_{\\operatorname{rad}(h_0)\\mid\\mathfrak r_k}\n \\frac{\\overline{\\Xi_k(h_0)}}{\\sqrt{\\N(h_0)}}\\,T_{\\overline{\\alpha^e\\psi_k^0}}\\bigl(Y/\\N(h_0);W^\\sharp\\bigr).\n\\end{equation}",
+  "before": "Here $T_{\\Xi_k}$ is the normalized sum of $\\Xi_k$ over all nonzero ideals. Reflect each term\nby~\\eqref{eq:s5-reflection}. Then restore the deleted factors: every ideal is uniquely $h_0\\mathfrak b'$\nwith $\\operatorname{rad}(h_0)\\mid\\mathfrak r_k$ and $(\\mathfrak b',\\mathfrak r_k)=1$, and~\\eqref{eq:s5-natural}\nconjugated gives",
+  "after": "The result is the display L12735--12745, with these substitutions:\n\\begin{itemize}\n\\item $\\psi_k^*\\to\\Xi_k$, $R_{0,k}\\to\\mathfrak r_k$, $C_k\\to C_k^{\\rm CM}$, $\\varepsilon_k\\to\\epsilon(\\Xi_k)$;"
+ },
+ {
+  "labels": [
+   "eq:d189"
+  ],
+  "numbers": [
+   "F.26"
+  ],
+  "page": "101",
+  "line": 6177,
+  "section": "\\section{The plain fourth moment with an angular factor}\\label{app:s5-plain}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:s5-plain}}\\label{sec:s5-proof}",
+  "source": "\\begin{equation}\\label{eq:d189}\n \\Delta_k=\\frac Q{\\sqrt{X_1X_2}}\\sum_{l_1,l_2}\\alpha(l_1l_2)^e\\psi_k(l_1l_2)\\{\\cdots\\},\n\\end{equation}",
+  "before": "included. They are \\cite[eq.~old-eq:3.6]{OAI78}, the bound $6\\kappa-1\\ge7/2$ at L12949,\n\\cite[eq.~old-eq:3.11]{OAI78} and~\\cite[eq.~eq:comparison-uncentered-margin]{OAI78}.\n\n\\emph{Step 7: the centered difference} (L12988--13010). Now",
+  "after": "with the bracket of L12999--13002. The enlargement to the smooth row ball uses only nonnegativity.\nVerbatim.\n"
+ }
+]

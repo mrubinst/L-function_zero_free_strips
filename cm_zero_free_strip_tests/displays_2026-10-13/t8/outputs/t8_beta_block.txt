@@ -1,0 +1,17 @@
+      X=3000 k=(4, -3) (h,h') in (N<=4,N>4): |piece| = 4.174e-03
+      X=3000 k=(4, -3) (h,h') in (N>4,N<=4): |piece| = 4.174e-03
+      X=3000 k=(5, 3) (h,h') in (N<=4,N>4): |piece| = 4.174e-03
+      X=3000 k=(5, 3) (h,h') in (N>4,N<=4): |piece| = 4.174e-03
+      X=200000 k=(4, -3) (h,h') in (h=1,7<=N<=20): |piece| = 1.144e-02
+      X=200000 k=(4, -3) (h,h') in (h=1,N>20): |piece| = 2.921e-03
+      X=200000 k=(4, -3) (h,h') in (N(h)>=7,7<=N<=20): |piece| = 1.205e-05
+      X=200000 k=(5, 3) (h,h') in (h=1,7<=N<=20): |piece| = 1.487e-02
+      X=200000 k=(5, 3) (h,h') in (h=1,N>20): |piece| = 1.518e-03
+      X=200000 k=(5, 3) (h,h') in (N(h)>=7,7<=N<=20): |piece| = 6.752e-06
+      X=200000 k=(2, 7) (h,h') in (h=1,7<=N<=20): |piece| = 8.704e-03
+      X=200000 k=(2, 7) (h,h') in (h=1,N>20): |piece| = 2.843e-03
+      X=200000 k=(2, 7) (h,h') in (N(h)>=7,7<=N<=20): |piece| = 1.205e-05
+RESULT|T8.8|PASS|err=2.67e-15 tol=1e-11; eq:s4-beta: block coefficient beta^CM = conj(alpha(b))^3 beta(b,f), one beta for 3 rows k; X = 3000 (4 dyad pairs, 4 b != 1) and X = 200000 (22 b != 1, 2 not squarefree); relative to each nonzero piece (falsifiers must fail on every piece with a b != 1 term); two-slot mark (X = 3000) and one-slot mark (X = 200000), puncture, nu = chi_.(lambda)
+RESULT|T8.8-partition|PASS|err=3.98e-16 tol=1e-11; X = 3000: the four pieces add up to the left side of (s4-inversion) (relative)
+      falsifier for T8.8 [beta^CM = beta (zeta cube factor)]: err=0.454 -> fails as required
+      falsifier for T8.8 [beta^CM = conj(alpha(b))^6 beta]: err=0.095 -> fails as required

@@ -1,0 +1,17 @@
+RESULT|F20-w-table|PASS|err=0 tol=0; w(z) = 1_{z=1 mod 3} 1_{(z,2)=1} theta(z) depends only on z mod N_0 = 12 (400 random z, z + 12y per theta)
+RESULT|F20-|w||PASS|err=0 tol=1e-15; |w| <= 1
+RESULT|F20|PASS|err=6.1e-13 tol=1e-11; ideal-by-ideal L^0(X,t) = sum_z w(z) g_{X,t}(z): 3 theta, e = +-1, t = 0, 2.3, bump X = 40, 2500, x^{11/2}e^{-x} X = 60
+      falsifier for F20 [w without the primary restriction]: err=258 -> fails as required
+      falsifier for F20 [X^{-it} in g_{X,t}]: err=4.01 -> fails as required
+RESULT|F21-closed-form|PASS|err=1.63e-11 tol=1e-10; closed form of hhat_t (Hankel + Kummer) = 2-d definition by polar quadrature, t = 0, 1.3, e = +-1
+RESULT|F21-zero-frequency|PASS|err=3.76e-14 tol=1e-12; hhat_t(0) = int (z/|z|)^e |z|^{2it} W(|z|^2) d^2z = 0
+RESULT|F21|PASS|err=2.06e-13 tol=1e-10; Poisson: L^0 = (2/sqrt3)/N(N_0) sum_w what(w) X^{1+it} hhat_t(sqrt X w/N_0); 3 theta, e = +-1, t = 0, 1.3, X = 20, 50
+      falsifier for F21 [X^{1-it}]: err=272 -> fails as required
+      falsifier for F21 [e(-t0 w/N_0) in what]: err=344 -> fails as required
+   X sum_{w!=0} (1+sqrt X|w|/12)^-3 for X = 1..1e6: 522.8, 514.1, 466.4, 320.9, 151.2, 55.8, 18.6 (2 pi |N_0|^2/sqrt3 = 522.4)
+RESULT|F22-latsum-J0=3|PASS|err=0 tol=0; bounded by 1.05 x 2 pi |N_0|^2/sqrt3 uniformly for X = 1..1e6
+   J0 = 2, X = 1e4, truncation |w| <= 100, 400, 1600: 4968.7, 6414.8, 7862.7
+      falsifier for F22-latsum [J0 = 2 (the sum diverges logarithmically)]: err=2.89e+03 -> fails as required
+   sup |hhat_t| (1+|xi|)^3 / (1+|t|)^3 for t = 0, 4, 16, 64: 1.63, 0.0138, 0.00134, 0.000332 ; without the (1+|t|)^3: 1.63, 1.72, 6.58, 91.3
+RESULT|F22-hhat-t|PASS|err=0 tol=1; size check: sup |hhat_t(xi)|(1+|xi|)^3/(1+|t|)^3 does not grow with t (bump, t <= 64)
+SUMMARY: 13 checks, 0 failures

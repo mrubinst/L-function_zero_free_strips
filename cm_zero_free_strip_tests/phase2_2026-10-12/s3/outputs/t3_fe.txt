@@ -1,0 +1,22 @@
+   abar chibar(pi7): f exps {'(-2, 0)': 2, '(1, 2)': 2, '(-2, -3)': 1}, Q=1008, B=17635: feq -54 bits, |w|=1.000000; falsifiers Vga[0,1] -3, N=Q -2, N=12Q -3
+      deletion identity at s=2.5+1.3i: |L_orig - L(psi*) prod_S| = 6.1e-10; unramified S-prime: False
+   abar chi(lam) chibar(pi7 pi13^2): f exps {'(-2, 0)': 2, '(1, 2)': 4, '(-2, -3)': 1, '(1, -3)': 1}, Q=117936, B=60000: feq -55 bits, |w|=1.000000; falsifiers Vga[0,1] -8, N=Q -4, N=12Q -4
+      deletion identity at s=2.5+1.3i: |L_orig - L(psi*) prod_S| = 7.2e-11; unramified S-prime: False
+   alpha chi(2) chi(-5): f exps {'(-2, 0)': 3, '(1, 2)': 2, '(-5, 0)': 1}, Q=14400, B=60000: feq -56 bits, |w|=1.000000; falsifiers Vga[0,1] -5, N=Q -4, N=12Q -4
+      deletion identity at s=2.5+1.3i: |L_orig - L(psi*) prod_S| = 1.1e-10; unramified S-prime: False
+   abar chibar(pi7^3): f exps {'(-2, 0)': 2, '(1, 2)': 2, '(-2, -3)': 1}, Q=1008, B=17635: feq -55 bits, |w|=1.000000; falsifiers Vga[0,1] -5, N=Q -4, N=12Q -4
+      deletion identity at s=2.5+1.3i: |L_orig - L(psi*) prod_S| = 3.5e-10; unramified S-prime: False
+   alpha chi(omega) chi(omega pi19): f exps {'(-2, 0)': 2, '(1, 2)': 3, '(-5, -3)': 1}, Q=8208, B=60000: feq -54 bits, |w|=1.000000; falsifiers Vga[0,1] -4, N=Q -2, N=12Q -2
+      deletion identity at s=2.5+1.3i: |L_orig - L(psi*) prod_S| = 3.8e-11; unramified S-prime: False
+   abar chi(2)^3 chibar(pi13): f exps {'(-2, 0)': 3, '(1, 2)': 1, '(1, -3)': 1}, Q=2496, B=30883: feq -49 bits, |w|=1.000000; falsifiers Vga[0,1] -7, N=Q -3, N=12Q -6
+      deletion identity at s=2.5+1.3i: |L_orig - L(psi*) prod_S| = 1.6e-10; unramified S-prime: False
+   abar chi(lam)^3 chi(-1) chibar(pi7)  [unramified at 2]: f exps {'(-2, 0)': 0, '(1, 2)': 2, '(-2, -3)': 1}, Q=63, B=6000: feq -57 bits, |w|=1.000000; falsifiers Vga[0,1] -6, N=Q -4, N=12Q -4
+      deletion identity at s=2.5+1.3i: |L_orig - L(psi*) prod_S| = 7.2e-10; unramified S-prime: True
+   alpha chi(lam)^3 chi(2)^2 chi(-1) chi(pi7)  [unramified at lambda]: f exps {'(-2, 0)': 1, '(1, 2)': 0, '(-2, -3)': 1}, Q=28, B=6000: feq -56 bits, |w|=1.000000; falsifiers Vga[0,1] -4, N=Q -3, N=12Q -3
+      deletion identity at s=2.5+1.3i: |L_orig - L(psi*) prod_S| = 1.2e-09; unramified S-prime: True
+      deletion identity at s=2.5+1.3i: |L_orig - L(psi*) prod_S| = 3.9e-10; unramified S-prime: False
+[PASS] S3-T3a lem:s3-labels(h), lem:cm-growth FE with (3Q)^{s/2} Gamma(s+1/2), |w|=1, no poles, for CM members of X_u :: 8 CM members (both sigma) [falsifier failed as required]
+[PASS] S3-T3b control finite-order member satisfies the finite-order FE (Gamma(s)) and not the CM one :: control: chi(pi7) (finite order): Q=1008: feq -54 bits, |w|=1.000000; with CM gamma -2
+[PASS] S3-T3c lem:s3-labels(e) L_orig = L(s,psi*) prod_{p in S}(1 - psi*(p)q^-s); psi*(p) = 0 for p | u :: see lines above [falsifier failed as required]
+time 20.8s
+SUMMARY: {'PASS': 3}

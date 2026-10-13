@@ -1,0 +1,572 @@
+[
+ {
+  "labels": [
+   "eq:d121"
+  ],
+  "numbers": [
+   "B.1"
+  ],
+  "page": "60",
+  "line": 3822,
+  "section": "\\section{The CM transformation formula at full generality}\\label{app:s1-general}",
+  "subsection": "\\section{The CM transformation formula at full generality}\\label{app:s1-general}",
+  "source": "\\begin{equation}\\label{eq:d121}\n R_1(t)=\\prod_\\pm\\frac{\\Gamma(1+t\\pm\\frac16)}{\\Gamma(1-t\\pm\\frac16)},\\qquad\n R_2(t)=\\frac{\\Gamma(\\frac43+t)\\Gamma(\\frac53+t)}{\\Gamma(\\frac43-t)\\Gamma(\\frac53-t)}.\n\\end{equation}",
+  "before": " Appendix~\\ref{app:reflection};\n\\item its constant $K$ is written out as $(2\\pi)^4/27$.\n\\end{itemize}\nThe kernels with one and two derivatives are",
+  "after": "$R_1$ is the kernel of~\\cite{OAI78}, and $R_2$ is that of~\\eqref{eq:weight}.\n\n\\subsection{The statement}"
+ },
+ {
+  "labels": [
+   "eq:d122"
+  ],
+  "numbers": [
+   "B.2"
+  ],
+  "page": "60",
+  "line": 3837,
+  "section": "\\section{The CM transformation formula at full generality}\\label{app:s1-general}",
+  "subsection": "\\subsection{The statement}",
+  "source": "\\begin{equation}\\label{eq:d122}\n  \\phi(x)=\\begin{cases}\\chi_x(\\lambda)^2\\Psi_0(x),&x\\equiv1\\pmod3,\\ (x,\\mathfrak E)=1,\\\\0,&\\text{otherwise},\\end{cases}\n \\end{equation}",
+  "before": "\\item $\\mathfrak E$ is an integral modulus with prime support exactly $S$, divisible by all these conductors.\n Each member of $\\mathcal X$ is extended by zero to the primary elements that are not prime to $\\mathfrak E$.\n\\item $L\\in\\OO\\setminus\\{0\\}$ has prime support $S$, with $(18)\\mid(L)$ and $\\mathfrak E\\mid(L)$, and for every\n $\\Psi_0\\in\\mathcal X$ the function",
+  "after": " is $L$-periodic.\n\\item $\\Psi_0\\in\\mathcal X$; $\\mathcal P$ is a finite set of primary primes not dividing $L$; $j_p\\in\\{0,\\dots,5\\}$\n for $p\\in\\mathcal P$; and $\\Psi(n)=\\Psi_0(n)\\prod_{p\\in\\mathcal P}\\chi_p(n)^{j_p}$ on primary $n$."
+ },
+ {
+  "labels": [
+   "eq:s1-mellin-tail"
+  ],
+  "numbers": [
+   "B.3"
+  ],
+  "page": "61",
+  "line": 3850,
+  "section": "\\section{The CM transformation formula at full generality}\\label{app:s1-general}",
+  "subsection": "\\subsection{The statement}",
+  "source": "\\begin{equation}\\label{eq:s1-mellin-tail}\n |\\widehat V(\\eta+iu)|\\ll_{I,N}(1+|u|)^{-N}\\sum_{j=0}^N\\int_0^\\infty x^\\eta|(x\\partial_x)^jV(x)|\\,\\frac{dx}x\n\\end{equation}",
+  "before": "$(x\\partial_x)^jV(x)=O_{C,j}(x^C)$ as $x\\to0$ and $O_{C,j}(x^{-C})$ as $x\\to\\infty$, for every $C>0$ and every\ninteger $j\\ge0$~\\cite[L1718--1723]{OAI78}. Its Mellin transform $\\widehat V(t)=\\int_0^\\infty V(x)x^{t-1}dx$ is\nentire. Integration by parts in $\\log x$ gives, uniformly for $\\eta$ in a compact interval $I$ (in this appendix\n$\\eta$ denotes a real number, as in~\\cite{OAI78}, not the finite-order character of Part~II),",
+  "after": "for every $N\\ge0$; this is~\\cite[eq.~eq:pointwise-mellin-tail]{OAI78}, whose boundary terms vanish for these tests.\nFor $A\\ge0$ and integers $B\\ge0$ put, as in~\\cite[L1854--1858]{OAI78},\n\\begin{equation}\\label{eq:d123}"
+ },
+ {
+  "labels": [
+   "eq:d123"
+  ],
+  "numbers": [
+   "B.4"
+  ],
+  "page": "61",
+  "line": 3855,
+  "section": "\\section{The CM transformation formula at full generality}\\label{app:s1-general}",
+  "subsection": "\\subsection{The statement}",
+  "source": "\\begin{equation}\\label{eq:d123}\n \\mathfrak M_{A,B}(V)=\\sup_{-A\\le\\eta\\le1/4}\\int_{\\mathbb R}(1+|u|)^B|\\widehat V(\\eta+iu)|\\,du .\n\\end{equation}",
+  "before": " |\\widehat V(\\eta+iu)|\\ll_{I,N}(1+|u|)^{-N}\\sum_{j=0}^N\\int_0^\\infty x^\\eta|(x\\partial_x)^jV(x)|\\,\\frac{dx}x\n\\end{equation}\nfor every $N\\ge0$; this is~\\cite[eq.~eq:pointwise-mellin-tail]{OAI78}, whose boundary terms vanish for these tests.\nFor $A\\ge0$ and integers $B\\ge0$ put, as in~\\cite[L1854--1858]{OAI78},",
+  "after": "The Gaussian $V_{\\rm G}(y)=(2\\sqrt\\pi)^{-1}\\exp(-\\frac14(\\log y)^2)$, with $\\widehat V_{\\rm G}(t)=e^{t^2}$, is a\nlog-Schwartz test, and so is $\\sqrt y\\,W(y)$ for every $W\\in C_c^\\infty(0,\\infty)$.\n"
+ },
+ {
+  "labels": [
+   "eq:d124"
+  ],
+  "numbers": [
+   "B.5"
+  ],
+  "page": "61",
+  "line": 3862,
+  "section": "\\section{The CM transformation formula at full generality}\\label{app:s1-general}",
+  "subsection": "\\subsection{The statement}",
+  "source": "\\begin{equation}\\label{eq:d124}\n \\mathcal D_2(s,\\Psi)=\\ssum_{\\substack{n\\equiv1\\ (3)\\\\(n,\\mathfrak E)=1}}\n \\frac{\\gamma_2(n)\\overline{\\alpha(n)}^{\\,2}\\Psi(n)}{\\N(n)^s},\\qquad\n \\mathcal L_2(s,\\Psi)=\\sum_{\\substack{b\\equiv1\\ (3)\\\\(b,\\mathfrak E)=1}}\n \\frac{\\overline{\\alpha(b)}^{\\,6}\\Psi(b)^3}{\\N(b)^{3s-1/2}},\n\\end{equation}",
+  "before": "The Gaussian $V_{\\rm G}(y)=(2\\sqrt\\pi)^{-1}\\exp(-\\frac14(\\log y)^2)$, with $\\widehat V_{\\rm G}(t)=e^{t^2}$, is a\nlog-Schwartz test, and so is $\\sqrt y\\,W(y)$ for every $W\\in C_c^\\infty(0,\\infty)$.\n\n\\paragraph{The CM objects.} For $\\Re s>1$ put",
+  "after": "and $\\mathcal T_2=\\mathcal D_2\\mathcal L_2$. These are the series $D,L_0,T$ of~\\cite[L1707--1716]{OAI78} with\n$\\overline\\alpha$ replaced by $\\overline\\alpha^{\\,2}$. For the data of Appendix~\\ref{app:reflection},\n$\\mathcal T_2(w,\\Psi)$ is the series $\\mathcal T(w)$ of Step~3 there. The completed sum is"
+ },
+ {
+  "labels": [
+   "eq:d125"
+  ],
+  "numbers": [
+   "B.6"
+  ],
+  "page": "61",
+  "line": 3871,
+  "section": "\\section{The CM transformation formula at full generality}\\label{app:s1-general}",
+  "subsection": "\\subsection{The statement}",
+  "source": "\\begin{equation}\\label{eq:d125}\n T_V(X;\\Psi)=\\sum_{\\substack{n\\ {\\rm sf},\\ b\\\\n,b\\equiv1\\ (3),\\ (nb,\\mathfrak E)=1}}\n \\frac{\\gamma_2(n)\\overline{\\alpha(nb^3)}^{\\,2}\\Psi(nb^3)}{\\sqrt{\\N(n)}\\,\\N(b)}\n \\,V\\Bigl(\\frac{\\N(n)\\N(b)^3}X\\Bigr)\\qquad(X>0).\n\\end{equation}",
+  "before": "\\end{equation}\nand $\\mathcal T_2=\\mathcal D_2\\mathcal L_2$. These are the series $D,L_0,T$ of~\\cite[L1707--1716]{OAI78} with\n$\\overline\\alpha$ replaced by $\\overline\\alpha^{\\,2}$. For the data of Appendix~\\ref{app:reflection},\n$\\mathcal T_2(w,\\Psi)$ is the series $\\mathcal T(w)$ of Step~3 there. The completed sum is",
+  "after": "Here $n$ and $b$ may share primes, and $\\Psi$ acts on the whole index $nb^3$, with its zeros. For $V(y)=\\sqrt\ny\\,W(y)$ this is the sum $T(X;\\Psi)$ of~\\eqref{eq:T}. The reflected test is\n\\begin{equation}\\label{eq:d126}"
+ },
+ {
+  "labels": [
+   "eq:d126"
+  ],
+  "numbers": [
+   "B.7"
+  ],
+  "page": "61",
+  "line": 3878,
+  "section": "\\section{The CM transformation formula at full generality}\\label{app:s1-general}",
+  "subsection": "\\subsection{The statement}",
+  "source": "\\begin{equation}\\label{eq:d126}\n V^\\sharp(x)=\\frac1{2\\pi i}\\int_{(\\sigma_0)}\\widehat V(-t)\\,R_2(t)\\Bigl(\\frac{(2\\pi)^4x}{27}\\Bigr)^{-t}dt\n \\qquad(\\sigma_0>-\\tfrac43);\n\\end{equation}",
+  "before": " \\,V\\Bigl(\\frac{\\N(n)\\N(b)^3}X\\Bigr)\\qquad(X>0).\n\\end{equation}\nHere $n$ and $b$ may share primes, and $\\Psi$ acts on the whole index $nb^3$, with its zeros. For $V(y)=\\sqrt\ny\\,W(y)$ this is the sum $T(X;\\Psi)$ of~\\eqref{eq:T}. The reflected test is",
+  "after": "for $\\sigma_0=0$ it is~\\eqref{eq:weight}.\n\n\\begin{proposition}[CM completed reflection; CM form of {\\cite[Prop.~prop:completed-reflection]{OAI78}}]"
+ },
+ {
+  "labels": [
+   "eq:d127"
+  ],
+  "numbers": [
+   "B.8"
+  ],
+  "page": "61",
+  "line": 3889,
+  "section": "\\section{The CM transformation formula at full generality}\\label{app:s1-general}",
+  "subsection": "\\subsection{The statement}",
+  "source": "\\begin{equation}\\label{eq:d127}\n  T_V(X;\\Psi)=\\frac1{2\\pi i}\\int_{(a)}\\widehat V(s-\\tfrac12)\\,X^{s-1/2}\\,\\mathcal T_2(s,\\Psi)\\,ds .\n \\end{equation}",
+  "before": "\\label{prop:s1-reflection}\nLet $V$ be a log-Schwartz test and $X>0$.\n\\begin{enumerate}\n\\item[(a)] The series defining $T_V(X;\\Psi)$ converges absolutely, and for every $a>1$",
+  "after": "\\item[(b)] $\\mathcal T_2(\\cdot,\\Psi)$ continues to an entire function with polynomial growth on every vertical\n strip.\n\\item[(c)] The integral defining $V^\\sharp$ converges absolutely and does not depend on $\\sigma_0>-\\frac43$. Take the"
+ },
+ {
+  "labels": [
+   "eq:s1-reflection"
+  ],
+  "numbers": [
+   "B.9"
+  ],
+  "page": "62",
+  "line": 3898,
+  "section": "\\section{The CM transformation formula at full generality}\\label{app:s1-general}",
+  "subsection": "\\subsection{The statement}",
+  "source": "\\begin{equation}\\label{eq:s1-reflection}\n  T_V(X;\\Psi)=\\sum_{\\rm terms}C\\sum_{0\\ne\\ell\\in\\lambda^{-4}\\OO}\n  \\frac{d_\\sigma(\\ell)\\,\\alpha(\\ell)^2\\,\\vartheta(\\lambda^4\\ell)}{\\sqrt{\\N(\\ell)}}\n  \\prod_{p\\ {\\rm active}}B_p(\\lambda^4\\ell)\\;V^\\sharp\\Bigl(\\frac{\\N(\\ell)X}{\\N(c)^2}\\Bigr),\n \\end{equation}",
+  "before": "\\item[(c)] The integral defining $V^\\sharp$ converges absolutely and does not depend on $\\sigma_0>-\\frac43$. Take the\n terms, the cusp coefficient functions $d_\\sigma$, the additive characters $\\vartheta$, the local factors $B_p$ and the\n data $c=c_Fr$, $\\kappa_F$, $\\sigma_p$, $\\epsilon_p$, $\\varpi_{p,j}$ of~\\cite[Prop.~prop:completed-reflection,\n items~(1)--(3), L1776--1850]{OAI78} for the same arithmetic data. Then",
+  "after": " where every inner series converges absolutely and\n \\begin{equation}\\label{eq:s1-scalar}\n  C=-\\frac{\\overline{\\alpha(c)}^{\\,4}}{81}\\,\\widehat\\phi(h_0)\\,\\overline{\\kappa_F}"
+ },
+ {
+  "labels": [
+   "eq:s1-scalar"
+  ],
+  "numbers": [
+   "B.10"
+  ],
+  "page": "62",
+  "line": 3904,
+  "section": "\\section{The CM transformation formula at full generality}\\label{app:s1-general}",
+  "subsection": "\\subsection{The statement}",
+  "source": "\\begin{equation}\\label{eq:s1-scalar}\n  C=-\\frac{\\overline{\\alpha(c)}^{\\,4}}{81}\\,\\widehat\\phi(h_0)\\,\\overline{\\kappa_F}\n  \\prod_{p\\ {\\rm inactive}}\\bigl(1-\\N(p)^{-1}\\bigr)\\prod_{p\\ {\\rm active}}\\chi_p(\\sigma_p)^{-2}\\varpi_{p,j_p}.\n \\end{equation}",
+  "before": "  \\frac{d_\\sigma(\\ell)\\,\\alpha(\\ell)^2\\,\\vartheta(\\lambda^4\\ell)}{\\sqrt{\\N(\\ell)}}\n  \\prod_{p\\ {\\rm active}}B_p(\\lambda^4\\ell)\\;V^\\sharp\\Bigl(\\frac{\\N(\\ell)X}{\\N(c)^2}\\Bigr),\n \\end{equation}\n where every inner series converges absolutely and",
+  "after": " Thus $C=-i\\,\\overline{\\alpha(c)}^{\\,2}\\zeta$, where $\\zeta$ is the scalar of the same term\n in~\\cite[eq.~eq:reflection-row-phase]{OAI78}, and $|C|\\le\\frac1{81}$.\n\\item[(d)] The assertions of~\\cite[item~(3), L1809--1850]{OAI78} hold for these terms, with the same factor"
+ },
+ {
+  "labels": [
+   "eq:d128"
+  ],
+  "numbers": [
+   "B.11"
+  ],
+  "page": "62",
+  "line": 3918,
+  "section": "\\section{The CM transformation formula at full generality}\\label{app:s1-general}",
+  "subsection": "\\subsection{The statement}",
+  "source": "\\begin{equation}\\label{eq:d128}\n  \\bigl|(x\\partial_x)^jV^\\sharp(x)\\bigr|\\ll_{A,j}\\min\\{x^{1/4},(1+x)^{-A}\\}\\,\n  \\mathfrak M_{A,\\lceil4A\\rceil+j+2}(V)\\qquad(x>0).\n \\end{equation}",
+  "before": " $-i\\,\\overline{\\alpha(c)}^{\\,2}$, and\n $\\overline{\\alpha(c)}^{\\,4}=\\overline{\\alpha(c_F)}^{\\,4}\\prod_{p\\ {\\rm active}}\\overline{\\alpha(p)}^{\\,4}$.\n\\item[(e)] For $A\\ge0$ and integers $j,J\\ge0$, the two bounds~\\cite[eqs.~reflection-kernel and\n reflection-annular-fourier]{OAI78} hold for this $V^\\sharp$, with the same seminorms. In particular",
+  "after": " The bound~\\cite[eq.~eq:reflection-test-seminorm]{OAI78} for $\\mathfrak M_{A,B}$ and the twist bound after it\n concern $V$ alone and hold as stated there.\n\\end{enumerate}"
+ },
+ {
+  "labels": [
+   "eq:d129"
+  ],
+  "numbers": [
+   "B.12"
+  ],
+  "page": "62",
+  "line": 3944,
+  "section": "\\section{The CM transformation formula at full generality}\\label{app:s1-general}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:s1-reflection}}\\label{sec:s1-proof}",
+  "source": "\\begin{equation}\\label{eq:d129}\n  \\mathcal F(z,v)=\\sum_{\\mathbf h}C(\\mathbf h)\\,\\overline{\\theta(z+z_{\\mathbf h},v)},\\qquad\n  z_{\\mathbf h}=\\lambda^2\\Bigl(\\frac{h_0}L+\\sum_{p\\in\\mathcal P}\\frac{h_p}p\\Bigr),\\qquad\n  C(\\mathbf h)=\\widehat\\phi(h_0)\\prod_pC_{p,j_p}(h_p),\n \\end{equation}",
+  "before": "\\item the theta input, the three cusp functions, their coefficient functions $d_\\sigma$ with the support and size\n bound~\\cite[eq.~old-eq:4.3]{OAI78}, the infinity coefficient~\\cite[eqs.~reflection-infinity-coefficient\n and reflection-cubic-sextic-conversion]{OAI78}, and the choice of $L$ (L1889--2010);\n\\item the finite Fourier inversion with all zero extensions, giving",
+  "after": " with the whole-index mask $(nb,\\mathfrak E)=1$ (L2012--2066);\n\\item the reduced fractions $z_{\\mathbf h}=a/c$ with $c=c_Fr$ (L2068--2087), the matrices\n $g=\\bigl(\\begin{smallmatrix}a&b'\\\\c&\\delta'\\end{smallmatrix}\\bigr)=GH\\in\\mathrm{SL}_2(\\OO)$ with"
+ },
+ {
+  "labels": [
+   "eq:s1-automorphy"
+  ],
+  "numbers": [
+   "B.13"
+  ],
+  "page": "63",
+  "line": 3957,
+  "section": "\\section{The CM transformation formula at full generality}\\label{app:s1-general}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:s1-reflection}}\\label{sec:s1-proof}",
+  "source": "\\begin{equation}\\label{eq:s1-automorphy}\n \\overline{\\theta(a/c+z,v)}=\\overline{\\kappa(G)}\\;\\overline{\\theta\\bigl(Hg^{-1}(a/c+z,v)\\bigr)}\n\\end{equation}",
+  "before": "\\item the additive phase~\\cite[eq.~eq:reflection-additive-phase]{OAI78}, the local Gauss sums that produce\n $\\varpi_{p,j}B_p$, the counts of terms, the branch compatibility and the cross-prime phase (L2201--2279).\n\\end{itemize}\nFrom this part we need two facts. For every $\\mathbf h$, with $z_{\\mathbf h}=a/c$ and $g,G,H$ as above,",
+  "after": "(L2313--2324). And, by~\\cite[eq.~eq:reflection-cusp-expansion]{OAI78},\n\\begin{equation}\\label{eq:d130}\n \\overline{\\theta(H(z',v'))}=C_H(v')+\\sum_{0\\ne\\ell\\in\\lambda^{-4}\\OO}d_\\sigma(\\ell)\\,v'K_{1/3}(4\\pi|\\ell|v')\\,\\ce(\\ell z'),"
+ },
+ {
+  "labels": [
+   "eq:d130"
+  ],
+  "numbers": [
+   "B.14"
+  ],
+  "page": "63",
+  "line": 3961,
+  "section": "\\section{The CM transformation formula at full generality}\\label{app:s1-general}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:s1-reflection}}\\label{sec:s1-proof}",
+  "source": "\\begin{equation}\\label{eq:d130}\n \\overline{\\theta(H(z',v'))}=C_H(v')+\\sum_{0\\ne\\ell\\in\\lambda^{-4}\\OO}d_\\sigma(\\ell)\\,v'K_{1/3}(4\\pi|\\ell|v')\\,\\ce(\\ell z'),\n\\end{equation}",
+  "before": "\\begin{equation}\\label{eq:s1-automorphy}\n \\overline{\\theta(a/c+z,v)}=\\overline{\\kappa(G)}\\;\\overline{\\theta\\bigl(Hg^{-1}(a/c+z,v)\\bigr)}\n\\end{equation}\n(L2313--2324). And, by~\\cite[eq.~eq:reflection-cusp-expansion]{OAI78},",
+  "after": "where $C_H$ does not depend on $z'$ and $d_\\sigma$, $\\sigma\\in\\{0,+,-\\}$, is the one of the three fixed coefficient\nfunctions that belongs to $H$; these are the functions $d_\\sigma$ of Appendix~\\ref{app:reflection}, and $d_0$ belongs to\n$H=I$."
+ },
+ {
+  "labels": [
+   "eq:s1-direct"
+  ],
+  "numbers": [
+   "B.15"
+  ],
+  "page": "63",
+  "line": 3982,
+  "section": "\\section{The CM transformation formula at full generality}\\label{app:s1-general}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:s1-reflection}}\\label{sec:s1-proof}",
+  "source": "\\begin{equation}\\label{eq:s1-direct}\n \\mathcal J_2(s)=\\frac{3\\pi}2\\Bigl(\\frac{27}{(2\\pi)^2}\\Bigr)^s\\Gamma(s+\\tfrac13)\\Gamma(s+\\tfrac23)\\,\n \\mathcal T_2(s-\\tfrac12,\\Psi)\\qquad(\\Re s>\\tfrac32).\n\\end{equation}",
+  "before": "$3^{5/2}|b|\\,\\gamma_2(n)\\Psi(n)\\Psi(b)^3$. This replaces~\\eqref{eq:b3-coeff}; $n$ and $b$ may share primes. In every\ncase its absolute value is at most $3^{5/2}|b|$. Since $|\\ell|\\ge3^{-3/2}$ and $K_{1/3}(y)\\ll e^{-y}$ for $y\\ge1$, the\nexpansion may be differentiated termwise. Step~3 of Section~\\ref{sec:b3-proof} uses only this coefficient formula and\nthis bound, so it gives, with absolutely convergent termwise integrals,",
+  "after": "In~\\cite[eq.~eq:reflection-direct-mellin]{OAI78} the same integral with one derivative is\n$\\frac{3^{5/2}}4(\\frac{27}{(2\\pi)^2})^s\\Gamma(s+\\frac13)\\Gamma(s+\\frac23)T(s,\\Psi)$. The second derivative brings\nthe extra factor $2\\pi i\\bar\\ell$; its modulus $2\\pi|\\ell|$ shifts the Dirichlet series by $\\frac12$, and its"
+ },
+ {
+  "labels": [
+   "eq:s1-cusp"
+  ],
+  "numbers": [
+   "B.16"
+  ],
+  "page": "63",
+  "line": 3994,
+  "section": "\\section{The CM transformation formula at full generality}\\label{app:s1-general}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:s1-reflection}}\\label{sec:s1-proof}",
+  "source": "\\begin{equation}\\label{eq:s1-cusp}\n \\partial_{\\bar z}^{\\,2}\\overline{\\theta(a/c+z,v)}\\big|_{z=0}\n =\\overline{\\kappa(G)}\\,(cv)^{-4}\\,\\mathcal G_{\\mathbf h}\\Bigl(\\frac1{\\N(c)v}\\Bigr),\n\\end{equation}",
+  "before": "\n\\paragraph{Step 2: the cusps.} Fix $\\mathbf h$. Step~4 of Section~\\ref{sec:b3-proof} uses only that\n$g\\in\\mathrm{SL}_2(\\OO)$ has lower row $(c,\\delta')$ and the formula for $g^{-1}(a/c+z,v)$ (L2313--2320 and~\\cite[(5.1),\n(5.19)]{QF}). With~\\eqref{eq:s1-automorphy} it gives",
+  "after": "where\n\\begin{equation}\\label{eq:d131}\n \\mathcal G_{\\mathbf h}(v')=-4\\pi^2\\sum_{0\\ne\\ell\\in\\lambda^{-4}\\OO}d_\\sigma(\\ell)\\N(\\ell)\\alpha(\\ell)^2\\,"
+ },
+ {
+  "labels": [
+   "eq:d131"
+  ],
+  "numbers": [
+   "B.17"
+  ],
+  "page": "63",
+  "line": 3999,
+  "section": "\\section{The CM transformation formula at full generality}\\label{app:s1-general}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:s1-reflection}}\\label{sec:s1-proof}",
+  "source": "\\begin{equation}\\label{eq:d131}\n \\mathcal G_{\\mathbf h}(v')=-4\\pi^2\\sum_{0\\ne\\ell\\in\\lambda^{-4}\\OO}d_\\sigma(\\ell)\\N(\\ell)\\alpha(\\ell)^2\\,\n v'K_{1/3}(4\\pi|\\ell|v')\\,\\ce\\Bigl(-\\frac{\\delta'\\ell}c\\Bigr).\n\\end{equation}",
+  "before": " \\partial_{\\bar z}^{\\,2}\\overline{\\theta(a/c+z,v)}\\big|_{z=0}\n =\\overline{\\kappa(G)}\\,(cv)^{-4}\\,\\mathcal G_{\\mathbf h}\\Bigl(\\frac1{\\N(c)v}\\Bigr),\n\\end{equation}\nwhere",
+  "after": "The operator $\\partial_{z'}^{\\,2}$ removes $C_H(v')$. This replaces the formula of L2324--2332, which has\n$-\\overline{\\kappa(G)}(cv)^{-2}$ and one derivative $\\partial_{z'}$.\n"
+ },
+ {
+  "labels": [
+   "eq:s1-dual"
+  ],
+  "numbers": [
+   "B.18"
+  ],
+  "page": "64",
+  "line": 4011,
+  "section": "\\section{The CM transformation formula at full generality}\\label{app:s1-general}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:s1-reflection}}\\label{sec:s1-proof}",
+  "source": "\\begin{equation}\\label{eq:s1-dual}\n \\mathcal J^\\vee_{\\mathbf h}(s'):=\\int_0^\\infty\\mathcal G_{\\mathbf h}(v')\\,v'^{\\,2s'-1}dv'\n =-\\frac\\pi2(2\\pi)^{-2s'}\\Gamma(s'+\\tfrac13)\\Gamma(s'+\\tfrac23)\n \\sum_{0\\ne\\ell\\in\\lambda^{-4}\\OO}\\frac{d_\\sigma(\\ell)\\alpha(\\ell)^2}{\\N(\\ell)^{s'-1/2}}\\,\\ce\\Bigl(-\\frac{\\delta'\\ell}c\\Bigr),\n\\end{equation}",
+  "before": "$f(v)=\\sum_{\\mathbf h}C(\\mathbf h)\\overline{\\kappa(G_{\\mathbf h})}(c_{\\mathbf h}v)^{-4}\n\\mathcal G_{\\mathbf h}(1/(\\N(c_{\\mathbf h})v))$ decays exponentially as well, because $|\\ell|\\ge\\frac19$ on\n$\\lambda^{-4}\\OO\\setminus\\{0\\}$ and $d_\\sigma$ is polynomially bounded. So $\\mathcal J_2$ is entire and bounded on vertical\nstrips. For $\\Re s'>\\frac32$,",
+  "after": "with absolute convergence of the series and of the termwise integrals. Indeed, writing $\\ell=u\\lambda^knb^3$ as\nin~\\cite[eq.~old-eq:4.3]{OAI78},\n\\begin{equation}\\label{eq:d132}"
+ },
+ {
+  "labels": [
+   "eq:d132"
+  ],
+  "numbers": [
+   "B.19"
+  ],
+  "page": "64",
+  "line": 4018,
+  "section": "\\section{The CM transformation formula at full generality}\\label{app:s1-general}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:s1-reflection}}\\label{sec:s1-proof}",
+  "source": "\\begin{equation}\\label{eq:d132}\n \\sum_\\ell|d_\\sigma(\\ell)|\\,\\N(\\ell)^{1/2-\\Re s'}\\le6\\cdot27\\sum_{k\\ge-4}3^{k(2/3-\\Re s')}\n \\ssum_n\\N(n)^{1/2-\\Re s'}\\sum_b\\N(b)^{2-3\\Re s'}<\\infty .\n\\end{equation}",
+  "before": " \\sum_{0\\ne\\ell\\in\\lambda^{-4}\\OO}\\frac{d_\\sigma(\\ell)\\alpha(\\ell)^2}{\\N(\\ell)^{s'-1/2}}\\,\\ce\\Bigl(-\\frac{\\delta'\\ell}c\\Bigr),\n\\end{equation}\nwith absolute convergence of the series and of the termwise integrals. Indeed, writing $\\ell=u\\lambda^knb^3$ as\nin~\\cite[eq.~old-eq:4.3]{OAI78},",
+  "after": "Here $n$ and $b$ run over all primary elements, $n$ squarefree, including those divisible by primes of $S$ other than\n$\\lambda$, and pairs that share primes; the size bound covers all of them (L1803--1805 and L1978--1983). This is the majorant\nof~\\cite[L2350--2358]{OAI78} in the variable $s'-\\frac12$. For $\\Re s<\\frac12$ the substitution $v=1/(\\N(c)v')$ of"
+ },
+ {
+  "labels": [
+   "eq:s1-fe"
+  ],
+  "numbers": [
+   "B.20"
+  ],
+  "page": "64",
+  "line": 4026,
+  "section": "\\section{The CM transformation formula at full generality}\\label{app:s1-general}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:s1-reflection}}\\label{sec:s1-proof}",
+  "source": "\\begin{equation}\\label{eq:s1-fe}\n \\mathcal J_2(s)=\\sum_{\\mathbf h}C(\\mathbf h)\\,\\overline{\\kappa(G_{\\mathbf h})}\\;\n \\overline{\\alpha(c_{\\mathbf h})}^{\\,4}\\,\\N(c_{\\mathbf h})^{2-2s}\\,\\mathcal J^\\vee_{\\mathbf h}(2-s)\n \\qquad(\\Re s<\\tfrac12),\n\\end{equation}",
+  "before": "Here $n$ and $b$ run over all primary elements, $n$ squarefree, including those divisible by primes of $S$ other than\n$\\lambda$, and pairs that share primes; the size bound covers all of them (L1803--1805 and L1978--1983). This is the majorant\nof~\\cite[L2350--2358]{OAI78} in the variable $s'-\\frac12$. For $\\Re s<\\frac12$ the substitution $v=1/(\\N(c)v')$ of\nStep~5 of the proof in Appendix~\\ref{app:reflection} (Section~\\ref{sec:b3-proof}) gives",
+  "after": "where $c^{-4}\\N(c)^2=\\overline{\\alpha(c)}^{\\,4}$. By~\\eqref{eq:s1-direct},\n\\begin{equation}\\label{eq:d133}\n \\mathcal T_2(w,\\Psi)=\\mathcal J_2(w+\\tfrac12)\\Big/\\Bigl(\\frac{3\\pi}2\\Bigl(\\frac{27}{(2\\pi)^2}\\Bigr)^{w+1/2}"
+ },
+ {
+  "labels": [
+   "eq:d133"
+  ],
+  "numbers": [
+   "B.21"
+  ],
+  "page": "64",
+  "line": 4032,
+  "section": "\\section{The CM transformation formula at full generality}\\label{app:s1-general}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:s1-reflection}}\\label{sec:s1-proof}",
+  "source": "\\begin{equation}\\label{eq:d133}\n \\mathcal T_2(w,\\Psi)=\\mathcal J_2(w+\\tfrac12)\\Big/\\Bigl(\\frac{3\\pi}2\\Bigl(\\frac{27}{(2\\pi)^2}\\Bigr)^{w+1/2}\n \\Gamma(w+\\tfrac56)\\Gamma(w+\\tfrac76)\\Bigr)\n\\end{equation}",
+  "before": " \\overline{\\alpha(c_{\\mathbf h})}^{\\,4}\\,\\N(c_{\\mathbf h})^{2-2s}\\,\\mathcal J^\\vee_{\\mathbf h}(2-s)\n \\qquad(\\Re s<\\tfrac12),\n\\end{equation}\nwhere $c^{-4}\\N(c)^2=\\overline{\\alpha(c)}^{\\,4}$. By~\\eqref{eq:s1-direct},",
+  "after": "continues to an entire function. Let $\\sigma_2<0<1<\\sigma_1$. On $\\Re w=\\sigma_1$, $\\mathcal T_2$ is bounded. On\n$\\Re w=\\sigma_2$, \\eqref{eq:s1-fe} and~\\eqref{eq:s1-dual} at $s'=\\frac32-w$ and Stirling's formula give\n$|\\mathcal T_2(w)|\\ll(1+|\\Im w|)^{2-4\\sigma_2}$, as in Step~5 of the proof in Appendix~\\ref{app:reflection}. In the strip"
+ },
+ {
+  "labels": [
+   "eq:d134"
+  ],
+  "numbers": [
+   "B.22"
+  ],
+  "page": "64",
+  "line": 4046,
+  "section": "\\section{The CM transformation formula at full generality}\\label{app:s1-general}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:s1-reflection}}\\label{sec:s1-proof}",
+  "source": "\\begin{equation}\\label{eq:d134}\n \\sum_{n,b}\\frac{|V(\\N(n)\\N(b)^3/X)|}{\\sqrt{\\N(n)}\\,\\N(b)}\\ll_V X\\ssum_n\\N(n)^{-3/2}\\sum_b\\N(b)^{-4}<\\infty .\n\\end{equation}",
+  "before": "which proves~(b). As in~\\cite{OAI78}, the constants depend on $L,\\Psi_0,\\mathcal P,(j_p)$ and the strip.\n\n\\paragraph{Step 4: a log-Schwartz test.} This is the step where the generality of the test matters. Since\n$(x\\partial_x)^0V=V$ is $O(x^{-1})$ at infinity and bounded at zero, $|V(y)|\\ll_V y^{-1}$ for all $y>0$. Hence",
+  "after": "By~\\eqref{eq:s1-mellin-tail}, $\\widehat V(w)$ is integrable on every vertical line. Mellin inversion~\\cite[\\S1.14(iv)]{DLMF}\n$V(y)=\\frac1{2\\pi i}\\int_{(a-1/2)}\\widehat V(w)y^{-w}dw$ holds, because $u\\mapsto e^{(a-1/2)u}V(e^u)$ is a\nSchwartz function. Since $\\mathcal T_2$ converges absolutely on $\\Re s=a>1$, Fubini's theorem gives~(a)."
+ },
+ {
+  "labels": [
+   "eq:d135"
+  ],
+  "numbers": [
+   "B.23"
+  ],
+  "page": "64",
+  "line": 4060,
+  "section": "\\section{The CM transformation formula at full generality}\\label{app:s1-general}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:s1-reflection}}\\label{sec:s1-proof}",
+  "source": "\\begin{equation}\\label{eq:d135}\n \\frac{-\\frac\\pi2(2\\pi)^{-2-2t}}{\\frac{3\\pi}2\\bigl(\\frac{27}{(2\\pi)^2}\\bigr)^{1-t}}\n =-\\frac1{81}\\Bigl(\\frac{(2\\pi)^4}{27}\\Bigr)^{-t}.\n\\end{equation}",
+  "before": "insert~\\eqref{eq:s1-fe} and~\\eqref{eq:s1-dual} with $s'=\\frac32-s$, and put $t=\\frac12-s$. Then\n$\\Gamma(\\frac{11}6-s)\\Gamma(\\frac{13}6-s)/(\\Gamma(s+\\frac56)\\Gamma(s+\\frac76))=R_2(t)$,\n$\\N(c)^{1-2s}=\\N(c)^{2t}$, $\\N(\\ell)^{s-1}=\\N(\\ell)^{-1/2-t}$, $X^{s-1/2}=X^{-t}$, and the constants combine as in\nStep~6 of Section~\\ref{sec:b3-proof}:",
+  "after": "This gives\n\\begin{equation}\\label{eq:d136}\n\\begin{split}"
+ },
+ {
+  "labels": [
+   "eq:d136"
+  ],
+  "numbers": [
+   "B.24"
+  ],
+  "page": "65",
+  "line": 4065,
+  "section": "\\section{The CM transformation formula at full generality}\\label{app:s1-general}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:s1-reflection}}\\label{sec:s1-proof}",
+  "source": "\\begin{equation}\\label{eq:d136}\n\\begin{split}\n T_V(X;\\Psi)=-\\frac1{81}\\sum_{\\mathbf h}C(\\mathbf h)\\,\\overline{\\kappa(G_{\\mathbf h})}\\;\n &\\overline{\\alpha(c)}^{\\,4}\\sum_{0\\ne\\ell\\in\\lambda^{-4}\\OO}\\frac{d_\\sigma(\\ell)\\alpha(\\ell)^2}{\\sqrt{\\N(\\ell)}}\\,\n \\ce\\Bigl(-\\frac{\\delta'\\ell}c\\Bigr)\\\\\n &\\times\\frac1{2\\pi i}\\int_{(\\frac12-\\sigma_2)}\\widehat V(-t)R_2(t)\n \\Bigl(\\frac{(2\\pi)^4\\N(\\ell)X}{27\\N(c)^2}\\Bigr)^{-t}dt,\n\\end{split}\n\\end{equation}",
+  "before": " \\frac{-\\frac\\pi2(2\\pi)^{-2-2t}}{\\frac{3\\pi}2\\bigl(\\frac{27}{(2\\pi)^2}\\bigr)^{1-t}}\n =-\\frac1{81}\\Bigl(\\frac{(2\\pi)^4}{27}\\Bigr)^{-t}.\n\\end{equation}\nThis gives",
+  "after": "with $c,H,\\sigma,\\delta'$ the data of $\\mathbf h$. The interchange of the $\\ell$-sum and the $t$-integral is justified by the\nmajorant of Step~3 at $\\Re s'=1+\\Re t=\\frac32-\\sigma_2>\\frac32$, by~\\eqref{eq:s1-mellin-tail}, and by the bound\n$|R_2(\\eta+iu)|\\ll(1+|u|)^{4\\eta}$ of Step~5 below. By Step~5 below, each $t$-integral equals"
+ },
+ {
+  "labels": [
+   "eq:s1-stirling"
+  ],
+  "numbers": [
+   "B.25"
+  ],
+  "page": "65",
+  "line": 4096,
+  "section": "\\section{The CM transformation formula at full generality}\\label{app:s1-general}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:s1-reflection}}\\label{sec:s1-proof}",
+  "source": "\\begin{equation}\\label{eq:s1-stirling}\n |R_2(\\eta+iu)|\\ll_{\\eta_0,A}(1+|u|)^{4\\eta}\\qquad(\\eta_0\\le\\eta\\le A),\n\\end{equation}",
+  "before": "\n\\paragraph{Step 5: the reflected test.} The poles of the numerator of $R_2$ are at $-\\frac43-k$ and $-\\frac53-k$\n($k\\ge0$), and $1/\\Gamma$ is entire, so $R_2$ is holomorphic in $\\Re t>-\\frac43$. For $\\eta_0>-\\frac43$ and $A\\ge0$,\nStirling's formula for $|u|\\ge1$ and continuity for $|u|\\le1$ give",
+  "after": "which for $\\eta_0=-\\frac14$ is~\\eqref{eq:b3-stirling}. Together with~\\eqref{eq:s1-mellin-tail}, this shows that the\nintegral defining $V^\\sharp$ converges absolutely on every line $\\Re t>-\\frac43$, and rectangle shifts show that its\nvalue does not depend on the line. This is~(c) for $V^\\sharp$. The proof of~\\cite[eqs.~reflection-kernel and"
+ },
+ {
+  "labels": [
+   "eq:s1-central"
+  ],
+  "numbers": [
+   "B.26"
+  ],
+  "page": "66",
+  "line": 4135,
+  "section": "\\section{The CM transformation formula at full generality}\\label{app:s1-general}",
+  "subsection": "\\subsection{Unmarked completed rows}\\label{sec:s1-unmarked}",
+  "source": "\\begin{equation}\\label{eq:s1-central}\n \\mathcal C^{(2)}_V(X;m,\\nu)=\\sum_{\\substack{c\\ {\\rm sf},\\ n\\\\c,n\\equiv1\\ (3),\\ (cn,S)=1}}\n \\frac{\\gamma_2(c)\\,\\overline{\\alpha(cn^3)}^{\\,2}\\,\\nu(cn^3)\\,\\chi_{cn^3}(m)}{\\sqrt{\\N(c)}\\,\\N(n)}\n \\,V\\Bigl(\\frac{\\N(c)\\N(n)^3}X\\Bigr).\n\\end{equation}",
+  "before": "\\subsection{Unmarked completed rows}\\label{sec:s1-unmarked}\n\nFor a finite-ray character $\\nu$ with conductor supported on $S$, extended by zero away from the primary elements prime\nto $S$, a nonzero $m\\in\\OO$, a log-Schwartz test $V$ and $X>0$, put",
+  "after": "This is~\\cite[eq.~eq:unmarked-central-completion]{OAI78} with $\\overline{\\alpha(cn^3)}$ replaced by\n$\\overline{\\alpha(cn^3)}^{\\,2}$; in Section~\\ref{sec:78probe} it is the completed row $B_m$, with $X=Z$. The table\nlists every statement of~\\cite[L2464--3311]{OAI78} and its status for this sum."
+ },
+ {
+  "labels": [
+   "eq:d137"
+  ],
+  "numbers": [
+   "B.27"
+  ],
+  "page": "67",
+  "line": 4178,
+  "section": "\\section{The CM transformation formula at full generality}\\label{app:s1-general}",
+  "subsection": "\\subsection{Unmarked completed rows}\\label{sec:s1-unmarked}",
+  "source": "\\begin{equation}\\label{eq:d137}\n \\sum_{\\substack{0<\\N(m)\\le C_mZ^M\\\\\\N(m_{\\rm pow})\\asymp Z^O}}\\bigl|\\mathcal C^{(2)}_V(Z^N;m,\\nu)\\bigr|^2\n \\ll Z^{O/2+\\max\\{M-O,\\,2M-O-N\\}+\\varepsilon}\\,\\mathfrak M_{A,J}(V)^2 .\n\\end{equation}",
+  "before": "Let $\\nu$ range over a fixed finite family as above. Fix bounded ranges for $M\\ge0$ and $N\\in\\mathbb R$, a constant\n$C_m\\ge1$ and fixed dyadic support comparisons, and let $m_{\\rm pow}$ be the maximal powerful ideal factor of $m$. For\nevery $\\varepsilon>0$ there are $A\\ge0$ and an integer $J\\ge0$ such that, for every log-Schwartz test $V$, every\ndyadic range $\\N(m_{\\rm pow})\\asymp Z^O$ with $O\\ge0$, and all sufficiently large $Z$,",
+  "after": "The uniformity is that of~\\cite[L3162--3167]{OAI78}.\n\\end{lemma}\n"
+ },
+ {
+  "labels": [
+   "eq:s1-cm-completed"
+  ],
+  "numbers": [
+   "B.28"
+  ],
+  "page": "67",
+  "line": 4193,
+  "section": "\\section{The CM transformation formula at full generality}\\label{app:s1-general}",
+  "subsection": "\\subsection{Unmarked completed rows}\\label{sec:s1-unmarked}",
+  "source": "\\begin{equation}\\label{eq:s1-cm-completed}\n \\sum_{0<\\N(m)\\le Z^M}\\bigl|\\mathcal C^{(2)}_V(Z;m,\\nu)\\bigr|^2\\ll Z^{\\max\\{M,\\,2M-1\\}+\\varepsilon}\\,\n \\mathfrak M_{A,J}(V)^2 ,\n\\end{equation}",
+  "before": "\\end{proof}\n\nSumming over the $O(\\log Z)$ dyads $O\\ge0$, with $N=1$, gives the precise form of\nProposition~\\ref{prop:cm-completed}: for every $\\varepsilon>0$ and $M$ in a bounded range there are $A,J$ with",
+  "after": "since $O/2+\\max\\{M-O,2M-O-1\\}\\le\\max\\{M,2M-1\\}$ for $O\\ge0$. With $Q=Z^M$ the right side is\n$Z^\\varepsilon(Q+Q^2/Z)\\mathfrak M_{A,J}(V)^2$. The test of\nthe probe is the Gaussian, and the finite Fourier sum over $\\theta\\in\\widehat T$ costs a fixed factor, as"
+ },
+ {
+  "labels": [
+   "eq:d138"
+  ],
+  "numbers": [
+   "B.29"
+  ],
+  "page": "67",
+  "line": 4208,
+  "section": "\\section{The CM transformation formula at full generality}\\label{app:s1-general}",
+  "subsection": "\\subsection{Marks}\\label{sec:s1-marks}",
+  "source": "\\begin{equation}\\label{eq:d138}\n T_{V,\\mathcal Q}(X;\\Psi)=\\sum_{\\mathcal B}C_{\\mathcal Q}\\sum_{0\\ne\\ell\\in\\lambda^{-4}\\OO}\n \\frac{d_\\sigma(\\ell)\\alpha(\\ell)^2\\vartheta(\\lambda^4\\ell)}{\\sqrt{\\N(\\ell)}}\\prod_{p\\in\\mathcal A_0}B_p(\\lambda^4\\ell)\n \\prod_{q\\in\\mathcal A_{\\mathcal Q}}\\frac{\\chi_q(\\lambda^4\\ell)^{-2}}{\\sqrt{\\N(q)}}\\;\n V^\\sharp\\Bigl(\\frac{\\N(\\ell)X}{\\N(c)^2}\\Bigr),\n\\end{equation}",
+  "before": "\\begin{proposition}[CM form of {\\cite[Cor.~cor:marked-reflection]{OAI78}}]\\label{prop:s1-marked}\nFix an instance of Proposition~\\ref{prop:s1-reflection}, with local set $\\mathcal P_0$, exponents $j_p$, function\n$\\phi$ and test $V$, and let $\\mathcal Q$ be a finite set of good primes disjoint from $\\mathcal P_0$. Let\n$T_{V,\\mathcal Q}(X;\\Psi)$ be $T_V(X;\\Psi)$ with the factor $\\prod_{q\\in\\mathcal Q}\\ind_{q\\mid nb^3}$ inserted. Then",
+  "after": "where a branch $\\mathcal B$ specifies $h_0$, the base active and inactive sets $\\mathcal A_0,\\mathcal I_0$ and a\npartition $\\mathcal Q=\\mathcal A_{\\mathcal Q}\\sqcup\\mathcal I_{\\mathcal Q}$; $c=c_F(h_0)\\prod_{p\\in\\mathcal\nA_0\\cup\\mathcal A_{\\mathcal Q}}p$; $d_\\sigma,\\vartheta,B_p$ are those of Proposition~\\ref{prop:s1-reflection} for this active"
+ },
+ {
+  "labels": [
+   "eq:d139"
+  ],
+  "numbers": [
+   "B.30"
+  ],
+  "page": "67",
+  "line": 4218,
+  "section": "\\section{The CM transformation formula at full generality}\\label{app:s1-general}",
+  "subsection": "\\subsection{Marks}\\label{sec:s1-marks}",
+  "source": "\\begin{equation}\\label{eq:d139}\n C_{\\mathcal Q}=-\\frac{\\overline{\\alpha(c)}^{\\,4}}{81}\\,\\widehat\\phi(h_0)\\,\\overline{\\kappa_F}\n \\prod_{p\\in\\mathcal I_0}\\bigl(1-\\N(p)^{-1}\\bigr)\\prod_{q\\in\\mathcal I_{\\mathcal Q}}\\N(q)^{-1}\n \\prod_{p\\in\\mathcal A_0}\\chi_p(\\sigma_p)^{-2}\\varpi_{p,j_p}\n \\prod_{q\\in\\mathcal A_{\\mathcal Q}}\\chi_q(\\sigma_q)^{-2}\\bigl(-\\varpi_{q,0}\\bigr).\n\\end{equation}",
+  "before": "where a branch $\\mathcal B$ specifies $h_0$, the base active and inactive sets $\\mathcal A_0,\\mathcal I_0$ and a\npartition $\\mathcal Q=\\mathcal A_{\\mathcal Q}\\sqcup\\mathcal I_{\\mathcal Q}$; $c=c_F(h_0)\\prod_{p\\in\\mathcal\nA_0\\cup\\mathcal A_{\\mathcal Q}}p$; $d_\\sigma,\\vartheta,B_p$ are those of Proposition~\\ref{prop:s1-reflection} for this active\nradical; and, with $\\sigma_p,\\epsilon_p,\\varpi_{p,j}$ computed from this $c$,",
+  "after": "So $C_{\\mathcal Q}=-i\\,\\overline{\\alpha(c)}^{\\,2}\\zeta_{\\mathcal Q}$ with $\\zeta_{\\mathcal Q}$\nof~\\cite[eq.~eq:marked-reflection-phase]{OAI78}, and $|C_{\\mathcal Q}|\\le\\frac1{81}$. Every dual series converges\nabsolutely. A marked prime that belongs to $\\mathcal P_0$ makes the primal term vanish identically."
+ },
+ {
+  "labels": [
+   "eq:d140"
+  ],
+  "numbers": [
+   "B.31"
+  ],
+  "page": "68",
+  "line": 4244,
+  "section": "\\section{The CM transformation formula at full generality}\\label{app:s1-general}",
+  "subsection": "\\subsection{Marks}\\label{sec:s1-marks}",
+  "source": "\\begin{equation}\\label{eq:d140}\n \\overline{\\alpha(c)}^{\\,4}=\\overline{\\alpha(c_FF_{\\rm act})}^{\\,4}\\cdot\\overline{\\alpha(R)}^{\\,4}\\cdot\n \\overline{\\alpha(P)}^{\\,4},\n\\end{equation}",
+  "before": "$\\chi_p(q)^{2j_p+2}\\chi_q(p)^{2j_q+2}=(q/p)_3^{j_p+j_q+2}$, is local and unchanged. A residual row prime ($j_p=1$) and\nan active mark ($j_q=0$) therefore have pair factor $(q/p)_3^3=1$. Write $R$ for the product of the residual row\nprimes, $P$ for the product of the active marked primes and $F_{\\rm act}$ for the frozen active base product, so that\n$c=c_FF_{\\rm act}RP$. The angular factor of $C_{\\mathcal Q}$ is",
+  "after": "a fixed factor times a row factor times a tuple factor. On the dual side, after the unit, the\n$\\lambda$-valuation and the extracted frozen factors are fixed, $\\ell=u\\lambda^{h_\\lambda}N_Fn(B_Fb)^3$ and\n\\begin{equation}\\label{eq:d141}"
+ },
+ {
+  "labels": [
+   "eq:d141"
+  ],
+  "numbers": [
+   "B.32"
+  ],
+  "page": "68",
+  "line": 4250,
+  "section": "\\section{The CM transformation formula at full generality}\\label{app:s1-general}",
+  "subsection": "\\subsection{Marks}\\label{sec:s1-marks}",
+  "source": "\\begin{equation}\\label{eq:d141}\n \\alpha(\\ell)^2=\\alpha\\bigl(u\\lambda^{h_\\lambda}N_FB_F^3\\bigr)^2\\,\\alpha(n)^2\\,\\alpha(b)^6,\n\\end{equation}",
+  "before": " \\overline{\\alpha(P)}^{\\,4},\n\\end{equation}\na fixed factor times a row factor times a tuple factor. On the dual side, after the unit, the\n$\\lambda$-valuation and the extracted frozen factors are fixed, $\\ell=u\\lambda^{h_\\lambda}N_Fn(B_Fb)^3$ and",
+  "after": "a function of the dual index alone. So, after the common smooth separation, the tuple coefficient is a bounded\nfunction of the tuple independent of $R,n,b$, and the dual coefficient is independent of $R$ and $P$, exactly as stated\nin~\\cite[L7476--7483]{OAI78}."
+ },
+ {
+  "labels": [
+   "eq:s1-marked-completion"
+  ],
+  "numbers": [
+   "B.33"
+  ],
+  "page": "68",
+  "line": 4268,
+  "section": "\\section{The CM transformation formula at full generality}\\label{app:s1-general}",
+  "subsection": "\\subsection{Reflected energy and the compensated completed row}\\label{sec:s1-energy}",
+  "source": "\\begin{equation}\\label{eq:s1-marked-completion}\n \\mathcal T^{(2)}_{\\mathfrak d}(X;k)=\\sum_{\\substack{n\\ {\\rm sf}\\\\b}}\n \\frac{\\overline{\\alpha(n)}^{\\,2}\\gamma_2(n)\\Psi_k(n)\\,\\overline{\\alpha(b)}^{\\,6}\\Psi_k(b)^3}{\\sqrt{\\N(n)}\\,\\N(b)}\n \\,\\mathfrak d(nb^3)\\,V_*\\Bigl(\\frac{\\N(n)\\N(b)^3}X\\Bigr),\n\\end{equation}",
+  "before": "good primes with bounded coefficients $a_i(p)$, a fixed puncture $\\rho$, a squarefree ideal $f$ outside $S$, a\nmultiplicative finite-ray character $\\nu$ with defining modulus supported on $S$, $\\Psi_k(n)=\\nu(n)\\rho(n)\\chi_n(k)\n\\chi_n(f)^4$, the mark $\\mathfrak d$ of~\\cite[eq.~old-eq:4.2]{OAI78}, and $V_*(y)=y^{1/2}W(y)$ with $W$ smooth and\nannular. The CM marked completion is",
+  "after": "which is~\\cite[eq.~eq:marked-completion]{OAI78} with $\\overline\\alpha,\\overline\\alpha^{\\,3}$ replaced by\n$\\overline\\alpha^{\\,2},\\overline\\alpha^{\\,6}$. Its reflection is Proposition~\\ref{prop:s1-marked}, applied after the\nrow-sector reduction of~\\cite[L7331--7352]{OAI78}, which does not involve the weight."
+ },
+ {
+  "labels": [
+   "eq:d142"
+  ],
+  "numbers": [
+   "B.34"
+  ],
+  "page": "68",
+  "line": 4283,
+  "section": "\\section{The CM transformation formula at full generality}\\label{app:s1-general}",
+  "subsection": "\\subsection{Reflected energy and the compensated completed row}\\label{sec:s1-energy}",
+  "source": "\\begin{equation}\\label{eq:d142}\n \\sum_{k_{\\rm res}\\ {\\rm sf}}|\\mathcal U_{v,\\ell_b,e_\\lambda}(k_{\\rm res})|^2\\ll Z^{E_{\\rm ref}-O/2+\\varepsilon}\n\\end{equation}",
+  "before": "the expansion of Proposition~\\ref{prop:s1-marked} for~\\eqref{eq:s1-marked-completion}. Then every assertion\nof~\\cite[Lemma~lem:reflected-energy]{OAI78} holds verbatim: the retention rule~\\cite[eq.~old-eq:4.4]{OAI78} with the\nsame $T_d$ and the same negligible tail, the coefficient exponent~\\cite[eq.~old-eq:4.5]{OAI78}, and, with\n$u=\\min\\{v,z_a,(v+z_a)/3\\}$ and $E_{\\rm ref}$ of~\\cite[eqs.~old-eq:4.7 and old-eq:4.6]{OAI78},",
+  "after": "for fixed $k_{\\rm pow},k_{\\rm sup}$, and $O(Z^{E_{\\rm ref}+\\varepsilon})$ after summing them, with the same\nuniformity. Consequently~\\cite[eqs.~common-width-charge and completed-moment]{OAI78} (L7995--8059) hold for\n$\\mathcal T^{(2)}_1$:"
+ },
+ {
+  "labels": [
+   "eq:d143"
+  ],
+  "numbers": [
+   "B.35"
+  ],
+  "page": "68",
+  "line": 4289,
+  "section": "\\section{The CM transformation formula at full generality}\\label{app:s1-general}",
+  "subsection": "\\subsection{Reflected energy and the compensated completed row}\\label{sec:s1-energy}",
+  "source": "\\begin{equation}\\label{eq:d143}\n \\sideset{}{'}\\sum_{0<\\N(k)\\ll Z^M}\\bigl|\\mathcal T^{(2)}_1(Z^{N_*};k)\\bigr|^2\\ll\n Z^{O/2+\\max\\{M-O,\\,2M-O+Q_\\rho+V_f-N_*\\}+\\varepsilon},\n\\end{equation}",
+  "before": "\\end{equation}\nfor fixed $k_{\\rm pow},k_{\\rm sup}$, and $O(Z^{E_{\\rm ref}+\\varepsilon})$ after summing them, with the same\nuniformity. Consequently~\\cite[eqs.~common-width-charge and completed-moment]{OAI78} (L7995--8059) hold for\n$\\mathcal T^{(2)}_1$:",
+  "after": "where $Q_\\rho=\\log_Z\\N(\\mathfrak r_\\rho)$ and $V_f=\\log_Z\\N(f)$ are the lengths called $Q$ and $V$\nin~\\cite{OAI78}, and the prime restricts the powerful part of $k$ to its $O$-dyad.\n\\end{lemma}"
+ },
+ {
+  "labels": [
+   "eq:d144"
+  ],
+  "numbers": [
+   "B.36"
+  ],
+  "page": "69",
+  "line": 4326,
+  "section": "\\section{The CM transformation formula at full generality}\\label{app:s1-general}",
+  "subsection": "\\subsection{Reflected energy and the compensated completed row}\\label{sec:s1-energy}",
+  "source": "\\begin{equation}\\label{eq:d144}\n B^{J,(2)}_{m,\\varsigma}(Z)=\\sum_{\\substack{p_i\\in\\mathcal P_i(Z)\\\\i\\notin J}}\\prod_{i\\notin J}a(p_i)\\,\n W_i\\Bigl(\\frac{\\N(p_i)}{P_i}\\Bigr)\\sum_{\\theta\\in\\widehat T}a_\\theta\\frac1{2\\pi i}\\int_{(4)}\n \\bigl(Z\\N(p_{J^c})\\bigr)^t\\,\\Phi(t)\\,\\mathcal T^{(2)}_{p_{J^c}}\\bigl(t+\\tfrac12,\\nu_\\varsigma\\theta\\chi_\\bullet(m)\\bigr)\\,dt,\n\\end{equation}",
+  "before": "\\end{proof}\n\n\\paragraph{The compensated completed row.} For the CM target $\\psi=\\overline\\alpha\\eta$, the completed row of the\ncompensated probe (\\cite[L8071--8109]{OAI78}, with the weight~\\eqref{eq:cm-weight}) is",
+  "after": "where $\\Phi(t)=e^{t^2}$, $\\varsigma\\in T$ is a ray class (called $\\sigma$ in~\\cite{OAI78}),\n$\\nu_\\varsigma=\\eta\\,\\Xi^{-1}\\mathcal R(\\cdot,s_\\varsigma)$ is the finite-order character\nof~\\cite[L3423--3436]{OAI78} built from the finite part $\\eta$, $a(p)=\\overline{\\psi(p)}=\\alpha(p)\\overline{\\eta(p)}$"
+ },
+ {
+  "labels": [
+   "eq:d145"
+  ],
+  "numbers": [
+   "B.37"
+  ],
+  "page": "69",
+  "line": 4335,
+  "section": "\\section{The CM transformation formula at full generality}\\label{app:s1-general}",
+  "subsection": "\\subsection{Reflected energy and the compensated completed row}\\label{sec:s1-energy}",
+  "source": "\\begin{equation}\\label{eq:d145}\n \\mathcal T^{(2)}_D(s_0,\\nu')=\\sum_{\\substack{c\\ {\\rm sf}\\\\n}}\\gamma_2(c)\\,\\overline{\\alpha(cn^3)}^{\\,2}\\,\n \\nu'(cn^3)\\,\\ind_{D\\mid cn^3}\\,\\N(c)^{-s_0}\\N(n)^{-3s_0+1/2}.\n\\end{equation}",
+  "before": "where $\\Phi(t)=e^{t^2}$, $\\varsigma\\in T$ is a ray class (called $\\sigma$ in~\\cite{OAI78}),\n$\\nu_\\varsigma=\\eta\\,\\Xi^{-1}\\mathcal R(\\cdot,s_\\varsigma)$ is the finite-order character\nof~\\cite[L3423--3436]{OAI78} built from the finite part $\\eta$, $a(p)=\\overline{\\psi(p)}=\\alpha(p)\\overline{\\eta(p)}$\nis the slot normalization of Section~\\ref{sec:78rows} (\\cite{OAI78} has $\\overline{\\eta(p)}$), and",
+  "after": "\n\\begin{lemma}[CM form of {\\cite[Lemma~lem:probe-row-norm]{OAI78}}]\\label{lem:s1-probe-row-norm}\nWith $d_J=\\sum_{i\\in J}\\ell_i$ (called $d$ in~\\cite[eq.~old-eq:5.2]{OAI78}), and $M'$ and $Q=\\N(b_*)X'Y'\\asymp Z^{M'}$ as there, for every $\\varepsilon>0$, every"
+ },
+ {
+  "labels": [
+   "eq:d146"
+  ],
+  "numbers": [
+   "B.38"
+  ],
+  "page": "69",
+  "line": 4343,
+  "section": "\\section{The CM transformation formula at full generality}\\label{app:s1-general}",
+  "subsection": "\\subsection{Reflected energy and the compensated completed row}\\label{sec:s1-energy}",
+  "source": "\\begin{equation}\\label{eq:d146}\n \\sum_{0<\\N(m)\\ll Q}\\bigl|B^{J,(2)}_{m,\\varsigma}(Z)\\bigr|^2\\ll Z^{M'+((d_J-1/6)/4)_++\\varepsilon}=Z^{M'+\\varepsilon},\n\\end{equation}",
+  "before": "\n\\begin{lemma}[CM form of {\\cite[Lemma~lem:probe-row-norm]{OAI78}}]\\label{lem:s1-probe-row-norm}\nWith $d_J=\\sum_{i\\in J}\\ell_i$ (called $d$ in~\\cite[eq.~old-eq:5.2]{OAI78}), and $M'$ and $Q=\\N(b_*)X'Y'\\asymp Z^{M'}$ as there, for every $\\varepsilon>0$, every\nfixed rescaled subset $J$ and every ray class $\\varsigma\\in T$,",
+  "after": "uniformly in the fixed rescaled tuple and with no loss depending on the mesh of the surviving slots. The same holds\nfor any slot coefficients $a(p)$ with $|a(p)|\\le1$ that are independent of the row and of the other slots.\n\\end{lemma}"
+ }
+]

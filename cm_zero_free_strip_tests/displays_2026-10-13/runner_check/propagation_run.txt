@@ -1,0 +1,12 @@
+t0 (skip): control exit 0; 1 Python scripts started; 1 forced failures, 1 reported, 0 missed (0 s)
+t1 (skip): control exit 0; 13 Python scripts started; 13 forced failures, 13 reported, 0 missed (18 s)
+t2 (skip): control exit 0; 16 Python scripts started; 16 forced failures, 16 reported, 0 missed (137 s)
+t3 (replay): control exit 0; 8 Python scripts started; 8 forced failures, 8 reported, 0 missed (146 s)
+t4 (replay): control exit 0; 19 Python scripts started; 19 forced failures, 19 reported, 0 missed (116 s)
+t5 (skip): control exit 0; 15 Python scripts started; 15 forced failures, 15 reported, 0 missed (2 s)
+t6 (skip): control exit 0; 9 Python scripts started; 9 forced failures, 9 reported, 0 missed (1 s)
+t7 (skip): control exit 0; 14 Python scripts started; 14 forced failures, 14 reported, 0 missed (6 s)
+t8 (skip): control exit 0; 11 Python scripts started; 11 forced failures, 11 reported, 0 missed (4 s)
+t9 (skip): control exit 0; 12 Python scripts started; 12 forced failures, 12 reported, 0 missed (4 s)
+top (replay): control exit 0; 103 Python scripts started; 3 forced failures, 3 reported, 0 missed (50 s)
+ALL FORCED FAILURES REPORTED

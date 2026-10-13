@@ -1,0 +1,797 @@
+[
+ {
+  "labels": [
+   "eq:d001"
+  ],
+  "numbers": [
+   "0.1"
+  ],
+  "page": "1",
+  "line": 59,
+  "section": "front",
+  "subsection": "",
+  "source": "\\begin{equation}\\label{eq:d001}\n  S_d(D)=\\sum_n\\muk(n)\\,\\frac n{|n|}\\,\\chi_n\\bigl((4d)^5\\bigr)W(\\N(n)/D)\n \\end{equation}",
+  "before": " coefficients of $1/L(E_d,s+\\frac12)$, after deleting finitely many Euler factors,\n excludes zeros of $L(E_d,s)$ in $\\Re s>17/12$, just as inverse-coefficient sums do\n in the zeta argument~\\cite[Theorem~1.1]{OAI1112}.\n\\item \\emph{The curve's row:} point counts rewrite the sum as",
+  "after": " over primary Eisenstein integers $n$ coprime to $6$, where $\\chi_n(u)=(u/n)_6$\n is the sextic residue symbol (the zeta row has $u=1$ and omits $n/|n|$).\n\\item \\emph{The average:} varying $u$ gives"
+ },
+ {
+  "labels": [
+   "eq:d002"
+  ],
+  "numbers": [
+   "2.1"
+  ],
+  "page": "3",
+  "line": 185,
+  "section": "\\section{Start with ordinary integers and point counts}\\label{sec:integer}",
+  "subsection": "\\section{Start with ordinary integers and point counts}\\label{sec:integer}",
+  "source": "\\begin{equation}\\label{eq:d002}\n a_p(d)=p+1-\\#E_d(\\mathbb F_p)\n       =-\\sum_{x=0}^{p-1}\\left(\\frac{x^3+d}{p}\\right),\n \\qquad \\lambda_d(p)=\\frac{a_p(d)}{\\sqrt p}.\n\\end{equation}",
+  "before": "\n\\section{Start with ordinary integers and point counts}\\label{sec:integer}\n\nAt a prime $p\\nmid6d$, put",
+  "after": "The symbol on the right is the ordinary Legendre symbol, with value zero\non multiples of $p$. Indeed, the number of solutions in $y$ to\n$y^2=x^3+d$ is $1+((x^3+d)/p)$, and there is one point at infinity."
+ },
+ {
+  "labels": [
+   "eq:d003"
+  ],
+  "numbers": [
+   "2.2"
+  ],
+  "page": "3",
+  "line": 194,
+  "section": "\\section{Start with ordinary integers and point counts}\\label{sec:integer}",
+  "subsection": "\\section{Start with ordinary integers and point counts}\\label{sec:integer}",
+  "source": "\\begin{equation}\\label{eq:d003}\n L_p(E_d,s+\\tfrac12)^{-1}\n =1-\\lambda_d(p)p^{-s}+p^{-2s}.\n\\end{equation}",
+  "before": "The symbol on the right is the ordinary Legendre symbol, with value zero\non multiples of $p$. Indeed, the number of solutions in $y$ to\n$y^2=x^3+d$ is $1+((x^3+d)/p)$, and there is one point at infinity.\nThe good Euler factor is",
+  "after": "The shift is chosen so that $L(E_d,s+1/2)$ has critical line\n$\\Re s=1/2$; the arithmetic function $L(E_d,s)$ has critical line\n$\\Re s=1$."
+ },
+ {
+  "labels": [
+   "eq:qd"
+  ],
+  "numbers": [
+   "2.3"
+  ],
+  "page": "3",
+  "line": 203,
+  "section": "\\section{Start with ordinary integers and point counts}\\label{sec:integer}",
+  "subsection": "\\section{Start with ordinary integers and point counts}\\label{sec:integer}",
+  "source": "\\begin{equation}\\label{eq:qd}\n q_d(1)=1,\\qquad q_d(p)=-\\lambda_d(p),\\qquad\n q_d(p^2)=1,\\qquad q_d(p^j)=0\\quad(j\\ge3).\n\\end{equation}",
+  "before": "$\\Re s=1/2$; the arithmetic function $L(E_d,s)$ has critical line\n$\\Re s=1$.\nConsequently the reciprocal coefficients away from $6d$ are the\nmultiplicative function $q_d$ specified by",
+  "after": "Set $q_d(m)=0$ when $(m,6d)>1$. Thus all these coefficients can be\ncomputed using ordinary prime factorization and finite sums of Legendre\nsymbols. In particular, $q_d$ is not the ordinary M\\\"obius function."
+ },
+ {
+  "labels": [
+   "eq:integer-convolution"
+  ],
+  "numbers": [
+   "2.4"
+  ],
+  "page": "4",
+  "line": 214,
+  "section": "\\section{Start with ordinary integers and point counts}\\label{sec:integer}",
+  "subsection": "\\section{Start with ordinary integers and point counts}\\label{sec:integer}",
+  "source": "\\begin{equation}\\label{eq:integer-convolution}\n \\boxed{\\quad\n q_d(m)=\\sum_{\\substack{rt^2=m\\\\r\\ \\mathrm{squarefree}\\\\(r,t)=1}}\n       \\mu(r)\\mu(t)^2\\Lambda_d(r).\n \\quad}\n\\end{equation}",
+  "before": "\nHere is an explicit formula involving that function. Define\n$\\Lambda_d(r)=\\prod_{p\\mid r}\\lambda_d(p)$ for squarefree $r$ coprime\nto $6d$, with $\\Lambda_d(1)=1$. For $(m,6d)=1$,",
+  "after": "At each prime, one chooses the constant, linear, or quadratic term of\nthe Euler polynomial. The restrictions in this formula make those choices\nmutually exclusive."
+ },
+ {
+  "labels": [
+   "eq:d004"
+  ],
+  "numbers": [
+   "2.5"
+  ],
+  "page": "4",
+  "line": 226,
+  "section": "\\section{Start with ordinary integers and point counts}\\label{sec:integer}",
+  "subsection": "\\section{Start with ordinary integers and point counts}\\label{sec:integer}",
+  "source": "\\begin{equation}\\label{eq:d004}\n B_d(s)=\\prod_{p\\mid6d}L_p(E_d,s+\\tfrac12).\n\\end{equation}",
+  "before": "mutually exclusive.\n\nWrite $L(E_d,s)$ using the local factors of a minimal model, including at\nprimes dividing $6d$, and put",
+  "after": "Then, for $\\Re s>1$,\n\\begin{equation}\\label{eq:reciprocal}\n \\sum_{m\\ge1}\\frac{q_d(m)}{m^s}"
+ },
+ {
+  "labels": [
+   "eq:reciprocal"
+  ],
+  "numbers": [
+   "2.6"
+  ],
+  "page": "4",
+  "line": 230,
+  "section": "\\section{Start with ordinary integers and point counts}\\label{sec:integer}",
+  "subsection": "\\section{Start with ordinary integers and point counts}\\label{sec:integer}",
+  "source": "\\begin{equation}\\label{eq:reciprocal}\n \\sum_{m\\ge1}\\frac{q_d(m)}{m^s}\n =\\prod_{p\\nmid6d}(1-\\lambda_d(p)p^{-s}+p^{-2s})\n =\\frac{B_d(s)}{L(E_d,s+\\tfrac12)}.\n\\end{equation}",
+  "before": "\\begin{equation}\\label{eq:d004}\n B_d(s)=\\prod_{p\\mid6d}L_p(E_d,s+\\tfrac12).\n\\end{equation}\nThen, for $\\Re s>1$,",
+  "after": "The finite factor $B_d(s)$ is holomorphic and nonzero for $\\Re s>0$\n(Lemma~\\ref{lem:b1-euler} proves this, and~\\eqref{eq:reciprocal} with absolute convergence for $\\Re s>1$).\nDeleting these primes therefore does not affect the zeros in question."
+ },
+ {
+  "labels": [
+   "eq:target"
+  ],
+  "numbers": [
+   "2.7"
+  ],
+  "page": "4",
+  "line": 242,
+  "section": "\\section{Start with ordinary integers and point counts}\\label{sec:integer}",
+  "subsection": "\\section{Start with ordinary integers and point counts}\\label{sec:integer}",
+  "source": "\\begin{equation}\\label{eq:target}\n S_d(D)=\\sum_{m\\ge1}q_d(m)W(m/D).\n\\end{equation}",
+  "before": "This remains true when the displayed equation for $E_d$ is not minimal.\n\nChoose a complex-valued $W\\in C_c^\\infty((0,\\infty))$, supported in a fixed\ninterval $[a,b]$ with $0<a<b$. The target sum is",
+  "after": "The weight restricts $m$ to size $D$. We want, for every $\\varepsilon>0$,\n$S_d(D)\\ll_{d,W,\\varepsilon}D^{11/12+\\varepsilon}$.\nHere $\\ll$ allows a constant independent of $D$."
+ },
+ {
+  "labels": [
+   "eq:d005"
+  ],
+  "numbers": [
+   "2.8"
+  ],
+  "page": "4",
+  "line": 251,
+  "section": "\\section{Start with ordinary integers and point counts}\\label{sec:integer}",
+  "subsection": "\\subsection{The comparison with the zeta coefficients}",
+  "source": "\\begin{equation}\\label{eq:d005}\n c(m)=\\sum_{rt=m}\\mu(r)\\mu(t)\\chi_{-3}(t),\\qquad\n \\chi_{-3}(t)=\n \\begin{cases}0&3\\mid t,\\\\1&t\\equiv1\\pmod3,\\\\-1&t\\equiv2\\pmod3.\n \\end{cases}\n\\end{equation}",
+  "before": "Here $\\ll$ allows a constant independent of $D$.\n\n\\subsection{The comparison with the zeta coefficients}\nFor zeta, the classical coefficients in the companion guide are",
+  "after": "For $p\\nmid6d$, the comparison is\n\\begin{equation}\\label{eq:d006}\n\\begin{array}{c|cc|cc}"
+ },
+ {
+  "labels": [
+   "eq:d006"
+  ],
+  "numbers": [
+   "2.9"
+  ],
+  "page": "4",
+  "line": 258,
+  "section": "\\section{Start with ordinary integers and point counts}\\label{sec:integer}",
+  "subsection": "\\subsection{The comparison with the zeta coefficients}",
+  "source": "\\begin{equation}\\label{eq:d006}\n\\begin{array}{c|cc|cc}\n &c(p)&c(p^2)&q_d(p)&q_d(p^2)\\\\\\hline\n p\\equiv1\\pmod3&-2&1&-a_p(d)/\\sqrt p&1\\\\\n p\\equiv2\\pmod3&0&-1&0&1\n\\end{array}\n\\end{equation}",
+  "before": " \\begin{cases}0&3\\mid t,\\\\1&t\\equiv1\\pmod3,\\\\-1&t\\equiv2\\pmod3.\n \\end{cases}\n\\end{equation}\nFor $p\\nmid6d$, the comparison is",
+  "after": "The inert-prime sign really changes. For instance, for $d=1$,\n$a_5(1)=0$, $a_7(1)=-4$, so\n$q_1(5)=0$, $q_1(25)=1$, and $q_1(7)=4/\\sqrt7$."
+ },
+ {
+  "labels": [
+   "eq:d007"
+  ],
+  "numbers": [
+   "3.1"
+  ],
+  "page": "5",
+  "line": 275,
+  "section": "\\section{The triangular lattice and the curve's row}\\label{sec:lattice}",
+  "subsection": "\\section{The triangular lattice and the curve's row}\\label{sec:lattice}",
+  "source": "\\begin{equation}\\label{eq:d007}\n \\N(n)=|n|^2=A^2-AB+B^2,\\qquad\n \\alpha(n)=\\frac{A+B\\omega}{\\sqrt{A^2-AB+B^2}}.\n\\end{equation}",
+  "before": "\\section{The triangular lattice and the curve's row}\\label{sec:lattice}\n\nPut $\\omega=e^{2\\pi i/3}$. An Eisenstein integer is an ordinary pair of\nintegers written as $n=A+B\\omega$, with",
+  "after": "The ring $\\OO$ has unique factorization and six units\n$\\pm1,\\pm\\omega,\\pm\\omega^2$. Choose the unique \\emph{primary} associate\nof each element coprime to $3$:"
+ },
+ {
+  "labels": [
+   "eq:d008"
+  ],
+  "numbers": [
+   "3.2"
+  ],
+  "page": "5",
+  "line": 282,
+  "section": "\\section{The triangular lattice and the curve's row}\\label{sec:lattice}",
+  "subsection": "\\section{The triangular lattice and the curve's row}\\label{sec:lattice}",
+  "source": "\\begin{equation}\\label{eq:d008}\n n\\equiv1\\pmod3,\\qquad\\text{that is, }A\\equiv1\\pmod3,\n \\quad B\\equiv0\\pmod3.\n\\end{equation}",
+  "before": "\\end{equation}\nThe ring $\\OO$ has unique factorization and six units\n$\\pm1,\\pm\\omega,\\pm\\omega^2$. Choose the unique \\emph{primary} associate\nof each element coprime to $3$:",
+  "after": "Unless otherwise stated, column variables and their divisors are primary\nand coprime to $6$; row variables run over all of $\\OO$. Coprimality to\n$2$ means that $A,B$ are not both even. A star on a column sum means"
+ },
+ {
+  "labels": [
+   "eq:d009"
+  ],
+  "numbers": [
+   "3.3"
+  ],
+  "page": "5",
+  "line": 294,
+  "section": "\\section{The triangular lattice and the curve's row}\\label{sec:lattice}",
+  "subsection": "\\section{The triangular lattice and the curve's row}\\label{sec:lattice}",
+  "source": "\\begin{equation}\\label{eq:d009}\n \\muk(-5)=-1\\quad(\\N(-5)=25),\\qquad\n \\muk(7)=1\\quad(7=(1+3\\omega)(-2-3\\omega)).\n\\end{equation}",
+  "before": "\nDefine $\\muk(n)$ by the usual factorization rule: it is zero if a prime\nsquare divides $n$, and otherwise is $(-1)^r$ for a product of $r$ distinct\nprimary primes. For example,",
+  "after": "Thus $\\muk(n)$ need not equal $\\mu(\\N(n))$.\n\nFor a prime $\\pi\\nmid6$, define $\\chi_\\pi(u)=(u/\\pi)_6$ to be the sixth"
+ },
+ {
+  "labels": [
+   "eq:Au"
+  ],
+  "numbers": [
+   "3.4"
+  ],
+  "page": "5",
+  "line": 308,
+  "section": "\\section{The triangular lattice and the curve's row}\\label{sec:lattice}",
+  "subsection": "\\section{The triangular lattice and the curve's row}\\label{sec:lattice}",
+  "source": "\\begin{equation}\\label{eq:Au}\n A_u(D)=\\sum_n\\muk(n)\\alpha(n)\\chi_n(u)W(\\N(n)/D).\n\\end{equation}",
+  "before": "Powers of these characters retain their zero values, even when the\nexponent is reduced to zero modulo $6$; $\\chi_1(u)=1$ for all $u$.\n\nDefine the family",
+  "after": "It is the zeta family with one extra, explicitly given factor $n/|n|$.\nFor the desired curve, choose\n\\begin{equation}\\label{eq:ud}"
+ },
+ {
+  "labels": [
+   "eq:ud"
+  ],
+  "numbers": [
+   "3.5"
+  ],
+  "page": "5",
+  "line": 313,
+  "section": "\\section{The triangular lattice and the curve's row}\\label{sec:lattice}",
+  "subsection": "\\section{The triangular lattice and the curve's row}\\label{sec:lattice}",
+  "source": "\\begin{equation}\\label{eq:ud}\n u_d=(4d)^5,\\qquad\n \\psi_d(n)=\\alpha(n)\\chi_n(u_d)\n          =\\alpha(n)\\overline{\\chi_n(4d)}.\n\\end{equation}",
+  "before": " A_u(D)=\\sum_n\\muk(n)\\alpha(n)\\chi_n(u)W(\\N(n)/D).\n\\end{equation}\nIt is the zeta family with one extra, explicitly given factor $n/|n|$.\nFor the desired curve, choose",
+  "after": "We claim that $A_{u_d}(D)=S_d(D)$.\n\n\\paragraph{Where $u_d$ comes from.} At a split prime $p=\\pi\\bar\\pi$, the point count"
+ },
+ {
+  "labels": [
+   "eq:d010"
+  ],
+  "numbers": [
+   "3.6"
+  ],
+  "page": "5",
+  "line": 328,
+  "section": "\\section{The triangular lattice and the curve's row}\\label{sec:lattice}",
+  "subsection": "\\section{The triangular lattice and the curve's row}\\label{sec:lattice}",
+  "source": "\\begin{equation}\\label{eq:d010}\n \\overline{\\chi_n(4d)}=\\chi_n(4d)^5=\\chi_n\\bigl((4d)^5\\bigr),\n\\end{equation}",
+  "before": "$J(\\kappa,\\rho)=\\kappa(4)J(\\kappa,\\kappa)$ for the cubic and quadratic characters $\\kappa,\\rho$ modulo $\\pi$. The\nfamily, however, twists by $\\chi_n(u)$, with the row $u$ in the \\emph{top} of the residue symbol. So we\nneed an Eisenstein integer $u$ with $\\chi_n(u)=\\overline{\\chi_n(4d)}$ for every column $n$. Since\n$\\chi_n$ takes sixth roots of unity,",
+  "after": "and this is the choice $u_d=(4d)^5$. Multiplying a row by a sixth power changes it only at the\ncolumns that share a prime with that sixth power: $\\chi_n(uv^6)=\\chi_n(u)\\,\\ind_{(n,v)=1}$. Such a change\nalters finitely many Euler factors, so it does not move any zeros in $\\Re s>0$. When $v$ is supported on"
+ },
+ {
+  "labels": [
+   "eq:point-identity"
+  ],
+  "numbers": [
+   "3.7"
+  ],
+  "page": "6",
+  "line": 347,
+  "section": "\\section{The triangular lattice and the curve's row}\\label{sec:lattice}",
+  "subsection": "\\subsection{Checking the claim prime by prime}",
+  "source": "\\begin{equation}\\label{eq:point-identity}\n a_p(d)=\\pi\\overline{\\chi_\\pi(4d)}\n       +\\bar\\pi\\chi_\\pi(4d)\\qquad(p\\nmid6d).\n\\end{equation}",
+  "before": "\n\\subsection{Checking the claim prime by prime}\nIf $p\\equiv1\\pmod3$, then $p=\\pi\\bar\\pi$, with both generators primary\nand $\\N(\\pi)=p$. The classical CM point-count identity is",
+  "after": "This classical finite-field identity is proved with Jacobi sums~\\cite[Chapter~8]{IR} (compare\n\\cite[Chapter~18]{IR}, where primary means $\\equiv2\\pmod3$, which changes the sign of $\\pi$).\nProposition~\\ref{prop:b1-points} gives the proof in our normalization. We also checked the identity"
+ },
+ {
+  "labels": [
+   "eq:d011"
+  ],
+  "numbers": [
+   "3.8"
+  ],
+  "page": "6",
+  "line": 357,
+  "section": "\\section{The triangular lattice and the curve's row}\\label{sec:lattice}",
+  "subsection": "\\subsection{Checking the claim prime by prime}",
+  "source": "\\begin{equation}\\label{eq:d011}\n (1-\\psi_d(\\pi)p^{-s})(1-\\psi_d(\\bar\\pi)p^{-s})\n =1-\\lambda_d(p)p^{-s}+p^{-2s}.\n\\end{equation}",
+  "before": "Proposition~\\ref{prop:b1-points} gives the proof in our normalization. We also checked the identity\nnumerically for all $0<|d|\\le60$ and $p<1500$, at both primes above each $p$. Since\n$\\chi_{\\bar\\pi}(4d)=\\overline{\\chi_\\pi(4d)}$, the two reciprocal\nfactors multiply to",
+  "after": "If $p\\equiv2\\pmod3$, the primary prime is $-p$, of norm $p^2$.\nFor rational $x$ prime to $p$, $\\chi_{-p}(x)=1$, because\n$(p^2-1)/6=(p-1)(p+1)/6$. Since $\\alpha(-p)=-1$, its factor is"
+ },
+ {
+  "labels": [
+   "eq:normgroup"
+  ],
+  "numbers": [
+   "3.9"
+  ],
+  "page": "6",
+  "line": 368,
+  "section": "\\section{The triangular lattice and the curve's row}\\label{sec:lattice}",
+  "subsection": "\\subsection{Checking the claim prime by prime}",
+  "source": "\\begin{equation}\\label{eq:normgroup}\n q_d(m)=\\sum_{\\N(n)=m}\\muk(n)\\alpha(n)\\chi_n(u_d),\n \\qquad S_d(D)=A_{u_d}(D).\n\\end{equation}",
+  "before": "$1+p^{-2s}$, as required by $a_p(d)=0$. If $p\\mid d$, the symbols\nvanish at primes above $p$, so their factors are deleted.\n\nComparing Dirichlet coefficients (Lemma~\\ref{lem:b1-euler}(b)) gives the exact identities",
+  "after": "The columns still run over primary $n$ coprime to $6$; the sum is empty\nwhen $(m,6)>1$. The angular factor and sextic symbol are what distinguish\nthis identity from the zeta identity involving $\\mu$ and $\\chi_{-3}$."
+ },
+ {
+  "labels": [
+   "eq:d012"
+  ],
+  "numbers": [
+   "3.10"
+  ],
+  "page": "6",
+  "line": 380,
+  "section": "\\section{The triangular lattice and the curve's row}\\label{sec:lattice}",
+  "subsection": "\\subsection{Checking the claim prime by prime}",
+  "source": "\\begin{equation}\\label{eq:d012}\n \\frac{a_m(E_d)}{\\sqrt m}=\\sum_{\\N(n)=m}\\alpha(n)\\Bigl(\\frac{u_d}n\\Bigr)_6,\\qquad\n q_d(m)=\\sum_{\\N(n)=m}\\muk(n)\\,\\alpha(n)\\Bigl(\\frac{u_d}n\\Bigr)_6 ,\n\\end{equation}",
+  "before": "\\paragraph{The curve's coefficients are sextic residue symbols.} The identity~\\eqref{eq:normgroup} for\nthe reciprocal has a companion for $L$ itself. Up to the finitely many Euler factors at $p\\mid6d$,\n$L(E_d,s+\\frac12)=\\prod_{\\mathfrak p\\nmid6}(1-\\psi_d(\\mathfrak p)\\N(\\mathfrak p)^{-s})^{-1}=\\sum_n\\psi_d(n)\\N(n)^{-s}$,\nso for $m$ coprime to $6d$,",
+  "after": "with $n$ primary and coprime to $6$. Here $a_m(E_d)$ are the Dirichlet coefficients of $L(E_d,s)$. The only\ndifference between the two is the M\\\"obius factor. At a prime the first identity is\n$a_p(d)=\\Tr\\bigl(\\pi\\,(u_d/\\pi)_6\\bigr)$: the Frobenius eigenvalues are $\\pi(u_d/\\pi)_6$ and its conjugate, so the"
+ },
+ {
+  "labels": [
+   "eq:d013"
+  ],
+  "numbers": [
+   "3.11"
+  ],
+  "page": "7",
+  "line": 430,
+  "section": "\\section{The triangular lattice and the curve's row}\\label{sec:lattice}",
+  "subsection": "\\subsection{Proofs of the point count and of the Euler products}\\label{sec:b1-pointproofs}",
+  "source": "\\begin{equation}\\label{eq:d013}\n \\kappa=\\chi^2=(\\cdot/\\pi)_3,\\qquad \\rho=\\chi^3=(\\cdot/\\pi)_2 .\n\\end{equation}",
+  "before": "\n(b) The residue field $\\OO/\\pi\\OO$ has $p$ elements and contains the image of $\\mathbb Z$, so\n$\\mathbb Z\\to\\OO/\\pi\\OO$ induces an isomorphism $\\mathbb F_p\\cong\\OO/\\pi\\OO$. Through it, $\\chi=\\chi_\\pi$ becomes a\ncharacter of $\\mathbb F_p^\\times$ with values in the sixth roots of unity, extended by $\\chi(0)=0$. Put",
+  "after": "By Euler's criterion the kernel of $\\kappa$ on $\\mathbb F_p^\\times$ is the subgroup of cubes, and $\\kappa$ takes\nvalues in $\\{1,\\omega,\\omega^2\\}$. The character $\\rho$ is the Legendre symbol modulo $p$~\\cite[(3.6)]{QF}. Also\n$\\kappa(-1)=\\kappa\\bigl((-1)^3\\bigr)=\\kappa(-1)^3=1$. Since $\\mathbb F_p^\\times$ is cyclic of order divisible by $3$,"
+ },
+ {
+  "labels": [
+   "eq:d014"
+  ],
+  "numbers": [
+   "3.12"
+  ],
+  "page": "7",
+  "line": 438,
+  "section": "\\section{The triangular lattice and the curve's row}\\label{sec:lattice}",
+  "subsection": "\\subsection{Proofs of the point count and of the Euler products}\\label{sec:b1-pointproofs}",
+  "source": "\\begin{equation}\\label{eq:d014}\n \\#\\{y:y^2=U\\}=1+\\rho(U),\\qquad \\#\\{x:x^3=V\\}=1+\\kappa(V)+\\overline{\\kappa(V)} .\n\\end{equation}",
+  "before": "values in $\\{1,\\omega,\\omega^2\\}$. The character $\\rho$ is the Legendre symbol modulo $p$~\\cite[(3.6)]{QF}. Also\n$\\kappa(-1)=\\kappa\\bigl((-1)^3\\bigr)=\\kappa(-1)^3=1$. Since $\\mathbb F_p^\\times$ is cyclic of order divisible by $3$,\na nonzero cube has exactly three cube roots, while for a non-cube $V$ we have $\\kappa(V)\\in\\{\\omega,\\omega^2\\}$ and\n$1+\\omega+\\omega^2=0$. Hence, for $U,V\\in\\mathbb F_p$,",
+  "after": "Counting the affine points $(x,y)$ according to the value $V=x^3$ gives\n\\begin{equation}\\label{eq:b1-count}\n \\#E_d(\\mathbb F_p)-1=\\sum_{V\\in\\mathbb F_p}\\bigl(1+\\rho(V+d)\\bigr)\\bigl(1+\\kappa(V)+\\overline{\\kappa(V)}\\bigr)"
+ },
+ {
+  "labels": [
+   "eq:b1-count"
+  ],
+  "numbers": [
+   "3.13"
+  ],
+  "page": "7",
+  "line": 442,
+  "section": "\\section{The triangular lattice and the curve's row}\\label{sec:lattice}",
+  "subsection": "\\subsection{Proofs of the point count and of the Euler products}\\label{sec:b1-pointproofs}",
+  "source": "\\begin{equation}\\label{eq:b1-count}\n \\#E_d(\\mathbb F_p)-1=\\sum_{V\\in\\mathbb F_p}\\bigl(1+\\rho(V+d)\\bigr)\\bigl(1+\\kappa(V)+\\overline{\\kappa(V)}\\bigr)\n =p+S+\\overline S,\\qquad S=\\sum_{V\\in\\mathbb F_p}\\rho(V+d)\\kappa(V),\n\\end{equation}",
+  "before": "\\begin{equation}\\label{eq:d014}\n \\#\\{y:y^2=U\\}=1+\\rho(U),\\qquad \\#\\{x:x^3=V\\}=1+\\kappa(V)+\\overline{\\kappa(V)} .\n\\end{equation}\nCounting the affine points $(x,y)$ according to the value $V=x^3$ gives",
+  "after": "because $\\sum_V\\rho(V+d)=\\sum_V\\kappa(V)=0$ and $\\rho$ is real. Thus $a_p(d)=-S-\\overline S$.\n\nSince $p\\nmid d$, the substitution $V=-dt$ is a bijection of $\\mathbb F_p$. As"
+ },
+ {
+  "labels": [
+   "eq:d015"
+  ],
+  "numbers": [
+   "3.14"
+  ],
+  "page": "7",
+  "line": 450,
+  "section": "\\section{The triangular lattice and the curve's row}\\label{sec:lattice}",
+  "subsection": "\\subsection{Proofs of the point count and of the Euler products}\\label{sec:b1-pointproofs}",
+  "source": "\\begin{equation}\\label{eq:d015}\n S=\\rho(d)\\kappa(d)\\,J(\\kappa,\\rho),\\qquad J(\\kappa,\\rho)=\\sum_{t\\in\\mathbb F_p}\\kappa(t)\\rho(1-t).\n\\end{equation}",
+  "before": "because $\\sum_V\\rho(V+d)=\\sum_V\\kappa(V)=0$ and $\\rho$ is real. Thus $a_p(d)=-S-\\overline S$.\n\nSince $p\\nmid d$, the substitution $V=-dt$ is a bijection of $\\mathbb F_p$. As\n$\\rho(d-dt)=\\rho(d)\\rho(1-t)$ and $\\kappa(-dt)=\\kappa(d)\\kappa(t)$,",
+  "after": "To compare this with the cubic Jacobi sum $J(\\kappa,\\kappa)=\\sum_t\\kappa(t)\\kappa(1-t)$, group the $t$ according\nto $a=t(1-t)$. Since $p$ is odd, the equation $t^2-t+a=0$ has $1+\\rho(1-4a)$ solutions, so\n\\begin{equation}\\label{eq:d016}"
+ },
+ {
+  "labels": [
+   "eq:d016"
+  ],
+  "numbers": [
+   "3.15"
+  ],
+  "page": "7",
+  "line": 455,
+  "section": "\\section{The triangular lattice and the curve's row}\\label{sec:lattice}",
+  "subsection": "\\subsection{Proofs of the point count and of the Euler products}\\label{sec:b1-pointproofs}",
+  "source": "\\begin{equation}\\label{eq:d016}\n J(\\kappa,\\kappa)=\\sum_{a\\in\\mathbb F_p}\\kappa(a)\\bigl(1+\\rho(1-4a)\\bigr)\n =\\sum_a\\kappa(a)\\rho(1-4a)=\\overline{\\kappa(4)}\\,J(\\kappa,\\rho),\n\\end{equation}",
+  "before": " S=\\rho(d)\\kappa(d)\\,J(\\kappa,\\rho),\\qquad J(\\kappa,\\rho)=\\sum_{t\\in\\mathbb F_p}\\kappa(t)\\rho(1-t).\n\\end{equation}\nTo compare this with the cubic Jacobi sum $J(\\kappa,\\kappa)=\\sum_t\\kappa(t)\\kappa(1-t)$, group the $t$ according\nto $a=t(1-t)$. Since $p$ is odd, the equation $t^2-t+a=0$ has $1+\\rho(1-4a)$ solutions, so",
+  "after": "where the last step substitutes $a=b/4$. For primary $\\pi$ we have $J(\\kappa,\\kappa)=-\\pi$~\\cite[Theorem~15]{QF}.\nHence $J(\\kappa,\\rho)=-\\kappa(4)\\pi$ and\n\\begin{equation}\\label{eq:b1-S}"
+ },
+ {
+  "labels": [
+   "eq:b1-S"
+  ],
+  "numbers": [
+   "3.16"
+  ],
+  "page": "7",
+  "line": 461,
+  "section": "\\section{The triangular lattice and the curve's row}\\label{sec:lattice}",
+  "subsection": "\\subsection{Proofs of the point count and of the Euler products}\\label{sec:b1-pointproofs}",
+  "source": "\\begin{equation}\\label{eq:b1-S}\n S=-\\rho(d)\\kappa(4d)\\,\\pi,\\qquad a_p(d)=\\Tr\\bigl(\\rho(d)\\kappa(4d)\\,\\pi\\bigr).\n\\end{equation}",
+  "before": " =\\sum_a\\kappa(a)\\rho(1-4a)=\\overline{\\kappa(4)}\\,J(\\kappa,\\rho),\n\\end{equation}\nwhere the last step substitutes $a=b/4$. For primary $\\pi$ we have $J(\\kappa,\\kappa)=-\\pi$~\\cite[Theorem~15]{QF}.\nHence $J(\\kappa,\\rho)=-\\kappa(4)\\pi$ and",
+  "after": "Finally $\\rho(d)\\kappa(4d)=\\chi(d)^3\\chi(4d)^2=\\chi(d)^5\\chi(4)^2$. Since $\\chi(4)^3=\\chi(2)^6=1$, we have\n$\\chi(4)^2=\\chi(4)^5$, and so $\\rho(d)\\kappa(4d)=\\chi(4d)^5=\\overline{\\chi(4d)}$. This proves~\\eqref{eq:point-identity}\nfor $\\pi$. The two primes above $p$ give the same value, because $\\chi_{\\bar\\pi}(4d)=\\overline{\\chi_\\pi(4d)}$ for the"
+ },
+ {
+  "labels": [
+   "eq:b1-euler"
+  ],
+  "numbers": [
+   "3.17"
+  ],
+  "page": "8",
+  "line": 485,
+  "section": "\\section{The triangular lattice and the curve's row}\\label{sec:lattice}",
+  "subsection": "\\subsection{Proofs of the point count and of the Euler products}\\label{sec:b1-pointproofs}",
+  "source": "\\begin{equation}\\label{eq:b1-euler}\n  \\sum_n\\frac{\\muk(n)\\psi_d(n)}{\\N(n)^s}\n  =\\prod_\\pi\\Bigl(1-\\frac{\\psi_d(\\pi)}{\\N(\\pi)^s}\\Bigr)\n  =\\prod_{p\\nmid6d}\\bigl(1-\\lambda_d(p)p^{-s}+p^{-2s}\\bigr)\n  =\\sum_{m\\ge1}\\frac{q_d(m)}{m^s}\n  =\\frac{B_d(s)}{L(E_d,s+\\frac12)} .\n \\end{equation}",
+  "before": "\\item[(a)] Let $p\\ge5$, and let $X$ be an indeterminate. If $p\\nmid d$ and $p=\\pi\\bar\\pi\\equiv1\\pmod3$ with\n $\\pi$ primary, then $(1-\\psi_d(\\pi)X)(1-\\psi_d(\\bar\\pi)X)=1-\\lambda_d(p)X+X^2$. If $p\\nmid d$ and $p\\equiv2\\pmod3$,\n then $1-\\psi_d(-p)X^2=1+X^2=1-\\lambda_d(p)X+X^2$. If $p\\mid d$, then $\\psi_d$ vanishes at every prime above $p$.\n\\item[(b)] For $\\Re s>1$ the following series and products converge absolutely, and",
+  "after": " Here $n$ runs over the primary elements coprime to $6$, and $\\pi$ over the primary primes not dividing $6$.\n Consequently~\\eqref{eq:normgroup} holds, and $a_m(E_d)/\\sqrt m=\\sum_{\\N(n)=m}\\psi_d(n)$ for $(m,6d)=1$.\n\\item[(c)] $B_d(s)$ is holomorphic and nonzero for $\\Re s>0$, whether or not $y^2=x^3+d$ is a minimal model."
+ },
+ {
+  "labels": [
+   "eq:M"
+  ],
+  "numbers": [
+   "4.1"
+  ],
+  "page": "9",
+  "line": 543,
+  "section": "\\section{The average, in coordinates and as a double sum}\\label{sec:average}",
+  "subsection": "\\section{The average, in coordinates and as a double sum}\\label{sec:average}",
+  "source": "\\begin{equation}\\label{eq:M}\n M(D,H)=\\sum_{0<\\N(u)\\le H}|A_u(D)|^2.\n\\end{equation}",
+  "before": "\n\\section{The average, in coordinates and as a double sum}\\label{sec:average}\n\nThe central average is",
+  "after": "There are about $H$ rows and about $D$ columns in each row.\nWriting $Q(A,B)=A^2-AB+B^2$, this means exactly\n\\begin{equation}\\label{eq:coordinates}"
+ },
+ {
+  "labels": [
+   "eq:coordinates"
+  ],
+  "numbers": [
+   "4.2"
+  ],
+  "page": "9",
+  "line": 548,
+  "section": "\\section{The average, in coordinates and as a double sum}\\label{sec:average}",
+  "subsection": "\\section{The average, in coordinates and as a double sum}\\label{sec:average}",
+  "source": "\\begin{equation}\\label{eq:coordinates}\n\\begin{split}\n M(D,H)=\\sum_{\\substack{x,y\\in\\mathbb Z\\\\0<Q(x,y)\\le H}}\n \\Bigg|\\sum_{\\substack{A\\equiv1\\ (3),\\ B\\equiv0\\ (3)\\\\\n                          A,B\\ \\text{not both even}}}\n &\\muk(A+B\\omega)\\frac{A+B\\omega}{\\sqrt{Q(A,B)}}\\\\[-1ex]\n &\\times\\left(\\frac{x+y\\omega}{A+B\\omega}\\right)_6\n W\\left(\\frac{Q(A,B)}D\\right)\\Bigg|^2.\n\\end{split}\n\\end{equation}",
+  "before": " M(D,H)=\\sum_{0<\\N(u)\\le H}|A_u(D)|^2.\n\\end{equation}\nThere are about $H$ rows and about $D$ columns in each row.\nWriting $Q(A,B)=A^2-AB+B^2$, this means exactly",
+  "after": "Thus it is a sum over four ordinary integer coordinates, using\nfactorization and exponentiation in finite fields.\n"
+ },
+ {
+  "labels": [
+   "eq:double"
+  ],
+  "numbers": [
+   "4.3"
+  ],
+  "page": "9",
+  "line": 562,
+  "section": "\\section{The average, in coordinates and as a double sum}\\label{sec:average}",
+  "subsection": "\\section{The average, in coordinates and as a double sum}\\label{sec:average}",
+  "source": "\\begin{equation}\\label{eq:double}\n\\begin{split}\n M(D,H)=\\sum_{n_1,n_2}&\\muk(n_1)\\muk(n_2)\n \\overline{\\alpha(n_1)}\\alpha(n_2)\n \\overline{W(\\N(n_1)/D)}W(\\N(n_2)/D)\\,S_H(n_1,n_2),\\\\\n S_H(n_1,n_2)&=\\sum_{0<\\N(u)\\le H}\n                 \\overline{\\chi_{n_1}(u)}\\chi_{n_2}(u).\n\\end{split}\n\\end{equation}",
+  "before": "Thus it is a sum over four ordinary integer coordinates, using\nfactorization and exponentiation in finite fields.\n\nExpanding the square, with the first column conjugated, gives",
+  "after": "The elliptic-curve factor in this double sum is simply\n$\\overline{n_1}n_2/(|n_1||n_2|)$. No abstract character notation is\nneeded to calculate it."
+ },
+ {
+  "labels": [
+   "eq:d017"
+  ],
+  "numbers": [
+   "4.4"
+  ],
+  "page": "9",
+  "line": 577,
+  "section": "\\section{The average, in coordinates and as a double sum}\\label{sec:average}",
+  "subsection": "\\subsection{An ordinary-integer description of every row}",
+  "source": "\\begin{equation}\\label{eq:d017}\n q_u(m)=\\sum_{\\N(n)=m}\\muk(n)\\alpha(n)\\chi_n(u),\\qquad\n A_u(D)=\\sum_{m\\ge1}q_u(m)W(m/D).\n\\end{equation}",
+  "before": "needed to calculate it.\n\n\\subsection{An ordinary-integer description of every row}\nIf desired, put",
+  "after": "For fixed $u\\ne0$, $q_u$ is multiplicative, vanishes on integers divisible\nby $2$ or $3$, and for $p\\ge5$ has the following local values:\n\\begin{equation}\\label{eq:allrows}"
+ },
+ {
+  "labels": [
+   "eq:allrows"
+  ],
+  "numbers": [
+   "4.5"
+  ],
+  "page": "10",
+  "line": 583,
+  "section": "\\section{The average, in coordinates and as a double sum}\\label{sec:average}",
+  "subsection": "\\subsection{An ordinary-integer description of every row}",
+  "source": "\\begin{equation}\\label{eq:allrows}\n\\begin{array}{c|cc}\n &q_u(p)&q_u(p^2)\\\\\\hline\n p=\\pi\\bar\\pi\\equiv1\\pmod3\n &-\\dfrac{\\pi\\chi_\\pi(u)+\\bar\\pi\\chi_{\\bar\\pi}(u)}{\\sqrt p}\n &\\chi_\\pi(u)\\chi_{\\bar\\pi}(u)\\\\[2ex]\n p\\equiv2\\pmod3&0&\\chi_{-p}(u)\n\\end{array}\n\\end{equation}",
+  "before": " A_u(D)=\\sum_{m\\ge1}q_u(m)W(m/D).\n\\end{equation}\nFor fixed $u\\ne0$, $q_u$ is multiplicative, vanishes on integers divisible\nby $2$ or $3$, and for $p\\ge5$ has the following local values:",
+  "after": "All $q_u(p^j)$ with $j\\ge3$ vanish. These formulas include the case\nwhen a symbol is zero. At $u=u_d$ they reduce to~\\eqref{eq:qd}.\nFor a general row, the symbols distinguish $\\pi$ from $\\bar\\pi$;"
+ },
+ {
+  "labels": [
+   "eq:MS"
+  ],
+  "numbers": [
+   "4.6"
+  ],
+  "page": "10",
+  "line": 600,
+  "section": "\\section{The average, in coordinates and as a double sum}\\label{sec:average}",
+  "subsection": "\\subsection{The estimate to be supplied by analysis}",
+  "source": "\\begin{equation}\\label{eq:MS}\n \\boxed{\\quad M(D,D^{1+\\vartheta})\n       \\ll_{W,\\vartheta,\\varepsilon}D^{2+\\vartheta+\\varepsilon}.\n       \\quad}\n\\end{equation}",
+  "before": "\n\\subsection{The estimate to be supplied by analysis}\nThe analytic input is the following mean-square estimate: for every fixed\n$0<\\vartheta\\le1/10$ and every $\\varepsilon>0$,",
+  "after": "The constant is controlled by finitely many derivatives of $W$. As in~\\cite[Proposition~3.1]{OAI1112},\nof which~\\eqref{eq:MS} is the CM form, there is an integer $J'=J'(\\vartheta,\\varepsilon)$ such that the constant is\n$\\ll_{I,\\vartheta,\\varepsilon}\\|W\\|_{C^{J'}(I)}^2$ when $W$ is supported in a compact interval $I\\subset(0,\\infty)$"
+ },
+ {
+  "labels": [
+   "eq:d018"
+  ],
+  "numbers": [
+   "4.7"
+  ],
+  "page": "10",
+  "line": 632,
+  "section": "\\section{The average, in coordinates and as a double sum}\\label{sec:average}",
+  "subsection": "\\subsection{The estimate to be supplied by analysis}",
+  "source": "\\begin{equation}\\label{eq:d018}\n S_H(n,n)=\\#\\{u:0<\\N(u)\\le H,\\ (u,n)=1\\}\\ll H.\n\\end{equation}",
+  "before": "$\\zeta(s)L(s,\\chi_{-3})$ on $\\Re s=1$~\\cite{Had96,Lan03}, and the remaining inputs are identities, the theta\ntransformation and the large sieve.\n\nThe diagonal $n_1=n_2=n$ in~\\eqref{eq:double} has",
+  "after": "More precisely, elementary lattice counting gives, exactly as for $\\zeta$~\\cite[(4.1)--(4.2)]{ZG},\n\\begin{equation}\\label{eq:d019}\n S_H(n,n)=\\frac{2\\pi}{\\sqrt3}H"
+ },
+ {
+  "labels": [
+   "eq:d019"
+  ],
+  "numbers": [
+   "4.8"
+  ],
+  "page": "10",
+  "line": 636,
+  "section": "\\section{The average, in coordinates and as a double sum}\\label{sec:average}",
+  "subsection": "\\subsection{The estimate to be supplied by analysis}",
+  "source": "\\begin{equation}\\label{eq:d019}\n S_H(n,n)=\\frac{2\\pi}{\\sqrt3}H\n       \\prod_{\\pi\\mid n}(1-\\N(\\pi)^{-1})\n       +O\\bigl(\\tau(n)(\\sqrt H+1)\\bigr).\n\\end{equation}",
+  "before": "\\begin{equation}\\label{eq:d018}\n S_H(n,n)=\\#\\{u:0<\\N(u)\\le H,\\ (u,n)=1\\}\\ll H.\n\\end{equation}\nMore precisely, elementary lattice counting gives, exactly as for $\\zeta$~\\cite[(4.1)--(4.2)]{ZG},",
+  "after": "Here $\\tau(n)$ counts primary divisors. The factor $2\\pi/\\sqrt3$ is the\narea of the disc divided by the lattice covolume. The diagonal is\n$O_W(HD)$. Thus~\\eqref{eq:MS} bounds the whole average on the diagonal"
+ },
+ {
+  "labels": [
+   "eq:d020"
+  ],
+  "numbers": [
+   "5.1"
+  ],
+  "page": "11",
+  "line": 650,
+  "section": "\\section{Sixth powers isolate the chosen elliptic curve}\\label{sec:sixth}",
+  "subsection": "\\section{Sixth powers isolate the chosen elliptic curve}\\label{sec:sixth}",
+  "source": "\\begin{equation}\\label{eq:d020}\n \\chi_n(u_0v^6)=\\chi_n(u_0)\\ind_{(n,v)=1}.\n\\end{equation}",
+  "before": "\n\\section{Sixth powers isolate the chosen elliptic curve}\\label{sec:sixth}\n\nFix $u_0=u_d$ and $N_0=\\N(u_0)=|4d|^{10}$. For any $v\\ne0$,",
+  "after": "Consequently the rows we need are \\emph{the fixed row $u_0$ times sixth\npowers}; they need not themselves be sixth powers.\n"
+ },
+ {
+  "labels": [
+   "eq:d021"
+  ],
+  "numbers": [
+   "5.2"
+  ],
+  "page": "11",
+  "line": 657,
+  "section": "\\section{Sixth powers isolate the chosen elliptic curve}\\label{sec:sixth}",
+  "subsection": "\\section{Sixth powers isolate the chosen elliptic curve}\\label{sec:sixth}",
+  "source": "\\begin{equation}\\label{eq:d021}\n \\mathcal P_Y=\\{\\pi\\text{ primary prime}:\\ \\pi\\nmid6d,\n                                      \\ Y/2<\\N(\\pi)\\le Y\\},\n \\qquad J=|\\mathcal P_Y|.\n\\end{equation}",
+  "before": "Consequently the rows we need are \\emph{the fixed row $u_0$ times sixth\npowers}; they need not themselves be sixth powers.\n\nTake $H=D^{1+\\vartheta}$, put $Y=(H/N_0)^{1/6}$, and let",
+  "after": "For large $D$, the prime number theorem for $p\\equiv1\\pmod3$ (Landau's prime ideal theorem~\\cite{Lan03} for $\\mathbb Q(\\sqrt{-3})$) gives\n$J\\asymp_d Y/\\log Y$; for small $Y$ there may be no such primes at all, since no primary prime\ncoprime to $6$ has norm below $7$. The rows $u_0\\pi^6$ are distinct and have norm"
+ },
+ {
+  "labels": [
+   "eq:d022"
+  ],
+  "numbers": [
+   "5.3"
+  ],
+  "page": "11",
+  "line": 666,
+  "section": "\\section{Sixth powers isolate the chosen elliptic curve}\\label{sec:sixth}",
+  "subsection": "\\section{Sixth powers isolate the chosen elliptic curve}\\label{sec:sixth}",
+  "source": "\\begin{equation}\\label{eq:d022}\n A_{u_0}(D)-A_{u_0\\pi^6}(D)\n =\\sum_{\\pi\\mid n}\\muk(n)\\alpha(n)\\chi_n(u_0)W(\\N(n)/D).\n\\end{equation}",
+  "before": "For large $D$, the prime number theorem for $p\\equiv1\\pmod3$ (Landau's prime ideal theorem~\\cite{Lan03} for $\\mathbb Q(\\sqrt{-3})$) gives\n$J\\asymp_d Y/\\log Y$; for small $Y$ there may be no such primes at all, since no primary prime\ncoprime to $6$ has norm below $7$. The rows $u_0\\pi^6$ are distinct and have norm\nat most $H$ (Lemma~\\ref{lem:b1-extract}). Their difference from the target is exactly",
+  "after": "There are $O_W(D/\\N(\\pi))$ possible multiples of $\\pi$ in this sum,\nbecause dividing by $\\pi$ reduces the norm bound by $\\N(\\pi)$.\nEvery coefficient has absolute value at most one. Therefore"
+ },
+ {
+  "labels": [
+   "eq:approx"
+  ],
+  "numbers": [
+   "5.4"
+  ],
+  "page": "11",
+  "line": 673,
+  "section": "\\section{Sixth powers isolate the chosen elliptic curve}\\label{sec:sixth}",
+  "subsection": "\\section{Sixth powers isolate the chosen elliptic curve}\\label{sec:sixth}",
+  "source": "\\begin{equation}\\label{eq:approx}\n |A_{u_0}(D)-A_{u_0\\pi^6}(D)|\\ll_W D/Y.\n\\end{equation}",
+  "before": "\\end{equation}\nThere are $O_W(D/\\N(\\pi))$ possible multiples of $\\pi$ in this sum,\nbecause dividing by $\\pi$ reduces the norm bound by $\\N(\\pi)$.\nEvery coefficient has absolute value at most one. Therefore",
+  "after": "Using $|z|^2\\le2|w|^2+2|z-w|^2$ for each selected row and the\nnonnegativity of the mean square gives\n\\begin{equation}\\label{eq:extraction}"
+ },
+ {
+  "labels": [
+   "eq:extraction"
+  ],
+  "numbers": [
+   "5.5"
+  ],
+  "page": "11",
+  "line": 678,
+  "section": "\\section{Sixth powers isolate the chosen elliptic curve}\\label{sec:sixth}",
+  "subsection": "\\section{Sixth powers isolate the chosen elliptic curve}\\label{sec:sixth}",
+  "source": "\\begin{equation}\\label{eq:extraction}\n \\boxed{\\quad J|S_d(D)|^2\n \\le2M(D,H)+O_W(JD^2/Y^2).\\quad}\n\\end{equation}",
+  "before": " |A_{u_0}(D)-A_{u_0\\pi^6}(D)|\\ll_W D/Y.\n\\end{equation}\nUsing $|z|^2\\le2|w|^2+2|z-w|^2$ for each selected row and the\nnonnegativity of the mean square gives",
+  "after": "There is no assumption that different rows cancel against each other.\nPositivity is precisely what lets us extract the special rows.\n"
+ },
+ {
+  "labels": [
+   "eq:exponents"
+  ],
+  "numbers": [
+   "5.6"
+  ],
+  "page": "11",
+  "line": 687,
+  "section": "\\section{Sixth powers isolate the chosen elliptic curve}\\label{sec:sixth}",
+  "subsection": "\\section{Sixth powers isolate the chosen elliptic curve}\\label{sec:sixth}",
+  "source": "\\begin{align}\n |S_d(D)|^2\n &\\ll_{d,W,\\vartheta,\\varepsilon}\n          DH^{5/6}D^\\varepsilon+D^2H^{-1/3}\\notag\\\\\n &=D^{11/6+5\\vartheta/6+\\varepsilon}\n                  +D^{5/3-\\vartheta/3}.\\label{eq:exponents}\n\\end{align}",
+  "before": "Positivity is precisely what lets us extract the special rows.\n\nInserting~\\eqref{eq:MS}, absorbing logarithms into $D^\\varepsilon$, and\nallowing constants depending on $d$, we get",
+  "after": "Take square roots, then choose $\\vartheta>0$ and the power loss small\nenough. For every $\\eta>0$ this proves\n\\begin{equation}\\label{eq:Sbound}"
+ },
+ {
+  "labels": [
+   "eq:Sbound"
+  ],
+  "numbers": [
+   "5.7"
+  ],
+  "page": "11",
+  "line": 696,
+  "section": "\\section{Sixth powers isolate the chosen elliptic curve}\\label{sec:sixth}",
+  "subsection": "\\section{Sixth powers isolate the chosen elliptic curve}\\label{sec:sixth}",
+  "source": "\\begin{equation}\\label{eq:Sbound}\n S_d(D)\\ll_{d,W,\\eta}D^{11/12+\\eta}.\n\\end{equation}",
+  "before": "                  +D^{5/3-\\vartheta/3}.\\label{eq:exponents}\n\\end{align}\nTake square roots, then choose $\\vartheta>0$ and the power loss small\nenough. For every $\\eta>0$ this proves",
+  "after": "\\paragraph{Dependence on $d$.} The mean-square estimate~\\eqref{eq:MS} does not involve $d$; the curve\nenters only through the position of its row. Keeping track of $N_0=\\N(u_0)$ in the steps above gives\n\\begin{equation}\\label{eq:d023}"
+ },
+ {
+  "labels": [
+   "eq:d023"
+  ],
+  "numbers": [
+   "5.8"
+  ],
+  "page": "11",
+  "line": 701,
+  "section": "\\section{Sixth powers isolate the chosen elliptic curve}\\label{sec:sixth}",
+  "subsection": "\\section{Sixth powers isolate the chosen elliptic curve}\\label{sec:sixth}",
+  "source": "\\begin{equation}\\label{eq:d023}\n S_d(D)\\ll_{W,\\vartheta,\\varepsilon}N_0^{1/12}D^{11/12+5\\vartheta/12+\\varepsilon}+N_0^{1/6}D^{5/6-\\vartheta/6},\n \\qquad N_0^{1/12}=|4d|^{5/6},\n\\end{equation}",
+  "before": " S_d(D)\\ll_{d,W,\\eta}D^{11/12+\\eta}.\n\\end{equation}\n\\paragraph{Dependence on $d$.} The mean-square estimate~\\eqref{eq:MS} does not involve $d$; the curve\nenters only through the position of its row. Keeping track of $N_0=\\N(u_0)$ in the steps above gives",
+  "after": "valid for all $D\\ge1$, with a constant independent of $d$ (Lemma~\\ref{lem:b1-uniform}; when $Y$ is small,\nfor instance when $Y<7$ and so $J=0$, the right side exceeds the trivial bound $|S_d(D)|\\ll_WD$). This is\nnontrivial only for $D$ larger than about"
+ },
+ {
+  "labels": [
+   "eq:d024"
+  ],
+  "numbers": [
+   "5.9"
+  ],
+  "page": "12",
+  "line": 765,
+  "section": "\\section{Sixth powers isolate the chosen elliptic curve}\\label{sec:sixth}",
+  "subsection": "\\subsection{The extraction in detail}\\label{sec:b1-extraction}",
+  "source": "\\begin{equation}\\label{eq:d024}\n |S_d(D)|^2\\le\\frac{2M(D,H)}J+O_W\\Bigl(\\frac{D^2}{Y^2}\\Bigr)\n \\ll_{d,W,\\vartheta,\\varepsilon}\\frac{D^{2+\\vartheta+\\varepsilon}\\log D}{Y}+\\frac{D^2}{Y^2},\n\\end{equation}",
+  "before": "\\paragraph{Proof of~\\eqref{eq:Sbound}.} Fix $d$, $W$, $\\vartheta$ and $\\varepsilon$. Each prime $p\\equiv1\\pmod3$ with\n$Y/2<p\\le Y$ gives two primary primes of norm $p$, and at most $2\\omega(d)$ primes of $\\OO$ divide $d$. So the prime\nnumber theorem for $p\\equiv1\\pmod 3$ gives $J\\ge Y/(5\\log Y)$ for $Y\\ge Y_0(d)$, that is, for $D\\ge D_0(d,\\vartheta)$.\nFor such $D$, Lemma~\\ref{lem:b1-extract}(iv) and~\\eqref{eq:MS} give",
+  "after": "which is~\\eqref{eq:exponents}, because $Y\\asymp_dH^{1/6}$. For $1\\le D<D_0$, Lemma~\\ref{lem:b1-extract}(i) gives\n$|S_d(D)|\\ll_{d,W,\\vartheta}1$. So~\\eqref{eq:Sbound} holds for all $D\\ge1$. Also $S_d(D)=0$ for $D<1/b$, and\n$S_d(D)$ is bounded for $1/b\\le D<1$."
+ },
+ {
+  "labels": [
+   "eq:d025"
+  ],
+  "numbers": [
+   "5.10"
+  ],
+  "page": "13",
+  "line": 775,
+  "section": "\\section{Sixth powers isolate the chosen elliptic curve}\\label{sec:sixth}",
+  "subsection": "\\subsection{The extraction in detail}\\label{sec:b1-extraction}",
+  "source": "\\begin{equation}\\label{eq:d025}\n S_d(D)\\ll_{W,\\vartheta,\\varepsilon}N_0^{1/12}D^{11/12+5\\vartheta/12+\\varepsilon}+N_0^{1/6}D^{5/6-\\vartheta/6},\n\\end{equation}",
+  "before": "$S_d(D)$ is bounded for $1/b\\le D<1$.\n\n\\begin{lemma}[Uniformity in $d$]\\label{lem:b1-uniform}\nLet $0<\\vartheta\\le1/10$ and $\\varepsilon>0$. For all $d\\ne0$ and all $D\\ge1$,",
+  "after": "with an implied constant that does not depend on $d$.\n\\end{lemma}\n"
+ },
+ {
+  "labels": [
+   "eq:d026"
+  ],
+  "numbers": [
+   "5.11"
+  ],
+  "page": "13",
+  "line": 794,
+  "section": "\\section{Sixth powers isolate the chosen elliptic curve}\\label{sec:sixth}",
+  "subsection": "\\subsection{The extraction in detail}\\label{sec:b1-extraction}",
+  "source": "\\begin{equation}\\label{eq:d026}\n |S_d(D)|^2\\ll_{W,\\vartheta,\\varepsilon}\\frac{D^{2+\\vartheta+\\varepsilon}\\log D}Y+\\frac{D^2}{Y^2},\n\\end{equation}",
+  "before": "$\\mathcal P_Y$.\n\n\\emph{Case 1: $Y\\ge Y_1$ and $\\log H/(5\\log(Y/2))\\le c_1Y/\\log Y$.} Then $J\\ge c_1Y/\\log Y$. For $D\\ge2$,\nLemma~\\ref{lem:b1-extract}(iv), \\eqref{eq:MS} and $\\log Y\\le\\log D$ give",
+  "after": "and the claim follows after renaming $\\varepsilon$.\n\n\\emph{Case 2: otherwise.} If $Y\\ge Y_1$, then $\\log(Y/2)\\ge\\frac12\\log Y$, because $Y\\ge4$. So the failure of Case~1"
+ },
+ {
+  "labels": [
+   "eq:d027"
+  ],
+  "numbers": [
+   "5.12"
+  ],
+  "page": "13",
+  "line": 808,
+  "section": "\\section{Sixth powers isolate the chosen elliptic curve}\\label{sec:sixth}",
+  "subsection": "\\subsection{Other perfect powers and the rational slice}",
+  "source": "\\begin{equation}\\label{eq:d027}\n \\chi_n(v^3)=(v/n)_2,\\qquad \\chi_n(v^2)=(v/n)_3\n\\end{equation}",
+  "before": "\\end{proof}\n\n\\subsection{Other perfect powers and the rational slice}\nThe exact identities",
+  "after": "identify cube and square rows as quadratic and cubic twists.\nIf $v$ is a nonzero rational integer, then\n$(v/n)_2=(v/\\N(n))$, an ordinary Jacobi symbol. Hence"
+ },
+ {
+  "labels": [
+   "eq:quadratic-twists"
+  ],
+  "numbers": [
+   "5.13"
+  ],
+  "page": "13",
+  "line": 814,
+  "section": "\\section{Sixth powers isolate the chosen elliptic curve}\\label{sec:sixth}",
+  "subsection": "\\subsection{Other perfect powers and the rational slice}",
+  "source": "\\begin{equation}\\label{eq:quadratic-twists}\n A_{u_dv^3}(D)=\\sum_{m\\ge1}q_d(m)\n                       \\left(\\frac vm\\right)W(m/D).\n\\end{equation}",
+  "before": "\\end{equation}\nidentify cube and square rows as quadratic and cubic twists.\nIf $v$ is a nonzero rational integer, then\n$(v/n)_2=(v/\\N(n))$, an ordinary Jacobi symbol. Hence",
+  "after": "The finite-field reason at an inert prime is that every nonzero element\nof $\\mathbb F_p$ is a square in $\\mathbb F_{p^2}$; at a split prime it\nis ordinary Euler's criterion."
+ },
+ {
+  "labels": [
+   "eq:d028"
+  ],
+  "numbers": [
+   "6.1"
+  ],
+  "page": "14",
+  "line": 839,
+  "section": "\\section{Why the bound excludes zeros}\\label{sec:zeros}",
+  "subsection": "\\section{Why the bound excludes zeros}\\label{sec:zeros}",
+  "source": "\\begin{equation}\\label{eq:d028}\n \\widehat W(s)=\\int_0^\\infty W(y)y^s\\,\\frac{dy}{y},\\qquad\n F_W(s)=\\int_0^\\infty S_d(D)D^{-s}\\,\\frac{dD}{D}.\n\\end{equation}",
+  "before": "$L(E_d,s)\\ne0$ for $\\Re s>17/12$.\n\\end{proposition}\n\\begin{proof}\nWe have proved~\\eqref{eq:Sbound} for every such weight (Section~\\ref{sec:b1-extraction}). Let",
+  "after": "The second integral is holomorphic for $\\Re s>11/12$ (Lemma~\\ref{lem:b1-mellin}(i)). At the lower\nendpoint there is no convergence problem: $S_d(D)=0$ for $D<1/b$.\nFor $\\Re s>1$, absolute convergence (Lemma~\\ref{lem:b1-mellin}(i)) and~\\eqref{eq:reciprocal} give"
+ },
+ {
+  "labels": [
+   "eq:mellin-zero"
+  ],
+  "numbers": [
+   "6.2"
+  ],
+  "page": "14",
+  "line": 846,
+  "section": "\\section{Why the bound excludes zeros}\\label{sec:zeros}",
+  "subsection": "\\section{Why the bound excludes zeros}\\label{sec:zeros}",
+  "source": "\\begin{equation}\\label{eq:mellin-zero}\n L(E_d,s+\\tfrac12)F_W(s)=\\widehat W(s)B_d(s).\n\\end{equation}",
+  "before": "\\end{equation}\nThe second integral is holomorphic for $\\Re s>11/12$ (Lemma~\\ref{lem:b1-mellin}(i)). At the lower\nendpoint there is no convergence problem: $S_d(D)=0$ for $D<1/b$.\nFor $\\Re s>1$, absolute convergence (Lemma~\\ref{lem:b1-mellin}(i)) and~\\eqref{eq:reciprocal} give",
+  "after": "Since $L(E_d,s)$ is entire (by Deuring's theorem~\\cite{Deuring}; see Section~\\ref{sec:b1-analytic}), the identity\ntheorem extends this equality to $\\Re s>11/12$.\n"
+ },
+ {
+  "labels": [
+   "eq:d029"
+  ],
+  "numbers": [
+   "6.3"
+  ],
+  "page": "14",
+  "line": 855,
+  "section": "\\section{Why the bound excludes zeros}\\label{sec:zeros}",
+  "subsection": "\\section{Why the bound excludes zeros}\\label{sec:zeros}",
+  "source": "\\begin{equation}\\label{eq:d029}\n \\widehat W(s_0)=\\int_1^2\\phi(y)\\,\\frac{dy}{y}>0.\n\\end{equation}",
+  "before": "\nSuppose $L(E_d,\\rho)=0$ with $\\Re\\rho>17/12$, and put\n$s_0=\\rho-1/2$. Choose a nonzero nonnegative smooth function $\\phi$\nsupported in $(1,2)$, and use $W(y)=y^{-s_0}\\phi(y)$. Then",
+  "after": "At $s=s_0$ the left side of~\\eqref{eq:mellin-zero} is zero, because $F_W$ is\nholomorphic at $s_0$. The right side $\\widehat W(s_0)B_d(s_0)$ is nonzero, because\n$B_d$ is holomorphic and nonzero for $\\Re s>0$ (Lemma~\\ref{lem:b1-euler}(c)). This"
+ },
+ {
+  "labels": [
+   "eq:d030"
+  ],
+  "numbers": [
+   "6.4"
+  ],
+  "page": "14",
+  "line": 892,
+  "section": "\\section{Why the bound excludes zeros}\\label{sec:zeros}",
+  "subsection": "\\subsection{The analytic steps in detail}\\label{sec:b1-analytic}",
+  "source": "\\begin{equation}\\label{eq:d030}\n \\int_0^\\infty\\sum_{m\\ge1}\\bigl|q_d(m)W(m/D)\\bigr|D^{-\\sigma}\\frac{dD}D\n =\\sum_{m\\ge1}\\frac{|q_d(m)|}{m^\\sigma}\\int_0^\\infty|W(y)|y^\\sigma\\frac{dy}y<\\infty .\n\\end{equation}",
+  "before": "in~\\cite[Section~3]{OAI1112}: the truncated integrals are entire and converge locally uniformly. Now let\n$\\sigma=\\Re s>1$. By~\\eqref{eq:normgroup},\n$|q_d(m)|\\le r(m)$, where $r(m)$ is the number of primary $n$ coprime to $6$ with $\\N(n)=m$, and\n$\\sum_mr(m)m^{-\\sigma}\\le\\sum_{n\\ \\mathrm{primary}}\\N(n)^{-\\sigma}<\\infty$~\\cite[(2.8)]{QF}. So, substituting $D=m/y$,",
+  "after": "Fubini's theorem then gives $F_W(s)=\\widehat W(s)\\sum_mq_d(m)m^{-s}$, which is~\\eqref{eq:mellin-zero}\nby~\\eqref{eq:reciprocal}.\n"
+ },
+ {
+  "labels": [
+   "eq:d031"
+  ],
+  "numbers": [
+   "6.5"
+  ],
+  "page": "15",
+  "line": 901,
+  "section": "\\section{Why the bound excludes zeros}\\label{sec:zeros}",
+  "subsection": "\\subsection{The analytic steps in detail}\\label{sec:b1-analytic}",
+  "source": "\\begin{equation}\\label{eq:d031}\n F_W(s)\\widehat{W'}(s)=\\frac{\\widehat W(s)\\widehat{W'}(s)B_d(s)}{L(E_d,s+\\frac12)}=F_{W'}(s)\\widehat W(s).\n\\end{equation}",
+  "before": "by~\\eqref{eq:reciprocal}.\n\n(ii) Since $W$ has compact support in $(0,\\infty)$, $\\widehat W$ is entire. For two weights $W,W'$ and $\\Re s>1$,\npart (i) gives",
+  "after": "Both sides are holomorphic on the connected half-plane $\\Re s>11/12$, so they agree there. Since $B_d$ is holomorphic\nand nonzero on $\\Re s>0$ (Lemma~\\ref{lem:b1-euler}(c)), the functions $F_W/(\\widehat WB_d)$ and\n$F_{W'}/(\\widehat{W'}B_d)$ coincide wherever $\\widehat W$ and $\\widehat{W'}$ are both nonzero. Given $s_0$ with"
+ }
+]

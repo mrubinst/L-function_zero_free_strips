@@ -1,0 +1,30 @@
+366 squarefree u with N(u) <= 1300, of which 157 composite (max number of prime factors 3)
+[PASS] S4.1 (s4-S1) conj(alpha)^2 gamma_2 gamma_1 = mu conj(alpha) G: err 2.48e-15 (tol 1e-10) 366 u
+      falsifier [S4.1 zeta cubic class conj(alpha) gamma_2 on the left]: err 2 -> fails as required
+[PASS] S4.1 (s4-S2) conj(conj(alpha)^2 gamma_2) gamma_{-1} = conj(mu conj(alpha) chi(-1) G): err 1.61e-15 (tol 1e-10) 
+      falsifier [S4.1 side 2 without the conjugation]: err 2 -> fails as required
+[PASS] S4.1 (s4-S3) mu conj(alpha) gamma_{-1} = conj(alpha)^2 gamma_2 chi(-1) conj(G): err 1.81e-15 (tol 1e-10) 
+      falsifier [S4.1 G in place of conj(G)]: err 2 -> fails as required
+[PASS] S4.1 (s4-S4) conj(mu conj(alpha)) gamma_1 = conj(conj(alpha)^2 gamma_2) G: err 2.47e-15 (tol 1e-10) 
+      falsifier [S4.1 zeta Moebius class mu on the left]: err 2 -> fails as required
+[PASS] S4.2 (s4-S5) mu alpha gamma_{-1} = gamma_2 chi(-1) conj(G) (no angular factor): err 1.81e-15 (tol 1e-10) 
+      falsifier [S4.2 claim that the anti-oriented class is conj(alpha)^2 gamma_2]: err 2 -> fails as required
+[PASS] S4.3 (eq:b2-twisted) a(ab) = a(a) a(b) chi_b(a)^4 for a = conj(alpha)^2 gamma_2 chi_.(lambda): err 3.24e-15 (tol 1e-10) 159 coprime pairs
+      falsifier [S4.3 chi_b(a)^2 in place of chi_b(a)^4]: err 1.73 -> fails as required
+[PASS] S4.4 G(n) depends only on the class of n mod 72 (squarefree n): err 0 (tol 1e-10) 
+[PASS] S4.4 (s4-P1) a(z1)conj(a(z2)) gamma(chi_z1 conj chi_z2) = m(z1)conj(m(z2)) G([z1][z2]^-1): err 2.44e-15 (tol 1e-10) 80 pairs
+      falsifier [S4.4 zeta cubic class in (s4-P1)]: err 2 -> fails as required
+[PASS] S4.4 (s4-P2) m(z1)conj(m(z2)) gamma(conj chi_z1 chi_z2) = a(z1)conj(a(z2)) G([z2][z1]^-1): err 2.07e-15 (tol 1e-10) 
+      falsifier [S4.4 G([z1][z2]^-1) in (s4-P2)]: err 1.73 -> fails as required
+      X=900 k=(5, 3) f=(1, -6) mark=no: |LHS|=0.0203, rel err 4.5e-16
+      X=900 k=(2, 7) f=(1, 0) mark=no: |LHS|=0.0435, rel err 7.1e-16
+      X=3000 k=(4, -3) f=(1, -6) mark=yes: |LHS|=0.00917, rel err 2.7e-16
+[PASS] S4.5 (s4-inversion) CM marked cube inversion with conj(alpha)^6, nu, puncture, mark: err 7.13e-16 (tol 1e-11) relative
+      falsifier [S4.5 conj(alpha(h))^3 (zeta power) in the inversion]: err 0.437 -> fails as required
+      falsifier [S4.5 unshifted mark d in place of d_h(A) = d(h^3 A)]: err 0.455 -> fails as required
+[PASS] S4.6 (s4-overlap) M_u Q_u = sum over assignments, slot coefficients mu(p) conj(alpha(p)^eps) a_i(p): err 1.6e-15 (tol 1e-12) relative, eps = +1, -1, three rows (one sharing a slot prime)
+      falsifier [S4.6 slot coefficients without conj(alpha(p)^eps)]: err 4.45 -> fails as required
+[PASS] S4.7 (s4-sixth) M_u(D) = sum_{d | rad a} mu(d) alpha(d)^eps psi_u(d) N(d)^{-1/2} M_{ua^6}(D/N(d)): err 6.5e-16 (tol 1e-12) relative; includes u sharing a prime with a
+      falsifier [S4.7 without alpha(d)^eps]: err 0.603 -> fails as required
+
+SUMMARY: 24/24 as required

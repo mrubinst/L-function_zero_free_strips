@@ -1,0 +1,67 @@
+[PASS] D01.1 L1532 eta products: q-expansions of eta(3z)^8 and eta(2z)^3eta(6z)^3 to q^3000: PARI = Euler/Jacobi product | falsifier eta(3z)^7 differs
+[PASS] D01.2 L1537 eta(3z)^8: weight 4, level 9 newform with CM by Q(sqrt-3) | mfdim S_4^new(9)=1, coords=[1]~, CM disc=-3, conductor=9; falsifier: not in S_4(Gamma0(3)) ([]~)
+[PASS] D01.3 L1543 eta(2z)^3eta(6z)^3: weight 3, level 12 newform, nebentypus chi_{-3}, CM by Q(sqrt-3) | mfparams=[12, 3, -3], CM disc=-3, conductor=12; falsifier: not in S_3(Gamma0(12)) trivial char ([]~)
+[PASS] D01.4 L1537 count: number of split rational primes p < 3000 is 207 (414 primary generators) | count=207; falsifier bound 2900 gives 204
+[PASS] D01.5 L1539 a_p(eta(3z)^8): a_p = 2 Re(pi^3) for both primary generators of all 207 split p < 3000 | mismatches=0/414; falsifier -pi (non-primary) mismatches 414/414
+[PASS] D01.6 L1539 inert, eta(3z)^8: p = 2 mod 3: a_p = 0 (all p <= 40000) and a_{p^2} = -p^3 | a_{p^2} checked for 24 primes p <= 197; falsifier +p^3 fails
+[PASS] D01.7 L1540 L(f,s+3/2)=L(s,alpha^3): a_m = sum_{g primary, N g = m} g^3 exactly (0 if 3|m), all m <= 40000 | exact mismatches=0; falsifier alpha^3*(2/.)_3 mismatches 390 of m<=3000
+[PASS] D01.8 L1545 a_p(eta(2z)^3eta(6z)^3): a_p = 2Re(pi^2 (2/pi)_3) = 2Re(pi^2 chi_pi(4)), both generators, 207 split p | mismatches=0/414, (2/pi)_3 != chi_pi(4) at 0; falsifier conj((2/pi)_3) mismatches 278/414 (= all 278 generators with (2/pi)_3 != 1)
+[PASS] D01.9 L1545 inert, eta(2z)^3eta(6z)^3: p nmid 12, p = 2 mod 3: a_p = 0 and a_{p^2} = p^2 (nebentypus chi_{-3}) | 23 primes 5 <= p <= 197; falsifier -p^2 fails
+[PASS] D01.10 L1547 a_4: a_4 = 0, not 4 (and a_2 = 0) | a_2=0, a_4=0; falsifier value 4 rejected
+[PASS] D01.11 L1549 Euler factors at 2,3: a_3 = -3, a_{3^k} = (-3)^k (factor (1+3^{-s})^{-1}), a_{2^k} = 0 (factor 1) | a_3=-3, 3^k<= 19683, 2^k<= 32768; falsifier (1-3^-s)^-1 fails
+[PASS] D01.12 L1547 L(f,s+1)=L(s,alpha^2 chi(4)): primitive character (conductor 2, value -1 at lambda): a_m = (1/6) sum_{(g,2)=1, Ng=m} g^2 eps(g) exactly, m <= 40000 | exact mismatches=0; falsifier conj(eps) mismatches 539 of m<=3000
+[PASS] D01.13 L1552 L(f,s+1)=(1+3^-s)^-1 L^(6): Dirichlet coefficients agree for n <= 3000 (chi_pi(4) by Euler's criterion) | max err=3.8e-15; falsifier without (1+3^-s)^-1: err=3.08
+[PASS] D01.14a L1626 Part I row, eta(3z)^8: 1/L(f,s+k/2) = sum mu_K(n) alpha(n)^3 chi_n(u0) (coprime to 6), u0 = 1, n <= 1500 | max err=2.8e-15; falsifier u0=4: err=6.02
+[PASS] D01.14b L1626 Part I row, eta(2z)^3eta(6z)^3: 1/L(f,s+k/2) = sum mu_K(n) alpha(n)^2 chi_n(u0) (coprime to 6), u0 = 4, n <= 1500 | max err=3.2e-15; falsifier u0=2: err=6.80
+[PASS] D01.15 L1605 Gamma(s+k/2): PARI lfuncheckfeq with gamma factor Gamma_C(s) (= Gamma(s+k/2) after the shift s -> s+k/2), conductor 9 / 12 | log2 FE error: eta(3z)^8 -136, eta(2z)^3eta(6z)^3 -141; falsifier conductors 27/36: -2, -2
+[INFO] t01_eta_quotients.py: 1s
+[PASS] D02.1 L1571 chain rule d_zbar^j: exact for every monomial of degree <= j, j = 1..6 (paper: j <= 4) | falsifiers: unsigned coefficient fails for odd j; z=1/5 fails for all j
+[PASS] D02.2 L1641 chain rule d_z^j: (-(cbar v)^-2)^j d_zbar'^j, exact for j = 1..6 (paper: j <= 3) | same monomial basis
+[PASS] D02.3 L1574 constant term: d_zbar^j h(v') = 0 at z = zbar = 0 for j = 1..6 | falsifiers: j=0 gives h(1/(N(c)v)) != 0; at z=1/5 the first derivative is nonzero
+[PASS] D02.4 L1568 coordinates: at z=0: z' affine in zbar with slope -(cv)^-2; zbar', v' independent of zbar; v' = 1/(N(c) v) | falsifier: at z=1/5, d^2 z'/dzbar^2 != 0
+[PASS] D02.5 L1640 d_z on ce(lz): d_z^n ce(lz) = (2 pi i l)^n ce(lz) and d_zbar^n ce(lz) = (2 pi i lbar)^n ce(lz), n=1..6 | falsifier: d_z giving lbar fails
+[INFO] t02_chain_rule.py: 28s
+[PASS] D03.1 L1579 direct Mellin: formula for j = 1..6, three (l, s) pairs each, 40-digit quadrature (paper: j <= 5, err < 1e-25) | max rel err=2.37e-40; falsifiers (Gamma(s+(j-1)/2+-1/6), alpha^j, i^(j+1)) min rel err gshift=0.439, angle=0.178, phase=1.41
+[PASS] D03.2 L1576 convergence: integrand ~ v^{2s+j-4/3} at 0: absolute convergence iff Re s > 1/6 - j/2 | K_1/3(x) x^1/3 -> Gamma(1/3)2^(-2/3): True; at Re s = bound-0.05 the partial integral grows x4.62 (falsifier side); at bound+0.25, eps 1e-8 -> 1e-12 changes it by 0.00048
+[PASS] D03.3 L1583 table entries: j=1: Gamma(s+1/3)Gamma(s+2/3); j=2: Gamma(s+5/6)Gamma(s+7/6) (table line 1223) | shifts j=1 [Fraction(1, 3), Fraction(2, 3)], j=2 [Fraction(5, 6), Fraction(7, 6)]; falsifier j=3 gives [Fraction(4, 3), Fraction(5, 3)]
+[PASS] D03.4 L1585 reflected side: prod Gamma((j+2)/2 - s +- 1/6), conj(alpha(c))^{2j}, alpha(mu)^j (closed form incl. all constants), j=1..4 | max rel err=1.07e-40; falsifiers (Gamma((j+1)/2-s..), conj(alpha(c))^j, conj(alpha(mu))^j) min rel err gamma=0.282, cusp=0.297, dual=0.384
+[PASS] D03.5 L1600 dual length: reflected s-dependence is [(2pi)^4 N(mu) X/N(c)^2]^s, base independent of j | d/ds log(prefactor) = log(16*pi**4*N_l*N_mu/N_c**2); invariance under (mu,c)->(3mu,sqrt3 c): True; falsifier (2mu, c) changes value
+[INFO] t03_mellin.py: 19s
+[PASS] D04.1 L1591 R_1, R_2: R_1 = prod Gamma(1+t+-1/6)/Gamma(1-t+-1/6), R_2 = Gamma(4/3+t)Gamma(5/3+t)/(Gamma(4/3-t)Gamma(5/3-t)) | parameters j=1 [Fraction(5, 6), Fraction(7, 6)], j=2 [Fraction(4, 3), Fraction(5, 3)]; falsifier R_3 != table CM kernel
+[PASS] D04.2 L1592 holomorphy: rightmost pole of R_j is t = 1/6-(j+1)/2 (a genuine simple pole), < -1/4 for j=1..40 | j=1: pole -5/6; j=2: pole -4/3; j=3: pole -11/6; falsifier: just left of the boundary R_j blows up like 1/eps
+[PASS] D04.3 L1593 kernel growth: |R_j(sigma+iu)|/(1+|u|)^(4 sigma) finite on j=1..6, sigma in [-1/4,3], u<=1e5, and -> 1 as u -> oo | sup ratio per j: 1:3.72, 2:18.5, 3:14.9, 4:169.0, 5:553.0, 6:2.3e+4; |ratio(u=1e7)-1| <= 7.2e-13; falsifier exponent 4sigma-0.2: ratio grows x3.93
+[PASS] D04.4 L1594 reflected weight: |V#_j(x)|/min(x^{1/4}, x^{-2}) bounded on x in [1e-8,1e8] and decreasing to 0 at both ends, j=1,2,3, Gaussian test V (partial: one V, one A) | max ratio=10.7, ratio at x=1e-8 and 1e8 <= 0.0025; falsifier x^((j+1)/2-1/6+0.1) violated at x=1e-8 (ratio 744.0)
+[PASS] D04.5 L1597 R_j(1): R_j(1) = (3j-4)(3j-2)(3j+2)(3j+4)/1296 exactly for j=1..60; ratio to j^4/16 -> 1 | limit=1; e.g. R_1(1)=-35/1296; falsifier /648 rejected
+[PASS] D04.6 L1606 Hecke gamma quotient: |Gamma(1-s+k/2)/Gamma(s+k/2)| / |t|^{1-2sigma} -> 1 at t=1e6 for k=0..8, six sigma | max |ratio-1|=1.62e-11; falsifier exponent 1-2sigma+k/2: min |ratio-1|=0.999
+[PASS] D04.7 L1615 Hankel kernel: Mellin transform of J_k at 2s equals 2^{2s-1}Gamma(s+k/2)/Gamma(1-s+k/2), k=0..4 | max rel err=1.27e-19; falsifier J_(k+1): min rel err=0.202
+[INFO] t04_kernels.py: 34s
+[PASS] D05.1 L1542 strips: critical strip k/2<Re s<k/2+1; boundaries k/2+7/8 (19/8 for k=3, 15/8 for k=2), centres 2 and 3/2; 11/12 analogue k/2+11/12 | falsifier: weight/2+7/8 = 23/8 != 19/8
+[PASS] D05.2 L1559 weight: conj(alpha(cn^3)) psi(cn^3) = conj(alpha(cn^3))^{k+1} eta(cn^3); k=0 gives conj(alpha) eta (L1630); conjugate target leaves alpha^{k-1} (L1638) | max err=3.7e-16; falsifier exponent k: 2.00
+[PASS] D05.3 L1608 Poisson transform: FT of zbar^k e^{-pi v|z|^2} = i^{-k} v^{-1-k} xibar^k e^{-pi|xi|^2/v} (k=0..5), = 0 at xi=0 for k>=1 | max |ratio - i^-k|=1.42e-16; falsifier v^-k: ratio varies by 0.952
+[PASS] D05.4 L1613 co-oriented classes: mu conj(alpha)^k gamma_{-1} = chi(-1) G^{-1} conj(alpha)^{k+1} gamma_2 (k=0..4, 40 squarefree n); cube factor conj(alpha(b))^{3(k+1)} | 200 checks, max err=3.1e-15, cube err=2.3e-15; falsifiers conj(alpha)^k: 2.00, conj(alpha(b))^(3k): 2.00
+[PASS] D05.5 L1616 angular main term: int_C alpha(z)^{+-k} f(|z|^2) dxdy = 0 for k=1..6 (f = e^{-r^2}(1+r^2)), midpoint grids h=0.01, 0.005 | max |int| (k!=0): 3.2e-04 (h=0.01) -> 8.0e-05 (h=0.005), O(h^2) -> 0; falsifier k=0 gives 6.283185 = 2 pi
+[PASS] D05.6 L1622 kappa: kappa = 2*(7/8) - 1 = 3/4 (OpenAI's finite-order 7/8 theorem) | falsifier 2*(11/12)-1 = 5/6
+[PASS] D05.7 L1635 vertical shift: L(s, psi N^{it}) = L(s-it, psi) (truncated Euler products, psi = alpha^2 chi(4), s=2.5+0.3i, t=1.7) | err=1.65e-24; falsifier L(s+it): 0.0026
+[PASS] D05.8 L1692 term count: 5184 = N(72) = number of h_0 mod L for L = 72 (OAI78 counts terms by h_0 mod L and active subsets: N(L) 2^{|P|}); lambda^2 h_0/72 = -h_0/24 so c_0 | 24 = 8|lambda|^2 (= -8 lambda^2) | N(72)=5184; falsifier L=36 gives 1296. |C| <= 1/81 is OAI78's |zeta| <= 1/81 (cited)
+[PASS] D05.9 L1751 (b^3/k)_2: (b^3/k)_2 = (b/k)_2 (quadratic symbol = sextic symbol cubed), 400 random pairs | mismatches=0/400; falsifier (b^2/k)_2: 192 mismatches
+[PASS] D05.10 L1585 cusp scalar phases: (-1)^j conj(alpha(lambda^-3))^{-j} = -i (j=1), -1 (j=2): matches the table's -(i/81)conj(alpha(c))^2 and -(1/81)conj(alpha(c))^4 (line 1226); conj(alpha(lambda^-3))^2 = -1 (line 748) | conj(alpha(lambda^-3))=-0.000-1.000j; falsifier (-1)^j alone gives -1 for j=1, not -i
+[INFO] t05_misc.py: 4s
+[PASS] D06.1 L1648 Sym^m factorization: local Euler polynomials agree at all good p <= 600, m = 1..8, d in [1, 2, -3, 7, 5, -11, 17] | 5960 (d,p,m) cases, max coefficient error=1.2e-12; falsifiers chi_-3^(m/2+1): 12.00, psi*chi(2): 120.01
+[PASS] D06.2 L1655 last factor: chi_{-3}^{m/2} is trivial (zeta, pole at s=1) iff m = 0 mod 4, and chi_{-3} iff m = 2 mod 4 | falsifier (opposite parity) rejected
+[PASS] D06.3 L1645 normalization: Sym^m eigenvalues of E_d at p have absolute value p^{m/2}; dividing by p^{m/2} (shift s -> s+m/2) makes them unimodular | |alpha_p|^2 = 7.000000 = p = 7; falsifier: unnormalized |alpha_p| != 1
+[INFO] t06_sympowers.py: 1s
+[PASS] D07.1 L1711 tau table: theta from the tau table is invariant under z->z+1 and (z,v)->(-zbar,v)/(|z|^2+v^2) (E in SL_2(Z)) | max rel err=3.6e-16 over 3 points; falsifier zeta_9<->zeta_9^-1 in rows 2,3: 3.30e-03
+[PASS] D07.2 L1739 t_+, t_- (cusps): theta((1 0; omega 1)w) = sum t_+(mu) vK ce(mu z), theta((1 0; omega^2 1)w) = sum t_-(mu) vK ce(mu z), no constant term | rel err +:3.7e-15, -:4.8e-15; falsifiers: t_+ <-> t_- 9.22e-01, zeta_9 <-> zeta_9^-1 in tau_1 1.45e-01
+[PASS] D07.3 L1741 d_sigma: d_s(l) = conj(t_s(-l)) are the coefficients of the conjugated theta functions at the three cusps | max rel err=4.2e-15; falsifier d_s(l) = t_s(-l) (no conjugation): 9.23e-01
+[PASS] D07.4 L1748 support/bound: every nonzero d_s(l), N(9l) <= 3000, has l = u lambda^m n b^3 with m >= -4, n sf primary, and |d_s| <= 27 3^{m/6}|b| | 7532 nonzero coefficients, violations=0, bad support=0, max |d|/bound=1.000000 (attained: row 4); falsifier 9*3^(m/6)|b|: 7532 violations
+[PASS] D07.5 L1706 symbol at -2 / |g|: |g(r,c)| = |c| for all squarefree primary c (incl. even), N(c) <= 300, four twists r; (x/(-2))_3 = x mod 2 | 90 moduli, |g| != |c| in 0 cases; brute force = fast prime Gauss sums (err 2.8e-14); falsifier conj symbol at -2 breaks automorphy: 8.49e-06 (numerical noise 4e-16)
+[PASS] D07.6 L730 cross-check eq.(theta-coeff): row 4 of the tau table gives d_0(lambda^-3 n b^3) = 3^{5/2}|b| conj((lambda/n)_3) gamma_2(n) | max rel err=2.8e-15 (26 n x 4 b); falsifier (lambda/n)_3 unconjugated: 1.73
+[PASS] D07.7 L1724 transcription vs DR: tau_1, tau_2 and t_+ = DR d_10, t_- = DR d_19 agree with DR's (5.13)-(5.14) and Appendix rows 10, 19 (all 9l with N <= 1500) | max |difference| = 9.6e-15; tau table identical to DR (5.7) by inspection (and D07.1)
+[PASS] D07.8 L1696 absolute convergence: majorant sum |d_s(l)| N(l)^-1/2 min(y^1/4, y^-2): dyadic tail pieces decay geometrically (Y = 3000/81) | dyadic pieces 7.8e-03 -> 2.7e-03 (ratio 0.35, expected ~2^-1.5); falsifier (no decaying weight): pieces grow 5242 -> 7535. Partial: finite range
+[INFO] t07_theta_appendix.py: 39s
+[PASS] D08.1 L1585 reflection j=1: single-cusp theta reflection with 1 derivative(s): sign (-1)^j, conj(alpha(C))^(2j), alpha(l)^j, kernel R_1, argument (2pi)^4 N(l)X/N(C)^2 | worst rel err 5.5e-09 over 41 cusps; controls (largest error over cusps; a wrong variant must fail somewhere): R_2 5.31, conj(alpha(C))^4 2.00, sign flipped 2.00
+[PASS] D08.2 L1681 reflection j=2: single-cusp theta reflection with 2 derivative(s): sign (-1)^j, conj(alpha(C))^(2j), alpha(l)^j, kernel R_2, argument (2pi)^4 N(l)X/N(C)^2 [= structure of eq. (reflection)] | worst rel err 2.3e-08 over 41 cusps; controls (largest error over cusps; a wrong variant must fail somewhere): R_3 82.66, conj(alpha(C))^6 2.00, sign flipped 2.00
+[PASS] D08.3 L1585 reflection j=3: single-cusp theta reflection with 3 derivative(s): sign (-1)^j, conj(alpha(C))^(2j), alpha(l)^j, kernel R_3, argument (2pi)^4 N(l)X/N(C)^2 | worst rel err 3.5e-09 over 41 cusps; controls (largest error over cusps; a wrong variant must fail somewhere): R_4 8.59, conj(alpha(C))^8 2.00, sign flipped 2.00
+[INFO] t08_reflection_j.py: 198s
+
+SUMMARY: 57 PASS, 0 FAIL

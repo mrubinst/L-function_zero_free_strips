@@ -1,0 +1,282 @@
+[
+ {
+  "label": "eq:d170",
+  "number": "E.1",
+  "kind": "D",
+  "what": "Definition $\\varphi=\\overline\\alpha$; complete multiplicativity on 3721 pairs of primary elements and $|\\varphi|=1$ checked; falsifier (non-primary associate) fails",
+  "script": "displays_2026-10-13/t8/t8_coefficients.py T8.1",
+  "result": "definition; PASS (max err 5e-16)"
+ },
+ {
+  "label": "eq:s4-M",
+  "number": "E.2",
+  "kind": "R",
+  "what": "First line of eq:d199; equals OAI78 L9233 with $\\alpha(n)^\\epsilon$ inserted (TeX compare); implemented in s4 S4.6, S4.7",
+  "script": "displays_2026-10-13/t8/t8_tex_compare.py",
+  "result": "see eq:d199"
+ },
+ {
+  "label": "eq:d171",
+  "number": "E.3",
+  "kind": "R",
+  "what": "Second line of eq:d199; equals OAI78 L9241-9243 verbatim (TeX compare); implemented in s4 S4.6",
+  "script": "displays_2026-10-13/t8/t8_tex_compare.py",
+  "result": "see eq:d199"
+ },
+ {
+  "label": "eq:d172",
+  "number": "E.4",
+  "kind": "C",
+  "what": "Identical to the hypotheses of OAI78 lem:marked (L9254); exact check that the MS application $m=1$, $r=1/(1+\\vartheta)$ satisfies them",
+  "script": "displays_2026-10-13/t8/t8_tex_compare.py; displays_2026-10-13/t8/t8_exponents.py EX1",
+  "result": "checked against source; application holds (exact)"
+ },
+ {
+  "label": "eq:s4-marked",
+  "number": "E.5",
+  "kind": "R",
+  "what": "Restates eq:cm-inverse (= OAI78 old-eq:4.1 with $\\alpha^\\epsilon$); size check: $\\sum|M_uQ_u|^2/Z^m\\le0.29$ for $Z^m\\le6\\cdot10^4$, both signs, one slot",
+  "script": "displays_2026-10-13/t8/t8_tex_compare.py; displays_2026-10-13/t8/t8_size_checks.py SZ3",
+  "result": "see eq:cm-inverse; size check: ratio 0.03-0.29"
+ },
+ {
+  "label": "eq:s4-a",
+  "number": "E.6",
+  "kind": "D",
+  "what": "Definition; equals $\\varphi$ times OAI78 L7293 coefficient (TeX compare); both forms and $|a|=1$ checked on 400 squarefree $n$",
+  "script": "displays_2026-10-13/t8/t8_tex_compare.py; displays_2026-10-13/t8/t8_coefficients.py T8.2",
+  "result": "definition; PASS (max err 9e-16)"
+ },
+ {
+  "label": "eq:s4-E",
+  "number": "E.7",
+  "kind": "D",
+  "what": "Definition; equals OAI78 eq:canonical-energy with $a(n)$ of eq:s4-a (TeX compare); without $w$, mark, puncture it is eq:energy",
+  "script": "displays_2026-10-13/t8/t8_tex_compare.py",
+  "result": "definition"
+ },
+ {
+  "label": "eq:s4-T",
+  "number": "E.8",
+  "kind": "R",
+  "what": "Identical to eq:s1-marked-completion; OAI78 eq:marked-completion with $\\overline\\alpha^2,\\overline\\alpha^6$ (TeX compare); evaluated in s4 S4.5",
+  "script": "displays_2026-10-13/t8/t8_tex_compare.py; phase2_2026-10-12/s4/s4_checks.py S4.5",
+  "result": "see eq:s1-marked-completion"
+ },
+ {
+  "label": "eq:s4-S1",
+  "number": "E.9",
+  "kind": "E",
+  "what": "Pointwise at all 366 squarefree primary $u$ with $\\N(u)\\le1300$ (157 composite); falsifier (zeta cubic class) fails",
+  "script": "phase2_2026-10-12/s4/s4_checks.py S4.1 (rerun)",
+  "result": "PASS (max err 2.5e-15)"
+ },
+ {
+  "label": "eq:s4-S2",
+  "number": "E.10",
+  "kind": "E",
+  "what": "Pointwise at the same 366 $u$; falsifier (side 2 without conjugation) fails",
+  "script": "phase2_2026-10-12/s4/s4_checks.py S4.1 (rerun)",
+  "result": "PASS (max err 1.6e-15)"
+ },
+ {
+  "label": "eq:s4-S3",
+  "number": "E.11",
+  "kind": "E",
+  "what": "Pointwise at the same 366 $u$; falsifier ($G$ for $\\overline G$) fails",
+  "script": "phase2_2026-10-12/s4/s4_checks.py S4.1 (rerun)",
+  "result": "PASS (max err 1.8e-15)"
+ },
+ {
+  "label": "eq:s4-S4",
+  "number": "E.12",
+  "kind": "E",
+  "what": "Pointwise at the same 366 $u$; falsifier (zeta Moebius class $\\mu$) fails",
+  "script": "phase2_2026-10-12/s4/s4_checks.py S4.1 (rerun)",
+  "result": "PASS (max err 2.5e-15)"
+ },
+ {
+  "label": "eq:s4-S5",
+  "number": "E.13",
+  "kind": "E",
+  "what": "Pointwise at the same 366 $u$; falsifier (class $\\overline\\alpha^2\\gamma_2$) fails",
+  "script": "phase2_2026-10-12/s4/s4_checks.py S4.2 (rerun)",
+  "result": "PASS (max err 1.8e-15)"
+ },
+ {
+  "label": "eq:d173",
+  "number": "E.14",
+  "kind": "E",
+  "what": "20 random fibrewise identities (25 fibres) survive the twist $\\varphi(n_1)\\overline{\\varphi(n_2)}$; a globally true, non-fibrewise identity fails",
+  "script": "displays_2026-10-13/t8/t8_coefficients.py T8.5",
+  "result": "PASS (max err 9e-15)"
+ },
+ {
+  "label": "eq:s4-inversion",
+  "number": "E.15",
+  "kind": "E",
+  "what": "Complete finite sums in double precision, $X=900,3000$, with $\\nu$, puncture, two-slot mark; falsifiers $\\overline\\alpha^3$ and unshifted mark fail",
+  "script": "phase2_2026-10-12/s4/s4_checks.py S4.5 (rerun); displays_2026-10-13/t8/t8_tex_compare.py",
+  "result": "PASS (rel err 7.1e-16)"
+ },
+ {
+  "label": "eq:s4-beta",
+  "number": "E.16",
+  "kind": "E",
+  "what": "Reopened completion in $(h,h')$ dyads equals the block with $\\beta^{\\rm CM}=\\overline{\\alpha(b)}^3\\beta$, one $\\beta$ for 3 rows; $X=3000$, $2\\cdot10^5$",
+  "script": "displays_2026-10-13/t8/t8_beta_block.py T8.8",
+  "result": "PASS (rel err 2.7e-15)"
+ },
+ {
+  "label": "eq:d174",
+  "number": "E.17",
+  "kind": "E",
+  "what": "3000 random $n_a=\\mathfrak A_aCt'x_a$; falsifier with different $C$ on the two sides fails",
+  "script": "displays_2026-10-13/t8/t8_coefficients.py T8.3",
+  "result": "PASS (max err 8e-16)"
+ },
+ {
+  "label": "eq:s4-Pa",
+  "number": "E.18",
+  "kind": "D",
+  "what": "Equals OAI78 eq:inverse-first-polynomial with $\\overline{\\alpha(x)}$ inserted (TeX compare); its class $\\mu\\overline\\alpha$ is that of eq:s4-S1",
+  "script": "displays_2026-10-13/t8/t8_tex_compare.py",
+  "result": "definition"
+ },
+ {
+  "label": "eq:s4-a0",
+  "number": "E.19",
+  "kind": "E",
+  "what": "Switch $\\mu\\overline\\alpha\\nu\\to a_0\\nu\\overline\\vartheta$ with ray factor expanded over $(\\OO/4)^\\times$, 3 twists, 52 pairs; equals OAI78 L10807 with $\\overline\\alpha^2$",
+  "script": "displays_2026-10-13/t8/t8_signal_init.py T8.6; displays_2026-10-13/t8/t8_tex_compare.py",
+  "result": "PASS (max err 3.3e-15)"
+ },
+ {
+  "label": "eq:s4-child",
+  "number": "E.20",
+  "kind": "D",
+  "what": "Equals OAI78 eq:canonical-child-polynomial with $\\overline{\\alpha(n)}^2$ (TeX compare); same coefficient class as eq:s4-a",
+  "script": "displays_2026-10-13/t8/t8_tex_compare.py",
+  "result": "definition"
+ },
+ {
+  "label": "eq:s4-overlap",
+  "number": "E.21",
+  "kind": "E",
+  "what": "Summed over assignments, $\\epsilon=\\pm1$, 3 rows (S4.6); pointwise in 4000 cases (T8.12); falsifier without $\\overline{\\alpha(p)^\\epsilon}$ fails",
+  "script": "phase2_2026-10-12/s4/s4_checks.py S4.6 (rerun); displays_2026-10-13/t8/t8_coefficients.py T8.12",
+  "result": "PASS (max err 9e-15)"
+ },
+ {
+  "label": "eq:s4-R0",
+  "number": "E.22",
+  "kind": "D",
+  "what": "OAI78 eq:initial-residual-polynomial times $\\varphi(c)$ (TeX compare); orientation step checked numerically for both $\\epsilon$; anti-oriented falsifier fails",
+  "script": "displays_2026-10-13/t8/t8_tex_compare.py; displays_2026-10-13/t8/t8_coefficients.py T8.4",
+  "result": "definition; orientation step PASS (max err 2.5e-16)"
+ },
+ {
+  "label": "eq:s4-Astar",
+  "number": "E.23",
+  "kind": "E",
+  "what": "Initialization switch with $\\nu_*=\\nu_0\\overline\\vartheta$ over 12 ray characters, 3 twists; extraction identity (14580 cases); 4 falsifiers fail",
+  "script": "displays_2026-10-13/t8/t8_signal_init.py T8.6, T8.7; displays_2026-10-13/t8/t8_tex_compare.py",
+  "result": "PASS (max err 7.8e-15)"
+ },
+ {
+  "label": "eq:s4-sixth",
+  "number": "E.24",
+  "kind": "E",
+  "what": "$D=400$, $\\epsilon=\\pm1$, three $(u,a)$, one sharing a prime; falsifier without $\\alpha(d)^\\epsilon$ fails",
+  "script": "phase2_2026-10-12/s4/s4_checks.py S4.7 (rerun); displays_2026-10-13/t8/t8_tex_compare.py",
+  "result": "PASS (rel err 6.5e-16)"
+ },
+ {
+  "label": "eq:d190",
+  "number": "G.1",
+  "kind": "C",
+  "what": "Both bounds verbatim in OAI78 (L6587-6588, L6692), $\\omega=\\Delta_1/2$ (L6606), $C_{\\rm I}$ (L5547); $C_{\\rm I}(11/12)=1/4$ exactly",
+  "script": "displays_2026-10-13/t8/t8_tex_compare.py; displays_2026-10-13/t8/t8_exponents.py EX2",
+  "result": "checked against source"
+ },
+ {
+  "label": "eq:d191",
+  "number": "G.2",
+  "kind": "D",
+  "what": "Definition of $\\psi\\in\\mathcal F_{\\rm CM}$ as in Theorem thm:78; implemented as $\\overline\\alpha\\,\\overline\\nu$ in s6-T5 and test T8.9",
+  "script": "phase2_2026-10-12/s6/s6_margins_and_rows.py s6-T5",
+  "result": "definition"
+ },
+ {
+  "label": "eq:d192",
+  "number": "G.3",
+  "kind": "D",
+  "what": "Definition; s6 and t8 tests use $\\nu$ of order 12 mod $4+3\\omega$, zero off primary elements prime to $S$",
+  "script": "phase2_2026-10-12/s6/s6_twisted_paired.py",
+  "result": "definition"
+ },
+ {
+  "label": "eq:s6-euler",
+  "number": "G.4",
+  "kind": "E",
+  "what": "Checked at 300 primes (holds by construction); infinity type $\\overline z/|z|$ checked; falsifier (type $\\alpha$) fails",
+  "script": "phase2_2026-10-12/s6/s6_margins_and_rows.py s6-T5 (rerun)",
+  "result": "PASS (exact)"
+ },
+ {
+  "label": "eq:d193",
+  "number": "G.5",
+  "kind": "D",
+  "what": "Definition; equals OAI1112 L673 with $\\alpha(n)$ inserted (TeX compare); implemented in s6-T1 and t8 SZ1",
+  "script": "displays_2026-10-13/t8/t8_tex_compare.py",
+  "result": "definition"
+ },
+ {
+  "label": "eq:d194",
+  "number": "G.6",
+  "kind": "A",
+  "what": "Size check $D=100$-$6400$, $\\vartheta=1/10$: sum$/D^{2.1}\\in[0.25,0.29]$, sum/diagonal $\\in[0.93,0.99]$; = OAI1112 eq:ms; proved after prop:s6-ms",
+  "script": "displays_2026-10-13/t8/t8_size_checks.py SZ1",
+  "result": "size check: ratio at most 0.29"
+ },
+ {
+  "label": "eq:d195",
+  "number": "G.7",
+  "kind": "E",
+  "what": "Literal sum over the 144 characters of $\\mathfrak G_S$, $\\nu$ of order 12, 60 coprime pairs; 3 falsifiers fail",
+  "script": "phase2_2026-10-12/s6/s6_twisted_paired.py s6-T2a (rerun)",
+  "result": "PASS (max err 1.2e-14)"
+ },
+ {
+  "label": "eq:s6-bound",
+  "number": "G.8",
+  "kind": "A",
+  "what": "Size check: $|A_1^\\nu(D)|\\le0.57D^{1/2}$ at 120 $D\\in[10^2,10^6]$; extraction exponents exact; proved in proof of thm:s6-1112",
+  "script": "displays_2026-10-13/t8/t8_size_checks.py SZ2; displays_2026-10-13/t8/t8_exponents.py EX4",
+  "result": "size check: $|A_1|/D^{11/12}\\le0.07$"
+ },
+ {
+  "label": "eq:d196",
+  "number": "G.9",
+  "kind": "E",
+  "what": "Euler-product coefficients agree for $\\N(n)\\le4000$; values at two $s$; Mellin side by quadrature; falsifiers $\\psi$, $\\widehat W(-s)$ fail",
+  "script": "displays_2026-10-13/t8/t8_euler_mellin.py T8.9-T8.11",
+  "result": "PASS (max err 3e-15)"
+ },
+ {
+  "label": "eq:d197",
+  "number": "G.10",
+  "kind": "R",
+  "what": "eq:s4-M with $\\nu=\\theta$, $Z^r=D$ (TeX compare); $\\epsilon=-1$ is $M_r$ of eq:d080",
+  "script": "displays_2026-10-13/t8/t8_tex_compare.py",
+  "result": "see eq:s4-M"
+ },
+ {
+  "label": "eq:d198",
+  "number": "G.11",
+  "kind": "R",
+  "what": "eq:s1-cm-completed at $M=1$: $\\max(M,2M-1)=1$ (exact); stated as prop:cm-completed with $Q=Z$",
+  "script": "displays_2026-10-13/t8/t8_exponents.py EX3",
+  "result": "see eq:s1-cm-completed"
+ }
+]

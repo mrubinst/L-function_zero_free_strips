@@ -1,0 +1,24 @@
+RESULT|B09|PASS|err=3.72e-14 tol=1e-09; |e(a+b omega)-1| <= 3.7e-14 for |a|,|b|<=30; dual lattice of O under e(zw) is O (5329 grid points of (1/12)O)
+      falsifier for B09 [exp(2 pi i Im z) on O]: err=0.817 -> fails as required
+RESULT|B10|PASS|err=9e-22 tol=1e-12; Phi(t)=exp(-pi t): Phi^(N w)=(2/sqrt3)exp(-4 pi N(w)/3), error 8.5e-22; rotation invariance 5.3e-23
+      falsifier for B10 [no factor 2/sqrt3]: err=0.0897 -> fails as required
+RESULT|B12|PASS|err=0 tol=0; 10 non-squarefree primary n (N<=400): each has a repeated prime and mu_K=0; such columns contribute 0
+RESULT|B13|PASS|err=0 tol=0; 400 random squarefree pairs
+      falsifier for B13 [non-squarefree n1 = pi^2: (g, z1) = 1 fails]: err=1 -> fails as required
+RESULT|B14|PASS|err=2.29e-16 tol=1e-12; 1200 (n1, n2, u) triples
+      falsifier for B14 [indicator dropped (u divisible by a prime of g)]: err=1 -> fails as required
+RESULT|B15|PASS|err=0 tol=0; 99 local components of psi over 46 coprime pairs are all nontrivial
+RESULT|B16|PASS|err=8.88e-16 tol=1e-12; |gamma(psi)|=1 for 46 coprime pairs (N(z1 z2)<=3000)
+RESULT|B18|PASS|err=0 tol=0; chi_n(0)=0 for n!=1 and chi_1(0)=1, so psi(0)!=0 iff z1=z2=1 (60 squarefree n)
+RESULT|B17|PASS|err=5.14e-15 tol=1e-09; 10 cases (8 nondegenerate with psi trivial on units, incl. g with 1-2 primes, inert g, z1=1, z2=1, z1=z2=1; |LHS| = 2.29, 12, 5.68, 8.66, 0.758, 2.63, 19, 16.3, 3.2e-15, 8.03e-16): max rel. err 5.1e-15; end to end CM smoothed mean square (D=40, H=60, 11 columns, complex W): direct 0.089785 vs dual, rel. err 4.9e-15
+      falsifier for B17 [end to end with alpha(n1)conj(alpha(n2))]: err=0.0211 -> fails as required
+      falsifier for B17 [terms e0 != 1 dropped]: err=0.572 -> fails as required
+      falsifier for B17 [psi(h) instead of conj(psi(h))]: err=0.83 -> fails as required
+      falsifier for B17 [N(e0)^2 in place of N(e0) in Phi^ and weight]: err=3.95 -> fails as required
+RESULT|B11|PASS|err=0 tol=0; D=40, H=60: M(D,H)=0.3243 <= sum_u e^(1-N(u)/H)|A_u|^2 = 0.8467 (u=0 included)
+      falsifier for B11 [Phi(t)=e^{-t} (not >= 1 on [0,1]): M - smooth sum]: err=0.0128 -> fails as required
+RESULT|B19|PASS|err=0 tol=0; diagonal pair g=pi7*pi13, H=20: nonzero-frequency mass 3.41 with the Gaussian Phi NOTE: with supp Phi^ in [0,C] and N(e0)<=N(g)<=bD, a diagonal h!=0 needs H<=C b D, i.e. D^theta<=Cb for H=D^(1+theta): these terms exist only for bounded D; the hedged 'can' is correct but vacuous asymptotically
+RESULT|B20|PASS|err=0 tol=0; N(e0)N(z1z2)/H <= b^2 D^2/(H N(g)) symbolically at the extreme and on 100000 random sets
+      falsifier for B20 [claimed D^2/(H N(g)^2) at N(e0)=N(g)]: err=1e+03 -> fails as required
+RESULT|B21|PASS|err=0 tol=0; D^2/H < D for all integers 1<=D<300, D<H<D+40 (exact)
+      falsifier for B21 [H = D (not H > D)]: err=49 -> fails as required

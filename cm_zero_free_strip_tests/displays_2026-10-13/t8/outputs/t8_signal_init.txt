@@ -1,0 +1,7 @@
+RESULT|T8.6-pre|PASS|err=1.6e-15 tol=1e-10; G(n) depends only on n mod 4 (299 squarefree n): the ray group used below
+RESULT|T8.6|PASS|err=3.28e-15 tol=1e-10; eq:s4-Astar / eq:s4-a0: m(z1)conj m(z2) gamma(conj chi_z1 chi_z2) = sum_theta Ghat(theta) A_*(z1)conj A_*(z2), A_* = conj(alpha)^2 gamma_2 nu_0 conj(theta); 3 twists nu_0 x 52 coprime pairs (incl. z = 1)
+      falsifier for T8.6 [nu_* = nu_0 theta]: err=1.73 -> fails as required
+      falsifier for T8.6 [zeta class conj(alpha) gamma_2 nu_*]: err=2 -> fails as required
+      falsifier for T8.6 [Ghat from G(t^-1)]: err=1.73 -> fails as required
+RESULT|T8.7|PASS|err=7.81e-15 tol=1e-10; eq:s4-Astar extraction (OAI78 eq:initial-common-extraction with A_*): 14580 cases, 3 ray summands theta
+      falsifier for T8.7 [without the CRT factor chi_n(s)^4]: err=1.73 -> fails as required

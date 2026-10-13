@@ -1,0 +1,25 @@
+RESULT|B22|PASS|err=1.74e-15 tol=1e-12; 500 random (n, x): chi_n(x)^2 = (x/n)_3 (Euler criterion with exponent (N-1)/3)
+      falsifier for B22 [chi_n(x)^4]: err=1.73 -> fails as required
+RESULT|B23|PASS|err=1.86e-15 tol=1e-11; 150 squarefree n (53 composite), N(n)<=529; vectorized Gauss sums checked against brute force (2.6e-15)
+      falsifier for B23 [Moebius sign dropped]: err=2 -> fails as required
+      falsifier for B23 [alpha in place of conj(alpha)]: err=2 -> fails as required
+RESULT|B24|PASS|err=7.77e-16 tol=1e-12; |G(n)| = 1 for 150 squarefree n
+RESULT|B25|PASS|err=0 tol=0; two squarefree representatives in each of the 432 classes; max |G(r1)-G(r2)| = 1.7e-15; finer: G depends only on n mod 4 (12 classes, 0 violations)
+      falsifier for B25 [gamma_2 as a class function mod 72]: err=2 -> fails as required
+RESULT|B26|PASS|err=2.21e-12 tol=1e-08; |frak G| = 432; 432 characters: homomorphism error 1.1e-15, orthonormality 2.8e-16
+RESULT|B27|PASS|err=2.53e-15 tol=1e-10; 73 coprime squarefree pairs (incl. z=1), literal sum over the 432 characters xi
+      falsifier for B27 [zeta coefficients conj(alpha) gamma_2 xi]: err=2 -> fails as required
+      falsifier for B27 [c_xi with G(t) instead of G(t^{-1})]: err=1.73 -> fails as required
+      falsifier for B27 [z1, z2 swapped on the right]: err=2 -> fails as required
+RESULT|B28|PASS|err=4.44e-16 tol=1e-10; CM LHS = conj(alpha(z1))alpha(z2) x zeta LHS; conj(alpha(g z1))alpha(g z2) = conj(alpha(z1))alpha(z2)
+RESULT|B73|PASS|err=2.19e-15 tol=1e-10; 73 pairs, xi = character #7: Moebius coefficients mu_K conj(alpha) xi1 after the reverse identity
+      falsifier for B73 [b = mu_K alpha xi1]: err=2 -> fails as required
+RESULT|B29|PASS|err=1.59e-15 tol=1e-12; 300 random (n, e0, h) with (e0, n) = 1
+      falsifier for B29 [chi_n(h e0)]: err=1.73 -> fails as required
+RESULT|B30|PASS|err=3.83e-15 tol=1e-10; 71 coprime pairs (v0, n), trivial and nontrivial xi
+      falsifier for B30 [chi_n(v0)^2]: err=1.73 -> fails as required
+RESULT|B31|PASS|err=4.58e-15 tol=1e-12; 300 random (e0, v0, h): exact identity in O and at the level of chi_n
+      falsifier for B31 [f = e0 v0^2]: err=1.73 -> fails as required
+RESULT|B32|PASS|err=0 tol=0; gv=bf, N(g)/N(e0)=N(b), mu(f)=mu(e0)mu(v0), Phi^ argument -> H N(k)/(N(f)^2N(m1)N(m2)) on random prime data; N(k) <= C b0^2 D^2/(H N(b)^2) and Sigma = XF = D/B (sympy)
+      falsifier for B32 [rows << D^2/(H B) (one power of B)]: err=1 -> fails as required
+RESULT|B33|PASS|err=0 tol=0; sum_{N(b)~B}(H N(b)/D^2)(XF)^2 = H, so M_D << H D^eps and M = D M_D << D^(2+theta+eps) (sympy); the smooth-kernel separation and the dyadic/log losses are not tested

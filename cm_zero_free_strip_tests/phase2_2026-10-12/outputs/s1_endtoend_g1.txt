@@ -1,0 +1,32 @@
+V = gauss  pi = (1, 3)
+prime Gauss sums 13851 67.9
+squarefree c: 52912 71.8
+translates: 252  h0 classes with phihat != 0: 36 71.9
+cusp types (sigma, N(c)): {('+', 1): 3, ('+', 4): 9, ('+', 7): 18, ('+', 28): 54, ('-', 1): 3, ('-', 4): 9, ('-', 7): 18, ('-', 28): 54, ('0', 1): 3, ('0', 4): 9, ('0', 7): 18, ('0', 28): 54}
+j=0: T direct 0.011927846536+0.032680032216j
+     ungrouped 0.011927846536+0.032680032216j rel.err 1.70e-12
+     grouped   0.011927846536+0.032680032216j rel.err 1.69e-12   max|kappaF*vartheta(h_pi) - (h_pi=1)| = 2.2e-12
+     controls: {'a2': '2.03e+00', 'zeta': '1.41e+00', 'k1': '4.28e+00', 'Bj': '1.75e+00', 'eps1': '1.79e+00'} 89.6
+j=1: T direct -0.106762326734-0.002618426937j
+     ungrouped -0.106762326734-0.002618426937j rel.err 3.71e-13
+     grouped   -0.106762326734-0.002618426937j rel.err 3.63e-13   max|kappaF*vartheta(h_pi) - (h_pi=1)| = 2.2e-12
+     controls: {'a2': '1.96e+00', 'zeta': '1.41e+00', 'k1': '2.16e+00', 'Bj': '3.78e+00', 'eps1': '2.00e+00'} 91.1
+j=2: T direct -0.084642142944+0.119032519988j
+     ungrouped -0.084642142944+0.119032519988j rel.err 3.23e-13
+     grouped   -0.084642142944+0.119032519988j rel.err 3.23e-13   max|kappaF*vartheta(h_pi) - (h_pi=1)| = 2.2e-12
+     controls: {'a2': '1.96e+00', 'zeta': '1.41e+00', 'k1': '7.16e-01', 'Bj': '3.08e+00', 'eps1': '1.73e+00'} 92.7
+j=3: T direct 0.177156168398+0.150612941109j
+     ungrouped 0.177156168398+0.150612941109j rel.err 1.12e-13
+     grouped   0.177156168398+0.150612941109j rel.err 1.11e-13   max|kappaF*vartheta(h_pi) - (h_pi=1)| = 2.2e-12
+     controls: {'a2': '1.96e+00', 'zeta': '1.41e+00', 'k1': '2.79e+00', 'Bj': '4.67e-01', 'eps1': '1.00e+00'} 94.2
+j=4: T direct -0.099475622832-0.035464544740j
+     ungrouped -0.099475622832-0.035464544740j rel.err 4.53e-13
+     grouped   -0.099475622832-0.035464544740j rel.err 4.54e-13   max|kappaF*vartheta(h_pi) - (h_pi=1)| = 2.2e-12
+     controls: {'a2': '1.96e+00', 'zeta': '1.41e+00', 'k1': '1.85e+00', 'Bj': '1.81e+00'} 95.7
+j=5: T direct -0.442452217282-0.274299866925j
+     ungrouped -0.442452217282-0.274299866925j rel.err 1.24e-13
+     grouped   -0.442452217282-0.274299866925j rel.err 1.23e-13   max|kappaF*vartheta(h_pi) - (h_pi=1)| = 2.2e-12
+     controls: {'a2': '1.96e+00', 'zeta': '1.41e+00', 'k1': '1.33e+00', 'Bj': '1.37e+00', 'eps1': '1.00e+00'} 97.3
+marked Q={pi}: T_Q direct 0.019554090563-0.032680032216j  via cor 0.019554090563-0.032680032216j  rel.err 8.22e-13  (control: active branch dropped 9.45e-01)
+worst rel.err 1.70e-12; worst kappa_F*vartheta spread 2.2e-12; marked 8.22e-13; smallest control error 4.67e-01
+PASS time 97.5

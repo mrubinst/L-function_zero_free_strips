@@ -1,0 +1,25 @@
+RESULT|B68|PASS|err=4.26e-15 tol=1e-12; X=4000, three (k, f, xi), 6 nontrivial cube indices h; |LHS| = 0.246, 0.0293, 0.331
+      falsifier for B68 [conj(alpha(h))^3 (zeta factor) with the CM T]: err=4.21 -> fails as required
+      falsifier for B68 [N(h)^{1/2} in place of N(h)]: err=6.44 -> fails as required
+RESULT|B69|PASS|err=1.62e-15 tol=1e-12; 908 primary b' (N<=3000): sum over primary divisors of mu_K = 1_{b'=1}; alpha and Psi completely multiplicative on 400 random pairs (not necessarily coprime): 5.6e-16, 1.1e-15
+RESULT|B70|PASS|err=0 tol=0; 77237 exact rational cases (H <= Sigma, N(h)^3 <= H_c^3, integer N(h)): H + H^2 F N(h)^3/X <= 2 Sigma and X/N(h)^3 >= 1 (with N(f) < 2F the completed bound is <= 3 Sigma)
+      falsifier for B70 [H_c^3 = min(X, X^2/H)]: err=1.75e+05 -> fails as required
+RESULT|B72|PASS|err=0 tol=0; 455878 exact (X, H, N(b)) cases: H^2 <= X never has N(b) > H_c with L_b > 1; every member of a nonempty supremum has N(b)^3 > X^2/H^2
+      falsifier for B72 [the same emptiness for H^2 > X (supremum nonempty in some cases)]: err=1.11e+05 -> fails as required
+RESULT|B74|PASS|err=0 tol=0; Y_{C,e0}|_{c_*=N(e0)=N(C)=1} = Sigma L F/H = Y_enlarged; Y_{C,e0}/(natural y-range) = c_* Sigma/(4 C_Phi v^2 L F) >= 1 when c_* >= 4 C_Phi v^2 and Sigma >= LF; weights H N(C)/(N(e0) L^2 F) and ell = L/(N(C)N(t)) match OAI (source lines 2236-2240)
+RESULT|B75|PASS|err=0 tol=0; N(h) ~ L*L/H and N(y) = N(h)N(f)^2 ~ L^2 F^2/H = Y_natural (sympy)
+RESULT|B76|PASS|err=0 tol=0; Y_enl/Y_nat = Sigma/(LF) (sympy); >= 1 since L = X/N(b)^3 <= X (50000 samples)
+RESULT|B77|PASS|err=0 tol=0; H'_nat = H' Sigma/(LF) = H/(F^2 R^2), equal to H at F = R = 1 (sympy)
+RESULT|B78|PASS|err=0 tol=0; (1+1_{pi|k'}) - 1_{pi|k'} - 1_{pi nmid k'} = 1_{pi|k'} for both values
+      falsifier for B78 [(1+1_{pi|k'}) - 1_{pi nmid k'} = 1_{pi|k'}]: err=1 -> fails as required
+RESULT|B80|PASS|err=0 tol=0; H'/Sigma' = H/(Sigma F R) (sympy); the three ranges hold on 100000 random sets with F, R >= 1 NOTE: the transfer estimate itself (OAI Prop. 5.4) is cited and untested
+RESULT|B81|PASS|err=0 tol=0; 79906 random admissible sets with a nonempty supremum: H' = H/(N(b)^3F^2) < H(H/XF)^2 <= H D^-2kappa (and the first step symbolically)
+      falsifier for B81 [H' <= H D^{-3 kappa}]: err=1.17e+04 -> fails as required
+RESULT|B82|PASS|err=0 tol=0; H'/Sigma' <= H/Sigma <= D^-kappa on the same 79906 sets (R >= 1)
+RESULT|B86|PASS|err=0 tol=0; (D^2/(H B^2))/(D/B) = D^-theta/B with H = D^(1+theta) (sympy)
+      falsifier for B86 [(D^2/(H B))/(D/B) = D^-theta/B]: err=1 -> fails as required
+RESULT|B87|PASS|err=0 tol=0; C D^-theta/B <= D^-theta/2 for D >= (C/B)^(2/theta) (20000 random theta in (0,0.1], C, B)
+RESULT|B79|PASS|err=0 tol=0; 100000 random sets with a retained r: H' >= F' >= 1 and child column scale X'/N(j) >= Sigma F/H >= 1 NOTE: the inequality chain is the zeta guide's (eq:retained, eq:childcolumn); the CM text only summarizes it
+RESULT|B83|PASS|err=0 tol=0; 50000 random chains: every step contracts by D^-2kappa and keeps H'/Sigma' <= D^-kappa; all end within ceil(C0/(2 kappa)) steps (longest 5); leaves {'no retained r': 29965, 'empty cube supremum': 20035}
+RESULT|B84|PASS|err=0 tol=1e-12; 6 lattice points with 0<N(k)<=1 (the units); X=200,F=1: E=0.334 <= 6(#f/F)(sum W)^2/X=13.4, E/X=0.00167; X=500,F=1: E=0.447 <= 6(#f/F)(sum W)^2/X=37.8, E/X=0.000893; X=300,F=7: E=0.266 <= 6(#f/F)(sum W)^2/X=13.7, E/X=0.000888
+RESULT|B85|PASS|err=0.166 tol=1; E(H,X,F)/(Sigma ||W||^2) with a = conj(alpha)^2 gamma_2: X=300,F=1: H=10: 0.00804, H=40: 0.043, H=160: 0.166; X=600,F=1: H=10: 0.00512, H=40: 0.0206, H=160: 0.0723; X=1200,F=1: H=10: 0.00234, H=40: 0.00961, H=160: 0.0363; X=300,F=7: H=10: 0.000787, H=40: 0.0031, H=160: 0.0121; control a(n)=1 at X=600,H=40: 0.0283 NOTE: analytic bound (D^eps, unspecified constant); sanity only

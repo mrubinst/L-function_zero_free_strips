@@ -1,0 +1,724 @@
+[
+ {
+  "labels": [
+   "eq:d032"
+  ],
+  "numbers": [
+   "7.1"
+  ],
+  "page": "15",
+  "line": 931,
+  "section": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "subsection": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "source": "\\begin{equation}\\label{eq:d032}\n e(z)=\\exp(4\\pi i\\operatorname{Im}z/\\sqrt3),\\qquad\n \\widehat\\Phi(\\N(w))=\\frac2{\\sqrt3}\\int_{\\mathbb C}\n                         \\Phi(|z|^2)e(-zw)\\,dx\\,dy.\n\\end{equation}",
+  "before": "Section~\\ref{subsec:b2-cm}.\nChoose a fixed smooth radial majorant $\\Phi(\\N(u)/H)$, nonnegative and\nat least one on $\\N(u)\\le H$, rapidly decreasing at infinity, with\ncompactly supported planar Fourier transform. Put",
+  "after": "The smooth mean square over all $u\\in\\OO$, including zero, is an upper\nbound for~\\eqref{eq:M}.\n"
+ },
+ {
+  "labels": [
+   "eq:d033"
+  ],
+  "numbers": [
+   "7.2"
+  ],
+  "page": "15",
+  "line": 941,
+  "section": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "subsection": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "source": "\\begin{equation}\\label{eq:d033}\n \\overline{\\chi_{n_1}(u)}\\chi_{n_2}(u)\n =\\ind_{(u,g)=1}\\psi(u),\\qquad\n \\psi=\\overline{\\chi_{z_1}}\\chi_{z_2}.\n\\end{equation}",
+  "before": "bound for~\\eqref{eq:M}.\n\nOnly squarefree columns occur. Write $n_i=gz_i$, where $g$ is their\nprimary greatest common divisor. Then $(z_1,z_2)=(g,z_1z_2)=1$, and",
+  "after": "This is a primitive character modulo $z_1z_2$. For a primitive character\nmodulo a primary $q$ (here $q=z_1z_2$), define the normalized finite Gauss sum\n\\begin{equation}\\label{eq:d034}"
+ },
+ {
+  "labels": [
+   "eq:d034"
+  ],
+  "numbers": [
+   "7.3"
+  ],
+  "page": "15",
+  "line": 948,
+  "section": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "subsection": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "source": "\\begin{equation}\\label{eq:d034}\n \\gamma(\\psi)=\\frac1{\\sqrt{\\N(q)}}\\sum_{x\\bmod q}\\psi(x)e(x/q).\n\\end{equation}",
+  "before": " \\psi=\\overline{\\chi_{z_1}}\\chi_{z_2}.\n\\end{equation}\nThis is a primitive character modulo $z_1z_2$. For a primitive character\nmodulo a primary $q$ (here $q=z_1z_2$), define the normalized finite Gauss sum",
+  "after": "Inclusion--exclusion for $(u,g)=1$, followed by planar Poisson summation~\\cite[Chapter~4]{IK04},\ngives the exact formula~\\cite[Lemma~4.2]{OAI1112}\n\\begin{equation}\\label{eq:poisson-exact}"
+ },
+ {
+  "labels": [
+   "eq:poisson-exact"
+  ],
+  "numbers": [
+   "7.4"
+  ],
+  "page": "15",
+  "line": 953,
+  "section": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "subsection": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "source": "\\begin{equation}\\label{eq:poisson-exact}\n\\begin{split}\n &\\sum_{u\\in\\OO}\\Phi(\\N(u)/H)\\ind_{(u,g)=1}\\psi(u)\\\\\n &\\quad=\\frac{H\\gamma(\\psi)}{\\sqrt{\\N(z_1z_2)}}\n \\sum_{e_0\\mid g}\\frac{\\muk(e_0)\\psi(e_0)}{\\N(e_0)}\n \\sum_{h\\in\\OO}\\overline{\\psi(h)}\n \\widehat\\Phi\\left(\\frac{H\\N(h)}{\\N(e_0)\\N(z_1z_2)}\\right).\n\\end{split}\n\\end{equation}",
+  "before": " \\gamma(\\psi)=\\frac1{\\sqrt{\\N(q)}}\\sum_{x\\bmod q}\\psi(x)e(x/q).\n\\end{equation}\nInclusion--exclusion for $(u,g)=1$, followed by planar Poisson summation~\\cite[Chapter~4]{IK04},\ngives the exact formula~\\cite[Lemma~4.2]{OAI1112}",
+  "after": "The divisor $e_0$ must be kept. The zero frequency contributes only when\n$z_1=z_2=1$; it gives the diagonal main term. Nonzero frequencies from these\ndiagonal pairs need $H\\N(h)\\ll\\N(e_0)\\le\\N(g)\\ll D$, because $\\widehat\\Phi$ has compact"
+ },
+ {
+  "labels": [
+   "eq:d035"
+  ],
+  "numbers": [
+   "7.5"
+  ],
+  "page": "16",
+  "line": 968,
+  "section": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "subsection": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "source": "\\begin{equation}\\label{eq:d035}\n \\N(h)\\ll\\frac{\\N(e_0)\\N(z_1z_2)}H\n          \\ll\\frac{D^2}{H\\N(g)}.\n\\end{equation}",
+  "before": "diagonal pairs need $H\\N(h)\\ll\\N(e_0)\\le\\N(g)\\ll D$, because $\\widehat\\Phi$ has compact\nsupport; for $H=D^{1+\\vartheta}$ they therefore occur only for bounded $D$. They are\nkept in the estimate anyway.\nThe other frequencies satisfy",
+  "after": "This is the first shortening: $H>D$ produces frequencies of norm less\nthan about $D$.\n"
+ },
+ {
+  "labels": [
+   "eq:d036"
+  ],
+  "numbers": [
+   "7.6"
+  ],
+  "page": "16",
+  "line": 977,
+  "section": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "subsection": "\\subsection{The arithmetic identity and the extra angular factor}",
+  "source": "\\begin{equation}\\label{eq:d036}\n \\gamma_j(n)=\\frac1{\\sqrt{\\N(n)}}\n                 \\sum_{x\\bmod n}\\chi_n(x)^j e(x/n),\\qquad\n G(n)=\\overline{\\chi_n(4)}\\gamma_3(n).\n\\end{equation}",
+  "before": "than about $D$.\n\n\\subsection{The arithmetic identity and the extra angular factor}\nFor squarefree primary $n$ coprime to $6$ define",
+  "after": "In particular, $\\gamma_2$ is a cubic Gauss sum. The finite-sum identity\nused in both arguments is\n\\begin{equation}\\label{eq:gauss}"
+ },
+ {
+  "labels": [
+   "eq:gauss"
+  ],
+  "numbers": [
+   "7.7"
+  ],
+  "page": "16",
+  "line": 984,
+  "section": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "subsection": "\\subsection{The arithmetic identity and the extra angular factor}",
+  "source": "\\begin{equation}\\label{eq:gauss}\n \\muk(n)\\gamma_{-1}(n)\n =\\chi_n(-1)G(n)^{-1}\\overline{\\alpha(n)}\\gamma_2(n).\n\\end{equation}",
+  "before": " G(n)=\\overline{\\chi_n(4)}\\gamma_3(n).\n\\end{equation}\nIn particular, $\\gamma_2$ is a cubic Gauss sum. The finite-sum identity\nused in both arguments is",
+  "after": "It is~\\cite[Lemma~4.1]{OAI1112}; see also~\\cite[Proposition~18]{QF}. It is proved prime\nby prime from Jacobi-sum relations~\\cite[Chapter~8]{IR} (compare the Hasse--Davenport product formula~\\cite{DH35}), which give $\\gamma_2(\\pi)^3=-\\alpha(\\pi)$ (compare~\\cite[pp.~443--445]{Has50} and~\\cite[(2)]{HB00}) for a primary\nprime $\\pi$, and extends to squarefree $n$ by the Chinese remainder theorem. Reciprocity is"
+ },
+ {
+  "labels": [
+   "eq:d037"
+  ],
+  "numbers": [
+   "7.8"
+  ],
+  "page": "16",
+  "line": 1006,
+  "section": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "subsection": "\\subsection{The arithmetic identity and the extra angular factor}",
+  "source": "\\begin{equation}\\label{eq:d037}\n c_\\xi=\\frac1{|\\mathfrak G|}\\sum_{t\\in\\mathfrak G}\n                         G(t^{-1})\\overline{\\xi(t)},\\qquad\n a_\\xi(n)=\\overline{\\alpha(n)}^{\\,2}\\gamma_2(n)\\xi(n),\n\\end{equation}",
+  "before": "class group modulo $72$, and its characters $\\xi$ are finite-order Hecke characters; $\\xi(n)$\nmeans $\\xi$ of the class of the primary element $n$. By the Chinese remainder theorem\n($72=8\\cdot9$), reduction maps $\\mathfrak G$ onto $(\\OO/4\\OO)^\\times$, a group of order $12$.\nDefine, quite explicitly,",
+  "after": "where $\\xi$ ranges over the characters of this fixed finite group.\nFor coprime squarefree $z_1,z_2$, the useful paired identity, the CM form of~\\cite[(4.15)]{OAI1112}, is\n\\begin{equation}\\label{eq:paired}"
+ },
+ {
+  "labels": [
+   "eq:paired"
+  ],
+  "numbers": [
+   "7.9"
+  ],
+  "page": "16",
+  "line": 1013,
+  "section": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "subsection": "\\subsection{The arithmetic identity and the extra angular factor}",
+  "source": "\\begin{equation}\\label{eq:paired}\n\\begin{split}\n &\\muk(z_1)\\muk(z_2)\\overline{\\alpha(z_1)}\\alpha(z_2)\n       \\gamma(\\overline{\\chi_{z_1}}\\chi_{z_2})\\\\\n &\\hspace{3em}=\\sum_\\xi c_\\xi a_\\xi(z_1)\\overline{a_\\xi(z_2)}.\n\\end{split}\n\\end{equation}",
+  "before": " a_\\xi(n)=\\overline{\\alpha(n)}^{\\,2}\\gamma_2(n)\\xi(n),\n\\end{equation}\nwhere $\\xi$ ranges over the characters of this fixed finite group.\nFor coprime squarefree $z_1,z_2$, the useful paired identity, the CM form of~\\cite[(4.15)]{OAI1112}, is",
+  "after": "This preserves the structure of a squared sum. The zeta version produces\n$\\overline\\alpha\\gamma_2$; the present version produces\n$\\overline\\alpha^{\\,2}\\gamma_2$. The first factor of $\\overline\\alpha$ comes"
+ },
+ {
+  "labels": [
+   "eq:energy"
+  ],
+  "numbers": [
+   "7.10"
+  ],
+  "page": "17",
+  "line": 1031,
+  "section": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "subsection": "\\subsection{The next average, with every variable displayed}",
+  "source": "\\begin{equation}\\label{eq:energy}\n \\E(\\mathcal H,X,F)=\\frac1{XF}\n \\ssum_{F\\le\\N(f)<2F}\\ \\sum_{0<\\N(k)\\le\\mathcal H}\n \\left|\\ssum_n a_\\xi(n)\\chi_n(k)\\chi_n(f)^4\n                       W(\\N(n)/X)\\right|^2.\n\\end{equation}",
+  "before": "\\eqref{eq:paired}, together with the reverse identity used in Section~\\ref{sec:descent}.\n\n\\subsection{The next average, with every variable displayed}\nAfter resolving greatest common divisors, the averages have the form",
+  "after": "Both $f,n$ are primary, squarefree, and coprime to $6$; $k$ runs over\nthe nonzero lattice points of norm at most $\\mathcal H$. The weight and the finite character $\\xi$ have been\nsuppressed on the left. Put $\\Sigma=XF$."
+ },
+ {
+  "labels": [
+   "eq:d038"
+  ],
+  "numbers": [
+   "7.11"
+  ],
+  "page": "17",
+  "line": 1044,
+  "section": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "subsection": "\\subsection{The next average, with every variable displayed}",
+  "source": "\\begin{equation}\\label{eq:d038}\n a_\\xi(v_0n)=a_\\xi(v_0)a_\\xi(n)\\chi_n(v_0)^4\n \\qquad((v_0,n)=1).\n\\end{equation}",
+  "before": "\nThere are two sources of the fourth power. The divisor $e_0$ in\nPoisson contributes $\\chi_n(he_0^5)$. The common divisor $v_0$ that removes the\ncondition $(z_1,z_2)=1$ uses the twisted multiplicativity",
+  "after": "With $f=e_0v_0$ and $k=e_0h$, these combine as\n$he_0^5v_0^4=kf^4$. Neither source can be omitted; see Step~3 in the proof of\nProposition~\\ref{prop:b2-reduction}."
+ },
+ {
+  "labels": [
+   "eq:initial"
+  ],
+  "numbers": [
+   "7.12"
+  ],
+  "page": "17",
+  "line": 1053,
+  "section": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "subsection": "\\subsection{The next average, with every variable displayed}",
+  "source": "\\begin{equation}\\label{eq:initial}\n X=\\frac D{BF},\\qquad \\Sigma=\\frac DB,\\qquad\n \\mathcal H\\ll\\frac{D^2}{HB^2}.\n\\end{equation}",
+  "before": "$he_0^5v_0^4=kf^4$. Neither source can be omitted; see Step~3 in the proof of\nProposition~\\ref{prop:b2-reduction}.\n\nThe initial scales are, for a further divisor-size parameter $B\\ge1$,",
+  "after": "The first Poisson reduction, Proposition~\\ref{prop:b2-reduction} below, shows that the\nestimate $\\E\\ll D^\\varepsilon\\Sigma$ in these ranges implies\n\\eqref{eq:MS}. Smooth kernels in two column variables are separated"
+ },
+ {
+  "labels": [
+   "eq:b2-g1g2"
+  ],
+  "numbers": [
+   "7.13"
+  ],
+  "page": "17",
+  "line": 1081,
+  "section": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "subsection": "\\subsection{The CM changes in detail}\\label{subsec:b2-cm}",
+  "source": "\\begin{equation}\\label{eq:b2-g1g2}\n  \\overline{\\alpha(n)}\\gamma_2(n)\\gamma_1(n)=\\muk(n)G(n).\n \\end{equation}",
+  "before": " Section~4.5]{QF}. For squarefree primary $n$ coprime to $6$ and $6\\nmid j$, the character\n $\\chi_n^j$ is primitive modulo $n$, so $|\\gamma_j(n)|=1$~\\cite[Lemma~17]{QF}.\n \\cite[Lemma~4.1]{OAI1112} (see also~\\cite[Proposition~18]{QF}) gives the\n identity~\\eqref{eq:gauss}, which is~\\cite[(4.5)]{OAI1112}, and~\\cite[(4.4)]{OAI1112}:",
+  "after": " The factor $\\overline{\\alpha(n)}$ in these identities comes from\n $\\gamma_2(n)^3=\\muk(n)\\alpha(n)$. It has nothing to do with the curve and is present for\n zeta as well."
+ },
+ {
+  "labels": [
+   "eq:b2-quotient"
+  ],
+  "numbers": [
+   "7.14"
+  ],
+  "page": "18",
+  "line": 1096,
+  "section": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "subsection": "\\subsection{The CM changes in detail}\\label{subsec:b2-cm}",
+  "source": "\\begin{equation}\\label{eq:b2-quotient}\n  \\chi_x(-1)\\overline{G(x)}G(y)\\mathcal R(x,y)=G(yx^{-1})\\qquad(x,y\\in\\mathfrak G),\n \\end{equation}",
+  "before": " where it is given explicitly on the square classes of $(\\OO/4\\OO)^\\times$; also\n $\\mathcal R(c,c)=\\chi_c(-1)$ there. Reduction\n from $\\mathfrak G$ to $(\\OO/4\\OO)^\\times$ is a homomorphism, so $G$ and $\\mathcal R$ are\n functions on $\\mathfrak G$, and so is $\\chi_x(-1)=(-1)^{(\\N(x)-1)/6}$. On $\\mathfrak G$,",
+  "after": " which is~\\cite[(4.7)]{OAI1112}. In~\\cite{OAI1112} the group is an unspecified fixed ray\n class group; classes modulo $4$ would suffice for this section, and the modulus $72$\n leaves room for the residue-class factors absorbed into $\\xi$ later."
+ },
+ {
+  "labels": [
+   "eq:b2-remove"
+  ],
+  "numbers": [
+   "7.15"
+  ],
+  "page": "18",
+  "line": 1105,
+  "section": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "subsection": "\\subsection{The CM changes in detail}\\label{subsec:b2-cm}",
+  "source": "\\begin{equation}\\label{eq:b2-remove}\n  \\E_{(r)}(\\mathcal H,X,F;\\xi,W)\\le\\tau(r)\\sum_{j\\mid r}\n  \\E\\Bigl(\\mathcal H,\\frac X{\\N(j)},F\\N(j);\\xi,W\\Bigr).\n \\end{equation}",
+  "before": " leaves room for the residue-class factors absorbed into $\\xi$ later.\n\\item \\emph{Exclusions.} Write $\\E(\\mathcal H,X,F;\\xi,W)$ for~\\eqref{eq:energy} with the\n twist and the weight shown, and $\\E_{(r)}$ for the same average with the extra condition\n $(n,r)=1$ on the columns. For squarefree primary $r$ coprime to $6$, $F\\ge1$ and $\\mathcal H,X>0$,",
+  "after": " This is~\\cite[Lemma~4.4]{OAI1112}. Its proof is the identity~\\eqref{eq:exclusionid}\n followed by Cauchy--Schwarz over $j$ and the injectivity of $f\\mapsto jf$. It uses only\n the twisted multiplicativity of $a_\\xi$ and $|a_\\xi|\\le1$, which hold for the CM"
+ },
+ {
+  "labels": [
+   "eq:d039"
+  ],
+  "numbers": [
+   "7.16"
+  ],
+  "page": "18",
+  "line": 1137,
+  "section": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "subsection": "\\subsection{The CM changes in detail}\\label{subsec:b2-cm}",
+  "source": "\\begin{equation}\\label{eq:d039}\n \\xi_1(t)G(t^{-1})=\\sum_\\xi c_\\xi(\\xi_1)\\xi(t),\\qquad\n (\\xi G)(t)=\\sum_{\\xi_1}\\ell_{\\xi_1}(\\xi)\\xi_1(t)\\qquad(t\\in\\mathfrak G).\n\\end{equation}",
+  "before": "into the coefficients instead.\n\n\\begin{lemma}[Paired identities, CM form]\\label{lem:b2-paired}\nFor characters $\\xi,\\xi_1$ of $\\mathfrak G$ define $c_\\xi(\\xi_1)$ and $\\ell_{\\xi_1}(\\xi)$ by",
+  "after": "Thus $c_\\xi(\\mathbf1)=c_\\xi$, and all these coefficients have absolute value at most one.\nPut $\\beta_{\\xi_1}(n)=\\muk(n)\\overline{\\alpha(n)}\\xi_1(n)$. Let $z_1,z_2$ be coprime,\nsquarefree, primary and coprime to $6$. Then"
+ },
+ {
+  "labels": [
+   "eq:b2-forward",
+   "eq:b2-reverse"
+  ],
+  "numbers": [
+   "7.17",
+   "7.18"
+  ],
+  "page": "18",
+  "line": 1144,
+  "section": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "subsection": "\\subsection{The CM changes in detail}\\label{subsec:b2-cm}",
+  "source": "\\begin{align}\n \\muk(z_1)\\muk(z_2)\\overline{\\alpha(z_1)}\\alpha(z_2)\\xi_1(z_1)\\overline{\\xi_1(z_2)}\n \\gamma(\\overline{\\chi_{z_1}}\\chi_{z_2})\n &=\\sum_\\xi c_\\xi(\\xi_1)a_\\xi(z_1)\\overline{a_\\xi(z_2)},\\label{eq:b2-forward}\\\\\n a_\\xi(z_1)\\overline{a_\\xi(z_2)}\\gamma(\\chi_{z_1}\\overline{\\chi_{z_2}})\n &=\\sum_{\\xi_1}\\ell_{\\xi_1}(\\xi)\\beta_{\\xi_1}(z_1)\\overline{\\beta_{\\xi_1}(z_2)}.\n \\label{eq:b2-reverse}\n\\end{align}",
+  "before": "\\end{equation}\nThus $c_\\xi(\\mathbf1)=c_\\xi$, and all these coefficients have absolute value at most one.\nPut $\\beta_{\\xi_1}(n)=\\muk(n)\\overline{\\alpha(n)}\\xi_1(n)$. Let $z_1,z_2$ be coprime,\nsquarefree, primary and coprime to $6$. Then",
+  "after": "Moreover, for coprime squarefree primary $a,b$ coprime to $6$,\n\\begin{equation}\\label{eq:b2-twisted}\n a_\\xi(ab)=a_\\xi(a)a_\\xi(b)\\chi_b(a)^4,\\qquad |a_\\xi(a)|=1."
+ },
+ {
+  "labels": [
+   "eq:b2-twisted"
+  ],
+  "numbers": [
+   "7.19"
+  ],
+  "page": "19",
+  "line": 1153,
+  "section": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "subsection": "\\subsection{The CM changes in detail}\\label{subsec:b2-cm}",
+  "source": "\\begin{equation}\\label{eq:b2-twisted}\n a_\\xi(ab)=a_\\xi(a)a_\\xi(b)\\chi_b(a)^4,\\qquad |a_\\xi(a)|=1.\n\\end{equation}",
+  "before": " &=\\sum_{\\xi_1}\\ell_{\\xi_1}(\\xi)\\beta_{\\xi_1}(z_1)\\overline{\\beta_{\\xi_1}(z_2)}.\n \\label{eq:b2-reverse}\n\\end{align}\nMoreover, for coprime squarefree primary $a,b$ coprime to $6$,",
+  "after": "In particular,~\\eqref{eq:paired} is~\\eqref{eq:b2-forward} with $\\xi_1=\\mathbf1$.\n\\end{lemma}\n"
+ },
+ {
+  "labels": [
+   "eq:b2-crt"
+  ],
+  "numbers": [
+   "7.20"
+  ],
+  "page": "19",
+  "line": 1163,
+  "section": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "subsection": "\\subsection{The CM changes in detail}\\label{subsec:b2-cm}",
+  "source": "\\begin{equation}\\label{eq:b2-crt}\n \\gamma(\\overline{\\chi_{z_1}}\\chi_{z_2})\n =\\mathcal R(z_1,z_2)\\gamma_{-1}(z_1)\\gamma_1(z_2).\n\\end{equation}",
+  "before": "\\begin{proof}\nWrite $a^\\zeta(n)=\\overline{\\alpha(n)}\\gamma_2(n)$ for the zeta coefficient, so that\n$a_\\xi=\\overline\\alpha a^\\zeta\\xi$. By the Chinese remainder theorem and sextic\nreciprocity~\\cite[(4.27)]{QF},",
+  "after": "In the same way\n$\\gamma(\\chi_{z_1}\\overline{\\chi_{z_2}})=\\mathcal R(z_1,z_2)\\gamma_1(z_1)\\gamma_{-1}(z_2)$.\nSince $|\\gamma_2|=|\\alpha|=|G|=1$ and $\\muk(n)^2=1$, the identities~\\eqref{eq:gauss}"
+ },
+ {
+  "labels": [
+   "eq:b2-two"
+  ],
+  "numbers": [
+   "7.21"
+  ],
+  "page": "19",
+  "line": 1171,
+  "section": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "subsection": "\\subsection{The CM changes in detail}\\label{subsec:b2-cm}",
+  "source": "\\begin{equation}\\label{eq:b2-two}\n \\muk(n)\\gamma_{-1}(n)=\\chi_n(-1)\\overline{G(n)}\\,a^\\zeta(n),\\qquad\n \\muk(n)\\gamma_1(n)=G(n)\\,\\overline{a^\\zeta(n)}.\n\\end{equation}",
+  "before": "In the same way\n$\\gamma(\\chi_{z_1}\\overline{\\chi_{z_2}})=\\mathcal R(z_1,z_2)\\gamma_1(z_1)\\gamma_{-1}(z_2)$.\nSince $|\\gamma_2|=|\\alpha|=|G|=1$ and $\\muk(n)^2=1$, the identities~\\eqref{eq:gauss}\nand~\\eqref{eq:b2-g1g2} can be written as",
+  "after": "\n\\emph{Proof of~\\eqref{eq:b2-forward}.} Apply the first identity of~\\eqref{eq:b2-two} to\n$z_1$ and the second to $z_2$, and then~\\eqref{eq:b2-quotient} with $x=z_1$, $y=z_2$:"
+ },
+ {
+  "labels": [
+   "eq:d040"
+  ],
+  "numbers": [
+   "7.22"
+  ],
+  "page": "19",
+  "line": 1178,
+  "section": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "subsection": "\\subsection{The CM changes in detail}\\label{subsec:b2-cm}",
+  "source": "\\begin{equation}\\label{eq:d040}\n \\muk(z_1)\\muk(z_2)\\gamma(\\overline{\\chi_{z_1}}\\chi_{z_2})\n =\\chi_{z_1}(-1)\\overline{G(z_1)}G(z_2)\\mathcal R(z_1,z_2)\\,\n  a^\\zeta(z_1)\\overline{a^\\zeta(z_2)}\n =G(z_2z_1^{-1})\\,a^\\zeta(z_1)\\overline{a^\\zeta(z_2)}.\n\\end{equation}",
+  "before": "\\end{equation}\n\n\\emph{Proof of~\\eqref{eq:b2-forward}.} Apply the first identity of~\\eqref{eq:b2-two} to\n$z_1$ and the second to $z_2$, and then~\\eqref{eq:b2-quotient} with $x=z_1$, $y=z_2$:",
+  "after": "This is the zeta identity~\\cite[(4.28)]{QF}; expanded in characters it\nis~\\cite[(6.8)]{ZG}, or~\\cite[(4.15)]{OAI1112} with $\\nu=\\mathbf1$.\nIt supplies the first factor $\\overline\\alpha$ of $a_\\xi$. The second factor comes from the"
+ },
+ {
+  "labels": [
+   "eq:d041"
+  ],
+  "numbers": [
+   "7.23"
+  ],
+  "page": "19",
+  "line": 1199,
+  "section": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "subsection": "\\subsection{The CM changes in detail}\\label{subsec:b2-cm}",
+  "source": "\\begin{equation}\\label{eq:d041}\n \\overline{\\alpha(z_1)}^{\\,2}\\gamma_2(z_1)\\gamma_1(z_1)=\\overline{\\alpha(z_1)}\\muk(z_1)G(z_1),\\qquad\n \\overline{\\overline{\\alpha(z_2)}^{\\,2}\\gamma_2(z_2)}\\,\\gamma_{-1}(z_2)\n =\\alpha(z_2)\\muk(z_2)\\chi_{z_2}(-1)\\overline{G(z_2)}.\n\\end{equation}",
+  "before": "gives~\\eqref{eq:b2-forward}.\n\n\\emph{Proof of~\\eqref{eq:b2-reverse}.} Now apply the second identity of~\\eqref{eq:b2-two}\nto $z_1$ and the first to $z_2$. Since $\\overline\\alpha^{\\,2}\\gamma_2=\\overline\\alpha a^\\zeta$,",
+  "after": "Multiply these, include $\\xi(z_1)\\overline{\\xi(z_2)}$ and $\\mathcal R(z_1,z_2)$, and\nuse~\\eqref{eq:b2-quotient} with $x=z_2$, $y=z_1$ and the symmetry of $\\mathcal R$:\n\\begin{equation}\\label{eq:d042}"
+ },
+ {
+  "labels": [
+   "eq:d042"
+  ],
+  "numbers": [
+   "7.24"
+  ],
+  "page": "19",
+  "line": 1206,
+  "section": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "subsection": "\\subsection{The CM changes in detail}\\label{subsec:b2-cm}",
+  "source": "\\begin{equation}\\label{eq:d042}\n a_\\xi(z_1)\\overline{a_\\xi(z_2)}\\gamma(\\chi_{z_1}\\overline{\\chi_{z_2}})\n =\\muk(z_1)\\muk(z_2)\\overline{\\alpha(z_1)}\\alpha(z_2)\\,(\\xi G)(z_1z_2^{-1}).\n\\end{equation}",
+  "before": " =\\alpha(z_2)\\muk(z_2)\\chi_{z_2}(-1)\\overline{G(z_2)}.\n\\end{equation}\nMultiply these, include $\\xi(z_1)\\overline{\\xi(z_2)}$ and $\\mathcal R(z_1,z_2)$, and\nuse~\\eqref{eq:b2-quotient} with $x=z_2$, $y=z_1$ and the symmetry of $\\mathcal R$:",
+  "after": "Expand $\\xi G$, and note that\n$\\muk(z_1)\\muk(z_2)\\overline{\\alpha(z_1)}\\alpha(z_2)\\xi_1(z_1)\\overline{\\xi_1(z_2)}\n=\\beta_{\\xi_1}(z_1)\\overline{\\beta_{\\xi_1}(z_2)}$. Without the factor"
+ },
+ {
+  "labels": [
+   "eq:b2-hyp"
+  ],
+  "numbers": [
+   "7.25"
+  ],
+  "page": "19",
+  "line": 1228,
+  "section": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "subsection": "\\subsection{The CM changes in detail}\\label{subsec:b2-cm}",
+  "source": "\\begin{equation}\\label{eq:b2-hyp}\n \\E(\\mathcal H,X,F;\\xi,W)\\ll_{I,C,\\vartheta,\\varepsilon}\\|W\\|_{C^J(I)}^2D^\\varepsilon XF\n\\end{equation}",
+  "before": "Fix $0<\\vartheta\\le1/10$ and put $H=D^{1+\\vartheta}$. For a compact interval\n$I\\subset(0,\\infty)$ write $\\|W\\|_{C^J(I)}=\\max_{0\\le i\\le J}\\sup_{x\\in I}|W^{(i)}(x)|$.\nSuppose that for every $C\\ge1$ and every $\\varepsilon>0$ there is an integer\n$J=J(\\vartheta,\\varepsilon)$ such that",
+  "after": "for every character $\\xi$ of $\\mathfrak G$, every compact interval $I\\subset(0,\\infty)$,\nevery $W\\in C_c^\\infty(I)$, and all real $B,F\\ge1$ and $\\mathcal H$ with\n\\begin{equation}\\label{eq:b2-ranges}"
+ },
+ {
+  "labels": [
+   "eq:b2-ranges"
+  ],
+  "numbers": [
+   "7.26"
+  ],
+  "page": "20",
+  "line": 1233,
+  "section": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "subsection": "\\subsection{The CM changes in detail}\\label{subsec:b2-cm}",
+  "source": "\\begin{equation}\\label{eq:b2-ranges}\n X=\\frac D{BF},\\qquad 0<\\mathcal H\\le\\frac{CD^2}{HB^2}.\n\\end{equation}",
+  "before": " \\E(\\mathcal H,X,F;\\xi,W)\\ll_{I,C,\\vartheta,\\varepsilon}\\|W\\|_{C^J(I)}^2D^\\varepsilon XF\n\\end{equation}\nfor every character $\\xi$ of $\\mathfrak G$, every compact interval $I\\subset(0,\\infty)$,\nevery $W\\in C_c^\\infty(I)$, and all real $B,F\\ge1$ and $\\mathcal H$ with",
+  "after": "Then, for every compact $I\\subset(0,\\infty)$ and $W\\in C_c^\\infty(I)$,\n\\begin{equation}\\label{eq:d043}\n M(D,H)\\ll_{I,\\vartheta,\\varepsilon}\\|W\\|_{C^{J'}(I)}^2D^{2+\\vartheta+\\varepsilon},"
+ },
+ {
+  "labels": [
+   "eq:d043"
+  ],
+  "numbers": [
+   "7.27"
+  ],
+  "page": "20",
+  "line": 1237,
+  "section": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "subsection": "\\subsection{The CM changes in detail}\\label{subsec:b2-cm}",
+  "source": "\\begin{equation}\\label{eq:d043}\n M(D,H)\\ll_{I,\\vartheta,\\varepsilon}\\|W\\|_{C^{J'}(I)}^2D^{2+\\vartheta+\\varepsilon},\n \\qquad J'=2J(\\vartheta,\\varepsilon/4)+4 .\n\\end{equation}",
+  "before": "\\begin{equation}\\label{eq:b2-ranges}\n X=\\frac D{BF},\\qquad 0<\\mathcal H\\le\\frac{CD^2}{HB^2}.\n\\end{equation}\nThen, for every compact $I\\subset(0,\\infty)$ and $W\\in C_c^\\infty(I)$,",
+  "after": "In particular~\\eqref{eq:MS} holds.\n\\end{proposition}\n"
+ },
+ {
+  "labels": [
+   "eq:d044"
+  ],
+  "numbers": [
+   "7.28"
+  ],
+  "page": "20",
+  "line": 1258,
+  "section": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "subsection": "\\subsection{The CM changes in detail}\\label{subsec:b2-cm}",
+  "source": "\\begin{equation}\\label{eq:d044}\n \\muk(n_1)\\muk(n_2)=\\muk(z_1)\\muk(z_2),\\qquad\n \\overline{\\alpha(n_1)}\\alpha(n_2)=|\\alpha(g)|^2\\,\\overline{\\alpha(z_1)}\\alpha(z_2)\n =\\overline{\\alpha(z_1)}\\alpha(z_2),\n\\end{equation}",
+  "before": "$\\mathcal M_D=D^{-1}\\sum_{u\\in\\OO}\\Phi(\\N(u)/H)|A_u(D)|^2$. Expand\n$|A_u(D)|^2=\\overline{A_u(D)}A_u(D)$, with $n_1$ the column of the conjugated factor, and\nwrite $n_i=gz_i$ as before. The pair $(n_1,n_2)$ carries the coefficient\n$\\muk(n_1)\\muk(n_2)\\overline{\\alpha(n_1)}\\alpha(n_2)\\overline{W(\\N(n_1)/D)}W(\\N(n_2)/D)$, and",
+  "after": "because $\\muk(g)^2=1$ and $\\alpha$ is multiplicative of absolute value one. The coefficient\ndoes not depend on $u$, so the sum over $u$ is given by~\\eqref{eq:poisson-exact}, exactly\nas for zeta. The frequency $h=0$ occurs only when $z_1=z_2=1$. There the coefficient is"
+ },
+ {
+  "labels": [
+   "eq:d045"
+  ],
+  "numbers": [
+   "7.29"
+  ],
+  "page": "20",
+  "line": 1267,
+  "section": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "subsection": "\\subsection{The CM changes in detail}\\label{subsec:b2-cm}",
+  "source": "\\begin{equation}\\label{eq:d045}\n Z=\\frac HD\\,\\widehat\\Phi(0)\\ssum_g\\Bigl|W\\Bigl(\\frac{\\N(g)}D\\Bigr)\\Bigr|^2\n \\prod_{\\pi\\mid g}\\bigl(1-\\N(\\pi)^{-1}\\bigr)\\ll_IH\\|W\\|_\\infty^2,\n\\end{equation}",
+  "before": "because $\\muk(g)^2=1$ and $\\alpha$ is multiplicative of absolute value one. The coefficient\ndoes not depend on $u$, so the sum over $u$ is given by~\\eqref{eq:poisson-exact}, exactly\nas for zeta. The frequency $h=0$ occurs only when $z_1=z_2=1$. There the coefficient is\n$|\\muk(g)\\alpha(g)|^2|W(\\N(g)/D)|^2=|W(\\N(g)/D)|^2$, and these terms give",
+  "after": "the same as for zeta. All $h\\ne0$ are kept, including those with $z_1=z_2=1$.\n\n\\emph{Step~2: the paired identity.} This is the only step in which the CM coefficients"
+ },
+ {
+  "labels": [
+   "eq:d046"
+  ],
+  "numbers": [
+   "7.30"
+  ],
+  "page": "20",
+  "line": 1275,
+  "section": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "subsection": "\\subsection{The CM changes in detail}\\label{subsec:b2-cm}",
+  "source": "\\begin{equation}\\label{eq:d046}\n \\muk(n_1)\\muk(n_2)\\overline{\\alpha(n_1)}\\alpha(n_2)\\gamma(\\psi)\n =\\sum_\\xi c_\\xi a_\\xi(z_1)\\overline{a_\\xi(z_2)};\n\\end{equation}",
+  "before": "the same as for zeta. All $h\\ne0$ are kept, including those with $z_1=z_2=1$.\n\n\\emph{Step~2: the paired identity.} This is the only step in which the CM coefficients\nchange the algebra. By Step~1 and~\\eqref{eq:paired},",
+  "after": "when $z_1=z_2=1$ this reads $1=\\sum_\\xi c_\\xi=G(1)$. Moreover\n$\\psi(e_0)\\overline{\\psi(h)}=\\chi_{z_1}(he_0^5)\\overline{\\chi_{z_2}(he_0^5)}$, because\n$(e_0,z_1z_2)=1$ and $\\overline{\\chi_z(e_0)}=\\chi_z(e_0)^5$. Put"
+ },
+ {
+  "labels": [
+   "eq:d047"
+  ],
+  "numbers": [
+   "7.31"
+  ],
+  "page": "20",
+  "line": 1283,
+  "section": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "subsection": "\\subsection{The CM changes in detail}\\label{subsec:b2-cm}",
+  "source": "\\begin{equation}\\label{eq:d047}\n \\frac{\\overline{W(\\N(gz_1)/D)}\\,W(\\N(gz_2)/D)}{\\sqrt{\\N(z_1z_2)}}\n =\\frac{\\N(g)}D\\,W_0\\Bigl(\\frac{\\N(gz_1)}D\\Bigr)\\overline{W_0\\Bigl(\\frac{\\N(gz_2)}D\\Bigr)}.\n\\end{equation}",
+  "before": "when $z_1=z_2=1$ this reads $1=\\sum_\\xi c_\\xi=G(1)$. Moreover\n$\\psi(e_0)\\overline{\\psi(h)}=\\chi_{z_1}(he_0^5)\\overline{\\chi_{z_2}(he_0^5)}$, because\n$(e_0,z_1z_2)=1$ and $\\overline{\\chi_z(e_0)}=\\chi_z(e_0)^5$. Put\n$W_0(x)=x^{-1/2}\\overline{W(x)}$, so that",
+  "after": "Then $\\mathcal M_D-Z=\\sum_\\xi c_\\xi\\mathcal S_\\xi$, where\n\\begin{equation}\\label{eq:b2-Sxi}\n\\begin{split}"
+ },
+ {
+  "labels": [
+   "eq:b2-Sxi"
+  ],
+  "numbers": [
+   "7.32"
+  ],
+  "page": "20",
+  "line": 1288,
+  "section": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "subsection": "\\subsection{The CM changes in detail}\\label{subsec:b2-cm}",
+  "source": "\\begin{equation}\\label{eq:b2-Sxi}\n\\begin{split}\n \\mathcal S_\\xi=\\frac H{D^2}\\ssum_g\\sum_{e_0\\mid g}\\frac{\\muk(e_0)\\N(g)}{\\N(e_0)}\n \\sum_{h\\ne0}\\quad\n &\\ssum_{\\substack{(z_1,z_2)=1\\\\(z_1z_2,g)=1}}a_\\xi(z_1)\\overline{a_\\xi(z_2)}\n  \\chi_{z_1}(he_0^5)\\overline{\\chi_{z_2}(he_0^5)}\\\\\n &\\times W_0\\Bigl(\\frac{\\N(gz_1)}D\\Bigr)\\overline{W_0\\Bigl(\\frac{\\N(gz_2)}D\\Bigr)}\n \\widehat\\Phi\\Bigl(\\frac{H\\N(h)}{\\N(e_0)\\N(z_1)\\N(z_2)}\\Bigr).\n\\end{split}\n\\end{equation}",
+  "before": " \\frac{\\overline{W(\\N(gz_1)/D)}\\,W(\\N(gz_2)/D)}{\\sqrt{\\N(z_1z_2)}}\n =\\frac{\\N(g)}D\\,W_0\\Bigl(\\frac{\\N(gz_1)}D\\Bigr)\\overline{W_0\\Bigl(\\frac{\\N(gz_2)}D\\Bigr)}.\n\\end{equation}\nThen $\\mathcal M_D-Z=\\sum_\\xi c_\\xi\\mathcal S_\\xi$, where",
+  "after": "There are $|\\mathfrak G|=432$ characters and $|c_\\xi|\\le1$, so it suffices to bound each\n$\\mathcal S_\\xi$. Apart from the coefficients $a_\\xi$, \\eqref{eq:b2-Sxi} is the display\nfollowing~\\cite[(4.15)]{OAI1112}."
+ },
+ {
+  "labels": [
+   "eq:d048"
+  ],
+  "numbers": [
+   "7.33"
+  ],
+  "page": "21",
+  "line": 1311,
+  "section": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "subsection": "\\subsection{The CM changes in detail}\\label{subsec:b2-cm}",
+  "source": "\\begin{equation}\\label{eq:d048}\n r_0=g/e_0,\\quad f=e_0v_0,\\quad k=e_0h;\\qquad\n e_0=(f,k),\\quad v_0=f/e_0,\\quad g=r_0e_0,\\quad h=k/e_0\n\\end{equation}",
+  "before": "$|a_\\xi(v_0)\\chi_{v_0}(he_0^5)|^2=\\ind_{(v_0,h)=1}$, and the twist becomes\n$\\chi_{m_i}(he_0^5v_0^4)$. The CM factor $\\overline\\alpha^{\\,2}$ enters this step only\nthrough~\\eqref{eq:b2-twisted}: like the factor $\\overline\\alpha$ of the zeta coefficients,\nit is completely multiplicative and unimodular. Now change variables:",
+  "after": "(in~\\cite{OAI1112}, $r_0$ is called $b$). This is the bijection of the proof\nof~\\cite[Proposition~4.5]{OAI1112}, onto the triples $(r_0,f,k)$ with $r_0,f$ squarefree,\n$(r_0,f)=1$ and $k\\ne0$; it does not see the coefficients. It satisfies"
+ },
+ {
+  "labels": [
+   "eq:d049"
+  ],
+  "numbers": [
+   "7.34"
+  ],
+  "page": "21",
+  "line": 1318,
+  "section": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "subsection": "\\subsection{The CM changes in detail}\\label{subsec:b2-cm}",
+  "source": "\\begin{equation}\\label{eq:d049}\n gv_0=r_0f,\\qquad he_0^5v_0^4=kf^4,\\qquad \\muk(e_0)\\muk(v_0)=\\muk(f),\n\\end{equation}",
+  "before": "\\end{equation}\n(in~\\cite{OAI1112}, $r_0$ is called $b$). This is the bijection of the proof\nof~\\cite[Proposition~4.5]{OAI1112}, onto the triples $(r_0,f,k)$ with $r_0,f$ squarefree,\n$(r_0,f)=1$ and $k\\ne0$; it does not see the coefficients. It satisfies",
+  "after": "\\begin{equation}\\label{eq:d050}\n \\frac{\\N(g)}{\\N(e_0)}=\\N(r_0),\\qquad \\frac{\\N(h)}{\\N(e_0)\\N(v_0)^2}=\\frac{\\N(k)}{\\N(f)^2}.\n\\end{equation}"
+ },
+ {
+  "labels": [
+   "eq:d050"
+  ],
+  "numbers": [
+   "7.35"
+  ],
+  "page": "21",
+  "line": 1321,
+  "section": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "subsection": "\\subsection{The CM changes in detail}\\label{subsec:b2-cm}",
+  "source": "\\begin{equation}\\label{eq:d050}\n \\frac{\\N(g)}{\\N(e_0)}=\\N(r_0),\\qquad \\frac{\\N(h)}{\\N(e_0)\\N(v_0)^2}=\\frac{\\N(k)}{\\N(f)^2}.\n\\end{equation}",
+  "before": "$(r_0,f)=1$ and $k\\ne0$; it does not see the coefficients. It satisfies\n\\begin{equation}\\label{eq:d049}\n gv_0=r_0f,\\qquad he_0^5v_0^4=kf^4,\\qquad \\muk(e_0)\\muk(v_0)=\\muk(f),\n\\end{equation}",
+  "after": "Therefore\n\\begin{equation}\\label{eq:b2-output}\n\\begin{split}"
+ },
+ {
+  "labels": [
+   "eq:b2-output"
+  ],
+  "numbers": [
+   "7.36"
+  ],
+  "page": "21",
+  "line": 1325,
+  "section": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "subsection": "\\subsection{The CM changes in detail}\\label{subsec:b2-cm}",
+  "source": "\\begin{equation}\\label{eq:b2-output}\n\\begin{split}\n \\mathcal S_\\xi=\\frac H{D^2}\\ssum_{(r_0,f)=1}\\muk(f)\\N(r_0)\\sum_{k\\ne0}\\quad\n &\\ssum_{(m_1m_2,r_0)=1}a_\\xi(m_1)\\overline{a_\\xi(m_2)}\n  \\chi_{m_1}(kf^4)\\overline{\\chi_{m_2}(kf^4)}\\\\\n &\\times W_0\\Bigl(\\frac{\\N(r_0fm_1)}D\\Bigr)\\overline{W_0\\Bigl(\\frac{\\N(r_0fm_2)}D\\Bigr)}\n \\widehat\\Phi\\Bigl(\\frac{H\\N(k)}{\\N(f)^2\\N(m_1)\\N(m_2)}\\Bigr).\n\\end{split}\n\\end{equation}",
+  "before": "\\begin{equation}\\label{eq:d050}\n \\frac{\\N(g)}{\\N(e_0)}=\\N(r_0),\\qquad \\frac{\\N(h)}{\\N(e_0)\\N(v_0)^2}=\\frac{\\N(k)}{\\N(f)^2}.\n\\end{equation}\nTherefore",
+  "after": "The factors $\\chi_{m_i}(f)^4$ enforce $(m_i,f)=1$, and no condition $(m_1,m_2)=1$ remains.\nThis is~\\cite[(4.16)]{OAI1112} with the CM coefficients. The inner sums are the column sums\nof~\\eqref{eq:energy}, with the exclusion $(n,r_0)=1$."
+ },
+ {
+  "labels": [
+   "eq:d051"
+  ],
+  "numbers": [
+   "7.37"
+  ],
+  "page": "21",
+  "line": 1343,
+  "section": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "subsection": "\\subsection{The CM changes in detail}\\label{subsec:b2-cm}",
+  "source": "\\begin{equation}\\label{eq:d051}\n X=\\frac D{BF},\\qquad \\mathcal H=\\frac{C_1D^2}{HB^2},\\qquad C_1=\\max(1,C_\\Phi b_0^2).\n\\end{equation}",
+  "before": "$\\N(r_0)\\N(f)\\le b_0D$ and\n$H\\N(k)\\le C_\\Phi\\N(f)^2\\N(m_1)\\N(m_2)\\le C_\\Phi b_0^2D^2/\\N(r_0)^2$. Split $r_0$ and $f$\ninto dyadic ranges $B\\le\\N(r_0)<2B$ and $F\\le\\N(f)<2F$, write $\\mathcal S_{\\xi;B,F}$ for the\ncorresponding part of~\\eqref{eq:b2-output}, and put",
+  "after": "These satisfy~\\eqref{eq:b2-ranges} with $C=C_1$; they are the scales~\\eqref{eq:initial},\nwith $\\Sigma=XF=D/B$. The angular factor does not affect any support, so this step is that\nof~\\cite[proof of Proposition~4.5]{OAI1112} verbatim."
+ },
+ {
+  "labels": [
+   "eq:d052"
+  ],
+  "numbers": [
+   "7.38"
+  ],
+  "page": "21",
+  "line": 1366,
+  "section": "\\section{Poisson summation reveals the cubic Gauss sums}\\label{sec:poisson}",
+  "subsection": "\\subsection{The CM changes in detail}\\label{subsec:b2-cm}",
+  "source": "\\begin{equation}\\label{eq:d052}\n |\\mathcal S_{\\xi;B,F}|\\ll D^{\\varepsilon/2}\\|W\\|_{C^{2J+4}(I)}^2\n \\ssum_{B\\le\\N(r_0)<2B}\\frac{H\\N(r_0)}{D^2}\\Bigl(\\frac DB\\Bigr)^2\n \\ll D^{\\varepsilon/2}\\|W\\|_{C^{2J+4}(I)}^2H .\n\\end{equation}",
+  "before": "and coefficients $\\muk(f)\\ind_{(f,r_0)=1}$, transfers this bound to the kernel at the cost\nof $\\|W\\|_{C^{2J+4}(I)}^2$. The coefficients enter only through~\\eqref{eq:b2-remove}, that\nis, through~\\eqref{eq:b2-twisted} and $|a_\\xi|\\le1$. Summing over the $O(B)$ elements $r_0$\nof the dyadic range gives",
+  "after": "There are $O((\\log D)^2)$ nonempty dyadic ranges. Summing over them and over $\\xi$, and adding\n$Z$, gives $\\mathcal M_D\\ll\\|W\\|_{C^{2J+4}(I)}^2HD^\\varepsilon$. Hence\n$M(D,H)\\le D\\mathcal M_D\\ll\\|W\\|_{C^{2J+4}(I)}^2D^{2+\\vartheta+\\varepsilon}$."
+ },
+ {
+  "labels": [
+   "eq:T"
+  ],
+  "numbers": [
+   "8.1"
+  ],
+  "page": "22",
+  "line": 1393,
+  "section": "\\section{The completed sums and the second theta derivative}\\label{sec:theta}",
+  "subsection": "\\section{The completed sums and the second theta derivative}\\label{sec:theta}",
+  "source": "\\begin{equation}\\label{eq:T}\n\\begin{split}\n T(X;k,f)=\\frac1{\\sqrt X}\\ssum_n\\sum_b\n &\\overline{\\alpha(n)}^{\\,2}\\gamma_2(n)\\Psi(n)\n \\overline{\\alpha(b)}^{\\,6}\\Psi(b)^3\\N(b)^{1/2}\\\\\n &\\hspace{3em}\\times W\\left(\\frac{\\N(n)\\N(b)^3}X\\right).\n\\end{split}\n\\end{equation}",
+  "before": "\\section{The completed sums and the second theta derivative}\\label{sec:theta}\n\nFor fixed $k,f$, put $\\Psi(n)=\\xi(n)\\chi_n(k)\\chi_n(f)^4$.\nThe completed sum is the following explicit double sum:",
+  "after": "Here $b$ is primary and coprime to $6$ but need not be squarefree.\nAll sums are finite. The term $b=1$ is exactly $X^{-1/2}$ times the\ncolumn sum in~\\eqref{eq:energy}. The other terms are added because they"
+ },
+ {
+  "labels": [
+   "eq:theta-coeff"
+  ],
+  "numbers": [
+   "8.2"
+  ],
+  "page": "22",
+  "line": 1413,
+  "section": "\\section{The completed sums and the second theta derivative}\\label{sec:theta}",
+  "subsection": "\\subsection{Where those coefficients come from}",
+  "source": "\\begin{equation}\\label{eq:theta-coeff}\n d_0(\\lambda^{-3}nb^3)\n  =3^{5/2}|b|\\,\\overline{(\\lambda/n)_3}\\,\\gamma_2(n).\n\\end{equation}",
+  "before": "Fourier series in a planar variable $z$ and a positive height $v$,\nwith terms $d_0(\\ell)vK_{1/3}(4\\pi|\\ell|v)\\ce(\\ell z)$ in its\nconjugate. Here $K_{1/3}$ is the usual modified Bessel function~\\cite[\\S10.25]{DLMF}.\nFor $n$ squarefree, primary and coprime to $6$ and $b$ primary, Patterson's coefficient formula~\\cite[Theorem~8.1]{Pat77}, which Heath-Brown and Patterson~\\cite{HBP79} used to study Kummer sums, gives",
+  "after": "Restricting $\\lambda^3\\ell$ to be primary and coprime to $6$ selects\nexactly these indices. Other units and powers of $\\lambda$ are excluded\nfrom the twisted series by this restriction. In the reflected series, at"
+ },
+ {
+  "labels": [
+   "eq:d053"
+  ],
+  "numbers": [
+   "8.3"
+  ],
+  "page": "23",
+  "line": 1461,
+  "section": "\\section{The completed sums and the second theta derivative}\\label{sec:theta}",
+  "subsection": "\\subsection{Why differentiating twice is legitimate}",
+  "source": "\\begin{equation}\\label{eq:d053}\n z'=-\\frac\\delta c-\\frac{\\bar z}{c^2(v^2+z\\bar z)},\\qquad\n v'=\\frac v{\\N(c)(v^2+z\\bar z)}.\n\\end{equation}",
+  "before": "This explains every angular power in~\\eqref{eq:T}.\n\n\\subsection{Why differentiating twice is legitimate}\nThe theta symmetry relates a rational translate $a/c+z$ to coordinates",
+  "after": "At $z=\\bar z=0$, pure $\\bar z$ derivatives of $\\bar z'$ and $v'$\nvanish, as do pure $\\bar z$ derivatives of $z'$ of order at least two, while\n$\\partial_{\\bar z}z'=-(cv)^{-2}$. Therefore the ordinary chain rule gives"
+ },
+ {
+  "labels": [
+   "eq:chain"
+  ],
+  "numbers": [
+   "8.4"
+  ],
+  "page": "23",
+  "line": 1468,
+  "section": "\\section{The completed sums and the second theta derivative}\\label{sec:theta}",
+  "subsection": "\\subsection{Why differentiating twice is legitimate}",
+  "source": "\\begin{equation}\\label{eq:chain}\n \\left.\\partial_{\\bar z}^{\\,2}F(z',\\bar z',v')\\right|_{z=\\bar z=0}\n   =(cv)^{-4}(\\partial_{z'}^{\\,2}F)\n                  \\left(-\\delta/c,1/(\\N(c)v)\\right).\n\\end{equation}",
+  "before": "\\end{equation}\nAt $z=\\bar z=0$, pure $\\bar z$ derivatives of $\\bar z'$ and $v'$\nvanish, as do pure $\\bar z$ derivatives of $z'$ of order at least two, while\n$\\partial_{\\bar z}z'=-(cv)^{-2}$. Therefore the ordinary chain rule gives",
+  "after": "No unwanted lower derivative survives. The derivative also kills any\nconstant Fourier term. Of the three expansions used, only the one at the\nidentity cusp has a nonzero constant term, and the derivative removes it."
+ },
+ {
+  "labels": [
+   "eq:weight"
+  ],
+  "numbers": [
+   "8.5"
+  ],
+  "page": "23",
+  "line": 1480,
+  "section": "\\section{The completed sums and the second theta derivative}\\label{sec:theta}",
+  "subsection": "\\subsection{Why differentiating twice is legitimate}",
+  "source": "\\begin{equation}\\label{eq:weight}\n V^\\sharp(x)=\\frac1{2\\pi i}\\int_{\\Re t=0}\\widehat V(-t)\n \\frac{\\Gamma(4/3+t)\\Gamma(5/3+t)}{\\Gamma(4/3-t)\\Gamma(5/3-t)}\n \\left(\\frac{(2\\pi)^4x}{27}\\right)^{-t}dt.\n\\end{equation}",
+  "before": "This permits Mellin reflection without constant-term contributions.\n\nFor $V(y)=\\sqrt y\\,W(y)$, with Mellin transform\n$\\widehat V(s)=\\int_0^\\infty V(y)y^{s-1}\\,dy$, the reflected weight is",
+  "after": "This is the CM version of the gamma quotient in the zeta argument.\nThe reflected coefficients have angular factor $\\alpha(\\ell)^2$;\nthe fixed cusp prefactor is $-\\overline{\\alpha(c)}^{\\,4}/81$, before"
+ },
+ {
+  "labels": [
+   "eq:local"
+  ],
+  "numbers": [
+   "8.6"
+  ],
+  "page": "23",
+  "line": 1504,
+  "section": "\\section{The completed sums and the second theta derivative}\\label{sec:theta}",
+  "subsection": "\\subsection{The local step from sextic to quadratic}",
+  "source": "\\begin{equation}\\label{eq:local}\n B_{\\pi,j}(x)=\n \\begin{cases}\n  \\chi_\\pi(x)^{-j-2},&j\\notin\\{0,4\\},\\\\\n  \\N(\\pi)^{-1/2}\\chi_\\pi(x)^{-2},&j=0,\\\\\n  \\N(\\pi)^{-1/2}(-1+\\N(\\pi)\\ind_{\\pi\\mid x}),&j=4.\n \\end{cases}\n\\end{equation}",
+  "before": "of primes dividing $kf$ away from $6$, and\n$j_\\pi\\equiv v_\\pi(k)+4v_\\pi(f)\\pmod6$~\\cite[(6.17)]{OAI1112}.\nThe local reflected factors, apart from constant phases,\nare~\\cite[(6.5) and (A.12)]{OAI1112}",
+  "after": "In particular,\n\\begin{equation}\\label{eq:d054}\n B_{\\pi,1}(x)=\\chi_\\pi(x)^3=(x/\\pi)_2."
+ },
+ {
+  "labels": [
+   "eq:d054"
+  ],
+  "numbers": [
+   "8.7"
+  ],
+  "page": "23",
+  "line": 1513,
+  "section": "\\section{The completed sums and the second theta derivative}\\label{sec:theta}",
+  "subsection": "\\subsection{The local step from sextic to quadratic}",
+  "source": "\\begin{equation}\\label{eq:d054}\n B_{\\pi,1}(x)=\\chi_\\pi(x)^3=(x/\\pi)_2.\n\\end{equation}",
+  "before": "  \\N(\\pi)^{-1/2}(-1+\\N(\\pi)\\ind_{\\pi\\mid x}),&j=4.\n \\end{cases}\n\\end{equation}\nIn particular,",
+  "after": "Away from the fixed factors of $6f$, squarefree row primes have exponent\n$j=1$. These are the varying primes that become quadratic. The other\nlocal factors are still present and have to be estimated."
+ },
+ {
+  "labels": [
+   "eq:qls"
+  ],
+  "numbers": [
+   "9.1"
+  ],
+  "page": "24",
+  "line": 1531,
+  "section": "\\section{The quadratic average and the completed bound}\\label{sec:sieve}",
+  "subsection": "\\section{The quadratic average and the completed bound}\\label{sec:sieve}",
+  "source": "\\begin{equation}\\label{eq:qls}\n \\ssum_{\\substack{\\N(k)\\le K\\\\(k,6)=1}}\n \\left|\\ssum_{\\N(n)\\le U}\\beta(n)\\left(\\frac nk\\right)_2\\right|^2\n \\ll_\\varepsilon(KU)^\\varepsilon(K+U)\\ssum_n|\\beta(n)|^2.\n\\end{equation}",
+  "before": "\n\\section{The quadratic average and the completed bound}\\label{sec:sieve}\n\nThe quadratic large sieve used here is",
+  "after": "Both $k,n$ are primary and squarefree, the coefficients $\\beta(n)$ are\narbitrary, and the column $n$ may be even. The squarefree restrictions\nmatter: square columns would give repeated values $1$ rather than"
+ },
+ {
+  "labels": [
+   "eq:completed"
+  ],
+  "numbers": [
+   "9.2"
+  ],
+  "page": "24",
+  "line": 1545,
+  "section": "\\section{The quadratic average and the completed bound}\\label{sec:sieve}",
+  "subsection": "\\section{The quadratic average and the completed bound}\\label{sec:sieve}",
+  "source": "\\begin{equation}\\label{eq:completed}\n \\boxed{\\quad\n \\sum_{0<\\N(k)\\le\\mathcal H}|T(X;k,f)|^2\n \\ll D^\\varepsilon\\left(\\mathcal H+\n                   \\frac{\\mathcal H^2\\N(f)}X\\right).\n \\quad}\n\\end{equation}",
+  "before": "is recorded in Section~\\ref{subsec:b4-completed}.\n\nApplying~\\eqref{eq:qls} to the reflected sums, and retaining the factors\nin~\\eqref{eq:local}, gives the completed mean-square estimate",
+  "after": "All parameters are at least one and bounded by a fixed power of $D$;\na fixed finite smoothness norm of $W$ is understood. This is the CM form\nof~\\cite[Proposition~5.2]{OAI1112}. It is stated precisely as"
+ },
+ {
+  "labels": [
+   "eq:d055"
+  ],
+  "numbers": [
+   "9.3"
+  ],
+  "page": "24",
+  "line": 1560,
+  "section": "\\section{The quadratic average and the completed bound}\\label{sec:sieve}",
+  "subsection": "\\section{The quadratic average and the completed bound}\\label{sec:sieve}",
+  "source": "\\begin{equation}\\label{eq:d055}\n \\chi_n(v^2)\\chi_n(f)^4=\\chi_n(fv^2)^4\n\\end{equation}",
+  "before": "Section~\\ref{subsec:b4-completed}.\n\nFor clarity, passing from squarefree rows to all rows uses\n$k=u s v^2$, with $u$ a unit and $s$ squarefree. The identity",
+  "after": "absorbs the square into the auxiliary twist. The squarefree-row bound\nallows that auxiliary argument to be nonsquarefree. Its contributions\nare summed using $\\sum_{v}\\N(v)^{-2}<\\infty$."
+ },
+ {
+  "labels": [
+   "eq:d056"
+  ],
+  "numbers": [
+   "9.4"
+  ],
+  "page": "24",
+  "line": 1583,
+  "section": "\\section{The quadratic average and the completed bound}\\label{sec:sieve}",
+  "subsection": "\\section{The quadratic average and the completed bound}\\label{sec:sieve}",
+  "source": "\\begin{equation}\\label{eq:d056}\n \\sum_{0<\\N(k)\\le\\mathcal H}|T(X;k,f)|^2\n \\ll_{I,\\xi,\\varepsilon,C_0}D^\\varepsilon\\|W\\|_{C^J(I)}^2\n \\Bigl(\\mathcal H+\\frac{\\mathcal H^2\\N(f)}X\\Bigr)\n\\end{equation}",
+  "before": "\n\\begin{proposition}[Completed estimate; CM form of {\\cite[Proposition~5.2]{OAI1112}}]\\label{prop:r2-completed}\nFix $\\varepsilon>0$, $C_0\\ge1$ and a character $\\xi$ of $\\mathfrak G$. There is an integer\n$J=J(\\varepsilon,C_0)\\ge1$ such that",
+  "after": "whenever $1\\le\\mathcal H,X,\\N(f)\\le D^{C_0}$ and $f$ is primary, squarefree and coprime to $6$, for every\ncompact interval $I\\subset(0,\\infty)$ and every $W\\in C_c^\\infty(I)$. This is~\\eqref{eq:completed}.\n\\end{proposition}"
+ }
+]

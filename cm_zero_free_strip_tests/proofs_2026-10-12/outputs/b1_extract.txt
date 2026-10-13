@@ -1,0 +1,9 @@
+T3 lattice count <= 1+8x:  True  max ratio count/(1+8x)=1.0000  falsifier 1+3x violated: True
+T4 multiples count <= 1+8X/N(pi): True
+T6 exclusion count < 2log|d|/log(Y/2): True  falsifier (no factor 2) violated: True
+T7 P(Y)=0 for Y<7: True  P(7)= 2
+T7 largest Y<=1e6 with P(Y) < 0.4 Y/log Y: 96  min ratio P/(Y/logY) over [1e3,1e6]: 0.497
+T8 case-2 implication: True  log(Y/2)>=log(Y)/2 for Y>=4: True
+T9 D^{1+th/2}Y^{-1/2} = N0^{1/12}D^{11/12+5th/12}: True ; D/Y = N0^{1/6}D^{5/6-th/6}: True ; falsifier N0^{1/6} in first: True
+T9b Y<=H^{1/6}=D^{(1+th)/6}<=D for th<=1/10: True
+EXIT STATUS 0: all 13 checks passed

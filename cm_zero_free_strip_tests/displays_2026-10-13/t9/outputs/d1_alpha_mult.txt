@@ -1,0 +1,9 @@
+119 primary elements coprime to 6 with N <= 400 (one per ideal outside S = {lambda, 2})
+RESULT|F1-primary-closed|PASS|err=0 tol=0; 14161 products l0 l0' are primary and coprime to 6 (exact Z[omega] arithmetic)
+RESULT|F1-mult|PASS|err=3.55e-16 tol=1e-14; alpha(l l') = alpha(l) alpha(l') with the primary generator of l l' found independently
+RESULT|F1-modulus|PASS|err=1.11e-16 tol=1e-15; |alpha(l)| = 1
+      falsifier for F1-mult [Ireland-Rosen generator (= 2 mod 3)]: err=2 -> fails as required
+      falsifier for F1-mult [first-sextant generator]: err=1 -> fails as required
+RESULT|F23-allocation|PASS|err=6.83e-16 tol=1e-13; alpha(p^{i1} l1 p^{i2} l2)^e = alpha(p)^{e(i1+i2)} alpha(l1 l2)^e (frozen unimodular scalar)
+      falsifier for F23-allocation [dropping the extracted scalar alpha(p)^{e(i1+i2)}]: err=2 -> fails as required
+SUMMARY: 7 checks, 0 failures

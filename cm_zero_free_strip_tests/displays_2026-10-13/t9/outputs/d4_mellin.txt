@@ -1,0 +1,17 @@
+RESULT|F17|PASS|err=2.86e-31 tol=1e-15; direct y-integral = x^{-s} Gamma(s+1/2)/Gamma(3/2-s), x = 0.3, 2.5, Re s from -0.45 to 0.7
+      falsifier for F17 [Gamma(s)/Gamma(1-s)]: err=0.846 -> fails as required
+      falsifier for F17 [x^{+s}]: err=0.201 -> fails as required
+RESULT|F17-DLMF-10.22.43|PASS|err=1.48e-31 tol=1e-15; int t^{mu-1} J_1(t) dt = 2^{mu-1} Gamma((1+mu)/2)/Gamma((3-mu)/2), mu = -0.9, 0.3+0.5i, 1, 1.45
+   j=0: sup_y |(y d/dy)^j W#| / (y^1/2 int|W_j| x^1/2) = 1.0000
+   j=1: sup_y |(y d/dy)^j W#| / (y^1/2 int|W_j| x^1/2) = 0.0972
+   j=2: sup_y |(y d/dy)^j W#| / (y^1/2 int|W_j| x^1/2) = 0.0132
+RESULT|F16-ibp-identity|PASS|err=4.55e-13 tol=1e-11; (y d/dy)^j W#(y) = int W_j(x) J_1(2 sqrt(xy)) dx, W_j = (-d/dx x)^j W, j = 0, 1, 2
+RESULT|F16-small-y|PASS|err=0 tol=0; |(y d/dy)^j W#(y)| <= y^{1/2} int |W_j| x^{1/2} dx at 81 points y in [1e-6, 1e4], j = 0, 1, 2
+   j=0, A=1: sup y^A |(y d/dy)^j W#| per decade [1,10],...,[1e5,1e6]: 3.65e-01, 9.90e-01, 7.29e-01, 3.73e-01, 4.66e-02, 7.32e-04
+   j=0, A=2: sup y^A |(y d/dy)^j W#| per decade [1,10],...,[1e5,1e6]: 3.57e+00, 6.40e+01, 3.32e+02, 6.35e+02, 5.02e+02, 7.32e+01
+   j=1, A=1: sup y^A |(y d/dy)^j W#| per decade [1,10],...,[1e5,1e6]: 1.77e+00, 9.27e+00, 1.60e+01, 1.52e+01, 7.07e+00, 4.26e-01
+   j=1, A=2: sup y^A |(y d/dy)^j W#| per decade [1,10],...,[1e5,1e6]: 1.60e+01, 7.41e+02, 1.13e+04, 6.02e+04, 8.61e+04, 4.79e+04
+   j=2, A=1: sup y^A |(y d/dy)^j W#| per decade [1,10],...,[1e5,1e6]: 5.71e+00, 1.03e+02, 5.26e+02, 1.09e+03, 9.25e+02, 1.57e+02
+   j=2, A=2: sup y^A |(y d/dy)^j W#| per decade [1,10],...,[1e5,1e6]: 5.71e+01, 9.72e+03, 3.94e+05, 9.67e+06, 2.45e+07, 1.83e+07
+RESULT|F16-large-y|PASS|err=0 tol=0; size check: y^A |(y d/dy)^j W#| (A = 1, 2) peaks at moderate y and decreases by y = 1e6
+SUMMARY: 7 checks, 0 failures

@@ -1,0 +1,6 @@
+squarefree primary k coprime to 6: 421
+(0) chi_(k) trivial on units and = (n/k)_2 on primary n: violations 0 | falsifier without kappa^e: units with (u/k)_2 != 1: 636
+(2) reciprocity factor as a function of classes mod 4: 5712 coprime pairs, 144 class pairs, violations 0 | falsifier mod 2: violations 2748
+(3) 298 coprime pairs k1 = k2 mod 4: e equal, product = (./k1k2)_2, trivial on units, primitive: violations 0
+(4) (-2n'/k)_2 = (-2/k)_2 (n'/k)_2: violations 0
+PASS

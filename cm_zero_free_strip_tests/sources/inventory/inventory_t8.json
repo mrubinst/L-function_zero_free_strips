@@ -1,0 +1,475 @@
+[
+ {
+  "labels": [
+   "eq:d170"
+  ],
+  "numbers": [
+   "E.1"
+  ],
+  "page": "85",
+  "line": 5265,
+  "section": "\\section{The inverse moment for co-oriented coefficients}\\label{sec:s4-inverse}",
+  "subsection": "\\subsection{Notation and statements}\\label{sec:s4-statements}",
+  "source": "\\begin{equation}\\label{eq:d170}\n \\varphi(n)=\\overline{\\alpha(n)} .\n\\end{equation}",
+  "before": "nonunits, so that $\\chi_c(a)^0=\\ind_{(a,c)=1}$; $\\gamma_j$ is the normalized Gauss sum of~\\eqref{eq:gauss}; and\n$G(c)=\\overline{\\chi_c(4)}\\Gamma(c)$ is the finite-ray function of~\\cite[Lemma~lem:fixed-gauss-phase]{OAI78}\n(L934--1052), equal to $\\overline{\\chi_c(4)}\\gamma_3(c)$ for squarefree $c$. As there, $\\mu$ is the M\\\"obius\nfunction and ``sf'' means squarefree. Put",
+  "after": "The product of primary generators is the primary generator of the product, so $\\varphi$ is completely\nmultiplicative on primary elements, and $|\\varphi|=1$.\n"
+ },
+ {
+  "labels": [
+   "eq:s4-M"
+  ],
+  "numbers": [
+   "E.2"
+  ],
+  "page": "85",
+  "line": 5274,
+  "section": "\\section{The inverse moment for co-oriented coefficients}\\label{sec:s4-inverse}",
+  "subsection": "\\subsection{Notation and statements}\\label{sec:s4-statements}",
+  "source": "\\begin{equation}\\label{eq:s4-M}\n M_u(Z^r;W)=Z^{-r/2}\\sum_n\\mu(n)\\,\\alpha(n)^{\\epsilon}\\psi_u(n)\\,W\\Bigl(\\frac{\\N(n)}{Z^r}\\Bigr).\n\\end{equation}",
+  "before": "\nFix a finite-order ray character $\\nu$ whose zero-extended defining modulus has prime support in $S$, and a\nsign $\\epsilon\\in\\{1,-1\\}$. Put $\\psi_u(n)=\\nu(n)\\chi_n(u)^{\\epsilon}$, with all zero extensions. For a smooth\nannular $W$ (supported in a fixed compact subinterval of $(0,\\infty)$) put",
+  "after": "The angular factor $\\alpha^\\epsilon$ is paired with $\\chi_\\bullet(u)^\\epsilon$: the sum is co-oriented in the\nsense of Section~\\ref{sec:78rows}. For a finite set $I$ of slots, disjoint sets $\\mathcal P_i$ of primes outside\n$S$ with $\\N(p)\\asymp Z^{z_i}$ for $p\\in\\mathcal P_i$, coefficients $a_i(p)$ independent of $u$ with"
+ },
+ {
+  "labels": [
+   "eq:d171"
+  ],
+  "numbers": [
+   "E.3"
+  ],
+  "page": "85",
+  "line": 5281,
+  "section": "\\section{The inverse moment for co-oriented coefficients}\\label{sec:s4-inverse}",
+  "subsection": "\\subsection{Notation and statements}\\label{sec:s4-statements}",
+  "source": "\\begin{equation}\\label{eq:d171}\n Q_u=\\prod_{i\\in I}Z^{-z_i/2}\\sum_{p\\in\\mathcal P_i}a_i(p)\\psi_u(p)W_i\\Bigl(\\frac{\\N(p)}{Z^{z_i}}\\Bigr),\n \\qquad z=\\sum_{i\\in I}z_i .\n\\end{equation}",
+  "before": "The angular factor $\\alpha^\\epsilon$ is paired with $\\chi_\\bullet(u)^\\epsilon$: the sum is co-oriented in the\nsense of Section~\\ref{sec:78rows}. For a finite set $I$ of slots, disjoint sets $\\mathcal P_i$ of primes outside\n$S$ with $\\N(p)\\asymp Z^{z_i}$ for $p\\in\\mathcal P_i$, coefficients $a_i(p)$ independent of $u$ with\n$|a_i(p)|\\le1$, and smooth annular $W_i$, put, exactly as in~\\cite[L9235--9244]{OAI78},",
+  "after": "The slots carry no angular factor; a factor $\\alpha(p)^\\epsilon$ could be absorbed into $a_i(p)$.\n\n\\begin{proposition}[CM marked inverse moment]\\label{prop:s4-marked}"
+ },
+ {
+  "labels": [
+   "eq:d172"
+  ],
+  "numbers": [
+   "E.4"
+  ],
+  "page": "85",
+  "line": 5290,
+  "section": "\\section{The inverse moment for co-oriented coefficients}\\label{sec:s4-inverse}",
+  "subsection": "\\subsection{Notation and statements}\\label{sec:s4-statements}",
+  "source": "\\begin{equation}\\label{eq:d172}\n r+2z\\le m-c_1,\\qquad 2r+8z\\le3m-c_2 .\n\\end{equation}",
+  "before": "\n\\begin{proposition}[CM marked inverse moment]\\label{prop:s4-marked}\nFix bounded ranges for the nonnegative parameters $m,r,z_i$, a bound for\n$|I|$, and positive constants $c_1,c_2$, and suppose",
+  "after": "Then, for every $\\varepsilon>0$,\n\\begin{equation}\\label{eq:s4-marked}\n \\sum_{\\substack{u\\in\\OO\\\\0<\\N(u)\\ll Z^m}}|M_u(Z^r;W)Q_u|^2\\ll Z^{m+\\varepsilon}."
+ },
+ {
+  "labels": [
+   "eq:s4-marked"
+  ],
+  "numbers": [
+   "E.5"
+  ],
+  "page": "85",
+  "line": 5294,
+  "section": "\\section{The inverse moment for co-oriented coefficients}\\label{sec:s4-inverse}",
+  "subsection": "\\subsection{Notation and statements}\\label{sec:s4-statements}",
+  "source": "\\begin{equation}\\label{eq:s4-marked}\n \\sum_{\\substack{u\\in\\OO\\\\0<\\N(u)\\ll Z^m}}|M_u(Z^r;W)Q_u|^2\\ll Z^{m+\\varepsilon}.\n\\end{equation}",
+  "before": "\\begin{equation}\\label{eq:d172}\n r+2z\\le m-c_1,\\qquad 2r+8z\\le3m-c_2 .\n\\end{equation}\nThen, for every $\\varepsilon>0$,",
+  "after": "The uniformity is that of~\\cite[Lemma~lem:marked]{OAI78} (L9261--9268): the implied constant depends on the\nfixed arithmetic data, $c_1,c_2$, the parameter ranges and finitely many smooth seminorms of the tests, and is\nuniform in the prime supports and their bounded coefficients; the estimate holds for both signs $\\epsilon$,"
+ },
+ {
+  "labels": [
+   "eq:s4-a"
+  ],
+  "numbers": [
+   "E.6"
+  ],
+  "page": "85",
+  "line": 5316,
+  "section": "\\section{The inverse moment for co-oriented coefficients}\\label{sec:s4-inverse}",
+  "subsection": "\\subsection{Notation and statements}\\label{sec:s4-statements}",
+  "source": "\\begin{equation}\\label{eq:s4-a}\n a(n)=\\overline{\\alpha(n)}^{\\,2}\\gamma_2(n)\\nu(n)\\rho(n)=\\varphi(n)\\cdot\\overline{\\alpha(n)}\\gamma_2(n)\\nu(n)\\rho(n),\n\\end{equation}",
+  "before": "divisor-bounded weight $w(f)$ depending on $f$ alone; let $\\rho(n)=\\ind_{(n,\\mathfrak r_\\rho)=1}$ be a fixed\npuncture; and let $\\mathfrak d$ be a mark of the product form~\\cite[eq.~old-eq:4.2]{OAI78} (L7304), with\ndisjoint fixed prime lists of total nominal length at most $z_0$ and bounded coefficients independent of\n$k,f$. For squarefree $n$ outside $S$ put",
+  "after": "which is $\\varphi$ times the coefficient of~\\cite[eq.~eq:canonical-energy]{OAI78} (L9324), and\n\\begin{equation}\\label{eq:s4-E}\n \\mathcal E=Z^{-V}\\sum_fw(f)\\sum_{\\substack{k\\in\\OO\\\\0<\\N(k)\\ll Z^M}}"
+ },
+ {
+  "labels": [
+   "eq:s4-E"
+  ],
+  "numbers": [
+   "E.7"
+  ],
+  "page": "86",
+  "line": 5320,
+  "section": "\\section{The inverse moment for co-oriented coefficients}\\label{sec:s4-inverse}",
+  "subsection": "\\subsection{Notation and statements}\\label{sec:s4-statements}",
+  "source": "\\begin{equation}\\label{eq:s4-E}\n \\mathcal E=Z^{-V}\\sum_fw(f)\\sum_{\\substack{k\\in\\OO\\\\0<\\N(k)\\ll Z^M}}\n \\Bigl|Z^{-N/2}\\ssum_n a(n)\\chi_n(k)\\chi_n(f)^4\\mathfrak d(n)W\\Bigl(\\frac{\\N(n)}{Z^N}\\Bigr)\\Bigr|^2.\n\\end{equation}",
+  "before": "\\begin{equation}\\label{eq:s4-a}\n a(n)=\\overline{\\alpha(n)}^{\\,2}\\gamma_2(n)\\nu(n)\\rho(n)=\\varphi(n)\\cdot\\overline{\\alpha(n)}\\gamma_2(n)\\nu(n)\\rho(n),\n\\end{equation}\nwhich is $\\varphi$ times the coefficient of~\\cite[eq.~eq:canonical-energy]{OAI78} (L9324), and",
+  "after": "Without the puncture, the mark and the weight $w$, this is the average~\\eqref{eq:energy} of Part~I, with\n$a_\\xi=\\overline\\alpha^{\\,2}\\gamma_2\\xi$.\n"
+ },
+ {
+  "labels": [
+   "eq:s4-T"
+  ],
+  "numbers": [
+   "E.8"
+  ],
+  "page": "86",
+  "line": 5337,
+  "section": "\\section{The inverse moment for co-oriented coefficients}\\label{sec:s4-inverse}",
+  "subsection": "\\subsection{Notation and statements}\\label{sec:s4-statements}",
+  "source": "\\begin{equation}\\label{eq:s4-T}\n \\mathcal T_{\\mathfrak d}(X;k)=\\sum_{\\substack{n\\ {\\rm sf}\\\\b}}\n \\frac{\\overline{\\alpha(n)}^{\\,2}\\gamma_2(n)\\Psi_k(n)\\,\\overline{\\alpha(b)}^{\\,6}\\Psi_k(b)^3}{\\sqrt{\\N(n)}\\,\\N(b)}\\,\n \\mathfrak d(nb^3)\\,V_*\\Bigl(\\frac{\\N(n)\\N(b)^3}X\\Bigr),\n\\end{equation}",
+  "before": "\n\\paragraph{The completed sums and Statement~(R).} Put $\\Psi_k(n)=\\nu(n)\\rho(n)\\chi_n(k)\\chi_n(f)^4$, as\nin~\\cite[L7294]{OAI78}; it is completely multiplicative on primary ideals outside $S$. Put $V_*(y)=y^{1/2}W(y)$.\nThe CM form of the completed marked sum~\\cite[eq.~eq:marked-completion]{OAI78} (L7318) is",
+  "after": "over primary $n,b$ outside $S$, which may share primes. Its angular factor $\\overline{\\alpha(nb^3)}^{\\,2}$ is that\nof the weight~\\eqref{eq:cm-weight} and of~\\eqref{eq:T}; this is the completed sum of\n$\\partial_{\\bar z}^{\\,2}\\theta$ (Section~\\ref{sec:theta}, Appendix~\\ref{app:reflection})."
+ },
+ {
+  "labels": [
+   "eq:s4-S1",
+   "eq:s4-S2",
+   "eq:s4-S3",
+   "eq:s4-S4",
+   "eq:s4-S5"
+  ],
+  "numbers": [
+   "E.9",
+   "E.10",
+   "E.11",
+   "E.12",
+   "E.13"
+  ],
+  "page": "86",
+  "line": 5366,
+  "section": "\\section{The inverse moment for co-oriented coefficients}\\label{sec:s4-inverse}",
+  "subsection": "\\subsection{The angular factor as a column twist}\\label{sec:s4-twist}",
+  "source": "\\begin{align}\n \\overline{\\alpha(u)}^{\\,2}\\gamma_2(u)\\,\\gamma_1(u)&=\\mu(u)\\overline{\\alpha(u)}\\,G(u),\\label{eq:s4-S1}\\\\\n \\overline{\\overline{\\alpha(u)}^{\\,2}\\gamma_2(u)}\\,\\gamma_{-1}(u)\n   &=\\overline{\\mu(u)\\overline{\\alpha(u)}\\,\\chi_u(-1)G(u)},\\label{eq:s4-S2}\\\\\n \\mu(u)\\overline{\\alpha(u)}\\,\\gamma_{-1}(u)&=\\overline{\\alpha(u)}^{\\,2}\\gamma_2(u)\\,\\chi_u(-1)\\overline{G(u)},\n   \\label{eq:s4-S3}\\\\\n \\overline{\\mu(u)\\overline{\\alpha(u)}}\\,\\gamma_1(u)&=\\overline{\\overline{\\alpha(u)}^{\\,2}\\gamma_2(u)}\\,G(u),\n   \\label{eq:s4-S4}\\\\\n \\mu(u)\\alpha(u)\\,\\gamma_{-1}(u)&=\\gamma_2(u)\\,\\chi_u(-1)\\overline{G(u)}.\\label{eq:s4-S5}\n\\end{align}",
+  "before": "\\subsection{The angular factor as a column twist}\\label{sec:s4-twist}\n\n\\begin{lemma}[Switching identities]\\label{lem:s4-switch}\nLet $u$ be squarefree, primary and outside $S$. Then",
+  "after": "Moreover, for every multiplicative $\\nu'$ of modulus one outside $S$, the coefficient\n$a'=\\overline\\alpha^{\\,2}\\gamma_2\\nu'$ satisfies $|a'(u)|=1$ and $a'(vw)=a'(v)a'(w)\\chi_w(v)^4$ for coprime\nsquarefree primary $v,w$ outside $S$."
+ },
+ {
+  "labels": [
+   "eq:d173"
+  ],
+  "numbers": [
+   "E.14"
+  ],
+  "page": "87",
+  "line": 5411,
+  "section": "\\section{The inverse moment for co-oriented coefficients}\\label{sec:s4-inverse}",
+  "subsection": "\\subsection{The angular factor as a column twist}\\label{sec:s4-twist}",
+  "source": "\\begin{equation}\\label{eq:d173}\n \\sum_\\tau\\varphi(n_1)\\overline{\\varphi(n_2)}\\,L(\\tau)=\\sum_\\sigma\\varphi(n_1)\\overline{\\varphi(n_2)}\\,R(\\sigma),\n\\end{equation}",
+  "before": "Let $\\sum_{\\tau}L(\\tau)=\\sum_{\\sigma}R(\\sigma)$ be an identity of absolutely convergent sums. Suppose that\nthere are a map $\\lambda$ from both index sets to a set $\\Lambda$ and a map $\\Lambda\\to\\OO^2$,\n$\\lambda\\mapsto(n_1(\\lambda),n_2(\\lambda))$, into pairs of primary elements outside $S$, such that the\nidentity holds separately on each fibre of $\\lambda$. Then for every bounded function $\\varphi$ on primary elements,",
+  "after": "where $n_a=n_a(\\lambda(\\tau))$, respectively $n_a(\\lambda(\\sigma))$. If $\\varphi$ is completely multiplicative\nand $n_a(\\lambda(\\sigma))=e_a(\\sigma)x_a(\\sigma)$, then the twist on the right is\n$\\varphi(e_1)\\overline{\\varphi(e_2)}\\cdot\\varphi(x_1)\\overline{\\varphi(x_2)}$."
+ },
+ {
+  "labels": [
+   "eq:s4-inversion"
+  ],
+  "numbers": [
+   "E.15"
+  ],
+  "page": "88",
+  "line": 5458,
+  "section": "\\section{The inverse moment for co-oriented coefficients}\\label{sec:s4-inverse}",
+  "subsection": "\\subsection{Proof of Lemma~\\ref{lem:s4-canonical}}\\label{sec:s4-canonical-proof}",
+  "source": "\\begin{equation}\\label{eq:s4-inversion}\n\\begin{split}\n &Z^{-N/2}\\ssum_n a(n)\\chi_n(k)\\chi_n(f)^4\\mathfrak d(n)W\\Bigl(\\frac{\\N(n)}{Z^N}\\Bigr)\\\\\n &\\qquad=\\sum_h\\frac{\\mu(h)\\overline{\\alpha(h)}^{\\,6}\\Psi_k(h)^3}{\\N(h)}\\,\n \\mathcal T_{\\mathfrak d_h}\\Bigl(\\frac{Z^N}{\\N(h)^3};k\\Bigr),\\qquad \\mathfrak d_h(A)=\\mathfrak d(h^3A),\n\\end{split}\n\\end{equation}",
+  "before": "\\end{itemize}\n\n\\paragraph{Step 1: the short completion (L9838--9939).} The CM form of~\\cite[eq.~eq:marked-completion-inversion]{OAI78}\n(L9841) is",
+  "after": "with $h$ squarefree. Indeed, $\\overline{\\alpha(n)}^{\\,2}\\gamma_2(n)\\Psi_k(n)=a(n)\\chi_n(k)\\chi_n(f)^4$ since $\\rho^2=\\rho$.\nExpand the right side and put $c=hb$. Complete multiplicativity of $\\overline\\alpha^{\\,6}$ and of $\\Psi_k$, including\nits zeros, gives $\\overline{\\alpha(h)}^{\\,6}\\Psi_k(h)^3\\cdot\\overline{\\alpha(b)}^{\\,6}\\Psi_k(b)^3=\\overline{\\alpha(c)}^{\\,6}\\Psi_k(c)^3$."
+ },
+ {
+  "labels": [
+   "eq:s4-beta"
+  ],
+  "numbers": [
+   "E.16"
+  ],
+  "page": "88",
+  "line": 5486,
+  "section": "\\section{The inverse moment for co-oriented coefficients}\\label{sec:s4-inverse}",
+  "subsection": "\\subsection{Proof of Lemma~\\ref{lem:s4-canonical}}\\label{sec:s4-canonical-proof}",
+  "source": "\\begin{equation}\\label{eq:s4-beta}\n \\beta^{\\rm CM}(b,f)=\\overline{\\alpha(b)}^{\\,3}\\beta(b,f),\n\\end{equation}",
+  "before": "\\paragraph{Step 2: marks and the block (L9941--10143).} The slot-priority identities~\\cite[eq.~old-eq:4.12,\neq.~eq:inverse-slot-priority]{OAI78} concern indicators only. When the completion is reopened (L9967--10003), the\ncube coefficient of~\\eqref{eq:s4-T} is $\\overline{\\alpha(b)}^{\\,6}\\Psi_k(b)^3$ instead of\n$\\overline{\\alpha(b)}^{\\,3}\\Psi_k(b)^3$. The coefficient of the block~\\cite[eq.~(A)]{OAI78} (L9984) is therefore",
+  "after": "where $\\beta$ is that of~\\cite{OAI78}. It has the same absolute value, is independent of $k$ and $n$, and contains\nthe mask $\\ind_{(b,f)=1}$. The CM block is~\\cite[eq.~(A)]{OAI78} with $a$ from~\\eqref{eq:s4-a} and\n$\\beta^{\\rm CM}$; for $V\\ge d$ it has $\\ell=0$, $b=1$, $r=N$. The reduction"
+ },
+ {
+  "labels": [
+   "eq:d174"
+  ],
+  "numbers": [
+   "E.17"
+  ],
+  "page": "89",
+  "line": 5500,
+  "section": "\\section{The inverse moment for co-oriented coefficients}\\label{sec:s4-inverse}",
+  "subsection": "\\subsection{Proof of Lemma~\\ref{lem:s4-canonical}}\\label{sec:s4-canonical-proof}",
+  "source": "\\begin{equation}\\label{eq:d174}\n \\varphi(n_1)\\overline{\\varphi(n_2)}=\\varphi(\\mathfrak A_1)\\overline{\\varphi(\\mathfrak A_2)}\\cdot\\varphi(x_1)\\overline{\\varphi(x_2)} .\n\\end{equation}",
+  "before": "columns $n_1,n_2$ of the expanded block carries the extra factor $\\varphi(n_1)\\overline{\\varphi(n_2)}$; the cube\nfactors are already in $\\beta^{\\rm CM}$. Apply Lemma~\\ref{lem:s4-transfer} to the exact steps from the expansion\n(L10145) to~\\cite[eq.~eq:inverse-first-separated]{OAI78} (L10538). On the factorized expression\n$n_a=\\mathfrak A_aCt'x_a$ (L10146--10150, L10382--10385), with $C$ and $t'$ common to both sides, so",
+  "after": "Consequently:\n\\begin{itemize}\n\\item the column coefficient~\\cite[eq.~(C)]{OAI78} (L10279) acquires the factor $\\overline{\\alpha(u_i)}$ on side"
+ },
+ {
+  "labels": [
+   "eq:s4-Pa"
+  ],
+  "numbers": [
+   "E.18"
+  ],
+  "page": "89",
+  "line": 5512,
+  "section": "\\section{The inverse moment for co-oriented coefficients}\\label{sec:s4-inverse}",
+  "subsection": "\\subsection{Proof of Lemma~\\ref{lem:s4-canonical}}\\label{sec:s4-canonical-proof}",
+  "source": "\\begin{equation}\\label{eq:s4-Pa}\n \\begin{split}\n P_a(y)={}&\\ssum_x\\mu(x)\\overline{\\alpha(x)}\\nu_a(x)\\rho(x)\\overline{\\chi_x(y)}\\chi_x(CJ)^4\\chi_x(d_k)\n \\ind_{(x,\\operatorname{rad}q_0t')=1}\\\\\n &\\qquad\\times\\mathfrak d_{I_a}(x)\\,\\omega_{x,a}\\Bigl(\\frac{\\N(x)}{Z^{s_a}}\\Bigr)\n \\Bigl(\\frac{\\N(x)}{Z^{s_a}}\\Bigr)^{\\varepsilon_ait_{x_a}};\n \\end{split}\n \\end{equation}",
+  "before": " $\\mu(u_2)\\overline{\\alpha(u_2)}\\chi_{u_2}(-1)G(u_2)$, in place of $\\mu(u_1)G(u_1)$ and\n $\\mu(u_2)\\chi_{u_2}(-1)G(u_2)$ (L10227--10239);\n\\item the factors $B_{1,a}(t';y)$ (L10483) are unchanged, because $|\\varphi(t')|^2=1$;\n\\item the polynomials~\\cite[eq.~eq:inverse-first-polynomial]{OAI78} (L10489) become",
+  "after": "\\item the outer product $e_\\sigma$ (L10520--10526) is multiplied by $\\varphi(\\mathfrak A_1)\\overline{\\varphi(\\mathfrak A_2)}$\n and contains $\\beta^{\\rm CM}$, so the outer weight $w_{1,\\sigma}$ (L10528--10533) changes only by a factor of modulus one.\n\\end{itemize}"
+ },
+ {
+  "labels": [
+   "eq:s4-a0"
+  ],
+  "numbers": [
+   "E.19"
+  ],
+  "page": "89",
+  "line": 5536,
+  "section": "\\section{The inverse moment for co-oriented coefficients}\\label{sec:s4-inverse}",
+  "subsection": "\\subsection{Proof of Lemma~\\ref{lem:s4-canonical}}\\label{sec:s4-canonical-proof}",
+  "source": "\\begin{equation}\\label{eq:s4-a0}\n a_0(z)=\\overline{\\alpha(z)}^{\\,2}\\gamma_2(z)\n\\end{equation}",
+  "before": "with $c_i=\\varphi\\,c_i^{\\rm OAI}$, where $c_i^{\\rm OAI}$ is the coefficient of L10660--10668. Apply\nLemma~\\ref{lem:s4-transfer} with $\\lambda=(x_1,x_2)$. Here $x_a=g'z_a=g'v'n_a$ (L10672--10676, L10857--10860), so\n$\\varphi(x_1)\\overline{\\varphi(x_2)}=\\varphi(n_1)\\overline{\\varphi(n_2)}$ and the outer twist is $1$. By~\\eqref{eq:s4-S3}\nand~\\eqref{eq:s4-S4}, the signal calculation of L10770--10797 holds with",
+  "after": "in place of $a_0=\\overline\\alpha\\gamma_2$ (L10807), and with the same ray factor $G([z_2][z_1]^{-1})$. Hence:\n\\begin{itemize}\n\\item \\cite[eq.~eq:inverse-second-formal-component]{OAI78} (L10827) holds with $L_{o,d_2,k''}$ formed"
+ },
+ {
+  "labels": [
+   "eq:s4-child"
+  ],
+  "numbers": [
+   "E.20"
+  ],
+  "page": "90",
+  "line": 5555,
+  "section": "\\section{The inverse moment for co-oriented coefficients}\\label{sec:s4-inverse}",
+  "subsection": "\\subsection{Proof of Lemma~\\ref{lem:s4-canonical}}\\label{sec:s4-canonical-proof}",
+  "source": "\\begin{equation}\\label{eq:s4-child}\n Q_{a,\\gamma,\\boldsymbol\\zeta}(k_{\\rm new},f_{\\rm new})=\\ssum_n\\overline{\\alpha(n)}^{\\,2}\\gamma_2(n)\\nu_a'(n)\\rho'(n)\n \\chi_n(k_{\\rm new})\\chi_n(f_{\\rm new})^4\\mathfrak d_a'(n)W_a'\\Bigl(\\frac{\\N(n)}{Z^{N_{\\rm ch}}}\\Bigr),\n\\end{equation}",
+  "before": "The new canonical data and their admissibility (L10913--11116) involve no coefficient: the child data, lengths\nand clipping, the source triples, the transition identities, the new puncture, the child\nmargins~\\cite[eq.~eq:inverse-child-margins]{OAI78} and the row decrease~\\cite[eq.~eq:inverse-row-decrease]{OAI78}. In the\ncommon density (L11118--11258) the child polynomial~\\cite[eq.~eq:canonical-child-polynomial]{OAI78} (L11167) becomes",
+  "after": "of the form~\\eqref{eq:s4-E}, while the outer weight~\\cite[eq.~eq:inverse-second-outer-weight]{OAI78} (L11185) is\nliterally unchanged, since it contains only $|B_o|^2$ and $|D_o|^2$. Thus~\\cite[eq.~eq:inverse-xi-identity]{OAI78}\n(L11209) holds with~\\eqref{eq:s4-child}. The second Cauchy inequality, the fibre and source counts, the positive"
+ },
+ {
+  "labels": [
+   "eq:s4-overlap"
+  ],
+  "numbers": [
+   "E.21"
+  ],
+  "page": "91",
+  "line": 5589,
+  "section": "\\section{The inverse moment for co-oriented coefficients}\\label{sec:s4-inverse}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:s4-marked}}\\label{sec:s4-marked-proof}",
+  "source": "\\begin{equation}\\label{eq:s4-overlap}\n\\begin{split}\n &\\mu(n)\\alpha(n)^{\\epsilon}\\psi_u(n)\\prod_{i\\in I}a_i(p_i)\\psi_u(p_i)\\\\\n &\\quad=\\Bigl[\\mu(j)\\alpha(j)^{\\epsilon}\\psi_u(j)^2\\prod_{i\\notin I_0}a_i(p_i)\\Bigr]\\cdot\n \\mu(c)\\alpha(c)^{\\epsilon}\\psi_u(c)\\cdot\\prod_{i\\in I_0}\\mu(p_i)\\overline{\\alpha(p_i)^{\\epsilon}}\\,a_i(p_i).\n\\end{split}\n\\end{equation}",
+  "before": "$n=jn_0$, $P=jP_0$ and $c=n_0P_0$. Then\n$\\alpha(n)^{\\epsilon}=\\alpha(j)^{\\epsilon}\\alpha(c)^{\\epsilon}\\overline{\\alpha(P_0)^{\\epsilon}}$. Together with\n$\\mu(n)=\\mu(j)\\mu(c)\\mu(P_0)$ and $\\psi_u(n)\\psi_u(P)=\\psi_u(j)^2\\psi_u(c)$ (L11615--11617), this gives, for a fixed\nassigned tuple with surviving subset $I_0$,",
+  "after": "So~\\cite[eq.~eq:initial-overlap-polynomial]{OAI78} (L11651) holds with three changes:\n\\begin{itemize}\n\\item the assigned scalar is multiplied by $\\alpha(j)^{\\epsilon}$, which has modulus one and does not depend on $u$;"
+ },
+ {
+  "labels": [
+   "eq:s4-R0"
+  ],
+  "numbers": [
+   "E.22"
+  ],
+  "page": "91",
+  "line": 5610,
+  "section": "\\section{The inverse moment for co-oriented coefficients}\\label{sec:s4-inverse}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:s4-marked}}\\label{sec:s4-marked-proof}",
+  "source": "\\begin{equation}\\label{eq:s4-R0}\n \\mathcal R_0(u)=Z^{-D'/2}\\ssum_c\\mu(c)\\overline{\\alpha(c)}\\nu_0(c)\\ind_{(c,j)=1}\\overline{\\chi_c(u)}\\,\n \\mathfrak d_0(c)\\,W_0\\Bigl(\\frac{\\N(c)}{Z^{D'}}\\Bigr),\n\\end{equation}",
+  "before": "\\paragraph{Orientation (L11712--11726).} For $\\epsilon=-1$ the residual polynomial is unchanged; for $\\epsilon=+1$\nconjugate it, with its character, mark and test. Since\n$\\overline{\\mu(c)\\alpha(c)\\nu(c)\\chi_c(u)}=\\mu(c)\\overline{\\alpha(c)}\\,\\overline{\\nu(c)}\\,\\overline{\\chi_c(u)}$, in\nboth cases it suffices to bound",
+  "after": "which is~\\cite[eq.~eq:initial-residual-polynomial]{OAI78} (L11717) times $\\varphi(c)$. Co-orientation is what makes\nthe twist $\\varphi=\\overline\\alpha$ for both signs; an anti-oriented sum would give the twist $\\alpha$.\n"
+ },
+ {
+  "labels": [
+   "eq:s4-Astar"
+  ],
+  "numbers": [
+   "E.23"
+  ],
+  "page": "91",
+  "line": 5620,
+  "section": "\\section{The inverse moment for co-oriented coefficients}\\label{sec:s4-inverse}",
+  "subsection": "\\subsection{Proof of Proposition~\\ref{prop:s4-marked}}\\label{sec:s4-marked-proof}",
+  "source": "\\begin{equation}\\label{eq:s4-Astar}\n A_*(z)=\\overline{\\alpha(z)}^{\\,2}\\gamma_2(z)\\nu_*(z),\\qquad\\nu_*=\\nu_0\\overline\\vartheta,\n\\end{equation}",
+  "before": "\n\\paragraph{The Poisson transformation (L11727--11888).} Apply Lemma~\\ref{lem:s4-transfer} with $\\lambda=(c_1,c_2)$.\nHere $c_a=Cz_a=Csn_a$ (L11728--11730, L11850--11853), so the outer twist is $1$ and the columns $n_a$ carry\n$\\varphi(n_a)$. By~\\eqref{eq:s4-S3} and~\\eqref{eq:s4-S4}, the signal step (L11803--11814) gives",
+  "after": "in place of $\\overline\\alpha\\gamma_2\\nu_*$. Then:\n\\begin{itemize}\n\\item \\cite[eq.~eq:initial-formal-component]{OAI78} (L11819) holds with~\\eqref{eq:s4-Astar}, the common factor being"
+ },
+ {
+  "labels": [
+   "eq:s4-sixth"
+  ],
+  "numbers": [
+   "E.24"
+  ],
+  "page": "92",
+  "line": 5647,
+  "section": "\\section{The inverse moment for co-oriented coefficients}\\label{sec:s4-inverse}",
+  "subsection": "\\subsection{Amplification on sixth-power-free rows}\\label{sec:s4-amplification}",
+  "source": "\\begin{equation}\\label{eq:s4-sixth}\n M_u(D;W)=\\sum_{d\\mid\\operatorname{rad}a}\\mu(d)\\alpha(d)^{\\epsilon}\\psi_u(d)\\N(d)^{-1/2}M_{ua^6}(D/\\N(d);W),\n\\end{equation}",
+  "before": "\\cite[Lemma~lem:inverse-amplification]{OAI78} (L12362--12389) holds for the polynomials~\\eqref{eq:s4-M} without slots.\nIts input~\\cite[eq.~eq:raw-moment]{OAI78} (L12353) is Proposition~\\ref{prop:s4-marked} with $Z=H$,\n$m=1$, $r=\\log_HD$ and no slots (L12345--12360). In the proof (L12391--12469) only the column\nidentity~\\cite[eq.~eq:sixth-power-column-identity]{OAI78} (L12426) changes. It becomes",
+  "after": "because $n=dm$ with $d\\mid\\operatorname{rad}a$, $(m,a)=1$, gives $\\alpha(n)^\\epsilon=\\alpha(d)^\\epsilon\\alpha(m)^\\epsilon$,\nand $\\psi_{ua^6}(m)=\\psi_u(m)\\ind_{(m,a)=1}$ (L12416--12424). The coefficient mass is still at most\n$d_{\\OO}(a)$, and the rest is verbatim."
+ },
+ {
+  "labels": [
+   "eq:d190"
+  ],
+  "numbers": [
+   "G.1"
+  ],
+  "page": "102",
+  "line": 6277,
+  "section": "\\section{The \\texorpdfstring{$11/12$}{11/12} stage for the family \\texorpdfstring{$\\mathcal F_{\\rm CM}$}{F\\_CM}}\\label{app:s6}",
+  "subsection": "\\subsection{What~\\texorpdfstring{\\cite{OAI78}}{[OAI78]} proves at this stage, and what Part~II uses}",
+  "source": "\\begin{equation}\\label{eq:d190}\n |J_{\\mathrm I,\\eta}(Z)|\\ll_\\eta Z^{1/4+\\omega},\\qquad\n |J_{\\mathrm I,\\eta}(Z)-f_{\\mathrm I,\\eta}(Z)|\\ll_\\eta Z^{C_{\\mathrm I}(\\beta_*)-1/4800},\n\\end{equation}",
+  "before": "(L5460--6806, with the probe, the Poisson representation and the detector of L3313--4687) is by\ncontradiction. Suppose that $\\Delta_1=\\beta_*-11/12>0$, where now $\\beta_*$ is the supremum for the\nfinite-order family. For each target $\\eta$ the balanced probe\n$J_{\\mathrm I,\\eta}(Z)=I_\\eta(Z^{1/2},Z^{1/2},Z)/c_S$ satisfies two estimates:",
+  "after": "with $C_{\\mathrm I}(s)=s-2/3$ and $\\omega=\\Delta_1/2$ (\\cite[Props.~prop:balanced-low and\nprop:balanced-high]{OAI78}). The high estimate uses five inputs:\n\\begin{itemize}"
+ },
+ {
+  "labels": [
+   "eq:d191"
+  ],
+  "numbers": [
+   "G.2"
+  ],
+  "page": "103",
+  "line": 6326,
+  "section": "\\section{The \\texorpdfstring{$11/12$}{11/12} stage for the family \\texorpdfstring{$\\mathcal F_{\\rm CM}$}{F\\_CM}}\\label{app:s6}",
+  "subsection": "\\subsection{Proof of Theorem~\\ref{thm:s6-1112}: Part~I with a finite-order twist}\\label{subsec:s6-twist}",
+  "source": "\\begin{equation}\\label{eq:d191}\n \\psi((n))=\\overline{\\alpha(n)}\\,\\eta((n))\n\\end{equation}",
+  "before": "\n\\paragraph{The data.} Fix $\\psi\\in\\mathcal F_{\\rm CM}$. By the definition of $\\mathcal F_{\\rm CM}$, $\\psi$ is\nthe primitive character inducing $\\overline\\alpha\\eta$, where $\\eta$ is a character of the ray class group\nmodulo some integral ideal $\\mathfrak m$. Thus",
+  "after": "for every primary $n$ prime to $3\\mathfrak m$. Let $S$ be the set of prime ideals that divide $6\\mathfrak m$.\nIf $n\\equiv n'\\pmod{\\mathfrak m}$ are primary and prime to $S$, then $n/n'\\equiv1\\ \\mathrm{mod}^\\times\\,\\mathfrak m$\n(multiplicatively), so $\\eta((n))=\\eta((n'))$. Put"
+ },
+ {
+  "labels": [
+   "eq:d192"
+  ],
+  "numbers": [
+   "G.3"
+  ],
+  "page": "103",
+  "line": 6332,
+  "section": "\\section{The \\texorpdfstring{$11/12$}{11/12} stage for the family \\texorpdfstring{$\\mathcal F_{\\rm CM}$}{F\\_CM}}\\label{app:s6}",
+  "subsection": "\\subsection{Proof of Theorem~\\ref{thm:s6-1112}: Part~I with a finite-order twist}\\label{subsec:s6-twist}",
+  "source": "\\begin{equation}\\label{eq:d192}\n \\nu(n)=\\overline{\\eta((n))}\\quad(n\\text{ primary, prime to }S),\\qquad\\nu(n)=0\\quad\\text{otherwise}.\n\\end{equation}",
+  "before": "\\end{equation}\nfor every primary $n$ prime to $3\\mathfrak m$. Let $S$ be the set of prime ideals that divide $6\\mathfrak m$.\nIf $n\\equiv n'\\pmod{\\mathfrak m}$ are primary and prime to $S$, then $n/n'\\equiv1\\ \\mathrm{mod}^\\times\\,\\mathfrak m$\n(multiplicatively), so $\\eta((n))=\\eta((n'))$. Put",
+  "after": "For a primary prime $\\pi\\notin S$ this gives\n\\begin{equation}\\label{eq:s6-euler}\n \\alpha(\\pi)\\nu(\\pi)=\\overline{\\overline{\\alpha(\\pi)}\\eta((\\pi))}=\\overline{\\psi((\\pi))}."
+ },
+ {
+  "labels": [
+   "eq:s6-euler"
+  ],
+  "numbers": [
+   "G.4"
+  ],
+  "page": "103",
+  "line": 6336,
+  "section": "\\section{The \\texorpdfstring{$11/12$}{11/12} stage for the family \\texorpdfstring{$\\mathcal F_{\\rm CM}$}{F\\_CM}}\\label{app:s6}",
+  "subsection": "\\subsection{Proof of Theorem~\\ref{thm:s6-1112}: Part~I with a finite-order twist}\\label{subsec:s6-twist}",
+  "source": "\\begin{equation}\\label{eq:s6-euler}\n \\alpha(\\pi)\\nu(\\pi)=\\overline{\\overline{\\alpha(\\pi)}\\eta((\\pi))}=\\overline{\\psi((\\pi))}.\n\\end{equation}",
+  "before": "\\begin{equation}\\label{eq:d192}\n \\nu(n)=\\overline{\\eta((n))}\\quad(n\\text{ primary, prime to }S),\\qquad\\nu(n)=0\\quad\\text{otherwise}.\n\\end{equation}\nFor a primary prime $\\pi\\notin S$ this gives",
+  "after": "Fix $L_S\\in\\OO$ whose prime factors are exactly the primes of $S$, and which is divisible by $72$, by a\ngenerator of $\\mathfrak m$, and by the moduli of the finitely many ray characters\n$n\\mapsto\\chi_n\\bigl(\\upsilon\\prod_{\\mathfrak p\\in S}\\pi_{\\mathfrak p}^{v_{\\mathfrak p}}\\bigr)$"
+ },
+ {
+  "labels": [
+   "eq:d193"
+  ],
+  "numbers": [
+   "G.5"
+  ],
+  "page": "104",
+  "line": 6356,
+  "section": "\\section{The \\texorpdfstring{$11/12$}{11/12} stage for the family \\texorpdfstring{$\\mathcal F_{\\rm CM}$}{F\\_CM}}\\label{app:s6}",
+  "subsection": "\\subsection{Proof of Theorem~\\ref{thm:s6-1112}: Part~I with a finite-order twist}\\label{subsec:s6-twist}",
+  "source": "\\begin{equation}\\label{eq:d193}\n A_u^\\nu(D)=\\sum_n\\muk(n)\\alpha(n)\\nu(n)\\chi_n(u)W\\Bigl(\\frac{\\N(n)}D\\Bigr),\n\\end{equation}",
+  "before": "\\item[(G3)] The fixed-numerator characters above are characters of $\\mathfrak G_S$.\n\\item[(G4)] $(\\lambda/x)_3$ depends only on $x\\bmod9$ for primary $x$, and $9\\mid L_S$.\n\\end{enumerate}\nThe twisted rows are",
+  "after": "over primary $n$, with $u\\in\\OO$. The factor $\\nu(n)$ restricts $n$ to elements prime to $S$. For $\\nu=\\ind$\nand $S$ the primes above $6$ these are the rows~\\eqref{eq:Au} of Part~I.\n"
+ },
+ {
+  "labels": [
+   "eq:d194"
+  ],
+  "numbers": [
+   "G.6"
+  ],
+  "page": "104",
+  "line": 6364,
+  "section": "\\section{The \\texorpdfstring{$11/12$}{11/12} stage for the family \\texorpdfstring{$\\mathcal F_{\\rm CM}$}{F\\_CM}}\\label{app:s6}",
+  "subsection": "\\subsection{Proof of Theorem~\\ref{thm:s6-1112}: Part~I with a finite-order twist}\\label{subsec:s6-twist}",
+  "source": "\\begin{equation}\\label{eq:d194}\n \\sum_{0<\\N(u)\\le D^{1+\\vartheta}}|A_u^\\nu(D)|^2\\ll_{\\psi,W,\\vartheta,\\varepsilon}D^{2+\\vartheta+\\varepsilon}.\n\\end{equation}",
+  "before": "and $S$ the primes above $6$ these are the rows~\\eqref{eq:Au} of Part~I.\n\n\\begin{proposition}[Twisted mean square]\\label{prop:s6-ms}\nFor every fixed $0<\\vartheta\\le1/10$ and $\\varepsilon>0$,",
+  "after": "As in~\\eqref{eq:MS}, the constant is controlled by a finite smoothness norm of $W$.\n\\end{proposition}\n"
+ },
+ {
+  "labels": [
+   "eq:d195"
+  ],
+  "numbers": [
+   "G.7"
+  ],
+  "page": "105",
+  "line": 6448,
+  "section": "\\section{The \\texorpdfstring{$11/12$}{11/12} stage for the family \\texorpdfstring{$\\mathcal F_{\\rm CM}$}{F\\_CM}}\\label{app:s6}",
+  "subsection": "\\subsection{Proof of Theorem~\\ref{thm:s6-1112}: Part~I with a finite-order twist}\\label{subsec:s6-twist}",
+  "source": "\\begin{equation}\\label{eq:d195}\n \\muk(z_1)\\muk(z_2)\\overline{\\alpha(z_1)}\\alpha(z_2)\\overline{\\nu(z_1)}\\nu(z_2)\\,\n \\gamma(\\overline{\\chi_{z_1}}\\chi_{z_2})=\\sum_\\xi c_\\xi(\\overline\\nu)\\,a_\\xi(z_1)\\overline{a_\\xi(z_2)},\n\\end{equation}",
+  "before": "\\emph{Proposition~\\ref{prop:b2-reduction}.} In Step~1 the coefficient of the pair $(n_1,n_2)$ acquires\n$\\overline{\\nu(n_1)}\\nu(n_2)=|\\nu(g)|^2\\,\\overline{\\nu(z_1)}\\nu(z_2)=\\overline{\\nu(z_1)}\\nu(z_2)$, since $g$ is\nprime to $S$. The zero frequency still has coefficient $|W(\\N(g)/D)|^2$, so $Z$ is unchanged, with $g$ prime\nto $S$. In Step~2,~\\eqref{eq:b2-forward} with $\\xi_1=\\overline\\nu$ gives",
+  "after": "and therefore $\\mathcal M_D-Z=\\sum_\\xi c_\\xi(\\overline\\nu)\\mathcal S_\\xi$, with $\\mathcal S_\\xi$\nas in~\\eqref{eq:b2-Sxi}. For $z_1=z_2=1$ the identity reads $1=\\sum_\\xi c_\\xi(\\overline\\nu)$. Steps~3--5 use\nthe coefficients only through~\\eqref{eq:b2-twisted} and $|a_\\xi|\\le1$, which hold for every character of"
+ },
+ {
+  "labels": [
+   "eq:s6-bound"
+  ],
+  "numbers": [
+   "G.8"
+  ],
+  "page": "106",
+  "line": 6493,
+  "section": "\\section{The \\texorpdfstring{$11/12$}{11/12} stage for the family \\texorpdfstring{$\\mathcal F_{\\rm CM}$}{F\\_CM}}\\label{app:s6}",
+  "subsection": "\\subsection{Proof of Theorem~\\ref{thm:s6-1112}: Part~I with a finite-order twist}\\label{subsec:s6-twist}",
+  "source": "\\begin{equation}\\label{eq:s6-bound}\n A_1^\\nu(D)=\\sum_n\\muk(n)\\alpha(n)\\nu(n)W\\Bigl(\\frac{\\N(n)}D\\Bigr)\\ll_{\\psi,W,\\varepsilon}D^{11/12+\\varepsilon}\n \\qquad(D\\ge1).\n\\end{equation}",
+  "before": "$|\\muk(n)\\alpha(n)\\nu(n)|\\le1$, $\\chi_n(\\pi^6)=\\ind_{\\pi\\nmid n}$, the distinctness of the rows $\\pi^6$, and\nlattice-point counting. Since $S$ is finite, the prime number theorem for primes $\\equiv1\\pmod3$~\\cite{Lan03} gives\n$J\\ge Y/(5\\log Y)$ for $Y\\ge Y_0(S)$. As in the proof of~\\eqref{eq:Sbound}, Proposition~\\ref{prop:s6-ms} then\ngives, for every $\\varepsilon>0$,",
+  "after": "\n\\emph{Zeros.} Let $W$ be supported in $[a,b]\\subset(0,\\infty)$. Then $A_1^\\nu(D)=0$ for $D<1/b$, it is bounded\nfor $1/b\\le D<1$, and~\\eqref{eq:s6-bound} makes $F_W(s)=\\int_0^\\infty A_1^\\nu(D)D^{-s}\\,dD/D$ holomorphic on $\\Re s>11/12$. For"
+ },
+ {
+  "labels": [
+   "eq:d196"
+  ],
+  "numbers": [
+   "G.9"
+  ],
+  "page": "106",
+  "line": 6502,
+  "section": "\\section{The \\texorpdfstring{$11/12$}{11/12} stage for the family \\texorpdfstring{$\\mathcal F_{\\rm CM}$}{F\\_CM}}\\label{app:s6}",
+  "subsection": "\\subsection{Proof of Theorem~\\ref{thm:s6-1112}: Part~I with a finite-order twist}\\label{subsec:s6-twist}",
+  "source": "\\begin{equation}\\label{eq:d196}\n F_W(s)=\\widehat W(s)\\sum_n\\frac{\\muk(n)\\alpha(n)\\nu(n)}{\\N(n)^s}\n =\\widehat W(s)\\prod_{\\pi\\notin S}\\Bigl(1-\\frac{\\overline{\\psi((\\pi))}}{\\N(\\pi)^s}\\Bigr)\n =\\frac{\\widehat W(s)}{L^S(s,\\overline\\psi)}.\n\\end{equation}",
+  "before": "\\emph{Zeros.} Let $W$ be supported in $[a,b]\\subset(0,\\infty)$. Then $A_1^\\nu(D)=0$ for $D<1/b$, it is bounded\nfor $1/b\\le D<1$, and~\\eqref{eq:s6-bound} makes $F_W(s)=\\int_0^\\infty A_1^\\nu(D)D^{-s}\\,dD/D$ holomorphic on $\\Re s>11/12$. For\n$\\Re s>1$, Fubini's theorem as in Lemma~\\ref{lem:b1-mellin}(i), complete multiplicativity of $\\alpha\\nu$ on\nprimary elements, and~\\eqref{eq:s6-euler} give",
+  "after": "Here $L^S(s,\\overline\\psi)=L(s,\\overline\\psi)\\prod_{\\mathfrak p\\in S}\\bigl(1-\\overline\\psi(\\mathfrak p)\n\\N(\\mathfrak p)^{-s}\\bigr)$, and the finite product is holomorphic and nonzero on $\\Re s>0$. The function\n$L(s,\\overline\\psi)$ is entire, by Hecke's theorem~\\cite{Hec20}, \\cite[Ch.~VII, \\S8]{Neukirch} (see also"
+ },
+ {
+  "labels": [
+   "eq:d197"
+  ],
+  "numbers": [
+   "G.10"
+  ],
+  "page": "108",
+  "line": 6607,
+  "section": "\\section{The \\texorpdfstring{$11/12$}{11/12} stage for the family \\texorpdfstring{$\\mathcal F_{\\rm CM}$}{F\\_CM}}\\label{app:s6}",
+  "subsection": "\\subsection{The shared high-side lemmas, and the route of~\\texorpdfstring{\\cite{OAI78}}{[OAI78]}}",
+  "source": "\\begin{equation}\\label{eq:d197}\n M_u(D;W)=D^{-1/2}\\sum_n\\muk(n)\\alpha(n)^{\\epsilon}\\theta(n)\\chi_n(u)^{\\epsilon}W(\\N(n)/D),\n \\qquad\\epsilon=\\pm1,\\ \\theta\\in\\Theta_0 .\n\\end{equation}",
+  "before": "\\begin{proof}\nThe proof in~\\cite{OAI78}, L5215--5446, uses the witness in three ways: through its label, which lies in a fixed\nfinite set; through its length and lower bound, eq.~sextic-witness-spike; and through the form of its\ncoefficients. For a CM label the inverse witness of Section~\\ref{sec:78rows} is",
+  "after": "Freeze $v=\\upsilon s_{\\mathfrak s}w$ as in~\\cite{OAI78}, L5238--5300. The exact identity\n$\\chi_n(u)^\\epsilon=\\chi_n(v)^\\epsilon\\chi_n(k)^\\epsilon$ (eq.~sextic-frozen-mask) makes the row sum that of\nLemma~lem:sextic-large-sieve, with coefficients"
+ },
+ {
+  "labels": [
+   "eq:d198"
+  ],
+  "numbers": [
+   "G.11"
+  ],
+  "page": "108",
+  "line": 6627,
+  "section": "\\section{The \\texorpdfstring{$11/12$}{11/12} stage for the family \\texorpdfstring{$\\mathcal F_{\\rm CM}$}{F\\_CM}}\\label{app:s6}",
+  "subsection": "\\subsection{The shared high-side lemmas, and the route of~\\texorpdfstring{\\cite{OAI78}}{[OAI78]}}",
+  "source": "\\begin{equation}\\label{eq:d198}\n \\sum_{0<\\N(m)\\le C_mZ}\\Bigl|\\mathcal C^{(2)}_{V_{\\rm G}}(Z;m,\\nu)\\Bigr|^2\\ll Z^{1+\\varepsilon}.\n\\end{equation}",
+  "before": "\n\\paragraph{The route of~\\cite{OAI78}.} Proposition~\\ref{prop:s6-shared} and Lemma~\\ref{lem:s6-sextic} also\ngive a second proof of Theorem~\\ref{thm:s6-1112}, following~\\cite{OAI78}. It needs one further input: the\nunmarked completed-row moment at equal lengths,",
+  "after": "Here $\\mathcal C^{(2)}$ is~\\cite[eq.~eq:unmarked-central-completion]{OAI78} with\n$\\overline{\\alpha(cn^3)}^{\\,2}$ in place of $\\overline{\\alpha(cn^3)}$, $\\nu$ runs over the fixed family\n$\\nu_\\sigma\\theta$, and $V_{\\rm G}$ is the Gaussian test of~\\cite{OAI78}. This is"
+ }
+]

@@ -1,0 +1,25 @@
+PASS  sigma=-0.250: G/(3+|t|)^(1-2s) in [0.0488,0.9996]; G/|t|^(1-2s) at t=1e4: 1.000000 
+PASS  sigma=-0.100: G/(3+|t|)^(1-2s) in [0.1069,0.9996]; G/|t|^(1-2s) at t=1e4: 1.000000 
+PASS  sigma=-0.006: G/(3+|t|)^(1-2s) in [0.1605,0.9997]; G/|t|^(1-2s) at t=1e4: 1.000000 
+PASS  sigma=+0.000: G/(3+|t|)^(1-2s) in [0.1645,0.9997]; G/|t|^(1-2s) at t=1e4: 1.000000 
+PASS  sigma=+0.250: G/(3+|t|)^(1-2s) in [0.4228,0.9999]; G/|t|^(1-2s) at t=1e4: 1.000000 ; CM/finite-order quotient at t=1e4: 1.000000
+PASS  sigma=+0.490: G/(3+|t|)^(1-2s) in [0.9666,1.0000]; G/|t|^(1-2s) at t=1e4: 1.000000 ; CM/finite-order quotient at t=1e4: 1.000000
+PASS  sigma=+0.500: G/(3+|t|)^(1-2s) in [1.0000,1.0000]; G/|t|^(1-2s) at t=1e4: 1.000000 ; CM/finite-order quotient at t=1e4: 1.000000
+PASS  sigma=+0.750: G/(3+|t|)^(1-2s) in [1.0001,2.3652]; G/|t|^(1-2s) at t=1e4: 1.000000 ; CM/finite-order quotient at t=1e4: 1.000000
+PASS  sigma=+1.100: G/(3+|t|)^(1-2s) in [1.0004,9.3540]; G/|t|^(1-2s) at t=1e4: 1.000000 ; CM/finite-order quotient at t=1e4: 1.000000
+PASS  sigma=+1.250: G/(3+|t|)^(1-2s) in [1.0005,20.4983]; G/|t|^(1-2s) at t=1e4: 1.000000 ; CM/finite-order quotient at t=1e4: 1.000000
+   (falsifiers: exponent (1-2 sigma)+-0.1 drift by a factor >1.5 between t=1e2 and 1e4: checked)
+PASS  on sigma=-1/10, CM quotient / finite-order quotient at t=1e4 = 1.000000 (-> 1) 
+   zeta_K(11/10) = 6.629847; sup G_(-1/10)/(3+|t|)^(6/5) = 0.999640; sup G/(1.9^2+t^2) = 0.315425
+   C_left = 0.445509, C_right = 0.689890, C_* = 0.689890; => |L| <= 0.7366 Q^(3/5) (3+|t|)^2
+PASS  explicit constant C_* < 1 
+   [A: alphabar, f=3] max |L(s)|/(Q^(3/5)|s+2|^2) on grid = 0.0832
+PASS     [A: alphabar, f=3] left-line FE identity (err 6.1e-56; falsifier (3Q)^(1/2): err 2.81e-01)
+   [B: chi_pi, N(pi)=7, f=pi] max |L(s)|/(Q^(3/5)|s+2|^2) on grid = 0.0856
+PASS     [B: chi_pi, N(pi)=7, f=pi] left-line FE identity (err 2.2e-55; falsifier (3Q)^(1/2): err 2.62e-01)
+   [C: zeta^5 chi_pi, N(pi)=13, f=3pi] max |L(s)|/(Q^(3/5)|s+2|^2) on grid = 0.0952
+PASS     [C: zeta^5 chi_pi, N(pi)=13, f=3pi] left-line FE identity (err 1.8e-55; falsifier (3Q)^(1/2): err 4.43e-01)
+   [D: zeta^3 chi_pi^4, N(pi)=7, f=lambda pi] max |L(s)|/(Q^(3/5)|s+2|^2) on grid = 0.0733
+PASS     [D: zeta^3 chi_pi^4, N(pi)=7, f=lambda pi] left-line FE identity (err 8.8e-56; falsifier (3Q)^(1/2): err 3.39e-01)
+PASS  actual values respect C_* (worst ratio 0.0952 <= C_* = 0.6899) 
+ALL PASS

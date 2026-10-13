@@ -1,0 +1,16 @@
+[PASS] t5c.A10 (eq:b3-bessel) 8 cases (|l| = 0.2, 1.3; s = -0.3, 0.25+1.5i, 2, 3.7-2i), mpmath 30 digits: max rel err 1.26e-29; same as [QF (5.21)] and [DLMF 10.43.19]
+      falsifier for t5c.A10 [2^{2s} in place of 2^{2s-1}]: err=1 -> fails as required
+   twist Psi = psi4 (omega/.)_3 chi_pi7^2; 1137 pairs (n, b) with N(n b^3) <= 4000; 1129 gamma_2(n) by brute force, 6.2s
+[PASS] t5c.A24 (eq:b3-J) 1137 modes l = lambda^-3 n b^3 (N(nb^3) <= 4000); J(s) by trapezoid quadrature in log v of f(v) v^(2s-1) (steps 0.01/0.0125 agree to 3.5e-14) vs (3pi/2)(27/(2pi)^2)^s G(s+1/3)G(s+2/3)T(s-1/2), s = 2.5, 3+1.2i: max rel err 2.3e-14
+      falsifier for t5c.A24 [one derivative]: err=0.171 -> fails as required
+      falsifier for t5c.A24 [T(s)]: err=0.0202 -> fails as required
+      falsifier for t5c.A24 [3 pi]: err=1 -> fails as required
+[PASS] t5c.A20 (eq:b3-inversion (with eq:d106)) 282 n x 5 b, log-normal V; T(X;Psi) from eq:T (W = V/sqrt(y)) vs the w-integral on Re w = 1.5, 2 with T(w) = (sum_n)(sum_b) as in (A.19); X = 60, 300: max rel err 8.4e-13
+      falsifier for t5c.A20 [X^w]: err=16.3 -> fails as required
+      falsifier for t5c.A20 [N(b)^-3w]: err=0.385 -> fails as required
+[PASS] t5c.A32 (eq:b3-dual) single mode (mpmath, 9 cases): max rel err 7.9e-31; truncated G (|l| <= 6) at cusps 1/(-3) (sigma 0), 1/(-lambda) (+), omega/1 (-), s' = 2.2+0.7i, 3: quadrature vs series, max rel err 2.3e-14
+      falsifier for t5c.A32 [conj(alpha(l))^2 (single mode)]: err=1.45 -> fails as required
+      falsifier for t5c.A32 [conj(alpha(l))^2 (series)]: err=1.59 -> fails as required
+[PASS] t5c.A36 (eq:d116) sympy: (A.24) at s = w + 1/2 divided by (3pi/2)(27/(2pi)^2)^(w+1/2) G(w+5/6) G(w+7/6) is T(w)
+time 20.9s
+EXIT STATUS 0: all 5 checks passed

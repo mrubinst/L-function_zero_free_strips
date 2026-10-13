@@ -1,0 +1,12 @@
+[PASS] D05.1 L1542 strips: critical strip k/2<Re s<k/2+1; boundaries k/2+7/8 (19/8 for k=3, 15/8 for k=2), centres 2 and 3/2; 11/12 analogue k/2+11/12 | falsifier: weight/2+7/8 = 23/8 != 19/8
+[PASS] D05.2 L1559 weight: conj(alpha(cn^3)) psi(cn^3) = conj(alpha(cn^3))^{k+1} eta(cn^3); k=0 gives conj(alpha) eta (L1630); conjugate target leaves alpha^{k-1} (L1638) | max err=3.7e-16; falsifier exponent k: 2.00
+[PASS] D05.3 L1608 Poisson transform: FT of zbar^k e^{-pi v|z|^2} = i^{-k} v^{-1-k} xibar^k e^{-pi|xi|^2/v} (k=0..5), = 0 at xi=0 for k>=1 | max |ratio - i^-k|=1.42e-16; falsifier v^-k: ratio varies by 0.952
+[PASS] D05.4 L1613 co-oriented classes: mu conj(alpha)^k gamma_{-1} = chi(-1) G^{-1} conj(alpha)^{k+1} gamma_2 (k=0..4, 40 squarefree n); cube factor conj(alpha(b))^{3(k+1)} | 200 checks, max err=3.1e-15, cube err=2.3e-15; falsifiers conj(alpha)^k: 2.00, conj(alpha(b))^(3k): 2.00
+[PASS] D05.5 L1616 angular main term: int_C alpha(z)^{+-k} f(|z|^2) dxdy = 0 for k=1..6 (f = e^{-r^2}(1+r^2)), midpoint grids h=0.01, 0.005 | max |int| (k!=0): 3.2e-04 (h=0.01) -> 8.0e-05 (h=0.005), O(h^2) -> 0; falsifier k=0 gives 6.283185 = 2 pi
+[PASS] D05.6 L1622 kappa: kappa = 2*(7/8) - 1 = 3/4 (OpenAI's finite-order 7/8 theorem) | falsifier 2*(11/12)-1 = 5/6
+[PASS] D05.7 L1635 vertical shift: L(s, psi N^{it}) = L(s-it, psi) (truncated Euler products, psi = alpha^2 chi(4), s=2.5+0.3i, t=1.7) | err=1.65e-24; falsifier L(s+it): 0.0026
+[PASS] D05.8 L1692 term count: 5184 = N(72) = number of h_0 mod L for L = 72 (OAI78 counts terms by h_0 mod L and active subsets: N(L) 2^{|P|}); lambda^2 h_0/72 = -h_0/24 so c_0 | 24 = 8|lambda|^2 (= -8 lambda^2) | N(72)=5184; falsifier L=36 gives 1296. |C| <= 1/81 is OAI78's |zeta| <= 1/81 (cited)
+[PASS] D05.9 L1751 (b^3/k)_2: (b^3/k)_2 = (b/k)_2 (quadratic symbol = sextic symbol cubed), 400 random pairs | mismatches=0/400; falsifier (b^2/k)_2: 192 mismatches
+[PASS] D05.10 L1585 cusp scalar phases: (-1)^j conj(alpha(lambda^-3))^{-j} = -i (j=1), -1 (j=2): matches the table's -(i/81)conj(alpha(c))^2 and -(1/81)conj(alpha(c))^4 (line 1226); conj(alpha(lambda^-3))^2 = -1 (line 748) | conj(alpha(lambda^-3))=-0.000-1.000j; falsifier (-1)^j alone gives -1 for j=1, not -i
+
+--- exit 0, 3.8 s

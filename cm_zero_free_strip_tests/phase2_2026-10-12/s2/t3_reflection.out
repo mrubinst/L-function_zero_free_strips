@@ -1,0 +1,11 @@
+      dual tail beyond Y e^8 (relative): 3.72e-14
+PASS  [B: chi_pi, N(pi)=7, f=pi] reflection identity, X=1.1821, Y=0.4500 lhs=0.473252216397+0.039476751225j rhs=0.473252216397+0.039476751225j rel err 8.31e-16; falsifiers: finite-order kernel 2.21e+00, conj W 1.27e-01
+      dual tail beyond Y e^8 (relative): 8.07e-13
+PASS  [C: zeta^5 chi_pi, N(pi)=13, f=3pi] reflection identity, X=19.7576, Y=0.4500 lhs=-0.212844656220-0.161588758403j rhs=-0.212844656220-0.161588758403j rel err 6.02e-15; falsifiers: finite-order kernel 3.45e+00, conj W 5.30e-01
+      dual tail beyond Y e^8 (relative): 3.19e-13
+PASS  [D: zeta^3 chi_pi^4, N(pi)=7, f=lambda pi] reflection identity, X=3.5462, Y=0.4500 lhs=0.127199054961+0.138179454692j rhs=0.127199054961+0.138179454692j rel err 1.54e-15; falsifiers: finite-order kernel 3.81e+00, conj W 5.02e-01
+   y=0.01: W#(y)/y^(1/2) = 3.06878774-0.00000000j, M W(3/2) = 3.11075339, rel diff 1.35e-02; finite-order W#(y) = 2.228113-0.000000j (-> M W(1) = 2.275876)
+   y=0.001: W#(y)/y^(1/2) = 3.10652859-0.00000000j, M W(3/2) = 3.11075339, rel diff 1.36e-03; finite-order W#(y) = 2.271062+0.000000j (-> M W(1) = 2.275876)
+   y=0.0001: W#(y)/y^(1/2) = 3.11033062+0.00000000j, M W(3/2) = 3.11075339, rel diff 1.36e-04; finite-order W#(y) = 2.275394-0.000000j (-> M W(1) = 2.275876)
+PASS  W#(y) = M W(3/2) y^(1/2) + O(y^(3/2)) as y->0 (rel diff at 1e-4: 1.4e-04)
+ALL PASS

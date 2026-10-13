@@ -1,0 +1,10 @@
+RESULT|eq:d048|PASS|err=0 tol=0; P = 300, K = 60: 45150 tuples (g,e0,v0,h) -> 45150 triples (r0,f,k); image in codomain: True; injective: True; inverse e0 = (f,k) etc. fails on 0 + 0 elements
+      falsifier for eq:d048 [f = e0 v0^2]: err=2.64e+04 -> fails as required
+      falsifier for eq:d048 [k = h (e0 not moved into k)]: err=3.55e+03 -> fails as required
+      falsifier for eq:d048 [condition (v0, h) = 1 dropped from the domain]: err=2.04e+03 -> fails as required
+RESULT|eq:d049|PASS|err=0 tol=0; g v0 = r0 f, h e0^5 v0^4 = k f^4 exactly in Z[omega], mu(e0)mu(v0) = mu(f), on all 45150 tuples
+      falsifier for eq:d049 [h e0 v0^4 = k f^4 (e0 to the first power)]: err=2.03e+03 -> fails as required
+RESULT|eq:d050|PASS|err=0 tol=0; N(g)/N(e0) = N(r0) and N(h)/(N(e0)N(v0)^2) = N(k)/N(f)^2 in exact rationals, all 45150 tuples
+RESULT|eq:d047|PASS|err=0 tol=0; sympy: difference simplifies to 0
+      falsifier for eq:d047 [W0(x) = x^{1/2} conj(W(x))]: err=1 -> fails as required
+t2c done in 0.7 s

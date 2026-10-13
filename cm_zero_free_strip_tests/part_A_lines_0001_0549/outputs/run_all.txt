@@ -1,0 +1,100 @@
+# t0_intro.py (1s)
+[PASS] A0.01 (l.33-35) [E] j(E_d)=0 for 0<|d|<=200 (PARI); short Weierstrass j=0 <=> a=0; (x,y)->(omega x,y) is an automorphism | falsifier detected
+[UNTESTED] A0.02 (l.38-39,55-57) [A] main theorems L(E_d,s)!=0 (Re s>17/12), Re s>11/8, L(s,conj(alpha)eta)!=0 (Re s>7/8): conditional analytic conclusions, not finitely testable
+[PASS] A0.03 (l.41-42,172-174) [E] PARI: weight k=2, lfuncheckfeq=-140,-140 bits; strip ((k-1)/2,(k+1)/2)=(Fraction(1, 2), Fraction(3, 2)); shifted L(E,s+1/2) has centre 1/2, unshifted centre 1 | falsifier detected
+[PASS] A0.04 (l.43-45,104,149) [I] 11/12+1/2=17/12, 7/8+1/2=11/8 (Fraction) | falsifier detected
+[PASS] A0.05 (l.45-46) [E] 1124 split primes p<20000: pi not associate to conj(pi), so alpha(pi) is not a root of unity | falsifier detected
+[PASS] A0.06 (l.64-65,120-130) [E] q-expansions to q^3000: weights (Fraction(4, 1), Fraction(3, 1)); a_p=0 for p=2 mod 3 and a_p=Tr(zeta^j conj(pi)^k) (k=3,2), |a_p|<=2p^(k/2); failures 0,0 | falsifier detected
+[PASS] A0.07 (l.72-74) [E] coefficients of 1/L_p in X=p^-s: [1, -lam, 1, 0, 0, 0] (eq:reciprocal tested in A2.07) | falsifier detected
+[PASS] A0.08 (l.76-77,225) [E] (c * (zeta L(chi_-3)))(m) = [m=1] for m<=20000 | falsifier detected
+[PASS] A0.09 (l.82,95) [E] sum_(N n=m) mu_K(n) = c(m), all m<=20000 coprime to 6 | falsifier detected
+[PASS] A0.10 (l.87-88) [I] exponent of D^{1+eps}H equals 2+theta+eps (sympy) | falsifier detected
+[SANITY] A0.11 (l.86-88,378) [A] rows/columns counts: see A4.01 (rows ~ (2pi/sqrt3)H, columns ~ const*D)
+[PASS] A0.12 (l.91-94) [I] |S|^2 <~ D H^(5/6) = D^11/6 at H=D, so |S| <~ D^11/12 | falsifier detected
+[SANITY] A0.13 (l.91-93) [A] row count ~H^{1/6}/log H and O(D/N(pi)) approximation: tested in A5.03, A5.05-A5.07
+[UNTESTED] A0.14 (l.96-104) [A] summary of Poisson/theta/descent steps (Sections 6-8; other chunks). Text check only: "(nbar/|n|)^2 ... (zeta: nbar/|n|)" agrees with a_xi(n)=conj(alpha(n))^2 gamma_2(n)xi(n) and "zeta version produces conj(alpha) gamma_2" at l.661-674
+[PASS] A0.15 (l.57,122-124) [E] d=7, m<=3000: sum n chi_n(u_d) = sum conj(n) conj(chi_n(u_d)) = a_m (alpha vs conj(alpha) is a convention: same L(E_d,s)) | falsifier detected
+[PASS] A0.16 (l.66-67,129-130) [C] local factorisation of Sym^k L(E_d) (k<=6) into psi^(k-2i)-factors (+ zeta/L(chi_-3) for k even) at split and inert p (the zero-free consequence itself is an expectation; untested) | falsifier detected
+# t2_integer.py (42s)
+[PASS] A2.01 (l.158-162) [E] 1065 pairs (d,p), d in [1, 2, -3, 7, -11, 5, 16, -432, 13, 30], 5<=p<600, p!|d: brute-force count = -sum Legendre = PARI ellap | falsifier detected
+[PASS] A2.02 (l.165-166) [E] #{y mod p: y^2=c} = 1+(c/p) for all c, 5<=p<400 | falsifier detected
+[PASS] A2.03 (l.168-171) [E] symbolic: 1 - a p^-(s+1/2) + p^(1-2(s+1/2)) = 1 - (a/sqrt p) p^-s + p^-2s | falsifier detected
+[PASS] A2.04 (l.172-174) [E] centre of FE s<->2-s is 1; shift by 1/2 moves it to 1/2 (see A0.03 for the PARI functional-equation check) | falsifier detected
+[PASS] A2.05 (l.177-183, eq:qd) [E] q_1(25)=1 != mu(25)=0, so q_d is not the Moebius function | falsifier detected
+[PASS] A2.06 (l.185-193, eq:integer-convolution) [E] 32382 values (d in 1,2,-3,7,16; m<=20000, (m,6d)=1), max err 2.7e-15; falsifiers: drop (r,t)=1 -> 13 mismatches, drop mu(t)^2 -> 13 mismatches | falsifier detected
+[PASS] A2.07 (l.198-208, eq:reciprocal) [E] L(E_d,s+1/2)*sum q_d m^-s = B_d(s) coefficientwise (exact, PARI ellan), d in [1, 2, -3, 7, 16, -11, 320, 1458, 109375, -1728], m<=6000: 60000 coefficients | falsifier detected
+[PASS] A2.08 (l.209-211) [E] 22 poles of local factors at p|6d (|d|<=300 and non-minimal d): min |p^-s| at a pole = 1.000000 >= 1, so Re s <= 0 there (also for non-minimal models) | falsifier detected
+[SANITY] A2.09 (l.218-220, target) [A] d=1: D=1000: |S|=4.95, |S|/D^0.5=0.157, |S|/D^(11/12)=0.0088; D=10000: |S|=45.40, |S|/D^0.5=0.454, |S|/D^(11/12)=0.0098; D=100000: |S|=83.69, |S|/D^0.5=0.265, |S|/D^(11/12)=0.0022 || d=7: D=1000: |S|=4.29, |S|/D^0.5=0.136, |S|/D^(11/12)=0.0076; D=10000: |S|=25.52, |S|/D^0.5=0.255, |S|/D^(11/12)=0.0055; D=100000: |S|=10.17, |S|/D^0.5=0.032, |S|/D^(11/12)=0.0003
+[PASS] A2.10 (l.226-228) [E] chi_-3(t) = kronecker(-3,t), t<=3000 | falsifier detected
+[PASS] A2.11 (l.230-237, table) [E] 2566 pairs (d,p<3000): table entries incl. a_p(d)=0 for inert p (PARI ellan) | falsifier detected
+[PASS] A2.12 (l.238-240) [E] (a_5,a_7,q(5),q(25),q(7)) = (0, -4, 0.0, 1.0, 1.5118578920369088) | falsifier detected
+# t3_lattice.py (8s)
+[PASS] A3.01 (l.248-250) [E] |A+B omega|^2 = A^2-AB+B^2 on |A|,|B|<=60 (max err 3.6e-12) | falsifier detected
+[PASS] A3.02 (l.252-253) [E] units = [(-1, -1), (-1, 0), (0, -1), (0, 1), (1, 0), (1, 1)]; Euclidean division by rounding gave N(r)<N(y) in 20000 random cases (UFD: CITED) | falsifier detected
+[PASS] A3.03 (l.253-258) [E] every n coprime to 3 in |A|,|B|<=40 has exactly one associate with A=1,B=0 (3), and it is n=1 mod 3 | falsifier detected
+[PASS] A3.04 (l.260-261) [E] 2 | A+B omega <=> A,B both even; no element of norm 2 | falsifier detected
+[PASS] A3.05 (l.264-271) [E] mu_K(-5)=-1, mu(25)=0, 7=(1+3w)(-2-3w) both primary of norm 7, mu_K(7)=1 | falsifier detected
+[PASS] A3.06 (l.273-278) [E] 4000 random (u1,u2,pi): u^((Npi-1)/6) = exactly one unit mod pi; (u1u2/pi)_6=(u1/pi)(u2/pi); chi_1=1 | falsifier detected
+[PASS] A3.07 (l.287-290,300-303, eq:ud) [E] 12000 pairs (d,n): index((4d)^5) = 5*index(4d) = -index(4d) mod 6, zeros preserved | falsifier detected
+[PASS] A3.08 (l.291,339-343, eq:normgroup) [E] exact for d in [1, 2, -3, 7, 16, -11, 13, 5], all m<=20000 (53336 m coprime to 6; empty for (m,6)>1); |S_d(D)-A_ud(D)| <= 1.3e-14 (d=1,7; D=500,2000,8000); falsifiers u=4d: 1364, u=d^5: 1886 mismatches | falsifier detected
+[PASS] A3.09 (l.304-306) [E] 3000 random (n,u,v): chi_n(uv^6) = chi_n(u) 1_(n,v)=1 | falsifier detected
+[PASS] A3.10 (l.306-308) [E] rows 16d^5 and (4d)^5 agree at 3000 columns; rows times 3^6, lambda^6 unchanged | falsifier detected
+[PASS] A3.11 (l.309-310) [E] 16^6=2^24, cond(E_16)=27; row u=1 = q_16 and row u=16 = q_1, all m<=20000 | falsifier detected
+[PASS] A3.12 (l.311-312) [E] (4d)^5 = u (4^5u^4)^6 for d=4^5u^5; rows u in [-30,30]\0 equal q_d (PARI) for all m<=3000 (60000 checks) | falsifier detected
+[PASS] A3.13 (l.312-315) [E] first m with non-real q_u(m): {(0, 1): 7, (1, 3): 7, (3, 1): 7, (5, 2): 7, (2, 7): 13, (-4, 1): 7}; rows r*v^6 (r rational) are real at all m<=3000 coprime to N(v) (391 non-real values only at m sharing a prime with N(v), i.e. the altered Euler factors) | falsifier detected
+[PASS] A3.14 (l.295-297) [E] disc(t^2-t+a)=1-4a; J(kappa,rho)=kappa(4)J(kappa,kappa) for 414 (p<3000, kappa cubic) cases | falsifier detected
+[PASS] A3.15 (l.318-319) [E] 4784 primes p=1 mod 3 below 1e5: p = pi*conj(pi), both primary | falsifier detected
+[PASS] A3.16 (l.320-322, eq:point-identity) [E] 27528 (d,pi) with 0<|d|<=60, p<1500 split, p!|6d (PARI ellap), both pi above p; falsifiers: chi instead of conj 17940, chi_pi(d) 19616, -pi (IR sign) 27528 mismatches | falsifier detected
+[PASS] A3.17 (l.324-325, IR Ch.18) [C] cited form #E_d(F_p) = p+1+conj(chi)pi'+chi conj(pi') holds with pi'=-pi=2 mod 3 (sign change as stated) | falsifier detected
+[UNTESTED] A3.18 (l.326) [C] statement that 480 pairs were checked (Section 78) -- superseded by A3.16 (13764 (d,p) pairs = 27528 (d,pi))
+[PASS] A3.19 (l.327) [E] chi_conj(pi)(x) = conj chi_pi(x), x in [-30,30], p<600 split | falsifier detected
+[PASS] A3.20 (l.328-332) [E] psi_d(pi)psi_d(pibar)=1, sum=lambda_d(p): max err 1.2e-15 | falsifier detected
+[PASS] A3.21 (l.333-337) [E] inert 5<=p<400: -p primary of norm p^2; chi_-p(x)=1 for rational x prime to p, 0 if p|x; alpha(-p)=-1, so factor 1+p^-2s | falsifier detected
+[PASS] A3.22 (l.336-337) [E] chi_pi(u_d) = 0 for pi above p | d | falsifier detected
+[PASS] A3.23 (l.344-345) [E] 30235 columns N<=1e5: N(n) coprime to 6 <=> n coprime to 6 | falsifier detected
+[PASS] A3.24 (l.348-361) [E] 51264 coefficients (d in 1,2,-3,7,-11,13,16,-432; m<=20000, (m,6d)=1) exact vs PARI ellan (paper's range: 0 mismatches) | falsifier detected
+[PASS] A3.25 (l.358-359) [E] beta = pi (u_d/pi)_6: beta+conj(beta) = a_p, beta conj(beta) = p (p<5000) | falsifier detected
+[PASS] A3.26 (l.362-369) [C] Kummer spot check: (u/pi)_6=1 <=> x^6=u has 6 roots mod p (u rational, p<800); Artin/Dedekind factorisation itself CITED
+# t4_average.py (4s)
+[SANITY] A4.01 (l.378) [A] H=1000: rows/H=3.6420; H=10000: rows/H=3.6294; H=100000: rows/H=3.6280; H=1000000: rows/H=3.6276; X=1000: #columns(N<=X)/X=0.3030; X=10000: #columns(N<=X)/X=0.3027; X=100000: #columns(N<=X)/X=0.3024 (limits 2pi/sqrt3=3.6276, 2pi/sqrt3/12=0.3023)
+[PASS] A4.02 (l.379-402, eq:coordinates, eq:double) [E] coordinate column set = primary coprime to 6 on |A|,|B|<=200; literal coordinate M = double-sum M for (D,H)=(25,150),(40,300),(60,200): max rel err 1.4e-15; falsifiers (alpha(n1) unconjugated / chi_n1 unconjugated): rel err 0.43 / 0.95 | falsifier detected
+[PASS] A4.03 (l.403-405) [E] max err 3.3e-16 on 2000 pairs | falsifier detected
+[PASS] A4.04 (l.408-411) [E] A_u(D) = sum_m q_u(m)W(m/D), 5 rows, D<=3000: max err 1.4e-14 | falsifier detected
+[PASS] A4.05 (l.412-425, eq:allrows) [E] 30 rows, 810 (u,p) local checks (p<=109), multiplicativity, vanishing at 2,3 and p^3,p^4, reduction to eq:qd at u_7; falsifiers (+sign at split p: 387, -chi at inert p^2: 414, non-coprime product: 22) | falsifier detected
+[PASS] A4.06 (l.426-427) [E] p=7: chi_pi(u) != conj chi_pibar(u) for 3 of 5 rows; q_u(7) takes 5 values while mu, chi_-3 are fixed | falsifier detected
+[SANITY] A4.07 (l.430-437, eq:MS) [A] theta=0.1: D=100: M/D^2.1=0.2872 (rows 582, cols 28); D=200: M/D^2.1=0.2734 (rows 1236, cols 52); D=400: M/D^2.1=0.2746 (rows 2646, cols 119); D=800: M/D^2.1=0.2793 (rows 5646, cols 224); D=1600: M/D^2.1=0.2713 (rows 12120, cols 453)
+[UNTESTED] A4.07b (l.437-439) [A] dependence of the constant on finitely many derivatives of W; d-independence (structural remark, not finitely testable)
+[PASS] A4.08 (l.441-443) [E] 150 columns, H=20000: S_H(n,n) = #coprime u <= #rows = 72564 | falsifier detected
+[SANITY] A4.09 (l.445-451) [A] max |S_H(n,n) - main|/(tau(n)(sqrt H+1)) = 0.347 over 62 columns x H in 1e3..4e5 (bounded; without the Euler product the ratio reaches 93.2)
+[PASS] A4.10 (l.451-452) [I] covolume of Z[omega] = sqrt(3)/2; pi H / covolume = 2 pi H/sqrt3 | falsifier detected
+[SANITY] A4.11 (l.452-453) [A] D=100: diag/(HD)=0.2888; D=400: diag/(HD)=0.2712; D=1600: diag/(HD)=0.2736
+[UNTESTED] A4.12 (l.453-455) [A] remark on what (MS) bounds (whole off-diagonal, not termwise) -- not a numerical claim
+# t5_sixth.py (7s)
+[PASS] A5.01 (l.459) [E] N((4d)^5) = |4d|^10 for 0<|d|<=200 | falsifier detected
+[PASS] A5.02 (l.460-464) [E] 3000 random (d,n,v): chi_n(u_d v^6) = chi_n(u_d) 1_(n,v)=1 | falsifier detected
+[SANITY] A5.03 (l.472-473) [A] d=1,Y=1000: J/(Y/logY)=0.497; d=1,Y=10000: J/(Y/logY)=0.520; d=1,Y=100000: J/(Y/logY)=0.514; d=1,Y=1000000: J/(Y/logY)=0.511; d=53599,Y=1000: J/(Y/logY)=0.497; d=53599,Y=10000: J/(Y/logY)=0.520; d=53599,Y=100000: J/(Y/logY)=0.514; d=53599,Y=1000000: J/(Y/logY)=0.511 (limit 1/2); J for Y in [2,7): [0, 0, 0, 0, 0, 0]
+[PASS] A5.04 (l.473) [E] Y=3000, d=1,7: all rows u_0 pi^6 (pi in P_Y) distinct, N <= N_0 Y^6 = H | falsifier detected
+[PASS] A5.05 (l.474-478) [E] D=3000, Y=60, d=1,7: max err 6.6e-15 | falsifier detected
+[PASS] A5.06 (l.479-481) [I] |A_u0-A_u0pi^6| <= max|W| * #(multiples of pi) in all cases; max coefficient modulus 1.000 | falsifier detected
+[SANITY] A5.07 (l.479-484, eq:approx) [A] max #multiples/(D/N(pi)) = 0.604; max |A_u0-A_u0pi^6|/(D/Y) = 0.3559 (D in 1e3..8e3, Y in 20..200)
+[PASS] A5.08 (l.485) [I] sympy: 2|w|^2+2|z-w|^2-|z|^2 = |z-2w|^2; 1e6 random pairs | falsifier detected
+[PASS] A5.09 (l.485-492, eq:extraction) [A] u0=(1, 0),Y=8,H=262144,D=30: J=2, J|S|^2=1.297 <= 2*sum_sel=8.976 + err=2.168; sum_sel=4.488 <= M=2063202.0; err/(J D^2/Y^2)=0.0771 | u0=(2, 0),Y=8,H=1048576,D=30: J=2, J|S|^2=4.759 <= 2*sum_sel=2.618 + err=2.168; sum_sel=1.309 <= M=8251329.0; err/(J D^2/Y^2)=0.0771 | u0=(1, 0),Y=8,H=262144,D=60: J=2, J|S|^2=1.064 <= 2*sum_sel=10.998 + err=7.624; sum_sel=5.499 <= M=5060253.3; err/(J D^2/Y^2)=0.0678 | variant without error term fails in 1 case(s) | falsifier detected
+[PASS] A5.10 (l.494-502, eq:exponents) [I] D H^(5/6) D^eps = D^(11/6+5th/6+eps), D^2 H^(-1/3) = D^(5/3-th/3); both agree with 2M/J (M=D^(2+th+eps), J~H^(1/6)) and D^2/Y^2 | falsifier detected
+[PASS] A5.11 (l.503-507, eq:Sbound) [I] 399 values of eta in (0,1): theta=min(1/10,eta/2), eps=eta give exponent <= 11/12+eta (exact Fractions); second term 5/6-theta/6 < 11/12 | falsifier detected
+[PASS] A5.12 (l.508-513) [I] sqrt(D^(2+th+eps)/Y) = N0^(1/12) D^(11/12+5th/12+eps/2), sqrt(D^2/Y^2) = N0^(1/6) D^(5/6-th/6) with Y=(H/N0)^(1/6); (|4d|^10)^(1/12) = |4d|^(5/6) | falsifier detected
+[PASS] A5.12b (l.514, remark) [I] J=0 for 2<=Y<7 (so the extraction is empty there); but then N0>H/7^6 and the first term is >= D^(1+th/2+eps)/sqrt7, which exceeds the trivial |S_d(D)| << D log D (|q_d(m)|<=2^omega(m) checked m<=20000): stated bound still true | falsifier detected
+[PASS] A5.13 (l.514) [I] Y=(H/N0)^(1/6) >= 2 <=> H >= 2^6 N0 (integer grid) | falsifier detected
+[PASS] A5.14 (l.514-515) [I] log(N0^(1/12)D^(11/12+5th/12)/D) = (log N0 - (1-5th) log D)/12, so the bound beats D only when D^(1-5th) > |4d|^10 (>= |d|^10) | falsifier detected
+[PASS] A5.15 (l.515-516) [E] (x,y)=(t^2X,t^3Y) maps y^2=x^3+dt^6 to Y^2=X^3+d; PARI minimal models equal (d in 1,2,-3,7; t in 2,3,5) | falsifier detected
+[PASS] A5.16 (l.516-519) [E] 5979 sixth-power-free d (|d|<=3000, p^5, p^5q^4): f_p=2 at all 8708 primes p>=5 dividing d; |d| <= 6^5 N^(5/2) (max |d|/N^2.5 = 0.114), hence |d|^10 <= 6^50 N^25 | falsifier detected
+[SANITY] A5.16b (l.518) [A] sharpness of 5/2: max |d|/N^2 = 0.593 (unbounded along d=p^5, so exponent 2 fails)
+[PASS] A5.18 (l.522-524) [I] 2-1/6 = 11/6, half is 11/12 | falsifier detected
+[PASS] A5.19 (l.528-531) [E] 2000 random (n,v): chi_n(v^3)=(v/n)_2, chi_n(v^2)=(v/n)_3 | falsifier detected
+[PASS] A5.20 (l.532-533) [E] v in [-60,60], 1515 columns N<=5000: (v/n)_2 = Jacobi (v/N n) | falsifier detected
+[PASS] A5.21 (l.534-537, eq:quadratic-twists) [E] 135000 coefficients (d in 1,7,-3; v in -1,+-2,3,5,-7,10,6,15; m<=15000) exact | falsifier detected
+[PASS] A5.22 (l.538-540) [E] x^((p^2-1)/2)=1 in F_{p^2} for x in F_p^*, inert p<500 | falsifier detected
+[PASS] A5.23 (l.542-543) [E] #{u in Z: 0<u^2<=H} = 2 floor(sqrt H); lattice count in A4.01 | falsifier detected
+[PASS] A5.24 (l.544-545) [E] H^(1/6)=50: #{v^6}=31, ratio 0.6200; H^(1/6)=200: #{v^6}=122, ratio 0.6100; H^(1/6)=800: #{v^6}=484, ratio 0.6050 (limit (2pi/sqrt3)/6=0.6046); rational sixth powers: floor(H^(1/12)) | falsifier detected
+[UNTESTED] A5.25 (l.546-548) [A] remarks (lattice primes; rational numerators still need sextic symbols): not numerical claims
+
+SUMMARY (61s): PASS 77, FAIL 0, SANITY 10, UNTESTED 6

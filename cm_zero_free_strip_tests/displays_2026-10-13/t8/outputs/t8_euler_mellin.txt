@@ -1,0 +1,7 @@
+RESULT|T8.9|PASS|err=2.54e-15 tol=1e-12; eq:d196: Euler product prod (1 - conj psi(pi) N(pi)^-s) over 550 primes has Dirichlet coefficient mu alpha nu at all 1113 primary n prime to S with N(n) <= 4000; convolution with conj psi = delta (600 n)
+      falsifier for T8.9 [Euler product with psi in place of conj(psi)]: err=2 -> fails as required
+      s=(3+2j): sum mu alpha nu N^-s = 1.001605432726-0.002524544613j, Euler product = 1.001605432726-0.002524544631j, 1/L^S = 1.001605432717-0.002524544623j, tail bound 1.56e-08
+      s=(2.2-5j): sum mu alpha nu N^-s = 1.020448504081+0.003909173999j, Euler product = 1.020448508745+0.003909231584j, 1/L^S = 1.020448493231+0.003909276462j, tail bound 1.98e-05
+RESULT|T8.10|PASS|err=0.0052 tol=3; eq:d196 numerically at s = 3+2i, 2.2-5i: Dirichlet series, Euler product and 1/L^S(s, conj psi) agree within a few times the tail bound (err = discrepancy/tail bound)
+RESULT|T8.11|PASS|err=2.44e-16 tol=1e-08; eq:d196 first equality: F_W(s) by quadrature of A_1^nu(D) (columns N(n) <= 1000) = What(s) sum mu alpha nu N^-s at s = 4+3i (rel err 2.44e-16); What(s0) = int phi dy/y = 0.004727 > 0 for W = y^-s0 phi (err 1.1e-21)
+      falsifier for T8.11 [What(-s) in place of What(s)]: err=1.03 -> fails as required

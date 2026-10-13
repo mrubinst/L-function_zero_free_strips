@@ -9,7 +9,8 @@
 
 - [Sixth powers in a mean square: an accessible guide to the 11/12 argument for ζ(s)](zeta_11_12_guide.pdf) (PDF, 18 pages)
 - [Zeros of a whole family: an accessible guide to the 7/8 argument for ζ(s)](zeta_7_8_guide.pdf) (PDF, 12 pages)
-- [A zero-free strip for the L-functions of the elliptic curves y² = x³ + d: the 11/12 method and its extension to 7/8](cm_zero_free_strip.pdf) (PDF, 125 pages; [TeX source](cm_zero_free_strip.tex)).
+- [A zero-free strip for the L-functions of the elliptic curves y² = x³ + d: the 11/12 method and its extension to 7/8](cm_zero_free_strip.pdf) (PDF, 127 pages; [TeX source](cm_zero_free_strip.tex);
+  [tests](cm_zero_free_strip_tests/)).
   This note adapts the two methods to the CM curves y² = x³ + d.
 - [Quadratic number fields, with Q(√−3) worked out in detail](quadratic_fields_notes.pdf) (PDF, 33 pages;
   [source and scripts](quadratic_fields_notes/)). Background notes on the arithmetic of ℤ[ω], residue symbols,
@@ -24,3 +25,14 @@ identities and parameter inequalities of its Sections 1–8 on finite samples; t
 of their size only. Run `python3 zeta_11_12_tests/run_all.py`; this takes about 2 minutes and needs numpy, scipy,
 sympy and mpmath. The [README there](zeta_11_12_tests/README.md) explains each check and maps it to the guide's
 equation numbers.
+
+## Tests of the CM notes
+
+[`cm_zero_free_strip_tests/`](cm_zero_free_strip_tests/) contains the scripts behind Section 18 of the CM notes.
+They test every one of its 352 numbered displays: identities and explicit inequalities on finite samples, exactly
+where the quantities are algebraic; estimates with unspecified constants by size checks where feasible. Run
+`./run_all.sh` in `cm_zero_free_strip_tests/displays_2026-10-13/`; this takes about half an hour and needs numpy, scipy,
+sympy, mpmath and PARI/GP. The [README there](cm_zero_free_strip_tests/README.md) describes the layout. The folder is
+self-contained: the TeX sources that some tests read, including OpenAI's two papers (Apache License 2.0), are in
+`cm_zero_free_strip_tests/sources/`.
+

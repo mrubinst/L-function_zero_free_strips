@@ -1,0 +1,5 @@
+RESULT|6-kappa=3/4|PASS|err=0 tol=0; violations {'3.6': 0, 'z<M/21': 0, 'A-z>2L': 0, 'Acomp': 0, 'Acomp+slots': 0}
+RESULT|6-kappa=1|PASS|err=0 tol=0; violations {'3.6': 0, 'z<M/21': 0, 'A-z>2L': 0, 'Acomp': 0, 'Acomp+slots': 0}
+RESULT|6-s_kappa|PASS|err=0 tol=0; s_kappa = (1+kappa)/2 = 7/8 at kappa = 3/4 (OAI78 thm:main: no finite-order zeros in Re s > 7/8)
+      falsifier for 6-kappa=3/4 [kappa = 0.70]: err=1.24e+04 -> fails as required
+SUMMARY: 4 checks, 0 failures

@@ -1,0 +1,5 @@
+[PASS] S0 29 inventory displays: verbatim in the current guide (missing: none); aux numbers agree (mismatch: none)
+[CITED] S1 eq:d081 = G78 eq:amplitude character for character (falsifier: exponent z for z-1 differs)
+[CITED] S2 eq:d080 = G78 eq:witness with psi -> conj(alpha) theta conj(chi.(u)) (falsifier: the anti-oriented substitution alpha theta conj(chi) does not match)
+[CITED] S3 12 OAI78 source passages found at the stated lines (eq:d074 L378-384, eq:d075 L4043-4048, eq:d076 L2819-2826, eq:d199 L9225-9244, eq:cm-inverse L9258-9262, eq:d082 L10774-10776, eq:signal-cm L965-970, eq:d083 L704-707, eq:d083 (rows) L12493-12497, eq:d084 L12549-12554, eq:d085 L15994-16000, eq:d086 L16096-16104); not found: none; falsifier needles absent: True
+# t4_sources: 0 failure(s)

@@ -1,0 +1,437 @@
+[
+ {
+  "labels": [
+   "eq:d071"
+  ],
+  "numbers": [
+   "11.1"
+  ],
+  "page": "34",
+  "line": 2192,
+  "section": "\\section{Part II: the \\texorpdfstring{$7/8$}{7/8} boundary for the same curves}\\label{sec:78}",
+  "subsection": "\\section{Part II: the \\texorpdfstring{$7/8$}{7/8} boundary for the same curves}\\label{sec:78}",
+  "source": "\\begin{equation}\\label{eq:d071}\n L(s,\\psi)\\ne0\\qquad(\\Re s>7/8).\n\\end{equation}",
+  "before": "\\begin{theorem}[see Section~\\ref{sec:78status} for its status]\\label{thm:78}\nLet $\\eta$ be a finite-order Hecke character of $K=\\mathbb Q(\\sqrt{-3})$, and put\n$\\psi=\\overline\\alpha\\,\\eta$, that is, $\\psi(n)=\\overline{\\alpha(n)}\\,\\eta(n)$ on\nprimary $n$ prime to the conductor of $\\eta$. Then",
+  "after": "In particular, for every nonzero integer $d$,\n\\begin{equation}\\label{eq:d072}\n L(E_d,s)\\ne0\\qquad(\\Re s>11/8),"
+ },
+ {
+  "labels": [
+   "eq:d072"
+  ],
+  "numbers": [
+   "11.2"
+  ],
+  "page": "34",
+  "line": 2196,
+  "section": "\\section{Part II: the \\texorpdfstring{$7/8$}{7/8} boundary for the same curves}\\label{sec:78}",
+  "subsection": "\\section{Part II: the \\texorpdfstring{$7/8$}{7/8} boundary for the same curves}\\label{sec:78}",
+  "source": "\\begin{equation}\\label{eq:d072}\n L(E_d,s)\\ne0\\qquad(\\Re s>11/8),\n\\end{equation}",
+  "before": "\\begin{equation}\\label{eq:d071}\n L(s,\\psi)\\ne0\\qquad(\\Re s>7/8).\n\\end{equation}\nIn particular, for every nonzero integer $d$,",
+  "after": "a zero-free strip $11/8<\\Re s<3/2$ along the right edge of the critical strip.\n\\end{theorem}\n"
+ },
+ {
+  "labels": [
+   "eq:d073"
+  ],
+  "numbers": [
+   "11.3"
+  ],
+  "page": "34",
+  "line": 2207,
+  "section": "\\section{Part II: the \\texorpdfstring{$7/8$}{7/8} boundary for the same curves}\\label{sec:78}",
+  "subsection": "\\section{Part II: the \\texorpdfstring{$7/8$}{7/8} boundary for the same curves}\\label{sec:78}",
+  "source": "\\begin{equation}\\label{eq:d073}\n L(E_d,s+\\tfrac12)=B_d(s)\\sum_n\\frac{\\psi_d^*(n)}{\\N(n)^s},\n\\end{equation}",
+  "before": "If $p\\nmid6d$ splits as $p=\\pi\\bar\\pi$ with $\\pi$ primary, then\n$\\sqrt p\\,\\bigl(\\psi_d^*(\\pi)+\\psi_d^*(\\bar\\pi)\\bigr)=a_p(d)$; if $p\\nmid6d$ and $p\\equiv2\\pmod3$,\nthen $\\psi_d^*(-p)=-1$, matching $a_p(d)=0$ (Proposition~\\ref{prop:b1-points}). Since $\\psi_d^*$ and the\ncharacter $\\psi_d$ of Lemma~\\ref{lem:b1-euler} give the same Euler factors (see below), that lemma gives",
+  "after": "with $B_d$ holomorphic and nonzero in $\\Re s>0$. (We also checked both statements numerically for\n$2352$ split pairs $(d,p)$, testing both primes above each $p$, and $854$ inert pairs.)\nThe character $\\psi_d^*$ is of the type in Theorem~\\ref{thm:78}. Indeed $n\\mapsto\\overline{\\alpha(n)}$, on primary"
+ },
+ {
+  "labels": [
+   "eq:d074"
+  ],
+  "numbers": [
+   "11.4"
+  ],
+  "page": "35",
+  "line": 2252,
+  "section": "\\section{Part II: the \\texorpdfstring{$7/8$}{7/8} boundary for the same curves}\\label{sec:78}",
+  "subsection": "\\subsection{The family and the number \\texorpdfstring{$\\beta_*$}{beta*}}",
+  "source": "\\begin{equation}\\label{eq:d074}\n \\beta_*=\\sup\\bigl(\\{1/2\\}\\cup\\{\\Re\\rho:\\ L(\\rho,\\psi)=0,\\ 1/2\\le\\Re\\rho\\le1,\\\n \\psi\\in\\mathcal F_{\\rm CM}\\}\\bigr).\n\\end{equation}",
+  "before": "\\subsection{The family and the number \\texorpdfstring{$\\beta_*$}{beta*}}\nLet $\\mathcal F_{\\rm CM}$ be the set of primitive Hecke characters of $K$ with infinity type\n$\\bar z/|z|$, that is, the primitive characters inducing $\\overline\\alpha\\eta$ with $\\eta$ of finite\norder. Put",
+  "after": "Three properties make this family suitable.\n\\begin{itemize}\n\\item \\emph{Closure under finite-order twists.} If $\\psi\\in\\mathcal F_{\\rm CM}$ and $\\theta$"
+ },
+ {
+  "labels": [
+   "eq:cm-weight"
+  ],
+  "numbers": [
+   "12.1"
+  ],
+  "page": "36",
+  "line": 2339,
+  "section": "\\section{The probe for a CM target}\\label{sec:78probe}",
+  "subsection": "\\subsection{The weight}",
+  "source": "\\begin{equation}\\label{eq:cm-weight}\n \\gamma_2(c)\\overline{\\alpha(cn^3)}\\,\\psi(cn^3)\n =\\gamma_2(c)\\overline{\\alpha(c)}^{\\,2}\\,\\overline{\\alpha(n)}^{\\,6}\\,\\eta(c)\\eta(n)^3 .\n\\end{equation}",
+  "before": "In~\\cite{OAI78} the target $\\eta$ enters the probe~\\cite[eq.~eq:general-probe]{OAI78},\n\\cite[\\S3.1]{G78}, only through the weight on the completed index $A=cn^3$:\n$\\gamma_2(c)\\overline{\\alpha(A)}\\eta(A)$. For the target $\\psi=\\overline\\alpha\\eta$ the weight is\ntherefore",
+  "after": "Everything else in the probe is unchanged:\n\\begin{itemize}\n\\item the additive polynomial with its sextic Gauss sums;"
+ },
+ {
+  "labels": [
+   "eq:d075"
+  ],
+  "numbers": [
+   "12.2"
+  ],
+  "page": "37",
+  "line": 2367,
+  "section": "\\section{The probe for a CM target}\\label{sec:78probe}",
+  "subsection": "\\subsection{Second evaluation: the rows}",
+  "source": "\\begin{equation}\\label{eq:d075}\n \\frac{\\zeta_K^S(6z)\\,L^S\\bigl(w,\\chi_\\bullet(u)\\bigr)}\n      {L^S\\bigl(x,\\psi\\overline{\\chi_\\bullet(u)}\\bigr)}\\,\\mathcal H_{\\psi,u}(x,w,z),\n\\end{equation}",
+  "before": "\\begin{proposition}\\label{prop:cm-rows}\nWith the weight~\\eqref{eq:cm-weight}, Poisson summation in $m$ gives the\nrepresentation~\\cite[eq.~eq:probe-poisson-identity]{OAI78} of the probe, with row $u$\nequal to",
+  "after": "where $\\mathcal H_{\\psi,u}$ is the Euler product of~\\cite[Lemma~lem:local-euler]{OAI78}\nwith $\\eta(p)$ replaced by $\\psi(p)$. It has the following properties:\n\\begin{itemize}"
+ },
+ {
+  "labels": [
+   "eq:signal-cm"
+  ],
+  "numbers": [
+   "12.3"
+  ],
+  "page": "37",
+  "line": 2385,
+  "section": "\\section{The probe for a CM target}\\label{sec:78probe}",
+  "subsection": "\\subsection{Second evaluation: the rows}",
+  "source": "\\begin{equation}\\label{eq:signal-cm}\n \\overline{\\alpha(c)}\\,\\gamma_2(c)\\,\\gamma_1(c)=\\mu(c)\\,G(c),\n\\end{equation}",
+  "before": "the unimodular numbers $\\eta(p)$ and complete multiplicativity, and no ray-class\ncondition on $p$ is used (L3871).\n\nThe angular factor of the weight is absorbed by the Gauss-sum identity",
+  "after": "a rearrangement of the second identity $\\gamma_1\\gamma_2=\\mu\\alpha G$ in~\\cite[eq.~eq:signal]{OAI78}.\nHere $c$ is squarefree, $\\gamma_1$ is the normalized sextic Gauss sum, and $G(c)=\\overline{\\chi_c(4)}\\gamma_3(c)$ is the\nunimodular phase of~\\cite[Lemma~lem:fixed-gauss-phase]{OAI78}. It factors through a fixed ray group supported"
+ },
+ {
+  "labels": [
+   "eq:d076"
+  ],
+  "numbers": [
+   "12.4"
+  ],
+  "page": "38",
+  "line": 2423,
+  "section": "\\section{The probe for a CM target}\\label{sec:78probe}",
+  "subsection": "\\subsection{First evaluation: completed rows with two derivatives}",
+  "source": "\\begin{equation}\\label{eq:d076}\n B_m=\\sum_{\\substack{c\\ {\\rm sf},\\ n\\\\(cn,S)=1}}\n \\frac{\\gamma_2(c)\\,\\overline{\\alpha(cn^3)}^{\\,2}\\,\\nu(cn^3)\\,\\chi_{cn^3}(m)}{\\sqrt{\\N(c)}\\,\\N(n)}\n \\,V\\Bigl(\\frac{\\N(c)\\N(n)^3}Z\\Bigr),\n\\end{equation}",
+  "before": "\\subsection{First evaluation: completed rows with two derivatives}\nCauchy--Schwarz splits the probe \\cite[\\S3.2]{G78} into two mean squares. The first is\nthe additive one, which does not involve the target. The second is the mean square of\nthe completed rows",
+  "after": "where $c$ and $n$ are primary and may share primes. Here $\\nu$ is a finite-order character whose conductor is\nsupported on the fixed set $S$, extended by zero; it is the finite part $\\eta$ times the fixed phases. The test $V$ is\nthe Gaussian $V_{\\rm G}$ of~\\cite[L3287--3300]{OAI78}, which does not have compact support. The angular factor must"
+ },
+ {
+  "labels": [
+   "eq:d077"
+  ],
+  "numbers": [
+   "13.1"
+  ],
+  "page": "39",
+  "line": 2507,
+  "section": "\\section{Rows, zeros and prime slots}\\label{sec:78rows}",
+  "subsection": "\\subsection{Growth of the CM \\texorpdfstring{$L$}{L}-functions}",
+  "source": "\\begin{equation}\\label{eq:d077}\n \\Lambda(s,\\psi)=(3Q)^{s/2}(2\\pi)^{-s}\\,\\Gamma(s+\\tfrac12)\\,L(s,\\psi)\n\\end{equation}",
+  "before": "\n\\subsection{Growth of the CM \\texorpdfstring{$L$}{L}-functions}\n\\begin{lemma}\\label{lem:cm-growth}\nLet $\\psi\\in\\mathcal F_{\\rm CM}$ have conductor $\\mathfrak f$, and put $Q=\\N\\mathfrak f$. Then",
+  "after": "is entire and $\\Lambda(s,\\psi)=\\epsilon(\\psi)\\Lambda(1-s,\\overline\\psi)$ with $|\\epsilon(\\psi)|=1$. Moreover\n$|L(\\sigma+it,\\psi)|\\ll Q^{3/5}(3+|t|)^2$ for $-1/10\\le\\sigma\\le11/10$, with an absolute implied constant. This\nis the bound of~\\cite[Lemma~lem:hecke-strip-growth]{OAI78} for finite-order characters. For every compact"
+ },
+ {
+  "labels": [
+   "eq:d078"
+  ],
+  "numbers": [
+   "13.2"
+  ],
+  "page": "39",
+  "line": 2514,
+  "section": "\\section{Rows, zeros and prime slots}\\label{sec:78rows}",
+  "subsection": "\\subsection{Growth of the CM \\texorpdfstring{$L$}{L}-functions}",
+  "source": "\\begin{equation}\\label{eq:d078}\n |L(\\sigma+it,\\psi)|\\ll_I(3Q)^{1/2-\\sigma}(3+|t|)^{1-2\\sigma}\\,|L(1-\\sigma-it,\\overline\\psi)| .\n\\end{equation}",
+  "before": "is entire and $\\Lambda(s,\\psi)=\\epsilon(\\psi)\\Lambda(1-s,\\overline\\psi)$ with $|\\epsilon(\\psi)|=1$. Moreover\n$|L(\\sigma+it,\\psi)|\\ll Q^{3/5}(3+|t|)^2$ for $-1/10\\le\\sigma\\le11/10$, with an absolute implied constant. This\nis the bound of~\\cite[Lemma~lem:hecke-strip-growth]{OAI78} for finite-order characters. For every compact\n$I\\subset(-\\frac12,\\frac32)$ and $\\sigma\\in I$,",
+  "after": "All of this holds for $\\overline\\psi$ as well.\n\\end{lemma}\n\\begin{proof}"
+ },
+ {
+  "labels": [
+   "eq:d079"
+  ],
+  "numbers": [
+   "13.3"
+  ],
+  "page": "40",
+  "line": 2540,
+  "section": "\\section{Rows, zeros and prime slots}\\label{sec:78rows}",
+  "subsection": "\\subsection{The characters attached to a row}",
+  "source": "\\begin{equation}\\label{eq:d079}\n \\mathcal X_u=\\bigl\\{\\theta\\chi_\\bullet(u)^{\\pm1}\\bigr\\}\\cup\n \\bigl\\{\\overline\\alpha\\,\\theta\\,\\overline{\\chi_\\bullet(u)},\\ \\alpha\\,\\theta\\,\\chi_\\bullet(u)\\bigr\\},\n \\qquad\\theta\\in\\Theta_0=\\langle\\eta,\\widehat T\\rangle .\n\\end{equation}",
+  "before": "$\\Theta_0=\\langle\\eta,\\widehat T\\rangle$, where $\\widehat T$ consists of fixed characters\nsupported over $2$ and $3$. A row is \\emph{bad} if one of these has a zero of height at most a small\npower $Z^\\tau$ well to the right of $1/2$. For a CM target the group generated by $\\psi$ is\ninfinite. We use instead the finite set",
+  "after": "It has three properties.\n\\begin{itemize}\n\\item It contains the numerator, the denominator $\\psi\\overline{\\chi_\\bullet(u)}$, and their"
+ },
+ {
+  "labels": [
+   "eq:d080"
+  ],
+  "numbers": [
+   "13.4"
+  ],
+  "page": "41",
+  "line": 2595,
+  "section": "\\section{Rows, zeros and prime slots}\\label{sec:78rows}",
+  "subsection": "\\subsection{The characters attached to a row}",
+  "source": "\\begin{equation}\\label{eq:d080}\n M_r=U^{-r/2}\\sum_n\\mu(n)\\overline{\\alpha(n)}\\theta(n)\\overline{\\chi_n(u)}\\,W\\Bigl(\\frac{\\N(n)}{U^r}\\Bigr),\n \\qquad\n S_m=U^{-m/2}\\sum_l\\overline{\\alpha(l)}\\theta(l)\\overline{\\chi_l(u)}\\,W'\\Bigl(\\frac{\\N(l)}{U^m}\\Bigr),\n\\end{equation}",
+  "before": "so using it here is not circular.\n\nA zero of a CM member produces the two witnesses of \\cite[\\S3.3]{G78}, now with the\nangular factor:",
+  "after": "or their conjugates. In each, $\\overline\\alpha$ appears together with $\\overline\\chi$, or $\\alpha$ together\nwith $\\chi$. We call such sums \\emph{co-oriented}; this matters in\nSection~\\ref{sec:78moments}."
+ },
+ {
+  "labels": [
+   "eq:d081"
+  ],
+  "numbers": [
+   "13.5"
+  ],
+  "page": "41",
+  "line": 2623,
+  "section": "\\section{Rows, zeros and prime slots}\\label{sec:78rows}",
+  "subsection": "\\subsection{The compensated probe and the slots}",
+  "source": "\\begin{equation}\\label{eq:d081}\n Q_i(u)=P_i^{-1/2}\\sum_{p\\in\\text{slot }i}\\Omega_i\\Bigl(\\frac{\\N(p)}{P_i}\\Bigr)\n \\Bigl(\\frac{\\N(p)}{P_i}\\Bigr)^{z-1}\\overline{\\Bigl(\\frac up\\Bigr)_6}\n\\end{equation}",
+  "before": "$\\overline{\\eta(p_{J^c})}$. In row $u$ a slot prime $p\\nmid u$ contributes the local factor\n$\\psi(p)\\overline{\\chi_p(u)}\\N(p)^{-x}$ of the denominator, and $\\overline{\\psi(p)}\\psi(p)=1$. So the\nmarked-minus-rescaled difference is $-\\overline{\\chi_p(u)}$ plus small terms, exactly as\nfor~$\\zeta$. The slot amplitudes",
+  "after": "are the same finite-order prime polynomials as in \\cite[\\S4.4]{G78}. Two consequences\nfollow.\n\\begin{enumerate}"
+ },
+ {
+  "labels": [
+   "eq:d199"
+  ],
+  "numbers": [
+   "14.1"
+  ],
+  "page": "42",
+  "line": 2659,
+  "section": "\\section{Counting bad rows with an angular factor}\\label{sec:78moments}",
+  "subsection": "\\section{Counting bad rows with an angular factor}\\label{sec:78moments}",
+  "source": "\\begin{equation}\\label{eq:d199}\\begin{aligned}\n M_u&=Z^{-r/2}\\sum_n\\mu(n)\\,\\alpha(n)^{\\epsilon}\\nu(n)\\chi_n(u)^{\\epsilon}\n W\\Bigl(\\frac{\\N(n)}{Z^r}\\Bigr),\\\\\n Q_u&=\\prod_{i}Z^{-z_i/2}\\sum_{p\\in\\mathcal P_i}a_i(p)\\nu(p)\\chi_p(u)^{\\epsilon}W_i\\Bigl(\\frac{\\N(p)}{Z^{z_i}}\\Bigr),\n\\end{aligned}\\end{equation}",
+  "before": "zero-extended defining modulus has prime support in $S$; the angular factor is not part of $\\nu$. Fix a sign\n$\\epsilon=\\pm1$, bounded ranges for the nonnegative parameters $m,r,z_i$, a bound for the number of slots, and\nconstants $c_1,c_2>0$, and suppose, as in~\\cite[Lemma~lem:marked]{OAI78}, $r+2z\\le m-c_1$ and $2r+8z\\le3m-c_2$.\nFor smooth annular $W,W_i$ put",
+  "after": "with the same $\\nu$ and $\\epsilon$ in $M_u$ and in every slot, where $z=\\sum_iz_i$, the slot sets $\\mathcal P_i$ are\ndisjoint and avoid $S$, $\\N(p)\\asymp Z^{z_i}$ for $p\\in\\mathcal P_i$, and the coefficients $a_i(p)$ are independent\nof $u$ with $|a_i(p)|\\le1$. Then for every $\\varepsilon>0$"
+ },
+ {
+  "labels": [
+   "eq:cm-inverse"
+  ],
+  "numbers": [
+   "14.2"
+  ],
+  "page": "42",
+  "line": 2667,
+  "section": "\\section{Counting bad rows with an angular factor}\\label{sec:78moments}",
+  "subsection": "\\section{Counting bad rows with an angular factor}\\label{sec:78moments}",
+  "source": "\\begin{equation}\\label{eq:cm-inverse}\n \\sum_{\\substack{u\\in\\OO\\\\0<\\N(u)\\ll Z^m}}|M_uQ_u|^2\\ll Z^{m+\\varepsilon},\n\\end{equation}",
+  "before": "\\end{aligned}\\end{equation}\nwith the same $\\nu$ and $\\epsilon$ in $M_u$ and in every slot, where $z=\\sum_iz_i$, the slot sets $\\mathcal P_i$ are\ndisjoint and avoid $S$, $\\N(p)\\asymp Z^{z_i}$ for $p\\in\\mathcal P_i$, and the coefficients $a_i(p)$ are independent\nof $u$ with $|a_i(p)|\\le1$. Then for every $\\varepsilon>0$",
+  "after": "with the uniformity of~\\cite[Lemma~lem:marked]{OAI78}: the constant depends only on the fixed arithmetic data,\n$c_1,c_2$, the parameter ranges and finitely many seminorms of the tests; it is uniform in the prime supports and\nthe coefficients $a_i$; the bound holds for every subcollection of the slots; norm twists of the tests cost a"
+ },
+ {
+  "labels": [
+   "eq:d082"
+  ],
+  "numbers": [
+   "14.3"
+  ],
+  "page": "42",
+  "line": 2678,
+  "section": "\\section{Counting bad rows with an angular factor}\\label{sec:78moments}",
+  "subsection": "\\section{Counting bad rows with an angular factor}\\label{sec:78moments}",
+  "source": "\\begin{equation}\\label{eq:d082}\n \\mu(n)\\gamma_{-1}(n)=\\chi_n(-1)G(n)^{-1}\\,\\overline{\\alpha(n)}\\,\\gamma_2(n),\n\\end{equation}",
+  "before": "\\emph{Why.} Appendix~\\ref{sec:s4-inverse} proves~\\eqref{eq:cm-inverse} (Proposition~\\ref{prop:s4-marked}). The\nproof in~\\cite{OAI78} alternates between two coefficient classes: M\u00f6bius coefficients\n$\\mu\\nu$, and cubic coefficients $\\overline\\alpha\\gamma_2\\nu$ attached to the theta function. Each\nswitch uses~\\eqref{eq:signal-cm} or its companion",
+  "after": "which holds for squarefree $n$~\\cite[L10774--10776]{OAI78} and which we checked at $60$ primes and at squarefree\ncomposites. \\cite{OAI78} runs the orientation $\\mu\\nu$ with $\\overline\\chi$: for $\\epsilon=+1$ it first conjugates\nthe whole residual polynomial (finite character, marks and tests;~\\cite[L11712--11715]{OAI78}), which leaves the"
+ },
+ {
+  "labels": [
+   "eq:d083"
+  ],
+  "numbers": [
+   "14.4"
+  ],
+  "page": "43",
+  "line": 2730,
+  "section": "\\section{Counting bad rows with an angular factor}\\label{sec:78moments}",
+  "subsection": "\\section{Counting bad rows with an angular factor}\\label{sec:78moments}",
+  "source": "\\begin{equation}\\label{eq:d083}\n S_k(n_j)=Z^{-n_j/2}\\sum_l\\alpha(l)^e\\psi_k(l)W_j\\Bigl(\\frac{\\N(l)}{Z^{n_j}}\\Bigr)\\qquad(j=1,2).\n\\end{equation}",
+  "before": "\n\\paragraph{4. The plain fourth moment with prime factors}~\\cite[Lemma~lem:plain]{OAI78}.\nThe CM statement needed is the following. Fix $e=\\pm1$ and $3/4\\le\\kappa\\le1$. For rows $k$ with\n$0<\\N(k)\\ll Z^m$, write $\\psi_k=\\tau\\chi_\\bullet(k)$ for the finite-order row character, and put",
+  "after": "Let $Q$ be a product of slot polynomials in $\\psi_k$ with no angular factor, of total length $z$, whose\ncoefficients are fixed combinations of characters in the finite group $\\Theta$\nof~\\cite[L12511--12521]{OAI78}, which contains $\\Theta_0$ and the characters separating the fixed"
+ },
+ {
+  "labels": [
+   "eq:d084"
+  ],
+  "numbers": [
+   "14.5"
+  ],
+  "page": "43",
+  "line": 2738,
+  "section": "\\section{Counting bad rows with an angular factor}\\label{sec:78moments}",
+  "subsection": "\\section{Counting bad rows with an angular factor}\\label{sec:78moments}",
+  "source": "\\begin{equation}\\label{eq:d084}\n \\sum_{k\\in\\mathcal R_z}|S_k(n_1)S_k(n_2)Q|^2\\ll Z^{M+\\varepsilon},\\qquad M=m+q,\n\\end{equation}",
+  "before": "coefficients are fixed combinations of characters in the finite group $\\Theta$\nof~\\cite[L12511--12521]{OAI78}, which contains $\\Theta_0$ and the characters separating the fixed\nreciprocity phases. Let $\\mathcal R_z$ be the rows of\n\\cite{OAI78}, defined through the finite-order part $\\psi_k$. Then",
+  "after": "with the same hypotheses and uniformity as in~\\cite{OAI78}: no restriction when $z=0$;\n$n_1+n_2+6\\kappa z\\le M$ and slots of length at most the mesh when $z>0$, with a mesh independent of $\\psi$ and\n$e$; uniformity over moving moduli, masks and frozen labels. Here $Z^q$ bounds the norm of the full displayed"
+ },
+ {
+  "labels": [
+   "eq:d085"
+  ],
+  "numbers": [
+   "15.1"
+  ],
+  "page": "45",
+  "line": 2803,
+  "section": "\\section{The final inequality}\\label{sec:78final}",
+  "subsection": "\\section{The final inequality}\\label{sec:78final}",
+  "source": "\\begin{equation}\\label{eq:d085}\n -E(h)\\ge\\frac{49}{440640}\\qquad(0\\le\\delta\\le5/6,\\ 0\\le x\\le1/2),\n\\end{equation}",
+  "before": "convergence. So no term involves the gamma factor or a convexity bound of a CM $L$-function; that gamma factor\naffects only fixed powers of the height.\n\nSo the endpoint certificate of~\\cite[Lemma~lem:balanced-endpoint]{OAI78},",
+  "after": "with $q=x\\delta$ and $R=R_*(\\delta,x)$,\napplies verbatim. \\cite{OAI78} compares it with $\\Delta=\\beta_*-7/8$ in\n\\cite[eq.~eq:adaptive-endpoint]{OAI78}:"
+ },
+ {
+  "labels": [
+   "eq:d086"
+  ],
+  "numbers": [
+   "15.2"
+  ],
+  "page": "45",
+  "line": 2809,
+  "section": "\\section{The final inequality}\\label{sec:78final}",
+  "subsection": "\\section{The final inequality}\\label{sec:78final}",
+  "source": "\\begin{equation}\\label{eq:d086}\n E_{\\rm actual}(h)-\\Delta\\le-\\frac{49}{440640}-\\Bigl(1-\\frac h4\\Bigr)\\Delta+\\epsilon_{\\rm total}<0 .\n\\end{equation}",
+  "before": "\\end{equation}\nwith $q=x\\delta$ and $R=R_*(\\delta,x)$,\napplies verbatim. \\cite{OAI78} compares it with $\\Delta=\\beta_*-7/8$ in\n\\cite[eq.~eq:adaptive-endpoint]{OAI78}:",
+  "after": "The term $h\\Delta/4$ is a capacity loss caused by the choice $\\kappa=2\\beta_*-1$. With $\\kappa=3/4$ it\nis exactly zero, which only helps; the bin ceiling is then written $\\delta\\le2\\beta_*-1$, not $\\delta\\le\\kappa$\n(Lemma~\\ref{lem:r3-ceiling})."
+ },
+ {
+  "labels": [
+   "eq:d087"
+  ],
+  "numbers": [
+   "17.1"
+  ],
+  "page": "47",
+  "line": 2927,
+  "section": "\\section{CM newforms of higher weight: why the method should extend}\\label{sec:higherweight}",
+  "subsection": "\\section{CM newforms of higher weight: why the method should extend}\\label{sec:higherweight}",
+  "source": "\\begin{equation}\\label{eq:d087}\n L(f,s)\\ne0\\qquad\\Bigl(\\Re s>\\frac k2+\\frac78\\Bigr),\n\\end{equation}",
+  "before": "these more general CM forms.\n\n\\paragraph{Expected statement.} For every $k\\ge1$ and every finite-order $\\eta$, $L(s,\\overline\\alpha^{\\,k}\\eta)\\ne0$ for\n$\\Re s>7/8$. Equivalently, every CM newform $f$ of weight $k+1$ with CM by $K$ satisfies",
+  "after": "a zero-free strip along the right edge of the critical strip $\\frac k2<\\Re s<\\frac k2+1$. The $11/12$\nmethod of Part~I should give the weaker boundary $\\frac k2+\\frac{11}{12}$ in the same way.\n"
+ },
+ {
+  "labels": [
+   "eq:d088"
+  ],
+  "numbers": [
+   "17.2"
+  ],
+  "page": "48",
+  "line": 2958,
+  "section": "\\section{CM newforms of higher weight: why the method should extend}\\label{sec:higherweight}",
+  "subsection": "\\subsection{Two examples}",
+  "source": "\\begin{equation}\\label{eq:d088}\n  L(f,s+1)=(1+3^{-s})^{-1}L^{(6)}(s,\\alpha^2\\chi_\\bullet(4)).\n \\end{equation}",
+  "before": " $a_4=0$, not $4$. We have $L(f,s+1)=L(s,\\alpha^2\\chi_\\bullet(4))$, and\n the target is $\\overline\\alpha^{\\,2}\\,\\overline{\\chi_\\bullet(4)}$. The expected strip is $15/8<\\Re s<2$ (center $3/2$).\n Since $a_3=-3$, the normalized Euler factor at $3$ is $(1+3^{-s})^{-1}$; the factor at $2$ is $1$.\n Thus, in the convention of the earlier sums,",
+  "after": "\\end{itemize}\n\n\\subsection{What changes with \\texorpdfstring{$k$}{k}}"
+ },
+ {
+  "labels": [
+   "eq:d089"
+  ],
+  "numbers": [
+   "17.3"
+  ],
+  "page": "48",
+  "line": 2965,
+  "section": "\\section{CM newforms of higher weight: why the method should extend}\\label{sec:higherweight}",
+  "subsection": "\\subsection{What changes with \\texorpdfstring{$k$}{k}}",
+  "source": "\\begin{equation}\\label{eq:d089}\n \\gamma_2(c)\\overline{\\alpha(cn^3)}\\,\\psi(cn^3)=\\gamma_2(c)\\,\\overline{\\alpha(cn^3)}^{\\,k+1}\\eta(cn^3).\n\\end{equation}",
+  "before": "\\end{itemize}\n\n\\subsection{What changes with \\texorpdfstring{$k$}{k}}\n\\paragraph{1. The weight and the rows.} With target $\\psi=\\overline\\alpha^{\\,k}\\eta$ the weight~\\eqref{eq:cm-weight} becomes",
+  "after": "Proposition~\\ref{prop:cm-rows} is formal in $\\psi(p)$, so the rows are again\n$\\zeta_K^S(6z)L^S(w,\\chi_\\bullet(u))/L^S(x,\\psi\\overline{\\chi_\\bullet(u)})$. The numerators still have finite order,\nthe denominators have infinity type $(\\bar z/|z|)^k$, and the slot amplitudes are unchanged."
+ },
+ {
+  "labels": [
+   "eq:d090"
+  ],
+  "numbers": [
+   "17.4"
+  ],
+  "page": "48",
+  "line": 2977,
+  "section": "\\section{CM newforms of higher weight: why the method should extend}\\label{sec:higherweight}",
+  "subsection": "\\subsection{What changes with \\texorpdfstring{$k$}{k}}",
+  "source": "\\begin{equation}\\label{eq:d090}\n  \\left.\\partial_{\\bar z}^{\\,j}F(z',\\bar z',v')\\right|_{z=\\bar z=0}\n  =\\bigl(-(cv)^{-2}\\bigr)^{j}\\,(\\partial_{z'}^{\\,j}F)\\bigl(-\\delta/c,\\,1/(\\N(c)v)\\bigr).\n \\end{equation}",
+  "before": "table in Section~\\ref{sec:78probe} has a version for all $j\\ge1$, as follows.\n\\begin{itemize}\n\\item \\emph{Chain rule.} At $z=0$ the coordinate $z'$ is affine in $\\bar z$, while $\\bar z'$ and $v'$ do not\n depend on $\\bar z$. Hence, exactly,",
+  "after": " Every derivative of order $j\\ge1$ kills the constant term at the identity cusp. We checked this\n identity symbolically for $j\\le4$.\n\\item \\emph{Direct Mellin transform.} For a nonzero Fourier mode and $\\Re s>\\frac16-\\frac j2$,"
+ },
+ {
+  "labels": [
+   "eq:d091"
+  ],
+  "numbers": [
+   "17.5"
+  ],
+  "page": "48",
+  "line": 2984,
+  "section": "\\section{CM newforms of higher weight: why the method should extend}\\label{sec:higherweight}",
+  "subsection": "\\subsection{What changes with \\texorpdfstring{$k$}{k}}",
+  "source": "\\begin{equation}\\label{eq:d091}\n  \\int_0^\\infty(2\\pi i\\bar\\ell)^j\\,vK_{1/3}(4\\pi|\\ell|v)\\,v^{2s+j-2}\\,dv\n  =\\frac{i^j}4(2\\pi)^{-2s}\\,\\Gamma\\Bigl(s+\\frac j2-\\frac16\\Bigr)\\Gamma\\Bigl(s+\\frac j2+\\frac16\\Bigr)\n   \\overline{\\alpha(\\ell)}^{\\,j}\\N(\\ell)^{-s}.\n \\end{equation}",
+  "before": " \\end{equation}\n Every derivative of order $j\\ge1$ kills the constant term at the identity cusp. We checked this\n identity symbolically for $j\\le4$.\n\\item \\emph{Direct Mellin transform.} For a nonzero Fourier mode and $\\Re s>\\frac16-\\frac j2$,",
+  "after": " The integral converges absolutely in this half-plane; elsewhere the right side gives its\n meromorphic continuation. For $j=1,2$ this gives the two entries of the table. We checked it numerically for $j\\le5$ (relative\n error below $10^{-25}$)."
+ },
+ {
+  "labels": [
+   "eq:d092"
+  ],
+  "numbers": [
+   "17.6"
+  ],
+  "page": "49",
+  "line": 2995,
+  "section": "\\section{CM newforms of higher weight: why the method should extend}\\label{sec:higherweight}",
+  "subsection": "\\subsection{What changes with \\texorpdfstring{$k$}{k}}",
+  "source": "\\begin{equation}\\label{eq:d092}\n  R_j(t)=\\prod_\\pm\\frac{\\Gamma(\\frac{j+1}2+t\\pm\\frac16)}{\\Gamma(\\frac{j+1}2-t\\pm\\frac16)} .\n \\end{equation}",
+  "before": " error below $10^{-25}$).\n\\item \\emph{Reflected side.} The same substitution gives $\\prod_\\pm\\Gamma(\\frac{j+2}2-s\\pm\\frac16)$, the cusp\n factor $\\overline{\\alpha(c)}^{\\,2j}$, and the dual angular factor $\\alpha(\\ell)^j$.\n\\item \\emph{Kernel.} Write",
+  "after": " Then $R_1$ and $R_2$ are the two kernels of the table. $R_j$ is holomorphic for\n $\\Re t>\\frac16-\\frac{j+1}2$, which is to the left of $-1/4$ for every $j\\ge1$, and\n $|R_j(\\sigma+iu)|\\ll_{j,A}(1+|u|)^{4\\sigma}$ on $-1/4\\le\\sigma\\le A$ (checked numerically for $j\\le5$). So the"
+ },
+ {
+  "labels": [
+   "eq:d093"
+  ],
+  "numbers": [
+   "17.7"
+  ],
+  "page": "49",
+  "line": 3003,
+  "section": "\\section{CM newforms of higher weight: why the method should extend}\\label{sec:higherweight}",
+  "subsection": "\\subsection{What changes with \\texorpdfstring{$k$}{k}}",
+  "source": "\\begin{equation}\\label{eq:d093}\n  R_j(1)=\\frac{(3j-4)(3j-2)(3j+2)(3j+4)}{1296}\\sim\\frac{j^4}{16}.\n \\end{equation}",
+  "before": " $\\Re t>\\frac16-\\frac{j+1}2$, which is to the left of $-1/4$ for every $j\\ge1$, and\n $|R_j(\\sigma+iu)|\\ll_{j,A}(1+|u|)^{4\\sigma}$ on $-1/4\\le\\sigma\\le A$ (checked numerically for $j\\le5$). So the\n reflected weight obeys the same bound $\\ll\\min(x^{1/4},x^{-A})$, with constants depending on $j$.\n There is no uniform bound as $j$ grows: for example,",
+  "after": "\\end{itemize}\nThe dual lengths are unchanged, because the reflected argument $\\N(\\ell)X/\\N(c)^2$ does not depend on\n$j$. In the quadratic large sieve, $\\alpha(\\ell)^j$ is a unimodular coefficient of the dual index. Hence"
+ },
+ {
+  "labels": [
+   "eq:d094"
+  ],
+  "numbers": [
+   "17.8"
+  ],
+  "page": "49",
+  "line": 3042,
+  "section": "\\section{CM newforms of higher weight: why the method should extend}\\label{sec:higherweight}",
+  "subsection": "\\subsection{Remarks}",
+  "source": "\\begin{equation}\\label{eq:d094}\n  L(s,\\psi\\N^{it})=L(s-it,\\psi),\n \\end{equation}",
+  "before": "\\item \\emph{$k=0$ is OpenAI's case.} There $j=1$ and the weight is $\\gamma_2\\overline\\alpha\\eta$. The recipe ``target\n $\\overline\\alpha^{\\,k}\\eta$, $k+1$ theta derivatives'' therefore covers unitary Hecke characters of $K$ with\n purely angular infinity type; negative $k$ reduces to positive $k$ by conjugation. A general unitary\n Hecke character may also have a continuous norm factor $\\N^{it}$, with $t\\in\\mathbb R$. Since",
+  "after": " these vertical shifts leave the proposed zero-free half-plane unchanged.\n\\item \\emph{Orientation.} The conjugate target $\\alpha^k\\bar\\eta$ would leave $\\alpha^{k-1}$ in the weight. For $k=1$\n that is no angular factor at all: the theta function without a derivative, whose constant terms are"
+ },
+ {
+  "labels": [
+   "eq:d095"
+  ],
+  "numbers": [
+   "17.9"
+  ],
+  "page": "50",
+  "line": 3055,
+  "section": "\\section{CM newforms of higher weight: why the method should extend}\\label{sec:higherweight}",
+  "subsection": "\\subsection{Remarks}",
+  "source": "\\begin{equation}\\label{eq:d095}\n  L_{\\rm an}(\\mathrm{Sym}^mE_d,s)\n  =\\prod_{0\\le i<m/2}L(s,(\\psi_d^*)^{m-2i})\n   \\begin{cases}\n    1,&m\\text{ odd},\\\\\n    L(s,\\chi_{-3}^{\\,m/2}),&m\\text{ even}.\n   \\end{cases}\n \\end{equation}",
+  "before": " either orientation should work; we use $\\overline\\alpha^{\\,k}\\eta$ for uniformity.\n\\item \\emph{Symmetric powers.} For a CM curve $E_d$ and $m\\ge1$, put\n $L_{\\rm an}(\\mathrm{Sym}^mE_d,s)=L(\\mathrm{Sym}^mE_d,s+m/2)$.\n Up to finitely many Euler factors, the factorization is",
+  "after": " The last factor is $\\zeta(s)$ when $m\\equiv0\\pmod4$ and $L(s,\\chi_{-3})$ when\n $m\\equiv2\\pmod4$, with the trivial character interpreted primitively. This is the CM\n factorization of~\\cite[\\S3.5]{MW}. The positive-power factors are of the type above; the remaining"
+ }
+]

@@ -1,0 +1,617 @@
+[
+ {
+  "labels": [
+   "eq:inversion"
+  ],
+  "numbers": [
+   "10.1"
+  ],
+  "page": "26",
+  "line": 1664,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "source": "\\begin{equation}\\label{eq:inversion}\n \\frac1{\\sqrt X}\\ssum_n a_\\xi(n)\\chi_n(k)\\chi_n(f)^4W(\\N(n)/X)\n =\\sum_h\\frac{\\muk(h)\\overline{\\alpha(h)}^{\\,6}\\Psi(h)^3}{\\N(h)}\n                  T(X/\\N(h)^3;k,f).\n\\end{equation}",
+  "before": "must survive this reduction.\n\nOne cannot discard the $b\\ne1$ terms inside~\\eqref{eq:T}: they could\ncancel the term we want. Instead use the exact cube inversion of~\\cite[Section~5.3]{OAI1112} (compare~\\cite[Theorem~6.1]{Pat77} and~\\cite[Section~5]{DR})",
+  "after": "Here $h$ is primary and coprime to $6$. To check the formula, substitute\n\\eqref{eq:T}, collect the total cube index $b'=hb$, and use\n$\\sum_{h\\mid b'}\\muk(h)=\\ind_{b'=1}$. The angular and character"
+ },
+ {
+  "labels": [
+   "eq:Hc"
+  ],
+  "numbers": [
+   "10.2"
+  ],
+  "page": "26",
+  "line": 1676,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{Small cubes are controlled by the completed estimate}",
+  "source": "\\begin{equation}\\label{eq:Hc}\n H_c^3=\\min\\left(X,\\frac{X^2}{\\mathcal H^2}\\right),\\qquad\n L_b=\\frac X{\\N(b)^3}.\n\\end{equation}",
+  "before": "factors are completely multiplicative, so this cancellation is exact.\n\n\\subsection{Small cubes are controlled by the completed estimate}\nChoose",
+  "after": "For $\\N(h)\\le H_c$, the completed estimate~\\eqref{eq:completed} at\nscale $X/\\N(h)^3$ gives terms bounded by\n\\begin{equation}\\label{eq:smallcubes}"
+ },
+ {
+  "labels": [
+   "eq:smallcubes"
+  ],
+  "numbers": [
+   "10.3"
+  ],
+  "page": "26",
+  "line": 1682,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{Small cubes are controlled by the completed estimate}",
+  "source": "\\begin{equation}\\label{eq:smallcubes}\n \\mathcal H+\\frac{\\mathcal H^2F\\N(h)^3}X\\ll\\Sigma,\n \\qquad\\Sigma=XF,\n\\end{equation}",
+  "before": " L_b=\\frac X{\\N(b)^3}.\n\\end{equation}\nFor $\\N(h)\\le H_c$, the completed estimate~\\eqref{eq:completed} at\nscale $X/\\N(h)^3$ gives terms bounded by",
+  "after": "provided $\\mathcal H\\le\\Sigma$. Cauchy--Schwarz costs only divisor sums\nand logarithms, which fit into $D^\\varepsilon$.\nExpanding the remaining completed sums in~\\eqref{eq:inversion} leaves"
+ },
+ {
+  "labels": [
+   "eq:remove"
+  ],
+  "numbers": [
+   "10.4"
+  ],
+  "page": "26",
+  "line": 1691,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{Small cubes are controlled by the completed estimate}",
+  "source": "\\begin{equation}\\label{eq:remove}\n \\E(\\mathcal H,X,F)\\ll D^\\varepsilon\n \\left(\\Sigma+\n  \\sup_{\\substack{\\N(b)>H_c\\\\L_b>1}}\\E(\\mathcal H,L_b,F)\\right).\n\\end{equation}",
+  "before": "and logarithms, which fit into $D^\\varepsilon$.\nExpanding the remaining completed sums in~\\eqref{eq:inversion} leaves\nthe same average at smaller column scales. The resulting cube-removal\nestimate, the CM form of~\\cite[Lemma~5.3]{OAI1112} (Lemma~\\ref{lem:b4-cube}), is",
+  "after": "An empty supremum is zero. Scales $L_b\\le1$ are bounded by counting.\nIf $\\mathcal H^2\\le X$, the supremum is empty and the desired estimate\nalready follows. Here and below, the suppressed dependence on $W$ is"
+ },
+ {
+  "labels": [
+   "eq:d057"
+  ],
+  "numbers": [
+   "10.5"
+  ],
+  "page": "27",
+  "line": 1715,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{Large cubes force a smaller row range}",
+  "source": "\\begin{equation}\\label{eq:d057}\n \\frac1{LF}\\ssum_{F\\le\\N(f)<2F}\\sum_{k\\in\\OO}\n \\Phi(\\N(k)/\\mathcal H)\n \\left|\\ssum_n a_\\xi(n)\\chi_n(k)\\chi_n(f)^4W(\\N(n)/L)\\right|^2.\n\\end{equation}",
+  "before": "Gauss coefficients for M\\\"obius coefficients and then back again.\nThe paired identity~\\eqref{eq:paired} is used in both directions, with\ntwists (Lemma~\\ref{lem:b2-paired}).\nSmooth the row sum in the explicit average",
+  "after": "The reverse paired Gauss identity converts its coefficients back to\nM\\\"obius coefficients $\\muk(n)\\overline{\\alpha(n)}\\xi_1(n)$.\nFor precision, the intermediate column sums, with their exclusions, are"
+ },
+ {
+  "labels": [
+   "eq:P"
+  ],
+  "numbers": [
+   "10.6"
+  ],
+  "page": "27",
+  "line": 1723,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{Large cubes force a smaller row range}",
+  "source": "\\begin{equation}\\label{eq:P}\n P_{C,e_0,t}(y;U)=\\ssum_n\\muk(n)\\overline{\\alpha(n)}\\xi_1(n)\n \\ind_{(n,t)=1}\\overline{\\chi_n(y)}\\chi_n(C)^4\\chi_n(e_0)\n U(\\N(n)/\\ell),\\quad \\ell=\\frac L{\\N(C)\\N(t)}.\n\\end{equation}",
+  "before": "\\end{equation}\nThe reverse paired Gauss identity converts its coefficients back to\nM\\\"obius coefficients $\\muk(n)\\overline{\\alpha(n)}\\xi_1(n)$.\nFor precision, the intermediate column sums, with their exclusions, are",
+  "after": "Here $C,t$ are coprime squarefree primary elements and $e_0\\mid C$.\nAfter separation of smooth weights, the nonnegative average used is\n\\begin{equation}\\label{eq:Q}"
+ },
+ {
+  "labels": [
+   "eq:Q"
+  ],
+  "numbers": [
+   "10.7"
+  ],
+  "page": "27",
+  "line": 1730,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{Large cubes force a smaller row range}",
+  "source": "\\begin{equation}\\label{eq:Q}\n \\sum_{\\substack{C,t\\ \\mathrm{squarefree}\\\\(C,t)=1}}\n \\sum_{e_0\\mid C}\\frac{\\mathcal H\\N(C)}{\\N(e_0)L^2F}\n \\sum_{y\\in\\OO}\\Phi(\\N(y)/Y_{C,e_0})\n                       |P_{C,e_0,t}(y;U)|^2,\n\\end{equation}",
+  "before": " U(\\N(n)/\\ell),\\quad \\ell=\\frac L{\\N(C)\\N(t)}.\n\\end{equation}\nHere $C,t$ are coprime squarefree primary elements and $e_0\\mid C$.\nAfter separation of smooth weights, the nonnegative average used is",
+  "after": "where the outer sum is restricted to $\\N(Ct)\\ll_W L$ and\n\\begin{equation}\\label{eq:d058}\n Y_{C,e_0}=c_*\\frac{\\Sigma LF\\N(e_0)}{\\mathcal H\\N(C)^2}."
+ },
+ {
+  "labels": [
+   "eq:d058"
+  ],
+  "numbers": [
+   "10.8"
+  ],
+  "page": "27",
+  "line": 1737,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{Large cubes force a smaller row range}",
+  "source": "\\begin{equation}\\label{eq:d058}\n Y_{C,e_0}=c_*\\frac{\\Sigma LF\\N(e_0)}{\\mathcal H\\N(C)^2}.\n\\end{equation}",
+  "before": " \\sum_{y\\in\\OO}\\Phi(\\N(y)/Y_{C,e_0})\n                       |P_{C,e_0,t}(y;U)|^2,\n\\end{equation}\nwhere the outer sum is restricted to $\\N(Ct)\\ll_W L$ and",
+  "after": "The constant $c_*$ is fixed and chosen to cover the support of the weights.\n\nHere is the crucial enlargement (compare~\\cite[Lemma~9]{HB95} and~\\cite[Lemma~4.4]{GL}). The first Poisson frequency $h$ has"
+ },
+ {
+  "labels": [
+   "eq:enlarge"
+  ],
+  "numbers": [
+   "10.9"
+  ],
+  "page": "27",
+  "line": 1747,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{Large cubes force a smaller row range}",
+  "source": "\\begin{equation}\\label{eq:enlarge}\n Y_{\\rm natural}=\\frac{L^2F^2}{\\mathcal H},\\qquad\n Y_{\\rm enlarged}=\\frac{\\Sigma LF}{\\mathcal H},\\qquad\n \\frac{Y_{\\rm enlarged}}{Y_{\\rm natural}}=\\frac{\\Sigma}{LF}\\ge1.\n\\end{equation}",
+  "before": "norm about $L^2/\\mathcal H$, with additional divisor factors. Combining\nit with $f$ as $y=hf^2$ gives a natural M\\\"obius-row range of size\n$L^2F^2/\\mathcal H$. Suppressing the common divisor factor\n$\\N(e_0)/\\N(C)^2$ and fixed support constants, the two scales are",
+  "after": "After separating the smooth weights, the row sums are nonnegative mean\nsquares, so the larger smooth majorant gives a valid upper bound.\nThe enlarged range makes the second Poisson frequency range smaller."
+ },
+ {
+  "labels": [
+   "eq:d059"
+  ],
+  "numbers": [
+   "10.10"
+  ],
+  "page": "27",
+  "line": 1762,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{Large cubes force a smaller row range}",
+  "source": "\\begin{equation}\\label{eq:d059}\n r=tg/e,\\qquad f'=Cew,\\qquad k'=e_0eh_2,\n\\end{equation}",
+  "before": "divisor $g$ of the two M\\\"obius columns in $|P_{C,e_0,t}|^2$, a divisor\n$e\\mid g$ coming from the row exclusion, a squarefree $w$ that removes the\nremaining coprimality condition, and a nonzero frequency $h_2$. These\ncombine into a new exclusion divisor, auxiliary divisor and row:",
+  "after": "as in~\\cite[proof of Lemma~7.3]{OAI1112}. For $r$ in a dyadic range\n$R\\le\\N(r)<2R$, the new row scale is\n\\begin{equation}\\label{eq:Hprime}"
+ },
+ {
+  "labels": [
+   "eq:Hprime"
+  ],
+  "numbers": [
+   "10.11"
+  ],
+  "page": "27",
+  "line": 1767,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{Large cubes force a smaller row range}",
+  "source": "\\begin{equation}\\label{eq:Hprime}\n \\mathcal H'=\\frac{\\mathcal HL}{\\Sigma FR^2}.\n\\end{equation}",
+  "before": " r=tg/e,\\qquad f'=Cew,\\qquad k'=e_0eh_2,\n\\end{equation}\nas in~\\cite[proof of Lemma~7.3]{OAI1112}. For $r$ in a dyadic range\n$R\\le\\N(r)<2R$, the new row scale is",
+  "after": "Without enlargement the corresponding scale would be\n$\\mathcal H/(F^2R^2)$, which need not decrease when $F=R=1$.\n"
+ },
+ {
+  "labels": [
+   "eq:localcancel"
+  ],
+  "numbers": [
+   "10.12"
+  ],
+  "page": "28",
+  "line": 1777,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{Large cubes force a smaller row range}",
+  "source": "\\begin{equation}\\label{eq:localcancel}\n (1+\\ind_{\\pi\\mid k'})-\\ind_{\\pi\\mid k'}\n                         -\\ind_{\\pi\\nmid k'}=\\ind_{\\pi\\mid k'}.\n\\end{equation}",
+  "before": "Regrouping the signed divisor contributions \\emph{before} taking\nabsolute values forces a divisibility condition $f'\\mid k'$.\nAt each prime $\\pi\\mid f'$, the choices $\\pi\\mid C$, $\\pi\\mid e$ and\n$\\pi\\mid w$ contribute the three terms on the left of",
+  "after": "This divisibility keeps the next average in the ranges needed for\ninduction. The kernel after the second summation vanishes unless\n$0<\\N(k')\\le\\mathcal HL/(\\Sigma F\\N(r)^2)$. Retain only those $r$ for"
+ },
+ {
+  "labels": [
+   "eq:retained"
+  ],
+  "numbers": [
+   "10.13"
+  ],
+  "page": "28",
+  "line": 1785,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{Large cubes force a smaller row range}",
+  "source": "\\begin{equation}\\label{eq:retained}\n F'\\le\\N(f')\\le\\N(k')\\le\\frac{\\mathcal HL}{\\Sigma F\\N(r)^2}\\le\\mathcal H',\n\\end{equation}",
+  "before": "This divisibility keeps the next average in the ranges needed for\ninduction. The kernel after the second summation vanishes unless\n$0<\\N(k')\\le\\mathcal HL/(\\Sigma F\\N(r)^2)$. Retain only those $r$ for\nwhich a nonzero term occurs. If $F'\\le\\N(f')<2F'$, then $f'\\mid k'$ gives",
+  "after": "so $\\mathcal H'\\ge F'\\ge1$.\n\nThe new columns are restricted by $(n,r)=1$. Put $X'=L/(RF')$, and let"
+ },
+ {
+  "labels": [
+   "eq:exclusionid"
+  ],
+  "numbers": [
+   "10.14"
+  ],
+  "page": "28",
+  "line": 1795,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{Large cubes force a smaller row range}",
+  "source": "\\begin{equation}\\label{eq:exclusionid}\n \\mathcal C_r(X';k',f')=\\sum_{\\substack{j\\mid r\\\\(j,f')=1}}\\muk(j)a_\\xi(j)\n \\chi_j(k')\\chi_j(f')^4\\,\\mathcal C_1\\bigl(X'/\\N(j);k',jf'\\bigr).\n\\end{equation}",
+  "before": "$\\mathcal C_r(X';k',f')$ be the column sum of~\\eqref{eq:energy} with this\nrestriction, and $\\mathcal C_1$ the unrestricted one. Inclusion--exclusion over\n$j\\mid r$, together with the twisted multiplicativity of $a_\\xi$, gives\nthe exact identity",
+  "after": "Indeed, writing $n=jn'$, the factor $\\chi_{n'}(j)^4$ from\n$a_\\xi(jn')=a_\\xi(j)a_\\xi(n')\\chi_{n'}(j)^4$ enforces $(n',j)=1$ and\ncombines with $\\chi_{n'}(f')^4$. The factor $\\overline{\\alpha}^{\\,2}$ in $a_\\xi$ is"
+ },
+ {
+  "labels": [
+   "eq:exclusionswap"
+  ],
+  "numbers": [
+   "10.15"
+  ],
+  "page": "28",
+  "line": 1807,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{Large cubes force a smaller row range}",
+  "source": "\\begin{equation}\\label{eq:exclusionswap}\n (X',F')\\longmapsto\\bigl(X'/\\N(j),\\ F'\\N(j)\\bigr).\n\\end{equation}",
+  "before": "of~\\cite[Lemma~4.4]{OAI1112}, with one more factor $\\overline{\\alpha}$.\nCauchy--Schwarz in $j$ then bounds the restricted average by\n$\\tau(r)\\sum_{j\\mid r}\\E(\\mathcal H',X'/\\N(j),F'\\N(j))$.\nThus removing an exclusion divisor $j\\mid r$ produces the replacement",
+  "after": "It preserves both $\\mathcal H'$ and the product $\\Sigma'=X'F'=L/R$,\nand hence the ratio $\\mathcal H'/\\Sigma'$. Since $\\N(j)\\le\\N(r)$,\n$R\\le\\N(r)$, $F\\ge1$ and $\\mathcal H\\le\\Sigma$, \\eqref{eq:retained} gives"
+ },
+ {
+  "labels": [
+   "eq:childcolumn"
+  ],
+  "numbers": [
+   "10.16"
+  ],
+  "page": "28",
+  "line": 1813,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{Large cubes force a smaller row range}",
+  "source": "\\begin{equation}\\label{eq:childcolumn}\n \\frac{X'}{\\N(j)}\\ge\\frac{\\Sigma F\\N(r)^2}{\\mathcal HR\\N(j)}\n \\ge\\frac{\\Sigma F}{\\mathcal H}\\ge1.\n\\end{equation}",
+  "before": "\\end{equation}\nIt preserves both $\\mathcal H'$ and the product $\\Sigma'=X'F'=L/R$,\nand hence the ratio $\\mathcal H'/\\Sigma'$. Since $\\N(j)\\le\\N(r)$,\n$R\\le\\N(r)$, $F\\ge1$ and $\\mathcal H\\le\\Sigma$, \\eqref{eq:retained} gives",
+  "after": "\n\\subsection{The precise transfer estimate}\nWe now state the analytic input in the form needed here. As in"
+ },
+ {
+  "labels": [
+   "eq:transferprop"
+  ],
+  "numbers": [
+   "10.17"
+  ],
+  "page": "28",
+  "line": 1830,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{The precise transfer estimate}",
+  "source": "\\begin{equation}\\label{eq:transferprop}\n \\E(\\mathcal H,L,F;\\xi,W)\n \\ll D^\\delta\\Sigma\\|W\\|_{C^{J_t(m)}(I)}^2\n \\left(1+\\sup\\frac{\\E(\\mathcal H',X',F';\\xi',U)}{\\Sigma'}\\right).\n\\end{equation}",
+  "before": "$1\\le\\mathcal H,L,F,\\Sigma\\le D^{C_0}$, with\n$\\max\\{\\mathcal H,LF\\}\\le\\Sigma$. Here $\\Sigma$ is an independent\ntarget scale. For every integer $m\\ge0$ and $\\delta>0$, with the\nderivative order $J_t(m)=4m+12$,",
+  "after": "The supremum runs over averages of the same form~\\eqref{eq:energy}, with\n$\\mathcal H',X',F'\\ge1$, $\\Sigma'=X'F'$, and\n\\begin{equation}\\label{eq:transfer}"
+ },
+ {
+  "labels": [
+   "eq:transfer"
+  ],
+  "numbers": [
+   "10.18"
+  ],
+  "page": "28",
+  "line": 1837,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{The precise transfer estimate}",
+  "source": "\\begin{equation}\\label{eq:transfer}\n \\mathcal H'\\le\\frac{\\mathcal HL}{\\Sigma F},\\qquad\n \\frac{\\mathcal H'}{\\Sigma'}\\le\\frac{\\mathcal H}{\\Sigma},\\qquad\n \\Sigma'\\le L.\n\\end{equation}",
+  "before": " \\left(1+\\sup\\frac{\\E(\\mathcal H',X',F';\\xi',U)}{\\Sigma'}\\right).\n\\end{equation}\nThe supremum runs over averages of the same form~\\eqref{eq:energy}, with\n$\\mathcal H',X',F'\\ge1$, $\\Sigma'=X'F'$, and",
+  "after": "For $I=[u,v]\\subset(0,\\infty)$, the new weights satisfy\n$U\\in C_c^\\infty([u/16,4v])$ and $\\|U\\|_{C^m}\\le1$.\nThe characters $\\xi'$ belong to the same fixed finite family of"
+ },
+ {
+  "labels": [
+   "eq:standing"
+  ],
+  "numbers": [
+   "10.19"
+  ],
+  "page": "29",
+  "line": 1866,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{Why the induction closes}",
+  "source": "\\begin{equation}\\label{eq:standing}\n 1\\le\\mathcal H,X,F,\\qquad \\Sigma=XF\\le D^{C_0},\\qquad\n \\mathcal H\\le\\Sigma D^{-\\kappa}.\n\\end{equation}",
+  "before": "This subsection follows the proof of~\\cite[Proposition~5.1]{OAI1112}, which follows Heath-Brown's recursive method~\\cite[Lemma~8 and \\S8]{HB95} (see also~\\cite[Theorem~4.1]{GL}),\ngiven in~\\cite[Section~5.5]{OAI1112}; it uses only~\\eqref{eq:remove},\nProposition~\\ref{prop:cm-transfer} and counting, so it carries over\nunchanged. Fix $\\kappa>0$, $C_0\\ge1$, and $\\varepsilon>0$, and assume",
+  "after": "The inductive assertion, for each integer $\\nu\\ge0$, is\n\\begin{equation}\\label{eq:inductive}\n \\E(\\mathcal H,X,F;\\xi,W)"
+ },
+ {
+  "labels": [
+   "eq:inductive"
+  ],
+  "numbers": [
+   "10.20"
+  ],
+  "page": "29",
+  "line": 1871,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{Why the induction closes}",
+  "source": "\\begin{equation}\\label{eq:inductive}\n \\E(\\mathcal H,X,F;\\xi,W)\n \\ll D^\\varepsilon\\Sigma\\|W\\|_{C^{J_\\nu}(I)}^2\n \\qquad\\text{whenever }\\mathcal H\\le D^{\\nu\\kappa}.\n\\end{equation}",
+  "before": " 1\\le\\mathcal H,X,F,\\qquad \\Sigma=XF\\le D^{C_0},\\qquad\n \\mathcal H\\le\\Sigma D^{-\\kappa}.\n\\end{equation}\nThe inductive assertion, for each integer $\\nu\\ge0$, is",
+  "after": "This assertion is made for every $\\varepsilon>0$ and every compact\ninterval $I\\subset(0,\\infty)$. The finite derivative order $J_\\nu$ may\ndepend on $\\nu,\\kappa,C_0,\\varepsilon$, but not on $D$ or $I$; the implied"
+ },
+ {
+  "labels": [
+   "eq:basecase"
+  ],
+  "numbers": [
+   "10.21"
+  ],
+  "page": "29",
+  "line": 1887,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{Why the induction closes}",
+  "source": "\\begin{equation}\\label{eq:basecase}\n \\E(\\mathcal H,X,F;\\xi,W)\n \\ll_I\\frac{F}{XF}(X\\|W\\|_\\infty)^2\n =X\\|W\\|_\\infty^2\\le\\Sigma\\|W\\|_\\infty^2.\n\\end{equation}",
+  "before": "If $\\nu=0$, then $\\mathcal H\\le1$, so there are at most six nonzero\nrows, the units. There are $O(F)$ choices of $f$ and $O_I(X)$ column\nterms, each of absolute value at most $\\|W\\|_\\infty$, since\n$|a_\\xi(n)|\\le1$. The normalization in~\\eqref{eq:energy} therefore gives",
+  "after": "\n\\paragraph{Induction step.}\nAssume the assertion at level $\\nu$, and let"
+ },
+ {
+  "labels": [
+   "eq:contract"
+  ],
+  "numbers": [
+   "10.22"
+  ],
+  "page": "29",
+  "line": 1904,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{Why the induction closes}",
+  "source": "\\begin{equation}\\label{eq:contract}\n \\mathcal H'\\le\\frac{\\mathcal H}{\\N(b)^3F^2}\n <\\mathcal H\\left(\\frac{\\mathcal H}{XF}\\right)^2\n \\le\\mathcal H D^{-2\\kappa}.\n\\end{equation}",
+  "before": "suffices. Otherwise $\\N(b)^3>X^2/\\mathcal H^2$.\nFor each remaining $L=L_b$ we have $LF\\le\\Sigma$, so the transfer\nestimate applies with the unchanged target $\\Sigma=XF$. Every child\naverage satisfies",
+  "after": "In particular, $\\mathcal H'\\le D^{\\nu\\kappa}$. The other hypotheses survive\nas well:\n\\begin{equation}\\label{eq:survive}"
+ },
+ {
+  "labels": [
+   "eq:survive"
+  ],
+  "numbers": [
+   "10.23"
+  ],
+  "page": "29",
+  "line": 1911,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{Why the induction closes}",
+  "source": "\\begin{equation}\\label{eq:survive}\n \\frac{\\mathcal H'}{\\Sigma'}\\le\\frac{\\mathcal H}{\\Sigma}\n \\le D^{-\\kappa},\\qquad\n \\Sigma'\\le L\\le\\Sigma\\le D^{C_0},\\qquad\n \\mathcal H',X',F'\\ge1.\n\\end{equation}",
+  "before": " \\le\\mathcal H D^{-2\\kappa}.\n\\end{equation}\nIn particular, $\\mathcal H'\\le D^{\\nu\\kappa}$. The other hypotheses survive\nas well:",
+  "after": "The induction hypothesis applies to the child weight $U$ on\n$[u/16,4v]$. Since $\\|U\\|_{C^m}\\le1$, it gives the uniform bound\n\\begin{equation}\\label{eq:childbound}"
+ },
+ {
+  "labels": [
+   "eq:childbound"
+  ],
+  "numbers": [
+   "10.24"
+  ],
+  "page": "30",
+  "line": 1919,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{Why the induction closes}",
+  "source": "\\begin{equation}\\label{eq:childbound}\n \\sup\\frac{\\E(\\mathcal H',X',F';\\xi',U)}{\\Sigma'}\n \\ll D^{\\varepsilon/3}.\n\\end{equation}",
+  "before": " \\mathcal H',X',F'\\ge1.\n\\end{equation}\nThe induction hypothesis applies to the child weight $U$ on\n$[u/16,4v]$. Since $\\|U\\|_{C^m}\\le1$, it gives the uniform bound",
+  "after": "The transfer contributes a second factor $D^{\\varepsilon/3}$ and\ncube removal a third. Taking $J_{\\nu+1}\\ge\\max\\{J_t(m),J_c\\}$ proves the\nassertion at level $\\nu+1$. Thus both the derivative requirement and"
+ },
+ {
+  "labels": [
+   "eq:finalenergy"
+  ],
+  "numbers": [
+   "10.25"
+  ],
+  "page": "30",
+  "line": 1932,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{Why the induction closes}",
+  "source": "\\begin{equation}\\label{eq:finalenergy}\n \\E(\\mathcal H,X,F)\\ll D^\\varepsilon\\Sigma\n \\qquad(\\mathcal H\\le\\Sigma D^{-\\kappa}).\n\\end{equation}",
+  "before": "Finally take $\\nu=\\lceil C_0/\\kappa\\rceil$; this covers every allowed\n$\\mathcal H$. The number of induction levels depends on $C_0,\\kappa$,\nnot on $D$. Suppressing the resulting fixed smoothness norm again,\nwe obtain",
+  "after": "No estimate for zeros of $L(E_d,s)$ or of $\\zeta$ is assumed in this\ninduction: its inputs are cube removal and the transfer estimate, and\nits starting case is counting. In the CM case these inputs, and the"
+ },
+ {
+  "labels": [
+   "eq:initialratio"
+  ],
+  "numbers": [
+   "10.26"
+  ],
+  "page": "30",
+  "line": 1948,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{Why the induction closes}",
+  "source": "\\begin{equation}\\label{eq:initialratio}\n \\frac{\\mathcal H}{\\Sigma}\\ll\\frac{D^{-\\vartheta}}B.\n\\end{equation}",
+  "before": "sieve~\\cite{GL}.\n\nIt remains to check the initial scales~\\eqref{eq:initial}. With $H=D^{1+\\vartheta}$, they\nsatisfy",
+  "after": "For sufficiently large $D$ this is at most $D^{-\\vartheta/2}$.\nThus~\\eqref{eq:finalenergy} applies with $\\kappa=\\vartheta/2$.\nEmpty ranges and bounded column scales are handled by counting."
+ },
+ {
+  "labels": [
+   "eq:d060"
+  ],
+  "numbers": [
+   "10.27"
+  ],
+  "page": "30",
+  "line": 1960,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{Why the induction closes}",
+  "source": "\\begin{equation}\\label{eq:d060}\n\\begin{array}{c|cc}\n &\\text{zeta guide}&\\text{present CM guide}\\\\\\hline\n \\text{original coefficients}&\\muk(n)&\\muk(n)\\alpha(n)\\\\\n \\text{cubic coefficients}&\\overline\\alpha\\gamma_2&\\overline\\alpha^{\\,2}\\gamma_2\\\\\n \\text{theta derivative}&\\partial_{\\bar z}&\\partial_{\\bar z}^{\\,2}\\\\\n \\text{angular factor on cubes}&\\overline{\\alpha(b)}^3&\\overline{\\alpha(b)}^6\\\\\n \\text{dual angular factor}&\\alpha(\\ell)&\\alpha(\\ell)^2\n\\end{array}\n\\end{equation}",
+  "before": "Section~\\ref{sec:zeros} then gives the zero-free half-plane.\n\n\\paragraph{What changes from the zeta guide.}\nThe architecture is the same, but its angular factors change coherently:",
+  "after": "These are genuine identities to check, not consequences of the factors\nhaving absolute value one. Once checked, the same large-sieve and descent\nestimates apply."
+ },
+ {
+  "labels": [
+   "eq:d061"
+  ],
+  "numbers": [
+   "10.28"
+  ],
+  "page": "30",
+  "line": 1981,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{Proof of cube removal}\\label{subsec:b4-cube}",
+  "source": "\\begin{equation}\\label{eq:d061}\n \\E(\\mathcal H,X,F;\\xi,W)\\ll_{I,\\varepsilon,C_0}D^\\varepsilon\\Bigl(\\Sigma\\|W\\|_{C^{J_c}(I)}^2+\n \\sup_{\\substack{\\N(b)>H_c\\\\L_b>1}}\\E(\\mathcal H,L_b,F;\\xi,W)\\Bigr),\n\\end{equation}",
+  "before": "\\begin{lemma}[Cube removal; CM form of {\\cite[Lemma~5.3]{OAI1112}}]\\label{lem:b4-cube}\nFix $C_0\\ge1$ and $\\varepsilon>0$, and let $1\\le\\mathcal H,X,F\\le D^{C_0}$ with\n$\\mathcal H\\le\\Sigma=XF$. There is $J_c=J_c(\\varepsilon,C_0)$ such that, for every character $\\xi$\nof $\\mathfrak G$, compact $I=[u,v]\\subset(0,\\infty)$ and $W\\in C_c^\\infty(I)$,",
+  "after": "with $H_c$ and $L_b$ as in~\\eqref{eq:Hc} and $b$ primary and coprime to $6$. An empty supremum is\nzero, and the supremum is empty if $\\mathcal H^2\\le X$. This is~\\eqref{eq:remove}.\n\\end{lemma}"
+ },
+ {
+  "labels": [
+   "eq:b4-A"
+  ],
+  "numbers": [
+   "10.29"
+  ],
+  "page": "31",
+  "line": 2006,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{Proof of the transfer estimate}\\label{subsec:b4-transfer}",
+  "source": "\\begin{equation}\\label{eq:b4-A}\n \\mathcal A(W)=\\frac1{LF}\\ssum_{F\\le\\N(f)<2F}\\sum_{k\\in\\OO}\\Phi\\Bigl(\\frac{\\N(k)}{\\mathcal H}\\Bigr)\n \\Bigl|\\ssum_na_\\xi(n)\\chi_n(k)\\chi_n(f)^4W\\Bigl(\\frac{\\N(n)}L\\Bigr)\\Bigr|^2,\n\\end{equation}",
+  "before": "Throughout, $\\mathcal H,L,F,\\Sigma$, $I=[u,v]$ and $\\xi$ are as in Proposition~\\ref{prop:cm-transfer},\nand $I_*=[u/2,2v]$, $I'=[u/16,4v]$. Let $\\Phi$ be the row weight of Section~\\ref{sec:poisson},\nnormalized so that $\\Phi\\ge1$ on $[0,1]$, and let $C_\\Phi$ be the constant of\nSection~\\ref{subsec:b2-cm}, so that $\\widehat\\Phi(t)=0$ for $t>C_\\Phi$. Put",
+  "after": "the smoothed average displayed before~\\eqref{eq:P}; thus $\\E(\\mathcal H,L,F;\\xi,W)\\le\\mathcal A(W)$.\nFor coprime squarefree $C,t$ and $e_0\\mid C$ put $\\ell=L/(\\N(C)\\N(t))$,\n\\begin{equation}\\label{eq:d062}"
+ },
+ {
+  "labels": [
+   "eq:d062"
+  ],
+  "numbers": [
+   "10.30"
+  ],
+  "page": "31",
+  "line": 2012,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{Proof of the transfer estimate}\\label{subsec:b4-transfer}",
+  "source": "\\begin{equation}\\label{eq:d062}\n w_{C,e_0}=\\frac{\\mathcal H\\N(C)}{\\N(e_0)L^2F},\\qquad\n Y_{C,e_0}=c_*\\frac{\\Sigma LF\\N(e_0)}{\\mathcal H\\N(C)^2},\\qquad c_*=\\max(1,4C_\\Phi v^2).\n\\end{equation}",
+  "before": " \\Bigl|\\ssum_na_\\xi(n)\\chi_n(k)\\chi_n(f)^4W\\Bigl(\\frac{\\N(n)}L\\Bigr)\\Bigr|^2,\n\\end{equation}\nthe smoothed average displayed before~\\eqref{eq:P}; thus $\\E(\\mathcal H,L,F;\\xi,W)\\le\\mathcal A(W)$.\nFor coprime squarefree $C,t$ and $e_0\\mid C$ put $\\ell=L/(\\N(C)\\N(t))$,",
+  "after": "For $U\\in C_c^\\infty(I_*)$ and a character $\\xi_1$ of $\\mathfrak G$, let $P_{C,e_0,t}(y;U)$ be as\nin~\\eqref{eq:P}, and let\n\\begin{equation}\\label{eq:b4-Q}"
+ },
+ {
+  "labels": [
+   "eq:b4-Q"
+  ],
+  "numbers": [
+   "10.31"
+  ],
+  "page": "31",
+  "line": 2018,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{Proof of the transfer estimate}\\label{subsec:b4-transfer}",
+  "source": "\\begin{equation}\\label{eq:b4-Q}\n \\mathcal Q_{\\xi_1}(U)=\\sum_{\\substack{C,t\\ \\mathrm{squarefree},\\ (C,t)=1\\\\\\N(C)\\N(t)\\le2vL}}\n \\sum_{e_0\\mid C}w_{C,e_0}\\sum_{y\\in\\OO}\\Phi\\Bigl(\\frac{\\N(y)}{Y_{C,e_0}}\\Bigr)|P_{C,e_0,t}(y;U)|^2,\n\\end{equation}",
+  "before": " Y_{C,e_0}=c_*\\frac{\\Sigma LF\\N(e_0)}{\\mathcal H\\N(C)^2},\\qquad c_*=\\max(1,4C_\\Phi v^2).\n\\end{equation}\nFor $U\\in C_c^\\infty(I_*)$ and a character $\\xi_1$ of $\\mathfrak G$, let $P_{C,e_0,t}(y;U)$ be as\nin~\\eqref{eq:P}, and let",
+  "after": "which is~\\eqref{eq:Q} written out. The proof follows \\cite[Section~7]{OAI1112}. The angular factors\nenter only through the two Poisson summations (Lemmas~\\ref{lem:b4-first}\nand~\\ref{lem:b4-second-id}), which we give in full. They use the paired identities with twists of"
+ },
+ {
+  "labels": [
+   "eq:d063"
+  ],
+  "numbers": [
+   "10.32"
+  ],
+  "page": "31",
+  "line": 2045,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{Proof of the transfer estimate}\\label{subsec:b4-transfer}",
+  "source": "\\begin{equation}\\label{eq:d063}\n Z=\\frac{\\mathcal H\\widehat\\Phi(0)}{LF}\\ssum_{F\\le\\N(f)<2F}\\ssum_{(C,f)=1}\n \\Bigl|W\\Bigl(\\frac{\\N(C)}L\\Bigr)\\Bigr|^2\\prod_{\\pi\\mid C}\\Bigl(1-\\frac1{\\N(\\pi)}\\Bigr)\n \\ll_I\\mathcal H\\|W\\|_\\infty^2\\le\\Sigma\\|W\\|_\\infty^2 .\n\\end{equation}",
+  "before": "The row character $\\chi_{u_1}\\overline{\\chi_{u_2}}$ is primitive modulo $u_1u_2$, so the sum over\n$k$ with weight $\\Phi(\\N(k)/\\mathcal H)\\ind_{(k,C)=1}$ is given by~\\eqref{eq:poisson-exact} with\n$\\psi=\\chi_{u_1}\\overline{\\chi_{u_2}}$, $(z_1,z_2,g)=(u_1,u_2,C)$ and $\\mathcal H$ in place of $H$.\nThe frequency $h=0$ contributes only when $u_1=u_2=1$, and these terms give",
+  "after": "For $h\\ne0$ apply~\\eqref{eq:b2-reverse} at $(u_1,u_2)$; here the CM coefficients\n$\\muk(u)\\overline{\\alpha(u)}\\xi_1(u)$ appear. The characters at $u_1$ coming from $h$, $e_0$, $C$\nand $f$ combine as"
+ },
+ {
+  "labels": [
+   "eq:b4-first-id"
+  ],
+  "numbers": [
+   "10.33"
+  ],
+  "page": "32",
+  "line": 2061,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{Proof of the transfer estimate}\\label{subsec:b4-transfer}",
+  "source": "\\begin{equation}\\label{eq:b4-first-id}\n\\begin{split}\n \\mathcal A(W)-Z=\\sum_{\\xi_1}\\ell_{\\xi_1}(\\xi)\\sum_{\\substack{C,t\\\\(C,t)=1}}\\sum_{e_0\\mid C}\n &\\muk(e_0)\\muk(t)w_{C,e_0}\\ssum_{\\substack{F\\le\\N(f)<2F\\\\(f,Ct)=1}}\\ \\sum_{\\substack{h\\ne0\\\\(h,t)=1}}\\\\\n &\\times\\ssum_{x_1,x_2}p_{hf^2}(x_1)\\overline{p_{hf^2}(x_2)}\\,\n \\mathcal K_h\\Bigl(\\frac{\\N(x_1)}\\ell,\\frac{\\N(x_2)}\\ell\\Bigr),\n\\end{split}\n\\end{equation}",
+  "before": "Squarefreeness gives $(x_i,t)=1$, and no condition $(x_1,x_2)=1$ remains. The factors at $t$ have\nproduct $|\\overline{\\alpha(t)}\\xi_1(t)\\chi_t(hf^2)\\chi_t(C)^4\\chi_t(e_0)|^2=\\ind_{(t,Chf)=1}$, and\n$\\muk(u_1)\\muk(u_2)=\\muk(x_1)\\muk(x_2)$. With $\\N(u_1u_2)=\\N(t)^2\\N(x_1)\\N(x_2)$, $\\N(t)\\ell=L/\\N(C)$\nand the factor $1/(LF)$, this gives",
+  "after": "where $C,t$ are squarefree with $\\N(C)\\N(t)\\le vL$,\n$p_y(x)=\\muk(x)\\overline{\\alpha(x)}\\xi_1(x)\\ind_{(x,t)=1}\\overline{\\chi_x(y)}\\chi_x(C)^4\\chi_x(e_0)$\nare the coefficients of~\\eqref{eq:P}, and"
+ },
+ {
+  "labels": [
+   "eq:d064"
+  ],
+  "numbers": [
+   "10.34"
+  ],
+  "page": "32",
+  "line": 2072,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{Proof of the transfer estimate}\\label{subsec:b4-transfer}",
+  "source": "\\begin{equation}\\label{eq:d064}\n \\mathcal K_h(z_1,z_2)=(z_1z_2)^{-1/2}W(z_1)\\overline{W(z_2)}\n \\widehat\\Phi\\Bigl(\\frac{\\mathcal H\\N(h)\\N(C)^2}{L^2\\N(e_0)z_1z_2}\\Bigr),\\qquad\n \\sup_{C,e_0,h}\\|\\mathcal K_h\\|_{C^q(I^2)}\\ll_{I,q}\\|W\\|_{C^q(I)}^2.\n\\end{equation}",
+  "before": "\\end{equation}\nwhere $C,t$ are squarefree with $\\N(C)\\N(t)\\le vL$,\n$p_y(x)=\\muk(x)\\overline{\\alpha(x)}\\xi_1(x)\\ind_{(x,t)=1}\\overline{\\chi_x(y)}\\chi_x(C)^4\\chi_x(e_0)$\nare the coefficients of~\\eqref{eq:P}, and",
+  "after": "The factor $\\overline{\\alpha(x)}$ in $p_y$ is the only CM change; in \\cite[(7.1)]{OAI1112} the\ncoefficient is $\\muk(x)\\xi_1(x)$. The support of $\\widehat\\Phi$ forces\n$\\N(h)\\le C_\\Phi v^2L^2\\N(e_0)/(\\mathcal H\\N(C)^2)$, so $y=hf^2$ satisfies"
+ },
+ {
+  "labels": [
+   "eq:d065"
+  ],
+  "numbers": [
+   "10.35"
+  ],
+  "page": "32",
+  "line": 2083,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{Proof of the transfer estimate}\\label{subsec:b4-transfer}",
+  "source": "\\begin{equation}\\label{eq:d065}\n \\sum_{C,t}\\sum_{e_0\\mid C}w_{C,e_0}\\sum_{f,h}|P_{C,e_0,t}(hf^2;U)|^2\n \\ll D^\\varepsilon\\mathcal Q_{\\xi_1}(U)\\le D^\\varepsilon M\\|U\\|_{C^{J_1}(I_*)}^2 .\n\\end{equation}",
+  "before": "$\\N(h)\\le C_\\Phi v^2L^2\\N(e_0)/(\\mathcal H\\N(C)^2)$, so $y=hf^2$ satisfies\n$\\N(y)\\le4C_\\Phi v^2L^2F^2\\N(e_0)/(\\mathcal H\\N(C)^2)\\le Y_{C,e_0}$, because $LF\\le\\Sigma$. This is\nthe enlargement~\\eqref{eq:enlarge}. For fixed $C,e_0,t$ the map $(f,h)\\mapsto hf^2$ has\nmultiplicity at most $\\tau(y)\\ll D^\\varepsilon$, and $\\Phi\\ge1$ on $[0,1]$, so",
+  "after": "Now \\cite[Lemma~B.2]{OAI1112}, with rows $(C,t,e_0,f,h)$, weights $w_{C,e_0}$, coefficients\n$\\muk(e_0)\\muk(t)w_{C,e_0}$, both column sums equal to $P_{C,e_0,t}(hf^2;\\cdot)$, and the kernels\n$\\mathcal K_h$ supported in $I^2\\subset\\operatorname{int}I_*^{\\,2}$, gives"
+ },
+ {
+  "labels": [
+   "eq:d066"
+  ],
+  "numbers": [
+   "10.36"
+  ],
+  "page": "32",
+  "line": 2100,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{Proof of the transfer estimate}\\label{subsec:b4-transfer}",
+  "source": "\\begin{equation}\\label{eq:d066}\n \\mathcal M=Z'+\\sum_{g,e,w,h_2,\\xi'}\\frac{Y\\muk(e)\\muk(w)c_{\\xi'}(\\xi_1)\\N(g)}{\\N(e)\\ell}\n \\ssum_{n_1,n_2}a^\\sharp(n_1)\\overline{a^\\sharp(n_2)}\\,\n \\mathcal K\\Bigl(\\frac{\\N(n_1)}{X_0'},\\frac{\\N(n_2)}{X_0'}\\Bigr).\n\\end{equation}",
+  "before": "with this $\\ell$, $\\mathcal M=\\sum_{y\\in\\OO}\\Phi(\\N(y)/Y)|P(y)|^2$, and $U_0(x)=x^{-1/2}U(x)$.\n\n\\begin{lemma}[Second Poisson identity; CM form of {\\cite[Lemma~7.2]{OAI1112}}]\\label{lem:b4-second-id}\nWith $c_{\\xi'}(\\xi_1)$ as in Lemma~\\ref{lem:b2-paired},",
+  "after": "Here $g,w$ are squarefree, $e\\mid g$ and $0\\ne h_2\\in\\OO$, subject to $(g,Ct)=(w,gCth_2)=1$,\n$\\N(gw)\\le b_*\\ell$ and $\\N(h_2)\\le C_\\Phi b_*^2\\ell^2\\N(e)/(Y\\N(g)^2)$, and\n\\begin{equation}\\label{eq:d201}\\begin{gathered}"
+ },
+ {
+  "labels": [
+   "eq:d201"
+  ],
+  "numbers": [
+   "10.37"
+  ],
+  "page": "32",
+  "line": 2107,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{Proof of the transfer estimate}\\label{subsec:b4-transfer}",
+  "source": "\\begin{equation}\\label{eq:d201}\\begin{gathered}\n X_0'=\\frac\\ell{\\N(gw)},\\qquad\n a^\\sharp(n)=a_{\\xi'}(n)\\ind_{(n,tg/e)=1}\\chi_n(e_0eh_2)\\chi_n(Cew)^4,\\\\\n \\mathcal K(x_1,x_2)=U_0(x_1)\\overline{U_0(x_2)}\n \\widehat\\Phi\\Bigl(\\frac{Y\\N(h_2)\\N(g)^2}{\\N(e)\\ell^2x_1x_2}\\Bigr).\n\\end{gathered}\\end{equation}",
+  "before": " \\mathcal K\\Bigl(\\frac{\\N(n_1)}{X_0'},\\frac{\\N(n_2)}{X_0'}\\Bigr).\n\\end{equation}\nHere $g,w$ are squarefree, $e\\mid g$ and $0\\ne h_2\\in\\OO$, subject to $(g,Ct)=(w,gCth_2)=1$,\n$\\N(gw)\\le b_*\\ell$ and $\\N(h_2)\\le C_\\Phi b_*^2\\ell^2\\N(e)/(Y\\N(g)^2)$, and",
+  "after": "The zero-frequency term is\n$Z'=Y\\widehat\\Phi(0)\\ssum_{(g,Ct)=1}|U(\\N(g)/\\ell)|^2\\prod_{\\pi\\mid g}(1-\\N(\\pi)^{-1})\\ll_{I_*}Y\\ell\\|U\\|_\\infty^2$.\n\\end{lemma}"
+ },
+ {
+  "labels": [
+   "eq:d067"
+  ],
+  "numbers": [
+   "10.38"
+  ],
+  "page": "33",
+  "line": 2131,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{Proof of the transfer estimate}\\label{subsec:b4-transfer}",
+  "source": "\\begin{equation}\\label{eq:d067}\n \\psi(e)\\overline{\\psi(h_2)}\\chi_{z_1}(C^4e_0)\\overline{\\chi_{z_2}(C^4e_0)}\n =\\chi_{z_1}(e_0eh_2)\\chi_{z_1}(Ce)^4\\,\\overline{\\chi_{z_2}(e_0eh_2)\\chi_{z_2}(Ce)^4},\n\\end{equation}",
+  "before": "So for $h_2\\ne0$,~\\eqref{eq:b2-forward} replaces it, together with $\\gamma(\\psi)$, by\n$\\sum_{\\xi'}c_{\\xi'}(\\xi_1)a_{\\xi'}(z_1)\\overline{a_{\\xi'}(z_2)}$. This is the only CM change: in\n\\cite[proof of Lemma~7.2]{OAI1112} the M\\\"obius coefficient is $\\muk\\xi_1$ and the cubic\ncoefficient is $\\overline\\alpha\\gamma_2\\xi'$. The characters combine as",
+  "after": "since $\\overline{\\chi_z(e)}=\\chi_z(e)^5$. Insert $\\ind_{(z_1,z_2)=1}=\\sum_{w\\mid z_1,\\,w\\mid z_2}\\muk(w)$\nand write $z_i=wn_i$; then $(w,gCt)=1$. By~\\eqref{eq:b2-twisted},\n$a_{\\xi'}(wn_i)=a_{\\xi'}(w)a_{\\xi'}(n_i)\\chi_{n_i}(w)^4$. The factors at $w$ have product"
+ },
+ {
+  "labels": [
+   "eq:d068"
+  ],
+  "numbers": [
+   "10.39"
+  ],
+  "page": "33",
+  "line": 2139,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{Proof of the transfer estimate}\\label{subsec:b4-transfer}",
+  "source": "\\begin{equation}\\label{eq:d068}\n \\ind_{(n,gCtw)=1}\\chi_n(e_0eh_2)\\chi_n(Cew)^4=\\ind_{(n,tg/e)=1}\\chi_n(e_0eh_2)\\chi_n(Cew)^4.\n\\end{equation}",
+  "before": "since $\\overline{\\chi_z(e)}=\\chi_z(e)^5$. Insert $\\ind_{(z_1,z_2)=1}=\\sum_{w\\mid z_1,\\,w\\mid z_2}\\muk(w)$\nand write $z_i=wn_i$; then $(w,gCt)=1$. By~\\eqref{eq:b2-twisted},\n$a_{\\xi'}(wn_i)=a_{\\xi'}(w)a_{\\xi'}(n_i)\\chi_{n_i}(w)^4$. The factors at $w$ have product\n$|a_{\\xi'}(w)\\chi_w(e_0eh_2)\\chi_w(Ce)^4|^2=\\ind_{(w,h_2)=1}$, and",
+  "after": "Finally\n$U(\\N(gz_1)/\\ell)\\overline{U(\\N(gz_2)/\\ell)}/\\sqrt{\\N(z_1z_2)}\n=\\frac{\\N(g)}\\ell U_0(x_1)\\overline{U_0(x_2)}$ with $x_i=\\N(gz_i)/\\ell=\\N(n_i)/X_0'$, the Poisson"
+ },
+ {
+  "labels": [
+   "eq:d069"
+  ],
+  "numbers": [
+   "10.40"
+  ],
+  "page": "33",
+  "line": 2155,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{Proof of the transfer estimate}\\label{subsec:b4-transfer}",
+  "source": "\\begin{equation}\\label{eq:d069}\n \\mathcal Q_{\\xi_1}(U)\\ll D^\\varepsilon\\Sigma(1+S_m)\\|U\\|_{C^{2m+4}(I_*)}^2 .\n\\end{equation}",
+  "before": "For an integer $m\\ge0$, let $S_m$ be the supremum in~\\eqref{eq:transferprop}: over characters\n$\\xi'$, parameters $\\mathcal H',X',F'\\ge1$ satisfying~\\eqref{eq:transfer} with $\\Sigma'=X'F'$, and\n$U\\in C_c^\\infty(I')$ with $\\|U\\|_{C^m(I')}\\le1$. Then, for every $\\varepsilon>0$ and $U\\in\nC_c^\\infty(I_*)$,",
+  "after": "\\end{lemma}\n\n\\begin{proof}"
+ },
+ {
+  "labels": [
+   "eq:d070"
+  ],
+  "numbers": [
+   "10.41"
+  ],
+  "page": "33",
+  "line": 2172,
+  "section": "\\section{Remove the cubes, then reduce the number of rows}\\label{sec:descent}",
+  "subsection": "\\subsection{Proof of the transfer estimate}\\label{subsec:b4-transfer}",
+  "source": "\\begin{equation}\\label{eq:d070}\n \\E(\\mathcal H,L,F;\\xi,W)\\le\\mathcal A(W)\\ll D^{\\delta}\\Sigma(1+S_m)\\|W\\|_{C^{4m+12}(I)}^2,\n\\end{equation}",
+  "before": "\n\\paragraph{Proof of Proposition~\\ref{prop:cm-transfer}.} Lemma~\\ref{lem:b4-second} supplies the\nhypothesis of Lemma~\\ref{lem:b4-first} with $J_1=2m+4$ and $M\\ll D^{\\delta/2}\\Sigma(1+S_m)$. Then\nLemma~\\ref{lem:b4-first} gives",
+  "after": "which is~\\eqref{eq:transferprop} with $J_t(m)=4m+12$, as for $\\zeta$, and in the stronger form with\nthe smooth majorant $\\mathcal A(W)$ on the left. \\qed\n"
+ }
+]

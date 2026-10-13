@@ -1,0 +1,11 @@
+RESULT|B08|PASS|err=0 tol=0; 11/12+1/2=17/12 exactly; Re s0 = Re rho - 1/2 > 11/12 on 1999 rationals
+      falsifier for B08 [shift s0 = rho + 1/2]: err=1 -> fails as required
+RESULT|B02|PASS|err=0 tol=0; integrability exponents checked on 199 values of eta; sanity: max |S_d(D)|/(||W|| D^(11/12)) = 0.0321, max |S_d(D)|/(||W|| D^(1/2)) = 0.572 over d in {1,2,-3,7,16,-432,5}, D in {1e3,1e4,3e4}
+RESULT|B03|PASS|err=0 tol=0; no m>=1 with W(m/D)!=0 for D<1/b (W supported in [0.5,3]); just above 1/b, 1 term(s) are nonzero
+RESULT|B04|PASS|err=0.0855 tol=1; (i) substitution: rel. err 6.81e-33 (tol 1e-20); (ii) 21 cases (d, s): max |lhs-rhs|/tol = 0.0855 (tol 1e-9 at s=3, 1e-7 at 2.5+4i, 1e-5 at 1.7-2i); conductors N(E_-3)=972, N(E_-432)=27, N(E_1)=36, N(E_16)=27, N(E_2)=1728, N(E_5)=2700, N(E_7)=21168; B_d(s)=1 except d=16,-432 (p=2 good, a_2=0)
+      falsifier for B04 [L(E_d,s) without the shift 1/2 (error/tol, min over cases)]: err=999 -> fails as required
+      falsifier for B04 [B_d omitted, d=16,-432 where B_d != 1 (error/tol)]: err=1.04e+04 -> fails as required
+RESULT|B06|PASS|err=6.49e-39 tol=1e-25; W^(s0)=int phi dy/y = 0.00472725 > 0 for 3 complex s0 (30 digits)
+      falsifier for B06 [W^(-s0) instead of W^(s0)]: err=1.29 -> fails as required
+RESULT|B07|PASS|err=0 tol=0; d=16,p=2: good, a_p=0, |X|=p^-1/2 (poles on Re s=0); d=-432,p=2: good, a_p=0, |X|=p^-1/2 (poles on Re s=0); all bad primes have a_p in {0} (additive, CM): [(-432, 0), (-3, 0), (1, 0)]...; so B_d(s) is a finite product of 1/(nonvanishing polynomials in p^-s), holomorphic and nonzero for Re s>0
+RESULT|B01|PASS|err=0 tol=0; bookkeeping only: 11/12+1/2=17/12 (B08), F_W holomorphic for Re s>11/12 (B02), identity (B04) holds for Re s>1, W^(s0)>0 (B06), B_d(s0)!=0 (B07); the input (MS) and L entire are not tested NOTE: class A: logical deduction; only its finite ingredients are checked

@@ -1,0 +1,38 @@
+c1_pres_gauss: exit 0, [FAIL] lines 0, 1 s
+[PASS] T7-C1a eq:s2-pres psi((a)) = phi(a) conj(alpha(a)) is generator-independent, multiplicative, of type zbar/|z| :: 8 characters; max errors: gene
+[PASS] T7-C1b lem:s2-pres(iii) alphabar: phi(a) = unit = a mod 3; psi((n)) = conj(alpha(n)) on primary n :: max error 0.0e+00; unit mismatches 0
+[PASS] T7-C2 eq:d147 gamma(alphabar) = -1 (sum zeta e(zeta/3) = -3 exactly), W(alphabar) = 1; W independent of generator f :: sum = -3.000000000000+0.
+[PASS] T7-C3 eq:s2-gauss sum_x phi(x) e(hx/f) = conj(phi(h)) sqrt(Q) gamma for all h mod f, exactly in Z[zeta_M]; |gamma| = 1 :: 8 characters, all h m
+c2_fourier: exit 0, [FAIL] lines 0, 1 s
+[PASS] T7-C7 eq:d151 Fourier transform of the Gaussian with e(z) = exp(4 pi i Im z/sqrt3) :: symbolic (sympy) equality: True; quadrature at 5 (v, eta)
+[PASS] T7-C8a proof of lem:s2-fe(i) d/d(conj eta) e(-w eta) = (2 pi/sqrt3) conj(w) e(-w eta) :: symbolic: True
+[PASS] T7-C8b eq:d152 Ghat(eta) = (sqrt3/2pi) dbar(...) = -sqrt3/(2v^2) eta exp(-2 pi|eta|^2/(sqrt3 v)) :: second equality symbolic: True; quadrature 
+c3_theta_mellin: exit 0, [FAIL] lines 0, 12 s
+[PASS] T7-C9a eq:d153 Poisson step: sum_z G(t+fz) = (2/(sqrt3 Q)) sum_y e(ty/f) Ghat(y/f), every t mod f :: 8 characters x 3 v x all residues t: max r
+[PASS] T7-C9b eq:d153, eq:d148 line 1 = line 2 = Theta(v) = -gamma/(f sqrt Q) v^-2 conj Theta(1/(Qv)) :: 8 characters x 5 v: max rel. error 1.9e-15; f
+[PASS] T7-C5 eq:d149, eq:d154 Mellin transform of Theta = (2pi/sqrt3)^{-s-1/2} Gamma(s+1/2) sum_a = 6 (...) L(s,psi); also conj :: 8 characters x 3 s 
+[PASS] T7-C11 eq:d155 B(w), B^-(w) by quadrature over (v0, oo) = incomplete-gamma series (as implemented in s2/t1) :: 8 characters x 4 w x (B, B^-): m
+[PASS] T7-C12 eq:d156 int_0^{v0} Theta v^{s+1/2} dv/v = -gamma/(f sqrt Q) int_0^{v0} conj Theta(1/(Qv)) v^{s-3/2} dv/v = -gamma/(f sqrt Q) Q^{3/2-s} B
+[PASS] T7-C13 eq:s2-split Q^{s/2} I(s) = Q^{s/2} B(s) + W Q^{(1-s)/2} B^-(1-s) and its conjugate; kappa; -gamma/(f sqrt Q) = W/Q :: 8 characters x 4 s
+[PASS] T7-C6 eq:d150 Q^{s/2} I_psi(s) = W Q^{(1-s)/2} I_conjpsi(1-s) (Lambda FE) from direct theta quadratures, W = -gamma sqrt Q/f :: 8 characters x 
+c4_fe_pari: exit 0, [FAIL] lines 0, 4 s
+[PASS] T7-C6p eq:d150 FE with the explicit root number W = -gamma sqrt Q/f (PARI lfuncheckfeq, coefficients from psi) :: 8 characters, psi and conj ps
+[PASS] T7-C14 eq:s2-fe-unc L(s,psi) = W (3Q/(2pi)^2)^{1/2-s} Gamma(3/2-s)/Gamma(1/2+s) L(1-s, conj psi) :: 8 characters x 6 s (PARI values): max rel. 
+[PASS] T7-C15 eq:d157 |L(-1/10+it)| = (3Q)^{3/5}(2pi)^{-6/5} G(-1/10,t)|L(11/10-it, conj psi)|; size << Q^{3/5}(3+|t|)^{6/5} :: 8 characters x 6 t: ma
+[PASS] T7-C16 eq:d158 size check: no zero in the disk of radius 2-a-2e (winding 0); max |L|+|1/L| on radius 2-a-6e :: a = 0.6, e = 1e-4, 8 characters 
+[PASS] T7-D10 eq:d168 L(s,phi*) = eps (3Q)^{1/2-s}(2pi)^{2s-1} Gamma(3/2-s)/Gamma(1/2+s) L(1-s, conj phi*), CM members of X_u :: 4 CM members (sigma =
+[PASS] T7-D8 eq:s3-reflected |L(1-a-6e+it,phi*)| <= C0 (3Q)^{a-1/2+6e}(3+|t|)^{2a-1+12e}|L(a+6e-it, conj phi*)| with C0 = 1 on the grid :: 4 CM member
+d1_members: exit 0, [FAIL] lines 0, 2 s
+[PASS] T7-D6 eq:d165 L_orig(s,phi) = prod_p (1 - phi(p) q_p^-s)^-1 and 1/L_orig = sum mu(n) phi(n) q_n^-s :: 4 members (finite/CM, sigma = +-1) x 2 s,
+[PASS] T7-D9 eq:d167 phi((a)) = alpha(a')^sigma phi0*((a)) = (a/|a|)^sigma eps_a^-sigma phi0f(a): well defined, type (z/|z|)^sigma, = CM member :: 4 f
+s2/t1_theta_fe: exit 0, 33 s
+s2/t2_growth: exit 0, 181 s
+s2/t3_reflection: exit 0, 384 s
+s2/t4_conductors: exit 0, 0 s
+s3/t1_labels: exit 0, 4 s
+s3/t2_conductors: exit 0, 22 s
+s3/t3_fe: exit 0, 21 s
+s3/t4_gamma: exit 0, 23 s
+s3/t5_citations: exit 0, 1 s
+rerun_existing: overall exit 0
+run_all: overall exit 0, total 689 s

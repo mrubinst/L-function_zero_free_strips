@@ -1,0 +1,4 @@
+[PASS] S3-T4a lem:s3-labels(h) |Gamma(1/2+a+6e-it)/Gamma(3/2-a-6e+it)| / (3+|t|)^{2a-1+12e} in [0.15, 1.1] :: grid 50x4x934: max 1.0, min 0.160375; falsifier (exponent - 0.1): max 16.1842 [falsifier failed as required]
+[PASS] S3-T4b lem:s3-labels(h) finite-order quotient obeys the same bound; CM/finite ratio in [1/2,2] for |t|>=10 :: finite-order normalized max 1.0; ratio max 1.00126, min 1.0; falsifier (extra factor |t|^(1/2)): max deviation factor 1.11034e+6 [falsifier failed as required]
+[PASS] S3-T4c prop:s3-detector proof reflected exponent a-1/2+12e; witness contour exponent max -189/100; Q^{3/5} <= U^2 :: max = -189/100; falsifier 'max = -2' true? False [falsifier failed as required]
+SUMMARY: {'PASS': 3}

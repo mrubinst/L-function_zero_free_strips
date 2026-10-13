@@ -1,0 +1,22 @@
+RESULT|D10.10|PASS|err=0 tol=0; (10.10) 3000 admissible (C,t,e0,g,e,w) from actual primes: r = tg/e and f' = Cew squarefree and coprime; OAI1112 proof of Lemma 7.3 has r=tg/e, f'=Cew, k'=deh (d = e0): True
+RESULT|D10.30|PASS|err=0 tol=0; (10.30)/(10.8) 1953 cases (exact rationals, the largest actual N(h) and N(f)): N(hf^2) <= 4 C_Phi v^2 L^2F^2 N(e0)/(H N(C)^2) <= Y_{C,e0} with c_* = max(1, 4C_Phi v^2), LF <= Sigma
+      falsifier for D10.30 [c_* = max(1, C_Phi v^2)]: err=1.12e+03 -> fails as required
+RESULT|D10.11|PASS|err=0 tol=0; (10.11)/(10.37) 856 cases: N(h2) <= C_Phi (2v)^2 ell^2 N(e)/(Y_{C,e0} N(g)^2) gives N(k') = N(e0 e h2) <= HL/(Sigma F N(r)^2), r = tg/e (kernel support of the second Poisson summation)
+      falsifier for D10.11 [b_* = 4v (wrong support of U)]: err=856 -> fails as required
+RESULT|D10.16|PASS|err=0 tol=0; (10.16) 50000 retained (r, f', k') with f' | k' in Z[omega] and all j | r (exact rationals): X'/N(j) >= Sigma F N(r)^2/(H R N(j)) >= Sigma F/H >= 1
+      falsifier for D10.16 [N(r) in place of N(r)^2 in the middle term]: err=1.37e+05 -> fails as required
+RESULT|D10.21|PASS|err=0 tol=0; (10.21) F/(XF) (X||W||)^2 = X||W||^2 and Sigma||W||^2 - X||W||^2 = X||W||^2 (F-1) >= 0 (sympy)
+RESULT|D10.38|PASS|err=6.11e-15 tol=1e-12; (10.38) 3000 random (z1, z2, C, e0 | C, e, h2), shared primes allowed: psi(e)conj(psi(h2)) chi_{z1}(C^4e0) conj(chi_{z2}(C^4e0)) = chi_{z1}(e0eh2)chi_{z1}(Ce)^4 conj(...); conj(chi_z(e)) = chi_z(e)^5
+      falsifier for D10.38 [psi(e) read as chi_{z1}(e) conj(chi_{z2}(e))]: err=1.73 -> fails as required
+      falsifier for D10.38 [chi_z(Ce)^2 in place of chi_z(Ce)^4]: err=1.73 -> fails as required
+RESULT|D10.39|PASS|err=0 tol=1e-12; (10.39) 4000 random tuples with (g,Ct) = (w,gCth2) = 1, e | g, e0 | C, n squarefree (2486 with nonzero left side): 1_(n,gCtw)=1 chi_n(e0eh2)chi_n(Cew)^4 = 1_(n,tg/e)=1 (same)
+      falsifier for D10.39 [1_{(n,t)=1} (g/e dropped)]: err=1 -> fails as required
+RESULT|D10.35|PASS|err=0 tol=0; (10.35) 34 blocks (C,t,e0), L=20, F=7, Sigma=150, H=10, 25680 pairs (f,h): every hf^2 lies in N(y) <= Y_{C,e0}; multiplicity <= #{f: f^2 | y} <= tau(y) (max 2); blockwise sum_(f,h)|P(hf^2)|^2 <= m_max sum_(N(y)<=Y)|P(y)|^2, worst ratio 0.022; weighted totals 74.25 <= 4350
+      falsifier for D10.35 [containment with c_* = max(1, C_Phi v^2)]: err=8.74e+03 -> fails as required
+RESULT|D10.41|PASS|err=0 tol=0; (10.41) 2(2m+4)+4 = 4m+12 (sympy); E(H,L,F) <= A(W) with Phi(t) = e^{1-t} >= 1 on [0,1]: H=10,L=150,F=1: E=0.0008445 <= A=0.002231; H=30,L=200,F=7: E=0.001684 <= A=0.004337; H=5,L=120,F=13: E=0.0001635 <= A=0.0004017; OAI1112 Lemma 7.1 C^(2j+4), Lemma 7.3 C^(2m+4), Prop. 5.4 C^(4m+12) and [u/16,4v] in the source: True
+RESULT|D10.27|PASS|err=0 tol=0; (10.27) zeta column found in the sources: mu_K(n) (original coefficients, A_u): True; conj(alpha) gamma_2 (cubic coefficients): True; conj(alpha(b))^3 (cubes, eq:T): True; conj(alpha(h))^3 (cube inversion): True; one zbar-derivative (zeta guide numerics): True; d_zbar Theta at z=0 (OAI1112): True; alpha(ell) in the dual sum (OAI1112): True
+      S10.32 size check [(10.32): Z << H ||W||^2]: c(L,F) = (1/(LF)) sum_f sum_(C,f)=1 |W(N(C)/L)|^2 prod(1-1/N(pi)), ||W||_inf = 1
+          F = 1, 7, 30, 100:  L=100: 0.078, 0.042, 0.018, 0.021;  L=300: 0.084, 0.043, 0.018, 0.023;  L=1000: 0.077, 0.040, 0.017, 0.021;  L=3000: 0.075, 0.040, 0.017, 0.020
+RESULT|S10.32|PASS|err=0 tol=0; (10.32) size check: Z/(H Phihat(0)||W||^2) <= 0.084 for L <= 3000, F <= 100 (bounded, no growth); Z <= Sigma||W||^2 then uses H <= Sigma NOTE: class A: the constant is O_I(1); sanity only
+RESULT|S10.34|PASS|err=0 tol=0; (10.34) size check: sup over c in [0, 4C_Phi) of ||K_c||_{C^q(I^2)}/||W||_{C^q(I)}^2 = q=0: 0.246, q=1: 0.0597, q=2: 0.00823 (I = [1,2], W and Phihat smooth bumps); K_c = 0 for c >= 4 C_Phi NOTE: class A: uniformity in (C, e0, h); sanity only
+ALL DONE

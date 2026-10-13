@@ -1,0 +1,4 @@
+cases 4412
+failures (all must be 0): {'aff': 0, 'S': 0, 'Jratio': 0, 'J': 0, 'rk': 0, 'ap': 0, 'hasse': 0}
+falsifier hits (must be < cases; J+pi must be 0): {'J+pi': 0, 'rk_unconj': 0, 'ap_unconj': 1536, 'ap_d': 1320}
+EXIT STATUS 0: all 12 checks passed

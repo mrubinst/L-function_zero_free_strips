@@ -1,0 +1,90 @@
+{
+ "t0": {
+  "mode": "skip",
+  "control_exit": 0,
+  "scripts_started": 1,
+  "forced": 1,
+  "missed": [],
+  "seconds": 0
+ },
+ "t1": {
+  "mode": "skip",
+  "control_exit": 0,
+  "scripts_started": 13,
+  "forced": 13,
+  "missed": [],
+  "seconds": 18
+ },
+ "t2": {
+  "mode": "skip",
+  "control_exit": 0,
+  "scripts_started": 16,
+  "forced": 16,
+  "missed": [],
+  "seconds": 137
+ },
+ "t3": {
+  "mode": "replay",
+  "control_exit": 0,
+  "scripts_started": 8,
+  "forced": 8,
+  "missed": [],
+  "seconds": 146
+ },
+ "t4": {
+  "mode": "replay",
+  "control_exit": 0,
+  "scripts_started": 19,
+  "forced": 19,
+  "missed": [],
+  "seconds": 116
+ },
+ "t5": {
+  "mode": "skip",
+  "control_exit": 0,
+  "scripts_started": 15,
+  "forced": 15,
+  "missed": [],
+  "seconds": 2
+ },
+ "t6": {
+  "mode": "skip",
+  "control_exit": 0,
+  "scripts_started": 9,
+  "forced": 9,
+  "missed": [],
+  "seconds": 1
+ },
+ "t7": {
+  "mode": "skip",
+  "control_exit": 0,
+  "scripts_started": 14,
+  "forced": 14,
+  "missed": [],
+  "seconds": 6
+ },
+ "t8": {
+  "mode": "skip",
+  "control_exit": 0,
+  "scripts_started": 11,
+  "forced": 11,
+  "missed": [],
+  "seconds": 4
+ },
+ "t9": {
+  "mode": "skip",
+  "control_exit": 0,
+  "scripts_started": 12,
+  "forced": 12,
+  "missed": [],
+  "seconds": 4
+ },
+ "top": {
+  "mode": "replay",
+  "control_exit": 0,
+  "scripts_started": 103,
+  "forced": 3,
+  "missed": [],
+  "seconds": 50
+ }
+}

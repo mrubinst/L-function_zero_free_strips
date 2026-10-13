@@ -1,0 +1,17 @@
+[PASS] T7-C9a eq:d153 Poisson step: sum_z G(t+fz) = (2/(sqrt3 Q)) sum_y e(ty/f) Ghat(y/f), every t mod f :: 8 characters x 3 v x all residues t: max rel. error 1.5e-13; falsifiers (max over t, min over characters and v): Jacobian omitted 6.00, e(-ty/f) 2.00 [falsifier failed as required]
+[PASS] T7-C9b eq:d153, eq:d148 line 1 = line 2 = Theta(v) = -gamma/(f sqrt Q) v^-2 conj Theta(1/(Qv)) :: 8 characters x 5 v: max rel. error 1.9e-15; falsifiers (max over characters, must be large for some character): no conj 1.45, conj gamma 2.00, + sign 2.00, conj f 2.00 [falsifier failed as required]
+   A: u3 (psi = alphabar), f = 3: done (1s)
+   B: chi_pi7, f = pi7: done (2s)
+   C: u3^5 chi_pi13, f = 3 pi13: done (3s)
+   D: u3^3 chi_pi7^4, f = lambda pi7: done (4s)
+   E: chi_2 chi_pi7^3, f = 2 pi7: done (5s)
+   F: u3^3 chi_5, f = lambda 5: done (6s)
+   G: u3 chi_5^3, f = 3*5: done (8s)
+   H: chi_pi7 chi_pi13^3, f = pi7 pi13: done (10s)
+[PASS] T7-C5 eq:d149, eq:d154 Mellin transform of Theta = (2pi/sqrt3)^{-s-1/2} Gamma(s+1/2) sum_a = 6 (...) L(s,psi); also conj :: 8 characters x 3 s x (psi, conj psi): max rel. error 1.6e-12 (Dirichlet tail < 1e-7); trapezoid h vs 2h: 6.2e-16; falsifiers (min rel. error): no 6 0.83, Gamma(s) 0.40, (2pi)^ 0.85 [falsifier failed as required]
+[PASS] T7-C11 eq:d155 B(w), B^-(w) by quadrature over (v0, oo) = incomplete-gamma series (as implemented in s2/t1) :: 8 characters x 4 w x (B, B^-): max rel. error 4.1e-14
+[PASS] T7-C12 eq:d156 int_0^{v0} Theta v^{s+1/2} dv/v = -gamma/(f sqrt Q) int_0^{v0} conj Theta(1/(Qv)) v^{s-3/2} dv/v = -gamma/(f sqrt Q) Q^{3/2-s} B^-(1-s) :: 8 characters x s in {1.5+2i, 2.5-i}: max rel. error 6.5e-15; falsifiers (min rel. error): Q^(s-3/2) 0.20, B-(s) 0.91 [falsifier failed as required]
+[PASS] T7-C13 eq:s2-split Q^{s/2} I(s) = Q^{s/2} B(s) + W Q^{(1-s)/2} B^-(1-s) and its conjugate; kappa; -gamma/(f sqrt Q) = W/Q :: 8 characters x 4 s (two with Re s < 1, I by direct quadrature): max rel. error 1.1e-11; symbolic: True, True, True; falsifiers: conj W max rel. error 17.06, -W min rel. error (Re s < 1) 1.98 [falsifier failed as required]
+[PASS] T7-C6 eq:d150 Q^{s/2} I_psi(s) = W Q^{(1-s)/2} I_conjpsi(1-s) (Lambda FE) from direct theta quadratures, W = -gamma sqrt Q/f :: 8 characters x 5 s (Re s from -0.3 to 1.4): max rel. error 7.1e-15; trapezoid h vs 2h 1.2e-14; max ||W| - 1| = 6.7e-16; falsifiers: -W min rel. error 2.00, conj W max 1.51, (3Q)^(s/2) min 0.59 [falsifier failed as required]
+time 9.8s
+SUMMARY: 7 PASS, 0 FAIL

@@ -1,0 +1,32 @@
+== t1_labels
+[PASS] S3-T1a lem:s3-labels(a) |Lambda| = 4|Theta_0| distinct members; X_u closed under conjugation :: |Theta_0| = 216, distinct member functions 864, sample of
+[PASS] S3-T1b lem:s3-labels(b) X_u contains numerator, denominator psi conj chi(u), conjugates, slot characters; anti-oriented abar theta chi(u) not in X_u :: 3
+[PASS] S3-T1c lem:s3-labels(c) phi(mn) = phi(m)phi(n) on good primary m, n (zero convention), finite and CM :: max error 4.4e-15 over 2000 pairs; falsifier (chi
+[PASS] S3-T1d prop:s3-detector(iv) truncated inverse: coefficient 1 at n = 1, 0 for 1 < q_n <= D*, CM member :: 272 good primary n with q_n <= 900; max error 1.
+SUMMARY: {'PASS': 4}
+-- exit 0, failure lines 0
+== t2_conductors
+[PASS] S3-T2a lem:s3-labels(f) every member (finite and CM) has conductor exponent exactly 1 at each good prime of u :: 180 (row, theta, sigma) cases, j = 1..5;
+[PASS] S3-T2b lem:s3-labels(e) exponent at 2 <= 3, at lambda <= 4; Q <= 5184 N(u') for all members :: max exponent at 2: 3, at lambda: 4; max Q/N(u') = 5184, ma
+[PASS] S3-T2c lem:s3-labels(e) CM conductor = finite-order conductor away from lambda; lambda-exp <= max(2, .); Q_CM <= 9 Q_0 :: 7 cases where the CM member is 
+[PASS] S3-T2d lem:s3-labels(d) CM members have infinity type alpha^sigma (sigma=-1: zbar/|z|, in F_CM) :: falsifiers (finite order / opposite type) valid for so
+[PASS] S3-T2e lem:s3-labels(a) conjugate label (conj theta, -sigma): same conductor, conjugate values :: checked with the conductor search and 20 random good pr
+SUMMARY: {'PASS': 5}
+-- exit 0, failure lines 0
+== t3_fe
+[PASS] S3-T3a lem:s3-labels(h), lem:cm-growth FE with (3Q)^{s/2} Gamma(s+1/2), |w|=1, no poles, for CM members of X_u :: 8 CM members (both sigma) [falsifier fa
+[PASS] S3-T3b control finite-order member satisfies the finite-order FE (Gamma(s)) and not the CM one :: control: chi(pi7) (finite order): Q=1008: feq -54 bits,
+[PASS] S3-T3c lem:s3-labels(e) L_orig = L(s,psi*) prod_{p in S}(1 - psi*(p)q^-s); psi*(p) = 0 for p | u :: see lines above [falsifier failed as required]
+SUMMARY: {'PASS': 3}
+-- exit 0, failure lines 0
+== t4_gamma
+[PASS] S3-T4a lem:s3-labels(h) |Gamma(1/2+a+6e-it)/Gamma(3/2-a-6e+it)| / (3+|t|)^{2a-1+12e} in [0.15, 1.1] :: grid 50x4x934: max 1.0, min 0.160375; falsifier (e
+[PASS] S3-T4b lem:s3-labels(h) finite-order quotient obeys the same bound; CM/finite ratio in [1/2,2] for |t|>=10 :: finite-order normalized max 1.0; ratio max 
+[PASS] S3-T4c prop:s3-detector proof reflected exponent a-1/2+12e; witness contour exponent max -189/100; Q^{3/5} <= U^2 :: max = -189/100; falsifier 'max = -2'
+SUMMARY: {'PASS': 3}
+-- exit 0, failure lines 0
+== t5_citations
+[PASS] S3-T5a inserts.tex/edits.md every cited OAI78 line range contains the quoted content :: 68 citations; missing: []; falsifier (ranges shifted by 150 lines
+[PASS] S3-T5b guide guide labels referenced by the merged appendix exist :: missing: [] [falsifier failed as required]
+SUMMARY: {'PASS': 2}
+-- exit 0, failure lines 0

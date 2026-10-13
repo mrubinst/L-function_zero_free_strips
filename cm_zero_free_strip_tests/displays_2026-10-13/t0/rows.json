@@ -1,0 +1,82 @@
+[
+ {
+  "label": "eq:intro-curve",
+  "number": "0.1",
+  "kind": "D",
+  "what": "Definition of $E_d$; discriminant $-432d^2$ (sympy) and $j=0$ (PARI) for 40 values of $d$",
+  "script": "displays_2026-10-13/t0/t0_intro.py T0.1",
+  "result": "definition (consistency PASS)"
+ },
+ {
+  "label": "eq:intro-cm-map",
+  "number": "0.2",
+  "kind": "D",
+  "what": "The map; $(\\omega x)^3+d=x^3+d$ (sympy), so it preserves the equation; order 3",
+  "script": "displays_2026-10-13/t0/t0_intro.py T0.2",
+  "result": "definition (consistency PASS)"
+ },
+ {
+  "label": "eq:intro-ap",
+  "number": "0.3",
+  "kind": "E",
+  "what": "Brute-force point count, minus the Legendre sum and PARI ellap agree for 1366 pairs $(d,p)$, $p<800$, $p\\nmid6d$",
+  "script": "displays_2026-10-13/t0/t0_intro.py T0.3",
+  "result": "PASS (exact)"
+ },
+ {
+  "label": "eq:intro-L",
+  "number": "0.4",
+  "kind": "D",
+  "what": "Definition of $a_m$; PARI ellan equals the product of the local factors \\eqref{eq:intro-local} for $m\\le2500$, 10 values of $d$",
+  "script": "displays_2026-10-13/t0/t0_intro.py T0.4",
+  "result": "definition (consistency PASS, exact)"
+ },
+ {
+  "label": "eq:intro-local",
+  "number": "0.5",
+  "kind": "C",
+  "what": "Standard local factors~\\cite[Appendix~C, \\S16]{SilAEC}; for $0<|d|\\le200$ all 1200 bad primes are additive (PARI), $a_p=0$ there; $d=16$ is good at $2$",
+  "script": "displays_2026-10-13/t0/t0_intro.py T0.5",
+  "result": "checked against source; PASS (exact)"
+ },
+ {
+  "label": "eq:intro-fe",
+  "number": "0.6",
+  "kind": "C",
+  "what": "Deuring--Hecke functional equation; checked with PARI lfun for 8 curves ($N=27$ to $15552$) at 4 complex points, $\\epsilon$ from ellrootno",
+  "script": "displays_2026-10-13/t0/t0_intro.py T0.6",
+  "result": "checked against source; PASS (rel err below $10^{-40}$)"
+ },
+ {
+  "label": "eq:intro-fe-u",
+  "number": "0.7",
+  "kind": "E",
+  "what": "$\\Lambda^{\\rm u}(s)=\\epsilon\\Lambda^{\\rm u}(1-s)$ for the same curves and points (PARI lfun)",
+  "script": "displays_2026-10-13/t0/t0_intro.py T0.7",
+  "result": "PASS (rel err below $10^{-40}$)"
+ },
+ {
+  "label": "eq:intro-psi",
+  "number": "0.8",
+  "kind": "D",
+  "what": "Definitions; $\\overline{(4d/n)_6}=((4d)^5/n)_6$ exactly for 2258 pairs, so $\\psi_d=\\alpha\\chi_\\bullet(u_d)$ as in \\eqref{eq:ud}",
+  "script": "displays_2026-10-13/t0/t0_intro.py T0.8",
+  "result": "definition (consistency PASS, exact)"
+ },
+ {
+  "label": "eq:intro-hecke",
+  "number": "0.9",
+  "kind": "E",
+  "what": "Coefficientwise in $\\mathbb Z[\\omega]$: $a_m=\\sum b(m_1)\\sum_{\\N(n)=m_2}n\\overline{(4d/n)_6}$, $b$ the local factors at $p\\mid6d$ (PARI, minimal model), $m\\le2500$, 10 values of $d$ including non-minimal ones",
+  "script": "displays_2026-10-13/t0/t0_intro.py T0.9",
+  "result": "PASS (exact)"
+ },
+ {
+  "label": "eq:intro-inverse",
+  "number": "0.10",
+  "kind": "E",
+  "what": "$\\sum_{\\N(n)=m}\\muk(n)n\\overline{(4d/n)_6}$ equals the coefficient of $\\prod_{p\\nmid6d}(1-a_pX+pX^2)$, 7919 pairs $(d,m)$, $m\\le2500$",
+  "script": "displays_2026-10-13/t0/t0_intro.py T0.10",
+  "result": "PASS (exact)"
+ }
+]

@@ -1,0 +1,7 @@
+[PASS] D03.1 L1579 direct Mellin: formula for j = 1..6, three (l, s) pairs each, 40-digit quadrature (paper: j <= 5, err < 1e-25) | max rel err=2.37e-40; falsifiers (Gamma(s+(j-1)/2+-1/6), alpha^j, i^(j+1)) min rel err gshift=0.439, angle=0.178, phase=1.41
+[PASS] D03.2 L1576 convergence: integrand ~ v^{2s+j-4/3} at 0: absolute convergence iff Re s > 1/6 - j/2 | K_1/3(x) x^1/3 -> Gamma(1/3)2^(-2/3): True; at Re s = bound-0.05 the partial integral grows x4.62 (falsifier side); at bound+0.25, eps 1e-8 -> 1e-12 changes it by 0.00048
+[PASS] D03.3 L1583 table entries: j=1: Gamma(s+1/3)Gamma(s+2/3); j=2: Gamma(s+5/6)Gamma(s+7/6) (table line 1223) | shifts j=1 [Fraction(1, 3), Fraction(2, 3)], j=2 [Fraction(5, 6), Fraction(7, 6)]; falsifier j=3 gives [Fraction(4, 3), Fraction(5, 3)]
+[PASS] D03.4 L1585 reflected side: prod Gamma((j+2)/2 - s +- 1/6), conj(alpha(c))^{2j}, alpha(mu)^j (closed form incl. all constants), j=1..4 | max rel err=1.07e-40; falsifiers (Gamma((j+1)/2-s..), conj(alpha(c))^j, conj(alpha(mu))^j) min rel err gamma=0.282, cusp=0.297, dual=0.384
+[PASS] D03.5 L1600 dual length: reflected s-dependence is [(2pi)^4 N(mu) X/N(c)^2]^s, base independent of j | d/ds log(prefactor) = log(16*pi**4*N_l*N_mu/N_c**2); invariance under (mu,c)->(3mu,sqrt3 c): True; falsifier (2mu, c) changes value
+
+--- exit 0, 21.6 s

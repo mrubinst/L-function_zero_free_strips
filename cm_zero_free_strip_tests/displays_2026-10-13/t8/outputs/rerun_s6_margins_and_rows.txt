@@ -1,0 +1,6 @@
+RESULT|s6-T3|PASS|err=0 tol=0; exponent bookkeeping of OAI78 Part I (exact fractions); failed: []
+      falsifier for s6-T3 [no bin ceiling]: err=1 -> fails as required
+RESULT|s6-T4|PASS|err=0 tol=0; each unit u != 1 has chi_p(u) != 1 at some of the first 40 primary primes; the six unit characters are distinct
+      falsifier for s6-T4 [u = 1 is principal (no p with chi_p(1) != 1)]: err=1 -> fails as required
+RESULT|s6-T5|PASS|err=0 tol=1e-12; alpha(p)nu(p) = conj psi((p)) at 300 primes; psi((a)) = conj alpha(a) for 125 elements a = 1 mod 3 pi13; psi not of order <= 1000
+      falsifier for s6-T5 [infinity type alpha instead of conj(alpha)]: err=2 -> fails as required

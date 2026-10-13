@@ -1,0 +1,394 @@
+[
+ {
+  "label": "eq:d032",
+  "number": "7.1",
+  "kind": "D",
+  "what": "Definitions of $e$ and $\\widehat\\Phi$: $e$ trivial on $\\mathcal O$, $\\mathcal O$ self-dual; Gaussian gives $(2/\\sqrt3)e^{-4\\pi t/3}$",
+  "script": "part_B_lines_0550_0997/t2_poisson.py B09, B10",
+  "result": "definition (B10 PASS, err 9e-22)"
+ },
+ {
+  "label": "eq:d033",
+  "number": "7.2",
+  "kind": "E",
+  "what": "1200 random triples $(n_1,n_2,u)$, including $u$ sharing primes with $g$; dropping the indicator fails",
+  "script": "part_B_lines_0550_0997/t2_poisson.py B14",
+  "result": "PASS (max err 2e-16)"
+ },
+ {
+  "label": "eq:d034",
+  "number": "7.3",
+  "kind": "D",
+  "what": "Implemented by brute force modulo $z_1z_2$; $|\\gamma(\\psi)|=1$ for 46 pairs; change of generator checked",
+  "script": "part_B_lines_0550_0997/t2_poisson.py B16; proofs_2026-10-12/b2/b2_normalization_check.py",
+  "result": "definition (B16 PASS, err 9e-16)"
+ },
+ {
+  "label": "eq:poisson-exact",
+  "number": "7.4",
+  "kind": "E",
+  "what": "Lattice sum against dual sum, Gaussian $\\Phi$, 10 cases (8 nondegenerate, $g$ with 1-2 primes); 4 falsifiers fail",
+  "script": "part_B_lines_0550_0997/t2_poisson.py B17",
+  "result": "PASS (max rel err 5e-15)"
+ },
+ {
+  "label": "eq:d035",
+  "number": "7.5",
+  "kind": "I",
+  "what": "$N(e_0)N(z_1z_2)/H\\le b^2D^2/(HN(g))$ symbolically and on $10^5$ random sets; falsifier fails",
+  "script": "part_B_lines_0550_0997/t2_poisson.py B20",
+  "result": "PASS (exact)"
+ },
+ {
+  "label": "eq:d036",
+  "number": "7.6",
+  "kind": "D",
+  "what": "Vectorized $\\gamma_j$ equals brute force; $\\gamma_2$ is cubic (Euler criterion); $G$ equals OAI's closed form",
+  "script": "displays_2026-10-13/t2/t2a_gauss_identities.py helper; part_B_lines_0550_0997/t3_gauss.py B22; phase2_2026-10-12/r1/test_classgroup.py C2",
+  "result": "definition (PASS, err 2e-14)"
+ },
+ {
+  "label": "eq:gauss",
+  "number": "7.7",
+  "kind": "E",
+  "what": "150 squarefree $n$ (53 composite) with brute-force-checked Gauss sums; Moebius-sign and $\\alpha$ falsifiers fail",
+  "script": "part_B_lines_0550_0997/t3_gauss.py B23",
+  "result": "PASS (max err 2e-15)"
+ },
+ {
+  "label": "eq:d037",
+  "number": "7.8",
+  "kind": "D",
+  "what": "$c_\\xi$ from its definition, independent table of 432 characters: $\\sum_\\xi c_\\xi\\xi(t)=G(t^{-1})$, $\\sum c_\\xi=1$, $|c_\\xi|\\le1/2$",
+  "script": "displays_2026-10-13/t2/t2a_gauss_identities.py eq:d037; part_B_lines_0550_0997/t3_gauss.py B26",
+  "result": "definition (PASS, err 1e-14)"
+ },
+ {
+  "label": "eq:paired",
+  "number": "7.9",
+  "kind": "E",
+  "what": "Literal sum over all 432 characters, 73 coprime pairs; again with an independent table (60 pairs); zeta coefficients fail",
+  "script": "part_B_lines_0550_0997/t3_gauss.py B27; displays_2026-10-13/t2/t2a_gauss_identities.py eq:b2-forward",
+  "result": "PASS (max err 2e-14)"
+ },
+ {
+  "label": "eq:energy",
+  "number": "7.10",
+  "kind": "D",
+  "what": "Definition; implemented literally in the computed averages of Section 10 tests and in t2d",
+  "script": "section10_descent/test_sec10_descent.py S10.11b, S10.18; displays_2026-10-13/t2/t2d_sizecheck_hyp.py",
+  "result": "definition"
+ },
+ {
+  "label": "eq:d038",
+  "number": "7.11",
+  "kind": "E",
+  "what": "120 coprime squarefree pairs times 6 characters, plus 71 and 300 pairs in B30, S10.11a; $\\chi_n(v_0)^2$ fails",
+  "script": "displays_2026-10-13/t2/t2a_gauss_identities.py eq:d038; part_B_lines_0550_0997/t3_gauss.py B30",
+  "result": "PASS (max err 2e-14)"
+ },
+ {
+  "label": "eq:initial",
+  "number": "7.12",
+  "kind": "I",
+  "what": "Support bounds on prime data and sympy: $N(k)\\le CD^2/(HN(r_0)^2)$, $\\Sigma=XF=D/B$; one-power-of-$B$ falsifier fails",
+  "script": "part_B_lines_0550_0997/t3_gauss.py B32; phase2_2026-10-12/r1/test_step45_bookkeeping.py S1",
+  "result": "PASS (exact)"
+ },
+ {
+  "label": "eq:b2-g1g2",
+  "number": "7.13",
+  "kind": "E",
+  "what": "New: 150 squarefree $n$ (53 composite), brute-force-checked Gauss sums; $\\alpha$ and Moebius-sign falsifiers fail",
+  "script": "displays_2026-10-13/t2/t2a_gauss_identities.py eq:b2-g1g2",
+  "result": "PASS (max err 2e-15)"
+ },
+ {
+  "label": "eq:b2-quotient",
+  "number": "7.14",
+  "kind": "E",
+  "what": "All 144 pairs of classes mod 4, $G$ and $\\mathcal R$ from squarefree representatives; dropping $\\chi_x(-1)$ fails",
+  "script": "phase2_2026-10-12/r1/test_classgroup.py C5",
+  "result": "PASS (max err 4e-15)"
+ },
+ {
+  "label": "eq:b2-remove",
+  "number": "7.15",
+  "kind": "I",
+  "what": "Both sides computed from (7.10), 3 cases; the identity (10.14) behind it holds to 3e-15 in double precision",
+  "script": "section10_descent/test_sec10_descent.py S10.11b, S10.11",
+  "result": "PASS (ratio at most 0.31)"
+ },
+ {
+  "label": "eq:d039",
+  "number": "7.16",
+  "kind": "D",
+  "what": "All $432^2$ coefficients $c_\\xi(\\xi_1)$, $\\ell_{\\xi_1}(\\xi)$: expansions reproduce; $c_\\xi(\\mathbf1)=c_\\xi$; moduli at most 1/2",
+  "script": "displays_2026-10-13/t2/t2a_gauss_identities.py eq:d039",
+  "result": "definition; claims PASS (err 3e-14)"
+ },
+ {
+  "label": "eq:b2-forward",
+  "number": "7.17",
+  "kind": "E",
+  "what": "Literal sum over the 432 characters $\\xi$ of an independent table: 60 pairs times 4 characters $\\xi_1$; the zeta coefficients fail",
+  "script": "displays_2026-10-13/t2/t2a_gauss_identities.py eq:b2-forward; proofs_2026-10-12/b4/b4_checks.py C1",
+  "result": "PASS (max err 2e-14)"
+ },
+ {
+  "label": "eq:b2-reverse",
+  "number": "7.18",
+  "kind": "E",
+  "what": "Literal sum over the 432 characters $\\xi_1$ with $\\ell_{\\xi_1}(\\xi)$: 60 pairs times 4 characters $\\xi$; $\\beta$ without $\\overline\\alpha$ (zeta form) fails",
+  "script": "displays_2026-10-13/t2/t2a_gauss_identities.py eq:b2-reverse; proofs_2026-10-12/b4/b4_checks.py C2",
+  "result": "PASS (max err 1.3e-14)"
+ },
+ {
+  "label": "eq:b2-twisted",
+  "number": "7.19",
+  "kind": "E",
+  "what": "120 coprime squarefree pairs times 6 characters: twisted multiplicativity and $|a_\\xi|=1$; $\\chi_b(a)^2$ fails",
+  "script": "displays_2026-10-13/t2/t2a_gauss_identities.py eq:b2-twisted; part_B_lines_0550_0997/t3_gauss.py B30",
+  "result": "PASS (max err 2e-14)"
+ },
+ {
+  "label": "eq:b2-crt",
+  "number": "7.20",
+  "kind": "E",
+  "what": "New: brute-force Gauss sums mod $z_1z_2$, 83 coprime pairs (38 with $\\mathcal R=-1$), both directions; dropping $\\mathcal R$ fails",
+  "script": "displays_2026-10-13/t2/t2a_gauss_identities.py eq:b2-crt",
+  "result": "PASS (max err 2e-15)"
+ },
+ {
+  "label": "eq:b2-two",
+  "number": "7.21",
+  "kind": "E",
+  "what": "New: both identities for 150 squarefree $n$; $G$ for $\\overline G$, and unconjugated $a^\\zeta$, fail",
+  "script": "displays_2026-10-13/t2/t2a_gauss_identities.py eq:b2-two",
+  "result": "PASS (max err 2e-15)"
+ },
+ {
+  "label": "eq:d040",
+  "number": "7.22",
+  "kind": "E",
+  "what": "New: both equalities, 83 coprime pairs; $G(z_1z_2^{-1})$ on the right, and dropping $\\chi_{z_1}(-1)$, fail",
+  "script": "displays_2026-10-13/t2/t2a_gauss_identities.py eq:d040",
+  "result": "PASS (max err 2e-15)"
+ },
+ {
+  "label": "eq:d041",
+  "number": "7.23",
+  "kind": "E",
+  "what": "New: both identities for 149 squarefree $n\\ne1$; the two conjugation variants fail",
+  "script": "displays_2026-10-13/t2/t2a_gauss_identities.py eq:d041",
+  "result": "PASS (max err 2e-15)"
+ },
+ {
+  "label": "eq:d042",
+  "number": "7.24",
+  "kind": "E",
+  "what": "New: 83 coprime pairs times 6 characters $\\xi$; $(\\xi G)(z_2z_1^{-1})$ on the right fails",
+  "script": "displays_2026-10-13/t2/t2a_gauss_identities.py eq:d042; proofs_2026-10-12/b2/b2_reduction_check.py",
+  "result": "PASS (max err 1e-14)"
+ },
+ {
+  "label": "eq:b2-hyp",
+  "number": "7.25",
+  "kind": "A",
+  "what": "Hypothesis; it follows from (10.25), (10.26). Size check: $E/(XF\\max|W|^2)\\le0.17$, 24 cases, $D\\le4000$",
+  "script": "displays_2026-10-13/t2/t2d_sizecheck_hyp.py",
+  "result": "size check: ratio at most 0.17"
+ },
+ {
+  "label": "eq:b2-ranges",
+  "number": "7.26",
+  "kind": "D",
+  "what": "Ranges; the Step 4 scales satisfy them at 3777 support points and after the swaps $j\\mid r_0$",
+  "script": "phase2_2026-10-12/r1/test_step45_bookkeeping.py S1-S3",
+  "result": "definition"
+ },
+ {
+  "label": "eq:d043",
+  "number": "7.27",
+  "kind": "A",
+  "what": "Conclusion of Proposition 3; only the bookkeeping $\\sum(HN(r_0)/D^2)(D/B)^2\\ll H$ is checked",
+  "script": "part_B_lines_0550_0997/t3_gauss.py B33; phase2_2026-10-12/r1/test_step45_bookkeeping.py S4",
+  "result": "not testable by computation; proved in Proposition 3"
+ },
+ {
+  "label": "eq:d044",
+  "number": "7.28",
+  "kind": "E",
+  "what": "72 triples $(g,z_1,z_2)$, $g$ with 0-2 primes; the unconjugated variant fails",
+  "script": "displays_2026-10-13/t2/t2a_gauss_identities.py eq:d044; part_B_lines_0550_0997/t3_gauss.py B28",
+  "result": "PASS (max err 4e-16)"
+ },
+ {
+  "label": "eq:d045",
+  "number": "7.29",
+  "kind": "E",
+  "what": "$Z$ equals the $h=0$ Poisson terms and enters the end-to-end identity; size check $Z/(H\\max|W|^2)\\le0.095$",
+  "script": "displays_2026-10-13/t2/t2b_sxi_endtoend.py eq:d045, eq:d045-bound",
+  "result": "PASS (rel err 4e-15)"
+ },
+ {
+  "label": "eq:d046",
+  "number": "7.30",
+  "kind": "E",
+  "what": "72 triples (69 with $g\\ne1$), literal sum over 432 characters; $z_1=z_2=1$ gives $\\sum c_\\xi=1$; two falsifiers fail",
+  "script": "displays_2026-10-13/t2/t2a_gauss_identities.py eq:d046",
+  "result": "PASS (max err 1e-14)"
+ },
+ {
+  "label": "eq:d047",
+  "number": "7.31",
+  "kind": "E",
+  "what": "sympy with positive norms and complex values of $W$; numerically on every term of the end-to-end sum",
+  "script": "displays_2026-10-13/t2/t2c_change_of_variables.py eq:d047; displays_2026-10-13/t2/t2b_sxi_endtoend.py eq:d047",
+  "result": "holds (symbolic)"
+ },
+ {
+  "label": "eq:b2-Sxi",
+  "number": "7.32",
+  "kind": "E",
+  "what": "New end to end: $M_D=Z+\\sum_\\xi c_\\xi S_\\xi$ in this form, $D=120$ ($H=40,170$), $D=300$; five falsifiers fail",
+  "script": "displays_2026-10-13/t2/t2b_sxi_endtoend.py eq:b2-Sxi",
+  "result": "PASS (max rel err 4e-16)"
+ },
+ {
+  "label": "eq:d048",
+  "number": "7.33",
+  "kind": "E",
+  "what": "New: bijection enumerated exactly in $\\mathbb Z[\\omega]$, 45150 tuples onto 45150 triples, inverse checked; three falsifiers fail",
+  "script": "displays_2026-10-13/t2/t2c_change_of_variables.py eq:d048",
+  "result": "PASS (exact)"
+ },
+ {
+  "label": "eq:d049",
+  "number": "7.34",
+  "kind": "E",
+  "what": "Exact in $\\mathbb Z[\\omega]$ on all 45150 tuples of the bijection; $e_0$ to the first power fails",
+  "script": "displays_2026-10-13/t2/t2c_change_of_variables.py eq:d049; part_B_lines_0550_0997/t3_gauss.py B31, B32",
+  "result": "PASS (exact)"
+ },
+ {
+  "label": "eq:d050",
+  "number": "7.35",
+  "kind": "E",
+  "what": "Exact rationals on all 45150 tuples of the bijection",
+  "script": "displays_2026-10-13/t2/t2c_change_of_variables.py eq:d050",
+  "result": "PASS (exact)"
+ },
+ {
+  "label": "eq:b2-output",
+  "number": "7.36",
+  "kind": "E",
+  "what": "End to end: $M_D=Z+\\sum_\\xi c_\\xi S_\\xi$ in this final form, $D=120$ ($H=40,170$), $D=300$; four falsifiers fail",
+  "script": "proofs_2026-10-12/b2/b2_reduction_check.py (D 120, 300)",
+  "result": "PASS (max rel err 1e-14)"
+ },
+ {
+  "label": "eq:d051",
+  "number": "7.37",
+  "kind": "D",
+  "what": "Scales; at 3777 support points $N(k)\\le\\mathcal H$, $\\varrho\\in[1,4)$, $\\varkappa\\le C_1$, support in $[a_0/4,b_0]$",
+  "script": "phase2_2026-10-12/r1/test_step45_bookkeeping.py S1, S2",
+  "result": "definition"
+ },
+ {
+  "label": "eq:d052",
+  "number": "7.38",
+  "kind": "A",
+  "what": "Only the dyadic bookkeeping is checked: exact sums give ratio at most 1 for every dyadic $B\\le2D$",
+  "script": "phase2_2026-10-12/r1/test_step45_bookkeeping.py S4",
+  "result": "not testable by computation; proved in Proposition 3, Step 5"
+ },
+ {
+  "label": "eq:T",
+  "number": "8.1",
+  "kind": "D",
+  "what": "Definition; $b=1$ term is $X^{-1/2}$ times the column sum; sums finite; termwise theta form with $-1/81$",
+  "script": "part_B_lines_0550_0997/t4_theta.py B34, B35, B47",
+  "result": "definition"
+ },
+ {
+  "label": "eq:theta-coeff",
+  "number": "8.2",
+  "kind": "C",
+  "what": "Identical to [QF, Corollary 24(2)] with $\\lambda=\\sqrt{-3}$; also checked against the appendix tables, 210 indices",
+  "script": "part_B_lines_0550_0997/t4_theta.py B38",
+  "result": "checked against source"
+ },
+ {
+  "label": "eq:d053",
+  "number": "8.3",
+  "kind": "E",
+  "what": "sympy with $ad-bc=1$ and a numeric $\\mathrm{SL}_2(\\mathcal O)$ example; $g$ for $g^{-1}$ fails",
+  "script": "part_B_lines_0550_0997/t4_theta.py B48",
+  "result": "PASS (max err 4e-16)"
+ },
+ {
+  "label": "eq:chain",
+  "number": "8.4",
+  "kind": "E",
+  "what": "sympy, generic $F$ of degree (4,2,2), no lower derivatives survive; also in b3; two falsifiers fail",
+  "script": "part_B_lines_0550_0997/t4_theta.py B50, B51; proofs_2026-10-12/b3/b3_symbolic_checks.py",
+  "result": "holds (symbolic)"
+ },
+ {
+  "label": "eq:weight",
+  "number": "8.5",
+  "kind": "E",
+  "what": "End-to-end single-cusp reflection with two derivatives, 41 cusp configurations; one-derivative kernel and missing 1/27 fail",
+  "script": "part_B_lines_0550_0997/t5_reflection_j2.py B53",
+  "result": "PASS (max rel err 2e-8)"
+ },
+ {
+  "label": "eq:local",
+  "number": "8.6",
+  "kind": "E",
+  "what": "Reflected local sums, 7 primes, $j=0,\\dots,5$, 1854 cases; grouped with actual cusp data; equals [OAI, (6.5)]",
+  "script": "part_B_lines_0550_0997/t4_theta.py B57; phase2_2026-10-12/r2/t2_grouping_cusp_data.py",
+  "result": "PASS (max err 7e-14)"
+ },
+ {
+  "label": "eq:d054",
+  "number": "8.7",
+  "kind": "E",
+  "what": "Euler criterion, 10 primes times 40 residues",
+  "script": "part_B_lines_0550_0997/t4_theta.py B58",
+  "result": "PASS (max err 3e-15)"
+ },
+ {
+  "label": "eq:qls",
+  "number": "9.1",
+  "kind": "C",
+  "what": "Matches [OAI, Lemma 6.5] ($\\chi_k(n)^3=(n/k)_2$) and [GL, Theorem 1.1]; family hypotheses and a sanity ratio 0.25 checked",
+  "script": "part_B_lines_0550_0997/t6_sieve.py B62; phase2_2026-10-12/r2/t3_gl_family.py",
+  "result": "checked against source"
+ },
+ {
+  "label": "eq:completed",
+  "number": "9.2",
+  "kind": "A",
+  "what": "Sanity ratio with the CM $T$ at most 0.30 ($X=1400$, $H\\le600$, 3 values of $f$); proved in Section 9.1",
+  "script": "part_B_lines_0550_0997/t6_sieve.py B64",
+  "result": "size check: ratio at most 0.30"
+ },
+ {
+  "label": "eq:d055",
+  "number": "9.3",
+  "kind": "E",
+  "what": "400 random $(n,v,f)$ including non-coprime cases, and the $T$ identity in 8 cases; $\\chi_n(fv)^4$ fails",
+  "script": "part_B_lines_0550_0997/t6_sieve.py B66",
+  "result": "PASS (max err 4e-15)"
+ },
+ {
+  "label": "eq:d056",
+  "number": "9.4",
+  "kind": "R",
+  "what": "Precise form of (9.2) (Proposition 4); quantifiers agree with [OAI, Proposition 5.2]",
+  "script": "-",
+  "result": "see eq:completed"
+ }
+]

@@ -1,0 +1,12 @@
+proofs_2026-10-12/b3/b3_symbolic_checks.py exit=0 time=6s
+phase2_2026-10-12/r2/t2_grouping_cusp_data.py exit=0 time=17s
+proofs_2026-10-12/b3/t_b3_prop_endtoend.py exit=0 time=118s
+phase2_2026-10-12/r2/t1_prop_grouped_endtoend.py exit=0 time=186s
+part_B_lines_0550_0997/t4_theta.py exit=0 time=17s
+part_D_lines_1510_end/t03_mellin.py exit=0 time=30s
+part_D_lines_1510_end/t02_chain_rule.py exit=0 time=43s
+part_D_lines_1510_end/t04_kernels.py exit=0 time=48s
+part_D_lines_1510_end/t07_theta_appendix.py exit=0 time=54s
+part_B_lines_0550_0997/t5_reflection_j2.py exit=0 time=133s
+part_D_lines_1510_end/t08_reflection_j.py exit=0 time=209s
+ALLDONE

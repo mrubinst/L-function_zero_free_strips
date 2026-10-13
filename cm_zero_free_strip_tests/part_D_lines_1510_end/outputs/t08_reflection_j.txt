@@ -1,0 +1,47 @@
+[INFO] tables: 28237 squarefree c, fast vs brute-force g(r,c) max diff 5.6e-14, 22s
+[INFO] tables ready 22s
+   a=(1, 0) C=(-3, 0) sigma=0 kappa=1.000+0.000j: rel.err j=1,2,3 so far 7.0e-10, 2.0e-10, 3.5e-09
+   a=(4, 0) C=(-3, 0) sigma=0 kappa=1.000+0.000j: rel.err j=1,2,3 so far 7.0e-10, 2.0e-10, 3.5e-09
+   a=(1, 0) C=(-3, -6) sigma=0 kappa=1.000+0.000j: rel.err j=1,2,3 so far 5.5e-09, 2.0e-10, 3.5e-09
+   a=(7, 0) C=(-6, 0) sigma=0 kappa=1.000+0.000j: rel.err j=1,2,3 so far 5.5e-09, 2.0e-10, 3.5e-09
+   a=(-2, -3) C=(-6, 0) sigma=0 kappa=1.000+0.000j: rel.err j=1,2,3 so far 5.5e-09, 2.0e-10, 3.5e-09
+   a=(1, 0) C=(1, 2) sigma=- kappa=-0.500-0.866j: rel.err j=1,2,3 so far 5.5e-09, 2.0e-10, 3.5e-09
+   a=(1, 0) C=(1, 2) sigma=- kappa=-0.500+0.866j: rel.err j=1,2,3 so far 5.5e-09, 2.0e-10, 3.5e-09
+   a=(1, 0) C=(1, 2) sigma=- kappa=1.000+0.000j: rel.err j=1,2,3 so far 5.5e-09, 2.0e-10, 3.5e-09
+   a=(1, 0) C=(-1, -2) sigma=+ kappa=-0.500-0.866j: rel.err j=1,2,3 so far 5.5e-09, 2.0e-10, 3.5e-09
+   a=(1, 0) C=(-1, -2) sigma=+ kappa=-0.500+0.866j: rel.err j=1,2,3 so far 5.5e-09, 2.0e-10, 3.5e-09
+   a=(1, 0) C=(-1, -2) sigma=+ kappa=1.000+0.000j: rel.err j=1,2,3 so far 5.5e-09, 2.0e-10, 3.5e-09
+   a=(1, 0) C=(-2, -4) sigma=- kappa=-0.500+0.866j: rel.err j=1,2,3 so far 5.5e-09, 2.0e-10, 3.5e-09
+   a=(1, 0) C=(-2, -4) sigma=- kappa=-0.500-0.866j: rel.err j=1,2,3 so far 5.5e-09, 2.0e-10, 3.5e-09
+   a=(1, 0) C=(-2, -4) sigma=- kappa=1.000+0.000j: rel.err j=1,2,3 so far 5.5e-09, 2.0e-10, 3.5e-09
+   a=(7, 0) C=(2, 4) sigma=+ kappa=-0.500-0.866j: rel.err j=1,2,3 so far 5.5e-09, 2.0e-10, 3.5e-09
+   a=(7, 0) C=(2, 4) sigma=+ kappa=1.000+0.000j: rel.err j=1,2,3 so far 5.5e-09, 2.0e-10, 3.5e-09
+   a=(7, 0) C=(2, 4) sigma=+ kappa=-0.500+0.866j: rel.err j=1,2,3 so far 5.5e-09, 2.0e-10, 3.5e-09
+   a=(1, 0) C=(4, -1) sigma=- kappa=-0.500-0.866j: rel.err j=1,2,3 so far 5.5e-09, 2.0e-10, 3.5e-09
+   a=(1, 0) C=(4, -1) sigma=- kappa=-0.500+0.866j: rel.err j=1,2,3 so far 5.5e-09, 2.0e-10, 3.5e-09
+   a=(1, 0) C=(4, -1) sigma=- kappa=1.000+0.000j: rel.err j=1,2,3 so far 5.5e-09, 2.0e-10, 3.5e-09
+   a=(0, 0) C=(1, 0) sigma=0 kappa=1.000+0.000j: rel.err j=1,2,3 so far 5.5e-09, 2.3e-08, 3.5e-09
+   a=(0, 1) C=(1, 0) sigma=- kappa=-0.500-0.866j: rel.err j=1,2,3 so far 5.5e-09, 2.3e-08, 3.5e-09
+   a=(0, 1) C=(1, 0) sigma=- kappa=-0.500+0.866j: rel.err j=1,2,3 so far 5.5e-09, 2.3e-08, 3.5e-09
+   a=(0, 1) C=(1, 0) sigma=- kappa=1.000+0.000j: rel.err j=1,2,3 so far 5.5e-09, 2.3e-08, 3.5e-09
+   a=(0, -1) C=(1, 0) sigma=+ kappa=-0.500+0.866j: rel.err j=1,2,3 so far 5.5e-09, 2.3e-08, 3.5e-09
+   a=(0, -1) C=(1, 0) sigma=+ kappa=-0.500-0.866j: rel.err j=1,2,3 so far 5.5e-09, 2.3e-08, 3.5e-09
+   a=(0, -1) C=(1, 0) sigma=+ kappa=1.000+0.000j: rel.err j=1,2,3 so far 5.5e-09, 2.3e-08, 3.5e-09
+   a=(1, 0) C=(-2, 0) sigma=0 kappa=1.000+0.000j: rel.err j=1,2,3 so far 5.5e-09, 2.3e-08, 3.5e-09
+   a=(0, 1) C=(-2, 0) sigma=- kappa=-0.500+0.866j: rel.err j=1,2,3 so far 5.5e-09, 2.3e-08, 3.5e-09
+   a=(0, 1) C=(-2, 0) sigma=- kappa=-0.500-0.866j: rel.err j=1,2,3 so far 5.5e-09, 2.3e-08, 3.5e-09
+   a=(0, 1) C=(-2, 0) sigma=- kappa=1.000+0.000j: rel.err j=1,2,3 so far 5.5e-09, 2.3e-08, 3.5e-09
+   a=(0, -1) C=(-2, 0) sigma=+ kappa=-0.500+0.866j: rel.err j=1,2,3 so far 5.5e-09, 2.3e-08, 3.5e-09
+   a=(0, -1) C=(-2, 0) sigma=+ kappa=1.000+0.000j: rel.err j=1,2,3 so far 5.5e-09, 2.3e-08, 3.5e-09
+   a=(0, -1) C=(-2, 0) sigma=+ kappa=-0.500-0.866j: rel.err j=1,2,3 so far 5.5e-09, 2.3e-08, 3.5e-09
+   a=(1, 1) C=(-2, -3) sigma=- kappa=1.000+0.000j: rel.err j=1,2,3 so far 5.5e-09, 2.3e-08, 3.5e-09
+   a=(1, 1) C=(-2, -3) sigma=- kappa=-0.500-0.866j: rel.err j=1,2,3 so far 5.5e-09, 2.3e-08, 3.5e-09
+   a=(1, 1) C=(-2, -3) sigma=- kappa=-0.500+0.866j: rel.err j=1,2,3 so far 5.5e-09, 2.3e-08, 3.5e-09
+   a=(2, 0) C=(-2, -3) sigma=0 kappa=-0.500+0.866j: rel.err j=1,2,3 so far 5.5e-09, 2.3e-08, 3.5e-09
+   a=(0, 2) C=(-2, -3) sigma=+ kappa=-0.500-0.866j: rel.err j=1,2,3 so far 5.5e-09, 2.3e-08, 3.5e-09
+   a=(0, 2) C=(-2, -3) sigma=+ kappa=1.000+0.000j: rel.err j=1,2,3 so far 5.5e-09, 2.3e-08, 3.5e-09
+   a=(0, 2) C=(-2, -3) sigma=+ kappa=-0.500+0.866j: rel.err j=1,2,3 so far 5.5e-09, 2.3e-08, 3.5e-09
+[INFO] 41 cusp configurations (sigma types ['+', '-', '0']), degenerate (LHS=0) cases 4, max |RHS| there 1.0e-13, 208s
+[PASS] D08.1 L1585 reflection j=1: single-cusp theta reflection with 1 derivative(s): sign (-1)^j, conj(alpha(C))^(2j), alpha(l)^j, kernel R_1, argument (2pi)^4 N(l)X/N(C)^2 | worst rel err 5.5e-09 over 41 cusps; controls (largest error over cusps; a wrong variant must fail somewhere): R_2 5.31, conj(alpha(C))^4 2.00, sign flipped 2.00
+[PASS] D08.2 L1681 reflection j=2: single-cusp theta reflection with 2 derivative(s): sign (-1)^j, conj(alpha(C))^(2j), alpha(l)^j, kernel R_2, argument (2pi)^4 N(l)X/N(C)^2 [= structure of eq. (reflection)] | worst rel err 2.3e-08 over 41 cusps; controls (largest error over cusps; a wrong variant must fail somewhere): R_3 82.66, conj(alpha(C))^6 2.00, sign flipped 2.00
+[PASS] D08.3 L1585 reflection j=3: single-cusp theta reflection with 3 derivative(s): sign (-1)^j, conj(alpha(C))^(2j), alpha(l)^j, kernel R_3, argument (2pi)^4 N(l)X/N(C)^2 | worst rel err 3.5e-09 over 41 cusps; controls (largest error over cusps; a wrong variant must fail somewhere): R_4 8.59, conj(alpha(C))^8 2.00, sign flipped 2.00

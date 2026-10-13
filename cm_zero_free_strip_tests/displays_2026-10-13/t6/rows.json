@@ -1,0 +1,306 @@
+[
+ {
+  "label": "eq:d121",
+  "number": "B.1",
+  "kind": "D",
+  "what": "$R_1$ is OAI78's kernel $R$ (L1741) verbatim, $R_2$ the quotient of (eq:weight); both as implemented, Stirling and poles checked",
+  "script": "phase2_2026-10-12/s1/t_s1_kernel.py (3),(4b); phase2_2026-10-12/s1/t_s1_endtoend_active.py",
+  "result": "definition (consistent; rerun PASS)"
+ },
+ {
+  "label": "eq:d122",
+  "number": "B.2",
+  "kind": "D",
+  "what": "$\\phi$ from sextic symbols for three $\\Psi_0$: 18-periodic and equal to the closed forms used in the tests; = OAI78 L1683-1694",
+  "script": "displays_2026-10-13/t6/t6_kernel_bookkeeping.py K9",
+  "result": "definition (K9 PASS, 324 cases; period 6 fails)"
+ },
+ {
+  "label": "eq:s1-mellin-tail",
+  "number": "B.3",
+  "kind": "A",
+  "what": "Identity $(-t)^N\\widehat V=$ Mellin of $(x\\partial_x)^NV$ and the bound with constant $2^N$, two tests; = OAI78 eq:pointwise-mellin-tail",
+  "script": "displays_2026-10-13/t6/t6_kernel_bookkeeping.py K1",
+  "result": "size check: ratio $\\le0.37$ (identity err 6e-31)"
+ },
+ {
+  "label": "eq:d123",
+  "number": "B.4",
+  "kind": "D",
+  "what": "= OAI78 L1855 verbatim; closed form $e^{A^2}\\int(1+|u|)^Be^{-u^2}du$ for $V_{\\rm G}$ checked on an $\\eta$-grid",
+  "script": "displays_2026-10-13/t6/t6_kernel_bookkeeping.py K2",
+  "result": "definition (K2 PASS)"
+ },
+ {
+  "label": "eq:d124",
+  "number": "B.5",
+  "kind": "D",
+  "what": "= OAI78 $D,L_0$ (L1707-1716) with $\\bar\\alpha^2,\\bar\\alpha^6$; implemented as two separate Dirichlet series in the test of (B.8)",
+  "script": "displays_2026-10-13/t6/t6_mellin_rep.py",
+  "result": "definition (used in B.8 test, PASS)"
+ },
+ {
+  "label": "eq:d125",
+  "number": "B.6",
+  "kind": "D",
+  "what": "= OAI78 completed sum (L1727-1735) with $\\bar\\alpha(nb^3)^2$; implemented on the whole index $nb^3$ with zeros",
+  "script": "displays_2026-10-13/t6/t6_mellin_rep.py; phase2_2026-10-12/s1/t_s1_endtoend_active.py",
+  "result": "definition"
+ },
+ {
+  "label": "eq:d126",
+  "number": "B.7",
+  "kind": "D",
+  "what": "As implemented (trapezoid on a line); same value on $\\Re t=-1,-\\frac14,0,\\frac12,2$ for two tests; $\\sigma_0=0$ gives (eq:weight)",
+  "script": "phase2_2026-10-12/s1/t_s1_kernel.py (4a)",
+  "result": "definition (line independence 3.5e-8)"
+ },
+ {
+  "label": "eq:d127",
+  "number": "B.8",
+  "kind": "E",
+  "what": "$T_V$ from (B.6) vs line integral of $\\widehat V\\,X^{s-1/2}\\mathcal D_2\\mathcal L_2$, 2 tests, 2 $X$, $j=0..5$, $a=1.5,2$; 3 falsifiers fail",
+  "script": "displays_2026-10-13/t6/t6_mellin_rep.py eq:d127",
+  "result": "PASS (max rel err 6e-13)"
+ },
+ {
+  "label": "eq:s1-reflection",
+  "number": "B.9",
+  "kind": "E",
+  "what": "Definition vs grouped formula, active prime of norm 7 (both), $j=0..5$, log-Gaussian and $e^{-y-1/y}$; 6 falsifiers fail",
+  "script": "phase2_2026-10-12/s1/t_s1_endtoend_active.py (4 runs, rerun)",
+  "result": "PASS (max rel err 1.7e-12 / 5.2e-8)"
+ },
+ {
+  "label": "eq:s1-scalar",
+  "number": "B.10",
+  "kind": "E",
+  "what": "Scalar $C$ inside the grouped end-to-end test; $|C|\\le1/81$ and $C=-i\\bar\\alpha(c)^2\\zeta$ with OAI78's $\\zeta$",
+  "script": "phase2_2026-10-12/s1/t_s1_endtoend_active.py; displays_2026-10-13/t6/t6_kernel_bookkeeping.py K8",
+  "result": "PASS (1.7e-12; K8 3e-19)"
+ },
+ {
+  "label": "eq:d128",
+  "number": "B.11",
+  "kind": "A",
+  "what": "Ratio of $|(x\\partial_x)^jV^\\sharp|$ to the right side on $[10^{-8},10^6]$, $j\\le2$, $A=1,2,3$, two tests; proved in Step 5",
+  "script": "displays_2026-10-13/t6/t6_kernel_bookkeeping.py K3; phase2_2026-10-12/s1/t_s1_kernel.py (4c)",
+  "result": "size check: ratio $\\le3.1\\cdot10^{-3}$"
+ },
+ {
+  "label": "eq:d129",
+  "number": "B.12",
+  "kind": "E",
+  "what": "$\\sum_{\\mathbf h}C(\\mathbf h)\\ce(\\ell z_{\\mathbf h})=\\phi\\chi_p^j$ at all 2268 classes mod $18p$, $j=0..5$, both $p$; constant term 0; 2 falsifiers fail",
+  "script": "displays_2026-10-13/t6/t6_theta_translates.py T1",
+  "result": "PASS (max err 1.3e-13)"
+ },
+ {
+  "label": "eq:s1-automorphy",
+  "number": "B.13",
+  "kind": "E",
+  "what": "$\\bar\\theta(a/c+z,v)$ from the identity expansion vs $\\bar\\kappa(G)\\times$ cusp expansion at $g^{-1}(a/c+z,v)$: 252 translates, 8 cusps $\\lambda\\mid c$",
+  "script": "displays_2026-10-13/t6/t6_theta_translates.py T3",
+  "result": "PASS (max rel err 2.3e-13; $\\kappa$ fails)"
+ },
+ {
+  "label": "eq:d130",
+  "number": "B.14",
+  "kind": "E",
+  "what": "$\\bar\\theta(H(z',v'))$ from the identity expansion vs $C_H+\\sum d_\\sigma(\\ell)v'K_{1/3}\\ce(\\ell z')$, 11 matrices $H$, 33 points",
+  "script": "displays_2026-10-13/t6/t6_theta_translates.py T2; part_D_lines_1510_end/t07_theta_appendix.py D07.2-3",
+  "result": "PASS (max rel err 1.8e-15; $d_+\\leftrightarrow d_-$ fails)"
+ },
+ {
+  "label": "eq:s1-direct",
+  "number": "B.15",
+  "kind": "E",
+  "what": "Mellin integral of $f(v)$ by quadrature vs the right side with $\\mathcal D_2\\mathcal L_2$, $s=4,3.5+2i$, $j=0,1,4$; constant by sympy",
+  "script": "displays_2026-10-13/t6/t6_theta_translates.py T6b; phase2_2026-10-12/s1/t_s1_kernel.py (2)",
+  "result": "PASS (max rel err 2.0e-12; 2 falsifiers fail)"
+ },
+ {
+  "label": "eq:s1-cusp",
+  "number": "B.16",
+  "kind": "E",
+  "what": "$\\partial_{\\bar z}^2$ of the identity expansion at $a/c$ vs $\\bar\\kappa(G)(cv)^{-4}\\mathcal G_{\\mathbf h}(1/(\\N(c)v))$, 260 cusps; $(cv)^{-2}$ fails",
+  "script": "displays_2026-10-13/t6/t6_theta_translates.py T4",
+  "result": "PASS (max rel err 3.6e-13)"
+ },
+ {
+  "label": "eq:d131",
+  "number": "B.17",
+  "kind": "E",
+  "what": "The series $\\mathcal G_{\\mathbf h}$ in the same pointwise test; $\\bar\\alpha(\\ell)^2$ in place of $\\alpha(\\ell)^2$ fails",
+  "script": "displays_2026-10-13/t6/t6_theta_translates.py T4",
+  "result": "PASS (max rel err 3.6e-13)"
+ },
+ {
+  "label": "eq:s1-dual",
+  "number": "B.18",
+  "kind": "E",
+  "what": "Closed form used for the cusp side of (B.20) vs quadrature; termwise mode Mellin with two $z$-derivatives",
+  "script": "displays_2026-10-13/t6/t6_theta_translates.py T6a; phase2_2026-10-12/s1/t_s1_kernel.py (1)",
+  "result": "PASS (1.9e-13; mode 4e-31)"
+ },
+ {
+  "label": "eq:d132",
+  "number": "B.19",
+  "kind": "I",
+  "what": "$|d_\\sigma(\\ell)|\\le27\\cdot3^{k/6}|b|$ for all 60770 table entries, at most 6 units, exponents by sympy, partial sums below the right side",
+  "script": "displays_2026-10-13/t6/t6_theta_translates.py T5; displays_2026-10-13/t6/t6_kernel_bookkeeping.py K6",
+  "result": "PASS (0 violations; max ratio 1)"
+ },
+ {
+  "label": "eq:s1-fe",
+  "number": "B.20",
+  "kind": "E",
+  "what": "$\\mathcal J_2(s)$ by quadrature of $f$ (both expansions) vs the right side, $s=-2,-2.5+1.5i$, $j=0,1,4$; 2 falsifiers fail",
+  "script": "displays_2026-10-13/t6/t6_theta_translates.py T6a",
+  "result": "PASS (max rel err 1.9e-13)"
+ },
+ {
+  "label": "eq:d133",
+  "number": "B.21",
+  "kind": "E",
+  "what": "Equivalent to (B.15) at $s=w+\\frac12$ (tested there); Gamma shifts and growth exponent $2-4\\sigma_2$ by sympy and numerically",
+  "script": "displays_2026-10-13/t6/t6_kernel_bookkeeping.py K6; displays_2026-10-13/t6/t6_theta_translates.py T6b; phase2_2026-10-12/s1/t_s1_kernel.py (5)",
+  "result": "PASS (symbolically; numerically to 2e-12)"
+ },
+ {
+  "label": "eq:d134",
+  "number": "B.22",
+  "kind": "I",
+  "what": "$\\max y|V(y)|$ on a grid of $y$ is finite, and the truncated left side is at most $C_VX\\sum\\N(n)^{-3/2}\\sum\\N(b)^{-4}$, two tests, $X=10,1000$; exponents by sympy",
+  "script": "displays_2026-10-13/t6/t6_kernel_bookkeeping.py K5",
+  "result": "PASS"
+ },
+ {
+  "label": "eq:d135",
+  "number": "B.23",
+  "kind": "E",
+  "what": "Constant identity by sympy (ratio 1) and mpmath at three $t$; the one-derivative constant $-\\frac i{81}$ fails",
+  "script": "proofs_2026-10-12/b3/b3_symbolic_checks.py (3); phase2_2026-10-12/s1/t_s1_kernel.py (2)",
+  "result": "PASS (exact; 4e-31)"
+ },
+ {
+  "label": "eq:d136",
+  "number": "B.24",
+  "kind": "E",
+  "what": "Ungrouped right side over all 252 translates vs definition, both primes, $j=0..5$, two tests",
+  "script": "phase2_2026-10-12/s1/t_s1_endtoend_active.py (ungrouped, rerun)",
+  "result": "PASS (max rel err 1.7e-12 / 5.2e-8)"
+ },
+ {
+  "label": "eq:s1-stirling",
+  "number": "B.25",
+  "kind": "A",
+  "what": "$\\max_{|u|\\le10^4}|R_2(\\eta+iu)|(1+|u|)^{-4\\eta}$ on a grid of $u$ is finite for $\\eta\\in[-1.3,6]$; fitted exponent $4\\eta$; proved by Stirling in Step 5",
+  "script": "displays_2026-10-13/t6/t6_kernel_bookkeeping.py K4; phase2_2026-10-12/s1/t_s1_kernel.py (3)",
+  "result": "size check: largest sampled value 25 at $\\eta=-1.3$, 1 at $\\eta=0$"
+ },
+ {
+  "label": "eq:s1-central",
+  "number": "B.26",
+  "kind": "D",
+  "what": "= OAI78 eq:unmarked-central-completion with $\\bar\\alpha^2$; its Mellin form (R6) with $\\Psi=\\nu\\chi_\\bullet(m)$ tested for 3 rows $m$",
+  "script": "displays_2026-10-13/t6/t6_mellin_rep.py (R6)",
+  "result": "definition (Mellin form PASS, 1.3e-12)"
+ },
+ {
+  "label": "eq:d137",
+  "number": "B.27",
+  "kind": "A",
+  "what": "= OAI78 eq:unmarked-completed-moment verbatim; $O$-dyad sums for $Z=100,300$, all rows $\\N(m)\\le8Z$; proved by Lemma s1-unmarked",
+  "script": "displays_2026-10-13/t6/t6_moment_sanity.py",
+  "result": "size check: ratio $\\le0.02$"
+ },
+ {
+  "label": "eq:s1-cm-completed",
+  "number": "B.28",
+  "kind": "A",
+  "what": "Exponent inequality on a grid ($3O/2$ fails) and $\\sum|\\mathcal C^{(2)}|^2/(Q+Q^2/Z)$ for $Z=100,300$, $Q\\le8Z$",
+  "script": "displays_2026-10-13/t6/t6_kernel_bookkeeping.py K6; displays_2026-10-13/t6/t6_moment_sanity.py",
+  "result": "holds (grid); size check: ratio $\\le0.021$"
+ },
+ {
+  "label": "eq:d138",
+  "number": "B.29",
+  "kind": "E",
+  "what": "Marked sum, $\\mathcal Q=\\{p\\}$, $\\mathcal P_0=\\emptyset$, vs the inactive and active branches, two tests, both $p$; dropping the active branch fails",
+  "script": "phase2_2026-10-12/s1/t_s1_endtoend_active.py (marked, rerun)",
+  "result": "PASS (max rel err 8e-13 / 1.8e-8)"
+ },
+ {
+  "label": "eq:d139",
+  "number": "B.30",
+  "kind": "E",
+  "what": "$C_{\\mathcal Q}$ in the same marked test; $|C_{\\mathcal Q}|\\le1/81$, $C_{\\mathcal Q}=-i\\bar\\alpha(c)^2\\zeta_{\\mathcal Q}$; local $-\\varpi_{q,0}$ checked",
+  "script": "phase2_2026-10-12/s1/t_s1_endtoend_active.py; phase2_2026-10-12/s1/t_s1_local_phases.py (e); displays_2026-10-13/t6/t6_kernel_bookkeeping.py K8",
+  "result": "PASS (8e-13; local 7e-15)"
+ },
+ {
+  "label": "eq:d140",
+  "number": "B.31",
+  "kind": "E",
+  "what": "Exact in $\\mathbb Z[\\omega]$ for 300 random $(c_F,F_{\\rm act},R,P)$; $\\bar\\alpha(c)^2$ on one side fails",
+  "script": "displays_2026-10-13/t6/t6_kernel_bookkeeping.py K7",
+  "result": "PASS (exact)"
+ },
+ {
+  "label": "eq:d141",
+  "number": "B.32",
+  "kind": "E",
+  "what": "Exact in $\\mathbb Z[\\omega]$ for random $\\ell=u\\lambda^{h}N_Fn(B_Fb)^3$, $h\\ge-4$; $\\alpha(b)^2$ in place of $\\alpha(b)^6$ fails",
+  "script": "displays_2026-10-13/t6/t6_kernel_bookkeeping.py K7",
+  "result": "PASS (exact)"
+ },
+ {
+  "label": "eq:s1-marked-completion",
+  "number": "B.33",
+  "kind": "D",
+  "what": "= OAI78 eq:marked-completion with $\\bar\\alpha^2,\\bar\\alpha^6$; implemented (with $\\Psi_0$, two tests) as the direct marked sum of the end-to-end test",
+  "script": "phase2_2026-10-12/s1/t_s1_endtoend_active.py",
+  "result": "definition"
+ },
+ {
+  "label": "eq:d142",
+  "number": "B.34",
+  "kind": "A",
+  "what": "= OAI78 lem:reflected-energy display (L7796) with the same $E_{\\rm ref}$; proved in the proof of Lemma s1-reflected-energy",
+  "script": "-",
+  "result": "not testable by computation"
+ },
+ {
+  "label": "eq:d143",
+  "number": "B.35",
+  "kind": "A",
+  "what": "= OAI78 eq:completed-moment (L8053), $Q,V$ renamed $Q_\\rho,V_f$; proved by Lemma s1-reflected-energy",
+  "script": "-",
+  "result": "not testable by computation"
+ },
+ {
+  "label": "eq:d144",
+  "number": "B.36",
+  "kind": "D",
+  "what": "= OAI78 $B^J$ (L8090-8108) with $a(p)=\\alpha(p)\\bar\\eta(p)$; the inner integral equals the marked sum with $V_{\\rm G}$ ($D=p$)",
+  "script": "displays_2026-10-13/t6/t6_mellin_rep.py eq:d144/eq:d145",
+  "result": "definition (inner integral PASS, 9e-12)"
+ },
+ {
+  "label": "eq:d145",
+  "number": "B.37",
+  "kind": "D",
+  "what": "= OAI78 $T_D$ (L8086) with $\\bar\\alpha(cn^3)^2$; checked in the same Mellin test; $T_D(t)$ for $T_D(t+\\frac12)$ fails",
+  "script": "displays_2026-10-13/t6/t6_mellin_rep.py eq:d144/eq:d145",
+  "result": "definition (PASS, 9e-12)"
+ },
+ {
+  "label": "eq:d146",
+  "number": "B.38",
+  "kind": "A",
+  "what": "= OAI78 old-eq:5.4; $((d_J-\\frac16)/4)_+=0$ for $0\\le d_J\\le\\frac16$ checked; bound proved by Lemma s1-probe-row-norm",
+  "script": "displays_2026-10-13/t6/t6_kernel_bookkeeping.py K6",
+  "result": "holds (exponent); not testable by computation"
+ }
+]

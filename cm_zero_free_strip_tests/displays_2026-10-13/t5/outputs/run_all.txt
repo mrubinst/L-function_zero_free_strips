@@ -1,0 +1,18 @@
+t5a_finite_identities.py: exit 0 (13 s)
+t5b_theta_pointwise.py: exit 0 (41 s)
+t5c_mellin.py: exit 0 (19 s)
+t5d_decay.py: exit 0 (10 s)
+proofs_2026-10-12/b3/b3_symbolic_checks.py exit=0 wall=3s (all started together)
+proofs_2026-10-12/b3/t_b3_prop_endtoend.py exit=0 wall=48s (all started together)
+phase2_2026-10-12/r2/t1_prop_grouped_endtoend.py exit=0 wall=89s (all started together)
+phase2_2026-10-12/r2/t2_grouping_cusp_data.py exit=0 wall=89s (all started together)
+part_B_lines_0550_0997/t4_theta.py exit=0 wall=89s (all started together)
+part_B_lines_0550_0997/t5_reflection_j2.py exit=0 wall=125s (all started together)
+part_D_lines_1510_end/t02_chain_rule.py exit=0 wall=125s (all started together)
+part_D_lines_1510_end/t03_mellin.py exit=0 wall=125s (all started together)
+part_D_lines_1510_end/t04_kernels.py exit=0 wall=125s (all started together)
+part_D_lines_1510_end/t07_theta_appendix.py exit=0 wall=125s (all started together)
+part_D_lines_1510_end/t08_reflection_j.py exit=0 wall=202s (all started together)
+total wall time 285 s
+ALL PASS
+exit=0

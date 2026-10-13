@@ -1,0 +1,330 @@
+[
+ {
+  "label": "eq:inversion",
+  "number": "10.1",
+  "kind": "E",
+  "what": "Cube inversion with $\\mu_K(h)\\overline{\\alpha(h)}^6\\Psi(h)^3/N(h)$ in double precision, $X=2000$ and $4000$, five $(k,f,\\xi)$; zeta factor $\\overline{\\alpha}^3$ fails",
+  "script": "section10_descent/test_sec10_descent.py S10.1; part_B_lines_0550_0997/t7_descent.py B68, B69",
+  "result": "PASS (max err 4e-15)"
+ },
+ {
+  "label": "eq:Hc",
+  "number": "10.2",
+  "kind": "D",
+  "what": "Defines $H_c$, $L_b$; the cube tests use $H_c^3=\\min(X,X^2/\\mathcal H^2)$ and $L_b=X/N(b)^3$ (consistent)",
+  "script": "section10_descent/test_sec10_descent.py S10.2-3, S10.4; proofs_2026-10-12/b4/b4_checks.py C6",
+  "result": "definition"
+ },
+ {
+  "label": "eq:smallcubes",
+  "number": "10.3",
+  "kind": "I",
+  "what": "$\\mathcal H+\\mathcal H^2FN(h)^3/X\\le2\\Sigma$ and $X/N(h)^3\\ge1$ for $N(h)\\le H_c$, $\\mathcal H\\le\\Sigma$: 157 000 exact rational cases; falsifier fails",
+  "script": "section10_descent/test_sec10_descent.py S10.2-3; part_B_lines_0550_0997/t7_descent.py B70",
+  "result": "PASS (exact)"
+ },
+ {
+  "label": "eq:remove",
+  "number": "10.4",
+  "kind": "A",
+  "what": "Proved in Lemma 6 (Section 10.5). Side checks pass: empty supremum if $\\mathcal H^2\\le X$; exact long-cube identity",
+  "script": "section10_descent/test_sec10_descent.py S10.4; part_B_lines_0550_0997/t7_descent.py B72; proofs_2026-10-12/b4/b4_checks.py C6",
+  "result": "not testable by computation"
+ },
+ {
+  "label": "eq:d057",
+  "number": "10.5",
+  "kind": "D",
+  "what": "Smoothed average $\\mathcal A(W)$, restated as (10.29); computed in the end-to-end first Poisson test",
+  "script": "proofs_2026-10-12/b4/b4_checks.py C4",
+  "result": "definition"
+ },
+ {
+  "label": "eq:P",
+  "number": "10.6",
+  "kind": "D",
+  "what": "Column sums $P_{C,e_0,t}$ with $\\mu_K\\overline{\\alpha}\\xi_1$; implemented in C3, C4; OAI1112 (7.1) without $\\overline{\\alpha}$",
+  "script": "proofs_2026-10-12/b4/b4_checks.py C3, C4",
+  "result": "definition"
+ },
+ {
+  "label": "eq:Q",
+  "number": "10.7",
+  "kind": "D",
+  "what": "Nonnegative average $\\mathcal Q$ (restated as (10.31)); weights $w_{C,e_0}$ checked symbolically, inner sum computed in C3",
+  "script": "proofs_2026-10-12/b4/b4_checks.py C3, C10b",
+  "result": "definition"
+ },
+ {
+  "label": "eq:d058",
+  "number": "10.8",
+  "kind": "D",
+  "what": "Defines $Y_{C,e_0}$; with $c_*=\\max(1,4C_\\Phi v^2)$ every $y=hf^2$ has $N(y)\\le Y_{C,e_0}$ (exact, PASS; falsifier fails)",
+  "script": "displays_2026-10-13/t3/t3_sec10_new.py D10.30; part_B_lines_0550_0997/t7_descent.py B74",
+  "result": "definition"
+ },
+ {
+  "label": "eq:enlarge",
+  "number": "10.9",
+  "kind": "E",
+  "what": "$Y_{\\rm enlarged}/Y_{\\rm natural}=\\Sigma/(LF)\\ge1$, both scales from $Y_{C,e_0}$ and $N(h)\\approx L^2/\\mathcal H$ (sympy)",
+  "script": "section10_descent/test_sec10_descent.py S10.5-7; part_B_lines_0550_0997/t7_descent.py B74, B75, B76",
+  "result": "holds (symbolic)"
+ },
+ {
+  "label": "eq:d059",
+  "number": "10.10",
+  "kind": "D",
+  "what": "$r=tg/e$, $f'=Cew$, $k'=e_0eh_2$: $r,f'$ squarefree and coprime on 3000 actual tuples (PASS); as in OAI1112 Lemma 7.3",
+  "script": "displays_2026-10-13/t3/t3_sec10_new.py D10.10; proofs_2026-10-12/b4/b4_checks.py C5",
+  "result": "definition"
+ },
+ {
+  "label": "eq:Hprime",
+  "number": "10.11",
+  "kind": "D",
+  "what": "Defines $\\mathcal H'$; equals $\\mathcal H/(N(b)^3F^2R^2)$, $\\mathcal H/(F^2R^2)$ unenlarged (sympy); kernel support $N(k')\\le\\mathcal H'$ (PASS)",
+  "script": "section10_descent/test_sec10_descent.py S10.8; part_B_lines_0550_0997/t7_descent.py B77; displays_2026-10-13/t3/t3_sec10_new.py D10.11",
+  "result": "definition"
+ },
+ {
+  "label": "eq:localcancel",
+  "number": "10.12",
+  "kind": "E",
+  "what": "Both cases; brute-force regrouping $\\sum\\mu(e)\\mu(w)=\\tau(r)\\mathbf 1_{f'\\mid k'}$ on 400 actual $(r,f',k')$; falsifier fails",
+  "script": "section10_descent/test_sec10_descent.py S10.9; part_B_lines_0550_0997/t7_descent.py B78; proofs_2026-10-12/b4/b4_checks.py C5",
+  "result": "PASS (exact)"
+ },
+ {
+  "label": "eq:retained",
+  "number": "10.13",
+  "kind": "I",
+  "what": "Whole chain on 100 000 retained $(r,f',k')$ with $f'\\mid k'$ in $\\mathbb Z[\\omega]$, plus 100 000 samples; falsifier $N(r)<R$ fails",
+  "script": "section10_descent/test_sec10_descent.py S10.10; part_B_lines_0550_0997/t7_descent.py B79",
+  "result": "PASS (0 violations)"
+ },
+ {
+  "label": "eq:exclusionid",
+  "number": "10.14",
+  "kind": "E",
+  "what": "Double precision, $X'=2000$, two $\\xi$, $r$ with 1--3 primes, 8 cases; twisted multiplicativity of $a_\\xi$; three falsifiers fail",
+  "script": "section10_descent/test_sec10_descent.py S10.11, S10.11a",
+  "result": "PASS (max err 4e-15)"
+ },
+ {
+  "label": "eq:exclusionswap",
+  "number": "10.15",
+  "kind": "E",
+  "what": "Preserves $\\mathcal H'$, $\\Sigma'=L/R$, $\\mathcal H'/\\Sigma'$ (200 000 sets); computed $E_r\\le\\tau(r)\\sum_{j}E$ in 3 cases",
+  "script": "section10_descent/test_sec10_descent.py S10.12-13, S10.11b",
+  "result": "PASS (0 violations)"
+ },
+ {
+  "label": "eq:childcolumn",
+  "number": "10.16",
+  "kind": "I",
+  "what": "All three inequalities, exact rationals, 50 000 retained $(r,f',k')$ and every $j\\mid r$; falsifier ($N(r)$ for $N(r)^2$) fails",
+  "script": "displays_2026-10-13/t3/t3_sec10_new.py D10.16; section10_descent/test_sec10_descent.py S10.12-13",
+  "result": "PASS (exact)"
+ },
+ {
+  "label": "eq:transferprop",
+  "number": "10.17",
+  "kind": "A",
+  "what": "Proved in Section 10.6 (Lemmas 7--9); its two Poisson identities pass; $J_t=4m+12$ and $[u/16,4v]$ match OAI1112 Prop. 5.4",
+  "script": "proofs_2026-10-12/b4/b4_checks.py C3, C4; section10_descent/test_sec10_descent.py S10.cite; displays_2026-10-13/t3/t3_sec10_new.py D10.41",
+  "result": "not testable by computation"
+ },
+ {
+  "label": "eq:transfer",
+  "number": "10.18",
+  "kind": "I",
+  "what": "From $\\mathcal H'=\\mathcal HL/(\\Sigma FR^2)$, $\\Sigma'=L/R$, $R,F\\ge1$: $\\mathcal H'/\\Sigma'=\\mathcal H/(\\Sigma FR)$ (sympy) and 100 000 samples",
+  "script": "section10_descent/test_sec10_descent.py S10.15; part_B_lines_0550_0997/t7_descent.py B80",
+  "result": "PASS (symbolic, 0 violations)"
+ },
+ {
+  "label": "eq:standing",
+  "number": "10.19",
+  "kind": "D",
+  "what": "Standing hypotheses; checked at every node of 100 000 random induction chains (PASS)",
+  "script": "section10_descent/test_sec10_descent.py S10.16-20; part_B_lines_0550_0997/t7_descent.py B83",
+  "result": "definition"
+ },
+ {
+  "label": "eq:inductive",
+  "number": "10.20",
+  "kind": "A",
+  "what": "Proved by the induction of Section 10.4; scale bookkeeping on 100 000 chains passes; computed CM averages bounded",
+  "script": "section10_descent/test_sec10_descent.py S10.16-20, S10.22; part_B_lines_0550_0997/t7_descent.py B85",
+  "result": "size check: $E/(\\Sigma\\|W\\|_\\infty^2)\\le0.17$"
+ },
+ {
+  "label": "eq:basecase",
+  "number": "10.21",
+  "kind": "I",
+  "what": "Six units, $|a_\\xi|\\le1$, counting bound on 4 computed averages; $\\frac{F}{XF}(X\\|W\\|)^2=X\\|W\\|^2\\le\\Sigma\\|W\\|^2$ (sympy)",
+  "script": "section10_descent/test_sec10_descent.py S10.18; part_B_lines_0550_0997/t7_descent.py B84; displays_2026-10-13/t3/t3_sec10_new.py D10.21",
+  "result": "PASS"
+ },
+ {
+  "label": "eq:contract",
+  "number": "10.22",
+  "kind": "I",
+  "what": "Every step of 100 000 random chains and 80 000 admissible sets, first step symbolically; falsifier $D^{-3\\kappa}$ fails",
+  "script": "section10_descent/test_sec10_descent.py S10.16-20; part_B_lines_0550_0997/t7_descent.py B81",
+  "result": "PASS (0 violations)"
+ },
+ {
+  "label": "eq:survive",
+  "number": "10.23",
+  "kind": "I",
+  "what": "All three hypotheses at every step of 100 000 random chains, half of them extremal",
+  "script": "section10_descent/test_sec10_descent.py S10.16-20; part_B_lines_0550_0997/t7_descent.py B82",
+  "result": "PASS (0 violations)"
+ },
+ {
+  "label": "eq:childbound",
+  "number": "10.24",
+  "kind": "A",
+  "what": "The induction hypothesis (10.20) at level $\\nu$ applied to the children; the child scales are checked in (10.23)",
+  "script": "-",
+  "result": "not testable by computation"
+ },
+ {
+  "label": "eq:finalenergy",
+  "number": "10.25",
+  "kind": "A",
+  "what": "Proved by the induction (Section 10.4); sanity: computed CM averages, $X\\le1200$, $\\mathcal H\\le160$, $F\\le7$",
+  "script": "section10_descent/test_sec10_descent.py S10.22; part_B_lines_0550_0997/t7_descent.py B85",
+  "result": "size check: $E/(\\Sigma\\|W\\|_\\infty^2)\\le0.17$"
+ },
+ {
+  "label": "eq:initialratio",
+  "number": "10.26",
+  "kind": "I",
+  "what": "$\\mathcal H/\\Sigma=D^{-\\vartheta}/B$ at $H=D^{1+\\vartheta}$ (sympy); $\\kappa=\\vartheta/2$ once $D\\ge(C/B)^{2/\\vartheta}$ (20 000 samples)",
+  "script": "section10_descent/test_sec10_descent.py S10.23; part_B_lines_0550_0997/t7_descent.py B86, B87",
+  "result": "holds (symbolic)"
+ },
+ {
+  "label": "eq:d060",
+  "number": "10.27",
+  "kind": "E",
+  "what": "CM rows tested end to end, zeta forms fail (B17, B27, B46, B50, B53, B55, B68); zeta column checked in sources",
+  "script": "part_B_lines_0550_0997/t2,t3,t4,t5,t7 (B88 constituents); displays_2026-10-13/t3/t3_sec10_new.py D10.27",
+  "result": "PASS (max rel. err 2e-8)"
+ },
+ {
+  "label": "eq:d061",
+  "number": "10.28",
+  "kind": "R",
+  "what": "Precise statement of the cube-removal bound (10.4)",
+  "script": "-",
+  "result": "see eq:remove"
+ },
+ {
+  "label": "eq:b4-A",
+  "number": "10.29",
+  "kind": "R",
+  "what": "Restates the smoothed average (10.5); computed in the end-to-end test C4",
+  "script": "proofs_2026-10-12/b4/b4_checks.py C4",
+  "result": "see eq:d057"
+ },
+ {
+  "label": "eq:d062",
+  "number": "10.30",
+  "kind": "D",
+  "what": "Defines $w_{C,e_0}$, $Y_{C,e_0}$, $c_*$; normalization of $w$ (sympy) and containment $N(hf^2)\\le Y_{C,e_0}$ (exact) PASS",
+  "script": "proofs_2026-10-12/b4/b4_checks.py C10b; displays_2026-10-13/t3/t3_sec10_new.py D10.30",
+  "result": "definition"
+ },
+ {
+  "label": "eq:b4-Q",
+  "number": "10.31",
+  "kind": "R",
+  "what": "Restates (10.7) with the range $N(C)N(t)\\le2vL$, as in OAI1112",
+  "script": "-",
+  "result": "see eq:Q"
+ },
+ {
+  "label": "eq:d063",
+  "number": "10.32",
+  "kind": "E",
+  "what": "$Z$ is the zero-frequency term of the end-to-end identity C4, which holds to rel err 1e-15; size check $Z/(\\mathcal H\\widehat\\Phi(0)\\|W\\|_\\infty^2)\\le0.09$, $L\\le3000$, $F\\le100$",
+  "script": "proofs_2026-10-12/b4/b4_checks.py C4; displays_2026-10-13/t3/t3_sec10_new.py S10.32",
+  "result": "PASS (rel. err 1e-15)"
+ },
+ {
+  "label": "eq:b4-first-id",
+  "number": "10.33",
+  "kind": "E",
+  "what": "End to end with a self-dual Gaussian $\\Phi$, two $(L,F,\\mathcal H)$, $\\xi\\ne1$; $p_y$ without $\\overline{\\alpha}$ fails",
+  "script": "proofs_2026-10-12/b4/b4_checks.py C4",
+  "result": "PASS (rel. err 1e-15)"
+ },
+ {
+  "label": "eq:d064",
+  "number": "10.34",
+  "kind": "A",
+  "what": "Kernel as in C4; $\\sup_c\\|\\mathcal K\\|_{C^q(I^2)}/\\|W\\|_{C^q(I)}^2$ for $q\\le2$ over all frequencies: at most 0.25",
+  "script": "displays_2026-10-13/t3/t3_sec10_new.py S10.34",
+  "result": "size check: ratio $\\le0.25$"
+ },
+ {
+  "label": "eq:d065",
+  "number": "10.35",
+  "kind": "I",
+  "what": "Blockwise on 34 blocks $(C,t,e_0)$ with CM coefficients: containment, multiplicity $\\le2$, inequality; falsifier fails",
+  "script": "displays_2026-10-13/t3/t3_sec10_new.py D10.35; proofs_2026-10-12/b4/b4_checks.py C11",
+  "result": "PASS (0 violations)"
+ },
+ {
+  "label": "eq:d066",
+  "number": "10.36",
+  "kind": "E",
+  "what": "End to end, three $(C,t,e_0)$, $\\ell\\le40$, $Y\\le500$; zeta coefficients on either side fail",
+  "script": "proofs_2026-10-12/b4/b4_checks.py C3",
+  "result": "PASS (rel. err 2e-16)"
+ },
+ {
+  "label": "eq:d201",
+  "number": "10.37",
+  "kind": "D",
+  "what": "Defines $X_0'$, $a^\\sharp$, $\\mathcal K$ (implemented in C3); $X_0'=L/(N(r)N(f'))$ (sympy); support $N(k')\\le\\mathcal HL/(\\Sigma FN(r)^2)$ PASS",
+  "script": "proofs_2026-10-12/b4/b4_checks.py C3, C10; displays_2026-10-13/t3/t3_sec10_new.py D10.11",
+  "result": "definition"
+ },
+ {
+  "label": "eq:d067",
+  "number": "10.38",
+  "kind": "E",
+  "what": "Double precision on 3000 random tuples, shared primes allowed; falsifiers ($\\psi(e)$ unconjugated, $\\chi_z(Ce)^2$) fail",
+  "script": "displays_2026-10-13/t3/t3_sec10_new.py D10.38",
+  "result": "PASS (max err 6e-15)"
+ },
+ {
+  "label": "eq:d068",
+  "number": "10.39",
+  "kind": "E",
+  "what": "Exact on 4000 random tuples (2486 with nonzero left side); falsifier $\\mathbf 1_{(n,t)=1}$ fails",
+  "script": "displays_2026-10-13/t3/t3_sec10_new.py D10.39",
+  "result": "PASS (exact)"
+ },
+ {
+  "label": "eq:d069",
+  "number": "10.40",
+  "kind": "A",
+  "what": "Proved via OAI1112 Lemma 7.3 (order $C^{2m+4}$ matches the source); its inputs (10.12)--(10.16), (10.36) pass",
+  "script": "displays_2026-10-13/t3/t3_sec10_new.py D10.41; proofs_2026-10-12/b4/b4_checks.py C3, C5",
+  "result": "not testable by computation"
+ },
+ {
+  "label": "eq:d070",
+  "number": "10.41",
+  "kind": "A",
+  "what": "Follows from Lemmas 7, 9; $2(2m+4)+4=4m+12$ (sympy) and $E\\le\\mathcal A(W)$ on 3 computed averages pass",
+  "script": "displays_2026-10-13/t3/t3_sec10_new.py D10.41",
+  "result": "not testable by computation"
+ }
+]

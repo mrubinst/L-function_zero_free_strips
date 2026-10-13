@@ -1,0 +1,452 @@
+[
+ {
+  "labels": [
+   "eq:s2-pres"
+  ],
+  "numbers": [
+   "C.1"
+  ],
+  "page": "71",
+  "line": 4417,
+  "section": "\\section{Hecke \\texorpdfstring{$L$}{L}-functions of infinity type \\texorpdfstring{$\\bar z/|z|$}{zbar/|z|}}\\label{app:s2-hecke}",
+  "subsection": "\\subsection{The characters}\\label{sec:s2-chars}",
+  "source": "\\begin{equation}\\label{eq:s2-pres}\n  \\psi((a))=\\phi(a)\\,\\overline{\\alpha(a)}\\qquad(a\\in\\OO\\text{ prime to }\\mathfrak m).\n \\end{equation}",
+  "before": "\\item[(i)] Let $\\psi$ have modulus $\\mathfrak m$ and infinity type $\\bar z/|z|$. For $a\\in\\OO$ prime to\n $\\mathfrak m$ put $\\phi(a)=\\psi((a))\\alpha(a)$, and put $\\phi(a)=0$ for the other $a\\in\\OO$. Then $\\phi$ is a\n character of $(\\OO/\\mathfrak m)^\\times$, extended by zero, with $\\phi(\\zeta)=\\zeta$ for the six units $\\zeta$,\n and",
+  "after": " Conversely, every character $\\phi$ of $(\\OO/\\mathfrak m)^\\times$ with $\\phi(\\zeta)=\\zeta$ for all units\n defines by~\\eqref{eq:s2-pres} a character of modulus $\\mathfrak m$ and infinity type $\\bar z/|z|$.\n\\item[(ii)] $\\psi$ is primitive modulo $\\mathfrak m$ if and only if $\\phi$ is primitive modulo $\\mathfrak m$ in"
+ },
+ {
+  "labels": [
+   "eq:d147"
+  ],
+  "numbers": [
+   "C.2"
+  ],
+  "page": "72",
+  "line": 4472,
+  "section": "\\section{Hecke \\texorpdfstring{$L$}{L}-functions of infinity type \\texorpdfstring{$\\bar z/|z|$}{zbar/|z|}}\\label{app:s2-hecke}",
+  "subsection": "\\subsection{Theta series and the functional equation}\\label{sec:s2-fe}",
+  "source": "\\begin{equation}\\label{eq:d147}\n \\Theta_\\phi(v)=\\sum_{a\\in\\OO}\\phi(a)\\,\\bar a\\,e^{-2\\pi v\\N(a)/\\sqrt3}\\quad(v>0),\\qquad\n \\gamma(\\phi)=\\frac1{\\sqrt Q}\\sum_{x\\bmod f}\\phi(x)\\,e\\Bigl(\\frac xf\\Bigr).\n\\end{equation}",
+  "before": "\n\\subsection{Theta series and the functional equation}\\label{sec:s2-fe}\nWe follow Hecke's method~\\cite{Hec20} (see~\\cite[Ch.~VII, \\S\\S7--8]{Neukirch}). For $\\psi\\in\\mathcal F_{\\rm CM}$ with conductor $\\mathfrak f=(f)$, $Q=\\N\\mathfrak f=|f|^2$, and $\\phi$ as in\nLemma~\\ref{lem:s2-pres}, put",
+  "after": "The term $a=0$ vanishes. Since $\\phi$ is primitive modulo $f$ (Lemma~\\ref{lem:s2-pres}(ii)),\n\\cite[Lemma~17]{QF} gives $|\\gamma(\\phi)|=1$ and, for every $h\\in\\OO$,\n\\begin{equation}\\label{eq:s2-gauss}"
+ },
+ {
+  "labels": [
+   "eq:s2-gauss"
+  ],
+  "numbers": [
+   "C.3"
+  ],
+  "page": "72",
+  "line": 4478,
+  "section": "\\section{Hecke \\texorpdfstring{$L$}{L}-functions of infinity type \\texorpdfstring{$\\bar z/|z|$}{zbar/|z|}}\\label{app:s2-hecke}",
+  "subsection": "\\subsection{Theta series and the functional equation}\\label{sec:s2-fe}",
+  "source": "\\begin{equation}\\label{eq:s2-gauss}\n \\sum_{x\\bmod f}\\phi(x)\\,e\\Bigl(\\frac{hx}f\\Bigr)=\\overline{\\phi(h)}\\,\\sqrt Q\\,\\gamma(\\phi).\n\\end{equation}",
+  "before": " \\gamma(\\phi)=\\frac1{\\sqrt Q}\\sum_{x\\bmod f}\\phi(x)\\,e\\Bigl(\\frac xf\\Bigr).\n\\end{equation}\nThe term $a=0$ vanishes. Since $\\phi$ is primitive modulo $f$ (Lemma~\\ref{lem:s2-pres}(ii)),\n\\cite[Lemma~17]{QF} gives $|\\gamma(\\phi)|=1$ and, for every $h\\in\\OO$,",
+  "after": "\n\\begin{lemma}\\label{lem:s2-fe}\nLet $\\psi\\in\\mathcal F_{\\rm CM}$, with $f$, $Q$ and $\\phi$ as above."
+ },
+ {
+  "labels": [
+   "eq:d148"
+  ],
+  "numbers": [
+   "C.4"
+  ],
+  "page": "72",
+  "line": 4486,
+  "section": "\\section{Hecke \\texorpdfstring{$L$}{L}-functions of infinity type \\texorpdfstring{$\\bar z/|z|$}{zbar/|z|}}\\label{app:s2-hecke}",
+  "subsection": "\\subsection{Theta series and the functional equation}\\label{sec:s2-fe}",
+  "source": "\\begin{equation}\\label{eq:d148}\n  \\Theta_\\phi(v)=-\\frac{\\gamma(\\phi)}{f\\sqrt Q}\\,v^{-2}\\,\\overline{\\Theta_\\phi\\bigl(1/(Qv)\\bigr)} .\n \\end{equation}",
+  "before": "\\begin{lemma}\\label{lem:s2-fe}\nLet $\\psi\\in\\mathcal F_{\\rm CM}$, with $f$, $Q$ and $\\phi$ as above.\n\\begin{enumerate}\n\\item[(i)] For $v>0$,",
+  "after": "\\item[(ii)] For $\\Re s>1$,\n \\begin{equation}\\label{eq:d149}\n  \\int_0^\\infty\\Theta_\\phi(v)\\,v^{s+1/2}\\,\\frac{dv}v"
+ },
+ {
+  "labels": [
+   "eq:d149"
+  ],
+  "numbers": [
+   "C.5"
+  ],
+  "page": "72",
+  "line": 4490,
+  "section": "\\section{Hecke \\texorpdfstring{$L$}{L}-functions of infinity type \\texorpdfstring{$\\bar z/|z|$}{zbar/|z|}}\\label{app:s2-hecke}",
+  "subsection": "\\subsection{Theta series and the functional equation}\\label{sec:s2-fe}",
+  "source": "\\begin{equation}\\label{eq:d149}\n  \\int_0^\\infty\\Theta_\\phi(v)\\,v^{s+1/2}\\,\\frac{dv}v\n  =6\\Bigl(\\frac{2\\pi}{\\sqrt3}\\Bigr)^{-s-1/2}\\Gamma(s+\\tfrac12)\\,L(s,\\psi),\n \\end{equation}",
+  "before": " \\begin{equation}\\label{eq:d148}\n  \\Theta_\\phi(v)=-\\frac{\\gamma(\\phi)}{f\\sqrt Q}\\,v^{-2}\\,\\overline{\\Theta_\\phi\\bigl(1/(Qv)\\bigr)} .\n \\end{equation}\n\\item[(ii)] For $\\Re s>1$,",
+  "after": " and the same holds with $\\overline{\\Theta_\\phi}$ and $\\overline\\psi$ in place of $\\Theta_\\phi$ and $\\psi$.\n\\item[(iii)] The function $\\Lambda(s,\\psi)=(3Q)^{s/2}(2\\pi)^{-s}\\Gamma(s+\\frac12)L(s,\\psi)$ extends to an entire\n function that is bounded on every vertical strip of finite width, and"
+ },
+ {
+  "labels": [
+   "eq:d150"
+  ],
+  "numbers": [
+   "C.6"
+  ],
+  "page": "72",
+  "line": 4497,
+  "section": "\\section{Hecke \\texorpdfstring{$L$}{L}-functions of infinity type \\texorpdfstring{$\\bar z/|z|$}{zbar/|z|}}\\label{app:s2-hecke}",
+  "subsection": "\\subsection{Theta series and the functional equation}\\label{sec:s2-fe}",
+  "source": "\\begin{equation}\\label{eq:d150}\n  \\Lambda(s,\\psi)=W(\\psi)\\,\\Lambda(1-s,\\overline\\psi),\\qquad\n  W(\\psi)=-\\frac{\\gamma(\\phi)\\sqrt Q}{f},\\qquad |W(\\psi)|=1 .\n \\end{equation}",
+  "before": " \\end{equation}\n and the same holds with $\\overline{\\Theta_\\phi}$ and $\\overline\\psi$ in place of $\\Theta_\\phi$ and $\\psi$.\n\\item[(iii)] The function $\\Lambda(s,\\psi)=(3Q)^{s/2}(2\\pi)^{-s}\\Gamma(s+\\frac12)L(s,\\psi)$ extends to an entire\n function that is bounded on every vertical strip of finite width, and",
+  "after": " The same holds for $\\overline\\psi$, with $W(\\overline\\psi)=\\overline{W(\\psi)}$.\n\\item[(iv)] $L(s,\\psi)$ and $L(s,\\overline\\psi)$ are entire and have no zeros in $\\Re s>1$. For each fixed $\\psi$\n and each bounded interval $J$, $|L(\\sigma+it,\\psi)|\\ll_{\\psi,J}e^{2|t|}$ for $\\sigma\\in J$, and likewise for"
+ },
+ {
+  "labels": [
+   "eq:d151"
+  ],
+  "numbers": [
+   "C.7"
+  ],
+  "page": "72",
+  "line": 4511,
+  "section": "\\section{Hecke \\texorpdfstring{$L$}{L}-functions of infinity type \\texorpdfstring{$\\bar z/|z|$}{zbar/|z|}}\\label{app:s2-hecke}",
+  "subsection": "\\subsection{Theta series and the functional equation}\\label{sec:s2-fe}",
+  "source": "\\begin{equation}\\label{eq:d151}\n \\int_{\\mathbb C}e^{-2\\pi v|w|^2/\\sqrt3}\\,e(-w\\eta)\\,dx\\,dy=\\frac{\\sqrt3}{2v}\\,e^{-2\\pi|\\eta|^2/(\\sqrt3v)} .\n\\end{equation}",
+  "before": "\n\\begin{proof}\n(i) Fix $v>0$ and put $G(w)=\\bar w\\,e^{-2\\pi v|w|^2/\\sqrt3}$ and\n$\\widehat G(\\eta)=\\int_{\\mathbb C}G(w)e(-w\\eta)\\,dx\\,dy$. We first compute $\\widehat G$. By~\\cite[Example~20]{QF},",
+  "after": "Since $\\operatorname{Im}z=(z-\\bar z)/(2i)$, we have $e(-w\\eta)=\\exp\\bigl(-\\frac{2\\pi}{\\sqrt3}(w\\eta-\\bar w\\bar\\eta)\\bigr)$, so\n$\\partial_{\\bar\\eta}e(-w\\eta)=\\frac{2\\pi}{\\sqrt3}\\,\\bar w\\,e(-w\\eta)$, where $\\partial_{\\bar\\eta}$ is the Wirtinger\nderivative. Differentiating under the integral sign, which the Gaussian decay permits,"
+ },
+ {
+  "labels": [
+   "eq:d152"
+  ],
+  "numbers": [
+   "C.8"
+  ],
+  "page": "72",
+  "line": 4517,
+  "section": "\\section{Hecke \\texorpdfstring{$L$}{L}-functions of infinity type \\texorpdfstring{$\\bar z/|z|$}{zbar/|z|}}\\label{app:s2-hecke}",
+  "subsection": "\\subsection{Theta series and the functional equation}\\label{sec:s2-fe}",
+  "source": "\\begin{equation}\\label{eq:d152}\n \\widehat G(\\eta)=\\frac{\\sqrt3}{2\\pi}\\,\\partial_{\\bar\\eta}\\Bigl(\\frac{\\sqrt3}{2v}e^{-2\\pi\\eta\\bar\\eta/(\\sqrt3v)}\\Bigr)\n =-\\frac{\\sqrt3}{2v^2}\\,\\eta\\,e^{-2\\pi|\\eta|^2/(\\sqrt3v)} .\n\\end{equation}",
+  "before": "\\end{equation}\nSince $\\operatorname{Im}z=(z-\\bar z)/(2i)$, we have $e(-w\\eta)=\\exp\\bigl(-\\frac{2\\pi}{\\sqrt3}(w\\eta-\\bar w\\bar\\eta)\\bigr)$, so\n$\\partial_{\\bar\\eta}e(-w\\eta)=\\frac{2\\pi}{\\sqrt3}\\,\\bar w\\,e(-w\\eta)$, where $\\partial_{\\bar\\eta}$ is the Wirtinger\nderivative. Differentiating under the integral sign, which the Gaussian decay permits,",
+  "after": "Now split $a=t+fz$, with $t$ running over a set of representatives modulo $f$ and $z\\in\\OO$, so that\n$\\Theta_\\phi(v)=\\sum_t\\phi(t)\\sum_{z\\in\\OO}G(t+fz)$. Poisson summation over $\\OO$~\\cite[Theorem~19]{QF} gives\n$\\sum_zG(t+fz)=\\frac2{\\sqrt3}\\sum_{y\\in\\OO}\\widehat F_t(y)$ with $F_t(z)=G(t+fz)$. The substitution $w=t+fz$ has"
+ },
+ {
+  "labels": [
+   "eq:d153"
+  ],
+  "numbers": [
+   "C.9"
+  ],
+  "page": "73",
+  "line": 4526,
+  "section": "\\section{Hecke \\texorpdfstring{$L$}{L}-functions of infinity type \\texorpdfstring{$\\bar z/|z|$}{zbar/|z|}}\\label{app:s2-hecke}",
+  "subsection": "\\subsection{Theta series and the functional equation}\\label{sec:s2-fe}",
+  "source": "\\begin{equation}\\label{eq:d153}\n\\begin{split}\n \\Theta_\\phi(v)&=\\frac2{\\sqrt3\\,Q}\\sum_{y\\in\\OO}\\overline{\\phi(y)}\\sqrt Q\\,\\gamma(\\phi)\n \\Bigl(-\\frac{\\sqrt3}{2v^2}\\Bigr)\\frac yf\\,e^{-2\\pi\\N(y)/(\\sqrt3Qv)}\\\\\n &=-\\frac{\\gamma(\\phi)}{f\\sqrt Q}\\,v^{-2}\\sum_{y\\in\\OO}\\overline{\\phi(y)}\\,y\\,e^{-2\\pi\\N(y)/(\\sqrt3Qv)} .\n\\end{split}\n\\end{equation}",
+  "before": "$\\Theta_\\phi(v)=\\sum_t\\phi(t)\\sum_{z\\in\\OO}G(t+fz)$. Poisson summation over $\\OO$~\\cite[Theorem~19]{QF} gives\n$\\sum_zG(t+fz)=\\frac2{\\sqrt3}\\sum_{y\\in\\OO}\\widehat F_t(y)$ with $F_t(z)=G(t+fz)$. The substitution $w=t+fz$ has\nJacobian $|f|^2=Q$, and $e(-zy)=e(ty/f)\\,e(-wy/f)$, so\n$\\widehat F_t(y)=Q^{-1}e(ty/f)\\,\\widehat G(y/f)$. Summing over $t$ and using~\\eqref{eq:s2-gauss} with $h=y$,",
+  "after": "The last sum is $\\overline{\\Theta_\\phi(1/(Qv))}$.\n\n(ii) For $\\sigma>1$,"
+ },
+ {
+  "labels": [
+   "eq:d154"
+  ],
+  "numbers": [
+   "C.10"
+  ],
+  "page": "73",
+  "line": 4539,
+  "section": "\\section{Hecke \\texorpdfstring{$L$}{L}-functions of infinity type \\texorpdfstring{$\\bar z/|z|$}{zbar/|z|}}\\label{app:s2-hecke}",
+  "subsection": "\\subsection{Theta series and the functional equation}\\label{sec:s2-fe}",
+  "source": "\\begin{equation}\\label{eq:d154}\n \\int_0^\\infty\\Theta_\\phi(v)v^{s+1/2}\\frac{dv}v\n =\\Bigl(\\frac{2\\pi}{\\sqrt3}\\Bigr)^{-s-1/2}\\Gamma(s+\\tfrac12)\\sum_{a\\ne0}\\phi(a)\\,\\bar a\\,\\N(a)^{-s-1/2}.\n\\end{equation}",
+  "before": "(ii) For $\\sigma>1$,\n$\\sum_{a\\ne0}|a|\\int_0^\\infty e^{-2\\pi v\\N(a)/\\sqrt3}v^{\\sigma+1/2}\\,dv/v\n=6\\,(2\\pi/\\sqrt3)^{-\\sigma-1/2}\\Gamma(\\sigma+\\frac12)\\zeta_K(\\sigma)<\\infty$, because every nonzero ideal has six\ngenerators. So we may integrate termwise:",
+  "after": "Since $\\bar a\\,\\N(a)^{-1/2}=\\overline{\\alpha(a)}$, the summand is $\\psi((a))\\N(a)^{-s}$ by~\\eqref{eq:s2-pres}, and\nit vanishes unless $a$ is prime to $\\mathfrak f$. Each ideal prime to $\\mathfrak f$ has six generators, so the sum\nis $6L(s,\\psi)$. For $\\overline\\psi$ use $\\overline{\\Theta_\\phi(v)}=\\sum_a\\overline{\\phi(a)}\\,a\\,e^{-2\\pi v\\N(a)/\\sqrt3}$"
+ },
+ {
+  "labels": [
+   "eq:d155"
+  ],
+  "numbers": [
+   "C.11"
+  ],
+  "page": "73",
+  "line": 4550,
+  "section": "\\section{Hecke \\texorpdfstring{$L$}{L}-functions of infinity type \\texorpdfstring{$\\bar z/|z|$}{zbar/|z|}}\\label{app:s2-hecke}",
+  "subsection": "\\subsection{Theta series and the functional equation}\\label{sec:s2-fe}",
+  "source": "\\begin{equation}\\label{eq:d155}\n B(w)=\\int_{v_0}^\\infty\\Theta_\\phi(v)v^{w+1/2}\\frac{dv}v,\\qquad\n B^-(w)=\\int_{v_0}^\\infty\\overline{\\Theta_\\phi(v)}\\,v^{w+1/2}\\frac{dv}v .\n\\end{equation}",
+  "before": "and $\\overline\\psi((a))=\\overline{\\phi(a)}\\alpha(a)$.\n\n(iii) Let $I_\\psi(s)$ denote the left side of~(ii), and $I_{\\overline\\psi}(s)$ the same integral with\n$\\overline{\\Theta_\\phi}$. Put $v_0=Q^{-1/2}$ and",
+  "after": "Since $\\N(a)\\ge1$ for $a\\ne0$, for $v\\ge v_0$ we have\n$|\\Theta_\\phi(v)|\\le e^{-\\pi v/\\sqrt3}\\sum_{a\\ne0}|a|e^{-\\pi v_0\\N(a)/\\sqrt3}$. So $B$ and $B^-$ are entire and\nbounded on every vertical strip of finite width. For $\\Re s>1$ split $I_\\psi(s)$ at $v_0$, substitute"
+ },
+ {
+  "labels": [
+   "eq:d156"
+  ],
+  "numbers": [
+   "C.12"
+  ],
+  "page": "73",
+  "line": 4558,
+  "section": "\\section{Hecke \\texorpdfstring{$L$}{L}-functions of infinity type \\texorpdfstring{$\\bar z/|z|$}{zbar/|z|}}\\label{app:s2-hecke}",
+  "subsection": "\\subsection{Theta series and the functional equation}\\label{sec:s2-fe}",
+  "source": "\\begin{equation}\\label{eq:d156}\n \\int_0^{v_0}\\Theta_\\phi(v)v^{s+1/2}\\frac{dv}v\n =-\\frac{\\gamma(\\phi)}{f\\sqrt Q}\\int_0^{v_0}\\overline{\\Theta_\\phi\\bigl(1/(Qv)\\bigr)}\\,v^{s-3/2}\\frac{dv}v\n =-\\frac{\\gamma(\\phi)}{f\\sqrt Q}\\,Q^{3/2-s}B^-(1-s).\n\\end{equation}",
+  "before": "Since $\\N(a)\\ge1$ for $a\\ne0$, for $v\\ge v_0$ we have\n$|\\Theta_\\phi(v)|\\le e^{-\\pi v/\\sqrt3}\\sum_{a\\ne0}|a|e^{-\\pi v_0\\N(a)/\\sqrt3}$. So $B$ and $B^-$ are entire and\nbounded on every vertical strip of finite width. For $\\Re s>1$ split $I_\\psi(s)$ at $v_0$, substitute\n$v=1/(Qu)$ in the integral over $(0,v_0)$, and use~(i):",
+  "after": "With $W=-\\gamma(\\phi)\\sqrt Q/f$ this gives\n\\begin{equation}\\label{eq:s2-split}\n Q^{s/2}I_\\psi(s)=Q^{s/2}B(s)+W\\,Q^{(1-s)/2}B^-(1-s)."
+ },
+ {
+  "labels": [
+   "eq:s2-split"
+  ],
+  "numbers": [
+   "C.13"
+  ],
+  "page": "73",
+  "line": 4564,
+  "section": "\\section{Hecke \\texorpdfstring{$L$}{L}-functions of infinity type \\texorpdfstring{$\\bar z/|z|$}{zbar/|z|}}\\label{app:s2-hecke}",
+  "subsection": "\\subsection{Theta series and the functional equation}\\label{sec:s2-fe}",
+  "source": "\\begin{equation}\\label{eq:s2-split}\n Q^{s/2}I_\\psi(s)=Q^{s/2}B(s)+W\\,Q^{(1-s)/2}B^-(1-s).\n\\end{equation}",
+  "before": " =-\\frac{\\gamma(\\phi)}{f\\sqrt Q}\\int_0^{v_0}\\overline{\\Theta_\\phi\\bigl(1/(Qv)\\bigr)}\\,v^{s-3/2}\\frac{dv}v\n =-\\frac{\\gamma(\\phi)}{f\\sqrt Q}\\,Q^{3/2-s}B^-(1-s).\n\\end{equation}\nWith $W=-\\gamma(\\phi)\\sqrt Q/f$ this gives",
+  "after": "Conjugating~(i) gives $\\overline{\\Theta_\\phi(v)}=-\\frac{\\overline{\\gamma(\\phi)}}{\\bar f\\sqrt Q}\\,v^{-2}\\Theta_\\phi(1/(Qv))$,\nand the same computation gives\n$Q^{s/2}I_{\\overline\\psi}(s)=Q^{s/2}B^-(s)+\\overline W\\,Q^{(1-s)/2}B(1-s)$. Here $|W|=|\\gamma(\\phi)|=1$. By~(ii),"
+ },
+ {
+  "labels": [
+   "eq:s2-fe-unc"
+  ],
+  "numbers": [
+   "C.14"
+  ],
+  "page": "74",
+  "line": 4594,
+  "section": "\\section{Hecke \\texorpdfstring{$L$}{L}-functions of infinity type \\texorpdfstring{$\\bar z/|z|$}{zbar/|z|}}\\label{app:s2-hecke}",
+  "subsection": "\\subsection{The gamma quotient and the strip bound}\\label{sec:s2-strip}",
+  "source": "\\begin{equation}\\label{eq:s2-fe-unc}\n L(s,\\psi)=W(\\psi)\\Bigl(\\frac{3Q}{(2\\pi)^2}\\Bigr)^{1/2-s}\\frac{\\Gamma(\\frac32-s)}{\\Gamma(\\frac12+s)}\\,L(1-s,\\overline\\psi).\n\\end{equation}",
+  "before": "\\subsection{The gamma quotient and the strip bound}\\label{sec:s2-strip}\nPut $G(\\sigma,t)=|\\Gamma(\\frac32-\\sigma-it)/\\Gamma(\\frac12+\\sigma+it)|$. This is the gamma quotient in the\nfunctional equation: by Lemma~\\ref{lem:s2-fe}(iii), for $\\psi\\in\\mathcal F_{\\rm CM}\\cup\\overline{\\mathcal F}_{\\rm CM}$\nwith conductor norm $Q$,",
+  "after": "\n\\begin{lemma}\\label{lem:s2-gamma}\n\\begin{enumerate}"
+ },
+ {
+  "labels": [
+   "eq:d157"
+  ],
+  "numbers": [
+   "C.15"
+  ],
+  "page": "74",
+  "line": 4625,
+  "section": "\\section{Hecke \\texorpdfstring{$L$}{L}-functions of infinity type \\texorpdfstring{$\\bar z/|z|$}{zbar/|z|}}\\label{app:s2-hecke}",
+  "subsection": "\\subsection{The gamma quotient and the strip bound}\\label{sec:s2-strip}",
+  "source": "\\begin{equation}\\label{eq:d157}\n |L(-\\tfrac1{10}+it,\\psi)|=(3Q)^{3/5}(2\\pi)^{-6/5}\\,G(-\\tfrac1{10},t)\\,|L(\\tfrac{11}{10}-it,\\overline\\psi)|\n \\ll Q^{3/5}(3+|t|)^{6/5}.\n\\end{equation}",
+  "before": "$\\epsilon(\\psi)=W(\\psi)$. The last assertion follows from~\\eqref{eq:s2-fe-unc} and Lemma~\\ref{lem:s2-gamma}(a). For\nthe strip bound, let $\\psi\\in\\mathcal F_{\\rm CM}\\cup\\overline{\\mathcal F}_{\\rm CM}$. On $\\sigma=\\frac{11}{10}$,\n$|L(s,\\psi)|\\le\\zeta_K(\\frac{11}{10})$. On $\\sigma=-\\frac1{10}$,~\\eqref{eq:s2-fe-unc} and\nLemma~\\ref{lem:s2-gamma}(a) give",
+  "after": "This is the left-line bound of~\\cite[L1446--1453]{OAI78}, with the same exponents. The rest is the damped\nmaximum principle of~\\cite[L1503--1519]{OAI78}, which applies verbatim. Namely,\n$H(s)=Q^{-3/5}L(s,\\psi)(s+2)^{-2}$ is holomorphic on the closed strip $-\\frac1{10}\\le\\sigma\\le\\frac{11}{10}$"
+ },
+ {
+  "labels": [
+   "eq:d158"
+  ],
+  "numbers": [
+   "C.16"
+  ],
+  "page": "75",
+  "line": 4658,
+  "section": "\\section{Hecke \\texorpdfstring{$L$}{L}-functions of infinity type \\texorpdfstring{$\\bar z/|z|$}{zbar/|z|}}\\label{app:s2-hecke}",
+  "subsection": "\\subsection{Logarithmic control}\\label{sec:s2-log}",
+  "source": "\\begin{equation}\\label{eq:d158}\n |\\mathcal L(s)|+|\\mathcal L(s)^{-1}|\\ll_{e,\\epsilon}\\{2Q(3+|t|)^2\\}^\\epsilon,\n\\end{equation}",
+  "before": "Let $\\psi\\in\\mathcal F_{\\rm CM}\\cup\\overline{\\mathcal F}_{\\rm CM}$ have conductor norm $Q$, and put\n$\\mathcal L(s)=L(s,\\psi)$. Fix $a\\in[\\frac12,1]$ and $0<e<10^{-3}$, and suppose that $\\mathcal L$ has no zero in\nthe open disk of radius $2-a-2e$ centred at $2+it$. Then, for every $\\epsilon>0$, uniformly on the closed\nconcentric disk of radius $2-a-6e$,",
+  "after": "and on the closed disk of radius $2-a-8e$,\n$|\\mathcal L'(s)/\\mathcal L(s)|\\ll_e\\log\\{2Q(3+|t|)^2\\}$. The implied constants depend only on $e$ and $\\epsilon$.\nIn particular, for every fixed $b\\ge\\beta_*$ and $v>0$ these bounds hold on $\\Re s\\ge b+v$, with the height of"
+ },
+ {
+  "labels": [
+   "eq:d159"
+  ],
+  "numbers": [
+   "C.17"
+  ],
+  "page": "76",
+  "line": 4717,
+  "section": "\\section{Hecke \\texorpdfstring{$L$}{L}-functions of infinity type \\texorpdfstring{$\\bar z/|z|$}{zbar/|z|}}\\label{app:s2-hecke}",
+  "subsection": "\\subsection{Conductors of the row characters}\\label{sec:s2-cond}",
+  "source": "\\begin{equation}\\label{eq:d159}\n Q_{\\psi^*}\\ll_{\\mathcal A}\\N(u),\\qquad\n L_{\\rm orig}(s)=L(s,\\psi^*)\\prod_{p\\in E_u}\\bigl(1-\\psi^*(p)\\N(p)^{-s}\\bigr),\\qquad E_u\\subset S\\cup\\{p:p\\mid u\\},\n\\end{equation}",
+  "before": "Consequently, let $\\theta\\in\\Theta_0$ and let $u$ be a sixth-power-free row that is not supported on $S$. Then\nthe CM members $n\\mapsto\\overline{\\alpha(n)}\\theta(n)\\overline{\\chi_n(u)}$ and $n\\mapsto\\alpha(n)\\theta(n)\\chi_n(u)$ of\n$\\mathcal X_u$ satisfy the conclusions of~\\cite[L4244--4254]{OAI78}. That is, the primitive character $\\psi^*$\ninducing such a member satisfies",
+  "after": "where $L_{\\rm orig}$ is the Dirichlet series of the zero-extended member. No CM member is principal.\n(In fact $E_u\\subset S$, since every good prime dividing $u$ divides the conductor; see\nLemma~\\ref{lem:s3-labels}.)"
+ },
+ {
+  "labels": [
+   "eq:d160"
+  ],
+  "numbers": [
+   "C.18"
+  ],
+  "page": "76",
+  "line": 4759,
+  "section": "\\section{Hecke \\texorpdfstring{$L$}{L}-functions of infinity type \\texorpdfstring{$\\bar z/|z|$}{zbar/|z|}}\\label{app:s2-hecke}",
+  "subsection": "\\subsection{Reflection of a CM plain sum}\\label{sec:s2-refl}",
+  "source": "\\begin{equation}\\label{eq:d160}\n T_\\psi(X;W)=W(\\psi)\\,T_{\\overline\\psi}\\bigl(C_\\psi/X;W^\\sharp\\bigr),\\qquad\n W^\\sharp(y)=\\frac1{2\\pi i}\\int_{(c)}\\mathcal MW(1-u)\\,\\frac{\\Gamma(u+\\frac12)}{\\Gamma(\\frac32-u)}\\,y^{-u}\\,du ,\n\\end{equation}",
+  "before": "\n\\begin{lemma}\\label{lem:s2-reflection}\nLet $\\psi\\in\\mathcal F_{\\rm CM}\\cup\\overline{\\mathcal F}_{\\rm CM}$ have conductor norm $Q$ and root number\n$W(\\psi)$, and put $C_\\psi=3Q/(2\\pi)^2$. For $X>0$,",
+  "after": "for any $c>-\\frac12$. Thus\n$\\mathcal MW^\\sharp(u)=\\mathcal MW(1-u)\\Gamma(u+\\frac12)/\\Gamma(\\frac32-u)$ on $\\Re u>-\\frac12$, in place of\n$\\mathcal MW(1-u)\\Gamma(u)/\\Gamma(1-u)$ in~\\cite{OAI78}. Moreover:"
+ },
+ {
+  "labels": [
+   "eq:d161"
+  ],
+  "numbers": [
+   "D.1"
+  ],
+  "page": "78",
+  "line": 4887,
+  "section": "\\section{The zero detector for a CM target}\\label{app:s3-detector}",
+  "subsection": "\\subsection{Setting and the label set}",
+  "source": "\\begin{equation}\\label{eq:d161}\n \\Theta_0=\\langle\\eta,\\widehat T\\rangle\n\\end{equation}",
+  "before": "$\\eta(x)=1$. Thus $\\eta$ is a ray class character modulo ${\\rm lcm}(\\mathfrak f_\\psi,3)$, of finite\norder, and $\\psi(n)=\\overline{\\alpha(n)}\\eta(n)$, as in Theorem~\\ref{thm:78}. The arithmetic\ndatum $\\mathcal A$ is that of~\\cite[L590--603, L732--740]{OAI78} for this $\\eta$. It contains the finite\ngroup",
+  "after": "of~\\cite[L3327--3341]{OAI78} (written $\\Theta$ there), and the finite set $S$ of~\\cite[L3336--3341]{OAI78}.\nIt contains the primes above $6$, the defining-modulus supports of $\\eta$ and of the members of\n$\\widehat T$, the primes dividing $\\mathfrak f_\\psi$, and every prime of norm at most $P_0$. The angular factor needs no new prime: on ideals prime to $3$,"
+ },
+ {
+  "labels": [
+   "eq:s3-beta"
+  ],
+  "numbers": [
+   "D.2"
+  ],
+  "page": "79",
+  "line": 4901,
+  "section": "\\section{The zero detector for a CM target}\\label{app:s3-detector}",
+  "subsection": "\\subsection{Setting and the label set}",
+  "source": "\\begin{equation}\\label{eq:s3-beta}\n \\beta^\\sharp=\\max\\bigl(\\beta_*,\\beta_*^{(0)}\\bigr).\n\\end{equation}",
+  "before": "\n\\paragraph{The zero ceiling.} Let $\\beta_*^{(0)}$ be the supremum~\\cite[eq.~old-eq:1.1b]{OAI78} over\nprimitive finite-order characters, let $\\beta_*$ be the supremum of Section~\\ref{sec:78} over\n$\\mathcal F_{\\rm CM}$, and put",
+  "after": "By~\\cite[Theorem~thm:main]{OAI78}, $\\beta_*^{(0)}\\le7/8$. Hence $\\beta^\\sharp=\\beta_*$ whenever\n$\\beta_*\\ge7/8$: under the contradiction hypothesis $\\beta_*>7/8$ of Section~\\ref{sec:78final}, and under\n$\\beta_*>11/12$ in the $11/12$ stage."
+ },
+ {
+  "labels": [
+   "eq:d162"
+  ],
+  "numbers": [
+   "D.3"
+  ],
+  "page": "79",
+  "line": 4909,
+  "section": "\\section{The zero detector for a CM target}\\label{app:s3-detector}",
+  "subsection": "\\subsection{Setting and the label set}",
+  "source": "\\begin{equation}\\label{eq:d162}\n \\Lambda=\\bigl\\{(\\nu,\\varsigma):\\ \\varsigma\\in\\{1,-1\\},\\ \\nu\\in\\Theta_0\\cup\\alpha^{\\varsigma}\\Theta_0\\bigr\\},\n\\end{equation}",
+  "before": "$\\beta_*\\ge7/8$: under the contradiction hypothesis $\\beta_*>7/8$ of Section~\\ref{sec:78final}, and under\n$\\beta_*>11/12$ in the $11/12$ stage.\n\n\\paragraph{The label set.} Put",
+  "after": "a set of $4|\\Theta_0|$ labels, independent of the row. For a nonzero sixth-power-free element $u$\nand $(\\nu,\\varsigma)\\in\\Lambda$ define, on good primary $n$,\n\\begin{equation}\\label{eq:d163}"
+ },
+ {
+  "labels": [
+   "eq:d163"
+  ],
+  "numbers": [
+   "D.4"
+  ],
+  "page": "79",
+  "line": 4914,
+  "section": "\\section{The zero detector for a CM target}\\label{app:s3-detector}",
+  "subsection": "\\subsection{Setting and the label set}",
+  "source": "\\begin{equation}\\label{eq:d163}\n \\varphi_{u,\\nu,\\varsigma}(n)=\\nu(n)\\chi_n(u)^{\\varsigma},\n\\end{equation}",
+  "before": " \\Lambda=\\bigl\\{(\\nu,\\varsigma):\\ \\varsigma\\in\\{1,-1\\},\\ \\nu\\in\\Theta_0\\cup\\alpha^{\\varsigma}\\Theta_0\\bigr\\},\n\\end{equation}\na set of $4|\\Theta_0|$ labels, independent of the row. For a nonzero sixth-power-free element $u$\nand $(\\nu,\\varsigma)\\in\\Lambda$ define, on good primary $n$,",
+  "after": "with the zero convention of~\\cite[L636--639]{OAI78}: $\\chi_n(u)^{\\pm1}=0$ when $(n,u)\\ne1$. Let\n\\begin{equation}\\label{eq:d164}\n \\mathcal X_u=\\{\\varphi_{u,\\nu,\\varsigma}:(\\nu,\\varsigma)\\in\\Lambda\\}."
+ },
+ {
+  "labels": [
+   "eq:d164"
+  ],
+  "numbers": [
+   "D.5"
+  ],
+  "page": "79",
+  "line": 4918,
+  "section": "\\section{The zero detector for a CM target}\\label{app:s3-detector}",
+  "subsection": "\\subsection{Setting and the label set}",
+  "source": "\\begin{equation}\\label{eq:d164}\n \\mathcal X_u=\\{\\varphi_{u,\\nu,\\varsigma}:(\\nu,\\varsigma)\\in\\Lambda\\}.\n\\end{equation}",
+  "before": "\\begin{equation}\\label{eq:d163}\n \\varphi_{u,\\nu,\\varsigma}(n)=\\nu(n)\\chi_n(u)^{\\varsigma},\n\\end{equation}\nwith the zero convention of~\\cite[L636--639]{OAI78}: $\\chi_n(u)^{\\pm1}=0$ when $(n,u)\\ne1$. Let",
+  "after": "A member is \\emph{finite-order} if $\\nu\\in\\Theta_0$, and \\emph{CM} if $\\nu\\in\\alpha^\\varsigma\\Theta_0$.\nThe labels $(\\theta,\\pm1)$, $(\\overline\\alpha\\theta,-1)$ and $(\\alpha\\theta,1)$ give the three kinds of\ncharacter displayed in Section~\\ref{sec:78rows}, so this is the set used there. Its finite-order"
+ },
+ {
+  "labels": [
+   "eq:d165"
+  ],
+  "numbers": [
+   "D.6"
+  ],
+  "page": "79",
+  "line": 4939,
+  "section": "\\section{The zero detector for a CM target}\\label{app:s3-detector}",
+  "subsection": "\\subsection{Setting and the label set}",
+  "source": "\\begin{equation}\\label{eq:d165}\n L_{\\rm orig}(s,\\varphi)=\\prod_p\\bigl(1-\\varphi(p)q_p^{-s}\\bigr)^{-1},\\qquad\n \\frac1{L_{\\rm orig}(s,\\varphi)}=\\sum_n\\mu(n)\\varphi(n)q_n^{-s}.\n \\end{equation}",
+  "before": " $\\psi\\overline{\\chi_\\bullet(u)}=\\varphi_{u,\\overline\\alpha\\eta,-1}$ and its conjugate, and the slot\n characters $\\theta\\,\\overline{\\chi_\\bullet(u)}$, $\\theta\\in\\widehat T$.\n\\item[(c)] $\\varphi$ is completely multiplicative on good primary elements and $|\\varphi(n)|\\le1$. For\n $\\Re s>1$,",
+  "after": "\\item[(d)] There is a unique primitive Hecke character $\\varphi^*$ with $\\varphi(n)=\\varphi^*((n))$\n for every good primary $n$ prime to $u$. If $\\varphi$ is finite-order, so is $\\varphi^*$. If $\\varphi$\n is CM, then $\\varphi^*_\\infty(z)=(z/|z|)^\\varsigma$: for $\\varsigma=-1$, $\\varphi^*\\in\\mathcal F_{\\rm CM}$, and"
+ },
+ {
+  "labels": [
+   "eq:d166"
+  ],
+  "numbers": [
+   "D.7"
+  ],
+  "page": "80",
+  "line": 4956,
+  "section": "\\section{The zero detector for a CM target}\\label{app:s3-detector}",
+  "subsection": "\\subsection{Setting and the label set}",
+  "source": "\\begin{equation}\\label{eq:d166}\n L_{\\rm orig}(s,\\varphi)=L(s,\\varphi^*)\\prod_{\\mathfrak p\\in S}\\bigl(1-\\varphi^*(\\mathfrak p)\\N\\mathfrak p^{-s}\\bigr),\n \\end{equation}",
+  "before": " is CM and $\\varphi_0=\\varphi_{u,\\theta,\\varsigma}$, then $\\mathfrak f_{\\varphi^*}$ and\n $\\mathfrak f_{\\varphi_0^*}$ have the same exponent at every prime not above $3$, and\n $\\mathfrak f_{\\varphi^*}\\mid{\\rm lcm}(\\mathfrak f_{\\varphi_0^*},3)$; so $Q_{\\varphi^*}\\le9\\,Q_{\\varphi_0^*}$.\n\\item[(f)] Every good prime $p\\mid u$ divides $\\mathfrak f_{\\varphi^*}$, so $\\varphi^*(p)=0$. Consequently",
+  "after": " which is the identity of~\\cite[L4248--4252]{OAI78} with $E_u\\subset S$. If $u$ is not supported on $S$,\n then $\\varphi^*$ is not principal.\n\\item[(g)] If $L(\\rho,\\varphi^*)=0$ and $\\Re\\rho\\ge1/2$, then $\\Re\\rho\\le\\min(1,\\beta^\\sharp)$; if"
+ },
+ {
+  "labels": [
+   "eq:s3-reflected"
+  ],
+  "numbers": [
+   "D.8"
+  ],
+  "page": "80",
+  "line": 4968,
+  "section": "\\section{The zero detector for a CM target}\\label{app:s3-detector}",
+  "subsection": "\\subsection{Setting and the label set}",
+  "source": "\\begin{equation}\\label{eq:s3-reflected}\n |L(1-a-6e+it,\\varphi^*)|\\le C_0\\,(3Q)^{a-1/2+6e}(3+|t|)^{2a-1+12e}\\,\n |L(a+6e-it,\\overline{\\varphi^*})|,\n \\end{equation}",
+  "before": " $\\Lambda(s,\\varphi^*)=(3Q)^{s/2}(2\\pi)^{-s}\\Gamma(s+\\frac12)L(s,\\varphi^*)$ satisfies\n $\\Lambda(s,\\varphi^*)=\\epsilon(\\varphi^*)\\Lambda(1-s,\\overline{\\varphi^*})$ with $|\\epsilon(\\varphi^*)|=1$, and\n $|L(\\sigma+it,\\varphi^*)|\\ll Q^{3/5}(3+|t|)^2$ for $-1/10\\le\\sigma\\le11/10$. For $51/100\\le a\\le1$,\n $0<e<10^{-3}$ and real $t$,",
+  "after": " with an absolute constant $C_0$.\n\\end{enumerate}\n\\end{lemma}"
+ },
+ {
+  "labels": [
+   "eq:d167"
+  ],
+  "numbers": [
+   "D.9"
+  ],
+  "page": "80",
+  "line": 5001,
+  "section": "\\section{The zero detector for a CM target}\\label{app:s3-detector}",
+  "subsection": "\\subsection{Setting and the label set}",
+  "source": "\\begin{equation}\\label{eq:d167}\n \\phi((a))=\\alpha(a')^{\\varsigma}\\varphi_0^*((a))\n =\\Bigl(\\frac{a}{|a|}\\Bigr)^{\\varsigma}\\epsilon_a^{-\\varsigma}\\varphi_{0,\\rm f}(a).\n\\end{equation}",
+  "before": "$\\mathfrak m$ write $a=\\epsilon_aa'$ with $a'$ primary and $\\epsilon_a$ a unit; $\\epsilon_a$ depends only\non $a\\bmod3$, and $\\epsilon_{ab}=\\epsilon_a\\epsilon_b$. Since $\\varphi_0^*$ is a ray class character\nmodulo $\\mathfrak f_0$, $\\varphi_0^*((a))=:\\varphi_{0,\\rm f}(a)$ depends only on $a\\bmod\\mathfrak f_0$.\nOn ideals prime to $\\mathfrak m$ define",
+  "after": "So $\\phi$ is a Hecke character modulo $\\mathfrak m$, with $\\phi_\\infty(z)=(z/|z|)^\\varsigma$ and\n$\\phi_{\\rm f}(a)=\\epsilon_a^{-\\varsigma}\\varphi_{0,\\rm f}(a)$. Let $\\varphi^*$ be the primitive character\ninducing it. The primes of $\\mathfrak m$ lie in $S\\cup\\{p:p\\mid u\\}$, so a good primary $n$ prime to"
+ },
+ {
+  "labels": [
+   "eq:d168"
+  ],
+  "numbers": [
+   "D.10"
+  ],
+  "page": "81",
+  "line": 5068,
+  "section": "\\section{The zero detector for a CM target}\\label{app:s3-detector}",
+  "subsection": "\\subsection{Setting and the label set}",
+  "source": "\\begin{equation}\\label{eq:d168}\n L(s,\\varphi^*)=\\epsilon(\\varphi^*)\\,(3Q)^{1/2-s}(2\\pi)^{2s-1}\\,\n \\frac{\\Gamma(\\frac32-s)}{\\Gamma(\\frac12+s)}\\,L(1-s,\\overline{\\varphi^*}).\n\\end{equation}",
+  "before": "$\\varsigma=1$ apply that lemma to $\\overline{\\varphi^*}\\in\\mathcal F_{\\rm CM}$: conjugating\n$\\Lambda(\\bar s,\\overline{\\varphi^*})=\\epsilon\\,\\Lambda(1-\\bar s,\\varphi^*)$ gives\n$\\Lambda(s,\\varphi^*)=\\bar\\epsilon\\,\\Lambda(1-s,\\overline{\\varphi^*})$, and\n$|L(\\sigma+it,\\varphi^*)|=|L(\\sigma-it,\\overline{\\varphi^*})|$. The functional equation gives",
+  "after": "At $s=1-a-6e+it$ we have $|(3Q)^{1/2-s}|=(3Q)^{a-1/2+6e}$ and\n$|(2\\pi)^{2s-1}|=(2\\pi)^{1-2a-12e}<1$. The gamma quotient is $\\Gamma(x_1-it)/\\Gamma(x_2+it)$ with\n$x_1=\\frac12+a+6e\\in[1.01,1.506]$ and $x_2=\\frac32-a-6e\\in[0.494,0.99]$. Stirling's formula, uniform"
+ },
+ {
+  "labels": [
+   "eq:d169"
+  ],
+  "numbers": [
+   "D.11"
+  ],
+  "page": "82",
+  "line": 5091,
+  "section": "\\section{The zero detector for a CM target}\\label{app:s3-detector}",
+  "subsection": "\\subsection{Setting and the label set}",
+  "source": "\\begin{equation}\\label{eq:d169}\n |\\mathcal L(s)|+|\\mathcal L(s)^{-1}|\\ll_{e,\\epsilon}\\{2Q(3+|t|)^2\\}^\\epsilon,\n\\end{equation}",
+  "before": "Let $\\varphi^*$ be a primitive Hecke character with $\\varphi^*\\in\\mathcal F_{\\rm CM}$ or\n$\\overline{\\varphi^*}\\in\\mathcal F_{\\rm CM}$, of conductor norm $Q$, and put $\\mathcal L(s)=L(s,\\varphi^*)$. Let\n$a\\in[1/2,1]$ and $0<e<10^{-3}$, and suppose $\\mathcal L$ has no zero in the open disk of radius $2-a-2e$\nabout $2+it$. Then, on the closed disk of radius $2-a-6e$,",
+  "after": "and on the disk of radius $2-a-8e$, $|\\mathcal L'(s)/\\mathcal L(s)|\\ll_e\\log\\{2Q(3+|t|)^2\\}$. For every\nfixed $b\\ge\\beta_*$ and $v>0$ these bounds hold on $\\Re s\\ge b+v$, with the height of $s$ in place of $t$.\n\\end{lemma}"
+ },
+ {
+  "labels": [
+   "eq:d200"
+  ],
+  "numbers": [
+   "D.12"
+  ],
+  "page": "82",
+  "line": 5124,
+  "section": "\\section{The zero detector for a CM target}\\label{app:s3-detector}",
+  "subsection": "\\subsection{The detector}",
+  "source": "\\begin{equation}\\label{eq:d200}\\begin{aligned}\n M_r&=U^{-r/2}\\sum_n\\mu(n)\\alpha(n)^\\varsigma\\theta(n)\\chi_n(u)^\\varsigma W_M\\Bigl(\\frac{q_n}{U^r}\\Bigr),\\\\\n S_m&=U^{-m/2}\\sum_l\\alpha(l)^\\varsigma\\theta(l)\\chi_l(u)^\\varsigma W_S\\Bigl(\\frac{q_l}{U^m}\\Bigr),\n \\end{aligned}\\end{equation}",
+  "before": "\\item[(iii)] \\cite[Lemma~lem:detector-dyads]{OAI78} holds for every $\\varphi\\in\\mathcal X_u$;\n\\item[(iv)] \\cite[Prop.~prop:detector-witness]{OAI78} holds, the two witnesses using one presentation\n $\\varphi_{u,\\nu,\\varsigma}$ whose label $(\\nu,\\varsigma)$ lies in $\\Lambda$. For a CM label\n $\\nu=\\alpha^\\varsigma\\theta$ they are",
+  "after": " with the profiles $W_M,W_S$ of~\\cite[L4650--4656]{OAI78}.\n\\end{enumerate}\n\\end{proposition}"
+ }
+]

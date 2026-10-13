@@ -1,0 +1,18 @@
+[PASS] t5a.A2 (eq:reflection count) N(72) = 5184 = 5184 residues h0 mod 72 (L = 72)
+[PASS] t5a.A1 (eq:d096) 5 characters xi_0 of frak G (mod 72) x P = {pi7: j=2, pi13: j=0, -5: j=5}: Psi(n1 n2) = Psi(n1)Psi(n2) for 1500 random primary pairs (N <= 1200, even included): 0 failures; Psi(n) = 0 for even n: 0 failures; xi_0 multiplicative and 72-periodic: 0 failures
+[PASS] t5a.A12 (eq:b3-coeff) 3424 indices l = lambda^-3 n b^3 (all primary x = nb^3 coprime to 6, N(x) <= 3000, 4 xi_0, P = {pi7: 1, pi13: 4, -5: 0}): d_0 (QF table) * phi * prod chi^j vs 3^(5/2)|b| gamma_2(n) Psi(n) Psi(b)^3 (gamma_2 brute force): max abs err 1.7e-13; symbol identity: 3.6e-15; x not of the form nb^3 with nonzero d_0: 0
+      falsifier for t5a.A12 [Psi(b) in place of Psi(b)^3]: err=1.73 -> fails as required
+      falsifier for t5a.A12 [(lambda/n)_3 unconjugated]: err=1.73 -> fails as required
+[PASS] t5a.A40 (eq:d120 (and eq:d104)) C_pi,0(0) = 1 - 1/N(pi) and C_pi,j(0) = 0 for j = 1..5, primes of norm 7, 13, 19, 25 (inert -5): max err 4.3e-16; so c_F(h) on a group (h_pi = 0 off A, j_pi = 0 there) is (A.40)
+[PASS] t5a.A18 (eq:b3-local) 4 primes (norms 7, 13, 19 and inert 25) x 3 eps x 2 sigma_pi x j = 0..5, all x mod pi (2304 cases), C_pi,j literal from (A.13): sum_(h != 0) = chi(sigma)^-2 varpi B_pi,j(x) with varpi independent of x and |varpi| = 1: max err 5.6e-14
+      falsifier for t5a.A18 [B_pi,j with chi^-j (j not in {0,4})]: err=1.73 -> fails as required
+      falsifier for t5a.A18 [chi(sigma h)^+2]: err=12.7 -> fails as required
+[PASS] t5a.A3 (eq:d097 |C'| <= 1) C' = phihat(h0) conj(kappa0) prod(1 - 1/N) prod chi(sigma)^-2 varpi (eq:b3-C): max |phihat(h0)| over all 5184 h0 for 5 twists = 0.083, 0.083, 0.083, 0.028, 0.028 (<= 1); |varpi| = 1 to 2.8e-14; kappa0 is a cube root of unity (r2 T2)
+[PASS] t5a.A23 (eq:d108) 720 pairs (n, b), three s: max rel err 3.9e-15
+      falsifier for t5a.A23 [conj(alpha(b))^3 (zeta exponent)]: err=2 -> fails as required
+[PASS] t5a.A33 (eq:d114) all nonzero d_sigma(l), N(9l) <= 30000, three sigma: termwise |d|N(l)^(1/2-s') <= 27*3^(m(2/3-s'))N(n)^(1/2-s')N(b)^(2-3s') (0 violations; representation unique: 0 duplicates); partial sums over N(l) <= 30000/81: s'=1.6: LHS 2.509e+04 <= RHS 4.524e+04; s'=2.0: LHS 6.437e+04 <= RHS 1.073e+05; s'=3.0: LHS 3.486e+06 <= RHS 5.25e+06
+      falsifier for t5a.A33 [9 in place of 27 (termwise)]: err=2.25e+05 -> fails as required
+[PASS] t5a.A27 (eq:d111) sympy: d_zbar^2 F(z',zbar',v') = sum over ordered pairs (Y,Y') of F_YY' Y_zbar Y'_zbar + sum_Y F_Y Y_zbarzbar, with (z',zbar',v') of (A.25) and z, zbar independent: exact at two rational points for a generic F of degree (3,2,2), and identically (simplify) for a generic F of degree (2,1,1)
+      falsifier for t5a.A27 [mixed terms counted once (unordered pairs)]: err=0.0394 -> fails as required
+time 12.3s
+EXIT STATUS 0: all 9 checks passed

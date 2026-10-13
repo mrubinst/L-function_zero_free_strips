@@ -1,0 +1,12 @@
+[PASS] H1 chain rules d_zbar^j and d_z^j, j=1..5  :: falsifier (no sign) fails for odd j
+[PASS] H2 direct Mellin with j derivatives, j=1..5  :: max rel err 3.1e-31; falsifier min rel err 0.28
+[PASS] H3 R_j(1) formula j=1..12; R_1, R_2 = table kernels
+[PASS] H4a rightmost pole of R_j at 1/6-(j+1)/2 < -1/4 (j=1: -5/6, j=2: -4/3)
+[PASS] H4b Stirling |R_j(sigma+iu)| ~ u^{4 sigma}, j=1..5, sigma in {-1/4,0,1/2,2}  :: exponent log2(|R(2e5)|/|R(1e5)|) = 4 sigma within 1e-3
+[PASS] H5 gamma quotient exponents  :: k=0..5 exponent 1-2sigma; sigma=-1/10,k=1: 1.2000; profile at sigma=0.3: -0.4000
+[PASS] H6 Sym^m local factorization m=1..8 (split and inert)  :: falsifier: middle factor trivial instead of chi_{-3}^{m/2} fails for m = 2 mod 4
+[PASS] H7 eta-product coefficients (414 split primary generators, q^3000)  :: mismatches 0, 0; a_3=-3 a_2=0 a_4=0 (eta(2z)^3eta(6z)^3); a_4(eta(3z)^8)=-8
+[PASS] H8 expected strips 19/8<Re s<5/2, 15/8<Re s<2; weight 2: 11/8
+ALL PASS
+
+--- exit 0, 17.5 s

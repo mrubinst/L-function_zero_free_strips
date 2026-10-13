@@ -1,0 +1,22 @@
+RESULT|2-bump[1,2]-e+1|PASS|err=3.12e-16 tol=1e-10; ghat(w) = pi e (conj w/|w|)^e int W(x) J_1(4 pi |w| sqrt(x/3)) dx
+RESULT|2-bump[1,2]-e+1-zero|PASS|err=2.59e-17 tol=1e-12; ghat(0) = int (z/|z|)^e W(|z|^2) d^2z = 0 (vanishing lattice main term)
+      falsifier for 2-bump[1,2]-e+1 [prefactor -i]: err=0.399 -> fails as required
+      falsifier for 2-bump[1,2]-e+1 [unconjugated angle]: err=0.302 -> fails as required
+      falsifier for 2-bump[1,2]-e+1 [J_0 kernel]: err=0.513 -> fails as required
+RESULT|2-bump[1,2]-e-1|PASS|err=3.66e-16 tol=1e-10; ghat(w) = pi e (conj w/|w|)^e int W(x) J_1(4 pi |w| sqrt(x/3)) dx
+RESULT|2-bump[1,2]-e-1-zero|PASS|err=2.81e-17 tol=1e-12; ghat(0) = int (z/|z|)^e W(|z|^2) d^2z = 0 (vanishing lattice main term)
+      falsifier for 2-bump[1,2]-e-1 [prefactor -i]: err=0.399 -> fails as required
+      falsifier for 2-bump[1,2]-e-1 [unconjugated angle]: err=0.302 -> fails as required
+      falsifier for 2-bump[1,2]-e-1 [J_0 kernel]: err=0.513 -> fails as required
+RESULT|2-x^1/2 e^-x-e+1|PASS|err=7.82e-14 tol=1e-10; ghat(w) = pi e (conj w/|w|)^e int W(x) J_1(4 pi |w| sqrt(x/3)) dx
+RESULT|2-x^1/2 e^-x-e+1-zero|PASS|err=1.15e-16 tol=1e-12; ghat(0) = int (z/|z|)^e W(|z|^2) d^2z = 0 (vanishing lattice main term)
+      falsifier for 2-x^1/2 e^-x-e+1 [prefactor -i]: err=1.37 -> fails as required
+      falsifier for 2-x^1/2 e^-x-e+1 [unconjugated angle]: err=1.1 -> fails as required
+      falsifier for 2-x^1/2 e^-x-e+1 [J_0 kernel]: err=2.1 -> fails as required
+RESULT|2-x^1/2 e^-x-e-1|PASS|err=7.81e-14 tol=1e-10; ghat(w) = pi e (conj w/|w|)^e int W(x) J_1(4 pi |w| sqrt(x/3)) dx
+RESULT|2-x^1/2 e^-x-e-1-zero|PASS|err=1.06e-16 tol=1e-12; ghat(0) = int (z/|z|)^e W(|z|^2) d^2z = 0 (vanishing lattice main term)
+      falsifier for 2-x^1/2 e^-x-e-1 [prefactor -i]: err=1.37 -> fails as required
+      falsifier for 2-x^1/2 e^-x-e-1 [unconjugated angle]: err=1.1 -> fails as required
+      falsifier for 2-x^1/2 e^-x-e-1 [J_0 kernel]: err=2.1 -> fails as required
+      falsifier for 2-zero [radial (finite-order) profile has a nonzero zero frequency]: err=0.697 -> fails as required
+SUMMARY: 21 checks, 0 failures
